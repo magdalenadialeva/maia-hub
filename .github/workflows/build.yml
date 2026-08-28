@@ -1,0 +1,79 @@
+name: MAIA · build & deploy hub
+
+# Se dispara cuando subís un CSV nuevo a exports/ (o cambiás el motor/diseño),
+# y también a mano desde la pestaña Actions ("Run workflow").
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - "exports/**"
+      - "engine/**"
+      - "site/index.html"
+      - "config/**"
+      - ".github/workflows/build.yml"
+  workflow_dispatch: {}
+  # --- FASE FULL HANDS-FREE (dejar comentado hasta migrar) ---
+  # Corre solo los lunes 08:00 America/Buenos_Aires (11:00 UTC). Requiere que
+  # los CSV lleguen solos al repo (p.ej. un robot que lea el mail de Meta).
+  # schedule:
+  #   - cron: "0 11 * * 1"
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Instalar dependencias
+        run: pip install -r requirements.txt
+
+      - name: Regenerar data.js + reportes + brand brain
+        run: python -m engine.build
+
+      - name: Commitear data.js regenerado (si cambió)
+        run: |
+          git config user.name  "maia-bot"
+          git config user.email "maia-bot@users.noreply.github.com"
+          git add site/data.js site/data.json reports brandbrain || true
+          git commit -m "auto: regenerar data desde export ($(date -u +%F))" || echo "sin cambios"
+          git push || true
+
+      - name: Armar el sitio para Pages (hub + reportes)
+        run: |
+          mkdir -p _site
+          cp site/index.html site/data.js _site/ 2>/dev/null || cp site/data.js _site/
+          mkdir -p _site/reports && cp reports/*.html _site/reports/ 2>/dev/null || true
+
+      - name: Subir artefacto de Pages
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+      - name: Guardar brand brain como artefacto descargable
+        uses: actions/upload-artifact@v4
+        with:
+          name: brandbrain-csv
+          path: brandbrain/*.csv
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
