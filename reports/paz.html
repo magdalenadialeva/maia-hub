@@ -1,0 +1,52 @@
+<!DOCTYPE html><html lang="es"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MAIA · Reporte Paz Folgueiro</title>
+<style>
+:root{--ink:#0f172a;--mut:#64748b;--line:#e2e8f0;--bg:#f8fafc;--card:#fff;--accent:#4f46e5}
+*{box-sizing:border-box} body{margin:0;background:var(--bg);color:var(--ink);
+font:15px/1.5 -apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif}
+.wrap{max-width:900px;margin:0 auto;padding:32px 24px 64px}
+header{display:flex;justify-content:space-between;align-items:flex-end;gap:16px;
+border-bottom:2px solid var(--ink);padding-bottom:14px;margin-bottom:24px}
+h1{margin:0;font-size:26px} .sub{color:var(--mut);font-size:13px;margin-top:4px}
+.btn{background:var(--accent);color:#fff;border:0;border-radius:8px;padding:10px 16px;
+font-weight:600;cursor:pointer} .btn:hover{opacity:.9}
+h2{font-size:14px;text-transform:uppercase;letter-spacing:.05em;color:var(--mut);
+margin:28px 0 12px}
+.kpis{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.kpi{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px}
+.kpi-v{font-size:22px;font-weight:700} .kpi-l{color:var(--mut);font-size:12px;margin-top:2px}
+table{width:100%;border-collapse:collapse;background:var(--card);border:1px solid var(--line);
+border-radius:12px;overflow:hidden;font-size:14px}
+td,th{padding:10px 12px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+tr:last-child td{border-bottom:0} .num{text-align:right;font-variant-numeric:tabular-nums}
+.conv{color:var(--mut);font-size:13px} tr.bad td{background:#fef2f2}
+.pill{color:#fff;padding:3px 9px;border-radius:999px;font-size:12px;font-weight:600;white-space:nowrap}
+.mot{color:var(--mut);font-size:13px}
+.diag{background:#eef2ff;border:1px solid #c7d2fe;border-radius:10px;padding:12px 14px;
+margin-top:12px;font-size:14px}
+.edit{background:#fffbeb;border:1px dashed #fcd34d;border-radius:10px;padding:14px;min-height:80px}
+.edit:focus{outline:2px solid var(--accent)}
+.foot{color:var(--mut);font-size:12px;margin-top:32px;text-align:center}
+@media print{.btn{display:none} body{background:#fff} .edit{border-color:#e2e8f0;background:#fff}}
+</style></head><body><div class="wrap">
+<header><div><h1>Paz Folgueiro</h1>
+<div class="sub">Reporte de performance · 2026-07-27 → 2026-08-25 · Objetivo: Clientes potenciales · Moneda: ARS · ROAS objetivo ≈ 2.0</div></div>
+<button class="btn" onclick="window.print()">Descargar PDF</button></header>
+
+<h2>Resultados del período</h2>
+<div class="kpis"><div class="kpi"><div class="kpi-v">ARS 227.235</div><div class="kpi-l">Gasto</div></div><div class="kpi"><div class="kpi-v">149</div><div class="kpi-l">Leads</div></div><div class="kpi"><div class="kpi-v">ARS 1.525</div><div class="kpi-l">CPL</div></div><div class="kpi"><div class="kpi-v">ARS 5.287</div><div class="kpi-l">CPM</div></div><div class="kpi"><div class="kpi-v">1.36%</div><div class="kpi-l">CTR</div></div><div class="kpi"><div class="kpi-v">1.15</div><div class="kpi-l">Frecuencia</div></div></div>
+
+<h2>Embudo · dónde se rompe</h2>
+<table><tbody><tr class=""><td>Impresiones</td><td class="num">42.981</td><td class="conv">1.4% al siguiente</td></tr><tr class=""><td>Clics en el enlace · CUELLO</td><td class="num">584</td><td class="conv">25.5% al siguiente (sano ≈20.0%)</td></tr><tr class=""><td>Leads</td><td class="num">149</td><td class="conv"></td></tr></tbody></table>
+<div class="diag">🔎 El cuello está en Clics en el enlace → Leads: 25.5% vs ~20.0% sano.</div>
+
+<h2>Creativos · veredicto</h2>
+<table><thead><tr><th>Anuncio</th><th>Veredicto</th><th>Señales</th><th>Por qué</th></tr></thead>
+<tbody><tr><td>2 - Nueva - Copia</td><td><span class="pill" style="background:#16a34a">🟢 Escalar</span></td><td>Hook 0.0% · Hold 100.0% · CTR 1.42% · CPL ARS 1.626 · 86 leads</td><td class="mot">CTR sano y estable → sostener / escalar · Hook bajo (0.0%): el arranque no frena el scroll</td></tr><tr><td>2 - Nueva - Copia 2</td><td><span class="pill" style="background:#16a34a">🟢 Escalar</span></td><td>CTR 1.26% · CPL ARS 1.359 · 56 leads</td><td class="mot">CTR sano y estable → sostener / escalar</td></tr><tr><td>Nuevo anuncio de Clientes potenciales - Copia 4</td><td><span class="pill" style="background:#94a3b8">⚪ Poca data</span></td><td>CTR 1.28% · CPL ARS 1.712 · 6 leads</td><td class="mot">Poca data (6 leads): dejar correr / mirar señales de arriba</td></tr><tr><td>2 - Nueva - Copia 3</td><td><span class="pill" style="background:#94a3b8">⚪ Poca data</span></td><td>CTR 1.8% · CPL ARS 1.011 · 1 leads</td><td class="mot">Poca data (1 leads): dejar correr / mirar señales de arriba</td></tr></tbody></table>
+
+<h2>Conclusiones y próximos pasos</h2>
+<div class="edit" contenteditable="true">Escribí acá las conclusiones y los próximos pasos para Paz Folgueiro. (Contexto: Lead-gen (cuenta propia MAIA). CPL estable; refrescar creativos por CTR↓/CPM↑.)</div>
+
+<div class="foot">MAIA · Generado automáticamente desde el export de Meta · editá las conclusiones antes de exportar.</div>
+</div></body></html>

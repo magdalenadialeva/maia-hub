@@ -1,0 +1,118 @@
+"""
+MAIA · Orquestador del build (sin LLM).
+
+Lee todos los exports en exports/<slug>/*.csv|xlsx, los cruza con
+config/clients.yaml y escribe:
+  - site/data.js    -> window.DATA_EXT = {...}   (lo que consume el hub)
+  - site/data.json  -> el mismo objeto en JSON    (para otros consumidores)
+
+El hub ya calcula ROAS/embudo/señales en el browser desde las filas crudas,
+así que el motor solo tiene que producir el DATA correcto. La lógica de
+análisis (reporte PDF + volcado al Brand Brain) vive en engine/report.py y
+engine/brandbrain.py y también parte de estos mismos exports.
+
+Uso:
+    python -m engine.build
+    python -m engine.build --exports exports --site site --config config
+"""
+from __future__ import annotations
+import argparse
+import json
+from datetime import datetime, timezone
+from pathlib import Path
+from typing import List, Optional, Tuple
+import yaml
+
+from .parse import read_export
+from .hubdata import build_hub_client
+
+
+def load_clients(config_dir: Path) -> List[dict]:
+    cfg = yaml.safe_load((config_dir / "clients.yaml").read_text(encoding="utf-8"))
+    return cfg.get("clients", [])
+
+
+def load_client_rows(exports_dir: Path, slug: str, mapping_yaml: Path) -> Tuple[list, Optional[str], List[str]]:
+    folder = exports_dir / slug
+    files = []
+    if folder.exists():
+        files = sorted(p for p in folder.iterdir()
+                       if p.suffix.lower() in (".csv", ".xlsx", ".xls"))
+    rows: list = []
+    currency = None
+    for f in files:
+        df, meta = read_export(f, mapping_yaml)
+        currency = currency or meta["currency"]
+        rows.extend(df.to_dict(orient="records"))
+    return rows, currency, [f.name for f in files]
+
+
+def _client_totals(hub: dict) -> dict:
+    """Suma rápida para validación/diagnóstico."""
+    f = hub["f"]
+    idx = {name: 2 + i for i, name in enumerate(f)}
+    tot = {name: 0.0 for name in f}
+    for r in hub["rows"]:
+        for name in f:
+            tot[name] += r[idx[name]]
+    roas = (tot["pval"] / tot["spend"]) if tot["spend"] else 0
+    return {"spend": round(tot["spend"]), "purch": int(tot["purch"]),
+            "revenue": round(tot["pval"]), "roas": round(roas, 2),
+            "leads": int(tot["leads"]), "ic": int(tot["ic"]), "atc": int(tot["atc"])}
+
+
+def build_data(exports_dir: Path, site_dir: Path, config_dir: Path, verbose=True) -> dict:
+    mapping_yaml = config_dir / "mapping.yaml"
+    clients = load_clients(config_dir)
+    DATA = {}
+    diagnostics = []
+    for client in clients:
+        rows, currency, files = load_client_rows(exports_dir, client["slug"], mapping_yaml)
+        if not rows:
+            diagnostics.append(f"· {client['slug']}: sin export (se omite)")
+            continue
+        hub = build_hub_client(client, rows, currency)
+        DATA[client["slug"]] = hub
+        t = _client_totals(hub)
+        diagnostics.append(
+            f"· {client['slug']:7s} {hub['cur']} gasto={t['spend']:>12,} "
+            f"compras={t['purch']:>3} ROAS={t['roas']:>4} leads={t['leads']:>4} "
+            f"| {len(hub['ads'])} anuncios, {len(hub['dates'])} días, {len(hub['rows'])} filas")
+
+    site_dir.mkdir(parents=True, exist_ok=True)
+    payload = json.dumps(DATA, ensure_ascii=False, separators=(",", ":"))
+    (site_dir / "data.js").write_text(
+        "/* Generado por engine.build — NO editar a mano. */\n"
+        "window.DATA_EXT = " + payload + ";\n", encoding="utf-8")
+    (site_dir / "data.json").write_text(
+        json.dumps({"generated_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
+                    "DATA": DATA}, ensure_ascii=False, indent=2), encoding="utf-8")
+
+    if verbose:
+        sz = (site_dir / "data.js").stat().st_size / 1024
+        print(f"✓ site/data.js  ({sz:.0f} KB)  ·  site/data.json")
+        print("\n".join(diagnostics))
+    return DATA
+
+
+def main():
+    ap = argparse.ArgumentParser(description="MAIA · build data.js/json + reportes + brand brain")
+    ap.add_argument("--exports", default="exports")
+    ap.add_argument("--site", default="site")
+    ap.add_argument("--config", default="config")
+    ap.add_argument("--reports", default="reports")
+    ap.add_argument("--brandbrain", default="brandbrain")
+    ap.add_argument("--only-data", action="store_true",
+                    help="solo regenerar site/data.js (lo que necesita el hub)")
+    args = ap.parse_args()
+    exports, config = Path(args.exports), Path(args.config)
+    build_data(exports, Path(args.site), config)
+    if not args.only_data:
+        from .report import build_reports
+        from .brandbrain import build_brandbrain
+        build_reports(exports, Path(args.reports), config)
+        build_brandbrain(exports, Path(args.brandbrain), config)
+
+
+if __name__ == "__main__":
+    main()

@@ -1,0 +1,64 @@
+# MAIA · Registro de clientes.
+# Fuente de verdad de metadatos por marca. El motor cruza esto con los exports.
+# `slug` = carpeta dentro de exports/  (exports/<slug>/*.csv)
+#
+# objective : ventas | leads   -> lógica interna del motor (reporte, señales)
+# obj_code  : purchase | ic | lead  -> lo que muestra el hub (OBJLBL). Piera usa
+#             "ic" (optimiza a Iniciar pago para validar checkout).
+# start_label: texto humano que muestra el hub (DATA.start / INICIO).
+# margin    : margen bruto (0-1). Si está, objetivo de ROAS = 1/margin.
+# currency  : se autodetecta del export; esto es fallback/override.
+# overrides : pisa umbrales de engine.config.Thresholds para este cliente.
+#
+# El ORDEN de esta lista define el orden en el hub (CLIENTS).
+
+clients:
+  - slug: piera
+    name: Piera Ceresa
+    objective: ventas
+    obj_code: ic
+    currency: CLP
+    start_maia: "2026-07-28"
+    start_label: "28 jul 2026"
+    margin: 0.5
+    notes: "Optimiza a Iniciar pago para validar checkout. Freno hoy: página de producto (LPV→ATC). No escalar hasta destrabar."
+
+  - slug: mossy
+    name: Mossy
+    objective: ventas
+    obj_code: purchase
+    currency: ARS
+    start_maia: null
+    start_label: "Cliente histórico"
+    margin: 0.5
+    notes: "Cliente histórico (Captiva). Fatiga incipiente: renovar top ad. Cuello Carrito→Pago."
+
+  - slug: alba
+    name: Alba & Co
+    objective: ventas
+    obj_code: purchase
+    currency: ARS
+    start_maia: "2026-08-21"
+    start_label: "21 ago 2026"
+    margin: 0.5
+    notes: "Campaña de VENTA. Mejor ROAS de la cartera (4,35). Embudo sano; limita el volumen arriba."
+
+  - slug: paz
+    name: Paz Folgueiro
+    objective: leads
+    obj_code: lead
+    currency: ARS
+    start_maia: "2026-07-01"
+    start_label: "Julio 2026"
+    margin: null
+    notes: "Lead-gen (cuenta propia MAIA). CPL estable; refrescar creativos por CTR↓/CPM↑."
+
+  - slug: vresia
+    name: Vresia
+    objective: ventas
+    obj_code: purchase
+    currency: ARS
+    start_maia: "2026-08-21"
+    start_label: "21 ago 2026"
+    margin: 0.5
+    notes: "Campaña de VENTA. Mejor creativo: Catálogo + Video 2. Cuello Carrito→Pago."

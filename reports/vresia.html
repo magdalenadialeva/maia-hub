@@ -1,0 +1,52 @@
+<!DOCTYPE html><html lang="es"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MAIA · Reporte Vresia</title>
+<style>
+:root{--ink:#0f172a;--mut:#64748b;--line:#e2e8f0;--bg:#f8fafc;--card:#fff;--accent:#4f46e5}
+*{box-sizing:border-box} body{margin:0;background:var(--bg);color:var(--ink);
+font:15px/1.5 -apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif}
+.wrap{max-width:900px;margin:0 auto;padding:32px 24px 64px}
+header{display:flex;justify-content:space-between;align-items:flex-end;gap:16px;
+border-bottom:2px solid var(--ink);padding-bottom:14px;margin-bottom:24px}
+h1{margin:0;font-size:26px} .sub{color:var(--mut);font-size:13px;margin-top:4px}
+.btn{background:var(--accent);color:#fff;border:0;border-radius:8px;padding:10px 16px;
+font-weight:600;cursor:pointer} .btn:hover{opacity:.9}
+h2{font-size:14px;text-transform:uppercase;letter-spacing:.05em;color:var(--mut);
+margin:28px 0 12px}
+.kpis{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.kpi{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px}
+.kpi-v{font-size:22px;font-weight:700} .kpi-l{color:var(--mut);font-size:12px;margin-top:2px}
+table{width:100%;border-collapse:collapse;background:var(--card);border:1px solid var(--line);
+border-radius:12px;overflow:hidden;font-size:14px}
+td,th{padding:10px 12px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+tr:last-child td{border-bottom:0} .num{text-align:right;font-variant-numeric:tabular-nums}
+.conv{color:var(--mut);font-size:13px} tr.bad td{background:#fef2f2}
+.pill{color:#fff;padding:3px 9px;border-radius:999px;font-size:12px;font-weight:600;white-space:nowrap}
+.mot{color:var(--mut);font-size:13px}
+.diag{background:#eef2ff;border:1px solid #c7d2fe;border-radius:10px;padding:12px 14px;
+margin-top:12px;font-size:14px}
+.edit{background:#fffbeb;border:1px dashed #fcd34d;border-radius:10px;padding:14px;min-height:80px}
+.edit:focus{outline:2px solid var(--accent)}
+.foot{color:var(--mut);font-size:12px;margin-top:32px;text-align:center}
+@media print{.btn{display:none} body{background:#fff} .edit{border-color:#e2e8f0;background:#fff}}
+</style></head><body><div class="wrap">
+<header><div><h1>Vresia</h1>
+<div class="sub">Reporte de performance · 2026-07-27 → 2026-08-25 · Objetivo: Ventas · Moneda: ARS · ROAS objetivo ≈ 2.0</div></div>
+<button class="btn" onclick="window.print()">Descargar PDF</button></header>
+
+<h2>Resultados del período</h2>
+<div class="kpis"><div class="kpi"><div class="kpi-v">ARS 268.778</div><div class="kpi-l">Gasto</div></div><div class="kpi"><div class="kpi-v">1.97</div><div class="kpi-l">ROAS</div></div><div class="kpi"><div class="kpi-v">9</div><div class="kpi-l">Compras</div></div><div class="kpi"><div class="kpi-v">ARS 29.864</div><div class="kpi-l">CPA</div></div><div class="kpi"><div class="kpi-v">ARS 4.769</div><div class="kpi-l">CPM</div></div><div class="kpi"><div class="kpi-v">3.67%</div><div class="kpi-l">CTR</div></div></div>
+
+<h2>Embudo · dónde se rompe</h2>
+<table><tbody><tr class=""><td>Impresiones</td><td class="num">56.358</td><td class="conv">3.7% al siguiente</td></tr><tr class=""><td>Clics en el enlace</td><td class="num">2.069</td><td class="conv">71.7% al siguiente (sano ≈80.0%)</td></tr><tr class=""><td>Vieron la landing (LPV)</td><td class="num">1.483</td><td class="conv">16.4% al siguiente (sano ≈13.0%)</td></tr><tr class="bad"><td>Agregaron al carrito · CUELLO</td><td class="num">243</td><td class="conv">12.8% al siguiente (sano ≈45.0%)</td></tr><tr class="bad"><td>Iniciaron el pago</td><td class="num">31</td><td class="conv">29.0% al siguiente (sano ≈45.0%)</td></tr><tr class=""><td>Compraron</td><td class="num">9</td><td class="conv"></td></tr></tbody></table>
+<div class="diag">🔎 El cuello está en Agregaron al carrito → Iniciaron el pago: 12.8% vs ~45.0% sano.</div>
+
+<h2>Creativos · veredicto</h2>
+<table><thead><tr><th>Anuncio</th><th>Veredicto</th><th>Señales</th><th>Por qué</th></tr></thead>
+<tbody><tr><td>Catalogo + Video 2</td><td><span class="pill" style="background:#16a34a">🟢 Escalar</span></td><td>Hook 20.49% · Hold 21.26% · CTR 3.98% · ROAS 4.66 · CPA ARS 13.208</td><td class="mot">ROAS 2.33x del objetivo, sin fatiga → escalar</td></tr><tr><td>SW ARG2  | 30/07</td><td><span class="pill" style="background:#94a3b8">⚪ Poca data</span></td><td>Hook 15.37% · Hold 25.25% · CTR 1.36% · ROAS 4.57 · CPA ARS 11.611</td><td class="mot">Poca data (1 compras · gasto 11610): dejar correr / mirar señales de arriba · Hook bajo (15.37%): el arranque no frena el scroll</td></tr><tr><td>SW ARG2  | 07/08 ULTIMOS</td><td><span class="pill" style="background:#94a3b8">⚪ Poca data</span></td><td>Hook 0.31% · Hold 11.11% · CTR 1.33% · ROAS 3.85 · CPA ARS 15.597</td><td class="mot">Poca data (1 compras · gasto 15597): dejar correr / mirar señales de arriba · Hook bajo (0.31%): el arranque no frena el scroll</td></tr><tr><td>SW ARG2  | 03/08 ULTIMOS</td><td><span class="pill" style="background:#94a3b8">⚪ Poca data</span></td><td>Hook 0.3% · Hold 0.0% · CTR 2.93% · ROAS 3.61 · CPA ARS 14.711</td><td class="mot">Poca data (1 compras · gasto 14711): dejar correr / mirar señales de arriba · Hook bajo (0.3%): el arranque no frena el scroll</td></tr><tr><td>Catalogo + Video 1</td><td><span class="pill" style="background:#94a3b8">⚪ Poca data</span></td><td>Hook 12.7% · Hold 22.01% · CTR 3.32% · ROAS 3.24 · CPA ARS 17.125</td><td class="mot">Poca data (1 compras · gasto 17125): dejar correr / mirar señales de arriba · Hook bajo (12.7%): el arranque no frena el scroll</td></tr><tr><td>Orgullosamente argentinas</td><td><span class="pill" style="background:#94a3b8">⚪ Poca data</span></td><td>Hook 17.36% · Hold 32.0% · CTR 6.25% · ROAS — · CPA —</td><td class="mot">Poca data (0 compras · gasto 1140): dejar correr / mirar señales de arriba · Hook bajo (17.36%): el arranque no frena el scroll</td></tr><tr><td>Cardigam Roma</td><td><span class="pill" style="background:#94a3b8">⚪ Poca data</span></td><td>Hook 34.62% · Hold 22.22% · CTR 0.0% · ROAS — · CPA —</td><td class="mot">Poca data (0 compras · gasto 78): dejar correr / mirar señales de arriba · CTR bajo (0.0%): el mensaje no genera clic</td></tr><tr><td>Catalogo + Video 5</td><td><span class="pill" style="background:#94a3b8">⚪ Poca data</span></td><td>Hook 15.87% · Hold 15.0% · CTR 3.17% · ROAS — · CPA —</td><td class="mot">Poca data (0 compras · gasto 824): dejar correr / mirar señales de arriba · Hook bajo (15.87%): el arranque no frena el scroll</td></tr><tr><td>Catalogo + Video 4</td><td><span class="pill" style="background:#94a3b8">⚪ Poca data</span></td><td>Hook 5.88% · Hold 0.0% · CTR 0.0% · ROAS — · CPA —</td><td class="mot">Poca data (0 compras · gasto 176): dejar correr / mirar señales de arriba · Hook bajo (5.88%): el arranque no frena el scroll</td></tr><tr><td>Catalogo + Video 3</td><td><span class="pill" style="background:#94a3b8">⚪ Poca data</span></td><td>Hook 5.26% · Hold 0.0% · CTR 0.0% · ROAS — · CPA —</td><td class="mot">Poca data (0 compras · gasto 118): dejar correr / mirar señales de arriba · Hook bajo (5.26%): el arranque no frena el scroll</td></tr><tr><td>wtf arg | 13/02</td><td><span class="pill" style="background:#94a3b8">⚪ Poca data</span></td><td>Hook 1.21% · Hold 26.47% · CTR 3.02% · ROAS — · CPA —</td><td class="mot">Poca data (0 compras · gasto 16554): dejar correr / mirar señales de arriba · Hook bajo (1.21%): el arranque no frena el scroll</td></tr><tr><td>Cardigan  | 07/08</td><td><span class="pill" style="background:#94a3b8">⚪ Poca data</span></td><td>Hook 16.69% · Hold 21.58% · CTR 2.16% · ROAS — · CPA —</td><td class="mot">Poca data (0 compras · gasto 18706): dejar correr / mirar señales de arriba · Hook bajo (16.69%): el arranque no frena el scroll</td></tr></tbody></table>
+
+<h2>Conclusiones y próximos pasos</h2>
+<div class="edit" contenteditable="true">Escribí acá las conclusiones y los próximos pasos para Vresia. (Contexto: Campaña de VENTA. Mejor creativo: Catálogo + Video 2. Cuello Carrito→Pago.)</div>
+
+<div class="foot">MAIA · Generado automáticamente desde el export de Meta · editá las conclusiones antes de exportar.</div>
+</div></body></html>

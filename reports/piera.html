@@ -1,0 +1,52 @@
+<!DOCTYPE html><html lang="es"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MAIA · Reporte Piera Ceresa</title>
+<style>
+:root{--ink:#0f172a;--mut:#64748b;--line:#e2e8f0;--bg:#f8fafc;--card:#fff;--accent:#4f46e5}
+*{box-sizing:border-box} body{margin:0;background:var(--bg);color:var(--ink);
+font:15px/1.5 -apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif}
+.wrap{max-width:900px;margin:0 auto;padding:32px 24px 64px}
+header{display:flex;justify-content:space-between;align-items:flex-end;gap:16px;
+border-bottom:2px solid var(--ink);padding-bottom:14px;margin-bottom:24px}
+h1{margin:0;font-size:26px} .sub{color:var(--mut);font-size:13px;margin-top:4px}
+.btn{background:var(--accent);color:#fff;border:0;border-radius:8px;padding:10px 16px;
+font-weight:600;cursor:pointer} .btn:hover{opacity:.9}
+h2{font-size:14px;text-transform:uppercase;letter-spacing:.05em;color:var(--mut);
+margin:28px 0 12px}
+.kpis{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.kpi{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px}
+.kpi-v{font-size:22px;font-weight:700} .kpi-l{color:var(--mut);font-size:12px;margin-top:2px}
+table{width:100%;border-collapse:collapse;background:var(--card);border:1px solid var(--line);
+border-radius:12px;overflow:hidden;font-size:14px}
+td,th{padding:10px 12px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+tr:last-child td{border-bottom:0} .num{text-align:right;font-variant-numeric:tabular-nums}
+.conv{color:var(--mut);font-size:13px} tr.bad td{background:#fef2f2}
+.pill{color:#fff;padding:3px 9px;border-radius:999px;font-size:12px;font-weight:600;white-space:nowrap}
+.mot{color:var(--mut);font-size:13px}
+.diag{background:#eef2ff;border:1px solid #c7d2fe;border-radius:10px;padding:12px 14px;
+margin-top:12px;font-size:14px}
+.edit{background:#fffbeb;border:1px dashed #fcd34d;border-radius:10px;padding:14px;min-height:80px}
+.edit:focus{outline:2px solid var(--accent)}
+.foot{color:var(--mut);font-size:12px;margin-top:32px;text-align:center}
+@media print{.btn{display:none} body{background:#fff} .edit{border-color:#e2e8f0;background:#fff}}
+</style></head><body><div class="wrap">
+<header><div><h1>Piera Ceresa</h1>
+<div class="sub">Reporte de performance · 2026-07-27 → 2026-08-25 · Objetivo: Ventas · Moneda: CLP · ROAS objetivo ≈ 2.0</div></div>
+<button class="btn" onclick="window.print()">Descargar PDF</button></header>
+
+<h2>Resultados del período</h2>
+<div class="kpis"><div class="kpi"><div class="kpi-v">CLP 350.136</div><div class="kpi-l">Gasto</div></div><div class="kpi"><div class="kpi-v">1.4</div><div class="kpi-l">ROAS</div></div><div class="kpi"><div class="kpi-v">6</div><div class="kpi-l">Compras</div></div><div class="kpi"><div class="kpi-v">CLP 58.356</div><div class="kpi-l">CPA</div></div><div class="kpi"><div class="kpi-v">CLP 5.545</div><div class="kpi-l">CPM</div></div><div class="kpi"><div class="kpi-v">0.74%</div><div class="kpi-l">CTR</div></div></div>
+
+<h2>Embudo · dónde se rompe</h2>
+<table><tbody><tr class=""><td>Impresiones</td><td class="num">63.143</td><td class="conv">0.7% al siguiente</td></tr><tr class=""><td>Clics en el enlace</td><td class="num">464</td><td class="conv">519.8% al siguiente (sano ≈80.0%)</td></tr><tr class="bad"><td>Vieron la landing (LPV) · CUELLO</td><td class="num">2.413</td><td class="conv">2.0% al siguiente (sano ≈13.0%)</td></tr><tr class=""><td>Agregaron al carrito</td><td class="num">48</td><td class="conv">50.0% al siguiente (sano ≈45.0%)</td></tr><tr class="bad"><td>Iniciaron el pago</td><td class="num">24</td><td class="conv">25.0% al siguiente (sano ≈45.0%)</td></tr><tr class=""><td>Compraron</td><td class="num">6</td><td class="conv"></td></tr></tbody></table>
+<div class="diag">🔎 El cuello está en Vieron la landing (LPV) → Agregaron al carrito: 2.0% vs ~13.0% sano.</div>
+
+<h2>Creativos · veredicto</h2>
+<table><thead><tr><th>Anuncio</th><th>Veredicto</th><th>Señales</th><th>Por qué</th></tr></thead>
+<tbody><tr><td>Carrusel Catalogo 1 - Video - AGO</td><td><span class="pill" style="background:#94a3b8">⚪ Poca data</span></td><td>Hook 2.05% · Hold 24.1% · CTR 0.42% · ROAS 5.43 · CPA CLP 18.696</td><td class="mot">Poca data (1 compras · gasto 18696): dejar correr / mirar señales de arriba · Hook bajo (2.05%): el arranque no frena el scroll</td></tr><tr><td>Carrusel Catalogo 2 - Video</td><td><span class="pill" style="background:#94a3b8">⚪ Poca data</span></td><td>Hook 13.68% · Hold 16.95% · CTR 2.63% · ROAS 2.97 · CPA CLP 20.839</td><td class="mot">Poca data (1 compras · gasto 20839): dejar correr / mirar señales de arriba · Hook bajo (13.68%): el arranque no frena el scroll</td></tr><tr><td>Carrusel Catalogo - Video Nuevo 1</td><td><span class="pill" style="background:#94a3b8">⚪ Poca data</span></td><td>Hook 17.61% · Hold 31.77% · CTR 0.64% · ROAS 1.19 · CPA CLP 80.784</td><td class="mot">Poca data (2 compras · gasto 161567): dejar correr / mirar señales de arriba · Hook bajo (17.61%): el arranque no frena el scroll</td></tr><tr><td>Carrusel Catalogo</td><td><span class="pill" style="background:#94a3b8">⚪ Poca data</span></td><td>Hook 0.55% · Hold 21.43% · CTR 0.28% · ROAS 1.11 · CPA CLP 60.467</td><td class="mot">Poca data (2 compras · gasto 120934): dejar correr / mirar señales de arriba · Hook bajo (0.55%): el arranque no frena el scroll</td></tr><tr><td>Carrusel Catalogo 2 - Video - AGO</td><td><span class="pill" style="background:#94a3b8">⚪ Poca data</span></td><td>Hook 4.26% · Hold 22.32% · CTR 1.8% · ROAS — · CPA —</td><td class="mot">Poca data (0 compras · gasto 9524): dejar correr / mirar señales de arriba · Hook bajo (4.26%): el arranque no frena el scroll</td></tr><tr><td>Carrusel Catalogo - Video Nuevo 6</td><td><span class="pill" style="background:#94a3b8">⚪ Poca data</span></td><td>Hook 17.39% · Hold 15.62% · CTR 3.65% · ROAS — · CPA —</td><td class="mot">Poca data (0 compras · gasto 1614): dejar correr / mirar señales de arriba · Hook bajo (17.39%): el arranque no frena el scroll</td></tr><tr><td>Carrusel Catalogo - Video Nuevo 5</td><td><span class="pill" style="background:#94a3b8">⚪ Poca data</span></td><td>Hook 44.16% · Hold 64.71% · CTR 5.83% · ROAS — · CPA —</td><td class="mot">Poca data (0 compras · gasto 739): dejar correr / mirar señales de arriba</td></tr><tr><td>Carrusel Catalogo - Video Nuevo 4</td><td><span class="pill" style="background:#94a3b8">⚪ Poca data</span></td><td>Hook 6.16% · Hold 33.33% · CTR 1.62% · ROAS — · CPA —</td><td class="mot">Poca data (0 compras · gasto 2470): dejar correr / mirar señales de arriba · Hook bajo (6.16%): el arranque no frena el scroll</td></tr><tr><td>Carrusel Catalogo - Video Nuevo 3</td><td><span class="pill" style="background:#94a3b8">⚪ Poca data</span></td><td>Hook 24.31% · Hold 65.71% · CTR 3.67% · ROAS — · CPA —</td><td class="mot">Poca data (0 compras · gasto 1820): dejar correr / mirar señales de arriba</td></tr><tr><td>Carrusel Catalogo - Video Nuevo 2</td><td><span class="pill" style="background:#94a3b8">⚪ Poca data</span></td><td>Hook 22.97% · Hold 33.82% · CTR 3.46% · ROAS — · CPA —</td><td class="mot">Poca data (0 compras · gasto 4359): dejar correr / mirar señales de arriba</td></tr><tr><td>Carrusel Catalogo 3 - Video - Copia 2</td><td><span class="pill" style="background:#94a3b8">⚪ Poca data</span></td><td>CTR None% · ROAS — · CPA —</td><td class="mot">Poca data (0 compras · gasto 0): dejar correr / mirar señales de arriba</td></tr><tr><td>Carrusel Catalogo 3 - Video - Copia</td><td><span class="pill" style="background:#94a3b8">⚪ Poca data</span></td><td>Hook 0.0% · Hold None% · CTR 13.81% · ROAS — · CPA —</td><td class="mot">Poca data (0 compras · gasto 2351): dejar correr / mirar señales de arriba · Hook bajo (0.0%): el arranque no frena el scroll</td></tr></tbody></table>
+
+<h2>Conclusiones y próximos pasos</h2>
+<div class="edit" contenteditable="true">Escribí acá las conclusiones y los próximos pasos para Piera Ceresa. (Contexto: Optimiza a Iniciar pago para validar checkout. Freno hoy: página de producto (LPV→ATC). No escalar hasta destrabar.)</div>
+
+<div class="foot">MAIA · Generado automáticamente desde el export de Meta · editá las conclusiones antes de exportar.</div>
+</div></body></html>

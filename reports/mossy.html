@@ -1,0 +1,52 @@
+<!DOCTYPE html><html lang="es"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MAIA · Reporte Mossy</title>
+<style>
+:root{--ink:#0f172a;--mut:#64748b;--line:#e2e8f0;--bg:#f8fafc;--card:#fff;--accent:#4f46e5}
+*{box-sizing:border-box} body{margin:0;background:var(--bg);color:var(--ink);
+font:15px/1.5 -apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif}
+.wrap{max-width:900px;margin:0 auto;padding:32px 24px 64px}
+header{display:flex;justify-content:space-between;align-items:flex-end;gap:16px;
+border-bottom:2px solid var(--ink);padding-bottom:14px;margin-bottom:24px}
+h1{margin:0;font-size:26px} .sub{color:var(--mut);font-size:13px;margin-top:4px}
+.btn{background:var(--accent);color:#fff;border:0;border-radius:8px;padding:10px 16px;
+font-weight:600;cursor:pointer} .btn:hover{opacity:.9}
+h2{font-size:14px;text-transform:uppercase;letter-spacing:.05em;color:var(--mut);
+margin:28px 0 12px}
+.kpis{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.kpi{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px}
+.kpi-v{font-size:22px;font-weight:700} .kpi-l{color:var(--mut);font-size:12px;margin-top:2px}
+table{width:100%;border-collapse:collapse;background:var(--card);border:1px solid var(--line);
+border-radius:12px;overflow:hidden;font-size:14px}
+td,th{padding:10px 12px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+tr:last-child td{border-bottom:0} .num{text-align:right;font-variant-numeric:tabular-nums}
+.conv{color:var(--mut);font-size:13px} tr.bad td{background:#fef2f2}
+.pill{color:#fff;padding:3px 9px;border-radius:999px;font-size:12px;font-weight:600;white-space:nowrap}
+.mot{color:var(--mut);font-size:13px}
+.diag{background:#eef2ff;border:1px solid #c7d2fe;border-radius:10px;padding:12px 14px;
+margin-top:12px;font-size:14px}
+.edit{background:#fffbeb;border:1px dashed #fcd34d;border-radius:10px;padding:14px;min-height:80px}
+.edit:focus{outline:2px solid var(--accent)}
+.foot{color:var(--mut);font-size:12px;margin-top:32px;text-align:center}
+@media print{.btn{display:none} body{background:#fff} .edit{border-color:#e2e8f0;background:#fff}}
+</style></head><body><div class="wrap">
+<header><div><h1>Mossy</h1>
+<div class="sub">Reporte de performance · 2026-07-27 → 2026-08-25 · Objetivo: Ventas · Moneda: ARS · ROAS objetivo ≈ 2.0</div></div>
+<button class="btn" onclick="window.print()">Descargar PDF</button></header>
+
+<h2>Resultados del período</h2>
+<div class="kpis"><div class="kpi"><div class="kpi-v">ARS 2.463.930</div><div class="kpi-l">Gasto</div></div><div class="kpi"><div class="kpi-v">3.24</div><div class="kpi-l">ROAS</div></div><div class="kpi"><div class="kpi-v">73</div><div class="kpi-l">Compras</div></div><div class="kpi"><div class="kpi-v">ARS 33.752</div><div class="kpi-l">CPA</div></div><div class="kpi"><div class="kpi-v">ARS 7.855</div><div class="kpi-l">CPM</div></div><div class="kpi"><div class="kpi-v">0.43%</div><div class="kpi-l">CTR</div></div></div>
+
+<h2>Embudo · dónde se rompe</h2>
+<table><tbody><tr class=""><td>Impresiones</td><td class="num">313.662</td><td class="conv">0.4% al siguiente</td></tr><tr class=""><td>Clics en el enlace</td><td class="num">1.361</td><td class="conv">576.4% al siguiente (sano ≈80.0%)</td></tr><tr class=""><td>Vieron la landing (LPV)</td><td class="num">7.846</td><td class="conv">17.8% al siguiente (sano ≈13.0%)</td></tr><tr class="bad"><td>Agregaron al carrito · CUELLO</td><td class="num">1.394</td><td class="conv">10.8% al siguiente (sano ≈45.0%)</td></tr><tr class=""><td>Iniciaron el pago</td><td class="num">151</td><td class="conv">48.3% al siguiente (sano ≈45.0%)</td></tr><tr class=""><td>Compraron</td><td class="num">73</td><td class="conv"></td></tr></tbody></table>
+<div class="diag">🔎 El cuello está en Agregaron al carrito → Iniciaron el pago: 10.8% vs ~45.0% sano.</div>
+
+<h2>Creativos · veredicto</h2>
+<table><thead><tr><th>Anuncio</th><th>Veredicto</th><th>Señales</th><th>Por qué</th></tr></thead>
+<tbody><tr><td>Ad6 - Secuencia - Nueva coleccion 202666 - Copia 6</td><td><span class="pill" style="background:#16a34a">🟢 Escalar</span></td><td>CTR 2.51% · ROAS 5.76 · CPA ARS 13.286</td><td class="mot">ROAS 2.88x del objetivo, sin fatiga → escalar</td></tr><tr><td>Ad6 - Secuencia - Nueva coleccion 202666 - Copia 3</td><td><span class="pill" style="background:#16a34a">🟢 Escalar</span></td><td>CTR 1.27% · ROAS 5.72 · CPA ARS 34.847</td><td class="mot">ROAS 2.86x del objetivo, sin fatiga → escalar</td></tr><tr><td>Ad5 - Video - Sale - Copia</td><td><span class="pill" style="background:#16a34a">🟢 Escalar</span></td><td>Hook 38.75% · Hold 34.53% · CTR 1.22% · ROAS 4.58 · CPA ARS 28.417</td><td class="mot">ROAS 2.29x del objetivo, sin fatiga → escalar</td></tr><tr><td>Ad6 - Secuencia - Nueva coleccion 202666 - Copia 11</td><td><span class="pill" style="background:#16a34a">🟢 Escalar</span></td><td>Hook 0.11% · Hold 54.24% · CTR 0.07% · ROAS 3.89 · CPA ARS 29.119</td><td class="mot">ROAS 1.95x del objetivo, sin fatiga → escalar · Hook bajo (0.11%): el arranque no frena el scroll</td></tr><tr><td>Ad6 - Secuencia - Nueva coleccion 202666 - Copia 12</td><td><span class="pill" style="background:#16a34a">🟢 Escalar</span></td><td>Hook 0.39% · Hold 50.0% · CTR 0.65% · ROAS 3.41 · CPA ARS 25.760</td><td class="mot">ROAS 1.71x del objetivo, sin fatiga → escalar · Hook bajo (0.39%): el arranque no frena el scroll</td></tr><tr><td>Ad1 - Angulo Anticipo Temporada</td><td><span class="pill" style="background:#16a34a">🟢 Escalar</span></td><td>Hook 16.15% · Hold 56.48% · CTR 0.12% · ROAS 3.12 · CPA ARS 37.740</td><td class="mot">ROAS 1.56x del objetivo, sin fatiga → escalar · Hook bajo (16.15%): el arranque no frena el scroll</td></tr><tr><td>Ad6 - Secuencia - Nueva coleccion 202666 - Copia 8</td><td><span class="pill" style="background:#16a34a">🟢 Escalar</span></td><td>CTR 0.17% · ROAS 2.79 · CPA ARS 31.293</td><td class="mot">ROAS 1.4x del objetivo, sin fatiga → escalar · CTR bajo (0.17%): el mensaje no genera clic</td></tr><tr><td>Ad6 - Secuencia - Nueva coleccion 202666 - Copia 5</td><td><span class="pill" style="background:#f59e0b">🟡 Iterar</span></td><td>CTR 0.54% · ROAS 2.4 · CPA ARS 47.320</td><td class="mot">Fatiga incipiente (CTR↓/CPM↑) → renovar variante · CTR bajo (0.54%): el mensaje no genera clic</td></tr><tr><td>Ad6 - Secuencia - Nueva coleccion 2026 - Copia 3</td><td><span class="pill" style="background:#f59e0b">🟡 Iterar</span></td><td>Hook 0.91% · Hold 30.37% · CTR 0.23% · ROAS 2.33 · CPA ARS 42.879</td><td class="mot">Hook bajo (0.91%): el arranque no frena el scroll · CTR bajo (0.23%): el mensaje no genera clic</td></tr><tr><td>Ad6 - Secuencia - Nueva coleccion 2026 - Copia 4</td><td><span class="pill" style="background:#94a3b8">⚪ Poca data</span></td><td>Hook 0.13% · Hold 33.33% · CTR 1.94% · ROAS 8.3 · CPA ARS 20.150</td><td class="mot">Poca data (1 compras · gasto 20150): dejar correr / mirar señales de arriba · Hook bajo (0.13%): el arranque no frena el scroll</td></tr><tr><td>Ad6 - Secuencia - Nueva coleccion 202666 - Copia 9</td><td><span class="pill" style="background:#94a3b8">⚪ Poca data</span></td><td>CTR 2.12% · ROAS 4.51 · CPA ARS 22.029</td><td class="mot">Poca data (2 compras · gasto 44058): dejar correr / mirar señales de arriba</td></tr><tr><td>Ad6 - Secuencia - Nueva coleccion 202666 - Copia 10</td><td><span class="pill" style="background:#94a3b8">⚪ Poca data</span></td><td>Hook 2.37% · Hold 95.08% · CTR 0.65% · ROAS 3.64 · CPA ARS 18.857</td><td class="mot">Poca data (2 compras · gasto 37713): dejar correr / mirar señales de arriba · Hook bajo (2.37%): el arranque no frena el scroll</td></tr></tbody></table>
+
+<h2>Conclusiones y próximos pasos</h2>
+<div class="edit" contenteditable="true">Escribí acá las conclusiones y los próximos pasos para Mossy. (Contexto: Cliente histórico (Captiva). Fatiga incipiente: renovar top ad. Cuello Carrito→Pago.)</div>
+
+<div class="foot">MAIA · Generado automáticamente desde el export de Meta · editá las conclusiones antes de exportar.</div>
+</div></body></html>

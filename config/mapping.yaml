@@ -1,0 +1,23 @@
+# MAIA · Mapeo de columnas del export de Meta.
+#
+# El parser ya trae alias por defecto para los nombres estándar en español
+# (ver engine/parse.py -> DEFAULT_ALIASES). Este archivo es para AGREGAR o
+# CORREGIR alias contra el export real, sin tocar código.
+#
+# Formato:  campo_interno: [ "substring del header 1", "substring 2", ... ]
+# El match es por substring, normalizado (minúsculas, sin acentos).
+# Los alias de acá tienen prioridad sobre los del código.
+#
+# >>> CALIBRACIÓN <<<
+# Cuando llegue el CSV real de Vresia:
+#   python -m engine.parse exports/vresia/<archivo>.csv config/mapping.yaml
+# Mirá el diagnóstico: si algún campo crítico cayó mal o quedó sin mapear,
+# agregá acá el substring exacto de la columna. Ejemplos comentados abajo.
+
+aliases:
+  # lpv: ["vistas de la pagina de destino"]
+  # atc: ["agregar al carrito (acciones)"]
+  # ic:  ["informacion de pago agregada"]
+  # purchases: ["compras en el sitio web"]
+  # revenue: ["valor de conversion de compras en el sitio web"]
+  {}
