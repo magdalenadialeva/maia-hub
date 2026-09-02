@@ -35,6 +35,12 @@ clients:
     start_label: "28 jul 2026"
     margin: 0.5
     notes: "Optimiza a Iniciar pago para validar checkout. Freno hoy: página de producto (LPV→ATC)."
+    # Fases de optimización (para el color del gráfico y la métrica-resultado).
+    # `opt`: purchase | ic | atc | lead  ·  `from`: primer día de esa optimización.
+    # Cuando vuelvas a cambiar la optimización, agregá otra fila con su fecha.
+    opt_phases:
+      - {from: "2026-07-28", opt: purchase, label: "Compra"}
+      - {from: "2026-08-18", opt: ic, label: "Iniciar pago (validando checkout)"}
 
   - slug: mossy
     name: Mossy
@@ -94,9 +100,14 @@ clients:
   - slug: saritina-ceramica
     name: "SARITINA CERAMICA"
     objective: ventas
-    obj_code: purchase
+    obj_code: msg          # objetivo real = Tráfico/Mensajes de WhatsApp (no ventas)
     currency: ARS
     ad_account_id: "1583204293185422"
     start_label: "auto"
     margin: 0.5
-    notes: "Auto-agregado desde Meta (2026-09-02)."
+    # OJO: campaña "Saritina_Trafico_Mensajes_Wsp_Sep" = TRÁFICO / Mensajes de WhatsApp.
+    # El resultado real son CONVERSACIONES de WhatsApp, que HOY el export NO trae
+    # (la columna "Resultados" viene vacía). Por eso no hay ROAS ni compras: el hub la
+    # muestra como objetivo "Mensajes" y la evalúa por señales de arriba (CTR/CPM).
+    # Para contar las conversaciones hay que sumar esa métrica de resultado en fetch_meta.
+    notes: "Tráfico/Mensajes de WhatsApp (auto-agregada 2026-09-02). Resultado (conversaciones) no disponible en el export todavía."
