@@ -43,7 +43,7 @@ DEFAULT_ALIASES: Dict[str, List[str]] = {
     "impressions": ["impresiones", "impressions"],
     "reach":       ["alcance", "reach"],
     "frequency":   ["frecuencia", "frequency"],
-    "clicks":      ["clics (todos)", "clics todos", "clicks (all)", "clics"],
+    "clicks":      ["clics (todos)", "clics todos", "clicks (all)", "all clicks"],
     "link_clicks": ["clics en el enlace", "clics unicos en el enlace", "link clicks"],
     # Video
     "video_3s":    ["reproducciones de video de 3 segundos", "reproducciones de 3 segundos",

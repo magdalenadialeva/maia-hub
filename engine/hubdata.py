@@ -15,6 +15,8 @@ from __future__ import annotations
 from typing import Dict, List
 import math
 
+from .config import DEFAULT_THRESHOLDS, target_roas_from_margin
+
 # Orden EXACTO de campos que espera el hub (no cambiar).
 HUB_FIELDS = ["spend", "impr", "reach", "lc", "lpv", "atc", "ic",
               "purch", "pval", "leads", "v3s", "thru"]
@@ -89,12 +91,34 @@ def build_hub_client(client: dict, rows: List[dict], currency: str | None) -> di
             row.append(int(round(v)) if f in INT_FIELDS else round(v, 2))
         out_rows.append(row)
 
+    # Umbrales canónicos (fuente única: engine/config.py) para que el hub
+    # calcule el MISMO veredicto que el reporte Python. Sin esto, el JS tenía
+    # sus propias reglas y no coincidía (p.ej. escalar con 1 sola compra).
+    th = DEFAULT_THRESHOLDS.merged(client.get("overrides"))
+    target = target_roas_from_margin(client.get("margin"))
+    th_out = {
+        "minP": th.min_purchases_sales,   # compras mínimas para veredicto firme
+        "minSpend": th.min_spend_sales,   # gasto mínimo para juzgar (ventas)
+        "minImpr": th.min_impressions,    # piso de impresiones
+        "minLeads": th.min_leads,         # leads mínimos (lead-gen)
+        "tgt": target,                    # ROAS objetivo del cliente (de su margen)
+        "scale": th.roas_scale_ratio,     # >= tgt*scale -> escalar
+        "kill": th.roas_kill_ratio,       # <  tgt*kill  -> candidato a matar
+        "ctrBad": th.ctr_bad,             # CTR por debajo = señal floja
+        "hookBad": th.hook_rate_bad,      # hook por debajo = señal floja (video)
+        # Semáforo de confianza (fuerza de señal) — mismos umbrales que el reporte.
+        "cCS": th.conf_conv_strong, "cCM": th.conf_conv_medium,
+        "cLS": th.conf_leads_strong, "cLM": th.conf_leads_medium,
+        "cIM": th.conf_impr_medium,
+    }
+
     return {
         "name": client.get("name", client["slug"]),
         "cur": client.get("currency") or currency or "ARS",
         "obj": client.get("obj_code") or ("lead" if is_leads else "purchase"),
         "start": client.get("start_label") or client.get("start_maia") or "",
         "lastchg": client.get("lastchg"),
+        "th": th_out,
         "ads": ads,
         "dates": dates,
         "f": list(HUB_FIELDS),

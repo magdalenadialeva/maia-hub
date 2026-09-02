@@ -11,7 +11,7 @@ from __future__ import annotations
 from typing import Dict, List, Optional
 import re
 
-from .config import Thresholds, VERDICTS
+from .config import Thresholds, VERDICTS, SIGNAL_LEVELS
 from .metrics import (
     _sum_rows, compute_metrics, data_sufficiency, build_funnel,
     split_trend_halves, _safe_div,
@@ -27,6 +27,41 @@ def guess_format(ad_name: str, totals: dict) -> str:
     if VIDEO_HINT.search(ad_name or ""):
         return "video"
     return "imagen"
+
+
+def signal_strength(totals: dict, objective: str, th: Thresholds) -> dict:
+    """Semáforo de CONFIANZA (fuerza de señal), independiente del veredicto.
+
+    Responde: ¿cuánto podemos confiar en la lectura de este creativo?
+      - 🟢 fuerte : hay conversiones suficientes -> el ROAS/CPA es confiable.
+      - 🟡 media  : hay pocas conversiones (tendencia) o volumen alto de embudo
+                    (impresiones/clics) -> se lee por CTR/hook, no por ROAS.
+      - ⚪ sin    : ni siquiera hay volumen arriba -> no se puede decir nada.
+    """
+    impr = float(totals.get("impressions", 0) or 0)
+    clicks = float(totals.get("link_clicks", 0) or 0)
+    if objective == "ventas":
+        conv = float(totals.get("purchases", 0) or 0)
+        c_strong, c_med, unit = th.conf_conv_strong, th.conf_conv_medium, "compras"
+    else:
+        conv = float(totals.get("leads", 0) or 0)
+        c_strong, c_med, unit = th.conf_leads_strong, th.conf_leads_medium, "leads"
+
+    if conv >= c_strong:
+        level = "fuerte"
+        basis = f"{int(conv)} {unit} → alcanza para confiar en el ROAS/CPA"
+    elif conv >= c_med or impr >= th.conf_impr_medium:
+        level = "media"
+        if conv >= c_med:
+            basis = f"{int(conv)} {unit}: tendencia, no confirmación (firme con ≥{c_strong})"
+        else:
+            basis = (f"{int(conv)} {unit} · {int(impr)} impr: alcanza para leer "
+                     f"CTR/hook, todavía no el ROAS")
+    else:
+        level = "sin"
+        basis = f"{int(impr)} impr: sin volumen para juzgar (piso {th.conf_impr_medium})"
+
+    return {"level": level, "basis": basis, **SIGNAL_LEVELS[level]}
 
 
 def detect_fatigue(rows: List[dict], th: Thresholds) -> dict:
@@ -105,6 +140,7 @@ def creative_signal(ad: dict, rows: List[dict], objective: str,
         "breaks_at_label": funnel.get("diagnosis"),
         "verdict": verdict,
         "verdict_meta": VERDICTS[verdict],
+        "confidence": signal_strength(totals, objective, th),
         "motives": motives[:4],
         "data_enough": suff["enough"],
     }

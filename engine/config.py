@@ -77,6 +77,20 @@ class Thresholds:
     fatigue_cpm_rise: float = 0.20      # suba relativa de CPM
     fatigue_freq: float = 2.5           # frecuencia por encima de la cual vigilar
 
+    # --- Confianza / fuerza de señal (semáforo, INDEPENDIENTE del veredicto) ---
+    # Cuántos eventos hacen falta para CONFIAR en la lectura. Base estadística:
+    # el error relativo (95%) de una tasa con k éxitos ≈ 1.96/√k -> k=10 ≈ ±62%,
+    # k=25 ≈ ±39%, k=50 ≈ ±28%, k=100 ≈ ±20%. Por eso el ROAS/CPA solo es "firme"
+    # con muchas compras; con pocas se juzga por embudo alto (impresiones/clics).
+    conf_conv_strong: int = 10      # compras para ROAS/CPA confiable (ventas)
+    conf_conv_medium: int = 3       # compras para hablar de tendencia
+    conf_leads_strong: int = 50     # leads para CPL confiable (lead-gen)
+    conf_leads_medium: int = 15
+    conf_impr_strong: int = 10000   # impresiones para lectura firme de CTR/hook
+    conf_impr_medium: int = 1500    # piso para leer CUALQUIER señal de embudo alto
+    conf_clicks_strong: int = 100   # clics para CTR firme
+    conf_clicks_medium: int = 25
+
     def merged(self, overrides: Optional[dict]) -> "Thresholds":
         if not overrides:
             return self
@@ -104,6 +118,14 @@ VERDICTS = {
     "iterar":    {"label": "Iterar",    "color": "#f59e0b", "emoji": "🟡"},
     "matar":     {"label": "Matar",     "color": "#dc2626", "emoji": "🔴"},
     "poca_data": {"label": "Poca data", "color": "#94a3b8", "emoji": "⚪"},
+}
+
+# Semáforo de confianza (fuerza de señal). Independiente del veredicto:
+# el veredicto dice la dirección; la confianza dice cuánto confiar en ella.
+SIGNAL_LEVELS = {
+    "fuerte": {"label": "Señal fuerte",      "color": "#16a34a", "emoji": "🟢"},
+    "media":  {"label": "Señal media/débil", "color": "#f59e0b", "emoji": "🟡"},
+    "sin":    {"label": "Sin señal",         "color": "#94a3b8", "emoji": "⚪"},
 }
 
 DEFAULT_THRESHOLDS = Thresholds()

@@ -96,6 +96,7 @@ def _client_report_html(client: dict, rows: List[dict]) -> str:
     crows = []
     for s in sigs[:12]:
         vm = s["verdict_meta"]
+        cf = s["confidence"]
         mm = s["metrics"]
         perf = (f'ROAS {mm["roas"] or "—"} · CPA {_fmt(mm["cpa"], cur)}'
                 if objective == "ventas" else
@@ -103,9 +104,12 @@ def _client_report_html(client: dict, rows: List[dict]) -> str:
         vid = (f'Hook {mm["hook_rate"]}% · Hold {mm["hold_rate"]}% · '
                if s["format"] == "video" and mm["hook_rate"] is not None else "")
         motives = _html.escape(" · ".join(s["motives"][:2]))
+        conf_basis = _html.escape(cf["basis"])
         crows.append(
             f'<tr><td>{_html.escape(str(s["ad_name"]))}</td>'
             f'<td><span class="pill" style="background:{vm["color"]}">{vm["emoji"]} {vm["label"]}</span></td>'
+            f'<td><span class="chip" style="color:{cf["color"]};border-color:{cf["color"]}">{cf["emoji"]} {cf["label"]}</span>'
+            f'<div class="mot" style="margin-top:4px">{conf_basis}</div></td>'
             f'<td>{vid}CTR {mm["ctr"]}% · {perf}</td>'
             f'<td class="mot">{motives}</td></tr>')
 
@@ -143,6 +147,8 @@ td,th{{padding:10px 12px;border-bottom:1px solid var(--line);text-align:left;ver
 tr:last-child td{{border-bottom:0}} .num{{text-align:right;font-variant-numeric:tabular-nums}}
 .conv{{color:var(--mut);font-size:13px}} tr.bad td{{background:#fef2f2}}
 .pill{{color:#fff;padding:3px 9px;border-radius:999px;font-size:12px;font-weight:600;white-space:nowrap}}
+.chip{{display:inline-block;padding:2px 9px;border-radius:999px;font-size:12px;font-weight:600;white-space:nowrap;border:1px solid;background:#fff}}
+.legend{{color:var(--mut);font-size:12.5px;margin-top:10px;line-height:1.7}}
 .mot{{color:var(--mut);font-size:13px}}
 .diag{{background:#eef2ff;border:1px solid #c7d2fe;border-radius:10px;padding:12px 14px;
 margin-top:12px;font-size:14px}}
@@ -163,8 +169,12 @@ margin-top:12px;font-size:14px}}
 <div class="diag">🔎 {funnel_diag}</div>
 
 <h2>Creativos · veredicto</h2>
-<table><thead><tr><th>Anuncio</th><th>Veredicto</th><th>Señales</th><th>Por qué</th></tr></thead>
+<table><thead><tr><th>Anuncio</th><th>Veredicto</th><th>Confianza</th><th>Señales</th><th>Por qué</th></tr></thead>
 <tbody>{creative_rows}</tbody></table>
+<div class="legend">El <b>veredicto</b> dice la dirección (escalar / iterar / matar / poca data); la <b>confianza</b> dice cuánto confiar en esa lectura, por cantidad de datos.
+🟢 <b>Señal fuerte</b> = hay compras suficientes (≥10) → el ROAS es confiable.
+🟡 <b>Señal media/débil</b> = pocas compras (tendencia) o mucho volumen arriba sin ventas → se lee por CTR/hook, no por ROAS.
+⚪ <b>Sin señal</b> = sin volumen (menos de 1.500 impresiones) → no se puede decir nada.</div>
 
 <h2>Conclusiones y próximos pasos</h2>
 <div class="edit" contenteditable="true">Escribí acá las conclusiones y los próximos pasos para {name}. (Contexto: {notes_hint})</div>
