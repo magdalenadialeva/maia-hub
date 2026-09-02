@@ -76,6 +76,11 @@ ACTION_MAP = {
              "offsite_conversion.fb_pixel_initiate_checkout"],
     "purch":["omni_purchase", "purchase", "offsite_conversion.fb_pixel_purchase"],
     "lead": ["lead", "offsite_conversion.fb_pixel_lead", "onsite_conversion.lead_grouped"],
+    # Conversaciones de mensajería (WhatsApp/Messenger/IG). El resultado de una
+    # campaña de Tráfico/Mensajes es "conversaciones iniciadas".
+    "msg":  ["onsite_conversion.total_messaging_connection",
+             "onsite_conversion.messaging_conversation_started_7d",
+             "onsite_conversion.messaging_first_reply"],
 }
 
 # Encabezados de salida = idénticos al export manual de Ads Manager (español).
@@ -446,6 +451,7 @@ def fetch_client(client: dict, days: int, token: str, exports_dir: Path) -> Opti
 
     rows: List[List] = []
     is_leads = client.get("objective") == "leads"
+    is_msg = client.get("obj_code") == "msg"   # Tráfico/Mensajes -> resultado = conversaciones
     # Primera página vía params; después seguimos el `next` absoluto.
     data = _api_get(f"act_{acct}/insights", params, token)
     page = 0
@@ -454,7 +460,13 @@ def fetch_client(client: dict, days: int, token: str, exports_dir: Path) -> Opti
             actions = r.get("actions")
             avals = r.get("action_values")
             leads = _sum_action(actions, ACTION_MAP["lead"])
-            results = _fmt(leads) if is_leads else ""
+            # "Resultados" = leads (lead-gen), conversaciones (mensajes) o vacío (ventas).
+            if is_msg:
+                results = _fmt(_sum_action(actions, ACTION_MAP["msg"]))
+            elif is_leads:
+                results = _fmt(leads)
+            else:
+                results = ""
             rows.append([
                 r.get("ad_name", ""),
                 r.get("date_start", ""),

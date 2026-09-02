@@ -90,6 +90,15 @@ def build_data(exports_dir: Path, site_dir: Path, config_dir: Path, verbose=True
         st = status.get(slug) or {}
         hub["upd"] = st.get("fetched_at") or (hub["dates"][-1] if hub["dates"] else None)
         hub["through"] = st.get("through") or (hub["dates"][-1] if hub["dates"] else None)
+        # Salud del último intento de actualización. Si el pull de HOY falló pero se
+        # conserva el CSV previo, fetched_at queda con la fecha vieja buena y el hub
+        # debe avisar con ⚠ que la ÚLTIMA corrida no trajo datos (aunque la fecha se
+        # vea reciente). Sin esto, una marca con error de Meta se mostraba "al día".
+        hub["ok"] = bool(st.get("ok", True))       # ¿anduvo el último intento?
+        hub["empty"] = bool(st.get("empty", False))
+        if not hub["ok"]:
+            hub["err"] = st.get("last_error")       # motivo (texto de Meta)
+            hub["attempt"] = st.get("last_attempt")  # cuándo se intentó y falló
         # Historial de cambios (lo escribe engine.fetch_meta).
         ch_path = exports_dir / slug / f"{slug}_changes.json"
         changes = []

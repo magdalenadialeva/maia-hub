@@ -43,7 +43,11 @@ def _num(x) -> float:
 def build_hub_client(client: dict, rows: List[dict], currency: str | None) -> dict:
     """rows = filas normalizadas (una por anuncio-día) de UN cliente."""
     objective = client.get("objective", "ventas")
+    obj_code = client.get("obj_code")
     is_leads = (objective == "leads")
+    # El campo interno `leads` guarda el "conteo de resultado" no-venta: leads en
+    # lead-gen y conversaciones en campañas de Mensajes (obj_code msg).
+    has_result_count = is_leads or (obj_code == "msg")
 
     _SIGNAL = ["spend", "impressions", "link_clicks", "lpv", "atc", "ic",
                "purchases", "revenue", "results", "video_3s", "thruplay"]
@@ -77,8 +81,9 @@ def build_hub_client(client: dict, rows: List[dict], currency: str | None) -> di
         acc = bucket.setdefault(key, {f: 0.0 for f in HUB_FIELDS})
         for hub_f, src in FIELD_SRC.items():
             if hub_f == "leads":
-                # leads solo para lead-gen: viene de "results" (Resultados de Meta).
-                val = _num(r.get("results")) if is_leads else 0.0
+                # conteo de resultado no-venta (leads o conversaciones): viene de
+                # "results" (Resultados de Meta) para lead-gen y mensajes.
+                val = _num(r.get("results")) if has_result_count else 0.0
             else:
                 val = _num(r.get(src))
             acc[hub_f] += val
@@ -118,6 +123,12 @@ def build_hub_client(client: dict, rows: List[dict], currency: str | None) -> di
         "obj": client.get("obj_code") or ("lead" if is_leads else "purchase"),
         "start": client.get("start_label") or client.get("start_maia") or "",
         "lastchg": client.get("lastchg"),
+        # Fases de optimización de la cuenta (por qué evento optimizó en cada tramo).
+        # Se declaran en config/clients.yaml -> opt_phases: [{from, opt, label?}].
+        # El hub las usa para (a) pintar en el gráfico los días de cada optimización
+        # en un color y (b) elegir qué métrica-resultado mostrar. Vacío = una sola
+        # optimización, el gráfico se comporta como siempre.
+        "optphases": client.get("opt_phases") or [],
         "th": th_out,
         "ads": ads,
         "dates": dates,
