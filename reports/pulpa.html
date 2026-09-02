@@ -1,0 +1,58 @@
+<!DOCTYPE html><html lang="es"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MAIA · Reporte Pulpa Verde</title>
+<style>
+:root{--ink:#0f172a;--mut:#64748b;--line:#e2e8f0;--bg:#f8fafc;--card:#fff;--accent:#4f46e5}
+*{box-sizing:border-box} body{margin:0;background:var(--bg);color:var(--ink);
+font:15px/1.5 -apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif}
+.wrap{max-width:900px;margin:0 auto;padding:32px 24px 64px}
+header{display:flex;justify-content:space-between;align-items:flex-end;gap:16px;
+border-bottom:2px solid var(--ink);padding-bottom:14px;margin-bottom:24px}
+h1{margin:0;font-size:26px} .sub{color:var(--mut);font-size:13px;margin-top:4px}
+.btn{background:var(--accent);color:#fff;border:0;border-radius:8px;padding:10px 16px;
+font-weight:600;cursor:pointer} .btn:hover{opacity:.9}
+h2{font-size:14px;text-transform:uppercase;letter-spacing:.05em;color:var(--mut);
+margin:28px 0 12px}
+.kpis{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.kpi{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px}
+.kpi-v{font-size:22px;font-weight:700} .kpi-l{color:var(--mut);font-size:12px;margin-top:2px}
+table{width:100%;border-collapse:collapse;background:var(--card);border:1px solid var(--line);
+border-radius:12px;overflow:hidden;font-size:14px}
+td,th{padding:10px 12px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+tr:last-child td{border-bottom:0} .num{text-align:right;font-variant-numeric:tabular-nums}
+.conv{color:var(--mut);font-size:13px} tr.bad td{background:#fef2f2}
+.pill{color:#fff;padding:3px 9px;border-radius:999px;font-size:12px;font-weight:600;white-space:nowrap}
+.chip{display:inline-block;padding:2px 9px;border-radius:999px;font-size:12px;font-weight:600;white-space:nowrap;border:1px solid;background:#fff}
+.legend{color:var(--mut);font-size:12.5px;margin-top:10px;line-height:1.7}
+.mot{color:var(--mut);font-size:13px}
+.diag{background:#eef2ff;border:1px solid #c7d2fe;border-radius:10px;padding:12px 14px;
+margin-top:12px;font-size:14px}
+.edit{background:#fffbeb;border:1px dashed #fcd34d;border-radius:10px;padding:14px;min-height:80px}
+.edit:focus{outline:2px solid var(--accent)}
+.foot{color:var(--mut);font-size:12px;margin-top:32px;text-align:center}
+@media print{.btn{display:none} body{background:#fff} .edit{border-color:#e2e8f0;background:#fff}}
+</style></head><body><div class="wrap">
+<header><div><h1>Pulpa Verde</h1>
+<div class="sub">Reporte de performance · 2026-08-31 → 2026-09-01 · Objetivo: Ventas · Moneda: ARS · ROAS objetivo ≈ 2.0</div></div>
+<button class="btn" onclick="window.print()">Descargar PDF</button></header>
+
+<h2>Resultados del período</h2>
+<div class="kpis"><div class="kpi"><div class="kpi-v">ARS 5.627</div><div class="kpi-l">Gasto</div></div><div class="kpi"><div class="kpi-v">—</div><div class="kpi-l">ROAS</div></div><div class="kpi"><div class="kpi-v">0</div><div class="kpi-l">Compras</div></div><div class="kpi"><div class="kpi-v">—</div><div class="kpi-l">CPA</div></div><div class="kpi"><div class="kpi-v">ARS 4.119</div><div class="kpi-l">CPM</div></div><div class="kpi"><div class="kpi-v">3.81%</div><div class="kpi-l">CTR</div></div></div>
+
+<h2>Embudo · dónde se rompe</h2>
+<table><tbody><tr class=""><td>Impresiones</td><td class="num">1.366</td><td class="conv">3.8% al siguiente</td></tr><tr class=""><td>Clics en el enlace</td><td class="num">52</td><td class="conv">80.8% al siguiente (sano ≈80.0%)</td></tr><tr class=""><td>Vieron la landing (LPV)</td><td class="num">42</td><td class="conv">16.7% al siguiente (sano ≈13.0%)</td></tr><tr class="bad"><td>Agregaron al carrito · CUELLO</td><td class="num">7</td><td class="conv">0.0% al siguiente (sano ≈45.0%)</td></tr><tr class=""><td>Iniciaron el pago</td><td class="num">0</td><td class="conv"></td></tr><tr class=""><td>Compraron</td><td class="num">0</td><td class="conv"></td></tr></tbody></table>
+<div class="diag">🔎 El cuello está en Agregaron al carrito → Iniciaron el pago: 0.0% vs ~45.0% sano.</div>
+
+<h2>Creativos · veredicto</h2>
+<table><thead><tr><th>Anuncio</th><th>Veredicto</th><th>Confianza</th><th>Señales</th><th>Por qué</th></tr></thead>
+<tbody><tr><td>Ad_Vans</td><td><span class="pill" style="background:#94a3b8">⚪ Poca data</span></td><td><span class="chip" style="color:#94a3b8;border-color:#94a3b8">⚪ Sin señal</span><div class="mot" style="margin-top:4px">328 impr: sin volumen para juzgar (piso 1500)</div></td><td>Hook 95.73% · Hold 15.92% · CTR 3.66% · ROAS — · CPA —</td><td class="mot">Poca data (0 compras · gasto 1325): dejar correr / mirar señales de arriba</td></tr><tr><td>Ad_Converse</td><td><span class="pill" style="background:#94a3b8">⚪ Poca data</span></td><td><span class="chip" style="color:#94a3b8;border-color:#94a3b8">⚪ Sin señal</span><div class="mot" style="margin-top:4px">87 impr: sin volumen para juzgar (piso 1500)</div></td><td>Hook 91.95% · Hold 10.0% · CTR 1.15% · ROAS — · CPA —</td><td class="mot">Poca data (0 compras · gasto 314): dejar correr / mirar señales de arriba · Hold bajo (10.0%): no retiene después del gancho</td></tr><tr><td>Ad_Osito</td><td><span class="pill" style="background:#94a3b8">⚪ Poca data</span></td><td><span class="chip" style="color:#94a3b8;border-color:#94a3b8">⚪ Sin señal</span><div class="mot" style="margin-top:4px">286 impr: sin volumen para juzgar (piso 1500)</div></td><td>Hook 73.78% · Hold 38.39% · CTR 5.24% · ROAS — · CPA —</td><td class="mot">Poca data (0 compras · gasto 852): dejar correr / mirar señales de arriba</td></tr><tr><td>Ad_Manchas</td><td><span class="pill" style="background:#94a3b8">⚪ Poca data</span></td><td><span class="chip" style="color:#94a3b8;border-color:#94a3b8">⚪ Sin señal</span><div class="mot" style="margin-top:4px">659 impr: sin volumen para juzgar (piso 1500)</div></td><td>Hook 67.98% · Hold 12.05% · CTR 3.64% · ROAS — · CPA —</td><td class="mot">Poca data (0 compras · gasto 3114): dejar correr / mirar señales de arriba</td></tr><tr><td>Ad_Toallas</td><td><span class="pill" style="background:#94a3b8">⚪ Poca data</span></td><td><span class="chip" style="color:#94a3b8;border-color:#94a3b8">⚪ Sin señal</span><div class="mot" style="margin-top:4px">6 impr: sin volumen para juzgar (piso 1500)</div></td><td>Hook 83.33% · Hold 0.0% · CTR 0.0% · ROAS — · CPA —</td><td class="mot">Poca data (0 compras · gasto 19): dejar correr / mirar señales de arriba · Hold bajo (0.0%): no retiene después del gancho</td></tr></tbody></table>
+<div class="legend">El <b>veredicto</b> dice la dirección (escalar / iterar / matar / poca data); la <b>confianza</b> dice cuánto confiar en esa lectura, por cantidad de datos.
+🟢 <b>Señal fuerte</b> = hay compras suficientes (≥10) → el ROAS es confiable.
+🟡 <b>Señal media/débil</b> = pocas compras (tendencia) o mucho volumen arriba sin ventas → se lee por CTR/hook, no por ROAS.
+⚪ <b>Sin señal</b> = sin volumen (menos de 1.500 impresiones) → no se puede decir nada.</div>
+
+<h2>Conclusiones y próximos pasos</h2>
+<div class="edit" contenteditable="true">Escribí acá las conclusiones y los próximos pasos para Pulpa Verde. (Contexto: Cliente nuevo (sep 2026).)</div>
+
+<div class="foot">MAIA · Generado automáticamente desde el export de Meta · editá las conclusiones antes de exportar.</div>
+</div></body></html>
