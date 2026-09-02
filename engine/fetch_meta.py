@@ -49,7 +49,7 @@ INSIGHT_FIELDS = [
     "inline_link_clicks",
     "actions",
     "action_values",
-    "video_3_sec_watched_actions",
+    "video_play_actions",
     "video_thruplay_watched_actions",
 ]
 
@@ -179,7 +179,7 @@ def fetch_client(client: dict, days: int, token: str, exports_dir: Path) -> Opti
                 _fmt(_sum_action(actions, ACTION_MAP["ic"])),
                 _fmt(_sum_action(actions, ACTION_MAP["purch"])),
                 _fmt(_sum_action(avals, ACTION_MAP["purch"])),
-                _fmt(_first_value(r.get("video_3_sec_watched_actions"))),
+                _fmt(_first_value(r.get("video_play_actions"))),
                 _fmt(_first_value(r.get("video_thruplay_watched_actions"))),
                 results,
             ])
