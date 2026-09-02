@@ -1,7 +1,7 @@
 ﻿slug,cliente,periodo,moneda,gasto,resultado,roas,cpa,cpl,cuello_embudo,diagnostico,veredictos
 piera,Piera Ceresa,2026-07-29..2026-09-02,CLP,473653.0,6,1.02,78942,,Vieron la landing (LPV),El cuello está en Vieron la landing (LPV) → Agregaron al carrito: 2.0% vs ~13.0% sano.,escalar:0 iterar:0 matar:0 pocaData:20
-mossy,Mossy,2026-07-29..2026-09-02,ARS,2956710.94,97,3.55,30482,,Agregaron al carrito,El cuello está en Agregaron al carrito → Iniciaron el pago: 11.2% vs ~45.0% sano.,escalar:9 iterar:0 matar:0 pocaData:11
+mossy,Mossy,2026-07-29..2026-09-02,ARS,2957294.86,97,3.55,30488,,Agregaron al carrito,El cuello está en Agregaron al carrito → Iniciaron el pago: 11.2% vs ~45.0% sano.,escalar:9 iterar:0 matar:0 pocaData:11
 vresia,Vresia,2026-07-29..2026-09-02,ARS,380975.51,12,1.85,31748,,Agregaron al carrito,El cuello está en Agregaron al carrito → Iniciaron el pago: 13.0% vs ~45.0% sano.,escalar:1 iterar:0 matar:0 pocaData:28
-alba,Alba & Co,2026-08-20..2026-09-02,ARS,250531.42,17,3.8,14737,,Agregaron al carrito,El cuello está en Agregaron al carrito → Iniciaron el pago: 19.9% vs ~45.0% sano.,escalar:2 iterar:0 matar:0 pocaData:5
-paz,Maia,2026-07-29..2026-09-02,ARS,325605.46,200,,,1628,Clics en el enlace,El cuello está en Clics en el enlace → Leads: 24.2% vs ~20.0% sano.,escalar:2 iterar:0 matar:0 pocaData:13
-pulpa,Pulpa Verde,2026-08-31..2026-09-02,ARS,8139.46,0,,,,Agregaron al carrito,El cuello está en Agregaron al carrito → Iniciaron el pago: 0.0% vs ~45.0% sano.,escalar:0 iterar:0 matar:0 pocaData:5
+alba,Alba & Co,2026-08-20..2026-09-02,ARS,250787.57,17,3.8,14752,,Agregaron al carrito,El cuello está en Agregaron al carrito → Iniciaron el pago: 19.9% vs ~45.0% sano.,escalar:2 iterar:0 matar:0 pocaData:5
+paz,Maia,2026-07-29..2026-09-02,ARS,325691.33,200,,,1628,Clics en el enlace,El cuello está en Clics en el enlace → Leads: 24.2% vs ~20.0% sano.,escalar:2 iterar:0 matar:0 pocaData:13
+pulpa,Pulpa Verde,2026-08-31..2026-09-02,ARS,8493.64,0,,,,Agregaron al carrito,El cuello está en Agregaron al carrito → Iniciaron el pago: 0.0% vs ~45.0% sano.,escalar:0 iterar:0 matar:0 pocaData:5

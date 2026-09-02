@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-02T13:07:20+00:00",
+  "generated_at": "2026-09-02T13:14:53+00:00",
   "DATA": {
     "piera": {
       "name": "Piera Ceresa",
@@ -2796,7 +2796,7 @@
         {
           "date": "2026-09-01",
           "cat": "presupuesto",
-          "text": "Presupuesto del conjunto de anuncios actualizado · PieraCeresa_2026_Conversiones ({'type': 'payment_amount', 'currency': 'CLP', 'old_value': 10000, 'additional_type': 'status_string', 'additional_value': ''} → {'type': 'payment_amount', 'currency': 'CLP', 'new_value': 12000, 'additional_type': 'status_string', 'additional_value': 'por día'})",
+          "text": "Presupuesto del conjunto de anuncios actualizado · PieraCeresa_2026_Conversiones (10.000 → 12.000 CLP/día)",
           "src": "meta"
         },
         {
@@ -2832,7 +2832,7 @@
         {
           "date": "2026-09-01",
           "cat": "presupuesto",
-          "text": "Presupuesto del conjunto de anuncios actualizado · PieraCeresa_2026_Conversiones ({'type': 'payment_amount', 'currency': 'CLP', 'old_value': 15000, 'additional_type': 'status_string', 'additional_value': ''} → {'type': 'payment_amount', 'currency': 'CLP', 'new_value': 10000, 'additional_type': 'status_string', 'additional_value': 'por día'})",
+          "text": "Presupuesto del conjunto de anuncios actualizado · PieraCeresa_2026_Conversiones (15.000 → 10.000 CLP/día)",
           "src": "meta"
         },
         {
@@ -2892,7 +2892,7 @@
         {
           "date": "2026-09-01",
           "cat": "presupuesto",
-          "text": "Presupuesto del conjunto de anuncios actualizado · PieraCeresa_2026_Conversiones - Add Payment Info ({'type': 'payment_amount', 'currency': 'CLP', 'old_value': 15000, 'additional_type': 'status_string', 'additional_value': ''} → {'type': 'payment_amount', 'currency': 'CLP', 'new_value': 10000, 'additional_type': 'status_string', 'additional_value': 'por día'})",
+          "text": "Presupuesto del conjunto de anuncios actualizado · PieraCeresa_2026_Conversiones - Add Payment Info (15.000 → 10.000 CLP/día)",
           "src": "meta"
         },
         {
@@ -3192,12 +3192,6 @@
         {
           "date": "2026-08-22",
           "cat": "otros",
-          "text": "Segmentación del conjunto de anuncios actualizada · PieraCeresa_2026_Conversiones -Purchase ([] → [{'content': 'Lugar:', 'children': ['Chile']}, {'content': 'Edad mínima:', 'children': ['18']}, {'content': 'Edad:', 'children': ['25 - 55']}, {'content': 'Sexo:', 'children': ['Mujeres']}, {'content': 'Ubicaciones:', 'children': ['en las siguientes páginas: Feed en computadoras, Feed de Instagram, Instagram Stories, Feed del perfil de Instagram, Inicio de la sección \"Explorar\" de Instagram, Instagram Reels, Feed web de Instagram, Instagram Stories en la web, Instagram Stories en msite, Búsqueda de Instagram, Apps y sitios web de terceros en dispositivos móviles (Audience\\xa0Network), Feed de dispositivos móviles, Columna derecha de computadoras, Video instream en dispositivos móviles, Video instream en computadoras de escritorio, Marketplace en computadoras, Marketplace en dispositivos móviles, Facebook Stories en dispositivos móviles, Messenger Stories, Búsqueda de Marketplace en computadoras de escritorio, Búsqueda de Marketplace en dispositivos móviles, Búsqueda en dispositivos móviles, Búsqueda en computadoras, Feed del perfil de Facebook en dispositivos móviles, Superposición de Facebook Reels en dispositivos móviles, Sección \"Explorar negocios\" de Facebook en dispositivos móviles, Facebook Reels, Búsqueda de Video en dispositivos móviles, Feed de Threads o Notificaciones de Facebook']}, {'content': 'Personas que coinciden con:', 'children': ['Intereses: Mochila (equipaje), Carteras (accesorios), Cuero (suministros para manualidades), Bolsa (accesorios), Billetera (accesorios), Accesorios de moda (accesorios) o Ropa (ropa)']}, {'content': 'Público Advantage+:', 'children': ['Activado']}])",
-          "src": "meta"
-        },
-        {
-          "date": "2026-08-22",
-          "cat": "otros",
           "text": "Segmentación del conjunto de anuncios actualizada · PieraCeresa_2026_Conversiones -Purchase",
           "src": "meta"
         },
@@ -3234,7 +3228,7 @@
         {
           "date": "2026-08-20",
           "cat": "presupuesto",
-          "text": "Presupuesto del conjunto de anuncios actualizado · PieraCeresa_2026_Conversiones - Add Payment Info ({'type': 'payment_amount', 'currency': 'CLP', 'old_value': 12000, 'additional_type': 'status_string', 'additional_value': ''} → {'type': 'payment_amount', 'currency': 'CLP', 'new_value': 15000, 'additional_type': 'status_string', 'additional_value': 'por día'})",
+          "text": "Presupuesto del conjunto de anuncios actualizado · PieraCeresa_2026_Conversiones - Add Payment Info (12.000 → 15.000 CLP/día)",
           "src": "meta"
         },
         {
@@ -3355,12 +3349,6 @@
           "date": "2026-08-18",
           "cat": "otros",
           "text": "Segmentación del conjunto de anuncios actualizada · PieraCeresa_2026_Conversiones - Add Payment Info",
-          "src": "meta"
-        },
-        {
-          "date": "2026-08-18",
-          "cat": "otros",
-          "text": "Segmentación del conjunto de anuncios actualizada · PieraCeresa_2026_Conversiones - Add Payment Info ([] → [{'content': 'Lugar:', 'children': ['Chile']}, {'content': 'Edad mínima:', 'children': ['18']}, {'content': 'Edad:', 'children': ['25 - 55']}, {'content': 'Sexo:', 'children': ['Mujeres']}, {'content': 'Ubicaciones:', 'children': ['en las siguientes páginas: Feed en computadoras, Feed de Instagram, Instagram Stories, Feed del perfil de Instagram, Inicio de la sección \"Explorar\" de Instagram, Instagram Reels, Feed web de Instagram, Instagram Stories en la web, Instagram Stories en msite, Búsqueda de Instagram, Apps y sitios web de terceros en dispositivos móviles (Audience\\xa0Network), Feed de dispositivos móviles, Columna derecha de computadoras, Video instream en dispositivos móviles, Video instream en computadoras de escritorio, Marketplace en computadoras, Marketplace en dispositivos móviles, Facebook Stories en dispositivos móviles, Messenger Stories, Búsqueda de Marketplace en computadoras de escritorio, Búsqueda de Marketplace en dispositivos móviles, Búsqueda en dispositivos móviles, Búsqueda en computadoras, Feed del perfil de Facebook en dispositivos móviles, Superposición de Facebook Reels en dispositivos móviles, Sección \"Explorar negocios\" de Facebook en dispositivos móviles, Facebook Reels, Búsqueda de Video en dispositivos móviles, Feed de Threads o Notificaciones de Facebook']}, {'content': 'Personas que coinciden con:', 'children': ['Intereses: Mochila (equipaje), Carteras (accesorios), Cuero (suministros para manualidades), Bolsa (accesorios), Billetera (accesorios), Accesorios de moda (accesorios) o Ropa (ropa)']}, {'content': 'Público Advantage+:', 'children': ['Activado']}])",
           "src": "meta"
         },
         {
@@ -3487,6 +3475,18 @@
           "date": "2026-08-10",
           "cat": "estado",
           "text": "Estado del anuncio actualizado cuando se completa su revisión · Carrusel Catalogo - Video Nuevo 6 (Activo → Inactivo)",
+          "src": "meta"
+        },
+        {
+          "date": "2026-08-10",
+          "cat": "estado",
+          "text": "Estado del anuncio actualizado · Carrusel Catalogo - Video Nuevo 6 (Activo → Procesamiento pendiente)",
+          "src": "meta"
+        },
+        {
+          "date": "2026-08-10",
+          "cat": "estado",
+          "text": "Estado del anuncio actualizado cuando se completa su revisión · Carrusel Catalogo - Video Nuevo 2 (Activo → Inactivo)",
           "src": "meta"
         }
       ]
@@ -10439,8 +10439,8 @@
         [
           35,
           3,
-          1195.32,
-          130,
+          1196.53,
+          131,
           112,
           1,
           0,
@@ -10455,11 +10455,11 @@
         [
           35,
           5,
-          14081.17,
-          1718,
-          1311,
+          14449.43,
+          1791,
+          1384,
+          58,
           55,
-          52,
           5,
           6,
           1,
@@ -10503,8 +10503,8 @@
         [
           35,
           14,
-          672.24,
-          108,
+          684.52,
+          109,
           94,
           8,
           6,
@@ -10519,8 +10519,8 @@
         [
           35,
           16,
-          4059.93,
-          272,
+          4157.08,
+          286,
           246,
           14,
           11,
@@ -10535,9 +10535,9 @@
         [
           35,
           17,
-          1660.0,
-          117,
-          107,
+          1688.94,
+          122,
+          112,
           2,
           1,
           0,
@@ -10545,14 +10545,14 @@
           0,
           0.0,
           0,
-          81,
+          83,
           4
         ],
         [
           35,
           18,
-          1371.16,
-          97,
+          1447.24,
+          102,
           90,
           3,
           3,
@@ -10949,7 +10949,7 @@
         {
           "date": "2026-08-24",
           "cat": "presupuesto",
-          "text": "Presupuesto de la campaña actualizado · Ago26 - Ventas - CBO - Prospecting - Angulos Nuevos ({'type': 'payment_amount', 'currency': 'ARS', 'old_value': 2000000, 'additional_type': 'status_string', 'additional_value': ''} → {'type': 'payment_amount', 'currency': 'ARS', 'new_value': 2500000, 'additional_type': 'status_string', 'additional_value': 'por día'})",
+          "text": "Presupuesto de la campaña actualizado · Ago26 - Ventas - CBO - Prospecting - Angulos Nuevos (20.000 → 25.000 ARS/día)",
           "src": "meta"
         },
         {
@@ -10961,7 +10961,7 @@
         {
           "date": "2026-08-24",
           "cat": "presupuesto",
-          "text": "Presupuesto de la campaña actualizado · Mar26 - Ventas - A+ - Catalogo - Frio ({'type': 'payment_amount', 'currency': 'ARS', 'old_value': 6000000, 'additional_type': 'status_string', 'additional_value': ''} → {'type': 'payment_amount', 'currency': 'ARS', 'new_value': 6500000, 'additional_type': 'status_string', 'additional_value': 'por día'})",
+          "text": "Presupuesto de la campaña actualizado · Mar26 - Ventas - A+ - Catalogo - Frio (60.000 → 65.000 ARS/día)",
           "src": "meta"
         },
         {
@@ -10979,7 +10979,7 @@
         {
           "date": "2026-08-24",
           "cat": "presupuesto",
-          "text": "Presupuesto de la campaña actualizado · Ago26 - Ventas - CBO - Prospecting - Angulos Nuevos ({'type': 'payment_amount', 'currency': 'ARS', 'old_value': 2500000, 'additional_type': 'status_string', 'additional_value': ''} → {'type': 'payment_amount', 'currency': 'ARS', 'new_value': 2000000, 'additional_type': 'status_string', 'additional_value': 'por día'})",
+          "text": "Presupuesto de la campaña actualizado · Ago26 - Ventas - CBO - Prospecting - Angulos Nuevos (25.000 → 20.000 ARS/día)",
           "src": "meta"
         },
         {
@@ -11063,7 +11063,7 @@
         {
           "date": "2026-08-24",
           "cat": "creativo",
-          "text": "Anuncio actualizado · Ad6 - Secuencia - Nueva coleccion 202666 - Copia 8 (['https://www.facebook.com/ads/image/?d=AQK4Wz8X0-HyPkQ9NXOknR0i4GiQz18D1MB-_OBvYIYvvtJ6Rm3JMxFtMdSoH6NibWzSzWomIFQulkwCZ_-NCRb5fEBcPIo-sgMF9wgsEJY4MoRhZSw0I3antAVe2H1zJhbU-03jStVxUADXhcfTh4Gi', '2867666776903766'] → ['https://www.facebook.com/ads/image/?d=AQKE3OOt6QLMHe2VLNZKEdqd4eMsS3UbVtY-W0RAEzbdQkAB2x7lwLXRH3gE4fnBUw-R59GLp5Puh2J9nTRY7Itld_iNFIFYU89DInrPtGeQ5V3ZkYxVvbx7HncyUvw3BkiMQATXCMKu-a5IdMPqtxs_', '2373174523497143'])",
+          "text": "Anuncio actualizado · Ad6 - Secuencia - Nueva coleccion 202666 - Copia 8",
           "src": "meta"
         },
         {
@@ -11087,7 +11087,7 @@
         {
           "date": "2026-08-23",
           "cat": "presupuesto",
-          "text": "Presupuesto de la campaña actualizado · SV - Ventas - Seasonals ({'type': 'payment_amount', 'currency': 'ARS', 'old_value': 800000, 'additional_type': 'status_string', 'additional_value': ''} → {'type': 'payment_amount', 'currency': 'ARS', 'new_value': 500000, 'additional_type': 'status_string', 'additional_value': 'por día'})",
+          "text": "Presupuesto de la campaña actualizado · SV - Ventas - Seasonals (8.000 → 5.000 ARS/día)",
           "src": "meta"
         },
         {
@@ -11195,25 +11195,25 @@
         {
           "date": "2026-08-22",
           "cat": "creativo",
-          "text": "Anuncio actualizado · Ad1 - Angulo Anticipo Temporada (['https://scontent-ord5-2.xx.fbcdn.net/v/t15.5256-10/724382177_2862091267477923_6737104777340963274_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=5fad0e&_nc_ohc=qQE-vLzfaVwQ7kNvwGrbh6b&_nc_oc=AdrbM2RvABaAadSjm1n43_kndzm4y2IJYZo-5t9KuT79PQAHK695-pvWRDjqthuKf9I&_nc_zt=23&_nc_ht=scontent-ord5-2.xx&edm=AHV8P_YEAAAA&_nc_gid=fTjkkJOa_UWQCLxeJpNCTw&_nc_tpa=Q5bMBQKbD6dF7Nw25I4hIYEO4nBj26SM82fwrAaPZKHz6e_v0u7wVqC4tyl0G5hKBstUPLASq-2KLg08RQ&oh=00_AQLGk6Pam_pfr-Lhb1TYTagSykWXmTtBHpWefC5rAZmxLA&oe=6A9DE73F', 'Anticipate al verano 🌞', 'Comprá ahora tu bikini ideal a precio de invierno, antes de los aumentos de temporada. Mix & Match: elegís corpiño y bombacha por separado, en tu talle. 3 y 6 cuotas sin interés.', '2849682472055897'] → ['https://scontent-ord5-2.xx.fbcdn.net/v/t15.5256-10/724382177_2862091267477923_6737104777340963274_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=5fad0e&_nc_ohc=qQE-vLzfaVwQ7kNvwGrbh6b&_nc_oc=AdrbM2RvABaAadSjm1n43_kndzm4y2IJYZo-5t9KuT79PQAHK695-pvWRDjqthuKf9I&_nc_zt=23&_nc_ht=scontent-ord5-2.xx&edm=AHV8P_YEAAAA&_nc_gid=fTjkkJOa_UWQCLxeJpNCTw&_nc_tpa=Q5bMBQLICS7ajlm68FqYBKjg42WUfNjDgiQbcCb_QjOa_CGCUB3BcZsL1ZG9ZgX1kRBCRwBNylanx-qqBA&oh=00_AQIydmypnTD6ujqe0jygOSrswzw74idG_WvBzAlERXGb2Q&oe=6A9DE73F', 'Anticipate al verano 🌞', 'Comprá ahora tu bikini ideal a precio de invierno, antes de los aumentos de temporada. Mix & Match: elegís corpiño y bombacha por separado, en tu talle. 3 y 6 cuotas sin interés.', '1800790647576316'])",
+          "text": "Anuncio actualizado · Ad1 - Angulo Anticipo Temporada",
           "src": "meta"
         },
         {
           "date": "2026-08-22",
           "cat": "creativo",
-          "text": "Anuncio actualizado · Ad3 - Angulo Producto Fit (['https://scontent-ord5-2.xx.fbcdn.net/v/t15.5256-10/741678793_2084210239147708_8094358419945236757_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=5fad0e&_nc_ohc=4M1K0ogQdA0Q7kNvwEzRg81&_nc_oc=AdqbEyy8YSjN_m9PT3ZrrweC6yis3CmB_ZuBGxGmHQhsH_Aesmvn1F6gXxOzWS1L87k&_nc_zt=23&_nc_ht=scontent-ord5-2.xx&edm=AHV8P_YEAAAA&_nc_gid=fTjkkJOa_UWQCLxeJpNCTw&_nc_tpa=Q5bMBQJpF_DNTm8AVAW3SE5zEMXS3T9_kQdcL9norEv1uV_NEvpQ9cqJcR1s6aitRj0nCux6YZZjLxxUkg&oh=00_AQKwHlibyasTCh9zXaPYc2P7iduW1X8KSk4k0550bINhfg&oe=6A9DF916', 'Tu top, tu bombacha, tu talle', 'Mossy tiene la moldería para tu cuerpo. Elegí cada parte por separado y armá el conjunto que más te guste. Lycra premium, calidad para durar todo el año. 3 y 6 cuotas sin interés.', '1598182351958698'] → ['https://scontent-ord5-2.xx.fbcdn.net/v/t15.5256-10/741678793_2084210239147708_8094358419945236757_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=5fad0e&_nc_ohc=4M1K0ogQdA0Q7kNvwEzRg81&_nc_oc=AdqbEyy8YSjN_m9PT3ZrrweC6yis3CmB_ZuBGxGmHQhsH_Aesmvn1F6gXxOzWS1L87k&_nc_zt=23&_nc_ht=scontent-ord5-2.xx&edm=AHV8P_YEAAAA&_nc_gid=fTjkkJOa_UWQCLxeJpNCTw&_nc_tpa=Q5bMBQJ5P2htmD4Nk_GkUgmhecTVgcWsBU-AwgPuu1J4p4XtoMEOms3nb6T0hL44mwgOuczLU6z8pajH3w&oh=00_AQK2Tdb0bI9z2H2VotyetsdUZ4ZZSyOcKWvMsoRiXjImqA&oe=6A9DF916', 'Tu top, tu bombacha, tu talle', 'Mossy tiene la moldería para tu cuerpo. Elegí cada parte por separado y armá el conjunto que más te guste. Lycra premium, calidad para durar todo el año. 3 y 6 cuotas sin interés.', '1944498880270939'])",
+          "text": "Anuncio actualizado · Ad3 - Angulo Producto Fit",
           "src": "meta"
         },
         {
           "date": "2026-08-22",
           "cat": "creativo",
-          "text": "Anuncio actualizado · Ad5 - Video - Sale - Copia (['https://scontent-ord5-1.xx.fbcdn.net/v/t15.5256-10/687021217_1651363332678503_237515213557182393_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=5fad0e&_nc_ohc=i1X9ZdkwMBoQ7kNvwFwKDdf&_nc_oc=AdqTpgkUxRDI7h6jPdRu9qA4J1hvBXPITvqzXlf4EN8wDpwwoer-l1xp5IX4Z-85RkE&_nc_zt=23&_nc_ht=scontent-ord5-1.xx&edm=AHV8P_YEAAAA&_nc_gid=fTjkkJOa_UWQCLxeJpNCTw&_nc_tpa=Q5bMBQLS9Kx5l3W-YlGvPt47tK0CJQP4otNjnY2pQr1v1CWzpMUVOvwxkEkQleI15GwP-76ktT1JDsHg4Q&oh=00_AQK0qFLyASi3QbLKX2OX54VYWO0LU9hSi-U5bjEhl3NceQ&oe=6A9DFBD8', 'MIX & MATCH 👙', 'HOT SALE 🔥 Apurate antes que se agoten!!\\n3 y 6 cuotas sin interés! Envíos a todo el país!\\n15% OFF con transferencia.', '1439325044607610'] → ['https://scontent-ord5-1.xx.fbcdn.net/v/t15.5256-10/687021217_1651363332678503_237515213557182393_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=5fad0e&_nc_ohc=i1X9ZdkwMBoQ7kNvwFwKDdf&_nc_oc=AdqTpgkUxRDI7h6jPdRu9qA4J1hvBXPITvqzXlf4EN8wDpwwoer-l1xp5IX4Z-85RkE&_nc_zt=23&_nc_ht=scontent-ord5-1.xx&edm=AHV8P_YEAAAA&_nc_gid=fTjkkJOa_UWQCLxeJpNCTw&_nc_tpa=Q5bMBQJFcNLRgVmThYOB0CdAGgD0GC8viWo4vqUUe5adIvBDeaRAmvysE0IcCNrNQNrXvYT0Ctut9olCHg&oh=00_AQI1h0RfC9bsOOtV-I-xgJfYGe_8n6nptr-dslSA7ZsuAA&oe=6A9DFBD8', 'MIX & MATCH 👙', 'HOT SALE 🔥 Apurate antes que se agoten!!\\n3 y 6 cuotas sin interés! Envíos a todo el país!\\n15% OFF con transferencia.', '1387858739967866'])",
+          "text": "Anuncio actualizado · Ad5 - Video - Sale - Copia",
           "src": "meta"
         },
         {
           "date": "2026-08-22",
           "cat": "creativo",
-          "text": "Anuncio actualizado · Ad2 - Angulo Viaje (['https://scontent-ord5-1.xx.fbcdn.net/v/t15.5256-10/734570149_1499701458078730_8032068719461921888_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=5fad0e&_nc_ohc=Vy1fvODSbmcQ7kNvwFr33b9&_nc_oc=AdqY46PicQAGJSbxvy0BQp0rLHPuE5ki6xcfm13_8Lmuzu06nL_GBpYe9OT-tNb-rKk&_nc_zt=23&_nc_ht=scontent-ord5-1.xx&edm=AHV8P_YEAAAA&_nc_gid=fTjkkJOa_UWQCLxeJpNCTw&_nc_tpa=Q5bMBQL5qhSCrv831lKlz3V4Vjk_EqLyS25d9ZCqy1cOdAlVCP5QxJPS-tFXXeVsfBCjazzMPVhF72jKmg&oh=00_AQJLRZBqrn-qawgqheKn5w1SLvuvg6pBKuishSHF8nCbig&oe=6A9DDBA4', '¿Te escapás al sol este invierno? ☀️', 'Si viajás a un destino cálido, llevate el bikini perfecto. Mix & Match: combiná modelos y talles como quieras. Envíos a todo el país, 3 y 6 cuotas sin interés.', '1350379797258856'] → ['https://scontent-ord5-1.xx.fbcdn.net/v/t15.5256-10/734570149_1499701458078730_8032068719461921888_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=5fad0e&_nc_ohc=Vy1fvODSbmcQ7kNvwFr33b9&_nc_oc=AdqY46PicQAGJSbxvy0BQp0rLHPuE5ki6xcfm13_8Lmuzu06nL_GBpYe9OT-tNb-rKk&_nc_zt=23&_nc_ht=scontent-ord5-1.xx&edm=AHV8P_YEAAAA&_nc_gid=fTjkkJOa_UWQCLxeJpNCTw&_nc_tpa=Q5bMBQITDnf6a43L7JQJwve8EabsbcPTv19ZrB3EwgljzkkqCMpzb3SiJEtgQ33g705guZZCAiRqr91AFg&oh=00_AQJ_3FejTVU-p7wc3viviXYgxi1f554s57l19F9h9iePLQ&oe=6A9DDBA4', '¿Te escapás al sol este invierno? ☀️', 'Si viajás a un destino cálido, llevate el bikini perfecto. Mix & Match: combiná modelos y talles como quieras. Envíos a todo el país, 3 y 6 cuotas sin interés.', '1744196873375087'])",
+          "text": "Anuncio actualizado · Ad2 - Angulo Viaje",
           "src": "meta"
         },
         {
@@ -14840,17 +14840,17 @@
         [
           13,
           0,
-          7076.81,
-          573,
-          392,
-          31,
+          7332.96,
+          603,
+          433,
+          32,
           23,
           5,
           1,
           1,
           61999.15,
           0,
-          64,
+          65,
           1
         ]
       ],
@@ -14938,7 +14938,7 @@
         {
           "date": "2026-09-01",
           "cat": "otros",
-          "text": "Segmentación del conjunto de anuncios actualizada · Alba&Co_2026_Conversiones_Purchase_Adv+ ([{'content': 'Lugar:', 'children': ['Argentina']}, {'content': 'Edad:', 'children': ['25 - 55']}, {'content': 'Ubicaciones:', 'children': ['en las siguientes páginas: Feed en computadoras, Feed de Instagram, Instagram Stories, Feed del perfil de Instagram, Inicio de la sección \"Explorar\" de Instagram, Instagram Reels, Feed web de Instagram, Instagram Stories en la web, Instagram Stories en msite, Búsqueda de Instagram, Apps y sitios web de terceros en dispositivos móviles (Audience\\xa0Network), Feed de dispositivos móviles, Columna derecha de computadoras, Video instream en dispositivos móviles, Video instream en computadoras de escritorio, Marketplace en computadoras, Marketplace en dispositivos móviles, Facebook Stories en dispositivos móviles, Messenger Stories, Búsqueda de Marketplace en computadoras de escritorio, Búsqueda de Marketplace en dispositivos móviles, Búsqueda en dispositivos móviles, Búsqueda en computadoras, Feed del perfil de Facebook en dispositivos móviles, Superposición de Facebook Reels en dispositivos móviles, Sección \"Explorar negocios\" de Facebook en dispositivos móviles, Facebook Reels, Búsqueda de Video en dispositivos móviles, Feed de Threads o Notificaciones de Facebook']}, {'content': 'Personas que coinciden con:', 'children': ['Intereses: Crianza (niños y crianza) o Fiestas premamá (niños y crianza)', 'Padres: Padres (hasta 12 meses) o Padres con niños pequeños (1-2 años)']}, {'content': 'Público Advantage+:', 'children': ['Desactivado']}] → [{'content': 'Lugar:', 'children': ['Argentina']}, {'content': 'Edad mínima:', 'children': ['18']}, {'content': 'Edad:', 'children': ['25 - 55']}, {'content': 'Ubicaciones:', 'children': ['en las siguientes páginas: Feed en computadoras, Feed de Instagram, Instagram Stories, Feed del perfil de Instagram, Inicio de la sección \"Explorar\" de Instagram, Instagram Reels, Feed web de Instagram, Instagram Stories en la web, Instagram Stories en msite, Búsqueda de Instagram, Apps y sitios web de terceros en dispositivos móviles (Audience\\xa0Network), Feed de dispositivos móviles, Columna derecha de computadoras, Video instream en dispositivos móviles, Video instream en computadoras de escritorio, Marketplace en computadoras, Marketplace en dispositivos móviles, Facebook Stories en dispositivos móviles, Messenger Stories, Estado de WhatsApp, Búsqueda de Marketplace en computadoras de escritorio, Búsqueda de Marketplace en dispositivos móviles, Búsqueda en dispositivos móviles, Búsqueda en computadoras, Feed del perfil de Facebook en dispositivos móviles, Superposición de Facebook Reels en dispositivos móviles, Sección \"Explorar negocios\" de Facebook en dispositivos móviles, Facebook Reels, Búsqueda de Video en dispositivos móviles, Feed de Threads o Notificaciones de Facebook']}, {'content': 'Personas que coinciden con:', 'children': ['Intereses: Crianza (niños y crianza) o Fiestas premamá (niños y crianza)', 'Padres: Padres (hasta 12 meses) o Padres con niños pequeños (1-2 años)']}, {'content': 'Público Advantage+:', 'children': ['Activado']}])",
+          "text": "Segmentación del conjunto de anuncios actualizada · Alba&Co_2026_Conversiones_Purchase_Adv+",
           "src": "meta"
         },
         {
@@ -15406,7 +15406,7 @@
         {
           "date": "2026-08-20",
           "cat": "otros",
-          "text": "Segmentación del conjunto de anuncios actualizada · Alba&Co_2026_Trafico_Adv+ ([] → [{'content': 'Lugar:', 'children': ['Argentina']}, {'content': 'Edad mínima:', 'children': ['18']}, {'content': 'Edad:', 'children': ['25 - 55']}, {'content': 'Ubicaciones:', 'children': ['en las siguientes páginas: Feed en computadoras, Feed de Instagram, Instagram Stories, Feed del perfil de Instagram, Inicio de la sección \"Explorar\" de Instagram, Instagram Reels, Feed web de Instagram, Instagram Stories en la web, Instagram Stories en msite, Instagram Reels en el sitio web, Búsqueda de Instagram, Apps y sitios web de terceros en dispositivos móviles (Audience\\xa0Network), Feed de dispositivos móviles, Columna derecha de computadoras, Video instream en dispositivos móviles, Video instream en computadoras de escritorio, Marketplace en computadoras, Marketplace en dispositivos móviles, Facebook Stories en dispositivos móviles, Messenger Stories, Estado de WhatsApp, Búsqueda de Marketplace en computadoras de escritorio, Búsqueda de Marketplace en dispositivos móviles, Búsqueda en dispositivos móviles, Búsqueda en computadoras, Feed del perfil de Facebook en dispositivos móviles, Superposición de Facebook Reels en dispositivos móviles, Sección \"Explorar negocios\" de Facebook en dispositivos móviles, Facebook Reels, Búsqueda de Video en dispositivos móviles, Feed de Threads o Notificaciones de Facebook']}, {'content': 'Personas que coinciden con:', 'children': ['Intereses: Crianza (niños y crianza) o Fiestas premamá (niños y crianza)', 'Padres: Padres (hasta 12 meses) o Padres con niños pequeños (1-2 años)']}, {'content': 'Público Advantage+:', 'children': ['Activado']}])",
+          "text": "Segmentación del conjunto de anuncios actualizada · Alba&Co_2026_Trafico_Adv+",
           "src": "meta"
         },
         {
@@ -15496,7 +15496,7 @@
         {
           "date": "2026-08-20",
           "cat": "otros",
-          "text": "Segmentación del conjunto de anuncios actualizada · Alba&Co_2026_Conversiones_Purchase_Adv+ ([] → [{'content': 'Lugar:', 'children': ['Argentina']}, {'content': 'Edad:', 'children': ['25 - 55']}, {'content': 'Ubicaciones:', 'children': ['en las siguientes páginas: Feed en computadoras, Feed de Instagram, Instagram Stories, Feed del perfil de Instagram, Inicio de la sección \"Explorar\" de Instagram, Instagram Reels, Feed web de Instagram, Instagram Stories en la web, Instagram Stories en msite, Búsqueda de Instagram, Apps y sitios web de terceros en dispositivos móviles (Audience\\xa0Network), Feed de dispositivos móviles, Columna derecha de computadoras, Video instream en dispositivos móviles, Video instream en computadoras de escritorio, Marketplace en computadoras, Marketplace en dispositivos móviles, Facebook Stories en dispositivos móviles, Messenger Stories, Búsqueda de Marketplace en computadoras de escritorio, Búsqueda de Marketplace en dispositivos móviles, Búsqueda en dispositivos móviles, Búsqueda en computadoras, Feed del perfil de Facebook en dispositivos móviles, Superposición de Facebook Reels en dispositivos móviles, Sección \"Explorar negocios\" de Facebook en dispositivos móviles, Facebook Reels, Búsqueda de Video en dispositivos móviles, Feed de Threads o Notificaciones de Facebook']}, {'content': 'Personas que coinciden con:', 'children': ['Intereses: Crianza (niños y crianza) o Fiestas premamá (niños y crianza)', 'Padres: Padres (hasta 12 meses) o Padres con niños pequeños (1-2 años)']}, {'content': 'Público Advantage+:', 'children': ['Desactivado']}])",
+          "text": "Segmentación del conjunto de anuncios actualizada · Alba&Co_2026_Conversiones_Purchase_Adv+",
           "src": "meta"
         },
         {
@@ -17786,9 +17786,9 @@
         [
           35,
           3,
-          2107.09,
-          340,
-          316,
+          2127.15,
+          344,
+          330,
           5,
           0,
           0,
@@ -17802,9 +17802,9 @@
         [
           35,
           4,
-          752.9,
-          170,
-          159,
+          787.38,
+          175,
+          163,
           4,
           0,
           0,
@@ -17818,9 +17818,9 @@
         [
           35,
           13,
-          355.27,
-          43,
-          39,
+          386.6,
+          49,
+          41,
           2,
           0,
           0,
@@ -18082,25 +18082,25 @@
         {
           "date": "2026-08-23",
           "cat": "creativo",
-          "text": "Anuncio actualizado · 2 - Nueva - Copia 2 (['https://scontent-ord5-2.xx.fbcdn.net/v/t45.1600-4/758264837_10164367027431311_6931242084024692123_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=d5bd00&_nc_ohc=DxKrRRgUOLEQ7kNvwE8r9eo&_nc_oc=Adot2vEQ3iSE74wbj9chPwXhAcAOy54wY17lBFDjJEU5O_1qzYV-cESBYd9OyjF6FSk&_nc_zt=1&_nc_ht=scontent-ord5-2.xx&edm=AHV8P_YEAAAA&_nc_gid=neVTw-_rAxSMqmxEWdgjlg&_nc_tpa=Q5bMBQI_miqtH9DlBBKXSKarhzWUSif7Hdf4ZJJKZDv8JWFaXi2ViIbicJCFgJe3lJjJP7ErAptM8DKjzw&oh=00_AQJQ4hc5sP2XYi6cIt0xNiMF9qF-yJUIscTUacnOmBGAEg&oe=6A9DE668', '2137325740548135'] → ['https://scontent-ord5-2.xx.fbcdn.net/v/t45.1600-4/758264837_10164367027431311_6931242084024692123_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=d5bd00&_nc_ohc=DxKrRRgUOLEQ7kNvwE8r9eo&_nc_oc=Adot2vEQ3iSE74wbj9chPwXhAcAOy54wY17lBFDjJEU5O_1qzYV-cESBYd9OyjF6FSk&_nc_zt=1&_nc_ht=scontent-ord5-2.xx&edm=AHV8P_YEAAAA&_nc_gid=neVTw-_rAxSMqmxEWdgjlg&_nc_tpa=Q5bMBQI_miqtH9DlBBKXSKarhzWUSif7Hdf4ZJJKZDv8JWFaXi2ViIbicJCFgJe3lJjJP7ErAptM8DKjzw&oh=00_AQJQ4hc5sP2XYi6cIt0xNiMF9qF-yJUIscTUacnOmBGAEg&oe=6A9DE668', '1057844500501855'])",
+          "text": "Anuncio actualizado · 2 - Nueva - Copia 2",
           "src": "meta"
         },
         {
           "date": "2026-08-23",
           "cat": "creativo",
-          "text": "Anuncio actualizado · 2 - Nueva - Copia 3 (['https://scontent-ord5-1.xx.fbcdn.net/v/t45.1600-4/759515077_10164366932286311_2366277194909051095_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=d5bd00&_nc_ohc=uQOWa23OcG4Q7kNvwGVpkqA&_nc_oc=AdpYyUUthx_64HQcE5UMPKIzsrQbZ8MIXnJRwDUn9WP78fNwQ8BXNrnlitoYKdX4TOg&_nc_zt=1&_nc_ht=scontent-ord5-1.xx&edm=AHV8P_YEAAAA&_nc_gid=neVTw-_rAxSMqmxEWdgjlg&_nc_tpa=Q5bMBQIpcleweJB-ugB3WKDpt4B9w_ujE_AQh2FrN8ap8dGVeOlTnR86Eo1ILl37pu1q_e_TY1KwfeOjtA&oh=00_AQIArNrQzGcwNy3LnMK01J67RTqtXk30etm0HnJbVLRB6Q&oe=6A9E0865', '4417488835246604'] → ['https://scontent-ord5-1.xx.fbcdn.net/v/t45.1600-4/759515077_10164366932286311_2366277194909051095_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=d5bd00&_nc_ohc=uQOWa23OcG4Q7kNvwGVpkqA&_nc_oc=AdpYyUUthx_64HQcE5UMPKIzsrQbZ8MIXnJRwDUn9WP78fNwQ8BXNrnlitoYKdX4TOg&_nc_zt=1&_nc_ht=scontent-ord5-1.xx&edm=AHV8P_YEAAAA&_nc_gid=neVTw-_rAxSMqmxEWdgjlg&_nc_tpa=Q5bMBQIpcleweJB-ugB3WKDpt4B9w_ujE_AQh2FrN8ap8dGVeOlTnR86Eo1ILl37pu1q_e_TY1KwfeOjtA&oh=00_AQIArNrQzGcwNy3LnMK01J67RTqtXk30etm0HnJbVLRB6Q&oe=6A9E0865', '1349061377299127'])",
+          "text": "Anuncio actualizado · 2 - Nueva - Copia 3",
           "src": "meta"
         },
         {
           "date": "2026-08-23",
           "cat": "creativo",
-          "text": "Anuncio actualizado · 2 - Nueva - Copia (['https://scontent-ord5-1.xx.fbcdn.net/v/t45.1600-4/760492353_10164367019136311_155505987675196744_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=d5bd00&_nc_ohc=7yEZXkpt-9kQ7kNvwEA_3_1&_nc_oc=AdrI9hlvvT8r7_feEfibf26PMNwrFcRUqSMdxKO2Z-5uMdJBsIIiK6V656r_ntRbB1Q&_nc_zt=1&_nc_ht=scontent-ord5-1.xx&edm=AHV8P_YEAAAA&_nc_gid=neVTw-_rAxSMqmxEWdgjlg&_nc_tpa=Q5bMBQIZUQTCX5EBQcs2TmBmaM-LQ7hANUaFVtBkuBSSDKhlzyQqHnPxpFuadpaR0sZnkFCoa9MENqxfNg&oh=00_AQKxW2FL9EY7COtWDRGNgS7QchpKIWZS_TbTtN_CrzJxrw&oe=6A9E08B4', '935549649582035'] → ['https://scontent-ord5-1.xx.fbcdn.net/v/t45.1600-4/760492353_10164367019136311_155505987675196744_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=d5bd00&_nc_ohc=7yEZXkpt-9kQ7kNvwEA_3_1&_nc_oc=AdrI9hlvvT8r7_feEfibf26PMNwrFcRUqSMdxKO2Z-5uMdJBsIIiK6V656r_ntRbB1Q&_nc_zt=1&_nc_ht=scontent-ord5-1.xx&edm=AHV8P_YEAAAA&_nc_gid=neVTw-_rAxSMqmxEWdgjlg&_nc_tpa=Q5bMBQIZUQTCX5EBQcs2TmBmaM-LQ7hANUaFVtBkuBSSDKhlzyQqHnPxpFuadpaR0sZnkFCoa9MENqxfNg&oh=00_AQKxW2FL9EY7COtWDRGNgS7QchpKIWZS_TbTtN_CrzJxrw&oe=6A9E08B4', '1555241422420165'])",
+          "text": "Anuncio actualizado · 2 - Nueva - Copia",
           "src": "meta"
         },
         {
           "date": "2026-08-23",
           "cat": "creativo",
-          "text": "Anuncio actualizado · Nuevo anuncio de Clientes potenciales - Copia 4 (['https://scontent-ord5-1.xx.fbcdn.net/v/t45.1600-4/724174529_1381167794076880_4182131687837934537_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=d5bd00&_nc_ohc=_KFq8smx2TsQ7kNvwH8MY7z&_nc_oc=AdrtPOE7aCHYME2qlm95Nl6YNJEZYhIUSlxjymTfrYQetC3PDN2N1AYl7YTMm-Rt-bs&_nc_zt=1&_nc_ht=scontent-ord5-1.xx&edm=AHV8P_YEAAAA&_nc_gid=neVTw-_rAxSMqmxEWdgjlg&_nc_tpa=Q5bMBQIyI6oq4XcSCyHRqB7G9rX_TNiyzyGo-oYgVWQOZS3wbX4mxF9ZExTwgypqgRhpAqQQNVtmKi-OlA&oh=00_AQJqA3xeqalRYGEtEzlQ8j5UtGhX-tLFfi4Ev-05QqIZ_A&oe=6A9DE24A', '1092197923258138'] → ['https://scontent-ord5-1.xx.fbcdn.net/v/t45.1600-4/724174529_1381167794076880_4182131687837934537_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=d5bd00&_nc_ohc=_KFq8smx2TsQ7kNvwH8MY7z&_nc_oc=AdrtPOE7aCHYME2qlm95Nl6YNJEZYhIUSlxjymTfrYQetC3PDN2N1AYl7YTMm-Rt-bs&_nc_zt=1&_nc_ht=scontent-ord5-1.xx&edm=AHV8P_YEAAAA&_nc_gid=neVTw-_rAxSMqmxEWdgjlg&_nc_tpa=Q5bMBQIyI6oq4XcSCyHRqB7G9rX_TNiyzyGo-oYgVWQOZS3wbX4mxF9ZExTwgypqgRhpAqQQNVtmKi-OlA&oh=00_AQJqA3xeqalRYGEtEzlQ8j5UtGhX-tLFfi4Ev-05QqIZ_A&oe=6A9DE24A', '1038583442117720'])",
+          "text": "Anuncio actualizado · Nuevo anuncio de Clientes potenciales - Copia 4",
           "src": "meta"
         },
         {
@@ -18125,30 +18125,6 @@
           "date": "2026-08-23",
           "cat": "estado",
           "text": "Estado del anuncio actualizado · 2 - Nueva - Copia 3 (Activo → Procesamiento pendiente)",
-          "src": "meta"
-        },
-        {
-          "date": "2026-08-23",
-          "cat": "creativo",
-          "text": "Anuncio actualizado · 2 - Nueva - Copia (['https://scontent-ord5-1.xx.fbcdn.net/v/t45.1600-4/760492353_10164367019136311_155505987675196744_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=d5bd00&_nc_ohc=7yEZXkpt-9kQ7kNvwEA_3_1&_nc_oc=AdrI9hlvvT8r7_feEfibf26PMNwrFcRUqSMdxKO2Z-5uMdJBsIIiK6V656r_ntRbB1Q&_nc_zt=1&_nc_ht=scontent-ord5-1.xx&edm=AHV8P_YEAAAA&_nc_gid=neVTw-_rAxSMqmxEWdgjlg&_nc_tpa=Q5bMBQIZUQTCX5EBQcs2TmBmaM-LQ7hANUaFVtBkuBSSDKhlzyQqHnPxpFuadpaR0sZnkFCoa9MENqxfNg&oh=00_AQKxW2FL9EY7COtWDRGNgS7QchpKIWZS_TbTtN_CrzJxrw&oe=6A9E08B4', '1033237299543492'] → ['https://scontent-ord5-1.xx.fbcdn.net/v/t45.1600-4/760492353_10164367019136311_155505987675196744_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=d5bd00&_nc_ohc=7yEZXkpt-9kQ7kNvwEA_3_1&_nc_oc=AdrI9hlvvT8r7_feEfibf26PMNwrFcRUqSMdxKO2Z-5uMdJBsIIiK6V656r_ntRbB1Q&_nc_zt=1&_nc_ht=scontent-ord5-1.xx&edm=AHV8P_YEAAAA&_nc_gid=neVTw-_rAxSMqmxEWdgjlg&_nc_tpa=Q5bMBQIZUQTCX5EBQcs2TmBmaM-LQ7hANUaFVtBkuBSSDKhlzyQqHnPxpFuadpaR0sZnkFCoa9MENqxfNg&oh=00_AQKxW2FL9EY7COtWDRGNgS7QchpKIWZS_TbTtN_CrzJxrw&oe=6A9E08B4', '935549649582035'])",
-          "src": "meta"
-        },
-        {
-          "date": "2026-08-23",
-          "cat": "creativo",
-          "text": "Anuncio actualizado · 2 - Nueva - Copia 3 (['https://scontent-ord5-1.xx.fbcdn.net/v/t45.1600-4/759515077_10164366932286311_2366277194909051095_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=d5bd00&_nc_ohc=uQOWa23OcG4Q7kNvwGVpkqA&_nc_oc=AdpYyUUthx_64HQcE5UMPKIzsrQbZ8MIXnJRwDUn9WP78fNwQ8BXNrnlitoYKdX4TOg&_nc_zt=1&_nc_ht=scontent-ord5-1.xx&edm=AHV8P_YEAAAA&_nc_gid=neVTw-_rAxSMqmxEWdgjlg&_nc_tpa=Q5bMBQIpcleweJB-ugB3WKDpt4B9w_ujE_AQh2FrN8ap8dGVeOlTnR86Eo1ILl37pu1q_e_TY1KwfeOjtA&oh=00_AQIArNrQzGcwNy3LnMK01J67RTqtXk30etm0HnJbVLRB6Q&oe=6A9E0865', '1718689146020304'] → ['https://scontent-ord5-1.xx.fbcdn.net/v/t45.1600-4/759515077_10164366932286311_2366277194909051095_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=d5bd00&_nc_ohc=uQOWa23OcG4Q7kNvwGVpkqA&_nc_oc=AdpYyUUthx_64HQcE5UMPKIzsrQbZ8MIXnJRwDUn9WP78fNwQ8BXNrnlitoYKdX4TOg&_nc_zt=1&_nc_ht=scontent-ord5-1.xx&edm=AHV8P_YEAAAA&_nc_gid=neVTw-_rAxSMqmxEWdgjlg&_nc_tpa=Q5bMBQIpcleweJB-ugB3WKDpt4B9w_ujE_AQh2FrN8ap8dGVeOlTnR86Eo1ILl37pu1q_e_TY1KwfeOjtA&oh=00_AQIArNrQzGcwNy3LnMK01J67RTqtXk30etm0HnJbVLRB6Q&oe=6A9E0865', '4417488835246604'])",
-          "src": "meta"
-        },
-        {
-          "date": "2026-08-23",
-          "cat": "creativo",
-          "text": "Anuncio actualizado · Nuevo anuncio de Clientes potenciales - Copia 4 (['https://scontent-ord5-1.xx.fbcdn.net/v/t45.1600-4/724174529_1381167794076880_4182131687837934537_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=d5bd00&_nc_ohc=_KFq8smx2TsQ7kNvwH8MY7z&_nc_oc=AdrtPOE7aCHYME2qlm95Nl6YNJEZYhIUSlxjymTfrYQetC3PDN2N1AYl7YTMm-Rt-bs&_nc_zt=1&_nc_ht=scontent-ord5-1.xx&edm=AHV8P_YEAAAA&_nc_gid=neVTw-_rAxSMqmxEWdgjlg&_nc_tpa=Q5bMBQIyI6oq4XcSCyHRqB7G9rX_TNiyzyGo-oYgVWQOZS3wbX4mxF9ZExTwgypqgRhpAqQQNVtmKi-OlA&oh=00_AQJqA3xeqalRYGEtEzlQ8j5UtGhX-tLFfi4Ev-05QqIZ_A&oe=6A9DE24A', '1350166430661108'] → ['https://scontent-ord5-1.xx.fbcdn.net/v/t45.1600-4/724174529_1381167794076880_4182131687837934537_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=d5bd00&_nc_ohc=_KFq8smx2TsQ7kNvwH8MY7z&_nc_oc=AdrtPOE7aCHYME2qlm95Nl6YNJEZYhIUSlxjymTfrYQetC3PDN2N1AYl7YTMm-Rt-bs&_nc_zt=1&_nc_ht=scontent-ord5-1.xx&edm=AHV8P_YEAAAA&_nc_gid=neVTw-_rAxSMqmxEWdgjlg&_nc_tpa=Q5bMBQIyI6oq4XcSCyHRqB7G9rX_TNiyzyGo-oYgVWQOZS3wbX4mxF9ZExTwgypqgRhpAqQQNVtmKi-OlA&oh=00_AQJqA3xeqalRYGEtEzlQ8j5UtGhX-tLFfi4Ev-05QqIZ_A&oe=6A9DE24A', '1092197923258138'])",
-          "src": "meta"
-        },
-        {
-          "date": "2026-08-23",
-          "cat": "creativo",
-          "text": "Anuncio actualizado · 2 - Nueva - Copia 2 (['https://scontent-ord5-2.xx.fbcdn.net/v/t45.1600-4/758264837_10164367027431311_6931242084024692123_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=d5bd00&_nc_ohc=DxKrRRgUOLEQ7kNvwE8r9eo&_nc_oc=Adot2vEQ3iSE74wbj9chPwXhAcAOy54wY17lBFDjJEU5O_1qzYV-cESBYd9OyjF6FSk&_nc_zt=1&_nc_ht=scontent-ord5-2.xx&edm=AHV8P_YEAAAA&_nc_gid=neVTw-_rAxSMqmxEWdgjlg&_nc_tpa=Q5bMBQI_miqtH9DlBBKXSKarhzWUSif7Hdf4ZJJKZDv8JWFaXi2ViIbicJCFgJe3lJjJP7ErAptM8DKjzw&oh=00_AQJQ4hc5sP2XYi6cIt0xNiMF9qF-yJUIscTUacnOmBGAEg&oe=6A9DE668', '1319994966616546'] → ['https://scontent-ord5-2.xx.fbcdn.net/v/t45.1600-4/758264837_10164367027431311_6931242084024692123_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=d5bd00&_nc_ohc=DxKrRRgUOLEQ7kNvwE8r9eo&_nc_oc=Adot2vEQ3iSE74wbj9chPwXhAcAOy54wY17lBFDjJEU5O_1qzYV-cESBYd9OyjF6FSk&_nc_zt=1&_nc_ht=scontent-ord5-2.xx&edm=AHV8P_YEAAAA&_nc_gid=neVTw-_rAxSMqmxEWdgjlg&_nc_tpa=Q5bMBQI_miqtH9DlBBKXSKarhzWUSif7Hdf4ZJJKZDv8JWFaXi2ViIbicJCFgJe3lJjJP7ErAptM8DKjzw&oh=00_AQJQ4hc5sP2XYi6cIt0xNiMF9qF-yJUIscTUacnOmBGAEg&oe=6A9DE668', '2137325740548135'])",
           "src": "meta"
         },
         {
@@ -18214,7 +18190,7 @@
         {
           "date": "2026-08-11",
           "cat": "creativo",
-          "text": "Anuncio actualizado · 2 - Nueva - Copia (['https://scontent-ord5-1.xx.fbcdn.net/v/t45.1600-4/760492353_10164367019136311_155505987675196744_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=d5bd00&_nc_ohc=7yEZXkpt-9kQ7kNvwEA_3_1&_nc_oc=AdrI9hlvvT8r7_feEfibf26PMNwrFcRUqSMdxKO2Z-5uMdJBsIIiK6V656r_ntRbB1Q&_nc_zt=1&_nc_ht=scontent-ord5-1.xx&edm=AHV8P_YEAAAA&_nc_gid=neVTw-_rAxSMqmxEWdgjlg&_nc_tpa=Q5bMBQIZUQTCX5EBQcs2TmBmaM-LQ7hANUaFVtBkuBSSDKhlzyQqHnPxpFuadpaR0sZnkFCoa9MENqxfNg&oh=00_AQKxW2FL9EY7COtWDRGNgS7QchpKIWZS_TbTtN_CrzJxrw&oe=6A9E08B4', '1703935427327209'] → ['https://scontent-ord5-1.xx.fbcdn.net/v/t45.1600-4/760492353_10164367019136311_155505987675196744_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=d5bd00&_nc_ohc=7yEZXkpt-9kQ7kNvwEA_3_1&_nc_oc=AdrI9hlvvT8r7_feEfibf26PMNwrFcRUqSMdxKO2Z-5uMdJBsIIiK6V656r_ntRbB1Q&_nc_zt=1&_nc_ht=scontent-ord5-1.xx&edm=AHV8P_YEAAAA&_nc_gid=neVTw-_rAxSMqmxEWdgjlg&_nc_tpa=Q5bMBQIZUQTCX5EBQcs2TmBmaM-LQ7hANUaFVtBkuBSSDKhlzyQqHnPxpFuadpaR0sZnkFCoa9MENqxfNg&oh=00_AQKxW2FL9EY7COtWDRGNgS7QchpKIWZS_TbTtN_CrzJxrw&oe=6A9E08B4', '1033237299543492'])",
+          "text": "Anuncio actualizado · 2 - Nueva - Copia",
           "src": "meta"
         },
         {
@@ -18232,7 +18208,7 @@
         {
           "date": "2026-08-11",
           "cat": "creativo",
-          "text": "Anuncio actualizado · 2 - Nueva - Copia 2 (['https://scontent-ord5-2.xx.fbcdn.net/v/t45.1600-4/758264837_10164367027431311_6931242084024692123_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=d5bd00&_nc_ohc=DxKrRRgUOLEQ7kNvwE8r9eo&_nc_oc=Adot2vEQ3iSE74wbj9chPwXhAcAOy54wY17lBFDjJEU5O_1qzYV-cESBYd9OyjF6FSk&_nc_zt=1&_nc_ht=scontent-ord5-2.xx&edm=AHV8P_YEAAAA&_nc_gid=neVTw-_rAxSMqmxEWdgjlg&_nc_tpa=Q5bMBQI_miqtH9DlBBKXSKarhzWUSif7Hdf4ZJJKZDv8JWFaXi2ViIbicJCFgJe3lJjJP7ErAptM8DKjzw&oh=00_AQJQ4hc5sP2XYi6cIt0xNiMF9qF-yJUIscTUacnOmBGAEg&oe=6A9DE668', '2255921345233122'] → ['https://scontent-ord5-2.xx.fbcdn.net/v/t45.1600-4/758264837_10164367027431311_6931242084024692123_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=d5bd00&_nc_ohc=DxKrRRgUOLEQ7kNvwE8r9eo&_nc_oc=Adot2vEQ3iSE74wbj9chPwXhAcAOy54wY17lBFDjJEU5O_1qzYV-cESBYd9OyjF6FSk&_nc_zt=1&_nc_ht=scontent-ord5-2.xx&edm=AHV8P_YEAAAA&_nc_gid=neVTw-_rAxSMqmxEWdgjlg&_nc_tpa=Q5bMBQI_miqtH9DlBBKXSKarhzWUSif7Hdf4ZJJKZDv8JWFaXi2ViIbicJCFgJe3lJjJP7ErAptM8DKjzw&oh=00_AQJQ4hc5sP2XYi6cIt0xNiMF9qF-yJUIscTUacnOmBGAEg&oe=6A9DE668', '1319994966616546'])",
+          "text": "Anuncio actualizado · 2 - Nueva - Copia 2",
           "src": "meta"
         },
         {
@@ -18250,7 +18226,7 @@
         {
           "date": "2026-08-11",
           "cat": "creativo",
-          "text": "Anuncio actualizado · 2 - Nueva - Copia 3 (['https://scontent-ord5-1.xx.fbcdn.net/v/t45.1600-4/759515077_10164366932286311_2366277194909051095_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=d5bd00&_nc_ohc=uQOWa23OcG4Q7kNvwGVpkqA&_nc_oc=AdpYyUUthx_64HQcE5UMPKIzsrQbZ8MIXnJRwDUn9WP78fNwQ8BXNrnlitoYKdX4TOg&_nc_zt=1&_nc_ht=scontent-ord5-1.xx&edm=AHV8P_YEAAAA&_nc_gid=neVTw-_rAxSMqmxEWdgjlg&_nc_tpa=Q5bMBQIpcleweJB-ugB3WKDpt4B9w_ujE_AQh2FrN8ap8dGVeOlTnR86Eo1ILl37pu1q_e_TY1KwfeOjtA&oh=00_AQIArNrQzGcwNy3LnMK01J67RTqtXk30etm0HnJbVLRB6Q&oe=6A9E0865', '1068020552530345'] → ['https://scontent-ord5-1.xx.fbcdn.net/v/t45.1600-4/759515077_10164366932286311_2366277194909051095_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=d5bd00&_nc_ohc=uQOWa23OcG4Q7kNvwGVpkqA&_nc_oc=AdpYyUUthx_64HQcE5UMPKIzsrQbZ8MIXnJRwDUn9WP78fNwQ8BXNrnlitoYKdX4TOg&_nc_zt=1&_nc_ht=scontent-ord5-1.xx&edm=AHV8P_YEAAAA&_nc_gid=neVTw-_rAxSMqmxEWdgjlg&_nc_tpa=Q5bMBQIpcleweJB-ugB3WKDpt4B9w_ujE_AQh2FrN8ap8dGVeOlTnR86Eo1ILl37pu1q_e_TY1KwfeOjtA&oh=00_AQIArNrQzGcwNy3LnMK01J67RTqtXk30etm0HnJbVLRB6Q&oe=6A9E0865', '1718689146020304'])",
+          "text": "Anuncio actualizado · 2 - Nueva - Copia 3",
           "src": "meta"
         },
         {
@@ -18268,7 +18244,7 @@
         {
           "date": "2026-08-11",
           "cat": "creativo",
-          "text": "Anuncio actualizado · Nuevo anuncio de Clientes potenciales - Copia 4 (['https://scontent-ord5-1.xx.fbcdn.net/v/t45.1600-4/724174529_1381167794076880_4182131687837934537_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=d5bd00&_nc_ohc=_KFq8smx2TsQ7kNvwH8MY7z&_nc_oc=AdrtPOE7aCHYME2qlm95Nl6YNJEZYhIUSlxjymTfrYQetC3PDN2N1AYl7YTMm-Rt-bs&_nc_zt=1&_nc_ht=scontent-ord5-1.xx&edm=AHV8P_YEAAAA&_nc_gid=neVTw-_rAxSMqmxEWdgjlg&_nc_tpa=Q5bMBQIyI6oq4XcSCyHRqB7G9rX_TNiyzyGo-oYgVWQOZS3wbX4mxF9ZExTwgypqgRhpAqQQNVtmKi-OlA&oh=00_AQJqA3xeqalRYGEtEzlQ8j5UtGhX-tLFfi4Ev-05QqIZ_A&oe=6A9DE24A', '917642614103002'] → ['https://scontent-ord5-1.xx.fbcdn.net/v/t45.1600-4/724174529_1381167794076880_4182131687837934537_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=d5bd00&_nc_ohc=_KFq8smx2TsQ7kNvwH8MY7z&_nc_oc=AdrtPOE7aCHYME2qlm95Nl6YNJEZYhIUSlxjymTfrYQetC3PDN2N1AYl7YTMm-Rt-bs&_nc_zt=1&_nc_ht=scontent-ord5-1.xx&edm=AHV8P_YEAAAA&_nc_gid=neVTw-_rAxSMqmxEWdgjlg&_nc_tpa=Q5bMBQIyI6oq4XcSCyHRqB7G9rX_TNiyzyGo-oYgVWQOZS3wbX4mxF9ZExTwgypqgRhpAqQQNVtmKi-OlA&oh=00_AQJqA3xeqalRYGEtEzlQ8j5UtGhX-tLFfi4Ev-05QqIZ_A&oe=6A9DE24A', '1350166430661108'])",
+          "text": "Anuncio actualizado · Nuevo anuncio de Clientes potenciales - Copia 4",
           "src": "meta"
         },
         {
@@ -18436,7 +18412,7 @@
         {
           "date": "2026-08-10",
           "cat": "otros",
-          "text": "Segmentación del conjunto de anuncios actualizada · Nueva campaña de Clientes potenciales V.2 - Argentina ([{'content': 'Público personalizado:', 'children': ['Lookalike (1%) - Copia de Numeros Celular - Hoja 2.csv']}, {'content': 'Lugar:', 'children': ['Argentina']}, {'content': 'Edad mínima:', 'children': ['18']}, {'content': 'Edad:', 'children': ['18 - 65+']}, {'content': 'Ubicaciones:', 'children': ['en las siguientes páginas: Feed en computadoras, Feed de Instagram, Instagram Stories, Feed del perfil de Instagram, Inicio de la sección \"Explorar\" de Instagram, Instagram Reels, Anuncios para la generación de clientes potenciales con varios envíos en Instagram, Búsqueda de Instagram, Apps y sitios web de terceros en dispositivos móviles (Audience\\xa0Network), Feed de dispositivos móviles, Video instream en dispositivos móviles, Video instream en computadoras de escritorio, Marketplace en computadoras, Marketplace en dispositivos móviles, Facebook Stories en dispositivos móviles, Búsqueda de Marketplace en computadoras de escritorio, Búsqueda de Marketplace en dispositivos móviles, Búsqueda en dispositivos móviles, Búsqueda en computadoras, Feed del perfil de Facebook en dispositivos móviles, Superposición de Facebook Reels en dispositivos móviles, Sección \"Explorar negocios\" de Facebook en dispositivos móviles, Facebook Reels, Búsqueda de Video en dispositivos móviles o Notificaciones de Facebook']}, {'content': 'Público Advantage+:', 'children': ['Activado']}] → [{'content': 'Público personalizado:', 'children': ['Lookalike (1%) - Copia de Numeros Celular - Hoja 2.csv']}, {'content': 'Lugar:', 'children': ['Argentina', 'España: Comunidad de Madrid', 'Uruguay']}, {'content': 'Optimizar ubicaciones:', 'children': ['Activado']}, {'content': 'Edad mínima:', 'children': ['18']}, {'content': 'Edad:', 'children': ['18 - 65+']}, {'content': 'Ubicaciones:', 'children': ['en las siguientes páginas: Feed en computadoras, Feed de Instagram, Instagram Stories, Feed del perfil de Instagram, Inicio de la sección \"Explorar\" de Instagram, Instagram Reels, Anuncios para la generación de clientes potenciales con varios envíos en Instagram, Búsqueda de Instagram, Apps y sitios web de terceros en dispositivos móviles (Audience\\xa0Network), Feed de dispositivos móviles, Video instream en dispositivos móviles, Video instream en computadoras de escritorio, Marketplace en computadoras, Marketplace en dispositivos móviles, Facebook Stories en dispositivos móviles, Búsqueda de Marketplace en computadoras de escritorio, Búsqueda de Marketplace en dispositivos móviles, Búsqueda en dispositivos móviles, Búsqueda en computadoras, Feed del perfil de Facebook en dispositivos móviles, Superposición de Facebook Reels en dispositivos móviles, Sección \"Explorar negocios\" de Facebook en dispositivos móviles, Facebook Reels, Búsqueda de Video en dispositivos móviles o Notificaciones de Facebook']}, {'content': 'Público Advantage+:', 'children': ['Activado']}])",
+          "text": "Segmentación del conjunto de anuncios actualizada · Nueva campaña de Clientes potenciales V.2 - Argentina",
           "src": "meta"
         },
         {
@@ -18569,6 +18545,30 @@
           "date": "2026-08-09",
           "cat": "estado",
           "text": "Estado de la campaña actualizado · Nueva campaña de Clientes potenciales V.2 (Procesamiento pendiente → Activa)",
+          "src": "meta"
+        },
+        {
+          "date": "2026-08-09",
+          "cat": "presupuesto",
+          "text": "Presupuesto de la campaña actualizado · Nueva campaña de Clientes potenciales V.2 (8.000 → 10.000 ARS/día)",
+          "src": "meta"
+        },
+        {
+          "date": "2026-08-09",
+          "cat": "estado",
+          "text": "Estado de la campaña actualizado · Nueva campaña de Clientes potenciales V.2 (Activa → Procesamiento pendiente)",
+          "src": "meta"
+        },
+        {
+          "date": "2026-08-08",
+          "cat": "estado",
+          "text": "Estado del anuncio actualizado · 2 - Nueva - Copia 2 (Revisión pendiente → Activo)",
+          "src": "meta"
+        },
+        {
+          "date": "2026-08-08",
+          "cat": "estado",
+          "text": "Estado del anuncio actualizado · 2 - Nueva (Revisión pendiente → Inactivo)",
           "src": "meta"
         }
       ]
@@ -18817,18 +18817,18 @@
         [
           2,
           4,
-          1064.62,
-          234,
+          1418.8,
+          303,
           135,
+          7,
           4,
-          3,
           0,
           0,
           0,
           0.0,
           0,
-          129,
-          26
+          225,
+          46
         ]
       ],
       "upd": "2026-09-02",
@@ -18951,61 +18951,31 @@
         {
           "date": "2026-09-01",
           "cat": "creativo",
-          "text": "Anuncio actualizado · Ad_Osito (['Blanqueador PULPA! ⚡️ESTE ES EL PRODUCTO VIRAL!', '🧸Los juguetes de tu hijo están así? … Vamos a lavarlos simple, sin químicos innecesarios ni nada que nos haga mal 🫶🏻\\n\\n✅ blanqueador de pulpa y mientras haces otra cosa en 20 minutos ya está listo ✔️\\n\\n🛒www.pulpaverde.ar\\n\\nContame cómo vos lavas los peluches 🧸👇🏻', '1168188238866262'] → ['Blanqueador PULPA! ⚡️ESTE ES EL PRODUCTO VIRAL!', '🧸Los juguetes de tu hijo están así? … Vamos a lavarlos simple, sin químicos innecesarios ni nada que nos haga mal 🫶🏻\\n\\n✅ blanqueador de pulpa y mientras haces otra cosa en 20 minutos ya está listo ✔️\\n\\n🛒www.pulpaverde.ar\\n\\nContame cómo vos lavas los peluches 🧸👇🏻', '1727377824984598'])",
+          "text": "Anuncio actualizado · Ad_Osito",
           "src": "meta"
         },
         {
           "date": "2026-09-01",
           "cat": "creativo",
-          "text": "Anuncio actualizado · Ad_Vans (['Blanqueador PULPA! ⚡️ESTE ES EL PRODUCTO VIRAL!', '⚠️ COMO DARLE UN REFRESH A LAS ZAPAS DE GAMUZA !\\n\\nMira el video hasta el final, compartí lo con la/el que anda siempre con las zapas destruidas, probalo y después me contas 😊\\n\\nEl blanqueador lo conseguis en la tienda 👉🏻 www.pulpaverde.ar\\n\\n#parati #fyp #hogar #tips #zapatillas', '1086621310982537'] → ['Blanqueador PULPA! ⚡️ESTE ES EL PRODUCTO VIRAL!', '⚠️ COMO DARLE UN REFRESH A LAS ZAPAS DE GAMUZA !\\n\\nMira el video hasta el final, compartí lo con la/el que anda siempre con las zapas destruidas, probalo y después me contas 😊\\n\\nEl blanqueador lo conseguis en la tienda 👉🏻 www.pulpaverde.ar\\n\\n#parati #fyp #hogar #tips #zapatillas', '1757488878905899'])",
+          "text": "Anuncio actualizado · Ad_Vans",
           "src": "meta"
         },
         {
           "date": "2026-09-01",
           "cat": "creativo",
-          "text": "Anuncio actualizado · Ad_Osito (['https://scontent-ord5-2.xx.fbcdn.net/v/t15.5256-10/790225835_2111318362800131_6037702859098675211_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=5fad0e&_nc_ohc=XktcZjgz9hwQ7kNvwHZIdD9&_nc_oc=AdpxNNXelkFy93gKsqYK3HhEKf_GZhVzqz2xXgq1StbqJ1yPo-jBKOGCdv-ssIHVEkk&_nc_zt=23&_nc_ht=scontent-ord5-2.xx&edm=AHV8P_YEAAAA&_nc_gid=MoAOPgqfP4yaQSn91NKKSw&_nc_tpa=Q5bMBQK6pYLuwtgbyQH2u0Vse_vpwW5zgdkrn_rBvBxkFcbLEfNFMNOouDQmfeyDoGyc9WUZGNO7P0ze0w&oh=00_AQKstlr7MMBretLOWi0yUMnngLIj1WXlhoJPgK-5pSmcOw&oe=6A9DFEFA', 'Blanqueador PULPA! ⚡️ESTE ES EL PRODUCTO VIRAL!', '🧸Los juguetes de tu hijo están así? … Vamos a lavarlos simple, sin químicos innecesarios ni nada que nos haga mal 🫶🏻\\n\\n✅ blanqueador de pulpa y mientras haces otra cosa en 20 minutos ya está listo ✔️\\n\\n🛒www.pulpaverde.ar\\n\\nContame cómo vos lavas los peluches 🧸👇🏻', '2401580977280012'] → ['Blanqueador PULPA! ⚡️ESTE ES EL PRODUCTO VIRAL!', '🧸Los juguetes de tu hijo están así? … Vamos a lavarlos simple, sin químicos innecesarios ni nada que nos haga mal 🫶🏻\\n\\n✅ blanqueador de pulpa y mientras haces otra cosa en 20 minutos ya está listo ✔️\\n\\n🛒www.pulpaverde.ar\\n\\nContame cómo vos lavas los peluches 🧸👇🏻', '1336018818614234'])",
+          "text": "Anuncio actualizado · Ad_Toallas",
           "src": "meta"
         },
         {
           "date": "2026-09-01",
           "cat": "creativo",
-          "text": "Anuncio actualizado · Ad_Vans (['Blanqueador PULPA! ⚡️ESTE ES EL PRODUCTO VIRAL!', '⚠️ COMO DARLE UN REFRESH A LAS ZAPAS DE GAMUZA !\\n\\nMira el video hasta el final, compartí lo con la/el que anda siempre con las zapas destruidas, probalo y después me contas 😊\\n\\nEl blanqueador lo conseguis en la tienda 👉🏻 www.pulpaverde.ar\\n\\n#parati #fyp #hogar #tips #zapatillas', '2504676856776290'] → ['Blanqueador PULPA! ⚡️ESTE ES EL PRODUCTO VIRAL!', '⚠️ COMO DARLE UN REFRESH A LAS ZAPAS DE GAMUZA !\\n\\nMira el video hasta el final, compartí lo con la/el que anda siempre con las zapas destruidas, probalo y después me contas 😊\\n\\nEl blanqueador lo conseguis en la tienda 👉🏻 www.pulpaverde.ar\\n\\n#parati #fyp #hogar #tips #zapatillas', '1746648923071310'])",
+          "text": "Anuncio actualizado · Ad_Manchas",
           "src": "meta"
         },
         {
           "date": "2026-09-01",
           "cat": "creativo",
-          "text": "Anuncio actualizado · Ad_Toallas (['Blanqueador PULPA! ⚡️ESTE ES EL PRODUCTO VIRAL!', '⚠️¿Tus toallas salen del lavarropas duras, apelmazadas o con olor raro?\\n\\nEntonces el lavado no está haciendo todo el trabajo.\\n\\nLas toallas acumulan restos de jabón, humedad y suciedad que un lavado común muchas veces no elimina.\\n\\n💚 En Pulpa las lavamos con nuestro Jabón Líquido Natural, Enjuague (sí, el suavizante es el peor enemigo de las toallas) y Blanqueador Pulpa en el tambor para un lavado profundo.\\n\\nEl resultado: toallas suaves, esponjosas e impolutas.\\n\\n💬 Contame en los comentarios: ¿cómo salen tus toallas del lavarropas?\\n\\n📌 Guardá este video, probalo y después me contás.\\n\\n#fyp #parati #hogar #tips #argentina🇦🇷', '1738737734048293'] → ['Blanqueador PULPA! ⚡️ESTE ES EL PRODUCTO VIRAL!', '⚠️¿Tus toallas salen del lavarropas duras, apelmazadas o con olor raro?\\n\\nEntonces el lavado no está haciendo todo el trabajo.\\n\\nLas toallas acumulan restos de jabón, humedad y suciedad que un lavado común muchas veces no elimina.\\n\\n💚 En Pulpa las lavamos con nuestro Jabón Líquido Natural, Enjuague (sí, el suavizante es el peor enemigo de las toallas) y Blanqueador Pulpa en el tambor para un lavado profundo.\\n\\nEl resultado: toallas suaves, esponjosas e impolutas.\\n\\n💬 Contame en los comentarios: ¿cómo salen tus toallas del lavarropas?\\n\\n📌 Guardá este video, probalo y después me contás.\\n\\n#fyp #parati #hogar #tips #argentina🇦🇷', '846155825156469'])",
-          "src": "meta"
-        },
-        {
-          "date": "2026-09-01",
-          "cat": "creativo",
-          "text": "Anuncio actualizado · Ad_Toallas (['Blanqueador PULPA! ⚡️ESTE ES EL PRODUCTO VIRAL!', '⚠️¿Tus toallas salen del lavarropas duras, apelmazadas o con olor raro?\\n\\nEntonces el lavado no está haciendo todo el trabajo.\\n\\nLas toallas acumulan restos de jabón, humedad y suciedad que un lavado común muchas veces no elimina.\\n\\n💚 En Pulpa las lavamos con nuestro Jabón Líquido Natural, Enjuague (sí, el suavizante es el peor enemigo de las toallas) y Blanqueador Pulpa en el tambor para un lavado profundo.\\n\\nEl resultado: toallas suaves, esponjosas e impolutas.\\n\\n💬 Contame en los comentarios: ¿cómo salen tus toallas del lavarropas?\\n\\n📌 Guardá este video, probalo y después me contás.\\n\\n#fyp #parati #hogar #tips #argentina🇦🇷', '1713250399779740'] → ['Blanqueador PULPA! ⚡️ESTE ES EL PRODUCTO VIRAL!', '⚠️¿Tus toallas salen del lavarropas duras, apelmazadas o con olor raro?\\n\\nEntonces el lavado no está haciendo todo el trabajo.\\n\\nLas toallas acumulan restos de jabón, humedad y suciedad que un lavado común muchas veces no elimina.\\n\\n💚 En Pulpa las lavamos con nuestro Jabón Líquido Natural, Enjuague (sí, el suavizante es el peor enemigo de las toallas) y Blanqueador Pulpa en el tambor para un lavado profundo.\\n\\nEl resultado: toallas suaves, esponjosas e impolutas.\\n\\n💬 Contame en los comentarios: ¿cómo salen tus toallas del lavarropas?\\n\\n📌 Guardá este video, probalo y después me contás.\\n\\n#fyp #parati #hogar #tips #argentina🇦🇷', '1706374827104083'])",
-          "src": "meta"
-        },
-        {
-          "date": "2026-09-01",
-          "cat": "creativo",
-          "text": "Anuncio actualizado · Ad_Manchas (['https://scontent-ord5-2.xx.fbcdn.net/v/t15.5256-10/790879869_1606431604183069_750231530442944007_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=5fad0e&_nc_ohc=Cg39mpL3HA4Q7kNvwFvyzCN&_nc_oc=AdqSwzmlmlW4VCylJgfbrCZVfdb3m5UXgGz9OE0mZ2JPSmwN961Tgxwhf5vyLIjpxqg&_nc_zt=23&_nc_ht=scontent-ord5-2.xx&edm=AHV8P_YEAAAA&_nc_gid=MoAOPgqfP4yaQSn91NKKSw&_nc_tpa=Q5bMBQLDfHEvkQFBnKphwsoOVkuTgfXQG8MsCDi4fbfXvEoJIRIkP4Y5h3A3cZJsd30LyFrJBnt4CmL0bQ&oh=00_AQL--1j7GU7k5Ie1X1oKkQo1BaOyuNY6WiBbSLgz92LKkg&oe=6A9E0C6C', 'Blanqueador PULPA! ⚡️ESTE ES EL PRODUCTO VIRAL!', '☕️🍔 ¿Manchas de café y grasa? No les tengo miedo.\\n\\nMientras otros refriegan durante minutos, yo dejo que el Blanqueador de Pulpa haga el trabajo.\\n\\n✨ Solo 20 minutos, enjuagás… y listo.\\n\\nMenos esfuerzo, mejores resultados y sin químicos innecesarios.\\n\\n🛒 Encontralo en nuestra tienda y devolvé la vida a tus blancos.\\n💚 Guardá este video, probalo y después me contás.\\n\\n#fyp #parati #hogar #tips #argentina🇦🇷', '1607144574401123'] → ['Blanqueador PULPA! ⚡️ESTE ES EL PRODUCTO VIRAL!', '☕️🍔 ¿Manchas de café y grasa? No les tengo miedo.\\n\\nMientras otros refriegan durante minutos, yo dejo que el Blanqueador de Pulpa haga el trabajo.\\n\\n✨ Solo 20 minutos, enjuagás… y listo.\\n\\nMenos esfuerzo, mejores resultados y sin químicos innecesarios.\\n\\n🛒 Encontralo en nuestra tienda y devolvé la vida a tus blancos.\\n💚 Guardá este video, probalo y después me contás.\\n\\n#fyp #parati #hogar #tips #argentina🇦🇷', '1067000159061798'])",
-          "src": "meta"
-        },
-        {
-          "date": "2026-09-01",
-          "cat": "creativo",
-          "text": "Anuncio actualizado · Ad_Converse (['https://scontent-ord5-2.xx.fbcdn.net/v/t15.5256-10/789890161_2723127654750796_8124708739227389386_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=5fad0e&_nc_ohc=JQNHY10UU68Q7kNvwElPPU6&_nc_oc=Adrf9qp4YSowJ0DQxikQMG2BQZOlDJmzLMkNi-8IfjEnC2_qQnMnIU8Tm6sQvrgDsto&_nc_zt=23&_nc_ht=scontent-ord5-2.xx&edm=AHV8P_YEAAAA&_nc_gid=MoAOPgqfP4yaQSn91NKKSw&_nc_tpa=Q5bMBQI1RvwIlHgZQLkT--mXQMdFx9DraWeQMWsLX39C4WthKDPF6dSKc26L_hgVhp_HmQT2Krq-_UBRlg&oh=00_AQKdnt2Xo4JmAnc3Ip_CE5O6Lp9htIEQrgloePCq0xa7Ug&oe=6A9DEF19', 'Blanqueador PULPA! ⚡️ESTE ES EL PRODUCTO VIRAL!', '¿Tus Zapaz blancas ya están pidiendo jubilación? 😂\\n\\nMirá cómo quedaron con el Blanqueador Pulpa ✨🤍\\n\\nSi tenés zapatillas de tela blancas, guardá este video porque este truquito te puede salvar el próximo lavado.\\n\\n👉 Probalo y después me contás.\\n\\n#parati #tips #zapatillas #converse #limpeza', '1586422863224429'] → ['Blanqueador PULPA! ⚡️ESTE ES EL PRODUCTO VIRAL!', '¿Tus Zapaz blancas ya están pidiendo jubilación? 😂\\n\\nMirá cómo quedaron con el Blanqueador Pulpa ✨🤍\\n\\nSi tenés zapatillas de tela blancas, guardá este video porque este truquito te puede salvar el próximo lavado.\\n\\n👉 Probalo y después me contás.\\n\\n#parati #tips #zapatillas #converse #limpeza', '1390343289202245'])",
-          "src": "meta"
-        },
-        {
-          "date": "2026-09-01",
-          "cat": "creativo",
-          "text": "Anuncio actualizado · Ad_Converse (['Blanqueador PULPA! ⚡️ESTE ES EL PRODUCTO VIRAL!', '¿Tus Zapaz blancas ya están pidiendo jubilación? 😂\\n\\nMirá cómo quedaron con el Blanqueador Pulpa ✨🤍\\n\\nSi tenés zapatillas de tela blancas, guardá este video porque este truquito te puede salvar el próximo lavado.\\n\\n👉 Probalo y después me contás.\\n\\n#parati #tips #zapatillas #converse #limpeza', '1080851850992482'] → ['Blanqueador PULPA! ⚡️ESTE ES EL PRODUCTO VIRAL!', '¿Tus Zapaz blancas ya están pidiendo jubilación? 😂\\n\\nMirá cómo quedaron con el Blanqueador Pulpa ✨🤍\\n\\nSi tenés zapatillas de tela blancas, guardá este video porque este truquito te puede salvar el próximo lavado.\\n\\n👉 Probalo y después me contás.\\n\\n#parati #tips #zapatillas #converse #limpeza', '1036486889258938'])",
-          "src": "meta"
-        },
-        {
-          "date": "2026-09-01",
-          "cat": "creativo",
-          "text": "Anuncio actualizado · Ad_Manchas (['Blanqueador PULPA! ⚡️ESTE ES EL PRODUCTO VIRAL!', '☕️🍔 ¿Manchas de café y grasa? No les tengo miedo.\\n\\nMientras otros refriegan durante minutos, yo dejo que el Blanqueador de Pulpa haga el trabajo.\\n\\n✨ Solo 20 minutos, enjuagás… y listo.\\n\\nMenos esfuerzo, mejores resultados y sin químicos innecesarios.\\n\\n🛒 Encontralo en nuestra tienda y devolvé la vida a tus blancos.\\n💚 Guardá este video, probalo y después me contás.\\n\\n#fyp #parati #hogar #tips #argentina🇦🇷', '909318012253520'] → ['Blanqueador PULPA! ⚡️ESTE ES EL PRODUCTO VIRAL!', '☕️🍔 ¿Manchas de café y grasa? No les tengo miedo.\\n\\nMientras otros refriegan durante minutos, yo dejo que el Blanqueador de Pulpa haga el trabajo.\\n\\n✨ Solo 20 minutos, enjuagás… y listo.\\n\\nMenos esfuerzo, mejores resultados y sin químicos innecesarios.\\n\\n🛒 Encontralo en nuestra tienda y devolvé la vida a tus blancos.\\n💚 Guardá este video, probalo y después me contás.\\n\\n#fyp #parati #hogar #tips #argentina🇦🇷', '1377132900657770'])",
+          "text": "Anuncio actualizado · Ad_Converse",
           "src": "meta"
         },
         {
@@ -19023,7 +18993,7 @@
         {
           "date": "2026-09-01",
           "cat": "otros",
-          "text": "Segmentación del conjunto de anuncios actualizada · Pulpa Verde_Conversiones_A2C_2026_Adv+ ([{'content': 'Lugar - Viviendo en:', 'children': ['Argentina']}, {'content': 'Edad mínima:', 'children': ['18', 'Edad desconocida en WhatsApp: Se incluye']}, {'content': 'Edad:', 'children': ['25 - 60']}, {'content': 'Ubicaciones:', 'children': ['en las siguientes páginas: Feed en computadoras, Feed de Instagram, Instagram Stories, Feed del perfil de Instagram, Inicio de la sección \"Explorar\" de Instagram, Instagram Reels, Feed web de Instagram, Instagram Stories en la web, Instagram Stories en msite, Búsqueda de Instagram, Apps y sitios web de terceros en dispositivos móviles (Audience\\xa0Network), Feed de dispositivos móviles, Columna derecha de computadoras, Video instream en dispositivos móviles, Video instream en computadoras de escritorio, Marketplace en computadoras, Marketplace en dispositivos móviles, Facebook Stories en dispositivos móviles, Messenger Stories, Estado de WhatsApp, Búsqueda de Marketplace en computadoras de escritorio, Búsqueda de Marketplace en dispositivos móviles, Búsqueda en dispositivos móviles, Búsqueda en computadoras, Feed del perfil de Facebook en dispositivos móviles, Superposición de Facebook Reels en dispositivos móviles, Sección \"Explorar negocios\" de Facebook en dispositivos móviles, Facebook Reels, Búsqueda de Video en dispositivos móviles, Feed de Threads o Notificaciones de Facebook']}, {'content': 'Personas que coinciden con:', 'children': ['Intereses: Lavandería (limpieza), Limpieza de primavera (limpieza), secador de ropa (electrodomésticos), Limpieza (cuidado personal), Cuidado del hogar (hogar y jardinería), Lysol, Omo, Artículos de uso doméstico (hogar y jardinería), Don Limpio, detergente (limpieza), Laundry detergent, Washing, Suavizante, Purex (laundry detergent) o Limpieza (hogar y jardinería)']}, {'content': 'Público Advantage+:', 'children': ['Activado']}] → [{'content': 'Lugar - Viviendo en:', 'children': ['Argentina']}, {'content': 'Edad mínima:', 'children': ['25']}, {'content': 'Edad:', 'children': ['25 - 60']}, {'content': 'Ubicaciones:', 'children': ['en las siguientes páginas: Feed en computadoras, Feed de Instagram, Instagram Stories, Feed del perfil de Instagram, Inicio de la sección \"Explorar\" de Instagram, Instagram Reels, Feed web de Instagram, Instagram Stories en la web, Instagram Stories en msite, Búsqueda de Instagram, Apps y sitios web de terceros en dispositivos móviles (Audience\\xa0Network), Feed de dispositivos móviles, Columna derecha de computadoras, Video instream en dispositivos móviles, Video instream en computadoras de escritorio, Marketplace en computadoras, Marketplace en dispositivos móviles, Facebook Stories en dispositivos móviles, Messenger Stories, Estado de WhatsApp, Búsqueda de Marketplace en computadoras de escritorio, Búsqueda de Marketplace en dispositivos móviles, Búsqueda en dispositivos móviles, Búsqueda en computadoras, Feed del perfil de Facebook en dispositivos móviles, Superposición de Facebook Reels en dispositivos móviles, Sección \"Explorar negocios\" de Facebook en dispositivos móviles, Facebook Reels, Búsqueda de Video en dispositivos móviles, Feed de Threads o Notificaciones de Facebook']}, {'content': 'Personas que coinciden con:', 'children': ['Intereses: Lavandería (limpieza), Limpieza de primavera (limpieza), secador de ropa (electrodomésticos), Limpieza (cuidado personal), Cuidado del hogar (hogar y jardinería), Lysol, Omo, Artículos de uso doméstico (hogar y jardinería), Don Limpio, detergente (limpieza), Laundry detergent, Washing, Suavizante, Purex (laundry detergent) o Limpieza (hogar y jardinería)']}, {'content': 'Público Advantage+:', 'children': ['Activado']}])",
+          "text": "Segmentación del conjunto de anuncios actualizada · Pulpa Verde_Conversiones_A2C_2026_Adv+",
           "src": "meta"
         },
         {
@@ -19035,7 +19005,7 @@
         {
           "date": "2026-09-01",
           "cat": "presupuesto",
-          "text": "Presupuesto de la campaña actualizado · Pulpa Verde_Conversiones_Purchase_2026_Adv+ ({'type': 'payment_amount', 'currency': 'ARS', 'old_value': None, 'additional_type': 'status_string', 'additional_value': ''} → {'type': 'payment_amount', 'currency': 'ARS', 'new_value': 2000000, 'additional_type': 'status_string', 'additional_value': 'por día'})",
+          "text": "Presupuesto de la campaña actualizado · Pulpa Verde_Conversiones_Purchase_2026_Adv+",
           "src": "meta"
         },
         {
@@ -19078,18 +19048,6 @@
           "date": "2026-09-01",
           "cat": "presupuesto",
           "text": "Se habilitó la programación del presupuesto del conjunto de anuncios · Pulpa Verde_Conversiones_A2C_2026_Adv+",
-          "src": "meta"
-        },
-        {
-          "date": "2026-09-01",
-          "cat": "otros",
-          "text": "Segmentación del conjunto de anuncios actualizada · Pulpa Verde_Conversiones_A2C_2026_Adv+",
-          "src": "meta"
-        },
-        {
-          "date": "2026-09-01",
-          "cat": "otros",
-          "text": "Segmentación del conjunto de anuncios actualizada · Pulpa Verde_Conversiones_A2C_2026_Adv+ ([] → [{'content': 'Lugar - Viviendo en:', 'children': ['Argentina']}, {'content': 'Edad mínima:', 'children': ['18', 'Edad desconocida en WhatsApp: Se incluye']}, {'content': 'Edad:', 'children': ['25 - 60']}, {'content': 'Ubicaciones:', 'children': ['en las siguientes páginas: Feed en computadoras, Feed de Instagram, Instagram Stories, Feed del perfil de Instagram, Inicio de la sección \"Explorar\" de Instagram, Instagram Reels, Feed web de Instagram, Instagram Stories en la web, Instagram Stories en msite, Búsqueda de Instagram, Apps y sitios web de terceros en dispositivos móviles (Audience\\xa0Network), Feed de dispositivos móviles, Columna derecha de computadoras, Video instream en dispositivos móviles, Video instream en computadoras de escritorio, Marketplace en computadoras, Marketplace en dispositivos móviles, Facebook Stories en dispositivos móviles, Messenger Stories, Estado de WhatsApp, Búsqueda de Marketplace en computadoras de escritorio, Búsqueda de Marketplace en dispositivos móviles, Búsqueda en dispositivos móviles, Búsqueda en computadoras, Feed del perfil de Facebook en dispositivos móviles, Superposición de Facebook Reels en dispositivos móviles, Sección \"Explorar negocios\" de Facebook en dispositivos móviles, Facebook Reels, Búsqueda de Video en dispositivos móviles, Feed de Threads o Notificaciones de Facebook']}, {'content': 'Personas que coinciden con:', 'children': ['Intereses: Lavandería (limpieza), Limpieza de primavera (limpieza), secador de ropa (electrodomésticos), Limpieza (cuidado personal), Cuidado del hogar (hogar y jardinería), Lysol, Omo, Artículos de uso doméstico (hogar y jardinería), Don Limpio, detergente (limpieza), Laundry detergent, Washing, Suavizante, Purex (laundry detergent) o Limpieza (hogar y jardinería)']}, {'content': 'Público Advantage+:', 'children': ['Activado']}])",
           "src": "meta"
         },
         {
@@ -19246,12 +19204,6 @@
           "date": "2026-08-31",
           "cat": "otros",
           "text": "Segmentación del conjunto de anuncios actualizada · Pulpa Verde_Conversiones_Purchase_2026_Adv+",
-          "src": "meta"
-        },
-        {
-          "date": "2026-08-31",
-          "cat": "otros",
-          "text": "Segmentación del conjunto de anuncios actualizada · Pulpa Verde_Conversiones_Purchase_2026_Adv+ ([] → [{'content': 'Lugar:', 'children': ['Argentina']}, {'content': 'Edad mínima:', 'children': ['18']}, {'content': 'Edad:', 'children': ['25 - 60']}, {'content': 'Ubicaciones:', 'children': ['en las siguientes páginas: Feed en computadoras, Feed de Instagram, Instagram Stories, Feed del perfil de Instagram, Inicio de la sección \"Explorar\" de Instagram, Instagram Reels, Feed web de Instagram, Instagram Stories en la web, Instagram Stories en msite, Búsqueda de Instagram, Apps y sitios web de terceros en dispositivos móviles (Audience\\xa0Network), Feed de dispositivos móviles, Columna derecha de computadoras, Video instream en dispositivos móviles, Video instream en computadoras de escritorio, Marketplace en computadoras, Marketplace en dispositivos móviles, Facebook Stories en dispositivos móviles, Messenger Stories, Búsqueda de Marketplace en computadoras de escritorio, Búsqueda de Marketplace en dispositivos móviles, Búsqueda en dispositivos móviles, Búsqueda en computadoras, Feed del perfil de Facebook en dispositivos móviles, Superposición de Facebook Reels en dispositivos móviles, Sección \"Explorar negocios\" de Facebook en dispositivos móviles, Facebook Reels, Búsqueda de Video en dispositivos móviles, Feed de Threads o Notificaciones de Facebook']}, {'content': 'Personas que coinciden con:', 'children': ['Intereses: Lavandería (limpieza), Limpieza de primavera (limpieza), secador de ropa (electrodomésticos), Limpieza (cuidado personal), Cuidado del hogar (hogar y jardinería), Lysol, Omo, Artículos de uso doméstico (hogar y jardinería), Don Limpio, detergente (limpieza), Laundry detergent, Washing, Suavizante, Purex (laundry detergent) o Limpieza (hogar y jardinería)']}, {'content': 'Público Advantage+:', 'children': ['Activado']}])",
           "src": "meta"
         },
         {

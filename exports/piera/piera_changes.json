@@ -26,7 +26,7 @@
  {
   "date": "2026-09-01",
   "cat": "presupuesto",
-  "text": "Presupuesto del conjunto de anuncios actualizado · PieraCeresa_2026_Conversiones ({'type': 'payment_amount', 'currency': 'CLP', 'old_value': 10000, 'additional_type': 'status_string', 'additional_value': ''} → {'type': 'payment_amount', 'currency': 'CLP', 'new_value': 12000, 'additional_type': 'status_string', 'additional_value': 'por día'})",
+  "text": "Presupuesto del conjunto de anuncios actualizado · PieraCeresa_2026_Conversiones (10.000 → 12.000 CLP/día)",
   "src": "meta"
  },
  {
@@ -62,7 +62,7 @@
  {
   "date": "2026-09-01",
   "cat": "presupuesto",
-  "text": "Presupuesto del conjunto de anuncios actualizado · PieraCeresa_2026_Conversiones ({'type': 'payment_amount', 'currency': 'CLP', 'old_value': 15000, 'additional_type': 'status_string', 'additional_value': ''} → {'type': 'payment_amount', 'currency': 'CLP', 'new_value': 10000, 'additional_type': 'status_string', 'additional_value': 'por día'})",
+  "text": "Presupuesto del conjunto de anuncios actualizado · PieraCeresa_2026_Conversiones (15.000 → 10.000 CLP/día)",
   "src": "meta"
  },
  {
@@ -122,7 +122,7 @@
  {
   "date": "2026-09-01",
   "cat": "presupuesto",
-  "text": "Presupuesto del conjunto de anuncios actualizado · PieraCeresa_2026_Conversiones - Add Payment Info ({'type': 'payment_amount', 'currency': 'CLP', 'old_value': 15000, 'additional_type': 'status_string', 'additional_value': ''} → {'type': 'payment_amount', 'currency': 'CLP', 'new_value': 10000, 'additional_type': 'status_string', 'additional_value': 'por día'})",
+  "text": "Presupuesto del conjunto de anuncios actualizado · PieraCeresa_2026_Conversiones - Add Payment Info (15.000 → 10.000 CLP/día)",
   "src": "meta"
  },
  {
@@ -422,12 +422,6 @@
  {
   "date": "2026-08-22",
   "cat": "otros",
-  "text": "Segmentación del conjunto de anuncios actualizada · PieraCeresa_2026_Conversiones -Purchase ([] → [{'content': 'Lugar:', 'children': ['Chile']}, {'content': 'Edad mínima:', 'children': ['18']}, {'content': 'Edad:', 'children': ['25 - 55']}, {'content': 'Sexo:', 'children': ['Mujeres']}, {'content': 'Ubicaciones:', 'children': ['en las siguientes páginas: Feed en computadoras, Feed de Instagram, Instagram Stories, Feed del perfil de Instagram, Inicio de la sección \"Explorar\" de Instagram, Instagram Reels, Feed web de Instagram, Instagram Stories en la web, Instagram Stories en msite, Búsqueda de Instagram, Apps y sitios web de terceros en dispositivos móviles (Audience\\xa0Network), Feed de dispositivos móviles, Columna derecha de computadoras, Video instream en dispositivos móviles, Video instream en computadoras de escritorio, Marketplace en computadoras, Marketplace en dispositivos móviles, Facebook Stories en dispositivos móviles, Messenger Stories, Búsqueda de Marketplace en computadoras de escritorio, Búsqueda de Marketplace en dispositivos móviles, Búsqueda en dispositivos móviles, Búsqueda en computadoras, Feed del perfil de Facebook en dispositivos móviles, Superposición de Facebook Reels en dispositivos móviles, Sección \"Explorar negocios\" de Facebook en dispositivos móviles, Facebook Reels, Búsqueda de Video en dispositivos móviles, Feed de Threads o Notificaciones de Facebook']}, {'content': 'Personas que coinciden con:', 'children': ['Intereses: Mochila (equipaje), Carteras (accesorios), Cuero (suministros para manualidades), Bolsa (accesorios), Billetera (accesorios), Accesorios de moda (accesorios) o Ropa (ropa)']}, {'content': 'Público Advantage+:', 'children': ['Activado']}])",
-  "src": "meta"
- },
- {
-  "date": "2026-08-22",
-  "cat": "otros",
   "text": "Segmentación del conjunto de anuncios actualizada · PieraCeresa_2026_Conversiones -Purchase",
   "src": "meta"
  },
@@ -464,7 +458,7 @@
  {
   "date": "2026-08-20",
   "cat": "presupuesto",
-  "text": "Presupuesto del conjunto de anuncios actualizado · PieraCeresa_2026_Conversiones - Add Payment Info ({'type': 'payment_amount', 'currency': 'CLP', 'old_value': 12000, 'additional_type': 'status_string', 'additional_value': ''} → {'type': 'payment_amount', 'currency': 'CLP', 'new_value': 15000, 'additional_type': 'status_string', 'additional_value': 'por día'})",
+  "text": "Presupuesto del conjunto de anuncios actualizado · PieraCeresa_2026_Conversiones - Add Payment Info (12.000 → 15.000 CLP/día)",
   "src": "meta"
  },
  {
@@ -585,12 +579,6 @@
   "date": "2026-08-18",
   "cat": "otros",
   "text": "Segmentación del conjunto de anuncios actualizada · PieraCeresa_2026_Conversiones - Add Payment Info",
-  "src": "meta"
- },
- {
-  "date": "2026-08-18",
-  "cat": "otros",
-  "text": "Segmentación del conjunto de anuncios actualizada · PieraCeresa_2026_Conversiones - Add Payment Info ([] → [{'content': 'Lugar:', 'children': ['Chile']}, {'content': 'Edad mínima:', 'children': ['18']}, {'content': 'Edad:', 'children': ['25 - 55']}, {'content': 'Sexo:', 'children': ['Mujeres']}, {'content': 'Ubicaciones:', 'children': ['en las siguientes páginas: Feed en computadoras, Feed de Instagram, Instagram Stories, Feed del perfil de Instagram, Inicio de la sección \"Explorar\" de Instagram, Instagram Reels, Feed web de Instagram, Instagram Stories en la web, Instagram Stories en msite, Búsqueda de Instagram, Apps y sitios web de terceros en dispositivos móviles (Audience\\xa0Network), Feed de dispositivos móviles, Columna derecha de computadoras, Video instream en dispositivos móviles, Video instream en computadoras de escritorio, Marketplace en computadoras, Marketplace en dispositivos móviles, Facebook Stories en dispositivos móviles, Messenger Stories, Búsqueda de Marketplace en computadoras de escritorio, Búsqueda de Marketplace en dispositivos móviles, Búsqueda en dispositivos móviles, Búsqueda en computadoras, Feed del perfil de Facebook en dispositivos móviles, Superposición de Facebook Reels en dispositivos móviles, Sección \"Explorar negocios\" de Facebook en dispositivos móviles, Facebook Reels, Búsqueda de Video en dispositivos móviles, Feed de Threads o Notificaciones de Facebook']}, {'content': 'Personas que coinciden con:', 'children': ['Intereses: Mochila (equipaje), Carteras (accesorios), Cuero (suministros para manualidades), Bolsa (accesorios), Billetera (accesorios), Accesorios de moda (accesorios) o Ropa (ropa)']}, {'content': 'Público Advantage+:', 'children': ['Activado']}])",
   "src": "meta"
  },
  {
@@ -717,6 +705,18 @@
   "date": "2026-08-10",
   "cat": "estado",
   "text": "Estado del anuncio actualizado cuando se completa su revisión · Carrusel Catalogo - Video Nuevo 6 (Activo → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-08-10",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Carrusel Catalogo - Video Nuevo 6 (Activo → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-08-10",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado cuando se completa su revisión · Carrusel Catalogo - Video Nuevo 2 (Activo → Inactivo)",
   "src": "meta"
  }
 ]
