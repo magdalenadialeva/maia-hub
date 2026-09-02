@@ -2,6 +2,10 @@
 # Fuente de verdad de metadatos por marca. El motor cruza esto con los exports.
 # `slug` = carpeta dentro de exports/  (exports/<slug>/*.csv)
 #
+# ad_account_id : ID de la cuenta publicitaria de Meta (solo números, sin
+#             "act_"). Lo usa engine.fetch_meta para traer la data sola cada
+#             mañana vía API. Si está vacío / "TODO", ese cliente se saltea en
+#             el fetch y usa el CSV manual que haya en exports/<slug>/.
 # objective : ventas | leads   -> lógica interna del motor (reporte, señales)
 # obj_code  : purchase | ic | lead  -> lo que muestra el hub (OBJLBL). Piera usa
 #             "ic" (optimiza a Iniciar pago para validar checkout).
@@ -18,6 +22,7 @@ clients:
     objective: ventas
     obj_code: ic
     currency: CLP
+    ad_account_id: "4114075572016005"
     start_maia: "2026-07-28"
     start_label: "28 jul 2026"
     margin: 0.5
@@ -28,6 +33,7 @@ clients:
     objective: ventas
     obj_code: purchase
     currency: ARS
+    ad_account_id: "TODO"
     start_maia: null
     start_label: "Cliente histórico"
     margin: 0.5
@@ -38,6 +44,7 @@ clients:
     objective: ventas
     obj_code: purchase
     currency: ARS
+    ad_account_id: "TODO"
     start_maia: "2026-08-21"
     start_label: "21 ago 2026"
     margin: 0.5
@@ -48,6 +55,7 @@ clients:
     objective: leads
     obj_code: lead
     currency: ARS
+    ad_account_id: "TODO"
     start_maia: "2026-07-01"
     start_label: "Julio 2026"
     margin: null
@@ -58,6 +66,7 @@ clients:
     objective: ventas
     obj_code: purchase
     currency: ARS
+    ad_account_id: "TODO"
     start_maia: "2026-08-21"
     start_label: "21 ago 2026"
     margin: 0.5
