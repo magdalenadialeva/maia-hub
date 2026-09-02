@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-02T13:14:53+00:00",
+  "generated_at": "2026-09-02T13:22:36+00:00",
   "DATA": {
     "piera": {
       "name": "Piera Ceresa",
@@ -10439,9 +10439,9 @@
         [
           35,
           3,
-          1196.53,
-          131,
-          112,
+          1197.78,
+          132,
+          119,
           1,
           0,
           0,
@@ -10455,11 +10455,11 @@
         [
           35,
           5,
-          14449.43,
-          1791,
-          1384,
+          15393.71,
+          1854,
+          1434,
+          63,
           58,
-          55,
           5,
           6,
           1,
@@ -10519,9 +10519,9 @@
         [
           35,
           16,
-          4157.08,
-          286,
-          246,
+          4334.33,
+          298,
+          260,
           14,
           11,
           4,
@@ -10529,15 +10529,15 @@
           0,
           0.0,
           0,
-          99,
-          10
+          105,
+          12
         ],
         [
           35,
           17,
-          1688.94,
-          122,
-          112,
+          1744.22,
+          125,
+          116,
           2,
           1,
           0,
@@ -10545,15 +10545,15 @@
           0,
           0.0,
           0,
-          83,
+          88,
           4
         ],
         [
           35,
           18,
-          1447.24,
-          102,
-          90,
+          1448.7,
+          103,
+          93,
           3,
           3,
           2,
@@ -10561,8 +10561,8 @@
           1,
           160213.07,
           0,
-          31,
-          7
+          33,
+          8
         ]
       ],
       "upd": "2026-09-02",
@@ -14840,9 +14840,9 @@
         [
           13,
           0,
-          7332.96,
-          603,
-          433,
+          7658.14,
+          641,
+          461,
           32,
           23,
           5,
@@ -14850,7 +14850,7 @@
           1,
           61999.15,
           0,
-          65,
+          68,
           1
         ]
       ],
@@ -17786,9 +17786,9 @@
         [
           35,
           3,
-          2127.15,
-          344,
-          330,
+          2166.21,
+          353,
+          336,
           5,
           0,
           0,
@@ -17802,9 +17802,9 @@
         [
           35,
           4,
-          787.38,
-          175,
-          163,
+          862.22,
+          194,
+          171,
           4,
           0,
           0,
@@ -17818,9 +17818,9 @@
         [
           35,
           13,
-          386.6,
-          49,
-          41,
+          445.82,
+          51,
+          45,
           2,
           0,
           0,
@@ -18771,7 +18771,7 @@
           0,
           1094.14,
           200,
-          197,
+          199,
           10,
           9,
           2,
@@ -18779,7 +18779,7 @@
           0,
           0.0,
           0,
-          196,
+          198,
           50
         ],
         [
@@ -18817,11 +18817,11 @@
         [
           2,
           4,
-          1418.8,
-          303,
-          135,
+          1533.0,
+          345,
+          234,
           7,
-          4,
+          6,
           0,
           0,
           0,
@@ -19222,6 +19222,319 @@
           "date": "2026-08-31",
           "cat": "creativo",
           "text": "Conjunto de anuncios creado · Pulpa Verde_Conversiones_Purchase_2026_Adv+",
+          "src": "meta"
+        }
+      ]
+    },
+    "saritina-ceramica": {
+      "name": "SARITINA CERAMICA",
+      "cur": "ARS",
+      "obj": "purchase",
+      "start": "auto",
+      "lastchg": null,
+      "th": {
+        "minP": 3,
+        "minSpend": 8000.0,
+        "minImpr": 1500,
+        "minLeads": 15,
+        "tgt": 2.0,
+        "scale": 1.2,
+        "kill": 0.6,
+        "ctrBad": 0.6,
+        "hookBad": 20.0,
+        "cCS": 10,
+        "cCM": 3,
+        "cLS": 50,
+        "cLM": 15,
+        "cIM": 1500
+      },
+      "ads": [
+        "Ad_Video_1",
+        "Ad_Video_2",
+        "Ad_Video_3",
+        "Ad_Video_4"
+      ],
+      "dates": [
+        "2026-09-01",
+        "2026-09-02"
+      ],
+      "f": [
+        "spend",
+        "impr",
+        "reach",
+        "lc",
+        "lpv",
+        "atc",
+        "ic",
+        "purch",
+        "pval",
+        "leads",
+        "v3s",
+        "thru"
+      ],
+      "rows": [
+        [
+          0,
+          0,
+          1411.77,
+          426,
+          387,
+          7,
+          0,
+          0,
+          0,
+          0,
+          0.0,
+          0,
+          409,
+          48
+        ],
+        [
+          0,
+          1,
+          72.49,
+          28,
+          28,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0.0,
+          0,
+          27,
+          1
+        ],
+        [
+          0,
+          2,
+          897.6,
+          234,
+          225,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0.0,
+          0,
+          221,
+          15
+        ],
+        [
+          0,
+          3,
+          3518.74,
+          1417,
+          1320,
+          11,
+          0,
+          0,
+          0,
+          0,
+          0.0,
+          0,
+          1299,
+          78
+        ],
+        [
+          1,
+          0,
+          64.91,
+          30,
+          27,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0.0,
+          0,
+          28,
+          6
+        ],
+        [
+          1,
+          1,
+          44.14,
+          11,
+          11,
+          2,
+          1,
+          0,
+          0,
+          0,
+          0.0,
+          0,
+          10,
+          1
+        ],
+        [
+          1,
+          2,
+          324.72,
+          49,
+          41,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0.0,
+          0,
+          37,
+          3
+        ],
+        [
+          1,
+          3,
+          737.77,
+          205,
+          193,
+          6,
+          0,
+          0,
+          0,
+          0,
+          0.0,
+          0,
+          191,
+          23
+        ]
+      ],
+      "upd": "2026-09-02",
+      "through": "2026-09-02",
+      "changes": [
+        {
+          "date": "2026-09-01",
+          "cat": "estado",
+          "text": "Estado del anuncio actualizado · Ad_Video_4 (Revisión pendiente → Activo)",
+          "src": "meta"
+        },
+        {
+          "date": "2026-09-01",
+          "cat": "estado",
+          "text": "Estado del anuncio actualizado · Ad_Video_3 (Revisión pendiente → Activo)",
+          "src": "meta"
+        },
+        {
+          "date": "2026-09-01",
+          "cat": "estado",
+          "text": "Estado del anuncio actualizado · Ad_Video_4 (Procesamiento pendiente → Revisión pendiente)",
+          "src": "meta"
+        },
+        {
+          "date": "2026-09-01",
+          "cat": "estado",
+          "text": "Estado del anuncio actualizado · Ad_Video_3 (Procesamiento pendiente → Revisión pendiente)",
+          "src": "meta"
+        },
+        {
+          "date": "2026-09-01",
+          "cat": "estado",
+          "text": "Estado del anuncio actualizado · Ad_Video_4 (Activo → Procesamiento pendiente)",
+          "src": "meta"
+        },
+        {
+          "date": "2026-09-01",
+          "cat": "estado",
+          "text": "Estado del anuncio actualizado · Ad_Video_3 (Activo → Procesamiento pendiente)",
+          "src": "meta"
+        },
+        {
+          "date": "2026-09-01",
+          "cat": "creativo",
+          "text": "Anuncio actualizado · Ad_Video_3",
+          "src": "meta"
+        },
+        {
+          "date": "2026-09-01",
+          "cat": "creativo",
+          "text": "Anuncio actualizado · Ad_Video_4",
+          "src": "meta"
+        },
+        {
+          "date": "2026-09-01",
+          "cat": "presupuesto",
+          "text": "Presupuesto del conjunto de anuncios actualizado · Saritina_Trafico_Mensajes_Wsp_Sep (7.806,40 → 15.000 ARS/día)",
+          "src": "meta"
+        },
+        {
+          "date": "2026-09-01",
+          "cat": "creativo",
+          "text": "Anuncio creado · Ad_Video_4",
+          "src": "meta"
+        },
+        {
+          "date": "2026-09-01",
+          "cat": "estado",
+          "text": "Estado del anuncio actualizado · Ad_Video_2 (Revisión pendiente → Activo)",
+          "src": "meta"
+        },
+        {
+          "date": "2026-09-01",
+          "cat": "creativo",
+          "text": "Anuncio creado · Ad_Video_3",
+          "src": "meta"
+        },
+        {
+          "date": "2026-09-01",
+          "cat": "estado",
+          "text": "Estado del anuncio actualizado · Ad_Video_1 (Revisión pendiente → Activo)",
+          "src": "meta"
+        },
+        {
+          "date": "2026-09-01",
+          "cat": "estado",
+          "text": "Estado del anuncio actualizado · Ad_Video_2 (Procesamiento pendiente → Revisión pendiente)",
+          "src": "meta"
+        },
+        {
+          "date": "2026-09-01",
+          "cat": "creativo",
+          "text": "Anuncio creado · Ad_Video_2",
+          "src": "meta"
+        },
+        {
+          "date": "2026-09-01",
+          "cat": "estado",
+          "text": "Estado del anuncio actualizado · Ad_Video_1 (Procesamiento pendiente → Revisión pendiente)",
+          "src": "meta"
+        },
+        {
+          "date": "2026-09-01",
+          "cat": "creativo",
+          "text": "Anuncio creado · Ad_Video_1",
+          "src": "meta"
+        },
+        {
+          "date": "2026-09-01",
+          "cat": "estado",
+          "text": "Estado del conjunto de anuncios actualizado · Saritina_Trafico_Mensajes_Wsp_Sep (Procesamiento pendiente → Activo)",
+          "src": "meta"
+        },
+        {
+          "date": "2026-09-01",
+          "cat": "otros",
+          "text": "Segmentación del conjunto de anuncios actualizada · Saritina_Trafico_Mensajes_Wsp_Sep",
+          "src": "meta"
+        },
+        {
+          "date": "2026-09-01",
+          "cat": "objetivo",
+          "text": "Objetivo de optimización del conjunto de anuncios actualizado · Saritina_Trafico_Mensajes_Wsp_Sep",
+          "src": "meta"
+        },
+        {
+          "date": "2026-09-01",
+          "cat": "presupuesto",
+          "text": "Estrategia de puja del conjunto de anuncios actualizada · Saritina_Trafico_Mensajes_Wsp_Sep",
+          "src": "meta"
+        },
+        {
+          "date": "2026-09-01",
+          "cat": "creativo",
+          "text": "Conjunto de anuncios creado · Saritina_Trafico_Mensajes_Wsp_Sep",
           "src": "meta"
         }
       ]

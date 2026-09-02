@@ -90,3 +90,13 @@ clients:
     start_label: "sep 2026"
     margin: 0.5
     notes: "Cliente nuevo (sep 2026)."
+
+  - slug: saritina-ceramica
+    name: "SARITINA CERAMICA"
+    objective: ventas
+    obj_code: purchase
+    currency: ARS
+    ad_account_id: "1583204293185422"
+    start_label: "auto"
+    margin: 0.5
+    notes: "Auto-agregado desde Meta (2026-09-02)."
