@@ -61,18 +61,36 @@ def _client_totals(hub: dict) -> dict:
             "leads": int(tot["leads"]), "ic": int(tot["ic"]), "atc": int(tot["atc"])}
 
 
+def _load_status(exports_dir: Path) -> dict:
+    p = exports_dir / "_status.json"
+    if p.exists():
+        try:
+            return json.loads(p.read_text(encoding="utf-8")) or {}
+        except Exception:
+            return {}
+    return {}
+
+
 def build_data(exports_dir: Path, site_dir: Path, config_dir: Path, verbose=True) -> dict:
     mapping_yaml = config_dir / "mapping.yaml"
     clients = load_clients(config_dir)
+    status = _load_status(exports_dir)
     DATA = {}
     diagnostics = []
     for client in clients:
-        rows, currency, files = load_client_rows(exports_dir, client["slug"], mapping_yaml)
+        slug = client["slug"]
+        rows, currency, files = load_client_rows(exports_dir, slug, mapping_yaml)
         if not rows:
-            diagnostics.append(f"· {client['slug']}: sin export (se omite)")
+            diagnostics.append(f"· {slug}: sin export (se omite)")
             continue
         hub = build_hub_client(client, rows, currency)
-        DATA[client["slug"]] = hub
+        # Última actualización de ESTA marca: fecha real del último pull desde Meta
+        # (la escribe engine.fetch_meta). Si aún no hay estado, cae al último día
+        # con datos, así el hub siempre muestra algo razonable.
+        st = status.get(slug) or {}
+        hub["upd"] = st.get("fetched_at") or (hub["dates"][-1] if hub["dates"] else None)
+        hub["through"] = st.get("through") or (hub["dates"][-1] if hub["dates"] else None)
+        DATA[slug] = hub
         t = _client_totals(hub)
         diagnostics.append(
             f"· {client['slug']:7s} {hub['cur']} gasto={t['spend']:>12,} "
@@ -81,9 +99,15 @@ def build_data(exports_dir: Path, site_dir: Path, config_dir: Path, verbose=True
 
     site_dir.mkdir(parents=True, exist_ok=True)
     payload = json.dumps(DATA, ensure_ascii=False, separators=(",", ":"))
+    try:
+        from zoneinfo import ZoneInfo
+        built = datetime.now(ZoneInfo("America/Argentina/Buenos_Aires")).strftime("%Y-%m-%d")
+    except Exception:
+        built = datetime.now(timezone.utc).strftime("%Y-%m-%d")
     (site_dir / "data.js").write_text(
         "/* Generado por engine.build — NO editar a mano. */\n"
-        "window.DATA_EXT = " + payload + ";\n", encoding="utf-8")
+        "window.DATA_EXT = " + payload + ";\n"
+        "window.DATA_BUILT = " + json.dumps(built) + ";\n", encoding="utf-8")
     (site_dir / "data.json").write_text(
         json.dumps({"generated_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
                     "DATA": DATA}, ensure_ascii=False, indent=2), encoding="utf-8")

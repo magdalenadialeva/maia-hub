@@ -42,7 +42,21 @@ def _fmt(n, cur=None, dec=0):
     return f"{cur} {s}" if cur else s
 
 
-def _client_report_html(client: dict, rows: List[dict]) -> str:
+_MESES = ["ene", "feb", "mar", "abr", "may", "jun", "jul", "ago", "sep", "oct", "nov", "dic"]
+
+
+def _fmt_date(iso: str | None) -> str:
+    """'2026-09-02' -> '2 sep 2026'."""
+    if not iso:
+        return "—"
+    try:
+        y, m, d = str(iso)[:10].split("-")
+        return f"{int(d)} {_MESES[int(m) - 1]} {y}"
+    except Exception:
+        return str(iso)
+
+
+def _client_report_html(client: dict, rows: List[dict], updated: str | None = None) -> str:
     slug = client["slug"]
     name = client.get("name", slug)
     cur = client.get("currency") or "ARS"
@@ -115,6 +129,7 @@ def _client_report_html(client: dict, rows: List[dict]) -> str:
 
     return _TEMPLATE.format(
         name=_html.escape(name), slug=slug, cur=cur, period=period,
+        updated=_html.escape(_fmt_date(updated)),
         obj=("Ventas" if objective == "ventas" else "Clientes potenciales"),
         target=target_roas, kpis=kpi_html,
         funnel_rows="".join(frows), funnel_diag=funnel_diag,
@@ -158,7 +173,8 @@ margin-top:12px;font-size:14px}}
 @media print{{.btn{{display:none}} body{{background:#fff}} .edit{{border-color:#e2e8f0;background:#fff}}}}
 </style></head><body><div class="wrap">
 <header><div><h1>{name}</h1>
-<div class="sub">Reporte de performance · {period} · Objetivo: {obj} · Moneda: {cur} · ROAS objetivo ≈ {target}</div></div>
+<div class="sub">Reporte de performance · {period} · Objetivo: {obj} · Moneda: {cur} · ROAS objetivo ≈ {target}</div>
+<div class="sub"><b>Última actualización:</b> {updated} · datos traídos automáticamente de Meta</div></div>
 <button class="btn" onclick="window.print()">Descargar PDF</button></header>
 
 <h2>Resultados del período</h2>
@@ -186,6 +202,15 @@ margin-top:12px;font-size:14px}}
 def build_reports(exports_dir: Path, out_dir: Path, config_dir: Path, verbose=True):
     mapping_yaml = config_dir / "mapping.yaml"
     clients = yaml.safe_load((config_dir / "clients.yaml").read_text(encoding="utf-8"))["clients"]
+    # Estado por marca (fecha del último pull) que escribe engine.fetch_meta.
+    status = {}
+    sp = exports_dir / "_status.json"
+    if sp.exists():
+        try:
+            import json as _json
+            status = _json.loads(sp.read_text(encoding="utf-8")) or {}
+        except Exception:
+            status = {}
     out_dir.mkdir(parents=True, exist_ok=True)
     done = []
     for client in clients:
@@ -197,7 +222,12 @@ def build_reports(exports_dir: Path, out_dir: Path, config_dir: Path, verbose=Tr
         for f in files:
             df, _ = read_export(f, mapping_yaml)
             rows.extend(df.to_dict(orient="records"))
-        html_str = _client_report_html(client, rows)
+        st = status.get(client["slug"]) or {}
+        updated = st.get("fetched_at")
+        if not updated:  # sin estado aún: usar el último día con datos
+            _ds = sorted({r["date"] for r in rows if r.get("date")})
+            updated = _ds[-1] if _ds else None
+        html_str = _client_report_html(client, rows, updated)
         p = out_dir / f"{client['slug']}.html"
         p.write_text(html_str, encoding="utf-8")
         done.append(client["slug"])

@@ -32,14 +32,26 @@ import time
 import unicodedata
 import urllib.parse
 import urllib.request
-from datetime import date, timedelta
+from datetime import date, datetime, timedelta
 from pathlib import Path
 from typing import Dict, List, Optional
 
 import yaml
 
+try:
+    from zoneinfo import ZoneInfo
+    _ART = ZoneInfo("America/Argentina/Buenos_Aires")
+except Exception:  # pragma: no cover
+    _ART = None
+
 API_VERSION = "v21.0"
 GRAPH = f"https://graph.facebook.com/{API_VERSION}"
+
+
+def _today_art() -> str:
+    """Fecha de HOY en horario de Argentina (cuando corre la actualización)."""
+    now = datetime.now(_ART) if _ART else datetime.now()
+    return now.strftime("%Y-%m-%d")
 
 # Campos que pedimos a la API (nivel anuncio, desglose diario).
 INSIGHT_FIELDS = [
@@ -193,7 +205,9 @@ def fetch_client(client: dict, days: int, token: str, exports_dir: Path) -> Opti
 
     if not rows:
         print(f"· {slug}: la API no devolvió filas (¿cuenta pausada?) -> no se toca el CSV")
-        return None
+        # El pull SÍ funcionó (la cuenta simplemente no tuvo actividad): se marca
+        # como actualizada hoy para no confundir "pausada" con "no se actualizó".
+        return {"rows": 0, "through": None, "empty": True}
 
     folder = exports_dir / slug
     folder.mkdir(parents=True, exist_ok=True)
@@ -207,8 +221,10 @@ def fetch_client(client: dict, days: int, token: str, exports_dir: Path) -> Opti
         w = csv.writer(f)
         w.writerow(_headers(currency))
         w.writerows(rows)
+    # Último día con datos (col 1 = "Inicio del informe").
+    through = max((r[1] for r in rows if r[1]), default=None)
     print(f"✓ {slug}: {len(rows)} filas -> {out}")
-    return str(out)
+    return {"rows": len(rows), "through": through, "empty": False}
 
 
 def _first_value(items) -> float:
@@ -393,15 +409,48 @@ def main():
         print(f"⚠ no se pudo listar/auto-agregar el portfolio ({e}); sigo con las de config.")
 
     exports = Path(args.exports)
+    today = _today_art()
+    status_path = exports / "_status.json"
+    status: Dict[str, dict] = {}
+    if status_path.exists():
+        try:
+            status = json.loads(status_path.read_text(encoding="utf-8")) or {}
+        except Exception:
+            status = {}
+
     ok, skip = 0, 0
     for c in clients:
+        slug = c["slug"]
         try:
             res = fetch_client(c, args.days, token, exports)
-            ok += 1 if res else 0
-            skip += 0 if res else 1
+            if res is None:            # sin ad_account_id -> no se toca su estado
+                skip += 1
+                continue
+            prev = status.get(slug, {})
+            status[slug] = {
+                "fetched_at": today,   # se actualizó HOY (aunque la cuenta esté pausada)
+                "ok": True,
+                "rows": res["rows"],
+                "empty": res.get("empty", False),
+                "through": res.get("through") or prev.get("through"),
+            }
+            ok += 1
         except Exception as e:
-            print(f"⚠ {c['slug']}: error de fetch -> se conserva el CSV previo · {e}")
+            # Error real de esa cuenta: se CONSERVA el fetched_at previo, así queda
+            # marcada como desactualizada en el hub (no miente con fecha de hoy).
+            prev = status.get(slug, {})
+            prev.update({"ok": False, "last_error": str(e)[:200], "last_attempt": today})
+            status[slug] = prev
+            print(f"⚠ {slug}: error de fetch -> se conserva el CSV previo · {e}")
             skip += 1
+
+    try:
+        status_path.parent.mkdir(parents=True, exist_ok=True)
+        status_path.write_text(json.dumps(status, ensure_ascii=False, indent=2), encoding="utf-8")
+        print(f"✓ estado por marca -> {status_path}")
+    except Exception as e:
+        print(f"⚠ no se pudo escribir _status.json ({e})")
+
     print(f"\nFetch terminado: {ok} actualizados, {skip} salteados/con error.")
     return 0
 
