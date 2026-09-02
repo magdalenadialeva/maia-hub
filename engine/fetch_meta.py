@@ -182,6 +182,59 @@ def _change_cat(et: str) -> str:
     return "otros"
 
 
+# Monedas sin decimales (el monto NO viene en centavos).
+_ZERO_DEC = {"CLP", "JPY", "KRW", "VND", "ISK", "HUF", "PYG", "UGX", "XAF",
+             "XOF", "RWF", "BIF", "DJF", "GNF", "KMF", "XPF"}
+
+
+def _amt(v, cur):
+    try:
+        x = float(v)
+    except (TypeError, ValueError):
+        return None
+    if cur and cur.upper() not in _ZERO_DEC:
+        x = x / 100.0   # Meta guarda en centavos salvo monedas sin decimales
+    return x
+
+
+def _fmt_amt(x):
+    if x is None:
+        return None
+    if x == int(x):
+        return f"{int(x):,}".replace(",", ".")
+    return f"{x:,.2f}".replace(",", "@").replace(".", ",").replace("@", ".")
+
+
+def _num_in(v):
+    if isinstance(v, dict):
+        for k in ("amount", "old_value", "new_value", "value", "budget"):
+            if isinstance(v.get(k), (int, float, str)):
+                return v[k]
+        return None
+    return v
+
+
+def _change_detail(j: dict) -> str:
+    """Convierte el extra_data de Meta en un detalle legible tipo (10.000 → 12.000 CLP/día)."""
+    old, new = j.get("old_value"), j.get("new_value")
+    cur = ""
+    if isinstance(old, dict):
+        cur = old.get("currency") or cur
+    if isinstance(new, dict):
+        cur = new.get("currency") or cur
+    per = ""
+    if isinstance(new, dict):
+        av = str(new.get("additional_value") or "").strip()
+        if av:
+            per = "/" + av.replace("por día", "día").replace("por dia", "día")
+    oa, na = _amt(_num_in(old), cur), _amt(_num_in(new), cur)
+    if oa is not None and na is not None and oa != na:
+        return f" ({_fmt_amt(oa)} → {_fmt_amt(na)}{(' ' + cur) if cur else ''}{per})"
+    if isinstance(old, (str, int)) and isinstance(new, (str, int)) and str(old) != str(new):
+        return f" ({old} → {new})"
+    return ""
+
+
 def fetch_activities(acct: str, token: str, days_hist: int) -> List[dict]:
     """Trae el log de cambios de la cuenta (últimos days_hist días)."""
     until = date.today()
@@ -214,9 +267,8 @@ def fetch_activities(acct: str, token: str, days_hist: int) -> List[dict]:
             if ed:
                 try:
                     j = json.loads(ed) if isinstance(ed, str) else ed
-                    old, new = j.get("old_value"), j.get("new_value")
-                    if old is not None and new is not None and str(old) != str(new):
-                        detail = f" ({old} → {new})"
+                    if isinstance(j, dict):
+                        detail = _change_detail(j)
                 except Exception:
                     pass
             label = base + (f" · {obj}" if obj else "") + detail
