@@ -54,6 +54,11 @@
   .chnames{margin:4px 0 2px 14px;display:grid;gap:2px}
   .chname{font-size:12px;color:var(--ink);opacity:.75}
   .chdet{color:var(--soft)}
+  .adcell{display:flex;align-items:center;gap:9px}
+  .sigthumb{width:40px;height:40px;border-radius:8px;object-fit:cover;flex:0 0 40px;border:1px solid var(--line);background:var(--panel2)}
+  .sigthumb.ph{display:flex;align-items:center;justify-content:center;font-size:16px}
+  .adcol{min-width:0}
+  .adname{font-weight:500;line-height:1.25}
   .card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:16px 18px;box-shadow:var(--shadow)}
   .h3b{font-family:var(--sans);font-weight:600;font-size:13px;margin:0 0 10px}
   .dhead{display:flex;align-items:baseline;justify-content:space-between;gap:12px;flex-wrap:wrap;margin:14px 0 2px}
@@ -721,11 +726,15 @@ function sigHTML(x){
   const top=x.cre.slice(0,8); const extra=x.cre.length-top.length;
   const VT={escalar:['v-escalar','escalar'],iterar:['v-iterar','iterar'],matar:['v-matar','matar'],poca:['v-poca','poca data']};
   const CT={fuerte:['Fuerte','#16a34a'],media:['Media/débil','#f59e0b'],sin:['Sin señal','#94a3b8']};
+  const TH=(x.D.thumbs)||{};
   const rows=top.map(c=>{
     const vt=VT[c.verdict]; const ct=CT[c.conf]||CT.sin;
     const roasCell=lead?`${money(c.leads)}`:`<span class="${heatClass('roas',c.roas)}">${dec(c.roas)}x</span>`;
+    const nm=c.ad.length>40?c.ad.slice(0,39)+'…':c.ad;
+    const th=TH[c.ad];
+    const thumb=th?`<img class="sigthumb" src="${th}" loading="lazy" alt="" onerror="this.style.display='none'">`:`<span class="sigthumb ph">${c.isVid?'🎬':'🖼️'}</span>`;
     return `<tr>
-      <td>${c.ad.length>40?c.ad.slice(0,39)+'…':c.ad}<div class="badtype">${c.isVid?'video':'imagen'} · $${money(c.spend)}</div></td>
+      <td><div class="adcell">${thumb}<div class="adcol"><div class="adname">${nm}</div><div class="badtype">${c.isVid?'video':'imagen'} · $${money(c.spend)}</div></div></div></td>
       <td><span class="${heatClass('freq',c.freq)}">${dec(c.freq,2)}</span></td>
       <td><span class="${heatClass('hook',c.hook,c.isVid)}">${c.isVid?dec(c.hook,1)+'%':'—'}</span></td>
       <td><span class="${heatClass('ctr',c.ctr)}">${dec(c.ctr)}%</span></td>
@@ -1278,7 +1287,7 @@ window.addEventListener("resize",()=>document.querySelectorAll(".panel.on iframe
 /* clock */
 (function(){const el=document.getElementById("clock");const d=new Date(),m=["ene","feb","mar","abr","may","jun","jul","ago","sep","oct","nov","dic"];el.textContent=d.getDate()+" "+m[d.getMonth()]+" "+d.getFullYear();})();
 /* sello de versión visible para confirmar que estás en la última */
-const BUILD="v19 · 2 sep 2026 · Historial legible + estabilidad";
+const BUILD="v20 · 2 sep 2026 · Miniaturas de creativos";
 (function(){const f=document.querySelector('.foot-note'); if(f)f.insertAdjacentHTML('beforeend',' · <b>Build '+BUILD+'</b>');
   const c=document.getElementById('clock'); if(c)c.insertAdjacentHTML('beforeend','<br><span style="color:var(--rose)">Build '+BUILD.split(' · ')[0]+'</span>');})();
 
