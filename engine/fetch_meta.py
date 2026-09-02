@@ -387,12 +387,17 @@ def fetch_thumbs(acct: str, token: str, want_names: set) -> Dict[str, str]:
     aparecen en la data (activos). Se usa la URL directa de Meta: como el hub se
     regenera cada mañana, la URL se renueva sola y nunca queda vencida."""
     fields = "name,creative{thumbnail_url}"
+    # Sólo anuncios ACTIVOS (los que se muestran) -> el query es mucho más liviano
+    # y rápido que traer TODO el historial de anuncios de la cuenta.
+    filt = json.dumps([{"field": "ad.effective_status", "operator": "IN",
+                        "value": ["ACTIVE"]}])
     url = (f"{GRAPH}/act_{acct}/ads?fields={urllib.parse.quote(fields)}"
-           f"&limit=300&access_token={urllib.parse.quote(token)}")
+           f"&filtering={urllib.parse.quote(filt)}"
+           f"&limit=100&access_token={urllib.parse.quote(token)}")
     thumbs: Dict[str, str] = {}
     page = 0
     try:
-        while url and page < 10:
+        while url and page < 3:
             data = _get_url(url)
             for ad in data.get("data", []):
                 nm = ad.get("name")
