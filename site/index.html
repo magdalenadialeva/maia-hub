@@ -893,8 +893,63 @@ const ANALISIS={
    ["z1","Los 2 anuncios principales corren hace semanas y el interés empieza a bajar.","Es la causa más probable de que el costo por lead suba pronto.","Preparar 2-3 anuncios nuevos (mismo estilo que los que funcionan) para sostener el costo por lead."],
    ["z2","Hay pocos anuncios (4): poco de dónde ir rotando.","Deja poco margen si uno se cansa.","Revisar con Paz la calidad de los leads (cuántos cierran) y mantener el presupuesto hasta tener anuncios nuevos."]]},
 };
+
+/* ===== Análisis de pauta AUTO-GENERADO desde la data en vivo =====
+   Siempre al día y sirve para TODAS las marcas (incl. las nuevas, p.ej. Pulpa).
+   Usa las mismas señales que el resto del sistema: cuello del embudo, veredicto
+   por creativo, fatiga y concentración de gasto. La nuance del trafficker se
+   agrega arriba con las notas (se guardan / van al Brand Brain).
+   El objeto ANALISIS de arriba quedó como referencia; ya no se usa para render. */
+function accionLeak(leak,ic){
+  const m={
+    'Clics enlace':'Refrescar ángulos y creativos: el anuncio no engancha (CTR bajo). Probar 2-3 hooks nuevos.',
+    'Visitas landing':'Revisar la landing: velocidad de carga y que el mensaje coincida con el anuncio; se pierde gente antes de ver el producto.',
+    'Add to Cart':ic?'Revisar la página de producto como comprador real: fotos, precio, envío y stock. El pago ya está probado; el freno está antes.':'Revisar la página de producto (fotos, precio, envío, stock): llegan pero no agregan al carrito.',
+    'Pago iniciado':'Destrabar carrito→pago: mostrar el costo de envío antes, sumar medios de pago y hacer una compra de prueba real.',
+    'Compra':'Revisar el checkout: pasos, errores y medios de pago — se cae al final.',
+    'Leads':'Revisar formulario y oferta: bajar la fricción y aclarar la promesa.'
+  };
+  return m[leak]||'Revisar este paso del embudo con más datos.';
+}
+function autoAnalisis(x){
+  const D=x.D,K=x.K,lead=D.obj==='lead',ic=D.obj==='ic',R=dec(K.roas);
+  const cre=x.cre||[], total=cre.reduce((s,v)=>s+v.spend,0)||K.spend||0;
+  const top=cre[0]||null;
+  const winners=cre.filter(v=>v.verdict==='escalar');
+  const kills=cre.filter(v=>v.verdict==='matar');
+  const conc= (top&&total)? top.spend/total : 0;
+  // resumen técnico (una línea)
+  const rp=[];
+  if(lead) rp.push(`${money(K.leads)} leads · CPL $${money(K.cpa)} ${D.cur}`);
+  else rp.push(`ROAS ${R}x · ${money(K.purch)} compras · $${money(K.spend)} ${D.cur}`);
+  if(x.leak) rp.push(`cuello en <b>${x.leak}</b>`);
+  if(x.fatiga) rp.push('fatiga incipiente (CTR↓ CPM↑)');
+  if(winners.length) rp.push(`ganador: <b>${winners[0].ad}</b>`);
+  const resumen=rp.join(' · ')+'.';
+  // en simple (lenguaje llano)
+  let simple;
+  if(!lead && K.purch===0){
+    simple=`${D.name} recién arranca: todavía no hay compras suficientes para conclusiones firmes. Lo importante ahora es dejar que Meta aprenda y juntar datos antes de tocar nada.`;
+  } else if(lead){
+    simple=`${D.name} trae clientes potenciales a $${money(K.cpa)} cada uno`+(x.fatiga?', pero los anuncios empiezan a cansar a la audiencia. Conviene renovarlos para que el costo no suba.':'. Viene a buen costo.');
+  } else {
+    const q=K.roas>=3?`muy bien: por cada $1 vuelven $${R}`:(K.roas>=1.5?`bien: por cada $1 vuelven $${R}`:`todavía en ajuste: por cada $1 vuelven $${R}`);
+    simple=`${D.name} viene ${q}.`+(x.leak?` El punto donde más se pierde hoy es "${x.leak}" — ahí está la mayor oportunidad.`:` No hay un cuello claro: el foco es escalar con cuidado.`);
+  }
+  // pares diagnóstico → acción (ids estables por marca para que las notas persistan)
+  const P=[];
+  if(x.leak) P.push([`${x.b}_leak`,`Donde más se cae la gente hoy es en "${x.leak}".`,`Es el mayor cuello del embudo: ahí se pierde la mayor cantidad de ${lead?'leads':'ventas'} posibles.`,accionLeak(x.leak,ic)]);
+  if(x.fatiga) P.push([`${x.b}_fatiga`,`Los anuncios empiezan a cansarse (CTR↓, CPM↑): los ve la misma gente muchas veces.`,`Si no se renuevan, el rendimiento cae en las próximas semanas.`,`Preparar 2-3 anuncios nuevos esta semana con los ángulos que ya funcionan (en video).`]);
+  if(winners.length) P.push([`${x.b}_win`,`Hay un anuncio ganador claro: "${winners[0].ad}".`,`Escalarlo es la palanca más directa para ${lead?'traer más leads':'vender más'} sin romper lo que funciona.`,`Subirle presupuesto +20-30% cada 3-4 días mientras ${lead?'el CPL se mantenga':'el ROAS siga arriba del objetivo'}.`]);
+  if(conc>=0.5 && top) P.push([`${x.b}_conc`,`Casi todo el presupuesto está en pocos anuncios ("${top.ad}" se lleva ${Math.round(conc*100)}%).`,`Riesgo de concentración: si ese anuncio se cansa, cae todo.`,`Sumar 2-3 creativos nuevos para tener recambio y repartir el gasto.`]);
+  if(kills.length) P.push([`${x.b}_kill`,`Hay ${kills.length} anuncio(s) rindiendo por debajo del umbral (ej. "${kills[0].ad}").`,`Queman presupuesto que rendiría mejor en los ganadores.`,`Pausar los de bajo rendimiento y frecuencia alta, y mover ese presupuesto a los que funcionan.`]);
+  if(!lead && K.purch===0) P.push([`${x.b}_learn`,`Todavía hay poca data (sin compras suficientes).`,`Hacer cambios grandes ahora agrega ruido y reinicia el aprendizaje de Meta.`,`Dejar correr sin tocar presupuestos bruscamente y anotar en el Brand Brain la fecha de inicio y cualquier cambio.`]);
+  if(!P.length) P.push([`${x.b}_ok`,`No hay un cuello claro ni señales de alarma en este período.`,`La pauta viene sana; el objetivo es sostener y escalar con cuidado.`,`Escalar los mejores +20-30% cada 3-4 días y sumar 1-2 creativos nuevos para recambio.`]);
+  return {simple,resumen,pairs:P.slice(0,6)};
+}
 function renderAnalisis(cid){
-  const x=compute(cid),A=ANALISIS[cid],D=x.D;
+  const x=compute(cid),A=autoAnalisis(x),D=x.D;
+  const up=updInfo(cid);
   const pairRows=A.pairs.map((p,i)=>{
     const dk='maia_done_'+p[0], nk='maia_note_'+p[0];
     const done=ckGet(dk), note=nGet(nk);
@@ -910,7 +965,8 @@ function renderAnalisis(cid){
     </div>`;}).join('');
   const tfk='maia_tf_'+cid;
   document.getElementById('body-analisis').innerHTML=`
-    <div class="dhead"><h2>${D.name}</h2><div class="meta">${OBJLBL[D.obj]} · ${D.cur} · análisis de pauta</div></div>
+    <div class="dhead"><h2>${D.name}</h2><div class="meta">${OBJLBL[D.obj]} · ${D.cur} · análisis de pauta</div>
+    <div class="meta">🔄 <b>Análisis actualizado al:</b> ${up.stale?`<span style="color:#b45309;font-weight:700">⚠ ${up.txt} (data atrasada)</span>`:up.txt} · se recalcula solo con la data de cada mañana</div></div>
     <div class="act-big act-${x.st.sem}">${x.st.act}</div>
     <div class="ana-simple"><span class="tag">En simple</span>${A.simple}</div>
     <details class="ana-tec"><summary>Ver el detalle técnico</summary><div class="diag ${x.st.sem==='g'?'ok':''}" style="margin-top:8px">${A.resumen}</div></details>
@@ -931,7 +987,7 @@ function renderAnalisis(cid){
   document.querySelector('#body-analisis .expbtn').addEventListener('click',()=>exportNotas(cid));
 }
 function exportNotas(cid){
-  const A=ANALISIS[cid],D=DATA[cid];
+  const A=autoAnalisis(compute(cid)),D=DATA[cid];
   let out='NOTAS · '+D.name+' · '+TODAY+'\n';
   A.pairs.forEach((p,i)=>{const done=ckGet('maia_done_'+p[0]),note=nGet('maia_note_'+p[0]);
     if(done||note){out+=`\n[${i+1}] ${p[1]}`;if(done)out+='\n  ✓ marcado como hecho';if(note)out+='\n  📝 '+note;}});
@@ -960,7 +1016,7 @@ function repConcl(x){
 }
 const PERIODEXPL={'7d':'Muestra los resultados de los <b>últimos 7 días</b> — ideal para el reporte semanal.','30d':'Muestra los resultados de los <b>últimos 30 días</b> — la foto del mes.','cust':'Muestra los resultados del <b>rango de fechas que elegiste</b>.'};
 function repNext(x){
-  const A=ANALISIS[x.b]; if(!A) return '';
+  const A=autoAnalisis(x);
   return A.pairs.slice(0,3).map(p=>`<li>${p[3]}</li>`).join('');
 }
 function repNums(x){
@@ -976,6 +1032,7 @@ function repNums(x){
 function edGet(k,def){const v=nGet(k);return v||def;}
 function renderReporte(cid){
   const x=compute(cid),D=x.D,pk=periodKey();
+  const up=updInfo(cid);
   const ck='maia_rep_concl_'+cid+'_'+pk, nk='maia_rep_next_'+cid+'_'+pk;
   const conclDef=repConcl(x), nextDef='<ul>'+repNext(x)+'</ul>';
   document.getElementById('body-reporte').innerHTML=`
@@ -986,7 +1043,8 @@ function renderReporte(cid){
     </div>
     <div class="report-sheet" id="report-sheet">
       <div class="rs-head">
-        <div><div class="rs-brand">${D.name}</div><div class="rs-sub">Reporte de resultados · ${periodLabel()}</div></div>
+        <div><div class="rs-brand">${D.name}</div><div class="rs-sub">Reporte de resultados · ${periodLabel()}</div>
+        <div class="rs-sub">🔄 Datos actualizados al ${up.stale?up.txt+' ⚠':up.txt}</div></div>
         <div class="rs-logo">MAIA</div>
       </div>
       <div class="rs-period">📅 ${PERIODEXPL[RANGE.preset]||PERIODEXPL.cust}</div>
@@ -1044,7 +1102,7 @@ window.addEventListener("resize",()=>document.querySelectorAll(".panel.on iframe
 /* clock */
 (function(){const el=document.getElementById("clock");const d=new Date(),m=["ene","feb","mar","abr","may","jun","jul","ago","sep","oct","nov","dic"];el.textContent=d.getDate()+" "+m[d.getMonth()]+" "+d.getFullYear();})();
 /* sello de versión visible para confirmar que estás en la última */
-const BUILD="v15 · 2 sep 2026 · Fecha de actualización + marcas auto";
+const BUILD="v16 · 2 sep 2026 · Análisis y Reporte auto + fecha";
 (function(){const f=document.querySelector('.foot-note'); if(f)f.insertAdjacentHTML('beforeend',' · <b>Build '+BUILD+'</b>');
   const c=document.getElementById('clock'); if(c)c.insertAdjacentHTML('beforeend','<br><span style="color:var(--rose)">Build '+BUILD.split(' · ')[0]+'</span>');})();
 
