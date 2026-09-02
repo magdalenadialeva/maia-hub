@@ -228,6 +228,33 @@ def _fmt(n) -> str:
     return str(int(f)) if f == int(f) else f"{f:.2f}"
 
 
+def discover_accounts(token: str) -> List[dict]:
+    """Lista TODAS las cuentas publicitarias que la usuaria administra, con su
+    gasto de los últimos 90 días (para distinguir clientes activos de cuentas
+    dormidas/personales). Devuelve [{id, name, currency, spend}]."""
+    out: List[dict] = []
+    fields = "name,account_id,currency,insights.date_preset(last_90d){spend}"
+    url = (f"{GRAPH}/me/adaccounts?fields={urllib.parse.quote(fields)}"
+           f"&limit=200&access_token={urllib.parse.quote(token)}")
+    page = 0
+    while url and page < 20:
+        data = _get_url(url)
+        for a in data.get("data", []):
+            spend = 0.0
+            ins = (a.get("insights") or {}).get("data") or []
+            if ins:
+                try:
+                    spend = float(ins[0].get("spend") or 0)
+                except (TypeError, ValueError):
+                    spend = 0.0
+            out.append({"id": str(a.get("account_id")),
+                        "name": a.get("name") or str(a.get("account_id")),
+                        "currency": a.get("currency"), "spend": spend})
+        url = (data.get("paging") or {}).get("next")
+        page += 1
+    return out
+
+
 def refresh_token(token: str) -> str:
     """Renueva el token: lo intercambia por uno nuevo de larga duración (~60 días).
 
@@ -296,6 +323,23 @@ def main():
     token = refresh_token(token)
 
     clients = yaml.safe_load((Path(args.config) / "clients.yaml").read_text(encoding="utf-8"))["clients"]
+    configured_ids = {str(c.get("ad_account_id", "")).replace("act_", "").strip()
+                      for c in clients}
+
+    # Listar TODAS las cuentas del portfolio (para mapear clientes y detectar
+    # las nuevas). Solo informa; no toca la config.
+    try:
+        accts = discover_accounts(token)
+        print(f"\n== Cuentas en tu Meta ({len(accts)}) · ordenadas por gasto 90d ==")
+        for a in sorted(accts, key=lambda x: -x["spend"]):
+            mark = "✓EN HUB" if a["id"] in configured_ids else (
+                   "← NUEVA/activa" if a["spend"] > 0 else "(sin gasto 90d)")
+            print(f"  act_{a['id']:>18}  {a['currency'] or '?':>3}  "
+                  f"gasto90d={int(a['spend']):>12,}  {a['name'][:34]:34s}  {mark}")
+        print("== fin listado ==\n")
+    except Exception as e:
+        print(f"⚠ no se pudo listar el portfolio ({e}); sigo con las de config.")
+
     exports = Path(args.exports)
     ok, skip = 0, 0
     for c in clients:
