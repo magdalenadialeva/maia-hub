@@ -26,8 +26,10 @@ import argparse
 import csv
 import json
 import os
+import re
 import sys
 import time
+import unicodedata
 import urllib.parse
 import urllib.request
 from datetime import date, timedelta
@@ -255,6 +257,35 @@ def discover_accounts(token: str) -> List[dict]:
     return out
 
 
+def _slugify(s: str) -> str:
+    s = "".join(c for c in unicodedata.normalize("NFKD", str(s)) if not unicodedata.combining(c))
+    s = re.sub(r"[^a-z0-9]+", "-", s.lower()).strip("-")
+    return s[:24] or "cuenta"
+
+
+def _unique_slug(base: str, taken: set) -> str:
+    if base not in taken:
+        return base
+    i = 2
+    while f"{base}-{i}" in taken:
+        i += 1
+    return f"{base}-{i}"
+
+
+def _append_clients_yaml(path: Path, entries: List[dict]) -> None:
+    """Agrega bloques de cliente al final de clients.yaml (preserva lo existente)."""
+    chunks = []
+    for e in entries:
+        nm = str(e["name"]).replace('"', "'")
+        chunks.append(
+            f"\n  - slug: {e['slug']}\n    name: \"{nm}\"\n    objective: ventas\n"
+            f"    obj_code: purchase\n    currency: {e['currency'] or 'ARS'}\n"
+            f"    ad_account_id: \"{e['id']}\"\n    start_label: \"auto\"\n"
+            f"    margin: 0.5\n    notes: \"Auto-agregado desde Meta ({date.today().isoformat()}).\"\n")
+    with path.open("a", encoding="utf-8") as f:
+        f.write("".join(chunks))
+
+
 def refresh_token(token: str) -> str:
     """Renueva el token: lo intercambia por uno nuevo de larga duración (~60 días).
 
@@ -322,23 +353,44 @@ def main():
     # Renovar el token (si hay credenciales de app) para que no venza.
     token = refresh_token(token)
 
-    clients = yaml.safe_load((Path(args.config) / "clients.yaml").read_text(encoding="utf-8"))["clients"]
-    configured_ids = {str(c.get("ad_account_id", "")).replace("act_", "").strip()
-                      for c in clients}
+    config_path = Path(args.config) / "clients.yaml"
+    cfg = yaml.safe_load(config_path.read_text(encoding="utf-8")) or {}
+    clients = cfg.get("clients", [])
+    ignore_ids = {str(x).replace("act_", "").strip() for x in (cfg.get("ignore_account_ids") or [])}
+    configured_ids = {str(c.get("ad_account_id", "")).replace("act_", "").strip() for c in clients}
+    taken_slugs = {c.get("slug") for c in clients}
 
-    # Listar TODAS las cuentas del portfolio (para mapear clientes y detectar
-    # las nuevas). Solo informa; no toca la config.
+    # Descubrir TODAS las cuentas del portfolio y SUMAR solas las nuevas activas
+    # (con gasto, no ya configuradas, no en la lista de ignoradas).
     try:
         accts = discover_accounts(token)
         print(f"\n== Cuentas en tu Meta ({len(accts)}) · ordenadas por gasto 90d ==")
+        new_entries = []
         for a in sorted(accts, key=lambda x: -x["spend"]):
-            mark = "✓EN HUB" if a["id"] in configured_ids else (
-                   "← NUEVA/activa" if a["spend"] > 0 else "(sin gasto 90d)")
-            print(f"  act_{a['id']:>18}  {a['currency'] or '?':>3}  "
-                  f"gasto90d={int(a['spend']):>12,}  {a['name'][:34]:34s}  {mark}")
+            aid = a["id"]
+            if aid in configured_ids:
+                mark = "✓ en hub"
+            elif aid in ignore_ids:
+                mark = "· ignorada"
+            elif a["spend"] > 0:
+                slug = _unique_slug(_slugify(a["name"]), taken_slugs)
+                taken_slugs.add(slug)
+                new_entries.append({"slug": slug, "name": a["name"],
+                                    "currency": a["currency"], "id": aid})
+                mark = f"← NUEVA -> se agrega (slug: {slug})"
+            else:
+                mark = "· sin gasto 90d (se ignora)"
+            print(f"  act_{aid:>18}  {a['currency'] or '?':>3}  "
+                  f"gasto90d={int(a['spend']):>12,}  {a['name'][:32]:32s}  {mark}")
+        if new_entries:
+            _append_clients_yaml(config_path, new_entries)
+            # Re-leer para que las nuevas se fetcheen en esta misma corrida.
+            clients = (yaml.safe_load(config_path.read_text(encoding="utf-8")) or {}).get("clients", [])
+            print(f"✓ {len(new_entries)} cuenta(s) nueva(s) agregada(s) a clients.yaml: "
+                  + ", ".join(e["slug"] for e in new_entries))
         print("== fin listado ==\n")
     except Exception as e:
-        print(f"⚠ no se pudo listar el portfolio ({e}); sigo con las de config.")
+        print(f"⚠ no se pudo listar/auto-agregar el portfolio ({e}); sigo con las de config.")
 
     exports = Path(args.exports)
     ok, skip = 0, 0
