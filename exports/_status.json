@@ -1,0 +1,44 @@
+{
+  "piera": {
+    "fetched_at": "2026-09-02",
+    "ok": true,
+    "rows": 175,
+    "empty": false,
+    "through": "2026-09-01"
+  },
+  "mossy": {
+    "fetched_at": "2026-09-02",
+    "ok": true,
+    "rows": 531,
+    "empty": false,
+    "through": "2026-09-02"
+  },
+  "vresia": {
+    "fetched_at": "2026-09-02",
+    "ok": true,
+    "rows": 180,
+    "empty": false,
+    "through": "2026-09-02"
+  },
+  "alba": {
+    "fetched_at": "2026-09-02",
+    "ok": true,
+    "rows": 56,
+    "empty": false,
+    "through": "2026-09-02"
+  },
+  "paz": {
+    "fetched_at": "2026-09-02",
+    "ok": true,
+    "rows": 161,
+    "empty": false,
+    "through": "2026-09-02"
+  },
+  "pulpa": {
+    "fetched_at": "2026-09-02",
+    "ok": true,
+    "rows": 13,
+    "empty": false,
+    "through": "2026-09-02"
+  }
+}
