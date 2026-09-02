@@ -149,6 +149,187 @@ def _account_currency(acct: str, token: str, fallback: str) -> str:
         return fallback
 
 
+# ---------------------------------------------------------------------------
+# HISTORIAL DE CAMBIOS por cuenta.
+# Fuente 1 (autoritativa): /activities de Meta = el log real de la cuenta
+#   (presupuesto, pausas/activaciones, optimización, creación de anuncios).
+# Fuente 2 (respaldo): deducido del gasto diario por anuncio que ya traemos
+#   (encendido/apagado de creativos, días de cuenta en pausa).
+# ---------------------------------------------------------------------------
+
+# event_type que DESCARTAMOS (ruido: facturación, pagos, TOS…).
+_CH_DROP = ("billing", "receipt", "funding", "payment", "tos", "invoice",
+            "charge", "business_information", "spending_limit_reached",
+            "account_spending_limit", "email", "notification")
+# substrings que SÍ nos interesan si el categorizador no los ubicó.
+_CH_KEEP = ("budget", "bid", "run_status", "status", "optimization", "objective",
+            "billing_event", "create_ad", "delete_ad", "update_ad", "update_campaign",
+            "update_ad_set", "pause", "activate", "spec", "targeting")
+
+
+def _change_cat(et: str) -> str:
+    e = et.lower()
+    if "budget" in e or "bid" in e or "spend_cap" in e:
+        return "presupuesto"
+    if "optimization" in e or "objective" in e or "billing_event" in e or "conversion" in e:
+        return "objetivo"
+    if "creative" in e or "create_ad" in e or "delete_ad" in e or "adgroup_spec" in e:
+        return "creativo"
+    if "status" in e or "pause" in e or "activate" in e or "run" in e:
+        return "estado"
+    if "targeting" in e or "audience" in e:
+        return "segmentacion"
+    return "otros"
+
+
+def fetch_activities(acct: str, token: str, days_hist: int) -> List[dict]:
+    """Trae el log de cambios de la cuenta (últimos days_hist días)."""
+    until = date.today()
+    since = until - timedelta(days=days_hist)
+    fields = ("event_type,translated_event_type,extra_data,object_name,"
+              "object_type,event_time,actor_name")
+    params = {"fields": fields, "since": since.isoformat(),
+              "until": until.isoformat(), "limit": 200}
+    out: List[dict] = []
+    try:
+        data = _api_get(f"act_{acct}/activities", params, token)
+    except Exception as e:
+        print(f"  · {acct}: /activities no disponible ({str(e)[:140]})")
+        return out
+    page = 0
+    while True:
+        for a in data.get("data", []):
+            et = a.get("event_type") or ""
+            el = et.lower()
+            if any(d in el for d in _CH_DROP):
+                continue
+            cat = _change_cat(et)
+            if cat == "otros" and not any(k in el for k in _CH_KEEP):
+                continue
+            when = (a.get("event_time") or "")[:10]
+            base = a.get("translated_event_type") or et.replace("_", " ").capitalize()
+            obj = a.get("object_name")
+            detail = ""
+            ed = a.get("extra_data")
+            if ed:
+                try:
+                    j = json.loads(ed) if isinstance(ed, str) else ed
+                    old, new = j.get("old_value"), j.get("new_value")
+                    if old is not None and new is not None and str(old) != str(new):
+                        detail = f" ({old} → {new})"
+                except Exception:
+                    pass
+            label = base + (f" · {obj}" if obj else "") + detail
+            out.append({"date": when, "cat": cat, "text": label, "src": "meta"})
+        nxt = (data.get("paging") or {}).get("next")
+        page += 1
+        if not nxt or page > 25:
+            break
+        try:
+            data = _get_url(nxt)
+        except Exception:
+            break
+    return out
+
+
+def derive_changes(rows: List[List]) -> List[dict]:
+    """Deduce encendido/apagado de creativos y pausas de cuenta desde el gasto
+    diario por anuncio (rows = [ad_name, date, spend, ...])."""
+    from collections import defaultdict
+    by_ad = defaultdict(dict)
+    acct_day = defaultdict(float)
+    alldates = set()
+    for r in rows:
+        ad = (r[0] or "sin nombre"); d = r[1]
+        if not d:
+            continue
+        try:
+            sp = float(r[2] or 0)
+        except (TypeError, ValueError):
+            sp = 0.0
+        alldates.add(d)
+        acct_day[d] += sp
+        by_ad[ad][d] = by_ad[ad].get(d, 0.0) + sp
+    dates = sorted(alldates)
+    ev: List[dict] = []
+    if not dates:
+        return ev
+    active = [d for d in dates if acct_day[d] > 0]
+    if not active:
+        return ev
+    # días de cuenta sin gasto dentro del período activo (pausa general)
+    span = [d for d in dates if active[0] <= d <= active[-1]]
+    run: List[str] = []
+    for d in span:
+        if acct_day[d] <= 0:
+            run.append(d)
+        else:
+            if len(run) >= 2:
+                ev.append({"date": run[0], "cat": "estado",
+                           "text": f"Cuenta sin gasto {len(run)} días (posible pausa general)",
+                           "src": "auto"})
+            run = []
+    # encendido/apagado por anuncio (solo con gasto real)
+    for ad, dd in by_ad.items():
+        adates = sorted([d for d in dd if dd[d] > 0])
+        if not adates:
+            continue
+        aset = set(adates)
+        if adates[0] > dates[0]:
+            ev.append({"date": adates[0], "cat": "creativo",
+                       "text": f"Se encendió/lanzó «{ad}»", "src": "auto"})
+        gap: List[str] = []
+        for d in [x for x in dates if adates[0] <= x <= adates[-1]]:
+            if d not in aset:
+                gap.append(d)
+            else:
+                if len(gap) >= 2:
+                    ev.append({"date": gap[0], "cat": "creativo",
+                               "text": f"Se pausó «{ad}»", "src": "auto"})
+                    ev.append({"date": d, "cat": "creativo",
+                               "text": f"Se reactivó «{ad}»", "src": "auto"})
+                gap = []
+        if adates[-1] < dates[-1]:
+            after = [d for d in dates if d > adates[-1] and acct_day[d] > 0]
+            if len(after) >= 2:
+                ev.append({"date": adates[-1], "cat": "creativo",
+                           "text": f"Se apagó «{ad}»", "src": "auto"})
+    return ev
+
+
+def _dedupe_changes(evs: List[dict]) -> List[dict]:
+    seen = set()
+    out = []
+    for e in sorted(evs, key=lambda x: (x.get("date") or ""), reverse=True):
+        k = (e.get("date"), e.get("text"))
+        if k in seen:
+            continue
+        seen.add(k)
+        out.append(e)
+    return out
+
+
+def write_changes(slug: str, acct: str, token: str, rows: List[List],
+                  folder: Path, days_hist: int) -> int:
+    """Escribe exports/<slug>/<slug>_changes.json con el historial de cambios."""
+    evs = []
+    try:
+        evs += fetch_activities(acct, token, days_hist)
+    except Exception as e:
+        print(f"  · {slug}: activities error ({str(e)[:120]})")
+    try:
+        evs += derive_changes(rows)
+    except Exception as e:
+        print(f"  · {slug}: derive_changes error ({str(e)[:120]})")
+    evs = _dedupe_changes(evs)[:120]
+    folder.mkdir(parents=True, exist_ok=True)
+    (folder / f"{slug}_changes.json").write_text(
+        json.dumps(evs, ensure_ascii=False, indent=1), encoding="utf-8")
+    n_meta = sum(1 for e in evs if e.get("src") == "meta")
+    print(f"  · {slug}: {len(evs)} cambios en historial ({n_meta} de Meta, {len(evs)-n_meta} deducidos)")
+    return len(evs)
+
+
 def fetch_client(client: dict, days: int, token: str, exports_dir: Path) -> Optional[str]:
     acct = str(client.get("ad_account_id") or "").strip().replace("act_", "")
     slug = client["slug"]
@@ -224,6 +405,12 @@ def fetch_client(client: dict, days: int, token: str, exports_dir: Path) -> Opti
     # Último día con datos (col 1 = "Inicio del informe").
     through = max((r[1] for r in rows if r[1]), default=None)
     print(f"✓ {slug}: {len(rows)} filas -> {out}")
+    # Historial de cambios (log de Meta + deducción del gasto). Ventana amplia
+    # para cubrir desde el arranque de la pauta; no rompe si /activities falla.
+    try:
+        write_changes(slug, acct, token, rows, folder, days_hist=120)
+    except Exception as e:
+        print(f"  · {slug}: historial no generado ({str(e)[:120]})")
     return {"rows": len(rows), "through": through, "empty": False}
 
 

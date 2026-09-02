@@ -90,6 +90,15 @@ def build_data(exports_dir: Path, site_dir: Path, config_dir: Path, verbose=True
         st = status.get(slug) or {}
         hub["upd"] = st.get("fetched_at") or (hub["dates"][-1] if hub["dates"] else None)
         hub["through"] = st.get("through") or (hub["dates"][-1] if hub["dates"] else None)
+        # Historial de cambios (lo escribe engine.fetch_meta).
+        ch_path = exports_dir / slug / f"{slug}_changes.json"
+        changes = []
+        if ch_path.exists():
+            try:
+                changes = json.loads(ch_path.read_text(encoding="utf-8")) or []
+            except Exception:
+                changes = []
+        hub["changes"] = changes
         DATA[slug] = hub
         t = _client_totals(hub)
         diagnostics.append(
