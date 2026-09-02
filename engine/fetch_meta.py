@@ -382,6 +382,34 @@ def write_changes(slug: str, acct: str, token: str, rows: List[List],
     return len(evs)
 
 
+def fetch_thumbs(acct: str, token: str, want_names: set) -> Dict[str, str]:
+    """Miniatura (thumbnail_url) por nombre de anuncio. Sólo para los anuncios que
+    aparecen en la data (activos). Se usa la URL directa de Meta: como el hub se
+    regenera cada mañana, la URL se renueva sola y nunca queda vencida."""
+    fields = "name,creative{thumbnail_url}"
+    url = (f"{GRAPH}/act_{acct}/ads?fields={urllib.parse.quote(fields)}"
+           f"&limit=300&access_token={urllib.parse.quote(token)}")
+    thumbs: Dict[str, str] = {}
+    page = 0
+    try:
+        while url and page < 10:
+            data = _get_url(url)
+            for ad in data.get("data", []):
+                nm = ad.get("name")
+                if not nm or nm in thumbs:
+                    continue
+                if want_names and nm not in want_names:
+                    continue
+                turl = (ad.get("creative") or {}).get("thumbnail_url")
+                if turl:
+                    thumbs[nm] = turl
+            url = (data.get("paging") or {}).get("next")
+            page += 1
+    except Exception as e:
+        print(f"  · thumbs error ({str(e)[:100]})")
+    return thumbs
+
+
 def fetch_client(client: dict, days: int, token: str, exports_dir: Path) -> Optional[str]:
     acct = str(client.get("ad_account_id") or "").strip().replace("act_", "")
     slug = client["slug"]
@@ -463,6 +491,15 @@ def fetch_client(client: dict, days: int, token: str, exports_dir: Path) -> Opti
         write_changes(slug, acct, token, rows, folder, days_hist=120)
     except Exception as e:
         print(f"  · {slug}: historial no generado ({str(e)[:120]})")
+    # Miniaturas de los creativos activos (para el cuadro de señales).
+    try:
+        names = set(r[0] for r in rows if r[0])
+        th = fetch_thumbs(acct, token, names)
+        (folder / f"{slug}_thumbs.json").write_text(
+            json.dumps(th, ensure_ascii=False), encoding="utf-8")
+        print(f"  · {slug}: {len(th)} miniaturas de creativos")
+    except Exception as e:
+        print(f"  · {slug}: miniaturas no generadas ({str(e)[:120]})")
     return {"rows": len(rows), "through": through, "empty": False}
 
 

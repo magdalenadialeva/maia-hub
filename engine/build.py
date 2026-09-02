@@ -99,6 +99,15 @@ def build_data(exports_dir: Path, site_dir: Path, config_dir: Path, verbose=True
             except Exception:
                 changes = []
         hub["changes"] = changes
+        # Miniaturas de creativos (nombre -> thumbnail_url), lo escribe fetch_meta.
+        th_path = exports_dir / slug / f"{slug}_thumbs.json"
+        thumbs = {}
+        if th_path.exists():
+            try:
+                thumbs = json.loads(th_path.read_text(encoding="utf-8")) or {}
+            except Exception:
+                thumbs = {}
+        hub["thumbs"] = thumbs
         DATA[slug] = hub
         t = _client_totals(hub)
         diagnostics.append(
