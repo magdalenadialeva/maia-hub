@@ -19,7 +19,7 @@
     "rows": 182,
     "empty": false,
     "through": "2026-09-02",
-    "last_error": "HTTP 400: {\"error\":{\"message\":\"Service temporarily unavailable\",\"type\":\"OAuthException\",\"is_transient\":false,\"code\":2,\"error_subcode\":1504044,\"error_user_title\":\"Se produjo un error desconocido\",\"erro",
+    "last_error": "HTTP 403: {\"error\":{\"message\":\"Application request limit reached\",\"type\":\"OAuthException\",\"is_transient\":true,\"code\":4,\"error_subcode\":1504022,\"error_user_title\":\"Demasiadas solicitudes a la API\",\"err",
     "last_attempt": "2026-09-02"
   },
   "alba": {
