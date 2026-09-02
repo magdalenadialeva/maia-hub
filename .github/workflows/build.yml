@@ -12,11 +12,12 @@ on:
       - "config/**"
       - ".github/workflows/build.yml"
   workflow_dispatch: {}
-  # --- FASE FULL HANDS-FREE (dejar comentado hasta migrar) ---
-  # Corre solo los lunes 08:00 America/Buenos_Aires (11:00 UTC). Requiere que
-  # los CSV lleguen solos al repo (p.ej. un robot que lea el mail de Meta).
-  # schedule:
-  #   - cron: "0 11 * * 1"
+  # FULL HANDS-FREE: corre TODAS las mañanas 08:00 America/Buenos_Aires (11:00 UTC).
+  # engine.fetch_meta trae la data del día desde la API de Meta (si el secret
+  # META_TOKEN está cargado). Si no hay token, el build usa los CSV que ya estén
+  # en exports/ (modo manual), así nunca rompe.
+  schedule:
+    - cron: "0 11 * * *"
 
 permissions:
   contents: write
@@ -40,6 +41,15 @@ jobs:
       - name: Instalar dependencias
         run: pip install -r requirements.txt
 
+      - name: Traer data del día desde Meta (si hay META_TOKEN)
+        env:
+          META_TOKEN: ${{ secrets.META_TOKEN }}
+          META_APP_ID: ${{ secrets.META_APP_ID }}
+          META_APP_SECRET: ${{ secrets.META_APP_SECRET }}
+          GH_PAT: ${{ secrets.GH_PAT }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+        run: python -m engine.fetch_meta --days 35
+
       - name: Regenerar data.js + reportes + brand brain
         run: python -m engine.build
 
@@ -47,7 +57,7 @@ jobs:
         run: |
           git config user.name  "maia-bot"
           git config user.email "maia-bot@users.noreply.github.com"
-          git add site/data.js site/data.json reports brandbrain || true
+          git add exports site/data.js site/data.json reports brandbrain || true
           git commit -m "auto: regenerar data desde export ($(date -u +%F))" || echo "sin cambios"
           git push || true
 
