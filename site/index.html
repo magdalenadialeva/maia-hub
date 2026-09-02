@@ -365,6 +365,21 @@
   .cx .cxmid{color:var(--rose);font-size:10px}
   .spark .hit{cursor:crosshair}
   .spark .hit:hover{fill:rgba(176,82,107,.08)}
+  /* ===== ajustes v21 ===== */
+  #charttip{position:absolute;z-index:50;pointer-events:none;background:#271F1C;color:#fff;font-family:var(--mono);font-size:11px;line-height:1.5;padding:7px 10px;border-radius:8px;box-shadow:0 6px 20px rgba(0,0,0,.22);max-width:260px;opacity:0;transform:translateY(-100%);transition:opacity .1s}
+  #charttip.on{opacity:1}
+  #charttip b{color:#fff}
+  .objbanner{display:flex;align-items:center;gap:8px;flex-wrap:wrap;background:var(--gold-t);border:1px solid #E4D3AC;border-radius:12px;padding:9px 14px;margin:4px 0 10px;font-size:13.5px}
+  .objbanner .obk{font-family:var(--mono);font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--gold)}
+  .objbanner b{color:var(--ink)}
+  .objbanner .objsub{color:var(--soft);font-size:12px}
+  .interp{background:#FBF3E3;border:1px solid #E9D9B4;border-left:3px solid var(--gold);border-radius:10px;padding:10px 14px;margin:8px 0 4px;font-size:12.8px;color:#5c4d2a}
+  .interp b{color:#4a3d1f}
+  .vdot{display:inline-block;width:13px;height:13px;border-radius:50%;background:var(--dot,#94a3b8);vertical-align:-2px;cursor:help}
+  .vdot.prov{background:transparent;border:2.5px solid var(--dot,#94a3b8)}
+  .phleg{margin-top:9px;font-size:11.5px;color:var(--soft);display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+  .phchip{display:inline-flex;align-items:center;gap:5px;padding:1px 8px;border-radius:999px;background:var(--panel2);border:1px solid var(--line);font-size:11px}
+  .phchip::before{content:"";width:9px;height:9px;border-radius:2px;background:var(--c)}
   .rs-period{background:var(--panel2);border:1px solid var(--line);border-radius:10px;padding:9px 13px;font-size:12.5px;color:var(--soft);margin-bottom:16px}
   .regen{appearance:none;background:none;border:1px solid var(--line);border-radius:999px;color:var(--soft);font-family:var(--mono);font-size:10px;padding:2px 9px;cursor:pointer;margin-left:8px;vertical-align:2px;font-weight:400}
   .regen:hover{border-color:var(--rose);color:var(--rose)}
@@ -505,8 +520,39 @@ const CLIENTS=Object.keys(DATA);
    respecto de las demás -> se marca con ⚠. */
 function updISO(b){const D=DATA[b]; if(!D) return null; return D.upd || (D.dates&&D.dates.length?D.dates[D.dates.length-1]:null);}
 const FRESH=(function(){let m=null; for(const b of CLIENTS){const u=updISO(b); if(u&&(!m||u>m))m=u;} return m;})();
-function updInfo(b){const u=updISO(b); if(!u) return {iso:null,txt:'—',stale:false}; return {iso:u,txt:fmtD(u),stale:(FRESH&&u<FRESH)};}
-const OBJLBL={ic:'Ventas · validando checkout',purchase:'Ventas',lead:'Clientes potenciales'};
+function updInfo(b){
+  const D=DATA[b]||{}; const u=updISO(b);
+  const failed=(D.ok===false);   // el ÚLTIMO intento de traer datos falló (aunque la fecha se vea reciente)
+  if(!u) return {iso:null,txt:'—',stale:false,failed:false};
+  const staleDate=(FRESH&&u<FRESH);
+  return {iso:u,txt:fmtD(u),stale:(staleDate||failed),staleDate,failed,attempt:D.attempt||null,err:D.err||null};
+}
+/* Texto de la fecha de actualización con su ⚠ y motivo (compartido por todos los tabs). */
+function updBadge(b){
+  const u=updInfo(b);
+  if(u.failed){
+    const at=u.attempt?fmtD(u.attempt):'hoy';
+    const motivo=(u.err&&/temporarily unavailable|unknown|desconocido|400/i.test(u.err))?'error de Meta':'no se pudo actualizar';
+    return `<span title="La actualización del ${at} falló (${motivo}). Se muestra el último dato bueno, del ${u.txt}." style="color:#b45309;font-weight:700;white-space:nowrap">⚠ ${u.txt} · la corrida del ${at} falló (${motivo}) — se muestra el último dato bueno</span>`;
+  }
+  if(u.staleDate) return `<span title="Quedó atrasada respecto de las demás." style="color:#b45309;font-weight:700;white-space:nowrap">⚠ ${u.txt} (quedó atrasada)</span>`;
+  return u.txt;
+}
+const OBJLBL={ic:'Ventas · optimizando a Iniciar pago (validando checkout)',purchase:'Ventas · optimizando a Compra',lead:'Clientes potenciales (leads)',msg:'Mensajes de WhatsApp (tráfico)'};
+const OBJSHORT={ic:'Iniciar pago',purchase:'Compra',lead:'Leads',msg:'Mensajes de WhatsApp'};
+/* Objetivo por el que optimiza la cuenta HOY. Si hay fases de optimización
+   declaradas (D.optphases), usa la última (la vigente). */
+function objText(D){
+  const ph=(D.optphases||[]);
+  if(ph.length){const last=ph[ph.length-1];return (last.label||OBJSHORT[last.opt]||last.opt);}
+  return OBJSHORT[D.obj]||'—';
+}
+/* Objetivos SIN ROAS (no hay conversión de venta): leads y mensajes. */
+function isLead(o){return o==='lead'||o==='msg';}
+function resWord(o){return o==='lead'?'leads':(o==='msg'?'conversaciones':'compras');}
+/* ¿El resultado de esta marca se está midiendo? (msg: hoy el export no trae las
+   conversaciones de WhatsApp -> no disponible). */
+function resultTracked(D){return D.obj!=='msg';}
 const LASTCHG_FB={vresia:'2026-08-21'};
 const START_ISO={piera:'2026-07-28',mossy:'2026-07-27',alba:'2026-08-21',paz:'2026-07-01',vresia:'2026-08-21'};
 const MES=['ene','feb','mar','abr','may','jun','jul','ago','sep','oct','nov','dic'];
@@ -533,8 +579,32 @@ function kpis(T,obj){
     ctr:pct(lc,impr),cpm:impr?1000*spend/impr:0,cpc:lc?spend/lc:0,
     roas:spend?T.pval/spend:0,
     purch:T.purch,leads:T.leads,pval:T.pval,
-    result: obj==='lead'?T.leads:T.purch,
-    cpa: obj==='lead'?(T.leads?spend/T.leads:0):(T.purch?spend/T.purch:0)};
+    result: isLead(obj)?T.leads:T.purch,
+    atc:T.atc,ic:T.ic,
+    cpa: isLead(obj)?(T.leads?spend/T.leads:0):(T.purch?spend/T.purch:0)};
+}
+/* ===== Significancia / interpretabilidad de cada métrica =====
+   Una métrica sólo es "interpretable" si tiene volumen suficiente para significancia:
+     · ROAS / CPA  -> necesitan conversiones (compras >= cCS · leads >= cLS).
+     · CTR / CPM / Hook / Frec. -> necesitan impresiones (>= cIM).
+   El resultado (nº de compras/leads) es orientativo con pocas conversiones (>= cCM/cLM).
+   Cuando el ROAS NO es interpretable, `alt` dice por qué métrica evaluar mientras tanto. */
+function sig(K,D){
+  const TH=D.th||{}; const cCS=TH.cCS||10,cCM=TH.cCM||3,cLS=TH.cLS||50,cLM=TH.cLM||15,cIM=TH.cIM||1500;
+  const lead=isLead(D.obj);
+  const conv=lead?K.result:K.purch;
+  const convStrong = lead ? (K.result>=cLS) : (K.purch>=cCS);   // ROAS/CPA firmes
+  const convAny    = lead ? (K.result>=cLM) : (K.purch>=cCM);   // hay algo de resultado
+  const imprOK     = K.impr>=cIM;                                // señales de arriba
+  const need=lead?cLS:cCS;
+  let alt;
+  if(imprOK) alt = lead
+    ? `evaluá por CTR y CPM (ya significativos con ${money(K.impr)} impresiones) y por el costo por resultado a medida que junte volumen`
+    : `evaluá por CTR y CPM (ya significativos con ${money(K.impr)} impresiones) y mirá cómo se acumulan las compras; el ROAS/CPA será confiable con ≥${need} ${resWord(D.obj)}`;
+  else alt = `todavía no hay volumen ni de conversiones ni de impresiones para juzgar — dejar correr`;
+  return {lead,conv,need,cCS,cCM,cLS,cLM,cIM,
+    roas:(!lead && convStrong), cpa:convStrong, result:convAny,
+    ctr:imprOK, cpm:imprOK, hook:imprOK, imprOK, convStrong, convAny, alt};
 }
 
 const BM={'Visitas landing':85,'Add to Cart':13,'Pago iniciado':45,'Compra':60,'Leads':20};
@@ -571,7 +641,7 @@ function compute(b){
   const fatiga=(cpm_dir==='up'&&ctr_dir==='down');
   // funnel (demand, events)
   let stages;
-  if(D.obj==='lead') stages=[['Clics enlace',K.lc,K.impr],['Leads',K.leads,K.lc]];
+  if(isLead(D.obj)) stages=[['Clics enlace',K.lc,K.impr],[D.obj==='msg'?'Conversaciones':'Leads',K.leads,K.lc]];
   else stages=[['Clics enlace',K.lc,K.impr],['Visitas landing',cur.T.lpv,K.lc],['Add to Cart',cur.T.atc,cur.T.lpv],['Pago iniciado',cur.T.ic,cur.T.atc],['Compra',cur.T.purch,cur.T.ic]];
   const funnel=stages.map(([lab,val,base])=>({lab,val,conv:pct(val,base),bm:BM[lab]||null}));
   let leak=null,worst=9;
@@ -589,16 +659,24 @@ function compute(b){
     /* Veredicto por reglas — MISMOS umbrales que el reporte Python (D.th, de engine/config.py).
        Gate de suficiencia primero: sin data firme -> 'poca' (no se declara ganador con 1 compra). */
     const TH=D.th||{minP:3,minSpend:8000,minImpr:1500,minLeads:15,tgt:2,scale:1.2,kill:0.6,ctrBad:0.6,hookBad:20};
-    if(D.obj==='lead'){ const cl=v.leads;
+    let prov=false;   // veredicto provisional = leído por señales baratas (CTR/hook), no por ROAS/CPL
+    const cIM_=TH.cIM||TH.minImpr||1500;
+    // Lectura por señales de arriba (verde/amarillo/rojo) cuando NO alcanza para el ROAS/CPL.
+    const cheap=()=>{ if(v.impr<cIM_) return 'poca';   // ni siquiera hay impresiones -> gris
+      const hookBad=isVid&&chook<TH.hookBad;
+      if(cctr>=1.2 && !hookBad) return 'escalar';
+      if(cctr>=0.8) return 'iterar';
+      return 'matar'; };
+    if(isLead(D.obj)){ const cl=v.leads;
       const enoughL=cl>=TH.minLeads&&v.impr>=TH.minImpr;
-      if(!enoughL)verdict='poca';
+      if(!enoughL){ verdict=cheap(); prov=(verdict!=='poca'); }
       else verdict=(cctr>=1.2)?'escalar':(cctr>=1.0?'iterar':'matar');
       leakc=cctr<1.0?'Clic':'OK';
     } else {
       const enough=((v.spend>=TH.minSpend&&v.purch>=TH.minP)||v.purch>=TH.minP*2)&&v.impr>=TH.minImpr;
       const rr=TH.tgt?croas/TH.tgt:0;
       const topOk=cctr>TH.ctrBad&&(!isVid||chook>TH.hookBad);
-      if(!enough)verdict='poca';
+      if(!enough){ verdict=cheap(); prov=(verdict!=='poca'); }
       else if(rr&&rr<TH.kill&&!topOk)verdict='matar';
       else if(rr>=TH.scale)verdict='escalar';
       else verdict='iterar';
@@ -610,10 +688,10 @@ function compute(b){
       else leakc='OK';
     }
     let conf;{const cCS=TH.cCS||10,cCM=TH.cCM||3,cLS=TH.cLS||50,cLM=TH.cLM||15,cIM=TH.cIM||1500;
-      if(D.obj==='lead')conf=(v.leads>=cLS)?'fuerte':((v.leads>=cLM||v.impr>=cIM)?'media':'sin');
+      if(isLead(D.obj))conf=(v.leads>=cLS)?'fuerte':((v.leads>=cLM||v.impr>=cIM)?'media':'sin');
       else conf=(v.purch>=cCS)?'fuerte':((v.purch>=cCM||v.impr>=cIM)?'media':'sin');}
     cre.push({ad:D.ads[a],spend:v.spend,isVid,hook:chook,ctr:cctr,roas:croas,freq:cfreq,
-      impr:v.impr,leads:v.leads|0,purch:v.purch|0,verdict,conf,leakc});
+      impr:v.impr,leads:v.leads|0,purch:v.purch|0,verdict,prov,conf,leakc});
   }
   cre.sort((x,y)=>y.spend-x.spend);
   // status → action + reason + sem
@@ -625,9 +703,11 @@ function compute(b){
 }
 function statusOf(obj,K,fatiga,ctr_dir,cpm_dir){
   const R=dec(K.roas);
+  if(obj==='msg' && !(K.result>0)) return {sem:'i',act:'MEDIR RESULTADO',why:'objetivo Mensajes de WhatsApp: falta traer las conversaciones al export'};
   if(obj==='ic') return {sem:'y',act:'REVISAR PRODUCTO Y CREATIVO',why:`convierte (ROAS ${R}x) pero cae en Add to Cart`};
-  if(obj==='lead') return fatiga?{sem:'y',act:'REFRESCAR CREATIVOS',why:`CPL $${money(K.cpa)} · CTR↓ CPM↑`}
-                                :{sem:'g',act:'SANO — MANTENER',why:`CPL $${money(K.cpa)} · ${money(K.leads)} leads`};
+  if(obj==='lead'||obj==='msg'){const u=obj==='msg'?'conversaciones':'leads';
+    return fatiga?{sem:'y',act:'REFRESCAR CREATIVOS',why:`costo/result. $${money(K.cpa)} · CTR↓ CPM↑`}
+                 :{sem:'g',act:'SANO — MANTENER',why:`$${money(K.cpa)}/result. · ${money(K.result)} ${u}`};}
   if(fatiga) return {sem:'y',act:'REVISAR FATIGA INCIPIENTE',why:`ROAS ${R}x pero CTR↓ CPM↑`};
   if(K.roas>=3) return {sem:'g',act:'POTENCIAL — ESCALAR',why:`ROAS ${R}x`};
   if(K.roas>=1.5&&K.purch>0) return {sem:'y',act:'SEGUIR OPTIMIZANDO',why:`ROAS ${R}x · escala reciente`};
@@ -659,34 +739,37 @@ const SEV={r:0,y:1,g:2,i:3};
 function renderGeneral(){
   const rows=CLIENTS.map(compute).sort((a,b)=>(SEV[a.st.sem]-SEV[b.st.sem])||(b.K.spend-a.K.spend));
   const body=rows.map(x=>{
-    const res=x.D.obj==='lead'?money(x.K.result)+' leads':money(x.K.result)+' compras';
-    const roas=x.D.obj==='lead'?'—':dec(x.K.roas)+'x';
-    const rt=x.D.obj==='lead'?{dir:'na'}:trend(x.TR.cur.roas,x.TR.prev?x.TR.prev.roas:null,true);
+    const D=x.D, msg=(D.obj==='msg'), lead=isLead(D.obj), S=sig(x.K,D);
+    const msgNoData=msg && !(x.K.result>0);
+    const res=msgNoData?'<span style="color:var(--soft)">s/d</span>':(lead?money(x.K.result)+' '+resWord(D.obj):money(x.K.result)+' compras');
+    // ROAS: sólo se muestra "limpio" si es interpretable; si no, va atenuado con * y aclaración.
+    const roas = (msg||lead) ? '—'
+      : (S.roas ? dec(x.K.roas)+'x'
+                : `<span title="ROAS no interpretable: ${x.K.purch} de ${S.cCS} compras necesarias para significancia. Mirá Resultado y CPA." style="color:var(--soft)">${dec(x.K.roas)}x*</span>`);
+    // La flecha de tendencia del ROAS sólo tiene sentido si el ROAS es interpretable.
+    const rt=(msg||lead||!S.roas)?{dir:'na'}:trend(x.TR.cur.roas,x.TR.prev?x.TR.prev.roas:null,true);
     const lc=x.lcDays==null?'—':('hace '+x.lcDays+'d');
-    const up=updInfo(x.b);
-    const upCell=up.stale
-      ? `<span title="No se actualizó en la última corrida — muestra el dato anterior" style="color:#b45309;font-weight:700;white-space:nowrap">⚠ ${up.txt}</span>`
-      : `<span style="white-space:nowrap">${up.txt}</span>`;
+    const upCell=updBadge(x.b);
     return `<tr class="row-${x.st.sem}">
-      <td><b>${x.D.name}</b></td>
+      <td><b>${D.name}</b></td>
       <td data-l="Actualizado">${upCell}</td>
-      <td class="num" data-l="Gasto">$${money(x.K.spend)} ${x.D.cur}</td>
+      <td class="num" data-l="Gasto">$${money(x.K.spend)} ${D.cur}</td>
       <td class="num" data-l="Resultado">${res}</td>
       <td class="num" data-l="ROAS">${roas}</td>
       <td class="num" data-l="Tend.">${arrowHTML(rt)}</td>
-      <td class="num" data-l="CPA / CPL">$${money(x.K.cpa)} ${x.D.cur}</td>
+      <td class="num" data-l="CPA / CPL">${msgNoData?'—':'$'+money(x.K.cpa)+' '+D.cur}</td>
       <td class="num" data-l="Últ. mod.">${lc}</td>
       <td data-l="Atención"><button class="act-link" data-go="${x.b}"><span class="act act-${x.st.sem}">${x.st.act}</span> <span class="act-arrow">→ análisis</span><div class="why">${x.st.why}</div></button></td>
       </tr>`;}).join('');
   document.getElementById('body-general').innerHTML=`
     <div class="sec-h">Comparativa y control</div>
     <div class="sec-s">Ordenadas por urgencia. El color de la fila y la acción te dicen qué hacer; el "por qué" muestra el número que lo explica. Piera en CLP, el resto en ARS — no se comparan entre sí.</div>
-    <div class="sec-s">📅 <b>Datos actualizados al ${FRESH?fmtD(FRESH):'—'}</b> · se refrescan solos cada mañana desde Meta. Si una marca quedó atrás, aparece con <span style="color:#b45309;font-weight:700">⚠</span> en su fecha.</div>
+    <div class="sec-s">📅 <b>Datos actualizados al ${FRESH?fmtD(FRESH):'—'}</b> · se refrescan solos cada mañana desde Meta. Si una marca quedó atrás <b>o su última actualización falló</b>, aparece con <span style="color:#b45309;font-weight:700">⚠</span> en su fecha.</div>
     <div class="scroll"><table class="cmp">
-      <tr><th>Cliente</th><th>Actualizado</th><th>Gasto</th><th>Resultado</th><th>ROAS</th><th>Tend.</th><th>CPA / CPL</th><th>Últ. mod. pauta</th><th>Atención → acción</th></tr>
+      <tr><th>Cliente</th><th>Actualizado</th><th>Gasto</th><th>Resultado</th><th title="ROAS = ingresos / gasto. Sólo es interpretable con volumen suficiente de compras; si no, aparece atenuado con * — mirá Resultado y CPA.">ROAS</th><th title="Variación del ROAS respecto del período inmediatamente anterior de igual duración (o 2ª mitad vs 1ª mitad si la marca no tenía pauta antes).">Tend.</th><th>CPA / CPL</th><th>Últ. mod. pauta</th><th>Atención → acción</th></tr>
       ${body}
     </table></div>
-    <div class="mininote"><b>Actualizado</b> = último día que el sistema trajo datos de esa marca desde Meta (⚠ = quedó atrasada respecto de las demás). <b>Tocá la acción</b> de cada marca para ver el análisis completo con hipótesis a comprobar. <b>Tend.</b> = ROAS vs. período anterior de igual duración (o momentum intra-período si la marca no tenía pauta antes). <b>Últ. mod. pauta</b> = días desde el último cambio significativo. Embudo y creativos, en <b>Dashboard</b>.</div>`;
+    <div class="mininote"><b>Actualizado</b> = último día que el sistema trajo datos de esa marca desde Meta. <span style="color:#b45309;font-weight:700">⚠</span> = quedó atrasada respecto de las demás <b>o</b> la última corrida falló (error de Meta) y se muestra el último dato bueno. <b>ROAS con *</b> = todavía no interpretable (pocas compras): guiate por Resultado y CPA. <b>Tend.</b> = variación del ROAS vs. el período inmediatamente anterior de igual duración (o 2ª mitad vs. 1ª mitad del período si la marca no tenía pauta antes); <span class="arrow a-up good">↑</span> verde = mejora, <span class="arrow a-down bad">↓</span> rojo = empeora, → estable, · sin período previo. <b>Últ. mod. pauta</b> = días desde el último cambio significativo. Embudo y creativos, en <b>Dashboard</b>.</div>`;
   document.querySelectorAll('#body-general .act-link').forEach(btn=>btn.addEventListener('click',()=>goAnalisis(btn.dataset.go)));
 }
 
@@ -722,66 +805,133 @@ function funnelHTML(x){
     <div class="mininote">El embudo cuenta <b>eventos</b> (clics, visitas, carritos, compras), no personas únicas; por eso arranca en clics sobre impresiones y no en alcance. Alcance y frecuencia acumulada exactos del período necesitan el export sin desglose diario.</div>`;
 }
 function sigHTML(x){
-  const lead=x.D.obj==='lead';
+  const D=x.D, lead=isLead(D.obj);
+  const TH=D.th||{}; const cIM=TH.cIM||1500, cCS=TH.cCS||10, cLS=TH.cLS||50;
   const top=x.cre.slice(0,8); const extra=x.cre.length-top.length;
-  const VT={escalar:['v-escalar','escalar'],iterar:['v-iterar','iterar'],matar:['v-matar','matar'],poca:['v-poca','poca data']};
+  const VDOT={escalar:'#16a34a',iterar:'#f59e0b',matar:'#dc2626',poca:'#94a3b8'};
+  const VNAME={escalar:'Escalar',iterar:'Iterar / vigilar',matar:'Bajar / matar',poca:'Sin datos suficientes'};
   const CT={fuerte:['Fuerte','#16a34a'],media:['Media/débil','#f59e0b'],sin:['Sin señal','#94a3b8']};
-  const TH=(x.D.thumbs)||{};
+  const TB=(D.thumbs)||{};
+  const hc=(metric,v,ok,isVid)=>ok?heatClass(metric,v,isVid):'';  // sólo color si es significativo
   const rows=top.map(c=>{
-    const vt=VT[c.verdict]; const ct=CT[c.conf]||CT.sin;
-    const roasCell=lead?`${money(c.leads)}`:`<span class="${heatClass('roas',c.roas)}">${dec(c.roas)}x</span>`;
+    const imprOK=c.impr>=cIM;                          // CTR / hook / frec. significativos
+    const roasOK=lead?(c.leads>=cLS):(c.purch>=cCS);   // ROAS/resultado significativos (por creativo casi nunca)
+    const ct=CT[c.conf]||CT.sin;
+    const dotTitle=(VNAME[c.verdict]||'')+(c.prov?' · provisional: leído por señales de arriba (CTR/hook), todavía no por '+(lead?'el resultado':'el ROAS'):'');
+    const dot=`<span class="vdot ${c.prov?'prov':''}" style="--dot:${VDOT[c.verdict]||'#94a3b8'}" title="${dotTitle.replace(/"/g,'&quot;')}"></span>`;
+    const resCell=lead?`${money(c.leads)}`:`<span class="${roasOK?heatClass('roas',c.roas):''}">${dec(c.roas)}x</span>`;
     const nm=c.ad.length>40?c.ad.slice(0,39)+'…':c.ad;
-    const th=TH[c.ad];
+    const th=TB[c.ad];
     const thumb=th?`<img class="sigthumb" src="${th}" loading="lazy" alt="" onerror="this.style.display='none'">`:`<span class="sigthumb ph">${c.isVid?'🎬':'🖼️'}</span>`;
     return `<tr>
       <td><div class="adcell">${thumb}<div class="adcol"><div class="adname">${nm}</div><div class="badtype">${c.isVid?'video':'imagen'} · $${money(c.spend)}</div></div></div></td>
-      <td><span class="${heatClass('freq',c.freq)}">${dec(c.freq,2)}</span></td>
-      <td><span class="${heatClass('hook',c.hook,c.isVid)}">${c.isVid?dec(c.hook,1)+'%':'—'}</span></td>
-      <td><span class="${heatClass('ctr',c.ctr)}">${dec(c.ctr)}%</span></td>
-      <td>${roasCell}</td>
-      <td><span class="vtag ${vt[0]}">${vt[1]}</span></td>
+      <td><span class="${hc('freq',c.freq,imprOK)}">${dec(c.freq,2)}</span></td>
+      <td><span class="${hc('hook',c.hook,imprOK,c.isVid)}">${c.isVid?dec(c.hook,1)+'%':'—'}</span></td>
+      <td><span class="${hc('ctr',c.ctr,imprOK)}">${dec(c.ctr)}%</span></td>
+      <td>${resCell}</td>
+      <td style="text-align:center">${dot}</td>
       <td><span style="display:inline-block;font-size:10.5px;font-weight:600;padding:2px 8px;border-radius:999px;color:${ct[1]};border:1px solid ${ct[1]}">${ct[0]}</span></td>
       <td>${c.leakc==='OK'?'—':c.leakc}</td></tr>`;}).join('');
   return `<div class="scroll"><table class="sig">
-    <tr><th>Anuncio</th><th>Frec.</th><th>Hook</th><th>CTR</th><th>${lead?'Leads':'ROAS'}</th><th>Veredicto</th><th>Confianza</th><th>Rompe en</th></tr>
+    <tr><th>Anuncio</th><th>Frec.</th><th>Hook</th><th>CTR</th><th>${lead?(D.obj==='msg'?'Conv.':'Leads'):'ROAS'}</th><th title="Verde = escalar · amarillo = iterar · rojo = bajar/matar · gris = sin datos. El anillo (sin relleno) = provisional, leído por señales de arriba.">Veredicto</th><th>Confianza</th><th>Rompe en</th></tr>
     ${rows}</table></div>
-    <div class="mininote">Celdas con <span class="hleg h-good">color</span> = el número que explica el veredicto (verde bien · amarillo flojo · rojo mal). Hook aplica solo a video. <b>Frec.</b> = frecuencia diaria promedio del período (la acumulada tipo 3-4x necesita el export sin desglose diario).${extra>0?` +${extra} creativos de menor gasto no listados.`:''}</div>`;
+    <div class="mininote"><b>Veredicto</b> = puntito: <span class="vdot" style="--dot:#16a34a;width:10px;height:10px"></span> escalar · <span class="vdot" style="--dot:#f59e0b;width:10px;height:10px"></span> iterar · <span class="vdot" style="--dot:#dc2626;width:10px;height:10px"></span> bajar/matar · <span class="vdot" style="--dot:#94a3b8;width:10px;height:10px"></span> sin datos. Un <b>anillo</b> (sin relleno) = provisional, leído por señales de arriba (CTR/hook) porque todavía no hay ${lead?'resultado':'ROAS'} confiable. Sólo se <b>colorea</b> el número que ya tiene volumen para ser significativo (CTR/Hook/Frec.: ≥${money(cIM)} impresiones; ROAS: ≥${cCS} compras del creativo — por eso el ROAS por creativo casi nunca se colorea). Hook aplica sólo a video.${extra>0?` +${extra} creativos de menor gasto no listados.`:''}</div>`;
 }
 /* mini time-series: full history (<=30d) */
 function dailySeries(b){
   const D=DATA[b]; const m={};
-  for(const r of D.rows){const dt=D.dates[r[0]];if(!m[dt])m[dt]={spend:0,purch:0,pval:0};m[dt].spend+=r[FI.spend];m[dt].purch+=r[FI.purch];m[dt].pval+=r[FI.pval];}
-  return Object.keys(m).sort().map(d=>({d,spend:m[d].spend,purch:m[d].purch,pval:m[d].pval,roas:m[d].spend?m[d].pval/m[d].spend:0}));
+  for(const r of D.rows){const dt=D.dates[r[0]];if(!m[dt])m[dt]={spend:0,purch:0,pval:0,atc:0,ic:0,leads:0};
+    m[dt].spend+=r[FI.spend];m[dt].purch+=r[FI.purch];m[dt].pval+=r[FI.pval];
+    m[dt].atc+=r[FI.atc];m[dt].ic+=r[FI.ic];m[dt].leads+=r[FI.leads];}
+  return Object.keys(m).sort().map(d=>({d,dEnd:d,...m[d],roas:m[d].spend?m[d].pval/m[d].spend:0}));
 }
-function sparkBars(vals,color,labels){
+/* Colores por optimización (para pintar los días de cada fase). */
+const OPTCOLOR={purchase:'#3F6F8C',ic:'#B0526B',atc:'#9A6B12',lead:'#5B8C6E',msg:'#7A6BA8'};
+/* Fase de optimización vigente en una fecha (la última cuyo `from` <= fecha). */
+function phaseOf(D,iso){
+  const ph=(D.optphases||[]); let cur=null;
+  for(const p of ph){ if((p.from||'')<=iso) cur=p; }
+  if(!cur) return null;
+  return {opt:cur.opt,label:cur.label||OBJSHORT[cur.opt]||cur.opt,color:OPTCOLOR[cur.opt]||'#B0526B'};
+}
+/* Diario si hay <=16 puntos; semanal (bloques de 7 días) si es un mes o más. */
+function bucketSeries(s){
+  if(s.length<=16) return {gran:'diario',pts:s};
+  const out=[]; let cur=null;
+  s.forEach((x,i)=>{ if(i%7===0){cur={d:x.d,dEnd:x.d,spend:0,purch:0,pval:0,atc:0,ic:0,leads:0};out.push(cur);}
+    cur.spend+=x.spend;cur.purch+=x.purch;cur.pval+=x.pval;cur.atc+=x.atc;cur.ic+=x.ic;cur.leads+=x.leads;cur.dEnd=x.d;cur.roas=cur.spend?cur.pval/cur.spend:0; });
+  return {gran:'semanal',pts:out};
+}
+function chartSubtitle(b){
+  const D=DATA[b]; const raw=dailySeries(b); const gran=(raw.length<=16)?'diarios':'semanales';
+  const totLeads=raw.reduce((s,x)=>s+x.leads,0);
+  const base = isLead(D.obj)
+    ? ((D.obj==='msg'&&totLeads===0)?'Gasto por día desde el inicio (las conversaciones de WhatsApp todavía no están en el export).':'Gasto y '+resWord(D.obj)+' por día desde el inicio.')
+    : 'Gasto, compras y ROAS por día desde el inicio'+(D.obj==='ic'?', más agregar al carrito e iniciar pago':'')+'.';
+  return `${base} Valores <b>${gran}</b> (diarios hasta ~2 semanas, semanales para historiales más largos). Independiente del período elegido arriba.`;
+}
+/* barra: acepta un color por barra (colors[i]) para pintar fases. */
+function sparkBars(vals,color,colors){
   const max=Math.max(1,...vals.map(v=>v)); const n=vals.length; const bw=100/n; let s='';
-  vals.forEach((v,i)=>{const hh=max?(v/max*44):0;
-    s+=`<rect x="${(i*bw+bw*0.12).toFixed(2)}" y="${(48-hh).toFixed(2)}" width="${(bw*0.76).toFixed(2)}" height="${hh.toFixed(2)}" rx="0.6" fill="${color}"/>`;
-    s+=`<rect class="hit" x="${(i*bw).toFixed(2)}" y="0" width="${bw.toFixed(2)}" height="50" fill="transparent"><title>${labels[i]}</title></rect>`;});
-  return `<svg viewBox="0 0 100 50" preserveAspectRatio="none" class="spark">${s}</svg>`;
+  vals.forEach((v,i)=>{const hh=max?(v/max*44):0; const cc=(colors&&colors[i])||color;
+    s+=`<rect x="${(i*bw+bw*0.12).toFixed(2)}" y="${(48-hh).toFixed(2)}" width="${(bw*0.76).toFixed(2)}" height="${hh.toFixed(2)}" rx="0.6" fill="${cc}"/>`;
+    s+=`<rect class="hit" x="${(i*bw).toFixed(2)}" y="0" width="${bw.toFixed(2)}" height="50" fill="transparent"/>`;});
+  return `<svg viewBox="0 0 100 50" preserveAspectRatio="none" class="spark" data-n="${n}">${s}</svg>`;
 }
-function sparkLine(vals,color,labels){
+function sparkLine(vals,color){
   const max=Math.max(1,...vals),min=Math.min(0,...vals),rng=(max-min)||1,n=vals.length;
   const pts=vals.map((v,i)=>`${(i/(n-1||1)*100).toFixed(2)},${(48-(v-min)/rng*44).toFixed(2)}`).join(' ');
   let hits='';const bw=100/n;
-  vals.forEach((v,i)=>{hits+=`<rect class="hit" x="${(i*bw).toFixed(2)}" y="0" width="${bw.toFixed(2)}" height="50" fill="transparent"><title>${labels[i]}</title></rect>`;});
-  return `<svg viewBox="0 0 100 50" preserveAspectRatio="none" class="spark"><polyline points="${pts}" fill="none" stroke="${color}" stroke-width="1.4" vector-effect="non-scaling-stroke"/>${hits}</svg>`;
+  vals.forEach((v,i)=>{hits+=`<rect class="hit" x="${(i*bw).toFixed(2)}" y="0" width="${bw.toFixed(2)}" height="50" fill="transparent"/>`;});
+  return `<svg viewBox="0 0 100 50" preserveAspectRatio="none" class="spark" data-n="${n}"><polyline points="${pts}" fill="none" stroke="${color}" stroke-width="1.4" vector-effect="non-scaling-stroke"/>${hits}</svg>`;
 }
 function chartHTML(b){
-  const s=dailySeries(b); if(s.length<2) return '';
-  const g=s.map(x=>x.spend),c=s.map(x=>x.purch),r=s.map(x=>x.roas),days=s.map(x=>x.d),n=s.length;
+  const D=DATA[b], lead=isLead(D.obj), ic=(D.obj==='ic'), msg=(D.obj==='msg');
+  const raw=dailySeries(b); if(raw.length<2) return '';
+  const {gran,pts:s}=bucketSeries(raw); const n=s.length;
+  const g=s.map(x=>x.spend), days=s.map(x=>x.d);
   const sum=a=>a.reduce((p,v)=>p+v,0);
-  const avgG=sum(g)/n, avgC=sum(c)/n, roasPer=sum(g)?sum(s.map(x=>x.pval))/sum(g):0;
-  const lg=days.map((d,i)=>`${fmtD(d)} · $${money(g[i])}`);
-  const lc=days.map((d,i)=>`${fmtD(d)} · ${money(c[i])} compras`);
-  const lr=days.map((d,i)=>`${fmtD(d)} · ROAS ${dec(r[i])}x`);
-  const rows=[
-    ['Gasto','prom./día','$'+money(avgG),sparkBars(g,'#B0526B',lg)],
-    ['Compras','prom./día',dec(avgC,1),sparkBars(c,'#94712F',lc)],
-    ['ROAS','del período',dec(roasPer)+'x',sparkLine(r,'#2E7D46',lr)],
-  ].map(row=>`<div class="crow"><div class="cl">${row[0]}<span class="clsub">${row[1]}</span></div><div class="cs">${row[3]}</div><div class="cv">${row[2]}</div></div>`).join('');
-  return `<div class="chart"><div class="cx"><span>${fmtD(days[0])}</span><span class="cxmid">↕ pasá el cursor por el gráfico para ver cada día</span><span>${fmtD(days[n-1])}</span></div>${rows}</div>
-    <div class="mininote">Los números de la derecha son el <b>promedio por día</b> del período (el ROAS es el del período completo, no un promedio de días).</div>`;
+  const dlbl=x=>gran==='semanal'?`sem ${fmtD(x.d)}–${fmtD(x.dEnd)}`:fmtD(x.d);
+  // color de cada barra de Gasto según la fase de optimización de ese día
+  const hasPhases=(D.optphases||[]).length>0;
+  const gColors=hasPhases?s.map(x=>{const p=phaseOf(D,x.d);return p?p.color:'#B0526B';}):null;
+  // filas del gráfico según objetivo
+  const rows=[];
+  rows.push(['Gasto',gran==='semanal'?'por semana':'por día','$'+money(sum(g)/n),sparkBars(g,'#B0526B',gColors)]);
+  const totLeads=sum(s.map(x=>x.leads)); const msgNoRes=(msg&&totLeads===0);
+  if(msgNoRes){
+    // objetivo Mensajes sin conversaciones en el export todavía -> sólo gasto
+  } else if(lead){
+    const rv=s.map(x=>x.leads); rows.push([D.obj==='msg'?'Conversaciones':'Leads',gran==='semanal'?'por semana':'por día',dec(sum(rv)/n,1),sparkBars(rv,'#5B8C6E')]);
+  } else {
+    const cv=s.map(x=>x.purch), rv=s.map(x=>x.roas);
+    rows.push(['Compras',gran==='semanal'?'por semana':'por día',dec(sum(cv)/n,1),sparkBars(cv,'#94712F')]);
+    const roasPer=sum(g)?sum(s.map(x=>x.pval))/sum(g):0;
+    rows.push(['ROAS','del historial',dec(roasPer)+'x',sparkLine(rv,'#2E7D46')]);
+    if(ic){
+      const av=s.map(x=>x.atc), iv=s.map(x=>x.ic);
+      rows.push(['Agregar al carrito',gran==='semanal'?'por semana':'por día',dec(sum(av)/n,1),sparkBars(av,'#C08A2E')]);
+      rows.push(['Iniciar pago',gran==='semanal'?'por semana':'por día',dec(sum(iv)/n,1),sparkBars(iv,'#B0526B')]);
+    }
+  }
+  // etiqueta combinada por bucket (para el tooltip) — todas las series + fase
+  const labels=s.map((x,i)=>{
+    let t=`<b>${dlbl(x)}</b> · $${money(x.spend)} gasto`;
+    if(!lead) t+=` · ${money(x.purch)} compras · ROAS ${dec(x.roas)}x`+(ic?` · ${money(x.atc)} al carrito · ${money(x.ic)} iniciar pago`:'');
+    else if(!msgNoRes) t+=` · ${money(x.leads)} ${resWord(D.obj)}`;
+    const p=phaseOf(D,x.d); if(p) t+=` · <span style="color:${p.color}">optim.: ${p.label}</span>`;
+    return t;
+  });
+  window.__CHLAB=labels; window.__CHN=n;
+  const rowsH=rows.map(row=>`<div class="crow"><div class="cl">${row[0]}<span class="clsub">${row[1]}</span></div><div class="cs">${row[3]}</div><div class="cv">${row[2]}</div></div>`).join('');
+  // leyenda de fases de optimización
+  let phLeg='';
+  if(hasPhases&&(D.optphases||[]).length>1){
+    phLeg=`<div class="phleg">Color del gasto = optimización de esos días: `+
+      (D.optphases||[]).map(p=>`<span class="phchip" style="--c:${OPTCOLOR[p.opt]||'#B0526B'}">${p.label||OBJSHORT[p.opt]||p.opt} (desde ${fmtD(p.from)})</span>`).join(' ')+`</div>`;
+  }
+  return `<div class="chart"><div class="cx"><span>${fmtD(days[0])}</span><span class="cxmid">↕ pasá el cursor por el gráfico para ver los valores</span><span>${fmtD(s[n-1].dEnd)}</span></div>${rowsH}${phLeg}</div>
+    <div class="mininote">Los números de la derecha son el <b>promedio por ${gran==='semanal'?'semana':'día'}</b> (el ROAS es el del historial completo, no un promedio).</div>`;
 }
 function fmtChDate(iso){ return /^\d{4}-\d{2}-\d{2}$/.test(String(iso))?fmtD(iso):String(iso||''); }
 function esc(s){return String(s||'').replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));}
@@ -950,32 +1100,60 @@ function hitosHTML(b){
   return out;
 }
 function renderDash(id){
-  const x=compute(id),D=x.D,K=x.K,KP=x.KP,lead=D.obj==='lead';
-  const roasHealth=lead?'':(K.roas>=3?'good':(K.roas>=1.5?'warn':(K.purch>0?'bad':'idle')));
-  const ctrHealth=K.ctr>=1.5?'good':(K.ctr>=0.8?'warn':'bad');
+  const x=compute(id),D=x.D,K=x.K,KP=x.KP,lead=isLead(D.obj),msg=(D.obj==='msg');
+  const msgNoData=msg && !(K.result>0);   // mensajes sin conversaciones en el export
+  const S=sig(K,D);
+  // Color SOLO si la métrica es interpretable (tiene volumen para significancia).
+  const roasHealthRaw=K.roas>=3?'good':(K.roas>=1.5?'warn':(K.purch>0?'bad':'idle'));
+  const roasHealth=(lead||!S.roas)?'idle':roasHealthRaw;
+  const ctrHealth=S.ctr?(K.ctr>=1.5?'good':(K.ctr>=0.8?'warn':'bad')):'idle';
+  const resHealth=lead?(S.result?'good':'idle'):(S.result?roasHealthRaw:'idle');
   const C=x.TR.cur,P=x.TR.prev;
+  // etiqueta de "no interpretable" para el sub de un tile
+  const naSub=(n,need)=>`⚠ no interpretable · ${money(n)}/${need} ${resWord(D.obj)}`;
+  // Tile de Resultado
+  const resTile = msgNoData
+    ? kpiTile('Resultado','s/d','conversaciones WhatsApp · no en el export','idle','')
+    : kpiTile('Resultado', money(K.result)+' '+resWord(D.obj), S.result?'':naSub(K.result,S.need), resHealth, arrowHTML(trend(C.result,P?P.result:null,true)));
+  // Tile 3 (ROAS / CPL / —)
+  const roasTile = msg
+    ? kpiTile('ROAS','—','sin venta (objetivo Mensajes)','idle','')
+    : lead
+      ? kpiTile('CPL','$'+money(K.cpa),S.cpa?D.cur:naSub(K.result,S.need),S.cpa?'good':'idle',S.cpa?arrowHTML(trend(C.cpa,P?P.cpa:null,false)):'')
+      : kpiTile('ROAS',dec(K.roas)+'x',S.roas?(K.purch+' compras'):naSub(K.purch,S.cCS),roasHealth,S.roas?arrowHTML(trend(C.roas,P?P.roas:null,true)):'');
+  // Tile 4 (CPA / costo por resultado)
+  const cpaTile = msgNoData
+    ? kpiTile('Costo/result.','—','no medido','idle','')
+    : kpiTile(lead?'Costo/result.':'CPA','$'+money(K.cpa),S.cpa?D.cur:'⚠ pocas conversiones', S.cpa?'':'idle', S.cpa?arrowHTML(trend(C.cpa,P?P.cpa:null,false)):'');
   const tiles=[
     kpiTile('Gasto','$'+money(K.spend),D.cur+' · '+periodShort(),'',arrowHTML(trend(C.spend,P?P.spend:null,true))),
-    kpiTile('Resultado', lead?money(K.result)+' leads':money(K.result)+' compras','',lead?'good':roasHealth,arrowHTML(trend(C.result,P?P.result:null,true))),
-    lead?kpiTile('CPL','$'+money(K.cpa),D.cur,'good',arrowHTML(trend(C.cpa,P?P.cpa:null,false)))
-        :kpiTile('ROAS',dec(K.roas)+'x',K.purch+' compras',roasHealth,arrowHTML(trend(C.roas,P?P.roas:null,true))),
-    kpiTile(lead?'Costo/result.':'CPA','$'+money(K.cpa),D.cur,'', arrowHTML(trend(C.cpa,P?P.cpa:null,false))),
-    kpiTile('CTR link',dec(K.ctr)+'%','',ctrHealth,arrowHTML(trend(C.ctr,P?P.ctr:null,true))),
+    resTile, roasTile, cpaTile,
+    kpiTile('CTR link',dec(K.ctr)+'%',S.ctr?'':'⚠ pocas impresiones',ctrHealth,arrowHTML(trend(C.ctr,P?P.ctr:null,true))),
     kpiTile('CPM','$'+money(K.cpm),D.cur,'', arrowHTML(trend(C.cpm,P?P.cpm:null,false))),
   ].join('');
+  // Aviso de interpretabilidad (por qué métrica evaluar mientras el ROAS no sirve)
+  let interp='';
+  if(msgNoData) interp=`<div class="interp">🎯 <b>Objetivo Mensajes de WhatsApp.</b> El resultado real son conversaciones de WhatsApp, que todavía no aparecen en el export — por eso no hay ROAS ni compras. Evaluá esta cuenta por las <b>señales de arriba</b> (CTR, CPM). Ya está listo para traer las conversaciones en la próxima actualización de Meta.</div>`;
+  else if(msg) interp=`<div class="interp">🎯 <b>Objetivo Mensajes de WhatsApp.</b> El resultado son <b>${money(K.result)} conversaciones</b> a $${money(K.cpa)} ${D.cur} cada una. No hay ROAS (no es venta): se evalúa por las conversaciones y las señales de arriba (CTR, CPM).</div>`;
+  else if(!lead && !S.roas) interp=`<div class="interp">⚠ <b>El ROAS todavía no es interpretable</b> en este período: hay ${K.purch} de las ${S.cCS} compras que hacen falta para que sea estadísticamente confiable. Mientras tanto, ${S.alt}.</div>`;
+  else if(lead && !S.cpa) interp=`<div class="interp">⚠ <b>El costo por resultado todavía no es firme</b> (${money(K.result)} de ${S.cLS} ${resWord(D.obj)}). Mientras tanto, ${S.alt}.</div>`;
+  const objbanner=`<div class="objbanner">🎯 <span class="obk">Optimiza por</span> <b>${objText(D)}</b>${(D.optphases&&D.optphases.length>1)?` <span class="objsub">· cambió de optimización durante el historial (ver colores en el gráfico)</span>`:''}</div>`;
   document.getElementById('body-dash').innerHTML=`
     <div class="dhead"><h2>${D.name}</h2><div class="meta">${OBJLBL[D.obj]} · ${D.cur} · ${periodLabel()}</div>
-    <div class="meta">🔄 <b>Última actualización:</b> ${(function(){const u=updInfo(id);return u.stale?`<span style="color:#b45309;font-weight:700">⚠ ${u.txt} (quedó atrasada)</span>`:u.txt;})()} · datos automáticos de Meta</div></div>
-    <div class="legend">Color de KPI: <span class="lg good">verde bien</span> <span class="lg warn">amarillo atención</span> <span class="lg bad">rojo mal</span> <span class="lg idle">gris sin señal</span> · flecha = vs. período anterior</div>
+    <div class="meta">🔄 <b>Última actualización:</b> ${updBadge(id)} · datos automáticos de Meta</div></div>
+    ${objbanner}
     <div class="tiles">${tiles}</div>
+    ${interp}
+    <div class="legend"><b>Color</b> sólo cuando la métrica tiene volumen para ser significativa: <span class="lg good">verde bien</span> <span class="lg warn">amarillo atención</span> <span class="lg bad">rojo mal</span> <span class="lg idle">gris = sin señal / no interpretable aún</span></div>
+    <div class="legend">Flechas <span class="arrow a-up good">↑</span><span class="arrow a-down bad">↓</span> = variación de cada KPI vs. el <b>período inmediatamente anterior de igual duración</b> (si la marca no tenía pauta antes, compara la 2ª mitad contra la 1ª del período elegido). Verde = mejora · rojo = empeora · → = estable · · = sin período previo.</div>
     <div class="sec-h">Evolución (historia completa de la pauta)</div>
-    <div class="sec-s">Gasto, compras y ROAS por día desde el inicio (máx. 30 días). Independiente del período elegido arriba.</div>
+    <div class="sec-s">${chartSubtitle(id)}</div>
     ${chartHTML(id)}
     <div class="sec-h">Embudo a total campaña</div>
     <div class="sec-s">Cada barra es la conversión de un paso al siguiente. La barra corta marca dónde se rompe.</div>
     ${funnelHTML(x)}
     <div class="sec-h">Señales por creativo</div>
-    <div class="sec-s">El heatmap resalta el número que explica cada veredicto. Ordenado por gasto.</div>
+    <div class="sec-s">Ordenado por gasto. Se colorea sólo el número que ya tiene volumen para ser significativo; el veredicto es el puntito de color.</div>
     ${sigHTML(x)}
     <div class="sec-h">Historial</div>
     ${hitosHTML(id)}`;
@@ -1094,7 +1272,7 @@ function accionLeak(leak,ic){
   return m[leak]||'Revisar este paso del embudo con más datos.';
 }
 function autoAnalisis(x){
-  const D=x.D,K=x.K,lead=D.obj==='lead',ic=D.obj==='ic',R=dec(K.roas);
+  const D=x.D,K=x.K,lead=isLead(D.obj),ic=D.obj==='ic',R=dec(K.roas);
   const cre=x.cre||[], total=cre.reduce((s,v)=>s+v.spend,0)||K.spend||0;
   const top=cre[0]||null;
   const winners=cre.filter(v=>v.verdict==='escalar');
@@ -1148,7 +1326,7 @@ function renderAnalisis(cid){
   const tfk='maia_tf_'+cid;
   document.getElementById('body-analisis').innerHTML=`
     <div class="dhead"><h2>${D.name}</h2><div class="meta">${OBJLBL[D.obj]} · ${D.cur} · análisis de pauta</div>
-    <div class="meta">🔄 <b>Análisis actualizado al:</b> ${up.stale?`<span style="color:#b45309;font-weight:700">⚠ ${up.txt} (data atrasada)</span>`:up.txt} · se recalcula solo con la data de cada mañana</div></div>
+    <div class="meta">🔄 <b>Análisis actualizado al:</b> ${updBadge(cid)} · se recalcula solo con la data de cada mañana</div></div>
     <div class="act-big act-${x.st.sem}">${x.st.act}</div>
     <div class="ana-simple"><span class="tag">En simple</span>${A.simple}</div>
     <details class="ana-tec"><summary>Ver el detalle técnico</summary><div class="diag ${x.st.sem==='g'?'ok':''}" style="margin-top:8px">${A.resumen}</div></details>
@@ -1193,7 +1371,7 @@ function goAnalisis(cid){
 /* ---------- Reporte al cliente (simple, editable, PDF) ---------- */
 function repConcl(x){
   const K=x.K,D=x.D,R=dec(K.roas),P=periodPhrase();
-  if(D.obj==='lead') return `${P} pusimos $${money(K.spend)} en publicidad y conseguimos <b>${money(K.leads)} personas interesadas</b> (dejaron sus datos), a $${money(K.cpa)} cada una. ${x.fatiga?'Venimos bien, y vamos a renovar los anuncios para que ese costo no suba.':'Es un buen costo y venimos bien.'}`;
+  if(isLead(D.obj)) return `${P} pusimos $${money(K.spend)} en publicidad y conseguimos <b>${money(K.leads)} personas interesadas</b> (dejaron sus datos), a $${money(K.cpa)} cada una. ${x.fatiga?'Venimos bien, y vamos a renovar los anuncios para que ese costo no suba.':'Es un buen costo y venimos bien.'}`;
   if(D.obj==='ic') return `${P} ya estamos <b>vendiendo</b> (por cada $1 invertido volvieron $${R}). Pusimos $${money(K.spend)} y hubo ${money(K.purch)} compras. El foco ahora es que más gente de la que entra a la web ponga productos en el carrito.`;
   if(K.roas>=3) return `${P} pusimos $${money(K.spend)} en publicidad y por cada $1 volvieron <b>$${R} en ventas</b> — muy bueno. Hubo ${money(K.purch)} compras. Vamos muy bien y queremos vender aún más.`;
   if(K.roas>=1.5) return `${P} pusimos $${money(K.spend)} en publicidad y por cada $1 volvieron <b>$${R} en ventas</b>. Hubo ${money(K.purch)} compras. Vamos bien, con cosas para seguir mejorando.`;
@@ -1205,7 +1383,7 @@ function repNext(x){
   return A.pairs.slice(0,3).map(p=>`<li>${p[3]}</li>`).join('');
 }
 function repNums(x){
-  const K=x.K,D=x.D,lead=D.obj==='lead';
+  const K=x.K,D=x.D,lead=isLead(D.obj);
   const items=[
    ['Plata invertida','$'+money(K.spend)+' '+D.cur,'Lo que pusimos en publicidad este período.'],
    [lead?'Personas interesadas':'Ventas', lead?money(K.leads):money(K.purch)+' compras', lead?'Cuántas personas dejaron sus datos gracias a los anuncios.':'Cuántas veces alguien compró gracias a los anuncios.'],
@@ -1229,7 +1407,7 @@ function renderReporte(cid){
     <div class="report-sheet" id="report-sheet">
       <div class="rs-head">
         <div><div class="rs-brand">${D.name}</div><div class="rs-sub">Reporte de resultados · ${periodLabel()}</div>
-        <div class="rs-sub">🔄 Datos actualizados al ${up.stale?up.txt+' ⚠':up.txt}</div></div>
+        <div class="rs-sub">🔄 Datos actualizados al ${up.txt}${up.failed?' ⚠ (la última actualización falló)':(up.stale?' ⚠':'')}</div></div>
         <div class="rs-logo">MAIA</div>
       </div>
       <div class="rs-period">📅 ${PERIODEXPL[RANGE.preset]||PERIODEXPL.cust}</div>
@@ -1284,10 +1462,26 @@ document.querySelectorAll(".tab").forEach(t=>t.addEventListener("click",()=>{
   document.querySelectorAll("#p-"+t.dataset.tab+" iframe").forEach(fit);
 }));
 window.addEventListener("resize",()=>document.querySelectorAll(".panel.on iframe").forEach(fit));
+/* ---- tooltip del gráfico de evolución (arregla el hover que no mostraba nada) ---- */
+function _charttip(){let t=document.getElementById('charttip');if(!t){t=document.createElement('div');t.id='charttip';document.body.appendChild(t);}return t;}
+function _tipMove(e){
+  const pt=(e.touches&&e.touches[0])||e; const tgt=document.elementFromPoint(pt.clientX,pt.clientY);
+  const sp=tgt&&tgt.closest?tgt.closest('.spark'):null;
+  const labs=window.__CHLAB||[]; const t=document.getElementById('charttip');
+  if(!sp||!labs.length){if(t)t.classList.remove('on');return;}
+  const rect=sp.getBoundingClientRect(); const n=+(sp.getAttribute('data-n'))||labs.length;
+  let idx=Math.floor((pt.clientX-rect.left)/rect.width*n); idx=Math.max(0,Math.min(n-1,idx));
+  const tip=_charttip(); tip.innerHTML=labs[idx]; tip.classList.add('on');
+  let lx=pt.clientX+12; if(lx>window.innerWidth-180)lx=pt.clientX-168;
+  tip.style.left=lx+'px'; tip.style.top=(rect.top+window.scrollY-6)+'px';
+}
+document.addEventListener('mousemove',_tipMove);
+document.addEventListener('touchmove',_tipMove,{passive:true});
+document.addEventListener('mouseleave',()=>{const t=document.getElementById('charttip');if(t)t.classList.remove('on');},true);
 /* clock */
 (function(){const el=document.getElementById("clock");const d=new Date(),m=["ene","feb","mar","abr","may","jun","jul","ago","sep","oct","nov","dic"];el.textContent=d.getDate()+" "+m[d.getMonth()]+" "+d.getFullYear();})();
 /* sello de versión visible para confirmar que estás en la última */
-const BUILD="v20 · 2 sep 2026 · Miniaturas de creativos";
+const BUILD="v21 · 2 sep 2026 · Interpretabilidad, veredicto en punto, gráfico por objetivo y fases";
 (function(){const f=document.querySelector('.foot-note'); if(f)f.insertAdjacentHTML('beforeend',' · <b>Build '+BUILD+'</b>');
   const c=document.getElementById('clock'); if(c)c.insertAdjacentHTML('beforeend','<br><span style="color:var(--rose)">Build '+BUILD.split(' · ')[0]+'</span>');})();
 
