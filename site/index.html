@@ -380,9 +380,10 @@
   .stbadge{display:inline-block;font-size:10px;font-weight:600;padding:2px 8px;border-radius:999px;white-space:nowrap}
   /* gráfico de evolución v22 (ejes reales, legible) */
   .evo{margin-top:6px;border:1px solid var(--line);border-radius:14px;background:var(--panel);padding:14px 16px 10px;box-shadow:var(--shadow)}
-  .evo svg{width:100%;height:auto;display:block;overflow:visible}
-  .evo .axlab{font-family:var(--mono);font-size:8.5px;fill:var(--faint)}
-  .evo .vlab{font-family:var(--mono);font-size:8px;fill:var(--soft)}
+  .evo svg{width:100%;max-width:560px;height:auto;display:block;margin:0 auto;overflow:visible}
+  .evo .axlab{font-family:var(--mono);font-size:7px;fill:var(--faint)}
+  .evo .vlab{font-family:var(--mono);font-size:7px;fill:var(--soft)}
+  .evo .ptitle{font-family:var(--sans);font-size:8px;font-weight:600;fill:var(--soft)}
   .evo .gl{stroke:var(--line);stroke-width:.6}
   .evo .zl{stroke:var(--line);stroke-width:1}
   .evoleg{display:flex;gap:14px;flex-wrap:wrap;align-items:center;margin-top:8px;font-size:11.5px;color:var(--soft)}
@@ -985,7 +986,7 @@ function chartHTML(b){
     `<line class="gl" x1="${x0}" y1="${A.t}" x2="${xR}" y2="${A.t}" stroke-dasharray="2 3"/>`+
     `<text class="axlab" x="${x0-4}" y="${A.t+3}" text-anchor="end">$${money(gMax)}</text>`+
     `<text class="axlab" x="${x0-4}" y="${A.b}" text-anchor="end">0</text>`+
-    `<text class="axlab" x="${x0}" y="${A.t-7}">Gasto por ${gran==='semanal'?'semana':'día'} ($)</text>`+
+    `<text class="ptitle" x="${x0}" y="${A.t-6}">Gasto por ${gran==='semanal'?'semana':'día'} ($)</text>`+
     bars(g,A.t,A.b,gMax,gColor,null);
   // Panel B: Resultado (+ ROAS)
   let svgB='';
@@ -995,7 +996,7 @@ function chartHTML(b){
       `<line class="gl" x1="${x0}" y1="${B.t}" x2="${xR}" y2="${B.t}" stroke-dasharray="2 3"/>`+
       `<text class="axlab" x="${x0-4}" y="${B.t+3}" text-anchor="end">${dec(rMax,0)}</text>`+
       `<text class="axlab" x="${x0-4}" y="${B.b}" text-anchor="end">0</text>`+
-      `<text class="axlab" x="${x0}" y="${B.t-7}">${resLabel} por ${gran==='semanal'?'semana':'día'}</text>`+
+      `<text class="ptitle" x="${x0}" y="${B.t-6}">${resLabel} por ${gran==='semanal'?'semana':'día'}</text>`+
       bars(resVals,B.t,B.b,rMax,resColor,v=>dec(v,0));
     if(showRoas){
       const roMax=_niceMax(Math.max(1,tgt||0,...roasVals)); const h=B.b-B.t;
@@ -1582,7 +1583,7 @@ document.addEventListener('mouseleave',()=>{const t=document.getElementById('cha
 /* clock */
 (function(){const el=document.getElementById("clock");const d=new Date(),m=["ene","feb","mar","abr","may","jun","jul","ago","sep","oct","nov","dic"];el.textContent=d.getDate()+" "+m[d.getMonth()]+" "+d.getFullYear();})();
 /* sello de versión visible para confirmar que estás en la última */
-const BUILD="v22 · 2 sep 2026 · Estado por anuncio, hold rate, gráfico legible y frecuencia sólo si alta";
+const BUILD="v22.1 · 2 sep 2026 · Fix tamaño del gráfico de evolución";
 (function(){const f=document.querySelector('.foot-note'); if(f)f.insertAdjacentHTML('beforeend',' · <b>Build '+BUILD+'</b>');
   const c=document.getElementById('clock'); if(c)c.insertAdjacentHTML('beforeend','<br><span style="color:var(--rose)">Build '+BUILD.split(' · ')[0]+'</span>');})();
 
