@@ -377,6 +377,18 @@
   .interp b{color:#4a3d1f}
   .vdot{display:inline-block;width:13px;height:13px;border-radius:50%;background:var(--dot,#94a3b8);vertical-align:-2px;cursor:help}
   .vdot.prov{background:transparent;border:2.5px solid var(--dot,#94a3b8)}
+  .stbadge{display:inline-block;font-size:10px;font-weight:600;padding:2px 8px;border-radius:999px;white-space:nowrap}
+  /* gráfico de evolución v22 (ejes reales, legible) */
+  .evo{margin-top:6px;border:1px solid var(--line);border-radius:14px;background:var(--panel);padding:14px 16px 10px;box-shadow:var(--shadow)}
+  .evo svg{width:100%;height:auto;display:block;overflow:visible}
+  .evo .axlab{font-family:var(--mono);font-size:8.5px;fill:var(--faint)}
+  .evo .vlab{font-family:var(--mono);font-size:8px;fill:var(--soft)}
+  .evo .gl{stroke:var(--line);stroke-width:.6}
+  .evo .zl{stroke:var(--line);stroke-width:1}
+  .evoleg{display:flex;gap:14px;flex-wrap:wrap;align-items:center;margin-top:8px;font-size:11.5px;color:var(--soft)}
+  .evoleg .k{display:inline-flex;align-items:center;gap:5px}
+  .evoleg .sw{width:12px;height:10px;border-radius:2px;display:inline-block}
+  .evoleg .swl{width:16px;height:0;border-top:2.5px solid #2E7D46;display:inline-block}
   .phleg{margin-top:9px;font-size:11.5px;color:var(--soft);display:flex;gap:8px;flex-wrap:wrap;align-items:center}
   .phchip{display:inline-flex;align-items:center;gap:5px;padding:1px 8px;border-radius:999px;background:var(--panel2);border:1px solid var(--line);font-size:11px}
   .phchip::before{content:"";width:9px;height:9px;border-radius:2px;background:var(--c)}
@@ -606,6 +618,38 @@ function sig(K,D){
     roas:(!lead && convStrong), cpa:convStrong, result:convAny,
     ctr:imprOK, cpm:imprOK, hook:imprOK, imprOK, convStrong, convAny, alt};
 }
+/* ===== Estado de cada anuncio a HOY (activo / pausado / aprendizaje) =====
+   Meta no manda el estado por anuncio en el export, así que se INFIERE por
+   actividad: un anuncio con impresiones el último día con datos está activo; si
+   arrancó hace <=7 días todavía está en aprendizaje; si dejó de tener actividad,
+   está pausado. Es una estimación (por eso se marca como tal). */
+const FREQ_HIGH=1.8;   // frecuencia diaria por encima de la cual conviene pausar/renovar
+const _META_ST={ACTIVE:'activo',PAUSED:'pausado',ADSET_PAUSED:'pausado',CAMPAIGN_PAUSED:'pausado',
+  DISAPPROVED:'pausado',ARCHIVED:'pausado',DELETED:'pausado',PENDING_REVIEW:'aprendizaje',
+  IN_PROCESS:'aprendizaje',PENDING_BILLING_INFO:'pausado',WITH_ISSUES:'activo',PREAPPROVED:'aprendizaje'};
+function adStatusMap(b){
+  const D=DATA[b]; const through=(D.through||(D.dates&&D.dates.length?D.dates[D.dates.length-1]:null));
+  const real=D.adstatus||{};   // nombre -> effective_status de Meta (si fetch_meta lo trajo)
+  const act={};  // ad idx -> {first,last}
+  for(const r of D.rows){ if(r[FI.impr]>0){ const a=r[1], dt=D.dates[r[0]];
+    if(!act[a]) act[a]={first:dt,last:dt}; else { if(dt<act[a].first)act[a].first=dt; if(dt>act[a].last)act[a].last=dt; } } }
+  const map={};
+  for(const a in act){ const {first,last}=act[a]; const name=D.ads[a];
+    const recien = through && daysBetween(first,through)<=7;   // lanzado hace <=7 días
+    let state, est=false;
+    if(real[name]){                                            // estado REAL de Meta
+      state=_META_ST[real[name]]||'pausado';
+      if(state==='activo' && recien) state='aprendizaje';
+    } else {                                                   // estimación por actividad
+      est=true;
+      const activo = through ? (daysBetween(last,through)<=1) : true;
+      state = !activo ? 'pausado' : (recien ? 'aprendizaje' : 'activo');
+    }
+    map[name]={state,first,last,est};
+  }
+  return map;
+}
+const AD_STATE={activo:['Activo','#16803a','#e5f3ea'],pausado:['Pausado','#8a7d74','#efeae3'],aprendizaje:['En aprendizaje','#9a6b12','#f4ead2']};
 
 const BM={'Visitas landing':85,'Add to Cart':13,'Pago iniciado':45,'Compra':60,'Leads':20};
 const HINT={'Visitas landing':'la landing pierde gente: velocidad, mensaje o mismatch con el anuncio.',
@@ -650,10 +694,11 @@ function compute(b){
   funnel.forEach(s=>{ if(!s.bm){s.health='na';} else {const r=s.conv/s.bm;s.health=r<0.6?'bad':(r<0.9?'warn':'good');} s.leak=(s.lab===leak);
     if(s.lab==='Clics enlace'){s.health=K.ctr>=1.5?'good':(K.ctr>=0.8?'warn':'bad');} });
   // creatives
+  const stMap=adStatusMap(b);   // estado por anuncio a hoy (activo/pausado/aprendizaje)
   const cre=[];
   for(const a in cur.per){ const v=cur.per[a]; if(v.spend<=0||v.impr<50) continue;
     const isVid=v.v3s>0.02*v.impr;
-    const chook=pct(v.v3s,v.impr),cctr=pct(v.lc,v.impr),croas=v.spend?v.pval/v.spend:0;
+    const chook=pct(v.v3s,v.impr),chold=pct(v.thru,v.v3s),cctr=pct(v.lc,v.impr),croas=v.spend?v.pval/v.spend:0;
     const cfreq=v.reach?v.impr/v.reach:0;
     let verdict,leakc;
     /* Veredicto por reglas — MISMOS umbrales que el reporte Python (D.th, de engine/config.py).
@@ -690,8 +735,10 @@ function compute(b){
     let conf;{const cCS=TH.cCS||10,cCM=TH.cCM||3,cLS=TH.cLS||50,cLM=TH.cLM||15,cIM=TH.cIM||1500;
       if(isLead(D.obj))conf=(v.leads>=cLS)?'fuerte':((v.leads>=cLM||v.impr>=cIM)?'media':'sin');
       else conf=(v.purch>=cCS)?'fuerte':((v.purch>=cCM||v.impr>=cIM)?'media':'sin');}
-    cre.push({ad:D.ads[a],spend:v.spend,isVid,hook:chook,ctr:cctr,roas:croas,freq:cfreq,
-      impr:v.impr,leads:v.leads|0,purch:v.purch|0,verdict,prov,conf,leakc});
+    cre.push({ad:D.ads[a],spend:v.spend,isVid,hook:chook,hold:chold,ctr:cctr,roas:croas,freq:cfreq,
+      impr:v.impr,leads:v.leads|0,purch:v.purch|0,verdict,prov,conf,leakc,
+      state:(stMap[D.ads[a]]||{}).state||'pausado',
+      stateEst:((stMap[D.ads[a]]||{}).est!==false)});
   }
   cre.sort((x,y)=>y.spend-x.spend);
   // status → action + reason + sem
@@ -779,9 +826,12 @@ function heat(val,scale){ // scale: [goodMax,warnMax] ascending-good OR object {
 }
 function heatClass(metric,v,isVid){
   if(metric==='hook'){ if(!isVid) return 'h-na'; return v>=25?'h-good':(v>=15?'h-warn':'h-bad'); }
+  if(metric==='hold'){ if(!isVid) return 'h-na'; return v>=20?'h-good':(v>=10?'h-warn':'h-bad'); }
   if(metric==='ctr'){ return v>=1.5?'h-good':(v>=0.8?'h-warn':'h-bad'); }
   if(metric==='roas'){ return v>=2.5?'h-good':(v>=1?'h-warn':'h-bad'); }
-  if(metric==='freq'){ return v<1.3?'h-good':(v<1.7?'h-warn':'h-bad'); }
+  // Frecuencia: sólo se pinta (en rojo) cuando está DEMASIADO ALTA -> conviene pausar/renovar.
+  // Un valor normal no aporta, así que queda sin color.
+  if(metric==='freq'){ return v>=FREQ_HIGH?'h-bad':''; }
   return '';
 }
 function kpiTile(k,v,sub,tclass,ar){
@@ -807,35 +857,48 @@ function funnelHTML(x){
 function sigHTML(x){
   const D=x.D, lead=isLead(D.obj);
   const TH=D.th||{}; const cIM=TH.cIM||1500, cCS=TH.cCS||10, cLS=TH.cLS||50;
-  const top=x.cre.slice(0,8); const extra=x.cre.length-top.length;
+  // Mostrar los de mayor gasto + SIEMPRE los que están activos / en aprendizaje hoy.
+  const top=x.cre.filter((c,i)=> i<8 || c.state==='activo' || c.state==='aprendizaje').slice(0,12);
+  const extra=x.cre.length-top.length;
+  const nActive=x.cre.filter(c=>c.state==='activo').length;
   const VDOT={escalar:'#16a34a',iterar:'#f59e0b',matar:'#dc2626',poca:'#94a3b8'};
   const VNAME={escalar:'Escalar',iterar:'Iterar / vigilar',matar:'Bajar / matar',poca:'Sin datos suficientes'};
   const CT={fuerte:['Fuerte','#16a34a'],media:['Media/débil','#f59e0b'],sin:['Sin señal','#94a3b8']};
   const TB=(D.thumbs)||{};
+  // match de miniatura tolerante a diferencias de mayúsculas/espacios
+  const _tbNorm={}; for(const k in TB){_tbNorm[String(k).toLowerCase().replace(/\s+/g,' ').trim()]=TB[k];}
+  const thumbFor=nm=>{ if(TB[nm])return TB[nm]; const n=String(nm).toLowerCase().replace(/\s+/g,' ').trim(); if(_tbNorm[n])return _tbNorm[n];
+    for(const k in _tbNorm){ if(k.startsWith(n)||n.startsWith(k)) return _tbNorm[k]; } return null; };
   const hc=(metric,v,ok,isVid)=>ok?heatClass(metric,v,isVid):'';  // sólo color si es significativo
   const rows=top.map(c=>{
-    const imprOK=c.impr>=cIM;                          // CTR / hook / frec. significativos
+    const imprOK=c.impr>=cIM;                          // CTR / hook / hold / frec. significativos
     const roasOK=lead?(c.leads>=cLS):(c.purch>=cCS);   // ROAS/resultado significativos (por creativo casi nunca)
     const ct=CT[c.conf]||CT.sin;
+    const stB=AD_STATE[c.state]||AD_STATE.pausado;
+    const stBadge=`<span class="stbadge" style="color:${stB[1]};background:${stB[2]}" title="${c.stateEst?'Estimado por actividad al último día con datos.':'Estado real de Meta.'}">${stB[0]}${c.stateEst?'*':''}</span>`;
     const dotTitle=(VNAME[c.verdict]||'')+(c.prov?' · provisional: leído por señales de arriba (CTR/hook), todavía no por '+(lead?'el resultado':'el ROAS'):'');
     const dot=`<span class="vdot ${c.prov?'prov':''}" style="--dot:${VDOT[c.verdict]||'#94a3b8'}" title="${dotTitle.replace(/"/g,'&quot;')}"></span>`;
     const resCell=lead?`${money(c.leads)}`:`<span class="${roasOK?heatClass('roas',c.roas):''}">${dec(c.roas)}x</span>`;
-    const nm=c.ad.length>40?c.ad.slice(0,39)+'…':c.ad;
-    const th=TB[c.ad];
-    const thumb=th?`<img class="sigthumb" src="${th}" loading="lazy" alt="" onerror="this.style.display='none'">`:`<span class="sigthumb ph">${c.isVid?'🎬':'🖼️'}</span>`;
+    const nm=c.ad.length>38?c.ad.slice(0,37)+'…':c.ad;
+    const th=thumbFor(c.ad);
+    const thumb=th?`<img class="sigthumb" src="${th}" loading="lazy" alt="" onerror="this.classList.add('ph');this.replaceWith(Object.assign(document.createElement('span'),{className:'sigthumb ph',textContent:'${c.isVid?'🎬':'🖼️'}'}))">`:`<span class="sigthumb ph">${c.isVid?'🎬':'🖼️'}</span>`;
     return `<tr>
       <td><div class="adcell">${thumb}<div class="adcol"><div class="adname">${nm}</div><div class="badtype">${c.isVid?'video':'imagen'} · $${money(c.spend)}</div></div></div></td>
-      <td><span class="${hc('freq',c.freq,imprOK)}">${dec(c.freq,2)}</span></td>
+      <td>${stBadge}</td>
+      <td><span class="${hc('freq',c.freq,imprOK)}" title="Sólo se pinta (rojo) si está muy alta (≥${dec(FREQ_HIGH,1)}) = conviene pausar/renovar.">${dec(c.freq,2)}</span></td>
       <td><span class="${hc('hook',c.hook,imprOK,c.isVid)}">${c.isVid?dec(c.hook,1)+'%':'—'}</span></td>
+      <td><span class="${hc('hold',c.hold,imprOK,c.isVid)}">${c.isVid?dec(c.hold,1)+'%':'—'}</span></td>
       <td><span class="${hc('ctr',c.ctr,imprOK)}">${dec(c.ctr)}%</span></td>
       <td>${resCell}</td>
       <td style="text-align:center">${dot}</td>
       <td><span style="display:inline-block;font-size:10.5px;font-weight:600;padding:2px 8px;border-radius:999px;color:${ct[1]};border:1px solid ${ct[1]}">${ct[0]}</span></td>
       <td>${c.leakc==='OK'?'—':c.leakc}</td></tr>`;}).join('');
-  return `<div class="scroll"><table class="sig">
-    <tr><th>Anuncio</th><th>Frec.</th><th>Hook</th><th>CTR</th><th>${lead?(D.obj==='msg'?'Conv.':'Leads'):'ROAS'}</th><th title="Verde = escalar · amarillo = iterar · rojo = bajar/matar · gris = sin datos. El anillo (sin relleno) = provisional, leído por señales de arriba.">Veredicto</th><th>Confianza</th><th>Rompe en</th></tr>
+  const realSt=Object.keys(D.adstatus||{}).length>0;
+  return `<div class="sec-s" style="margin:-2px 0 8px">A hoy hay <b>${nActive} anuncio${nActive===1?'':'s'} activo${nActive===1?'':'s'}</b> en esta cuenta (el resto, pausado o en aprendizaje). ${realSt?'Estado real de Meta.':'El estado se <b>estima</b> por la actividad del último día con datos (marcado con *); se vuelve exacto en la próxima actualización de Meta.'}</div>
+    <div class="scroll"><table class="sig">
+    <tr><th>Anuncio</th><th>Estado</th><th title="Frecuencia diaria promedio. Sólo se pinta en rojo cuando está muy alta (conviene pausar/renovar).">Frec.</th><th title="Hook rate = reproducciones de 3s / impresiones (arranque del video).">Hook</th><th title="Hold rate = ThruPlays / reproducciones de 3s (retención después del gancho).">Hold</th><th>CTR</th><th>${lead?(D.obj==='msg'?'Conv.':'Leads'):'ROAS'}</th><th title="Verde = escalar · amarillo = iterar · rojo = bajar/matar · gris = sin datos. El anillo (sin relleno) = provisional, leído por señales de arriba.">Veredicto</th><th>Confianza</th><th>Rompe en</th></tr>
     ${rows}</table></div>
-    <div class="mininote"><b>Veredicto</b> = puntito: <span class="vdot" style="--dot:#16a34a;width:10px;height:10px"></span> escalar · <span class="vdot" style="--dot:#f59e0b;width:10px;height:10px"></span> iterar · <span class="vdot" style="--dot:#dc2626;width:10px;height:10px"></span> bajar/matar · <span class="vdot" style="--dot:#94a3b8;width:10px;height:10px"></span> sin datos. Un <b>anillo</b> (sin relleno) = provisional, leído por señales de arriba (CTR/hook) porque todavía no hay ${lead?'resultado':'ROAS'} confiable. Sólo se <b>colorea</b> el número que ya tiene volumen para ser significativo (CTR/Hook/Frec.: ≥${money(cIM)} impresiones; ROAS: ≥${cCS} compras del creativo — por eso el ROAS por creativo casi nunca se colorea). Hook aplica sólo a video.${extra>0?` +${extra} creativos de menor gasto no listados.`:''}</div>`;
+    <div class="mininote"><b>Estado</b> (activo/pausado/en aprendizaje) = real de Meta, o estimado (con *) por la actividad del último día si todavía no se trajo. <b>Hold</b> = retención del video (ThruPlays sobre reproducciones de 3s). <b>Frec.</b> se pinta (rojo) sólo si está muy alta (≥${dec(FREQ_HIGH,1)}) = pausar/renovar; un valor normal no aporta y queda sin color. <b>Veredicto</b> = puntito: <span class="vdot" style="--dot:#16a34a;width:10px;height:10px"></span> escalar · <span class="vdot" style="--dot:#f59e0b;width:10px;height:10px"></span> iterar · <span class="vdot" style="--dot:#dc2626;width:10px;height:10px"></span> bajar/matar · <span class="vdot" style="--dot:#94a3b8;width:10px;height:10px"></span> sin datos; el <b>anillo</b> = provisional (leído por CTR/hook). Sólo se <b>colorea</b> la métrica con volumen para ser significativa (CTR/Hook/Hold: ≥${money(cIM)} impresiones; ROAS: ≥${cCS} compras del creativo). Hook y Hold aplican sólo a video.${extra>0?` +${extra} creativos de menor gasto no listados.`:''}</div>`;
 }
 /* mini time-series: full history (<=30d) */
 function dailySeries(b){
@@ -885,53 +948,91 @@ function sparkLine(vals,color){
   vals.forEach((v,i)=>{hits+=`<rect class="hit" x="${(i*bw).toFixed(2)}" y="0" width="${bw.toFixed(2)}" height="50" fill="transparent"/>`;});
   return `<svg viewBox="0 0 100 50" preserveAspectRatio="none" class="spark" data-n="${n}"><polyline points="${pts}" fill="none" stroke="${color}" stroke-width="1.4" vector-effect="non-scaling-stroke"/>${hits}</svg>`;
 }
+function _niceMax(v){ if(!(v>0))return 1; const p=Math.pow(10,Math.floor(Math.log10(v))); const f=v/p; const nf=f<=1?1:(f<=2?2:(f<=5?5:10)); return nf*p; }
+function _fmtS(iso){ const p=String(iso).split('-'); return (+p[2])+'/'+(+p[1]); }
 function chartHTML(b){
   const D=DATA[b], lead=isLead(D.obj), ic=(D.obj==='ic'), msg=(D.obj==='msg');
   const raw=dailySeries(b); if(raw.length<2) return '';
   const {gran,pts:s}=bucketSeries(raw); const n=s.length;
-  const g=s.map(x=>x.spend), days=s.map(x=>x.d);
   const sum=a=>a.reduce((p,v)=>p+v,0);
-  const dlbl=x=>gran==='semanal'?`sem ${fmtD(x.d)}–${fmtD(x.dEnd)}`:fmtD(x.d);
-  // color de cada barra de Gasto según la fase de optimización de ese día
+  const g=s.map(x=>x.spend);
   const hasPhases=(D.optphases||[]).length>0;
-  const gColors=hasPhases?s.map(x=>{const p=phaseOf(D,x.d);return p?p.color:'#B0526B';}):null;
-  // filas del gráfico según objetivo
-  const rows=[];
-  rows.push(['Gasto',gran==='semanal'?'por semana':'por día','$'+money(sum(g)/n),sparkBars(g,'#B0526B',gColors)]);
+  const gColor=i=>{ if(!hasPhases) return '#B0526B'; const p=phaseOf(D,s[i].d); return p?p.color:'#B0526B'; };
   const totLeads=sum(s.map(x=>x.leads)); const msgNoRes=(msg&&totLeads===0);
-  if(msgNoRes){
-    // objetivo Mensajes sin conversaciones en el export todavía -> sólo gasto
-  } else if(lead){
-    const rv=s.map(x=>x.leads); rows.push([D.obj==='msg'?'Conversaciones':'Leads',gran==='semanal'?'por semana':'por día',dec(sum(rv)/n,1),sparkBars(rv,'#5B8C6E')]);
-  } else {
-    const cv=s.map(x=>x.purch), rv=s.map(x=>x.roas);
-    rows.push(['Compras',gran==='semanal'?'por semana':'por día',dec(sum(cv)/n,1),sparkBars(cv,'#94712F')]);
-    const roasPer=sum(g)?sum(s.map(x=>x.pval))/sum(g):0;
-    rows.push(['ROAS','del historial',dec(roasPer)+'x',sparkLine(rv,'#2E7D46')]);
-    if(ic){
-      const av=s.map(x=>x.atc), iv=s.map(x=>x.ic);
-      rows.push(['Agregar al carrito',gran==='semanal'?'por semana':'por día',dec(sum(av)/n,1),sparkBars(av,'#C08A2E')]);
-      rows.push(['Iniciar pago',gran==='semanal'?'por semana':'por día',dec(sum(iv)/n,1),sparkBars(iv,'#B0526B')]);
+  // ¿qué es el "resultado" del panel de abajo?
+  const resLabel = lead?(D.obj==='msg'?'Conversaciones':'Leads'):'Compras';
+  const resVals = lead? s.map(x=>x.leads) : s.map(x=>x.purch);
+  const resColor = lead?'#5B8C6E':'#94712F';
+  const showRes = !msgNoRes;
+  const showRoas = !lead;                         // línea de ROAS sólo en ventas
+  const roasVals = s.map(x=>x.roas);
+  const tgt = (D.th&&D.th.tgt)||null;
+
+  // ---- geometría ----
+  const W=340, x0=40, xR=302, plotW=xR-x0;
+  const A={t:20,b:96}, B={t:126,b:202};          // paneles: A=Gasto, B=Resultado
+  const H=222;
+  const band=plotW/n, bw=Math.min(band*0.6,26);
+  const xc=i=>x0+i*band+band/2;
+  const bars=(vals,top,bot,maxV,colFn,vfmt)=>{ let s2=''; const h=bot-top;
+    vals.forEach((v,i)=>{ const bh=maxV>0?Math.max(0,v/maxV*h):0; const bx=xc(i)-bw/2, by=bot-bh;
+      s2+=`<rect x="${bx.toFixed(1)}" y="${by.toFixed(1)}" width="${bw.toFixed(1)}" height="${bh.toFixed(1)}" rx="1.5" fill="${(typeof colFn==='function')?colFn(i):colFn}"/>`;
+      if(vfmt&&n<=10&&v>0) s2+=`<text class="vlab" x="${xc(i).toFixed(1)}" y="${(by-2.5).toFixed(1)}" text-anchor="middle">${vfmt(v)}</text>`; });
+    return s2; };
+  // Panel A: Gasto
+  const gMax=_niceMax(Math.max(...g));
+  let svgA=`<line class="zl" x1="${x0}" y1="${A.b}" x2="${xR}" y2="${A.b}"/>`+
+    `<line class="gl" x1="${x0}" y1="${A.t}" x2="${xR}" y2="${A.t}" stroke-dasharray="2 3"/>`+
+    `<text class="axlab" x="${x0-4}" y="${A.t+3}" text-anchor="end">$${money(gMax)}</text>`+
+    `<text class="axlab" x="${x0-4}" y="${A.b}" text-anchor="end">0</text>`+
+    `<text class="axlab" x="${x0}" y="${A.t-7}">Gasto por ${gran==='semanal'?'semana':'día'} ($)</text>`+
+    bars(g,A.t,A.b,gMax,gColor,null);
+  // Panel B: Resultado (+ ROAS)
+  let svgB='';
+  if(showRes){
+    const rMax=_niceMax(Math.max(1,...resVals));
+    svgB+=`<line class="zl" x1="${x0}" y1="${B.b}" x2="${xR}" y2="${B.b}"/>`+
+      `<line class="gl" x1="${x0}" y1="${B.t}" x2="${xR}" y2="${B.t}" stroke-dasharray="2 3"/>`+
+      `<text class="axlab" x="${x0-4}" y="${B.t+3}" text-anchor="end">${dec(rMax,0)}</text>`+
+      `<text class="axlab" x="${x0-4}" y="${B.b}" text-anchor="end">0</text>`+
+      `<text class="axlab" x="${x0}" y="${B.t-7}">${resLabel} por ${gran==='semanal'?'semana':'día'}</text>`+
+      bars(resVals,B.t,B.b,rMax,resColor,v=>dec(v,0));
+    if(showRoas){
+      const roMax=_niceMax(Math.max(1,tgt||0,...roasVals)); const h=B.b-B.t;
+      // línea objetivo de ROAS
+      if(tgt){ const ty=B.b-(tgt/roMax*h); svgB+=`<line x1="${x0}" y1="${ty.toFixed(1)}" x2="${xR}" y2="${ty.toFixed(1)}" stroke="#2E7D46" stroke-width=".7" stroke-dasharray="3 3" opacity=".55"/>`+
+        `<text class="axlab" x="${xR+3}" y="${ty.toFixed(1)}" fill="#2E7D46">obj ${dec(tgt)}x</text>`; }
+      const pts=roasVals.map((v,i)=>`${xc(i).toFixed(1)},${(B.b-(v/roMax*h)).toFixed(1)}`).join(' ');
+      svgB+=`<polyline points="${pts}" fill="none" stroke="#2E7D46" stroke-width="1.8"/>`+
+        roasVals.map((v,i)=>`<circle cx="${xc(i).toFixed(1)}" cy="${(B.b-(v/roMax*h)).toFixed(1)}" r="2" fill="#2E7D46"/>`).join('')+
+        `<text class="axlab" x="${xR+3}" y="${B.t+3}" fill="#2E7D46">ROAS ${dec(roMax)}x</text>`;
     }
+  } else {
+    svgB+=`<text class="axlab" x="${x0}" y="${(B.t+B.b)/2}">Resultado (conversaciones de WhatsApp) todavía no disponible en el export.</text>`;
   }
-  // etiqueta combinada por bucket (para el tooltip) — todas las series + fase
-  const labels=s.map((x,i)=>{
-    let t=`<b>${dlbl(x)}</b> · $${money(x.spend)} gasto`;
+  // eje X (fechas) — cada bucket si son pocos, si no uno de por medio
+  const step=n<=8?1:Math.ceil(n/8);
+  let xlab='';
+  s.forEach((x,i)=>{ if(i%step===0||i===n-1) xlab+=`<text class="axlab" x="${xc(i).toFixed(1)}" y="${H-4}" text-anchor="middle">${_fmtS(x.d)}</text>`; });
+  // overlay para el tooltip (mapea x0..xR a los n buckets)
+  const hit=`<rect class="spark" data-n="${n}" x="${x0}" y="8" width="${plotW}" height="${(B.b)-8}" fill="transparent" style="cursor:crosshair;pointer-events:all"/>`;
+  // tooltip labels por bucket
+  const dlbl=x=>gran==='semanal'?`semana ${_fmtS(x.d)}–${_fmtS(x.dEnd)}`:_fmtS(x.d);
+  const labels=s.map(x=>{ let t=`<b>${dlbl(x)}</b> · $${money(x.spend)} gasto`;
     if(!lead) t+=` · ${money(x.purch)} compras · ROAS ${dec(x.roas)}x`+(ic?` · ${money(x.atc)} al carrito · ${money(x.ic)} iniciar pago`:'');
     else if(!msgNoRes) t+=` · ${money(x.leads)} ${resWord(D.obj)}`;
     const p=phaseOf(D,x.d); if(p) t+=` · <span style="color:${p.color}">optim.: ${p.label}</span>`;
-    return t;
-  });
+    return t; });
   window.__CHLAB=labels; window.__CHN=n;
-  const rowsH=rows.map(row=>`<div class="crow"><div class="cl">${row[0]}<span class="clsub">${row[1]}</span></div><div class="cs">${row[3]}</div><div class="cv">${row[2]}</div></div>`).join('');
-  // leyenda de fases de optimización
-  let phLeg='';
+  // leyenda
+  let leg=`<div class="evoleg"><span class="k"><span class="sw" style="background:${resColor}"></span>${resLabel}</span>`;
+  if(showRoas) leg+=`<span class="k"><span class="swl"></span>ROAS`+(tgt?` (objetivo ${dec(tgt)}x)`:'')+`</span>`;
   if(hasPhases&&(D.optphases||[]).length>1){
-    phLeg=`<div class="phleg">Color del gasto = optimización de esos días: `+
-      (D.optphases||[]).map(p=>`<span class="phchip" style="--c:${OPTCOLOR[p.opt]||'#B0526B'}">${p.label||OBJSHORT[p.opt]||p.opt} (desde ${fmtD(p.from)})</span>`).join(' ')+`</div>`;
-  }
-  return `<div class="chart"><div class="cx"><span>${fmtD(days[0])}</span><span class="cxmid">↕ pasá el cursor por el gráfico para ver los valores</span><span>${fmtD(s[n-1].dEnd)}</span></div>${rowsH}${phLeg}</div>
-    <div class="mininote">Los números de la derecha son el <b>promedio por ${gran==='semanal'?'semana':'día'}</b> (el ROAS es el del historial completo, no un promedio).</div>`;
+    leg+=(D.optphases||[]).map(p=>`<span class="k"><span class="sw" style="background:${OPTCOLOR[p.opt]||'#B0526B'}"></span>Gasto · ${p.label||OBJSHORT[p.opt]||p.opt}</span>`).join('');
+  } else { leg+=`<span class="k"><span class="sw" style="background:#B0526B"></span>Gasto</span>`; }
+  leg+=`</div>`;
+  return `<div class="evo"><svg viewBox="0 0 ${W} ${H}" role="img">${svgA}${svgB}${xlab}${hit}</svg>${leg}</div>
+    <div class="mininote">Pasá el cursor por el gráfico para ver el detalle de cada ${gran==='semanal'?'semana':'día'}.${ic?' Carrito e iniciar pago aparecen en ese detalle.':''}</div>`;
 }
 function fmtChDate(iso){ return /^\d{4}-\d{2}-\d{2}$/.test(String(iso))?fmtD(iso):String(iso||''); }
 function esc(s){return String(s||'').replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));}
@@ -1481,7 +1582,7 @@ document.addEventListener('mouseleave',()=>{const t=document.getElementById('cha
 /* clock */
 (function(){const el=document.getElementById("clock");const d=new Date(),m=["ene","feb","mar","abr","may","jun","jul","ago","sep","oct","nov","dic"];el.textContent=d.getDate()+" "+m[d.getMonth()]+" "+d.getFullYear();})();
 /* sello de versión visible para confirmar que estás en la última */
-const BUILD="v21 · 2 sep 2026 · Interpretabilidad, veredicto en punto, gráfico por objetivo y fases";
+const BUILD="v22 · 2 sep 2026 · Estado por anuncio, hold rate, gráfico legible y frecuencia sólo si alta";
 (function(){const f=document.querySelector('.foot-note'); if(f)f.insertAdjacentHTML('beforeend',' · <b>Build '+BUILD+'</b>');
   const c=document.getElementById('clock'); if(c)c.insertAdjacentHTML('beforeend','<br><span style="color:var(--rose)">Build '+BUILD.split(' · ')[0]+'</span>');})();
 
