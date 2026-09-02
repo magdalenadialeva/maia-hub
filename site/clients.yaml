@@ -1,0 +1,113 @@
+# MAIA · Registro de clientes.
+# Fuente de verdad de metadatos por marca. El motor cruza esto con la API de Meta.
+# `slug` = carpeta dentro de exports/  (exports/<slug>/*.csv)
+#
+# ad_account_id : ID de la cuenta publicitaria de Meta (solo números, sin "act_").
+#             Lo usa engine.fetch_meta para traer la data sola cada mañana.
+# objective : ventas | leads   -> lógica interna del motor (reporte, señales)
+# obj_code  : purchase | ic | lead  -> lo que muestra el hub (OBJLBL).
+# currency  : se autodetecta; esto es fallback/override.
+# margin    : margen bruto (0-1). Objetivo de ROAS = 1/margin.
+#
+# AUTO-DESCUBRIMIENTO: engine.fetch_meta lista todas las cuentas del portfolio y
+# SUMA sola cualquier cuenta NUEVA con gasto que no esté acá ni en ignore_account_ids
+# (se agrega con nombre de la cuenta y objetivo "ventas"; después se ajusta el nombre).
+#
+# ignore_account_ids: cuentas que NUNCA son clientes (personales, dormidas, la
+# propia agencia). Nunca se agregan aunque tengan gasto.
+
+ignore_account_ids:
+  - "10150310649593833"   # Maggi Dialeva (personal)
+  - "473122206833501"     # Australia & world (AUD)
+  - "1669535646753394"    # Sole Pantano
+  - "2394340120940661"    # Piera Ceresa Australia (dormida, AUD)
+  - "2055620405050036"    # unknown (Read-Only)
+
+# El ORDEN de esta lista define el orden en el hub (CLIENTS).
+clients:
+  - slug: piera
+    name: Piera Ceresa
+    objective: ventas
+    obj_code: ic
+    currency: CLP
+    ad_account_id: "4114075572016005"
+    start_maia: "2026-07-28"
+    start_label: "28 jul 2026"
+    margin: 0.5
+    notes: "Optimiza a Iniciar pago para validar checkout. Freno hoy: página de producto (LPV→ATC)."
+    # Fases de optimización (para el color del gráfico y la métrica-resultado).
+    # `opt`: purchase | ic | atc | lead  ·  `from`: primer día de esa optimización.
+    # Cuando vuelvas a cambiar la optimización, agregá otra fila con su fecha.
+    opt_phases:
+      - {from: "2026-07-28", opt: purchase, label: "Compra"}
+      - {from: "2026-08-18", opt: ic, label: "Iniciar pago (validando checkout)"}
+
+  - slug: mossy
+    name: Mossy
+    objective: ventas
+    obj_code: purchase
+    currency: ARS
+    ad_account_id: "680446890585164"
+    start_maia: null
+    start_label: "Cliente histórico"
+    margin: 0.5
+    notes: "Cliente histórico (Captiva). Fatiga incipiente: renovar top ad. Cuello Carrito→Pago."
+
+  - slug: vresia
+    name: Vresia
+    objective: ventas
+    obj_code: purchase
+    currency: ARS
+    ad_account_id: "1234407504956289"
+    start_maia: "2026-08-21"
+    start_label: "21 ago 2026"
+    margin: 0.5
+    notes: "Campaña de VENTA. Mejor creativo: Catálogo + Video 2. Cuello Carrito→Pago."
+
+  - slug: alba
+    name: Alba & Co
+    objective: ventas
+    obj_code: purchase
+    currency: ARS
+    ad_account_id: "498930606964785"
+    start_maia: "2026-08-21"
+    start_label: "21 ago 2026"
+    margin: 0.5
+    notes: "Campaña de VENTA. Mejor ROAS de la cartera. Embudo sano; limita el volumen arriba."
+
+  - slug: paz
+    name: Maia
+    objective: leads
+    obj_code: lead
+    currency: ARS
+    ad_account_id: "940743653891699"
+    start_maia: "2026-07-01"
+    start_label: "Julio 2026"
+    margin: null
+    notes: "Cuenta propia de MAIA (pazfolgueiro). Lead-gen. CPL estable; refrescar creativos por CTR↓/CPM↑."
+
+  - slug: pulpa
+    name: Pulpa Verde
+    objective: ventas
+    obj_code: purchase
+    currency: ARS
+    ad_account_id: "3152205558296651"
+    start_maia: "2026-09-02"
+    start_label: "sep 2026"
+    margin: 0.5
+    notes: "Cliente nuevo (sep 2026)."
+
+  - slug: saritina-ceramica
+    name: "SARITINA CERAMICA"
+    objective: ventas
+    obj_code: msg          # objetivo real = Tráfico/Mensajes de WhatsApp (no ventas)
+    currency: ARS
+    ad_account_id: "1583204293185422"
+    start_label: "auto"
+    margin: 0.5
+    # OJO: campaña "Saritina_Trafico_Mensajes_Wsp_Sep" = TRÁFICO / Mensajes de WhatsApp.
+    # El resultado real son CONVERSACIONES de WhatsApp, que HOY el export NO trae
+    # (la columna "Resultados" viene vacía). Por eso no hay ROAS ni compras: el hub la
+    # muestra como objetivo "Mensajes" y la evalúa por señales de arriba (CTR/CPM).
+    # Para contar las conversaciones hay que sumar esa métrica de resultado en fetch_meta.
+    notes: "Tráfico/Mensajes de WhatsApp (auto-agregada 2026-09-02). Resultado (conversaciones) no disponible en el export todavía."
