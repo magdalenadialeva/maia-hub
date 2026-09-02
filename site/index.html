@@ -386,6 +386,8 @@
   .evo .ptitle{font-family:var(--sans);font-size:8px;font-weight:600;fill:var(--soft)}
   .evo .gl{stroke:var(--line);stroke-width:.6}
   .evo .zl{stroke:var(--line);stroke-width:1}
+  .evo .chm{pointer-events:all;cursor:crosshair}
+  .evo rect.chm:hover{fill:rgba(39,31,28,.05)}
   .evoleg{display:flex;gap:14px;flex-wrap:wrap;align-items:center;margin-top:8px;font-size:11.5px;color:var(--soft)}
   .evoleg .k{display:inline-flex;align-items:center;gap:5px}
   .evoleg .sw{width:12px;height:10px;border-radius:2px;display:inline-block}
@@ -879,7 +881,8 @@ function sigHTML(x){
     const stBadge=`<span class="stbadge" style="color:${stB[1]};background:${stB[2]}" title="${c.stateEst?'Estimado por actividad al último día con datos.':'Estado real de Meta.'}">${stB[0]}${c.stateEst?'*':''}</span>`;
     const dotTitle=(VNAME[c.verdict]||'')+(c.prov?' · provisional: leído por señales de arriba (CTR/hook), todavía no por '+(lead?'el resultado':'el ROAS'):'');
     const dot=`<span class="vdot ${c.prov?'prov':''}" style="--dot:${VDOT[c.verdict]||'#94a3b8'}" title="${dotTitle.replace(/"/g,'&quot;')}"></span>`;
-    const resCell=lead?`${money(c.leads)}`:`<span class="${roasOK?heatClass('roas',c.roas):''}">${dec(c.roas)}x</span>`;
+    const resCountCell=`${money(lead?c.leads:c.purch)}`;   // Resultado: compras / leads / conversaciones
+    const roasCell=lead?'—':`<span class="${roasOK?heatClass('roas',c.roas):''}">${dec(c.roas)}x</span>`;
     const nm=c.ad.length>38?c.ad.slice(0,37)+'…':c.ad;
     const th=thumbFor(c.ad);
     const thumb=th?`<img class="sigthumb" src="${th}" loading="lazy" alt="" onerror="this.classList.add('ph');this.replaceWith(Object.assign(document.createElement('span'),{className:'sigthumb ph',textContent:'${c.isVid?'🎬':'🖼️'}'}))">`:`<span class="sigthumb ph">${c.isVid?'🎬':'🖼️'}</span>`;
@@ -890,14 +893,15 @@ function sigHTML(x){
       <td><span class="${hc('hook',c.hook,imprOK,c.isVid)}">${c.isVid?dec(c.hook,1)+'%':'—'}</span></td>
       <td><span class="${hc('hold',c.hold,imprOK,c.isVid)}">${c.isVid?dec(c.hold,1)+'%':'—'}</span></td>
       <td><span class="${hc('ctr',c.ctr,imprOK)}">${dec(c.ctr)}%</span></td>
-      <td>${resCell}</td>
+      <td>${resCountCell}</td>
+      <td>${roasCell}</td>
       <td style="text-align:center">${dot}</td>
       <td><span style="display:inline-block;font-size:10.5px;font-weight:600;padding:2px 8px;border-radius:999px;color:${ct[1]};border:1px solid ${ct[1]}">${ct[0]}</span></td>
       <td>${c.leakc==='OK'?'—':c.leakc}</td></tr>`;}).join('');
   const realSt=Object.keys(D.adstatus||{}).length>0;
   return `<div class="sec-s" style="margin:-2px 0 8px">A hoy hay <b>${nActive} anuncio${nActive===1?'':'s'} activo${nActive===1?'':'s'}</b> en esta cuenta (el resto, pausado o en aprendizaje). ${realSt?'Estado real de Meta.':'El estado se <b>estima</b> por la actividad del último día con datos (marcado con *); se vuelve exacto en la próxima actualización de Meta.'}</div>
     <div class="scroll"><table class="sig">
-    <tr><th>Anuncio</th><th>Estado</th><th title="Frecuencia diaria promedio. Sólo se pinta en rojo cuando está muy alta (conviene pausar/renovar).">Frec.</th><th title="Hook rate = reproducciones de 3s / impresiones (arranque del video).">Hook</th><th title="Hold rate = ThruPlays / reproducciones de 3s (retención después del gancho).">Hold</th><th>CTR</th><th>${lead?(D.obj==='msg'?'Conv.':'Leads'):'ROAS'}</th><th title="Verde = escalar · amarillo = iterar · rojo = bajar/matar · gris = sin datos. El anillo (sin relleno) = provisional, leído por señales de arriba.">Veredicto</th><th>Confianza</th><th>Rompe en</th></tr>
+    <tr><th>Anuncio</th><th>Estado</th><th title="Frecuencia diaria promedio. Sólo se pinta en rojo cuando está muy alta (conviene pausar/renovar).">Frec.</th><th title="Hook rate = reproducciones de 3s / impresiones (arranque del video).">Hook</th><th title="Hold rate = ThruPlays / reproducciones de 3s (retención después del gancho).">Hold</th><th>CTR</th><th title="Resultado del creativo en el período: compras, leads o conversaciones según el objetivo.">${lead?(D.obj==='msg'?'Conv.':'Leads'):'Compras'}</th><th>ROAS</th><th title="Verde = escalar · amarillo = iterar · rojo = bajar/matar · gris = sin datos. El anillo (sin relleno) = provisional, leído por señales de arriba.">Veredicto</th><th>Confianza</th><th>Rompe en</th></tr>
     ${rows}</table></div>
     <div class="mininote"><b>Estado</b> (activo/pausado/en aprendizaje) = real de Meta, o estimado (con *) por la actividad del último día si todavía no se trajo. <b>Hold</b> = retención del video (ThruPlays sobre reproducciones de 3s). <b>Frec.</b> se pinta (rojo) sólo si está muy alta (≥${dec(FREQ_HIGH,1)}) = pausar/renovar; un valor normal no aporta y queda sin color. <b>Veredicto</b> = puntito: <span class="vdot" style="--dot:#16a34a;width:10px;height:10px"></span> escalar · <span class="vdot" style="--dot:#f59e0b;width:10px;height:10px"></span> iterar · <span class="vdot" style="--dot:#dc2626;width:10px;height:10px"></span> bajar/matar · <span class="vdot" style="--dot:#94a3b8;width:10px;height:10px"></span> sin datos; el <b>anillo</b> = provisional (leído por CTR/hook). Sólo se <b>colorea</b> la métrica con volumen para ser significativa (CTR/Hook/Hold: ≥${money(cIM)} impresiones; ROAS: ≥${cCS} compras del creativo). Hook y Hold aplican sólo a video.${extra>0?` +${extra} creativos de menor gasto no listados.`:''}</div>`;
 }
@@ -927,12 +931,12 @@ function bucketSeries(s){
   return {gran:'semanal',pts:out};
 }
 function chartSubtitle(b){
-  const D=DATA[b]; const raw=dailySeries(b); const gran=(raw.length<=16)?'diarios':'semanales';
-  const totLeads=raw.reduce((s,x)=>s+x.leads,0);
+  const D=DATA[b]; const span=daysBetween(RANGE.from,RANGE.to)+1; const gran=(span<=16)?'diarios':'semanales';
+  const totLeads=dailySeries(b).filter(x=>x.d>=RANGE.from&&x.d<=RANGE.to).reduce((s,x)=>s+x.leads,0);
   const base = isLead(D.obj)
-    ? ((D.obj==='msg'&&totLeads===0)?'Gasto por día desde el inicio (las conversaciones de WhatsApp todavía no están en el export).':'Gasto y '+resWord(D.obj)+' por día desde el inicio.')
-    : 'Gasto, compras y ROAS por día desde el inicio'+(D.obj==='ic'?', más agregar al carrito e iniciar pago':'')+'.';
-  return `${base} Valores <b>${gran}</b> (diarios hasta ~2 semanas, semanales para historiales más largos). Independiente del período elegido arriba.`;
+    ? ((D.obj==='msg'&&totLeads===0)?'Gasto en el período (las conversaciones de WhatsApp todavía no están en el export).':'Gasto y '+resWord(D.obj)+' en el período elegido.')
+    : 'Gasto, compras y ROAS en el período elegido'+(D.obj==='ic'?', más agregar al carrito e iniciar pago':'')+'.';
+  return `${base} Valores <b>${gran}</b>: diarios si elegís una semana o menos, semanales si elegís un mes o más (cambia con el selector de período de arriba).`;
 }
 /* barra: acepta un color por barra (colors[i]) para pintar fases. */
 function sparkBars(vals,color,colors){
@@ -951,27 +955,46 @@ function sparkLine(vals,color){
 }
 function _niceMax(v){ if(!(v>0))return 1; const p=Math.pow(10,Math.floor(Math.log10(v))); const f=v/p; const nf=f<=1?1:(f<=2?2:(f<=5?5:10)); return nf*p; }
 function _fmtS(iso){ const p=String(iso).split('-'); return (+p[2])+'/'+(+p[1]); }
+/* Serie del PERÍODO elegido, con granularidad según el período:
+   diario si el período es de ~2 semanas o menos, semanal si es un mes o más. */
+function chartSeries(b){
+  const raw=dailySeries(b).filter(x=>x.d>=RANGE.from&&x.d<=RANGE.to);
+  const span=daysBetween(RANGE.from,RANGE.to)+1;
+  const gran=span<=16?'diario':'semanal';
+  if(!raw.length) return {gran,pts:[]};
+  if(gran==='diario') return {gran,pts:raw};
+  // semanal: bloques de 7 días alineados al inicio del período
+  const map={},out=[];
+  raw.forEach(x=>{ const wk=Math.floor(daysBetween(RANGE.from,x.d)/7);
+    if(!map[wk]){map[wk]={d:x.d,dEnd:x.d,spend:0,purch:0,pval:0,atc:0,ic:0,leads:0};out.push(map[wk]);}
+    const c=map[wk]; c.spend+=x.spend;c.purch+=x.purch;c.pval+=x.pval;c.atc+=x.atc;c.ic+=x.ic;c.leads+=x.leads;
+    if(x.d<c.d)c.d=x.d; if(x.d>c.dEnd)c.dEnd=x.d; c.roas=c.spend?c.pval/c.spend:0; });
+  return {gran,pts:out};
+}
 function chartHTML(b){
   const D=DATA[b], lead=isLead(D.obj), ic=(D.obj==='ic'), msg=(D.obj==='msg');
-  const raw=dailySeries(b); if(raw.length<2) return '';
-  const {gran,pts:s}=bucketSeries(raw); const n=s.length;
+  const {gran,pts:s}=chartSeries(b); const n=s.length;
+  if(n<1) return `<div class="evo"><div class="mininote" style="margin:0">No hay actividad en el período elegido.</div></div>`;
   const sum=a=>a.reduce((p,v)=>p+v,0);
   const g=s.map(x=>x.spend);
   const hasPhases=(D.optphases||[]).length>0;
   const gColor=i=>{ if(!hasPhases) return '#B0526B'; const p=phaseOf(D,s[i].d); return p?p.color:'#B0526B'; };
   const totLeads=sum(s.map(x=>x.leads)); const msgNoRes=(msg&&totLeads===0);
-  // ¿qué es el "resultado" del panel de abajo?
   const resLabel = lead?(D.obj==='msg'?'Conversaciones':'Leads'):'Compras';
+  const resWordL = lead?resWord(D.obj):'compras';
   const resVals = lead? s.map(x=>x.leads) : s.map(x=>x.purch);
   const resColor = lead?'#5B8C6E':'#94712F';
   const showRes = !msgNoRes;
-  const showRoas = !lead;                         // línea de ROAS sólo en ventas
+  const showRoas = !lead;
   const roasVals = s.map(x=>x.roas);
   const tgt = (D.th&&D.th.tgt)||null;
+  const uni=gran==='semanal'?'semana':'día';
+  const dlbl=x=>gran==='semanal'?`sem ${_fmtS(x.d)}–${_fmtS(x.dEnd)}`:_fmtS(x.d);
+  const A2=s=>String(s).replace(/"/g,'&quot;');   // atributo seguro
 
   // ---- geometría ----
   const W=340, x0=40, xR=302, plotW=xR-x0;
-  const A={t:20,b:96}, B={t:126,b:202};          // paneles: A=Gasto, B=Resultado
+  const A={t:20,b:96}, B={t:126,b:202};
   const H=222;
   const band=plotW/n, bw=Math.min(band*0.6,26);
   const xc=i=>x0+i*band+band/2;
@@ -980,51 +1003,49 @@ function chartHTML(b){
       s2+=`<rect x="${bx.toFixed(1)}" y="${by.toFixed(1)}" width="${bw.toFixed(1)}" height="${bh.toFixed(1)}" rx="1.5" fill="${(typeof colFn==='function')?colFn(i):colFn}"/>`;
       if(vfmt&&n<=10&&v>0) s2+=`<text class="vlab" x="${xc(i).toFixed(1)}" y="${(by-2.5).toFixed(1)}" text-anchor="middle">${vfmt(v)}</text>`; });
     return s2; };
+  // zona de hover por bucket en un panel, con su etiqueta propia
+  const hitRects=(top,bot,tipFn)=>s.map((x,i)=>`<rect class="chm" x="${(x0+i*band).toFixed(1)}" y="${top}" width="${band.toFixed(1)}" height="${(bot-top).toFixed(1)}" fill="transparent" data-tip="${A2(tipFn(x))}"/>`).join('');
+
   // Panel A: Gasto
   const gMax=_niceMax(Math.max(...g));
+  const gTip=x=>{const p=phaseOf(D,x.d);return `<b>${dlbl(x)}</b> · $${money(x.spend)} de gasto`+(p?` · ${p.label}`:'');};
   let svgA=`<line class="zl" x1="${x0}" y1="${A.b}" x2="${xR}" y2="${A.b}"/>`+
     `<line class="gl" x1="${x0}" y1="${A.t}" x2="${xR}" y2="${A.t}" stroke-dasharray="2 3"/>`+
     `<text class="axlab" x="${x0-4}" y="${A.t+3}" text-anchor="end">$${money(gMax)}</text>`+
     `<text class="axlab" x="${x0-4}" y="${A.b}" text-anchor="end">0</text>`+
-    `<text class="ptitle" x="${x0}" y="${A.t-6}">Gasto por ${gran==='semanal'?'semana':'día'} ($)</text>`+
-    bars(g,A.t,A.b,gMax,gColor,null);
+    `<text class="ptitle" x="${x0}" y="${A.t-6}">Gasto por ${uni} ($)</text>`+
+    bars(g,A.t,A.b,gMax,gColor,null)+
+    hitRects(A.t,A.b,gTip);
   // Panel B: Resultado (+ ROAS)
   let svgB='';
   if(showRes){
     const rMax=_niceMax(Math.max(1,...resVals));
+    const resTip=x=>`<b>${dlbl(x)}</b> · ${money(lead?x.leads:x.purch)} ${resWordL}`+(ic?` · ${money(x.atc)} al carrito · ${money(x.ic)} iniciar pago`:'');
     svgB+=`<line class="zl" x1="${x0}" y1="${B.b}" x2="${xR}" y2="${B.b}"/>`+
       `<line class="gl" x1="${x0}" y1="${B.t}" x2="${xR}" y2="${B.t}" stroke-dasharray="2 3"/>`+
       `<text class="axlab" x="${x0-4}" y="${B.t+3}" text-anchor="end">${dec(rMax,0)}</text>`+
       `<text class="axlab" x="${x0-4}" y="${B.b}" text-anchor="end">0</text>`+
-      `<text class="ptitle" x="${x0}" y="${B.t-6}">${resLabel} por ${gran==='semanal'?'semana':'día'}</text>`+
-      bars(resVals,B.t,B.b,rMax,resColor,v=>dec(v,0));
+      `<text class="ptitle" x="${x0}" y="${B.t-6}">${resLabel} por ${uni}</text>`+
+      bars(resVals,B.t,B.b,rMax,resColor,v=>dec(v,0))+
+      hitRects(B.t,B.b,resTip);
     if(showRoas){
       const roMax=_niceMax(Math.max(1,tgt||0,...roasVals)); const h=B.b-B.t;
-      // línea objetivo de ROAS
       if(tgt){ const ty=B.b-(tgt/roMax*h); svgB+=`<line x1="${x0}" y1="${ty.toFixed(1)}" x2="${xR}" y2="${ty.toFixed(1)}" stroke="#2E7D46" stroke-width=".7" stroke-dasharray="3 3" opacity=".55"/>`+
         `<text class="axlab" x="${xR+3}" y="${ty.toFixed(1)}" fill="#2E7D46">obj ${dec(tgt)}x</text>`; }
       const pts=roasVals.map((v,i)=>`${xc(i).toFixed(1)},${(B.b-(v/roMax*h)).toFixed(1)}`).join(' ');
-      svgB+=`<polyline points="${pts}" fill="none" stroke="#2E7D46" stroke-width="1.8"/>`+
-        roasVals.map((v,i)=>`<circle cx="${xc(i).toFixed(1)}" cy="${(B.b-(v/roMax*h)).toFixed(1)}" r="2" fill="#2E7D46"/>`).join('')+
-        `<text class="axlab" x="${xR+3}" y="${B.t+3}" fill="#2E7D46">ROAS ${dec(roMax)}x</text>`;
+      svgB+=`<polyline points="${pts}" fill="none" stroke="#2E7D46" stroke-width="1.8" style="pointer-events:none"/>`+
+        `<text class="axlab" x="${xR+3}" y="${B.t+3}" fill="#2E7D46">ROAS ${dec(roMax)}x</text>`+
+        // puntos de ROAS ENCIMA (con su propio valor al pasar el cursor)
+        roasVals.map((v,i)=>`<circle class="chm" cx="${xc(i).toFixed(1)}" cy="${(B.b-(v/roMax*h)).toFixed(1)}" r="5" fill="#2E7D46" fill-opacity="0.001" data-tip="${A2(`<b>${dlbl(s[i])}</b> · ROAS ${dec(v)}x`)}"/><circle cx="${xc(i).toFixed(1)}" cy="${(B.b-(v/roMax*h)).toFixed(1)}" r="2" fill="#2E7D46" style="pointer-events:none"/>`).join('');
     }
   } else {
     svgB+=`<text class="axlab" x="${x0}" y="${(B.t+B.b)/2}">Resultado (conversaciones de WhatsApp) todavía no disponible en el export.</text>`;
   }
-  // eje X (fechas) — cada bucket si son pocos, si no uno de por medio
+  // eje X (fechas)
   const step=n<=8?1:Math.ceil(n/8);
   let xlab='';
   s.forEach((x,i)=>{ if(i%step===0||i===n-1) xlab+=`<text class="axlab" x="${xc(i).toFixed(1)}" y="${H-4}" text-anchor="middle">${_fmtS(x.d)}</text>`; });
-  // overlay para el tooltip (mapea x0..xR a los n buckets)
-  const hit=`<rect class="spark" data-n="${n}" x="${x0}" y="8" width="${plotW}" height="${(B.b)-8}" fill="transparent" style="cursor:crosshair;pointer-events:all"/>`;
-  // tooltip labels por bucket
-  const dlbl=x=>gran==='semanal'?`semana ${_fmtS(x.d)}–${_fmtS(x.dEnd)}`:_fmtS(x.d);
-  const labels=s.map(x=>{ let t=`<b>${dlbl(x)}</b> · $${money(x.spend)} gasto`;
-    if(!lead) t+=` · ${money(x.purch)} compras · ROAS ${dec(x.roas)}x`+(ic?` · ${money(x.atc)} al carrito · ${money(x.ic)} iniciar pago`:'');
-    else if(!msgNoRes) t+=` · ${money(x.leads)} ${resWord(D.obj)}`;
-    const p=phaseOf(D,x.d); if(p) t+=` · <span style="color:${p.color}">optim.: ${p.label}</span>`;
-    return t; });
-  window.__CHLAB=labels; window.__CHN=n;
+  window.__CHLAB=null;
   // leyenda
   let leg=`<div class="evoleg"><span class="k"><span class="sw" style="background:${resColor}"></span>${resLabel}</span>`;
   if(showRoas) leg+=`<span class="k"><span class="swl"></span>ROAS`+(tgt?` (objetivo ${dec(tgt)}x)`:'')+`</span>`;
@@ -1032,8 +1053,8 @@ function chartHTML(b){
     leg+=(D.optphases||[]).map(p=>`<span class="k"><span class="sw" style="background:${OPTCOLOR[p.opt]||'#B0526B'}"></span>Gasto · ${p.label||OBJSHORT[p.opt]||p.opt}</span>`).join('');
   } else { leg+=`<span class="k"><span class="sw" style="background:#B0526B"></span>Gasto</span>`; }
   leg+=`</div>`;
-  return `<div class="evo"><svg viewBox="0 0 ${W} ${H}" role="img">${svgA}${svgB}${xlab}${hit}</svg>${leg}</div>
-    <div class="mininote">Pasá el cursor por el gráfico para ver el detalle de cada ${gran==='semanal'?'semana':'día'}.${ic?' Carrito e iniciar pago aparecen en ese detalle.':''}</div>`;
+  return `<div class="evo"><svg viewBox="0 0 ${W} ${H}" role="img">${svgA}${svgB}${xlab}</svg>${leg}</div>
+    <div class="mininote">Valores <b>${gran==='semanal'?'semanales':'diarios'}</b> (según el período elegido arriba). Pasá el cursor por cada barra o punto para ver su valor.${ic?' Carrito e iniciar pago aparecen sobre las barras de compras.':''}</div>`;
 }
 function fmtChDate(iso){ return /^\d{4}-\d{2}-\d{2}$/.test(String(iso))?fmtD(iso):String(iso||''); }
 function esc(s){return String(s||'').replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));}
@@ -1248,7 +1269,7 @@ function renderDash(id){
     ${interp}
     <div class="legend"><b>Color</b> sólo cuando la métrica tiene volumen para ser significativa: <span class="lg good">verde bien</span> <span class="lg warn">amarillo atención</span> <span class="lg bad">rojo mal</span> <span class="lg idle">gris = sin señal / no interpretable aún</span></div>
     <div class="legend">Flechas <span class="arrow a-up good">↑</span><span class="arrow a-down bad">↓</span> = variación de cada KPI vs. el <b>período inmediatamente anterior de igual duración</b> (si la marca no tenía pauta antes, compara la 2ª mitad contra la 1ª del período elegido). Verde = mejora · rojo = empeora · → = estable · · = sin período previo.</div>
-    <div class="sec-h">Evolución (historia completa de la pauta)</div>
+    <div class="sec-h">Evolución de la pauta (período elegido)</div>
     <div class="sec-s">${chartSubtitle(id)}</div>
     ${chartHTML(id)}
     <div class="sec-h">Embudo a total campaña</div>
@@ -1568,14 +1589,13 @@ window.addEventListener("resize",()=>document.querySelectorAll(".panel.on iframe
 function _charttip(){let t=document.getElementById('charttip');if(!t){t=document.createElement('div');t.id='charttip';document.body.appendChild(t);}return t;}
 function _tipMove(e){
   const pt=(e.touches&&e.touches[0])||e; const tgt=document.elementFromPoint(pt.clientX,pt.clientY);
-  const sp=tgt&&tgt.closest?tgt.closest('.spark'):null;
-  const labs=window.__CHLAB||[]; const t=document.getElementById('charttip');
-  if(!sp||!labs.length){if(t)t.classList.remove('on');return;}
-  const rect=sp.getBoundingClientRect(); const n=+(sp.getAttribute('data-n'))||labs.length;
-  let idx=Math.floor((pt.clientX-rect.left)/rect.width*n); idx=Math.max(0,Math.min(n-1,idx));
-  const tip=_charttip(); tip.innerHTML=labs[idx]; tip.classList.add('on');
-  let lx=pt.clientX+12; if(lx>window.innerWidth-180)lx=pt.clientX-168;
-  tip.style.left=lx+'px'; tip.style.top=(rect.top+window.scrollY-6)+'px';
+  const m=tgt&&tgt.closest?tgt.closest('.chm'):null;
+  const t=document.getElementById('charttip');
+  const tipTxt=m&&m.getAttribute('data-tip');
+  if(!tipTxt){ if(t)t.classList.remove('on'); return; }
+  const tip=_charttip(); tip.innerHTML=tipTxt; tip.classList.add('on');
+  let lx=pt.clientX+12; if(lx>window.innerWidth-190)lx=pt.clientX-178;
+  tip.style.left=lx+'px'; tip.style.top=(pt.clientY+window.scrollY-32)+'px';
 }
 document.addEventListener('mousemove',_tipMove);
 document.addEventListener('touchmove',_tipMove,{passive:true});
@@ -1583,7 +1603,7 @@ document.addEventListener('mouseleave',()=>{const t=document.getElementById('cha
 /* clock */
 (function(){const el=document.getElementById("clock");const d=new Date(),m=["ene","feb","mar","abr","may","jun","jul","ago","sep","oct","nov","dic"];el.textContent=d.getDate()+" "+m[d.getMonth()]+" "+d.getFullYear();})();
 /* sello de versión visible para confirmar que estás en la última */
-const BUILD="v22.1 · 2 sep 2026 · Fix tamaño del gráfico de evolución";
+const BUILD="v22.2 · 2 sep 2026 · Gráfico por período, tooltip por métrica y columna Resultado";
 (function(){const f=document.querySelector('.foot-note'); if(f)f.insertAdjacentHTML('beforeend',' · <b>Build '+BUILD+'</b>');
   const c=document.getElementById('clock'); if(c)c.insertAdjacentHTML('beforeend','<br><span style="color:var(--rose)">Build '+BUILD.split(' · ')[0]+'</span>');})();
 
