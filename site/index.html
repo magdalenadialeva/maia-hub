@@ -403,7 +403,9 @@
   <div class="foot-note">Centro de Operaciones MAIA &middot; vista viva. Tablero y dashboards con datos reales de los exports de Meta. Piera en CLP, el resto en ARS &mdash; no se comparan entre sí.</div>
 </div>
 
-<script src="data.js"></script>
+<script>/* Carga data.js con cache-bust por hora: garantiza que veas la data fresca de
+   cada mañana y no una versión cacheada por el navegador/CDN. */
+document.write('<scr'+'ipt src="data.js?h='+Math.floor(Date.now()/3600000)+'"><\/scr'+'ipt>');</script>
 <script>
 const DATA = (window.DATA_EXT || {});
 
@@ -1134,7 +1136,7 @@ window.addEventListener("resize",()=>document.querySelectorAll(".panel.on iframe
 /* clock */
 (function(){const el=document.getElementById("clock");const d=new Date(),m=["ene","feb","mar","abr","may","jun","jul","ago","sep","oct","nov","dic"];el.textContent=d.getDate()+" "+m[d.getMonth()]+" "+d.getFullYear();})();
 /* sello de versión visible para confirmar que estás en la última */
-const BUILD="v17 · 2 sep 2026 · Historial de cambios de cuenta";
+const BUILD="v18 · 2 sep 2026 · Historial + data siempre fresca";
 (function(){const f=document.querySelector('.foot-note'); if(f)f.insertAdjacentHTML('beforeend',' · <b>Build '+BUILD+'</b>');
   const c=document.getElementById('clock'); if(c)c.insertAdjacentHTML('beforeend','<br><span style="color:var(--rose)">Build '+BUILD.split(' · ')[0]+'</span>');})();
 
