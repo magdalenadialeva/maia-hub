@@ -47,6 +47,13 @@
   .chsrc{display:inline-block;font-family:var(--mono);font-size:9.5px;letter-spacing:.04em;text-transform:uppercase;padding:1px 6px;border-radius:999px;border:1px solid var(--line);color:var(--rose-d);background:var(--panel2);vertical-align:middle}
   .chsrc.auto{color:var(--soft);opacity:.8}
   .tl{max-height:520px;overflow:auto}
+  .tl .tx details>summary{cursor:pointer;list-style:none}
+  .tl .tx details>summary::-webkit-details-marker{display:none}
+  .tl .tx details>summary::before{content:"▸ ";color:var(--rose-d);font-size:11px}
+  .tl .tx details[open]>summary::before{content:"▾ "}
+  .chnames{margin:4px 0 2px 14px;display:grid;gap:2px}
+  .chname{font-size:12px;color:var(--ink);opacity:.75}
+  .chdet{color:var(--soft)}
   .card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:16px 18px;box-shadow:var(--shadow)}
   .h3b{font-family:var(--sans);font-weight:600;font-size:13px;margin:0 0 10px}
   .dhead{display:flex;align-items:baseline;justify-content:space-between;gap:12px;flex-wrap:wrap;margin:14px 0 2px}
@@ -767,30 +774,165 @@ function chartHTML(b){
   return `<div class="chart"><div class="cx"><span>${fmtD(days[0])}</span><span class="cxmid">↕ pasá el cursor por el gráfico para ver cada día</span><span>${fmtD(days[n-1])}</span></div>${rows}</div>
     <div class="mininote">Los números de la derecha son el <b>promedio por día</b> del período (el ROAS es el del período completo, no un promedio de días).</div>`;
 }
-const CATICON={presupuesto:'💰',objetivo:'🎯',estado:'⏯️',creativo:'🎬',segmentacion:'👥',otros:'•'};
-const CATLBL={presupuesto:'Presupuesto',objetivo:'Optimización',estado:'Estado',creativo:'Creativos',segmentacion:'Segmentación',otros:'Cambio'};
 function fmtChDate(iso){ return /^\d{4}-\d{2}-\d{2}$/.test(String(iso))?fmtD(iso):String(iso||''); }
+function esc(s){return String(s||'').replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));}
+/* Estados de Meta: acciones tuyas vs consecuencias del sistema */
+const _ST_ON=['activo','activa'], _ST_OFF=['inactivo','inactiva'], _ST_DEL=['eliminado','eliminada'];
+const _ST_META=['procesamiento pendiente','revisión pendiente','revision pendiente','actualización necesaria','actualizacion necesaria','pago necesario','período de gracia','periodo de gracia','en revisión','en revision'];
+const _in=(s,arr)=>arr.includes(String(s||'').toLowerCase().trim());
+const _meta=(s)=>_ST_META.some(x=>String(s||'').toLowerCase().includes(x));
+/* Convierte un cambio crudo {date,cat,text,src} en un evento humano, o null si es
+   consecuencia de Meta (revisión/procesamiento) y no una acción directa tuya. */
+function parseChange(e){
+  const text=e.text||'';
+  const header=text.split(' · ')[0].split(' (')[0].trim();
+  const H=header.toLowerCase();
+  const afterDot = text.includes(' · ') ? text.split(' · ').slice(1).join(' · ') : '';
+  const obj = afterDot ? afterDot.split(' (')[0].trim() : '';
+  let old='',neu='',detail='';
+  const mm=text.match(/\(([^()]*?) → ([^()]*?)\)\s*$/);
+  if(mm){ old=mm[1].trim(); neu=mm[2].trim(); }
+  else { const md=text.match(/\(([^()]+)\)\s*$/); if(md) detail=md[1].trim(); }
+  const ent = (H.includes('anuncio')&&!H.includes('conjunto'))?'anuncio':(H.includes('campaña')?'campaña':(H.includes('conjunto')?'conjunto':(H.includes('cuenta')?'cuenta':'otro')));
+  const D_={date:e.date,src:e.src,name:obj};
+  // Creación
+  if(H.includes('creado')||H.includes('creada')||H.includes('creó')){
+    if(ent==='anuncio') return {...D_,kind:'ad_new',cat:'creativo'};
+    if(ent==='campaña') return {...D_,kind:'camp_new',cat:'estructura'};
+    if(ent==='conjunto') return {...D_,kind:'set_new',cat:'estructura'};
+  }
+  // Estado (pausar / prender / eliminar)  — sólo acciones directas
+  if(H.startsWith('estado')){
+    if(H.includes('revisión')||H.includes('revision')) return null;      // "cuando se completa su revisión"
+    if(_in(neu,_ST_DEL)) return {...D_,kind:ent+'_del',cat:'creativo'};
+    if(_in(old,_ST_ON)&&_in(neu,_ST_OFF)) return {...D_,kind:ent+'_off',cat:'estado'};
+    if(_in(old,_ST_OFF)&&_in(neu,_ST_ON)) return {...D_,kind:ent+'_on',cat:'estado'};
+    return null;   // cualquier transición con Procesamiento/Revisión/Pago/gracia = consecuencia de Meta
+  }
+  // Presupuesto / puja
+  if(e.cat==='presupuesto'||H.includes('presupuesto')){
+    if(H.includes('estrategia de puja')) return {...D_,kind:'bid',cat:'presupuesto',detail:detail};
+    if(mm){
+      const on=parseFloat(old.replace(/[^\d,.\-]/g,'').replace(/\./g,'').replace(',','.'));
+      const nn=parseFloat(neu.replace(/[^\d,.\-]/g,'').replace(/\./g,'').replace(',','.'));
+      if(on>0&&nn>0&&on!==nn){
+        const pct=Math.round((nn-on)/on*100);
+        return {...D_,kind:'budget',cat:'presupuesto',up:nn>on,pct:pct,detail:`${old} → ${neu}`};
+      }
+    }
+    if(H.includes('programación')||H.includes('programacion')) return {...D_,kind:'budsched',cat:'presupuesto'};
+    if(H.includes('uso compartido')) return {...D_,kind:'budshare',cat:'presupuesto'};
+    return {...D_,kind:'budget0',cat:'presupuesto',detail:detail};
+  }
+  // Objetivo / optimización (venta ↔ carrito)
+  if(e.cat==='objetivo'||H.includes('optimiz')||H.includes('objetivo')||H.includes('conversión')||H.includes('conversion')||H.includes('facturación')||H.includes('facturacion')){
+    return {...D_,kind:'objetivo',cat:'objetivo',detail:mm?`${old} → ${neu}`:detail};
+  }
+  if(e.cat==='segmentacion'||H.includes('segment')||H.includes('público')||H.includes('publico')) return {...D_,kind:'seg',cat:'segmentacion'};
+  // Deducidos: sólo conservar la pausa general de cuenta (el resto lo cubre el log de Meta)
+  if(e.src==='auto'){
+    if(/sin gasto/i.test(text)) return {date:e.date,src:'auto',kind:'acct_pause',cat:'estado',rawtext:text};
+    return null;
+  }
+  return {...D_,kind:'other',cat:e.cat,rawtext:header,detail:detail};
+}
+/* Título humano por tipo de evento (singular con nombre / plural agrupado) */
+function chTitle(ev){
+  const n=ev.count||1, name=ev.name?`«${esc(ev.name)}»`:'';
+  switch(ev.kind){
+    case 'ad_new':   return n>1?`Se agregaron ${n} anuncios nuevos`:`Se agregó un anuncio nuevo ${name}`;
+    case 'ad_on':    return n>1?`Se prendieron ${n} anuncios anteriores`:`Se prendió un anuncio anterior ${name}`;
+    case 'ad_off':   return n>1?`Se pausaron ${n} anuncios`:`Se pausó un anuncio ${name}`;
+    case 'ad_del':   return n>1?`Se eliminaron ${n} anuncios`:`Se eliminó un anuncio ${name}`;
+    case 'campaña_off': return `Se pausó la campaña ${name}`;
+    case 'campaña_on':  return `Se prendió la campaña ${name}`;
+    case 'conjunto_off':return `Se pausó un conjunto ${name}`;
+    case 'conjunto_on': return `Se prendió un conjunto ${name}`;
+    case 'camp_new': return n>1?`Se crearon ${n} campañas`:`Se creó una campaña ${name}`;
+    case 'set_new':  return n>1?`Se crearon ${n} conjuntos de anuncios`:`Se creó un conjunto de anuncios ${name}`;
+    case 'budget':   return `Se ${ev.up?'subió':'bajó'} el presupuesto (${ev.up?'+':''}${ev.pct}%)`;
+    case 'budget0':  return `Se ajustó el presupuesto`;
+    case 'budsched': return `Se programó el presupuesto`;
+    case 'budshare': return `Se cambió el uso compartido del presupuesto`;
+    case 'bid':      return `Se cambió la estrategia de puja`;
+    case 'objetivo': return `Se cambió el objetivo de optimización`;
+    case 'seg':      return `Se cambió la segmentación`;
+    case 'acct_pause': return esc(ev.rawtext||'Cuenta sin gasto');
+    default:         return esc(ev.rawtext||'Cambio en la cuenta');
+  }
+}
+const KIND_ICON={ad_new:'🆕',ad_on:'▶️',ad_off:'⏸️',ad_del:'🗑️','campaña_on':'▶️','campaña_off':'⏸️','conjunto_on':'▶️','conjunto_off':'⏸️',camp_new:'🏗️',set_new:'🏗️',budget:'💰',budget0:'💰',budsched:'💰',budshare:'💰',bid:'🎯',objetivo:'🎯',seg:'👥',acct_pause:'🛑',other:'•'};
+const _GROUPABLE=new Set(['ad_new','ad_on','ad_off','ad_del','camp_new','set_new']);
+/* Agrupa por (fecha+tipo) los eventos agrupables; el resto queda individual. */
+function groupChanges(raw){
+  const parsed=(raw||[]).map(parseChange).filter(Boolean);
+  const map=new Map(), out=[];
+  for(const ev of parsed){
+    if(_GROUPABLE.has(ev.kind)){
+      const k=ev.date+'|'+ev.kind;
+      if(!map.has(k)){ const g={...ev,names:[],count:0}; map.set(k,g); out.push(g); }
+      const g=map.get(k); g.count++; if(ev.name) g.names.push(ev.name);
+    } else out.push({...ev,count:1,names:ev.name?[ev.name]:[]});
+  }
+  out.sort((a,b)=>String(b.date).localeCompare(String(a.date)));
+  return out;
+}
+function changeRow(ev){
+  const ic=KIND_ICON[ev.kind]||'•';
+  const tag = ev.src==='auto' ? '<span class="chsrc auto">deducido</span>' : '<span class="chsrc">Meta</span>';
+  const det = ev.detail? `<span class="chdet"> · ${esc(ev.detail)}</span>`:'';
+  const title=`${ic} ${chTitle(ev)}${det} ${tag}`;
+  const names=ev.names&&ev.names.length?ev.names:[];
+  // mostrar sub-lista si es grupo (>1) o si es útil ver el nombre (pausas/prendidos individuales ya lo llevan en el título)
+  if(names.length>1){
+    const items=names.map(n=>`<div class="chname">• ${esc(n)}</div>`).join('');
+    return `<div class="it"><div class="dt">${fmtChDate(ev.date)}</div><div class="tx"><details><summary>${title}</summary><div class="chnames">${items}</div></details></div></div>`;
+  }
+  return `<div class="it"><div class="dt">${fmtChDate(ev.date)}</div><div class="tx">${title}</div></div>`;
+}
 function changesTimeline(b,limit){
-  const D=DATA[b]; const ch=(D&&D.changes)?D.changes.slice():[];
-  ch.sort((a,c)=>String(c.date).localeCompare(String(a.date)));
-  const list=limit?ch.slice(0,limit):ch;
-  return list.map(e=>{
-    const ic=CATICON[e.cat]||'•';
-    const tag=e.src==='meta'?'<span class="chsrc">Meta</span>':(e.src==='auto'?'<span class="chsrc auto">deducido</span>':'');
-    return `<div class="it"><div class="dt">${fmtChDate(e.date)}</div><div class="tx">${ic} ${e.text} ${tag}</div></div>`;
-  }).join('');
+  const ev=groupChanges(DATA[b]&&DATA[b].changes);
+  const list=limit?ev.slice(0,limit):ev;
+  return list.map(changeRow).join('');
+}
+/* Métrica de estabilidad: días con al menos un anuncio activo (con gasto) y, de esos,
+   cuántos cayeron en ventana de aprendizaje/reajuste (≤7d tras un cambio fuerte).
+   Nota: Meta no expone el estado de "aprendizaje" histórico, así que se estima. */
+const _SIG_KINDS=new Set(['budget','ad_new','objetivo','set_new','camp_new','bid']);
+function learningStats(b){
+  const D=DATA[b]; if(!D||!D.dates||!D.dates.length) return null;
+  const spend={}; for(const r of D.rows){ const dt=D.dates[r[0]]; spend[dt]=(spend[dt]||0)+r[FI.spend]; }
+  const dates=D.dates.slice().sort();
+  const active=dates.filter(d=>spend[d]>0);
+  if(!active.length) return {active:0,total:dates.length,learn:0,from:dates[0],to:dates[dates.length-1]};
+  const span=dates.filter(d=>d>=active[0]&&d<=active[active.length-1]);
+  const sig=groupChanges(D.changes).filter(e=>_SIG_KINDS.has(e.kind)).map(e=>e.date).filter(d=>/^\d{4}-\d{2}-\d{2}$/.test(d));
+  const learn=active.filter(d=>sig.some(s=>{const g=daysBetween(s,d);return g>=0&&g<=7;})).length;
+  return {active:active.length, total:span.length, learn, from:active[0], to:active[active.length-1]};
+}
+function learningHTML(b){
+  const s=learningStats(b); if(!s) return '';
+  const stable=Math.max(0,s.active-s.learn);
+  const u='<span style="color:var(--soft);font-weight:400;font-size:.62em">';
+  return `<div class="tiles" style="grid-template-columns:repeat(3,1fr);margin-top:8px">
+    <div class="tile"><div class="k">Días con pauta activa</div><div class="v">${s.active} ${u}/ ${s.total}</span></div><div class="s">al menos un anuncio con gasto</div></div>
+    <div class="tile"><div class="k">Días estables</div><div class="v">${stable}</div><div class="s">activos, sin cambios fuertes recientes</div></div>
+    <div class="tile"><div class="k">Días en aprendizaje/reajuste</div><div class="v">${s.learn}</div><div class="s">≤7 días tras un cambio fuerte · estimado</div></div>
+  </div>
+  <div class="sec-s" style="margin-top:6px">Meta no expone el estado de "aprendizaje" día a día, así que <b>aprendizaje/reajuste</b> se estima: días activos dentro de los 7 días posteriores a un cambio fuerte (presupuesto, objetivo, anuncio nuevo, puja).</div>`;
 }
 function hitosHTML(b){
-  const D=DATA[b]; const n=(D&&D.changes)?D.changes.length:0;
+  const D=DATA[b]; const grouped=groupChanges(D&&D.changes); const n=grouped.length;
   const H=(HITOS[b]||[]);
   let out='';
+  out+=`<div class="card" style="margin-top:8px"><div class="h3b">📚 Estabilidad de la pauta</div>${learningHTML(b)||'<div class="sec-s" style="margin:0">Sin datos suficientes.</div>'}</div>`;
   if(n){
     out+=`<div class="card" style="margin-top:8px"><div class="h3b">🗓️ Historial de cambios de la cuenta <span style="font-weight:400;color:var(--soft)">(${n})</span></div>
-      <div class="sec-s" style="margin:2px 0 8px">Presupuesto, pausas/activaciones, optimización (venta↔carrito) y creativos prendidos/apagados. <span class="chsrc">Meta</span> = del log oficial de la cuenta · <span class="chsrc auto">deducido</span> = inferido del gasto diario.</div>
+      <div class="sec-s" style="margin:2px 0 8px">Sólo cambios que hiciste vos (presupuesto, pausas/activaciones, optimización, creativos). Se ocultan los estados que Meta cambia solo (revisión, procesamiento). Tocá una fila con ▸ para ver los nombres.</div>
       <div class="tl">${changesTimeline(b)}</div></div>`;
   } else {
     out+=`<div class="card" style="margin-top:8px"><div class="h3b">🗓️ Historial de cambios de la cuenta</div>
-      <div class="sec-s" style="margin:2px 0 0">Todavía no hay historial automático para esta marca (se arma con el log de Meta y el gasto diario en la próxima corrida).</div></div>`;
+      <div class="sec-s" style="margin:2px 0 0">Todavía no hay historial automático para esta marca (se arma en la próxima corrida).</div></div>`;
   }
   if(H.length){
     const items=H.map(h=>`<div class="it"><div class="dt">${h[0]}</div><div class="tx">📌 ${h[1]}</div></div>`).join('');
@@ -1136,7 +1278,7 @@ window.addEventListener("resize",()=>document.querySelectorAll(".panel.on iframe
 /* clock */
 (function(){const el=document.getElementById("clock");const d=new Date(),m=["ene","feb","mar","abr","may","jun","jul","ago","sep","oct","nov","dic"];el.textContent=d.getDate()+" "+m[d.getMonth()]+" "+d.getFullYear();})();
 /* sello de versión visible para confirmar que estás en la última */
-const BUILD="v18 · 2 sep 2026 · Historial + data siempre fresca";
+const BUILD="v19 · 2 sep 2026 · Historial legible + estabilidad";
 (function(){const f=document.querySelector('.foot-note'); if(f)f.insertAdjacentHTML('beforeend',' · <b>Build '+BUILD+'</b>');
   const c=document.getElementById('clock'); if(c)c.insertAdjacentHTML('beforeend','<br><span style="color:var(--rose)">Build '+BUILD.split(' · ')[0]+'</span>');})();
 
