@@ -57,7 +57,7 @@ jobs:
         run: |
           git config user.name  "maia-bot"
           git config user.email "maia-bot@users.noreply.github.com"
-          git add exports site/data.js site/data.json reports brandbrain || true
+          git add config/clients.yaml exports site/data.js site/data.json reports brandbrain || true
           git commit -m "auto: regenerar data desde export ($(date -u +%F))" || echo "sin cambios"
           git push || true
 
