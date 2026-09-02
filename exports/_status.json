@@ -2,23 +2,25 @@
   "piera": {
     "fetched_at": "2026-09-02",
     "ok": true,
-    "rows": 175,
+    "rows": 182,
     "empty": false,
-    "through": "2026-09-01"
+    "through": "2026-09-02"
   },
   "mossy": {
     "fetched_at": "2026-09-02",
     "ok": true,
-    "rows": 531,
+    "rows": 534,
     "empty": false,
     "through": "2026-09-02"
   },
   "vresia": {
     "fetched_at": "2026-09-02",
-    "ok": true,
+    "ok": false,
     "rows": 180,
     "empty": false,
-    "through": "2026-09-02"
+    "through": "2026-09-02",
+    "last_error": "HTTP 400: {\"error\":{\"message\":\"Service temporarily unavailable\",\"type\":\"OAuthException\",\"is_transient\":false,\"code\":2,\"error_subcode\":1504044,\"error_user_title\":\"Se produjo un error desconocido\",\"erro",
+    "last_attempt": "2026-09-02"
   },
   "alba": {
     "fetched_at": "2026-09-02",
@@ -30,14 +32,14 @@
   "paz": {
     "fetched_at": "2026-09-02",
     "ok": true,
-    "rows": 161,
+    "rows": 162,
     "empty": false,
     "through": "2026-09-02"
   },
   "pulpa": {
     "fetched_at": "2026-09-02",
     "ok": true,
-    "rows": 13,
+    "rows": 16,
     "empty": false,
     "through": "2026-09-02"
   }
