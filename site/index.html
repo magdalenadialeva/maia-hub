@@ -456,7 +456,9 @@ function renderEst(id){
 function buildPicker(pickId,onPick,def){
   const box=document.getElementById(pickId);
   const selId='sel-'+pickId.replace('pick-','');
-  box.innerHTML='<select class="dd" id="'+selId+'">'+PICK.map(c=>`<option value="${c.id}" ${c.id===def?'selected':''}>${c.nombre}</option>`).join("")+'</select>';
+  // Opciones = todas las marcas presentes en la data (incluye las nuevas, p.ej. Pulpa Verde).
+  const _opts=(typeof CLIENTS!=='undefined'?CLIENTS:PICK.map(c=>c.id));
+  box.innerHTML='<select class="dd" id="'+selId+'">'+_opts.map(id=>`<option value="${id}" ${id===def?'selected':''}>${(DATA[id]&&DATA[id].name)||id}</option>`).join("")+'</select>';
   const sel=box.querySelector("select");
   sel.addEventListener("change",()=>onPick(sel.value));
   onPick(def);
@@ -467,7 +469,7 @@ const NF0=new Intl.NumberFormat('es-AR',{maximumFractionDigits:0});
 const money=v=>NF0.format(Math.round(v||0));
 const dec=(v,n=2)=>(v||0).toFixed(n).replace('.',',');
 const pct=(a,b)=>b?100*a/b:0;
-const TODAY='2026-08-26';
+const TODAY=(typeof window!=='undefined'&&window.DATA_BUILT)?window.DATA_BUILT:'2026-08-26';
 const FIELDS=DATA.piera.f;
 const FI={}; FIELDS.forEach((k,i)=>FI[k]=i+2);
 const ALLDATES=[...new Set([].concat(...Object.values(DATA).map(d=>d.dates)))].sort();
@@ -476,7 +478,17 @@ function addDays(iso,n){const p=iso.split('-').map(Number);const dt=new Date(Dat
 function daysBetween(a,b){return Math.round((Date.parse(b)-Date.parse(a))/864e5);}
 const LAST7_FROM=addDays(DMAX,-6);
 let RANGE={from:DMIN,to:DMAX,preset:'30d'};
-const CLIENTS=['piera','mossy','alba','paz','vresia'];
+/* Lista de marcas = TODAS las que traiga data.js (data-driven). Así cuando el
+   sistema suma un cliente nuevo (p.ej. Pulpa Verde, o el de mañana), aparece
+   solo en el hub sin tocar este archivo. */
+const CLIENTS=Object.keys(DATA);
+/* ---- Última actualización por marca ----
+   D.upd = fecha real del último pull desde Meta (la escribe engine.fetch_meta).
+   Si una marca falla su actualización, conserva la fecha vieja y queda atrasada
+   respecto de las demás -> se marca con ⚠. */
+function updISO(b){const D=DATA[b]; if(!D) return null; return D.upd || (D.dates&&D.dates.length?D.dates[D.dates.length-1]:null);}
+const FRESH=(function(){let m=null; for(const b of CLIENTS){const u=updISO(b); if(u&&(!m||u>m))m=u;} return m;})();
+function updInfo(b){const u=updISO(b); if(!u) return {iso:null,txt:'—',stale:false}; return {iso:u,txt:fmtD(u),stale:(FRESH&&u<FRESH)};}
 const OBJLBL={ic:'Ventas · validando checkout',purchase:'Ventas',lead:'Clientes potenciales'};
 const LASTCHG_FB={vresia:'2026-08-21'};
 const START_ISO={piera:'2026-07-28',mossy:'2026-07-27',alba:'2026-08-21',paz:'2026-07-01',vresia:'2026-08-21'};
@@ -634,8 +646,13 @@ function renderGeneral(){
     const roas=x.D.obj==='lead'?'—':dec(x.K.roas)+'x';
     const rt=x.D.obj==='lead'?{dir:'na'}:trend(x.TR.cur.roas,x.TR.prev?x.TR.prev.roas:null,true);
     const lc=x.lcDays==null?'—':('hace '+x.lcDays+'d');
+    const up=updInfo(x.b);
+    const upCell=up.stale
+      ? `<span title="No se actualizó en la última corrida — muestra el dato anterior" style="color:#b45309;font-weight:700;white-space:nowrap">⚠ ${up.txt}</span>`
+      : `<span style="white-space:nowrap">${up.txt}</span>`;
     return `<tr class="row-${x.st.sem}">
       <td><b>${x.D.name}</b></td>
+      <td data-l="Actualizado">${upCell}</td>
       <td class="num" data-l="Gasto">$${money(x.K.spend)} ${x.D.cur}</td>
       <td class="num" data-l="Resultado">${res}</td>
       <td class="num" data-l="ROAS">${roas}</td>
@@ -647,11 +664,12 @@ function renderGeneral(){
   document.getElementById('body-general').innerHTML=`
     <div class="sec-h">Comparativa y control</div>
     <div class="sec-s">Ordenadas por urgencia. El color de la fila y la acción te dicen qué hacer; el "por qué" muestra el número que lo explica. Piera en CLP, el resto en ARS — no se comparan entre sí.</div>
+    <div class="sec-s">📅 <b>Datos actualizados al ${FRESH?fmtD(FRESH):'—'}</b> · se refrescan solos cada mañana desde Meta. Si una marca quedó atrás, aparece con <span style="color:#b45309;font-weight:700">⚠</span> en su fecha.</div>
     <div class="scroll"><table class="cmp">
-      <tr><th>Cliente</th><th>Gasto</th><th>Resultado</th><th>ROAS</th><th>Tend.</th><th>CPA / CPL</th><th>Últ. mod. pauta</th><th>Atención → acción</th></tr>
+      <tr><th>Cliente</th><th>Actualizado</th><th>Gasto</th><th>Resultado</th><th>ROAS</th><th>Tend.</th><th>CPA / CPL</th><th>Últ. mod. pauta</th><th>Atención → acción</th></tr>
       ${body}
     </table></div>
-    <div class="mininote"><b>Tocá la acción</b> de cada marca para ver el análisis completo con hipótesis a comprobar. <b>Tend.</b> = ROAS vs. período anterior de igual duración (o momentum intra-período si la marca no tenía pauta antes). <b>Últ. mod. pauta</b> = días desde el último cambio significativo. Embudo y creativos, en <b>Dashboard</b>.</div>`;
+    <div class="mininote"><b>Actualizado</b> = último día que el sistema trajo datos de esa marca desde Meta (⚠ = quedó atrasada respecto de las demás). <b>Tocá la acción</b> de cada marca para ver el análisis completo con hipótesis a comprobar. <b>Tend.</b> = ROAS vs. período anterior de igual duración (o momentum intra-período si la marca no tenía pauta antes). <b>Últ. mod. pauta</b> = días desde el último cambio significativo. Embudo y creativos, en <b>Dashboard</b>.</div>`;
   document.querySelectorAll('#body-general .act-link').forEach(btn=>btn.addEventListener('click',()=>goAnalisis(btn.dataset.go)));
 }
 
@@ -764,7 +782,8 @@ function renderDash(id){
     kpiTile('CPM','$'+money(K.cpm),D.cur,'', arrowHTML(trend(C.cpm,P?P.cpm:null,false))),
   ].join('');
   document.getElementById('body-dash').innerHTML=`
-    <div class="dhead"><h2>${D.name}</h2><div class="meta">${OBJLBL[D.obj]} · ${D.cur} · ${periodLabel()}</div></div>
+    <div class="dhead"><h2>${D.name}</h2><div class="meta">${OBJLBL[D.obj]} · ${D.cur} · ${periodLabel()}</div>
+    <div class="meta">🔄 <b>Última actualización:</b> ${(function(){const u=updInfo(id);return u.stale?`<span style="color:#b45309;font-weight:700">⚠ ${u.txt} (quedó atrasada)</span>`:u.txt;})()} · datos automáticos de Meta</div></div>
     <div class="legend">Color de KPI: <span class="lg good">verde bien</span> <span class="lg warn">amarillo atención</span> <span class="lg bad">rojo mal</span> <span class="lg idle">gris sin señal</span> · flecha = vs. período anterior</div>
     <div class="tiles">${tiles}</div>
     <div class="sec-h">Evolución (historia completa de la pauta)</div>
@@ -1025,7 +1044,7 @@ window.addEventListener("resize",()=>document.querySelectorAll(".panel.on iframe
 /* clock */
 (function(){const el=document.getElementById("clock");const d=new Date(),m=["ene","feb","mar","abr","may","jun","jul","ago","sep","oct","nov","dic"];el.textContent=d.getDate()+" "+m[d.getMonth()]+" "+d.getFullYear();})();
 /* sello de versión visible para confirmar que estás en la última */
-const BUILD="v14 · 26 ago 2026 · General en tabla";
+const BUILD="v15 · 2 sep 2026 · Fecha de actualización + marcas auto";
 (function(){const f=document.querySelector('.foot-note'); if(f)f.insertAdjacentHTML('beforeend',' · <b>Build '+BUILD+'</b>');
   const c=document.getElementById('clock'); if(c)c.insertAdjacentHTML('beforeend','<br><span style="color:var(--rose)">Build '+BUILD.split(' · ')[0]+'</span>');})();
 
