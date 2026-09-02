@@ -557,16 +557,21 @@ function compute(b){
     const chook=pct(v.v3s,v.impr),cctr=pct(v.lc,v.impr),croas=v.spend?v.pval/v.spend:0;
     const cfreq=v.reach?v.impr/v.reach:0;
     let verdict,leakc;
+    /* Veredicto por reglas — MISMOS umbrales que el reporte Python (D.th, de engine/config.py).
+       Gate de suficiencia primero: sin data firme -> 'poca' (no se declara ganador con 1 compra). */
+    const TH=D.th||{minP:3,minSpend:8000,minImpr:1500,minLeads:15,tgt:2,scale:1.2,kill:0.6,ctrBad:0.6,hookBad:20};
     if(D.obj==='lead'){ const cl=v.leads;
-      verdict=(cl>=5&&cctr>=1.2)?'escalar':(cctr>=1.0?'iterar':'matar');
+      const enoughL=cl>=TH.minLeads&&v.impr>=TH.minImpr;
+      if(!enoughL)verdict='poca';
+      else verdict=(cctr>=1.2)?'escalar':(cctr>=1.0?'iterar':'matar');
       leakc=cctr<1.0?'Clic':'OK';
     } else {
-      const small=v.spend<0.05*K.spend&&v.purch===0;
-      if(v.purch>=1&&croas>=2.5)verdict='escalar';
-      else if(croas>=1.3||(v.atc>=10&&v.purch>=1))verdict='iterar';
-      else if(small&&cctr>=1.2)verdict='poca';
-      else if(v.spend>0.03*K.spend&&v.purch===0&&v.atc<3)verdict='matar';
-      else if(small)verdict='poca';
+      const enough=((v.spend>=TH.minSpend&&v.purch>=TH.minP)||v.purch>=TH.minP*2)&&v.impr>=TH.minImpr;
+      const rr=TH.tgt?croas/TH.tgt:0;
+      const topOk=cctr>TH.ctrBad&&(!isVid||chook>TH.hookBad);
+      if(!enough)verdict='poca';
+      else if(rr&&rr<TH.kill&&!topOk)verdict='matar';
+      else if(rr>=TH.scale)verdict='escalar';
       else verdict='iterar';
       if(isVid&&chook<15)leakc='Hook';
       else if(cctr<1.0)leakc='Clic (ángulo)';
@@ -575,8 +580,11 @@ function compute(b){
       else if(v.ic&&pct(v.purch,v.ic)<25)leakc='Pago→Compra';
       else leakc='OK';
     }
+    let conf;{const cCS=TH.cCS||10,cCM=TH.cCM||3,cLS=TH.cLS||50,cLM=TH.cLM||15,cIM=TH.cIM||1500;
+      if(D.obj==='lead')conf=(v.leads>=cLS)?'fuerte':((v.leads>=cLM||v.impr>=cIM)?'media':'sin');
+      else conf=(v.purch>=cCS)?'fuerte':((v.purch>=cCM||v.impr>=cIM)?'media':'sin');}
     cre.push({ad:D.ads[a],spend:v.spend,isVid,hook:chook,ctr:cctr,roas:croas,freq:cfreq,
-      leads:v.leads|0,purch:v.purch|0,verdict,leakc});
+      impr:v.impr,leads:v.leads|0,purch:v.purch|0,verdict,conf,leakc});
   }
   cre.sort((x,y)=>y.spend-x.spend);
   // status → action + reason + sem
@@ -682,8 +690,9 @@ function sigHTML(x){
   const lead=x.D.obj==='lead';
   const top=x.cre.slice(0,8); const extra=x.cre.length-top.length;
   const VT={escalar:['v-escalar','escalar'],iterar:['v-iterar','iterar'],matar:['v-matar','matar'],poca:['v-poca','poca data']};
+  const CT={fuerte:['Fuerte','#16a34a'],media:['Media/débil','#f59e0b'],sin:['Sin señal','#94a3b8']};
   const rows=top.map(c=>{
-    const vt=VT[c.verdict];
+    const vt=VT[c.verdict]; const ct=CT[c.conf]||CT.sin;
     const roasCell=lead?`${money(c.leads)}`:`<span class="${heatClass('roas',c.roas)}">${dec(c.roas)}x</span>`;
     return `<tr>
       <td>${c.ad.length>40?c.ad.slice(0,39)+'…':c.ad}<div class="badtype">${c.isVid?'video':'imagen'} · $${money(c.spend)}</div></td>
@@ -692,9 +701,10 @@ function sigHTML(x){
       <td><span class="${heatClass('ctr',c.ctr)}">${dec(c.ctr)}%</span></td>
       <td>${roasCell}</td>
       <td><span class="vtag ${vt[0]}">${vt[1]}</span></td>
+      <td><span style="display:inline-block;font-size:10.5px;font-weight:600;padding:2px 8px;border-radius:999px;color:${ct[1]};border:1px solid ${ct[1]}">${ct[0]}</span></td>
       <td>${c.leakc==='OK'?'—':c.leakc}</td></tr>`;}).join('');
   return `<div class="scroll"><table class="sig">
-    <tr><th>Anuncio</th><th>Frec.</th><th>Hook</th><th>CTR</th><th>${lead?'Leads':'ROAS'}</th><th>Veredicto</th><th>Rompe en</th></tr>
+    <tr><th>Anuncio</th><th>Frec.</th><th>Hook</th><th>CTR</th><th>${lead?'Leads':'ROAS'}</th><th>Veredicto</th><th>Confianza</th><th>Rompe en</th></tr>
     ${rows}</table></div>
     <div class="mininote">Celdas con <span class="hleg h-good">color</span> = el número que explica el veredicto (verde bien · amarillo flojo · rojo mal). Hook aplica solo a video. <b>Frec.</b> = frecuencia diaria promedio del período (la acumulada tipo 3-4x necesita el export sin desglose diario).${extra>0?` +${extra} creativos de menor gasto no listados.`:''}</div>`;
 }
