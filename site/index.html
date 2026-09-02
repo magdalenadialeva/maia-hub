@@ -44,6 +44,9 @@
   .tl{border-left:2px solid var(--line);margin:6px 0 4px;padding-left:16px;display:grid;gap:11px}
   .tl .it{position:relative}.tl .it::before{content:"";position:absolute;left:-21px;top:5px;width:9px;height:9px;border-radius:50%;background:var(--rose);border:2px solid var(--panel)}
   .tl .dt{font-family:var(--mono);font-size:11px;color:var(--rose-d);font-weight:500}.tl .tx{font-size:13px;color:var(--soft);margin-top:1px}
+  .chsrc{display:inline-block;font-family:var(--mono);font-size:9.5px;letter-spacing:.04em;text-transform:uppercase;padding:1px 6px;border-radius:999px;border:1px solid var(--line);color:var(--rose-d);background:var(--panel2);vertical-align:middle}
+  .chsrc.auto{color:var(--soft);opacity:.8}
+  .tl{max-height:520px;overflow:auto}
   .card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:16px 18px;box-shadow:var(--shadow)}
   .h3b{font-family:var(--sans);font-weight:600;font-size:13px;margin:0 0 10px}
   .dhead{display:flex;align-items:baseline;justify-content:space-between;gap:12px;flex-wrap:wrap;margin:14px 0 2px}
@@ -762,10 +765,36 @@ function chartHTML(b){
   return `<div class="chart"><div class="cx"><span>${fmtD(days[0])}</span><span class="cxmid">↕ pasá el cursor por el gráfico para ver cada día</span><span>${fmtD(days[n-1])}</span></div>${rows}</div>
     <div class="mininote">Los números de la derecha son el <b>promedio por día</b> del período (el ROAS es el del período completo, no un promedio de días).</div>`;
 }
+const CATICON={presupuesto:'💰',objetivo:'🎯',estado:'⏯️',creativo:'🎬',segmentacion:'👥',otros:'•'};
+const CATLBL={presupuesto:'Presupuesto',objetivo:'Optimización',estado:'Estado',creativo:'Creativos',segmentacion:'Segmentación',otros:'Cambio'};
+function fmtChDate(iso){ return /^\d{4}-\d{2}-\d{2}$/.test(String(iso))?fmtD(iso):String(iso||''); }
+function changesTimeline(b,limit){
+  const D=DATA[b]; const ch=(D&&D.changes)?D.changes.slice():[];
+  ch.sort((a,c)=>String(c.date).localeCompare(String(a.date)));
+  const list=limit?ch.slice(0,limit):ch;
+  return list.map(e=>{
+    const ic=CATICON[e.cat]||'•';
+    const tag=e.src==='meta'?'<span class="chsrc">Meta</span>':(e.src==='auto'?'<span class="chsrc auto">deducido</span>':'');
+    return `<div class="it"><div class="dt">${fmtChDate(e.date)}</div><div class="tx">${ic} ${e.text} ${tag}</div></div>`;
+  }).join('');
+}
 function hitosHTML(b){
-  const H=(HITOS[b]||[]); if(!H.length) return '';
-  const items=H.map(h=>`<div class="it"><div class="dt">${h[0]}</div><div class="tx">${h[1]}</div></div>`).join('');
-  return `<div class="card" style="margin-top:8px"><div class="h3b">🗓️ Historial de pauta con nosotros</div><div class="tl">${items}</div></div>`;
+  const D=DATA[b]; const n=(D&&D.changes)?D.changes.length:0;
+  const H=(HITOS[b]||[]);
+  let out='';
+  if(n){
+    out+=`<div class="card" style="margin-top:8px"><div class="h3b">🗓️ Historial de cambios de la cuenta <span style="font-weight:400;color:var(--soft)">(${n})</span></div>
+      <div class="sec-s" style="margin:2px 0 8px">Presupuesto, pausas/activaciones, optimización (venta↔carrito) y creativos prendidos/apagados. <span class="chsrc">Meta</span> = del log oficial de la cuenta · <span class="chsrc auto">deducido</span> = inferido del gasto diario.</div>
+      <div class="tl">${changesTimeline(b)}</div></div>`;
+  } else {
+    out+=`<div class="card" style="margin-top:8px"><div class="h3b">🗓️ Historial de cambios de la cuenta</div>
+      <div class="sec-s" style="margin:2px 0 0">Todavía no hay historial automático para esta marca (se arma con el log de Meta y el gasto diario en la próxima corrida).</div></div>`;
+  }
+  if(H.length){
+    const items=H.map(h=>`<div class="it"><div class="dt">${h[0]}</div><div class="tx">📌 ${h[1]}</div></div>`).join('');
+    out+=`<div class="card" style="margin-top:8px"><div class="h3b">📌 Hitos con nosotros</div><div class="tl">${items}</div></div>`;
+  }
+  return out;
 }
 function renderDash(id){
   const x=compute(id),D=x.D,K=x.K,KP=x.KP,lead=D.obj==='lead';
@@ -973,6 +1002,9 @@ function renderAnalisis(cid){
     <div class="sec-h">Diagnóstico → Qué hacer</div>
     <div class="sec-s">Cada cosa que está pasando (izquierda) con su acción concreta (derecha), en orden de prioridad. Tocá <b>💬 agregar nota</b> en cualquiera para dejar un comentario (ej. “ya lo probamos”).</div>
     <div class="pairs">${pairRows}</div>
+    <div class="sec-h">Cambios recientes en la cuenta</div>
+    <div class="sec-s">Todo lo que se fue tocando: presupuesto, pausas/activaciones, optimización (venta↔carrito) y creativos prendidos/apagados. <span class="chsrc">Meta</span> = log oficial · <span class="chsrc auto">deducido</span> = inferido del gasto. El historial completo está en el Dashboard.</div>
+    <div class="card"><div class="tl">${changesTimeline(cid,15)||'<div class="sec-s" style="margin:0">Sin cambios registrados en el período.</div>'}</div></div>
     <div class="sec-h">Comentarios del trafficker</div>
     <div class="sec-s">Tu feedback sobre estos accionables (lo tomo para afinar los próximos análisis). Se guarda en este navegador.</div>
     <textarea class="tfbox" data-tf="${tfk}" placeholder="Ej.: en Piera el envío ya está optimizado, probemos otro ángulo de producto; en Mossy el problema del carrito es el costo de envío…">${nGet(tfk)}</textarea>
@@ -1102,7 +1134,7 @@ window.addEventListener("resize",()=>document.querySelectorAll(".panel.on iframe
 /* clock */
 (function(){const el=document.getElementById("clock");const d=new Date(),m=["ene","feb","mar","abr","may","jun","jul","ago","sep","oct","nov","dic"];el.textContent=d.getDate()+" "+m[d.getMonth()]+" "+d.getFullYear();})();
 /* sello de versión visible para confirmar que estás en la última */
-const BUILD="v16 · 2 sep 2026 · Análisis y Reporte auto + fecha";
+const BUILD="v17 · 2 sep 2026 · Historial de cambios de cuenta";
 (function(){const f=document.querySelector('.foot-note'); if(f)f.insertAdjacentHTML('beforeend',' · <b>Build '+BUILD+'</b>');
   const c=document.getElementById('clock'); if(c)c.insertAdjacentHTML('beforeend','<br><span style="color:var(--rose)">Build '+BUILD.split(' · ')[0]+'</span>');})();
 
