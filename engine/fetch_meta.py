@@ -386,32 +386,41 @@ def fetch_thumbs(acct: str, token: str, want_names: set) -> Dict[str, str]:
     """Miniatura (thumbnail_url) por nombre de anuncio. Sólo para los anuncios que
     aparecen en la data (activos). Se usa la URL directa de Meta: como el hub se
     regenera cada mañana, la URL se renueva sola y nunca queda vencida."""
-    fields = "name,creative{thumbnail_url}"
-    # Sólo anuncios ACTIVOS (los que se muestran) -> el query es mucho más liviano
-    # y rápido que traer TODO el historial de anuncios de la cuenta.
+    fields = "name,creative{thumbnail_url,image_url}"
+    # Sólo anuncios ACTIVOS (los que se muestran) -> query liviano y rápido.
     filt = json.dumps([{"field": "ad.effective_status", "operator": "IN",
                         "value": ["ACTIVE"]}])
     url = (f"{GRAPH}/act_{acct}/ads?fields={urllib.parse.quote(fields)}"
            f"&filtering={urllib.parse.quote(filt)}"
+           f"&thumbnail_width=120&thumbnail_height=120"
            f"&limit=100&access_token={urllib.parse.quote(token)}")
     thumbs: Dict[str, str] = {}
+    seen = 0
+    withthumb = 0
+    sample = None
     page = 0
     try:
         while url and page < 3:
             data = _get_url(url)
             for ad in data.get("data", []):
                 nm = ad.get("name")
-                if not nm or nm in thumbs:
+                if not nm:
                     continue
-                if want_names and nm not in want_names:
-                    continue
-                turl = (ad.get("creative") or {}).get("thumbnail_url")
+                seen += 1
+                cr = ad.get("creative") or {}
+                turl = cr.get("thumbnail_url") or cr.get("image_url")
                 if turl:
-                    thumbs[nm] = turl
+                    withthumb += 1
+                    if sample is None:
+                        sample = nm[:40]
+                    if nm not in thumbs:
+                        thumbs[nm] = turl
             url = (data.get("paging") or {}).get("next")
             page += 1
     except Exception as e:
         print(f"  · thumbs error ({str(e)[:100]})")
+    # Diagnóstico: cuántos anuncios activos, cuántos con imagen, y un nombre de muestra.
+    print(f"  · thumbs diag: activos={seen} con_img={withthumb} muestra='{sample}'")
     return thumbs
 
 
