@@ -1,0 +1,722 @@
+[
+ {
+  "date": "2026-09-01",
+  "cat": "presupuesto",
+  "text": "Presupuesto del conjunto de anuncios actualizado · Vresia_Conversiones_2026_Purchase_Adv+ (15.000 → 20.000 ARS/día)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-01",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Catalogo + Video 2 (Procesamiento pendiente → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-01",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado cuando se completa su revisión · Catalogo + Video 2 (Activo → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-01",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Catalogo + Video 2 (Activo → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-01",
+  "cat": "estado",
+  "text": "Estado del conjunto de anuncios actualizado · Vresia_Conversiones_2026_Purchase_Adv+V.2 (Activo → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-08-31",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Catalogo + Video Vresia Basicos (Revisión pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-08-31",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Catalogo + Video Vresia Basicos (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-08-31",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Catalogo + Video Renová tu placard (Revisión pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-08-31",
+  "cat": "creativo",
+  "text": "Anuncio creado · Catalogo + Video Vresia Basicos",
+  "src": "meta"
+ },
+ {
+  "date": "2026-08-31",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Catalogo + Video Renová tu placard (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-08-31",
+  "cat": "creativo",
+  "text": "Anuncio creado · Catalogo + Video Renová tu placard",
+  "src": "meta"
+ },
+ {
+  "date": "2026-08-31",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Catalogo + Video Envio Gratis (Revisión pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-08-31",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Catalogo + Video Envio Gratis (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-08-31",
+  "cat": "creativo",
+  "text": "Anuncio creado · Catalogo + Video Envio Gratis",
+  "src": "meta"
+ },
+ {
+  "date": "2026-08-31",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Catalogo + Video 1 (Revisión pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-08-31",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Catalogo + Video 3 (Revisión pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-08-31",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Cardigam Roma (Revisión pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-08-31",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Catalogo + Video 5 (Revisión pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-08-31",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Catalogo + Video 4 (Revisión pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-08-31",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Catalogo + Video 2 (Revisión pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-08-31",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Cardigam Roma (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-08-31",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Catalogo + Video 1 (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-08-31",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Catalogo + Video 2 (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-08-31",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Catalogo + Video 4 (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-08-31",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Catalogo + Video 5 (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-08-31",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Catalogo + Video 3 (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-08-31",
+  "cat": "estado",
+  "text": "Estado del conjunto de anuncios actualizado · Vresia_Conversiones_2026_Purchase_Adv+V.2 (Procesamiento pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-08-31",
+  "cat": "creativo",
+  "text": "Anuncio creado · Catalogo + Video 3",
+  "src": "meta"
+ },
+ {
+  "date": "2026-08-31",
+  "cat": "creativo",
+  "text": "Anuncio creado · Catalogo + Video 2",
+  "src": "meta"
+ },
+ {
+  "date": "2026-08-31",
+  "cat": "creativo",
+  "text": "Anuncio creado · Catalogo + Video 5",
+  "src": "meta"
+ },
+ {
+  "date": "2026-08-31",
+  "cat": "creativo",
+  "text": "Anuncio creado · Cardigam Roma",
+  "src": "meta"
+ },
+ {
+  "date": "2026-08-31",
+  "cat": "creativo",
+  "text": "Anuncio creado · Catalogo + Video 1",
+  "src": "meta"
+ },
+ {
+  "date": "2026-08-31",
+  "cat": "creativo",
+  "text": "Anuncio creado · Catalogo + Video 4",
+  "src": "meta"
+ },
+ {
+  "date": "2026-08-31",
+  "cat": "presupuesto",
+  "text": "Se habilitó la programación del presupuesto del conjunto de anuncios · Vresia_Conversiones_2026_Purchase_Adv+V.2",
+  "src": "meta"
+ },
+ {
+  "date": "2026-08-31",
+  "cat": "otros",
+  "text": "Segmentación del conjunto de anuncios actualizada · Vresia_Conversiones_2026_Purchase_Adv+V.2",
+  "src": "meta"
+ },
+ {
+  "date": "2026-08-31",
+  "cat": "objetivo",
+  "text": "Objetivo de optimización del conjunto de anuncios actualizado · Vresia_Conversiones_2026_Purchase_Adv+V.2",
+  "src": "meta"
+ },
+ {
+  "date": "2026-08-31",
+  "cat": "presupuesto",
+  "text": "Estrategia de puja del conjunto de anuncios actualizada · Vresia_Conversiones_2026_Purchase_Adv+V.2",
+  "src": "meta"
+ },
+ {
+  "date": "2026-08-31",
+  "cat": "creativo",
+  "text": "Conjunto de anuncios creado · Vresia_Conversiones_2026_Purchase_Adv+V.2",
+  "src": "meta"
+ },
+ {
+  "date": "2026-08-31",
+  "cat": "creativo",
+  "text": "Se reactivó «Catalogo + Video 1»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-08-31",
+  "cat": "creativo",
+  "text": "Se reactivó «Catalogo + Video 3»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-08-31",
+  "cat": "creativo",
+  "text": "Se encendió/lanzó «Catalogo + Video Envio Gratis»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-08-31",
+  "cat": "creativo",
+  "text": "Se apagó «Catalogo + Video Envio Gratis»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-08-31",
+  "cat": "creativo",
+  "text": "Se encendió/lanzó «Catalogo + Video Renová tu placard»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-08-31",
+  "cat": "creativo",
+  "text": "Se encendió/lanzó «Catalogo + Video Vresia Basicos»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-08-29",
+  "cat": "creativo",
+  "text": "Se pausó «Catalogo + Video 1»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-08-29",
+  "cat": "creativo",
+  "text": "Se pausó «Catalogo + Video 3»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-08-28",
+  "cat": "creativo",
+  "text": "Se apagó «Orgullosamente argentinas»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-08-26",
+  "cat": "segmentacion",
+  "text": "Público personalizado creado · asa_auto_custom_audience",
+  "src": "meta"
+ },
+ {
+  "date": "2026-08-26",
+  "cat": "creativo",
+  "text": "Se reactivó «Catalogo + Video 4»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-08-26",
+  "cat": "creativo",
+  "text": "Se reactivó «Cardigam Roma»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-08-24",
+  "cat": "presupuesto",
+  "text": "Presupuesto del conjunto de anuncios actualizado · Vresia_Conversiones_2026_Purchase_Adv+ (20.000 → 15.000 ARS/día)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-08-24",
+  "cat": "creativo",
+  "text": "Se pausó «Cardigam Roma»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-08-23",
+  "cat": "creativo",
+  "text": "Se pausó «Catalogo + Video 4»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-08-22",
+  "cat": "estado",
+  "text": "Estado de la campaña actualizado · TOFU 13/01 (Activa → Inactiva)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-08-22",
+  "cat": "estado",
+  "text": "Estado de la campaña actualizado · TRAFICO IG | 06/08 (Activa → Inactiva)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-08-21",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Orgullosamente argentinas (Revisión pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-08-21",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Cardigam Roma (Revisión pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-08-21",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Orgullosamente argentinas (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-08-21",
+  "cat": "creativo",
+  "text": "Anuncio creado · Orgullosamente argentinas",
+  "src": "meta"
+ },
+ {
+  "date": "2026-08-21",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Cardigam Roma (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-08-21",
+  "cat": "estado",
+  "text": "Estado del conjunto de anuncios actualizado · LAL Purchase + LAL ATC | 06/08 (Activo → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-08-21",
+  "cat": "creativo",
+  "text": "Anuncio creado · Cardigam Roma",
+  "src": "meta"
+ },
+ {
+  "date": "2026-08-21",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Catalogo + Video 5 (Revisión pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-08-21",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Catalogo + Video 4 (Revisión pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-08-21",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Catalogo + Video 5 (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-08-21",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Catalogo + Video 3 (Revisión pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-08-21",
+  "cat": "creativo",
+  "text": "Anuncio creado · Catalogo + Video 5",
+  "src": "meta"
+ },
+ {
+  "date": "2026-08-21",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Catalogo + Video 4 (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-08-21",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Catalogo + Video 3 (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-08-21",
+  "cat": "creativo",
+  "text": "Anuncio creado · Catalogo + Video 4",
+  "src": "meta"
+ },
+ {
+  "date": "2026-08-21",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Catalogo + Video 2 (Revisión pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-08-21",
+  "cat": "creativo",
+  "text": "Anuncio creado · Catalogo + Video 3",
+  "src": "meta"
+ },
+ {
+  "date": "2026-08-21",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Catalogo + Video 1 (Revisión pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-08-21",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Catalogo + Video 2 (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-08-21",
+  "cat": "creativo",
+  "text": "Anuncio creado · Catalogo + Video 2",
+  "src": "meta"
+ },
+ {
+  "date": "2026-08-21",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Catalogo + Video 1 (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-08-21",
+  "cat": "estado",
+  "text": "Estado del conjunto de anuncios actualizado · Vresia_Conversiones_2026_Purchase_Adv+ (Procesamiento pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-08-21",
+  "cat": "creativo",
+  "text": "Anuncio creado · Catalogo + Video 1",
+  "src": "meta"
+ },
+ {
+  "date": "2026-08-21",
+  "cat": "otros",
+  "text": "Segmentación del conjunto de anuncios actualizada · Vresia_Conversiones_2026_Purchase_Adv+",
+  "src": "meta"
+ },
+ {
+  "date": "2026-08-21",
+  "cat": "objetivo",
+  "text": "Objetivo de optimización del conjunto de anuncios actualizado · Vresia_Conversiones_2026_Purchase_Adv+",
+  "src": "meta"
+ },
+ {
+  "date": "2026-08-21",
+  "cat": "presupuesto",
+  "text": "Estrategia de puja del conjunto de anuncios actualizada · Vresia_Conversiones_2026_Purchase_Adv+",
+  "src": "meta"
+ },
+ {
+  "date": "2026-08-21",
+  "cat": "creativo",
+  "text": "Conjunto de anuncios creado · Vresia_Conversiones_2026_Purchase_Adv+",
+  "src": "meta"
+ },
+ {
+  "date": "2026-08-21",
+  "cat": "creativo",
+  "text": "Se apagó «ANA TIK TOK | 06/08»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-08-21",
+  "cat": "creativo",
+  "text": "Se encendió/lanzó «Catalogo + Video 1»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-08-21",
+  "cat": "creativo",
+  "text": "Se encendió/lanzó «Catalogo + Video 2»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-08-21",
+  "cat": "creativo",
+  "text": "Se encendió/lanzó «Catalogo + Video 3»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-08-21",
+  "cat": "creativo",
+  "text": "Se encendió/lanzó «Catalogo + Video 4»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-08-21",
+  "cat": "creativo",
+  "text": "Se encendió/lanzó «Catalogo + Video 5»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-08-21",
+  "cat": "creativo",
+  "text": "Se encendió/lanzó «Cardigam Roma»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-08-21",
+  "cat": "creativo",
+  "text": "Se encendió/lanzó «Orgullosamente argentinas»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-08-20",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · wtf arg | 13/02 (Procesamiento pendiente → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-08-20",
+  "cat": "estado",
+  "text": "Estado del conjunto de anuncios actualizado · LAL Compradoras | 16/08 (Activo → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-08-20",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado cuando se completa su revisión · wtf arg | 13/02 (Activo → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-08-20",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · wtf arg | 13/02 (Activo → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-08-19",
+  "cat": "creativo",
+  "text": "Se apagó «wtf arg | 13/02»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-08-17",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · wtf arg | 13/02 (Revisión pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-08-17",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · wtf arg | 13/02 (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-08-17",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · wtf arg | 13/02 (Activo → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-08-17",
+  "cat": "creativo",
+  "text": "Anuncio actualizado · wtf arg | 13/02",
+  "src": "meta"
+ },
+ {
+  "date": "2026-08-16",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · wtf arg | 13/02 (Revisión pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-08-16",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · wtf arg | 13/02 (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-08-16",
+  "cat": "estado",
+  "text": "Estado del conjunto de anuncios actualizado · LAL Compradoras | 16/08 (Procesamiento pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-08-16",
+  "cat": "creativo",
+  "text": "Anuncio creado · wtf arg | 13/02",
+  "src": "meta"
+ },
+ {
+  "date": "2026-08-16",
+  "cat": "otros",
+  "text": "Segmentación del conjunto de anuncios actualizada · LAL Compradoras | 16/08",
+  "src": "meta"
+ },
+ {
+  "date": "2026-08-16",
+  "cat": "objetivo",
+  "text": "Objetivo de optimización del conjunto de anuncios actualizado · LAL Compradoras | 16/08",
+  "src": "meta"
+ },
+ {
+  "date": "2026-08-16",
+  "cat": "presupuesto",
+  "text": "Estrategia de puja del conjunto de anuncios actualizada · LAL Compradoras | 16/08",
+  "src": "meta"
+ },
+ {
+  "date": "2026-08-16",
+  "cat": "creativo",
+  "text": "Conjunto de anuncios creado · LAL Compradoras | 16/08",
+  "src": "meta"
+ },
+ {
+  "date": "2026-08-16",
+  "cat": "creativo",
+  "text": "Se encendió/lanzó «wtf arg | 13/02»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-08-13",
+  "cat": "presupuesto",
+  "text": "Presupuesto del conjunto de anuncios actualizado · LAL Purchase + LAL ATC | 06/08 (1.500,38 → 1.750 ARS/día)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-08-13",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Cardigan  | 07/08 (Procesamiento pendiente → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-08-13",
+  "cat": "estado",
+  "text": "Estado del conjunto de anuncios actualizado · ADV | Cardigan | 07/08 (Activo → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-08-13",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado cuando se completa su revisión · Cardigan  | 07/08 (Activo → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-08-13",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Cardigan  | 07/08 (Activo → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-08-13",
+  "cat": "creativo",
+  "text": "Se apagó «Cardigan  | 07/08»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-08-12",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · SW ARG2  | 07/08 ULTIMOS (Procesamiento pendiente → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-08-12",
+  "cat": "estado",
+  "text": "Estado del conjunto de anuncios actualizado · ADV | Sweater ARG | 07/08 (Activo → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-08-12",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado cuando se completa su revisión · SW ARG2  | 07/08 ULTIMOS (Activo → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-08-12",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · SW ARG2  | 07/08 ULTIMOS (Activo → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-08-12",
+  "cat": "creativo",
+  "text": "Se apagó «SW ARG2  | 07/08 ULTIMOS»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-08-11",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · SW ARG2  | 03/08 (Procesamiento pendiente → Inactivo)",
+  "src": "meta"
+ }
+]

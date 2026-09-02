@@ -15,12 +15,10 @@
   },
   "vresia": {
     "fetched_at": "2026-09-02",
-    "ok": false,
-    "rows": 180,
+    "ok": true,
+    "rows": 181,
     "empty": false,
-    "through": "2026-09-02",
-    "last_error": "HTTP 400: {\"error\":{\"message\":\"Service temporarily unavailable\",\"type\":\"OAuthException\",\"is_transient\":false,\"code\":2,\"error_subcode\":1504044,\"error_user_title\":\"Se produjo un error desconocido\",\"erro",
-    "last_attempt": "2026-09-02"
+    "through": "2026-09-02"
   },
   "alba": {
     "fetched_at": "2026-09-02",
