@@ -67,7 +67,7 @@ clients:
     start_maia: "2026-08-21"
     start_label: "21 ago 2026"
     margin: 0.5
-    notes: "Campaña de VENTA. Mejor ROAS de la cartera. Embudo sano; limita el volumen arriba. (ID inferido — confirmar.)"
+    notes: "Campaña de VENTA. Mejor ROAS de la cartera. Embudo sano; limita el volumen arriba."
 
   - slug: paz
     name: Maia
