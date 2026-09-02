@@ -117,6 +117,17 @@ def build_data(exports_dir: Path, site_dir: Path, config_dir: Path, verbose=True
             except Exception:
                 thumbs = {}
         hub["thumbs"] = thumbs
+        # Estado real por anuncio (nombre -> effective_status de Meta), lo escribe
+        # fetch_meta. El hub lo usa para la etiqueta activo/pausado; si no está,
+        # cae a una estimación por actividad.
+        ad_path = exports_dir / slug / f"{slug}_ads.json"
+        adstatus = {}
+        if ad_path.exists():
+            try:
+                adstatus = json.loads(ad_path.read_text(encoding="utf-8")) or {}
+            except Exception:
+                adstatus = {}
+        hub["adstatus"] = adstatus
         DATA[slug] = hub
         t = _client_totals(hub)
         diagnostics.append(
