@@ -1,5 +1,23 @@
 [
  {
+  "date": "2026-09-03",
+  "cat": "creativo",
+  "text": "Se reactivó «Catalogo_3»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-09-03",
+  "cat": "creativo",
+  "text": "Se reactivó «Catalogo_Karla»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-09-03",
+  "cat": "creativo",
+  "text": "Se reactivó «Catalogo_5»",
+  "src": "auto"
+ },
+ {
   "date": "2026-09-02",
   "cat": "presupuesto",
   "text": "Presupuesto del conjunto de anuncios actualizado · Alba&Co_2026_Conversiones_Purchase_Adv+ (20.000 → 25.000 ARS/día)",
@@ -102,6 +120,12 @@
   "src": "meta"
  },
  {
+  "date": "2026-09-01",
+  "cat": "creativo",
+  "text": "Se pausó «Catalogo_3»",
+  "src": "auto"
+ },
+ {
   "date": "2026-08-31",
   "cat": "estado",
   "text": "Estado del anuncio actualizado · Catalogo_4 ¿Es un varón? (Procesamiento pendiente → Inactivo)",
@@ -194,13 +218,19 @@
  {
   "date": "2026-08-31",
   "cat": "creativo",
-  "text": "Se apagó «Catalogo_3»",
+  "text": "Se apagó «Catalogo_4 ¿Es un varón?»",
   "src": "auto"
  },
  {
   "date": "2026-08-31",
   "cat": "creativo",
-  "text": "Se apagó «Catalogo_4 ¿Es un varón?»",
+  "text": "Se pausó «Catalogo_Karla»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-08-31",
+  "cat": "creativo",
+  "text": "Se pausó «Catalogo_5»",
   "src": "auto"
  },
  {
@@ -225,18 +255,6 @@
   "date": "2026-08-30",
   "cat": "creativo",
   "text": "Se apagó «Catalogo_2»",
-  "src": "auto"
- },
- {
-  "date": "2026-08-30",
-  "cat": "creativo",
-  "text": "Se apagó «Catalogo_Karla»",
-  "src": "auto"
- },
- {
-  "date": "2026-08-30",
-  "cat": "creativo",
-  "text": "Se apagó «Catalogo_5»",
   "src": "auto"
  },
  {
@@ -699,24 +717,6 @@
   "date": "2026-07-18",
   "cat": "estado",
   "text": "Estado del anuncio actualizado · Instagram Post (Activo → Eliminado)",
-  "src": "meta"
- },
- {
-  "date": "2026-07-18",
-  "cat": "estado",
-  "text": "Estado del conjunto de anuncios actualizado · Instagram Post (Activo → Eliminado)",
-  "src": "meta"
- },
- {
-  "date": "2026-07-18",
-  "cat": "estado",
-  "text": "Estado de la campaña actualizado · Instagram Post (Inactiva → Eliminada)",
-  "src": "meta"
- },
- {
-  "date": "2026-07-18",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Publicación de Instagram: Algodón para todos los... (Activo → Eliminado)",
   "src": "meta"
  }
 ]

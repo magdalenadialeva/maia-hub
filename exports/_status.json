@@ -1,50 +1,48 @@
 {
   "piera": {
-    "fetched_at": "2026-09-02",
+    "fetched_at": "2026-09-03",
     "ok": true,
     "rows": 179,
     "empty": false,
     "through": "2026-09-02"
   },
   "mossy": {
-    "fetched_at": "2026-09-02",
+    "fetched_at": "2026-09-03",
     "ok": true,
-    "rows": 523,
+    "rows": 533,
     "empty": false,
-    "through": "2026-09-02"
+    "through": "2026-09-03"
   },
   "vresia": {
-    "fetched_at": "2026-09-02",
-    "ok": false,
-    "rows": 176,
+    "fetched_at": "2026-09-03",
+    "ok": true,
+    "rows": 180,
     "empty": false,
-    "through": "2026-09-02",
-    "last_error": "HTTP 403: {\"error\":{\"message\":\"Application request limit reached\",\"type\":\"OAuthException\",\"is_transient\":true,\"code\":4,\"error_subcode\":1504022,\"error_user_title\":\"Demasiadas solicitudes a la API\",\"err",
-    "last_attempt": "2026-09-02"
+    "through": "2026-09-03"
   },
   "alba": {
-    "fetched_at": "2026-09-02",
+    "fetched_at": "2026-09-03",
     "ok": true,
-    "rows": 56,
+    "rows": 60,
     "empty": false,
-    "through": "2026-09-02"
+    "through": "2026-09-03"
   },
   "paz": {
-    "fetched_at": "2026-09-02",
+    "fetched_at": "2026-09-03",
     "ok": true,
-    "rows": 159,
+    "rows": 163,
     "empty": false,
-    "through": "2026-09-02"
+    "through": "2026-09-03"
   },
   "pulpa": {
-    "fetched_at": "2026-09-02",
+    "fetched_at": "2026-09-03",
     "ok": true,
-    "rows": 17,
+    "rows": 19,
     "empty": false,
-    "through": "2026-09-02"
+    "through": "2026-09-03"
   },
   "saritina-ceramica": {
-    "fetched_at": "2026-09-02",
+    "fetched_at": "2026-09-03",
     "ok": true,
     "rows": 8,
     "empty": false,

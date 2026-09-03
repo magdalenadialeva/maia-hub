@@ -36,6 +36,24 @@
   "src": "meta"
  },
  {
+  "date": "2026-09-01",
+  "cat": "creativo",
+  "text": "Se apagó «Catalogo + Video 2»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-09-01",
+  "cat": "creativo",
+  "text": "Se apagó «Catalogo + Video Renová tu placard»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-09-01",
+  "cat": "creativo",
+  "text": "Se apagó «Catalogo + Video Vresia Basicos»",
+  "src": "auto"
+ },
+ {
   "date": "2026-08-31",
   "cat": "estado",
   "text": "Estado del anuncio actualizado · Catalogo + Video Vresia Basicos (Revisión pendiente → Activo)",
@@ -699,24 +717,6 @@
   "date": "2026-08-12",
   "cat": "estado",
   "text": "Estado del anuncio actualizado · SW ARG2  | 07/08 ULTIMOS (Activo → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-12",
-  "cat": "creativo",
-  "text": "Se apagó «SW ARG2  | 07/08 ULTIMOS»",
-  "src": "auto"
- },
- {
-  "date": "2026-08-11",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · SW ARG2  | 03/08 (Procesamiento pendiente → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-11",
-  "cat": "estado",
-  "text": "Estado del conjunto de anuncios actualizado · ADV | Sweater ARG | 03/08 (Activo → Inactivo)",
   "src": "meta"
  }
 ]

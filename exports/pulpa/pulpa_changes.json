@@ -62,12 +62,6 @@
  {
   "date": "2026-09-01",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · Ad_Vans (Revisión pendiente → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-01",
-  "cat": "estado",
   "text": "Estado del anuncio actualizado · Ad_Osito (Activo → Procesamiento pendiente)",
   "src": "meta"
  },
@@ -75,6 +69,12 @@
   "date": "2026-09-01",
   "cat": "estado",
   "text": "Estado del anuncio actualizado · Ad_Toallas (Activo → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-01",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Ad_Vans (Revisión pendiente → Procesamiento pendiente)",
   "src": "meta"
  },
  {
@@ -98,6 +98,12 @@
  {
   "date": "2026-09-01",
   "cat": "estado",
+  "text": "Estado del anuncio actualizado · Ad_Vans (Activo → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-01",
+  "cat": "estado",
   "text": "Estado del anuncio actualizado · Ad_Converse (Activo → Procesamiento pendiente)",
   "src": "meta"
  },
@@ -109,20 +115,8 @@
  },
  {
   "date": "2026-09-01",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Ad_Vans (Activo → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-01",
   "cat": "creativo",
   "text": "Anuncio actualizado · Ad_Osito",
-  "src": "meta"
- },
- {
-  "date": "2026-09-01",
-  "cat": "creativo",
-  "text": "Anuncio actualizado · Ad_Vans",
   "src": "meta"
  },
  {
@@ -134,13 +128,19 @@
  {
   "date": "2026-09-01",
   "cat": "creativo",
-  "text": "Anuncio actualizado · Ad_Converse",
+  "text": "Anuncio actualizado · Ad_Vans",
   "src": "meta"
  },
  {
   "date": "2026-09-01",
   "cat": "creativo",
   "text": "Anuncio actualizado · Ad_Manchas",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-01",
+  "cat": "creativo",
+  "text": "Anuncio actualizado · Ad_Converse",
   "src": "meta"
  },
  {
@@ -194,13 +194,13 @@
  {
   "date": "2026-09-01",
   "cat": "creativo",
-  "text": "Anuncio creado · Ad_Manchas",
+  "text": "Anuncio creado · Ad_Osito",
   "src": "meta"
  },
  {
   "date": "2026-09-01",
   "cat": "creativo",
-  "text": "Anuncio creado · Ad_Vans",
+  "text": "Anuncio creado · Ad_Toallas",
   "src": "meta"
  },
  {
@@ -212,7 +212,13 @@
  {
   "date": "2026-09-01",
   "cat": "creativo",
-  "text": "Anuncio creado · Ad_Toallas",
+  "text": "Anuncio creado · Ad_Vans",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-01",
+  "cat": "creativo",
+  "text": "Anuncio creado · Ad_Manchas",
   "src": "meta"
  },
  {
