@@ -2,25 +2,23 @@
   "piera": {
     "fetched_at": "2026-09-02",
     "ok": true,
-    "rows": 182,
+    "rows": 179,
     "empty": false,
     "through": "2026-09-02"
   },
   "mossy": {
     "fetched_at": "2026-09-02",
     "ok": true,
-    "rows": 534,
+    "rows": 523,
     "empty": false,
     "through": "2026-09-02"
   },
   "vresia": {
     "fetched_at": "2026-09-02",
-    "ok": false,
-    "rows": 182,
+    "ok": true,
+    "rows": 176,
     "empty": false,
-    "through": "2026-09-02",
-    "last_error": "HTTP 403: {\"error\":{\"message\":\"Application request limit reached\",\"type\":\"OAuthException\",\"is_transient\":true,\"code\":4,\"error_subcode\":1504022,\"error_user_title\":\"Demasiadas solicitudes a la API\",\"err",
-    "last_attempt": "2026-09-02"
+    "through": "2026-09-02"
   },
   "alba": {
     "fetched_at": "2026-09-02",
@@ -32,7 +30,7 @@
   "paz": {
     "fetched_at": "2026-09-02",
     "ok": true,
-    "rows": 162,
+    "rows": 159,
     "empty": false,
     "through": "2026-09-02"
   },

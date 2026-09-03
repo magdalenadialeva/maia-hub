@@ -1,5 +1,11 @@
 [
  {
+  "date": "2026-09-02",
+  "cat": "estado",
+  "text": "Estado de la cuenta actualizado · SARITINA CERAMICA (Activa → En período de gracia)",
+  "src": "meta"
+ },
+ {
   "date": "2026-09-01",
   "cat": "estado",
   "text": "Estado del anuncio actualizado · Ad_Video_4 (Revisión pendiente → Activo)",
@@ -26,13 +32,13 @@
  {
   "date": "2026-09-01",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · Ad_Video_4 (Activo → Procesamiento pendiente)",
+  "text": "Estado del anuncio actualizado · Ad_Video_3 (Activo → Procesamiento pendiente)",
   "src": "meta"
  },
  {
   "date": "2026-09-01",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · Ad_Video_3 (Activo → Procesamiento pendiente)",
+  "text": "Estado del anuncio actualizado · Ad_Video_4 (Activo → Procesamiento pendiente)",
   "src": "meta"
  },
  {

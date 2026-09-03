@@ -1,5 +1,95 @@
 [
  {
+  "date": "2026-09-02",
+  "cat": "estado",
+  "text": "Estado del conjunto de anuncios actualizado · A+ - Testing - Angulo Producto Fit (Ad3) (Procesamiento pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-02",
+  "cat": "presupuesto",
+  "text": "Se habilitó la programación del presupuesto del conjunto de anuncios · A+ - Testing - Angulo Producto Fit (Ad3)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-02",
+  "cat": "otros",
+  "text": "Segmentación del conjunto de anuncios actualizada · A+ - Testing - Angulo Producto Fit (Ad3)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-02",
+  "cat": "objetivo",
+  "text": "Objetivo de optimización del conjunto de anuncios actualizado · A+ - Testing - Angulo Producto Fit (Ad3)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-02",
+  "cat": "presupuesto",
+  "text": "Estrategia de puja del conjunto de anuncios actualizada · A+ - Testing - Angulo Producto Fit (Ad3)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-02",
+  "cat": "creativo",
+  "text": "Conjunto de anuncios creado · A+ - Testing - Angulo Producto Fit (Ad3)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-02",
+  "cat": "estado",
+  "text": "Estado del conjunto de anuncios actualizado · A+ - Testing - Angulo Viaje (Ad2) (Procesamiento pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-02",
+  "cat": "presupuesto",
+  "text": "Se habilitó la programación del presupuesto del conjunto de anuncios · A+ - Testing - Angulo Viaje (Ad2)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-02",
+  "cat": "otros",
+  "text": "Segmentación del conjunto de anuncios actualizada · A+ - Testing - Angulo Viaje (Ad2)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-02",
+  "cat": "objetivo",
+  "text": "Objetivo de optimización del conjunto de anuncios actualizado · A+ - Testing - Angulo Viaje (Ad2)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-02",
+  "cat": "presupuesto",
+  "text": "Estrategia de puja del conjunto de anuncios actualizada · A+ - Testing - Angulo Viaje (Ad2)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-02",
+  "cat": "creativo",
+  "text": "Conjunto de anuncios creado · A+ - Testing - Angulo Viaje (Ad2)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-02",
+  "cat": "estado",
+  "text": "Estado de la campaña actualizado · Mar26 - Ventas - A+ - Catalogo - Frio (Procesamiento pendiente → Activa)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-02",
+  "cat": "presupuesto",
+  "text": "Presupuesto de la campaña actualizado · Mar26 - Ventas - A+ - Catalogo - Frio (65.000 → 80.000 ARS/día)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-02",
+  "cat": "estado",
+  "text": "Estado de la campaña actualizado · Mar26 - Ventas - A+ - Catalogo - Frio (Activa → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
   "date": "2026-08-30",
   "cat": "creativo",
   "text": "Se reactivó «Ad3 - Angulo Producto Fit»",
@@ -595,128 +685,38 @@
  },
  {
   "date": "2026-08-22",
-  "cat": "otros",
-  "text": "Segmentación del anuncio actualizada · Ad1 - Angulo Anticipo Temporada",
-  "src": "meta"
- },
- {
-  "date": "2026-08-22",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Ad1 - Angulo Anticipo Temporada (Activo → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-22",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Ad3 - Angulo Producto Fit (Inactivo → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-22",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Ad5 - Video - Sale - Copia (Activo → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-22",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Ad2 - Angulo Viaje (Inactivo → Procesamiento pendiente)",
-  "src": "meta"
+  "cat": "creativo",
+  "text": "Se apagó «Ad6 - Secuencia - Nueva coleccion 202666 - Copia»",
+  "src": "auto"
  },
  {
   "date": "2026-08-22",
   "cat": "creativo",
-  "text": "Anuncio actualizado · Ad1 - Angulo Anticipo Temporada",
-  "src": "meta"
+  "text": "Se reactivó «Ad6 - Secuencia - Nueva coleccion 2026 - Copia 4»",
+  "src": "auto"
  },
  {
   "date": "2026-08-22",
   "cat": "creativo",
-  "text": "Anuncio actualizado · Ad3 - Angulo Producto Fit",
-  "src": "meta"
+  "text": "Se apagó «Ad6 - Secuencia - Nueva coleccion 202666 - Copia 2»",
+  "src": "auto"
  },
  {
   "date": "2026-08-22",
   "cat": "creativo",
-  "text": "Anuncio actualizado · Ad5 - Video - Sale - Copia",
-  "src": "meta"
+  "text": "Se pausó «Ad2 - Angulo Viaje»",
+  "src": "auto"
  },
  {
   "date": "2026-08-22",
   "cat": "creativo",
-  "text": "Anuncio actualizado · Ad2 - Angulo Viaje",
-  "src": "meta"
+  "text": "Se pausó «Ad3 - Angulo Producto Fit»",
+  "src": "auto"
  },
  {
-  "date": "2026-08-22",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Ad2 - Angulo Viaje (Procesamiento pendiente → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-22",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Ad6 - Secuencia - Nueva coleccion 2026 - Copia 2 (Procesamiento pendiente → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-22",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Ad3 - Angulo Producto Fit (Procesamiento pendiente → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-22",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Ad6 - Secuencia - Nueva coleccion 2026 - Copia (Procesamiento pendiente → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-22",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Ad6 - Secuencia - Nueva coleccion 202666 - Copia 2 (Procesamiento pendiente → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-22",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Ad6 - Secuencia - Nueva coleccion 202666 - Copia (Procesamiento pendiente → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-22",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Ad6 - Secuencia - Nueva coleccion 202666 - Copia 4 (Procesamiento pendiente → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-22",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · Ad6 - Secuencia - Nueva coleccion 202666 - Copia (Activo → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-22",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · Ad6 - Secuencia - Nueva coleccion 2026 - Copia (Activo → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-22",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · Ad6 - Secuencia - Nueva coleccion 2026 - Copia 2 (Activo → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-22",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · Ad6 - Secuencia - Nueva coleccion 202666 - Copia 4 (Activo → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-22",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · Ad3 - Angulo Producto Fit (Activo → Inactivo)",
-  "src": "meta"
+  "date": "2026-08-21",
+  "cat": "creativo",
+  "text": "Se apagó «Ad6 - Secuencia - Nueva coleccion 2026 - Copia»",
+  "src": "auto"
  }
 ]

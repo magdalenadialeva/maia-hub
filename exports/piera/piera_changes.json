@@ -1,5 +1,113 @@
 [
  {
+  "date": "2026-09-02",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado cuando se completa su revisión · Carrusel Catalogo 1 - Video - AGO - Copia 3 (Activo → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-02",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Carrusel Catalogo 1 - Video - AGO - Copia 3 (Activo → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-02",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado cuando se completa su revisión · Carrusel Catalogo 1 - Video - AGO - Copia 2 (Activo → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-02",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Carrusel Catalogo 1 - Video - AGO - Copia 2 (Activo → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-02",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Carrusel Catalogo 3 - Video - Copia (Inactivo → Eliminado)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-02",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Carrusel Catalogo 2 - Video (Revisión pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-02",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Carrusel Catalogo - Video Nuevo 2 (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-02",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Carrusel Catalogo 3 - Video (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-02",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Carrusel Catalogo - Video Nuevo 3 (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-02",
+  "cat": "estado",
+  "text": "Estado del conjunto de anuncios actualizado · PieraCeresa_2026_Conversiones - V.3 (Procesamiento pendiente → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-02",
+  "cat": "creativo",
+  "text": "Anuncio creado · Carrusel Catalogo - Video Nuevo 2",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-02",
+  "cat": "creativo",
+  "text": "Anuncio creado · Carrusel Catalogo - Video Nuevo 3",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-02",
+  "cat": "presupuesto",
+  "text": "Se habilitó la programación del presupuesto del conjunto de anuncios · PieraCeresa_2026_Conversiones - V.3",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-02",
+  "cat": "otros",
+  "text": "Segmentación del conjunto de anuncios actualizada · PieraCeresa_2026_Conversiones - V.3",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-02",
+  "cat": "objetivo",
+  "text": "Objetivo de optimización del conjunto de anuncios actualizado · PieraCeresa_2026_Conversiones - V.3",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-02",
+  "cat": "presupuesto",
+  "text": "Estrategia de puja del conjunto de anuncios actualizada · PieraCeresa_2026_Conversiones - V.3",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-02",
+  "cat": "creativo",
+  "text": "Conjunto de anuncios creado · PieraCeresa_2026_Conversiones - V.3",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-02",
+  "cat": "estado",
+  "text": "Estado del conjunto de anuncios actualizado · PieraCeresa_2026_Conversiones (Activo → Inactivo)",
+  "src": "meta"
+ },
+ {
   "date": "2026-09-01",
   "cat": "estado",
   "text": "Estado del anuncio actualizado · Carrusel Catalogo 2 - Video - AGO - Copia 4 (Revisión pendiente → Activo)",
@@ -68,19 +176,13 @@
  {
   "date": "2026-09-01",
   "cat": "creativo",
-  "text": "Anuncio creado · Carrusel Catalogo 2 - Video - AGO - Copia 4",
-  "src": "meta"
- },
- {
-  "date": "2026-09-01",
-  "cat": "creativo",
-  "text": "Anuncio creado · Carrusel Catalogo 1 - Video - AGO - Copia 2",
-  "src": "meta"
- },
- {
-  "date": "2026-09-01",
-  "cat": "creativo",
   "text": "Anuncio creado · Carrusel Catalogo 1 - Video - AGO - Copia 3",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-01",
+  "cat": "creativo",
+  "text": "Anuncio creado · Carrusel Catalogo 2 - Video - AGO - Copia 3",
   "src": "meta"
  },
  {
@@ -92,7 +194,13 @@
  {
   "date": "2026-09-01",
   "cat": "creativo",
-  "text": "Anuncio creado · Carrusel Catalogo 2 - Video - AGO - Copia 3",
+  "text": "Anuncio creado · Carrusel Catalogo 2 - Video - AGO - Copia 4",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-01",
+  "cat": "creativo",
+  "text": "Anuncio creado · Carrusel Catalogo 1 - Video - AGO - Copia 2",
   "src": "meta"
  },
  {
@@ -610,113 +718,5 @@
   "cat": "creativo",
   "text": "Se encendió/lanzó «Carrusel Catalogo 2 - Video - AGO»",
   "src": "auto"
- },
- {
-  "date": "2026-08-18",
-  "cat": "creativo",
-  "text": "Se encendió/lanzó «Carrusel Catalogo 1 - Video - AGO»",
-  "src": "auto"
- },
- {
-  "date": "2026-08-12",
-  "cat": "estado",
-  "text": "Estado de la campaña actualizado · PieraCeresa_2026_Conversiones (Activa → Inactiva)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-12",
-  "cat": "creativo",
-  "text": "Se pausó «Carrusel Catalogo»",
-  "src": "auto"
- },
- {
-  "date": "2026-08-11",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Carrusel Catalogo 3 - Video - Copia (Procesamiento pendiente → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-11",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · Carrusel Catalogo 3 - Video - Copia (Activo → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-11",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Carrusel Catalogo 3 - Video - Copia (Activo → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-11",
-  "cat": "creativo",
-  "text": "Se apagó «Carrusel Catalogo 3 - Video - Copia»",
-  "src": "auto"
- },
- {
-  "date": "2026-08-10",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Carrusel Catalogo 3 - Video - Copia (Procesamiento pendiente → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-10",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · Carrusel Catalogo 3 - Video - Copia (Inactivo → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-10",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Carrusel Catalogo 3 - Video - Copia (Inactivo → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-10",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Carrusel Catalogo - Video Nuevo 6 (Procesamiento pendiente → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-10",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Carrusel Catalogo 3 - Video - Copia (Procesamiento pendiente → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-10",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Carrusel Catalogo - Video Nuevo 4 (Procesamiento pendiente → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-10",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Carrusel Catalogo - Video Nuevo 2 (Procesamiento pendiente → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-10",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Carrusel Catalogo - Video Nuevo 3 (Procesamiento pendiente → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-10",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · Carrusel Catalogo - Video Nuevo 6 (Activo → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-10",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Carrusel Catalogo - Video Nuevo 6 (Activo → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-10",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · Carrusel Catalogo - Video Nuevo 2 (Activo → Inactivo)",
-  "src": "meta"
  }
 ]

@@ -1,5 +1,17 @@
 [
  {
+  "date": "2026-09-02",
+  "cat": "presupuesto",
+  "text": "Presupuesto del conjunto de anuncios actualizado · Alba&Co_2026_Conversiones_Purchase_Adv+ (20.000 → 25.000 ARS/día)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-02",
+  "cat": "segmentacion",
+  "text": "Público personalizado creado · asa_auto_custom_audience",
+  "src": "meta"
+ },
+ {
   "date": "2026-09-01",
   "cat": "estado",
   "text": "Estado del anuncio actualizado · Catalogo_3 (Revisión pendiente → Inactivo)",
@@ -38,19 +50,19 @@
  {
   "date": "2026-09-01",
   "cat": "estado",
+  "text": "Estado del anuncio actualizado · Catalogo_2 (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-01",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Catalogo_3 (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-01",
+  "cat": "estado",
   "text": "Estado del anuncio actualizado · Catalogo sin portada (Procesamiento pendiente → Revisión pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-01",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Catalogo_4 ¿Es un varón? (Procesamiento pendiente → Revisión pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-01",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Catalogo_5 (Procesamiento pendiente → Revisión pendiente)",
   "src": "meta"
  },
  {
@@ -62,13 +74,13 @@
  {
   "date": "2026-09-01",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · Catalogo_2 (Procesamiento pendiente → Revisión pendiente)",
+  "text": "Estado del anuncio actualizado · Catalogo_5 (Procesamiento pendiente → Revisión pendiente)",
   "src": "meta"
  },
  {
   "date": "2026-09-01",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · Catalogo_3 (Procesamiento pendiente → Revisión pendiente)",
+  "text": "Estado del anuncio actualizado · Catalogo_4 ¿Es un varón? (Procesamiento pendiente → Revisión pendiente)",
   "src": "meta"
  },
  {
@@ -122,12 +134,6 @@
  {
   "date": "2026-08-31",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · Catalogo_3 (Activo → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-31",
-  "cat": "estado",
   "text": "Estado del anuncio actualizado cuando se completa su revisión · Catalogo_2 (Activo → Inactivo)",
   "src": "meta"
  },
@@ -140,19 +146,25 @@
  {
   "date": "2026-08-31",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · Catalogo_4 ¿Es un varón? (Activo → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-31",
-  "cat": "estado",
   "text": "Estado del anuncio actualizado cuando se completa su revisión · Catalogo_Karla (Activo → Inactivo)",
   "src": "meta"
  },
  {
   "date": "2026-08-31",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · Catalogo_3 (Activo → Procesamiento pendiente)",
+  "text": "Estado del anuncio actualizado cuando se completa su revisión · Catalogo_4 ¿Es un varón? (Activo → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-08-31",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado cuando se completa su revisión · Catalogo_3 (Activo → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-08-31",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Catalogo_5 (Activo → Procesamiento pendiente)",
   "src": "meta"
  },
  {
@@ -170,7 +182,7 @@
  {
   "date": "2026-08-31",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · Catalogo_5 (Activo → Procesamiento pendiente)",
+  "text": "Estado del anuncio actualizado · Catalogo_3 (Activo → Procesamiento pendiente)",
   "src": "meta"
  },
  {
@@ -260,13 +272,13 @@
  {
   "date": "2026-08-28",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · Catalogo_2 (Inactivo → Activo)",
+  "text": "Estado del anuncio actualizado cuando se completa su revisión · Catalogo_5 (Inactivo → Activo)",
   "src": "meta"
  },
  {
   "date": "2026-08-28",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · Catalogo_4 ¿Es un varón? (Inactivo → Activo)",
+  "text": "Estado del anuncio actualizado cuando se completa su revisión · Catalogo_2 (Inactivo → Activo)",
   "src": "meta"
  },
  {
@@ -278,13 +290,13 @@
  {
   "date": "2026-08-28",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · Catalogo_5 (Inactivo → Activo)",
+  "text": "Estado del anuncio actualizado cuando se completa su revisión · Catalogo_4 ¿Es un varón? (Inactivo → Activo)",
   "src": "meta"
  },
  {
   "date": "2026-08-28",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · Catalogo_2 (Inactivo → Procesamiento pendiente)",
+  "text": "Estado del anuncio actualizado · Catalogo_5 (Inactivo → Procesamiento pendiente)",
   "src": "meta"
  },
  {
@@ -302,7 +314,7 @@
  {
   "date": "2026-08-28",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · Catalogo_5 (Inactivo → Procesamiento pendiente)",
+  "text": "Estado del anuncio actualizado · Catalogo_2 (Inactivo → Procesamiento pendiente)",
   "src": "meta"
  },
  {
@@ -488,7 +500,7 @@
  {
   "date": "2026-08-21",
   "cat": "estado",
-  "text": "Estado de la campaña actualizado · Publicación de Instagram: De los más elegidos 🏹🫶🏼... (Activa → Inactiva)",
+  "text": "Estado de la campaña actualizado · Publicación de Instagram: Sabían que la granola... (Activa → Inactiva)",
   "src": "meta"
  },
  {
@@ -500,7 +512,7 @@
  {
   "date": "2026-08-21",
   "cat": "estado",
-  "text": "Estado de la campaña actualizado · Publicación de Instagram: Sabían que la granola... (Activa → Inactiva)",
+  "text": "Estado de la campaña actualizado · Publicación de Instagram: De los más elegidos 🏹🫶🏼... (Activa → Inactiva)",
   "src": "meta"
  },
  {
@@ -705,18 +717,6 @@
   "date": "2026-07-18",
   "cat": "estado",
   "text": "Estado del anuncio actualizado · Publicación de Instagram: Algodón para todos los... (Activo → Eliminado)",
-  "src": "meta"
- },
- {
-  "date": "2026-07-18",
-  "cat": "estado",
-  "text": "Estado del conjunto de anuncios actualizado · Publicación de Instagram: Algodón para todos los... (Activo → Eliminado)",
-  "src": "meta"
- },
- {
-  "date": "2026-07-18",
-  "cat": "estado",
-  "text": "Estado de la campaña actualizado · Publicación de Instagram: Algodón para todos los... (Inactiva → Eliminada)",
   "src": "meta"
  }
 ]

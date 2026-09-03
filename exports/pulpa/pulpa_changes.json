@@ -98,6 +98,12 @@
  {
   "date": "2026-09-01",
   "cat": "estado",
+  "text": "Estado del anuncio actualizado · Ad_Converse (Activo → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-01",
+  "cat": "estado",
   "text": "Estado del anuncio actualizado · Ad_Osito (Revisión pendiente → Procesamiento pendiente)",
   "src": "meta"
  },
@@ -105,12 +111,6 @@
   "date": "2026-09-01",
   "cat": "estado",
   "text": "Estado del anuncio actualizado · Ad_Vans (Activo → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-01",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Ad_Converse (Activo → Procesamiento pendiente)",
   "src": "meta"
  },
  {
@@ -134,13 +134,13 @@
  {
   "date": "2026-09-01",
   "cat": "creativo",
-  "text": "Anuncio actualizado · Ad_Manchas",
+  "text": "Anuncio actualizado · Ad_Converse",
   "src": "meta"
  },
  {
   "date": "2026-09-01",
   "cat": "creativo",
-  "text": "Anuncio actualizado · Ad_Converse",
+  "text": "Anuncio actualizado · Ad_Manchas",
   "src": "meta"
  },
  {
@@ -201,6 +201,12 @@
   "date": "2026-09-01",
   "cat": "creativo",
   "text": "Anuncio creado · Ad_Vans",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-01",
+  "cat": "creativo",
+  "text": "Anuncio creado · Ad_Converse",
   "src": "meta"
  },
  {

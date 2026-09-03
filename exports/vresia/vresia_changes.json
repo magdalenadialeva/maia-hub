@@ -1,5 +1,11 @@
 [
  {
+  "date": "2026-09-02",
+  "cat": "presupuesto",
+  "text": "Presupuesto del conjunto de anuncios actualizado · Vresia_Conversiones_2026_Purchase_Adv+ (20.000 → 15.000 ARS/día)",
+  "src": "meta"
+ },
+ {
   "date": "2026-09-01",
   "cat": "presupuesto",
   "text": "Presupuesto del conjunto de anuncios actualizado · Vresia_Conversiones_2026_Purchase_Adv+ (15.000 → 20.000 ARS/día)",
@@ -316,18 +322,6 @@
   "cat": "creativo",
   "text": "Se pausó «Catalogo + Video 4»",
   "src": "auto"
- },
- {
-  "date": "2026-08-22",
-  "cat": "estado",
-  "text": "Estado de la campaña actualizado · TOFU 13/01 (Activa → Inactiva)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-22",
-  "cat": "estado",
-  "text": "Estado de la campaña actualizado · TRAFICO IG | 06/08 (Activa → Inactiva)",
-  "src": "meta"
  },
  {
   "date": "2026-08-21",
@@ -717,6 +711,12 @@
   "date": "2026-08-11",
   "cat": "estado",
   "text": "Estado del anuncio actualizado · SW ARG2  | 03/08 (Procesamiento pendiente → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-08-11",
+  "cat": "estado",
+  "text": "Estado del conjunto de anuncios actualizado · ADV | Sweater ARG | 03/08 (Activo → Inactivo)",
   "src": "meta"
  }
 ]
