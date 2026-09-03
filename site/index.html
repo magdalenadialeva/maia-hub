@@ -378,6 +378,25 @@
   .vdot{display:inline-block;width:13px;height:13px;border-radius:50%;background:var(--dot,#94a3b8);vertical-align:-2px;cursor:help}
   .vdot.prov{background:transparent;border:2.5px solid var(--dot,#94a3b8)}
   .stbadge{display:inline-block;font-size:10px;font-weight:600;padding:2px 8px;border-radius:999px;white-space:nowrap}
+  .stabwrap{display:grid;grid-template-columns:auto 1fr;gap:14px;align-items:stretch;margin-top:8px}
+  @media(max-width:560px){.stabwrap{grid-template-columns:1fr}}
+  .stabhero{display:flex;align-items:center;gap:12px;padding:12px 18px;border-radius:14px;border:1px solid var(--line)}
+  .stabhero .pctbig{font-family:var(--serif);font-size:40px;font-weight:500;line-height:1}
+  .stabhero .pctlab{font-size:12px;line-height:1.3}
+  .stabhero .pctlab span{display:block;color:var(--soft);font-size:11px;margin-top:2px}
+  .stabread{display:flex;align-items:center;padding:12px 15px;border-radius:14px;font-size:13px;border:1px solid var(--line)}
+  .s-good{background:#E7F1E9;border-color:#BFE0C7}.s-good .pctbig{color:var(--good)}
+  .s-warn{background:#F6EED9;border-color:#E7D6A8}.s-warn .pctbig{color:var(--warn)}
+  .s-bad{background:#F6E2E2;border-color:#E8C4C4}.s-bad .pctbig{color:var(--bad)}
+  .cmtlist{display:grid;gap:8px;margin:4px 0 10px}
+  .cmt{background:var(--panel);border:1px solid var(--line);border-left:3px solid var(--rose);border-radius:10px;padding:9px 13px}
+  .cmthead{display:flex;justify-content:space-between;align-items:baseline;gap:8px;margin-bottom:3px}
+  .cmtauthor{font-weight:600;font-size:12.5px;color:var(--ink)}
+  .cmtdate{font-family:var(--mono);font-size:10.5px;color:var(--faint)}
+  .cmttext{font-size:13px;color:var(--ink);white-space:pre-wrap;line-height:1.5}
+  .cmtsempty{font-size:12.5px;color:var(--soft);padding:6px 0 10px}
+  .cmtform{margin-top:6px}
+  .cmtname{width:220px;max-width:100%;border:1px solid var(--line);border-radius:8px;padding:8px 11px;font-family:var(--sans);font-size:13px;margin-bottom:7px;background:var(--panel)}
   /* gráfico de evolución v22 (ejes reales, legible) */
   .evo{margin-top:6px;border:1px solid var(--line);border-radius:14px;background:var(--panel);padding:14px 16px 10px;box-shadow:var(--shadow)}
   .evo svg{width:100%;max-width:560px;height:auto;display:block;margin:0 auto;overflow:visible}
@@ -1177,6 +1196,22 @@ function changesTimeline(b,limit){
   const list=limit?ev.slice(0,limit):ev;
   return list.map(changeRow).join('');
 }
+/* Sólo los cambios GRANDES / significativos (para no ensuciar el análisis con el
+   ruido de mil cambios chicos): objetivo, puja, presupuesto ≥15%, campañas y
+   conjuntos prendidos/apagados/creados, tandas de ≥3 anuncios, pausa de cuenta. */
+function isBigChange(ev){
+  const k=ev.kind;
+  if(k==='objetivo'||k==='bid'||k==='acct_pause') return true;
+  if(k==='camp_new'||k==='set_new'||k==='campaña_off'||k==='campaña_on'||k==='conjunto_off'||k==='conjunto_on') return true;
+  if(k==='budget') return Math.abs(ev.pct||0)>=15;
+  if(k==='ad_new'||k==='ad_off'||k==='ad_del') return (ev.count||1)>=3;
+  return false;
+}
+function sigChangesTimeline(b,limit){
+  const ev=groupChanges(DATA[b]&&DATA[b].changes).filter(isBigChange);
+  const list=limit?ev.slice(0,limit):ev;
+  return list.map(changeRow).join('');
+}
 /* Métrica de estabilidad: días con al menos un anuncio activo (con gasto) y, de esos,
    cuántos cayeron en ventana de aprendizaje/reajuste (≤7d tras un cambio fuerte).
    Nota: Meta no expone el estado de "aprendizaje" histórico, así que se estima. */
@@ -1193,15 +1228,23 @@ function learningStats(b){
   return {active:active.length, total:span.length, learn, from:active[0], to:active[active.length-1]};
 }
 function learningHTML(b){
-  const s=learningStats(b); if(!s) return '';
+  const s=learningStats(b); if(!s||!s.active) return '';
   const stable=Math.max(0,s.active-s.learn);
-  const u='<span style="color:var(--soft);font-weight:400;font-size:.62em">';
-  return `<div class="tiles" style="grid-template-columns:repeat(3,1fr);margin-top:8px">
-    <div class="tile"><div class="k">Días con pauta activa</div><div class="v">${s.active} ${u}/ ${s.total}</span></div><div class="s">al menos un anuncio con gasto</div></div>
-    <div class="tile"><div class="k">Días estables</div><div class="v">${stable}</div><div class="s">activos, sin cambios fuertes recientes</div></div>
-    <div class="tile"><div class="k">Días en aprendizaje/reajuste</div><div class="v">${s.learn}</div><div class="s">≤7 días tras un cambio fuerte · estimado</div></div>
+  const pct=s.active?Math.round(stable/s.active*100):0;
+  let sem,msg;
+  if(pct>=70){sem='good';msg='La cuenta se deja madurar: los cambios no están reiniciando el aprendizaje. Vas bien así.';}
+  else if(pct>=40){sem='warn';msg='Se toca seguido: buena parte de los días activos caen en reajuste en vez de optimizar. Espaciar los cambios (esperar 3+ días entre movimientos) ayudaría a que Meta estabilice.';}
+  else {sem='bad';msg='Se está toqueteando en exceso: la mayoría de los días activos caen en reajuste tras un cambio fuerte. Cada cambio reinicia el aprendizaje de Meta y probablemente esté frenando el rendimiento. Conviene frenar los cambios y dejar correr.';}
+  return `<div class="stabwrap">
+    <div class="stabhero s-${sem}"><div class="pctbig">${pct}%</div><div class="pctlab"><b>días estables</b><span>${stable} de ${s.active} días con pauta activa</span></div></div>
+    <div class="stabread s-${sem}">${msg}</div>
   </div>
-  <div class="sec-s" style="margin-top:6px">Meta no expone el estado de "aprendizaje" día a día, así que <b>aprendizaje/reajuste</b> se estima: días activos dentro de los 7 días posteriores a un cambio fuerte (presupuesto, objetivo, anuncio nuevo, puja).</div>`;
+  <div class="tiles" style="grid-template-columns:repeat(3,1fr);margin-top:8px">
+    <div class="tile"><div class="k">Días con pauta activa</div><div class="v">${s.active} <small style="color:var(--soft);font-weight:400;font-size:.6em">/ ${s.total}</small></div><div class="s">al menos un anuncio con gasto</div></div>
+    <div class="tile"><div class="k">Días estables</div><div class="v">${stable}</div><div class="s">sin cambios fuertes en los 7 días previos</div></div>
+    <div class="tile"><div class="k">Días en reajuste</div><div class="v">${s.learn}</div><div class="s">≤7 días tras un cambio fuerte · estimado</div></div>
+  </div>
+  <div class="sec-s" style="margin-top:6px">Lo que importa es <b>cuánto se toca la cuenta</b>: cada día en reajuste es un día donde un cambio fuerte reciente (presupuesto, objetivo, anuncio nuevo, puja) tiene a Meta re-aprendiendo en vez de optimizando. Se estima porque Meta no expone el "aprendizaje" día a día.</div>`;
 }
 function hitosHTML(b){
   const D=DATA[b]; const grouped=groupChanges(D&&D.changes); const n=grouped.length;
@@ -1394,8 +1437,29 @@ function accionLeak(leak,ic){
   };
   return m[leak]||'Revisar este paso del embudo con más datos.';
 }
+/* Lectura de RECENCIA: cómo vienen los últimos 7 días vs los 7 anteriores.
+   Se recalcula solo con cada dato nuevo, así el análisis refleja el momento,
+   no el promedio del mes. */
+function recencyRead(b){
+  const D=DATA[b]; if(!D||!D.dates||!D.dates.length) return null;
+  const lead=isLead(D.obj);
+  const end=D.through||D.dates[D.dates.length-1];
+  const rec=agg(b,addDays(end,-6),end).T;                 // últimos 7 días
+  const prev=agg(b,addDays(end,-13),addDays(end,-7)).T;   // 7 días anteriores
+  const Kr=kpis(rec,D.obj), Kp=kpis(prev,D.obj);
+  const enough=(lead? (Kr.result>0):(Kr.spend>0)) && (lead?(Kp.result>0):(Kp.spend>0)) && Kp.impr>0;
+  // métrica principal: ROAS (ventas) · CPL (leads) — dirección "mejor/peor"
+  let dir='igual', pct=0, metric, cur, prv;
+  if(lead){ metric='costo por resultado'; cur=Kr.cpa; prv=Kp.cpa;
+    pct = prv? (cur-prv)/prv : 0; dir = Math.abs(pct)<0.08?'igual':(pct<0?'mejor':'peor'); } // costo baja = mejor
+  else { metric='ROAS'; cur=Kr.roas; prv=Kp.roas;
+    pct = prv? (cur-prv)/prv : 0; dir = Math.abs(pct)<0.08?'igual':(pct>0?'mejor':'peor'); }
+  return {enough,dir,pct,metric,Kr,Kp,end,lead,
+    from:addDays(end,-6),to:end,pfrom:addDays(end,-13),pto:addDays(end,-7)};
+}
 function autoAnalisis(x){
   const D=x.D,K=x.K,lead=isLead(D.obj),ic=D.obj==='ic',R=dec(K.roas);
+  const rec=recencyRead(x.b);
   const cre=x.cre||[], total=cre.reduce((s,v)=>s+v.spend,0)||K.spend||0;
   const top=cre[0]||null;
   const winners=cre.filter(v=>v.verdict==='escalar');
@@ -1408,19 +1472,37 @@ function autoAnalisis(x){
   if(x.leak) rp.push(`cuello en <b>${x.leak}</b>`);
   if(x.fatiga) rp.push('fatiga incipiente (CTR↓ CPM↑)');
   if(winners.length) rp.push(`ganador: <b>${winners[0].ad}</b>`);
+  // frase de tendencia (últimos 7d vs 7 anteriores)
+  let recPhrase='';
+  if(rec&&rec.enough){
+    const val=lead?('$'+money(rec.Kr.cpa)):(dec(rec.Kr.roas)+'x');
+    const valP=lead?('$'+money(rec.Kp.cpa)):(dec(rec.Kp.roas)+'x');
+    const flecha=rec.dir==='mejor'?'↑ mejor':(rec.dir==='peor'?'↓ peor':'→ estable');
+    recPhrase=`Últimos 7 días vs. los 7 anteriores: <b>${flecha}</b> (${rec.metric} ${val} vs ${valP})`;
+    rp.unshift(recPhrase);
+  }
   const resumen=rp.join(' · ')+'.';
-  // en simple (lenguaje llano)
+  // en simple (lenguaje llano) — lidera con CÓMO VIENE, no con el promedio del mes
+  let recSimple='';
+  if(rec&&rec.enough){
+    if(rec.dir==='mejor') recSimple=lead?`En los últimos 7 días el costo por resultado bajó respecto de la semana anterior — viene mejorando. `:`En los últimos 7 días el rendimiento mejoró respecto de la semana anterior (ROAS ${dec(rec.Kr.roas)}x vs ${dec(rec.Kp.roas)}x) — viene en alza. `;
+    else if(rec.dir==='peor') recSimple=lead?`Atención: en los últimos 7 días el costo por resultado subió respecto de la semana anterior. `:`Atención: en los últimos 7 días el rendimiento cayó respecto de la semana anterior (ROAS ${dec(rec.Kr.roas)}x vs ${dec(rec.Kp.roas)}x). `;
+    else recSimple=`Los últimos 7 días vienen parecidos a la semana anterior (estable). `;
+  }
   let simple;
   if(!lead && K.purch===0){
     simple=`${D.name} recién arranca: todavía no hay compras suficientes para conclusiones firmes. Lo importante ahora es dejar que Meta aprenda y juntar datos antes de tocar nada.`;
   } else if(lead){
-    simple=`${D.name} trae clientes potenciales a $${money(K.cpa)} cada uno`+(x.fatiga?', pero los anuncios empiezan a cansar a la audiencia. Conviene renovarlos para que el costo no suba.':'. Viene a buen costo.');
+    simple=recSimple+`${D.name} trae clientes potenciales a $${money(K.cpa)} cada uno`+(x.fatiga?', pero los anuncios empiezan a cansar a la audiencia. Conviene renovarlos para que el costo no suba.':'. Viene a buen costo.');
   } else {
     const q=K.roas>=3?`muy bien: por cada $1 vuelven $${R}`:(K.roas>=1.5?`bien: por cada $1 vuelven $${R}`:`todavía en ajuste: por cada $1 vuelven $${R}`);
-    simple=`${D.name} viene ${q}.`+(x.leak?` El punto donde más se pierde hoy es "${x.leak}" — ahí está la mayor oportunidad.`:` No hay un cuello claro: el foco es escalar con cuidado.`);
+    simple=recSimple+`En el balance del período ${D.name} viene ${q}.`+(x.leak?` El punto donde más se pierde hoy es "${x.leak}" — ahí está la mayor oportunidad.`:` No hay un cuello claro: el foco es escalar con cuidado.`);
   }
   // pares diagnóstico → acción (ids estables por marca para que las notas persistan)
   const P=[];
+  if(rec&&rec.enough&&rec.dir==='peor'){
+    P.push([`${x.b}_recdrop`,`Los últimos 7 días vienen <b>peor</b> que los 7 anteriores (${rec.metric} ${lead?'$'+money(rec.Kr.cpa):dec(rec.Kr.roas)+'x'} vs ${lead?'$'+money(rec.Kp.cpa):dec(rec.Kp.roas)+'x'}).`,`Es una caída reciente, no un promedio: conviene mirar qué cambió esta última semana (creativos que se cansaron, un cambio de pauta, o el embudo).`,`Revisar qué se tocó en los últimos 7 días y si algún creativo top perdió fuerza; frenar cambios nuevos hasta entender la caída.`]);
+  }
   if(x.leak) P.push([`${x.b}_leak`,`Donde más se cae la gente hoy es en "${x.leak}".`,`Es el mayor cuello del embudo: ahí se pierde la mayor cantidad de ${lead?'leads':'ventas'} posibles.`,accionLeak(x.leak,ic)]);
   if(x.fatiga) P.push([`${x.b}_fatiga`,`Los anuncios empiezan a cansarse (CTR↓, CPM↑): los ve la misma gente muchas veces.`,`Si no se renuevan, el rendimiento cae en las próximas semanas.`,`Preparar 2-3 anuncios nuevos esta semana con los ángulos que ya funcionan (en video).`]);
   if(winners.length) P.push([`${x.b}_win`,`Hay un anuncio ganador claro: "${winners[0].ad}".`,`Escalarlo es la palanca más directa para ${lead?'traer más leads':'vender más'} sin romper lo que funciona.`,`Subirle presupuesto +20-30% cada 3-4 días mientras ${lead?'el CPL se mantenga':'el ROAS siga arriba del objetivo'}.`]);
@@ -1429,6 +1511,14 @@ function autoAnalisis(x){
   if(!lead && K.purch===0) P.push([`${x.b}_learn`,`Todavía hay poca data (sin compras suficientes).`,`Hacer cambios grandes ahora agrega ruido y reinicia el aprendizaje de Meta.`,`Dejar correr sin tocar presupuestos bruscamente y anotar en el Brand Brain la fecha de inicio y cualquier cambio.`]);
   if(!P.length) P.push([`${x.b}_ok`,`No hay un cuello claro ni señales de alarma en este período.`,`La pauta viene sana; el objetivo es sostener y escalar con cuidado.`,`Escalar los mejores +20-30% cada 3-4 días y sumar 1-2 creativos nuevos para recambio.`]);
   return {simple,resumen,pairs:P.slice(0,6)};
+}
+/* Comentarios del equipo, PUBLICADOS (visibles para todos). Viven en
+   site/comments.json (Claude los agrega y comitea). window.COMMENTS se carga
+   al inicio con fetch. */
+function commentsHTML(cid){
+  const list=(window.COMMENTS&&window.COMMENTS[cid])||[];
+  if(!list.length) return `<div class="cmtsempty">Todavía no hay comentarios publicados para esta cuenta.</div>`;
+  return `<div class="cmtlist">`+list.slice().reverse().map(c=>`<div class="cmt"><div class="cmthead"><span class="cmtauthor">${esc(c.author||'—')}</span><span class="cmtdate">${esc(c.date||'')}</span></div><div class="cmttext">${esc(c.text||'')}</div></div>`).join('')+`</div>`;
 }
 function renderAnalisis(cid){
   const x=compute(cid),A=autoAnalisis(x),D=x.D;
@@ -1447,22 +1537,28 @@ function renderAnalisis(cid){
       <div class="pnoteview" ${note?'':'hidden'}>📝 ${note}</div>
     </div>`;}).join('');
   const tfk='maia_tf_'+cid;
+  const per=periodLabel();
   document.getElementById('body-analisis').innerHTML=`
     <div class="dhead"><h2>${D.name}</h2><div class="meta">${OBJLBL[D.obj]} · ${D.cur} · análisis de pauta</div>
-    <div class="meta">🔄 <b>Análisis actualizado al:</b> ${updBadge(cid)} · se recalcula solo con la data de cada mañana</div></div>
+    <div class="meta">📅 <b>Período analizado:</b> ${per} · <b>tendencia:</b> últimos 7 días vs. los 7 anteriores</div>
+    <div class="meta">🔄 <b>Actualizado al:</b> ${updBadge(cid)} · se recalcula solo con cada dato nuevo</div></div>
     <div class="act-big act-${x.st.sem}">${x.st.act}</div>
     <div class="ana-simple"><span class="tag">En simple</span>${A.simple}</div>
     <details class="ana-tec"><summary>Ver el detalle técnico</summary><div class="diag ${x.st.sem==='g'?'ok':''}" style="margin-top:8px">${A.resumen}</div></details>
     <div class="sec-h">Diagnóstico → Qué hacer</div>
     <div class="sec-s">Cada cosa que está pasando (izquierda) con su acción concreta (derecha), en orden de prioridad. Tocá <b>💬 agregar nota</b> en cualquiera para dejar un comentario (ej. “ya lo probamos”).</div>
     <div class="pairs">${pairRows}</div>
-    <div class="sec-h">Cambios recientes en la cuenta</div>
-    <div class="sec-s">Todo lo que se fue tocando: presupuesto, pausas/activaciones, optimización (venta↔carrito) y creativos prendidos/apagados. <span class="chsrc">Meta</span> = log oficial · <span class="chsrc auto">deducido</span> = inferido del gasto. El historial completo está en el Dashboard.</div>
-    <div class="card"><div class="tl">${changesTimeline(cid,15)||'<div class="sec-s" style="margin:0">Sin cambios registrados en el período.</div>'}</div></div>
-    <div class="sec-h">Comentarios del trafficker</div>
-    <div class="sec-s">Tu feedback sobre estos accionables (lo tomo para afinar los próximos análisis). Se guarda en este navegador.</div>
-    <textarea class="tfbox" data-tf="${tfk}" placeholder="Ej.: en Piera el envío ya está optimizado, probemos otro ángulo de producto; en Mossy el problema del carrito es el costo de envío…">${nGet(tfk)}</textarea>
-    <div class="expbar"><button class="expbtn" data-exp="${cid}">📋 Copiar todo para que Claude lo guarde</button><span class="expnote">Las notas viven en tu navegador. Con este botón copiás todo y me lo pegás en el chat: yo lo guardo en la memoria / Brand Brain.</span></div>`;
+    <div class="sec-h">Cambios importantes recientes</div>
+    <div class="sec-s">Sólo los cambios <b>grandes</b> (presupuesto ≥15%, objetivo/puja, campañas y conjuntos prendidos/apagados/creados, tandas de anuncios) — el ruido de los cambios chicos se oculta para no ensuciar la lectura. <span class="chsrc">Meta</span> = log oficial · <span class="chsrc auto">deducido</span>. El historial completo está en el Dashboard.</div>
+    <div class="card"><div class="tl">${sigChangesTimeline(cid,10)||'<div class="sec-s" style="margin:0">Sin cambios grandes registrados.</div>'}</div></div>
+    <div class="sec-h">Comentarios del equipo</div>
+    <div class="sec-s">Lo que anota el equipo sobre esta cuenta queda <b>acá, visible para todos</b> (además de servirme para afinar los próximos análisis). Escribí el tuyo, tocá <b>Guardar y compartir</b> y pegámelo en el chat: lo publico para que lo vean todos.</div>
+    <div id="cmts-${cid}">${commentsHTML(cid)}</div>
+    <div class="cmtform">
+      <input class="cmtname" id="cmtname-${cid}" placeholder="Tu nombre" value="${esc(nGet('maia_cmt_name'))}">
+      <textarea class="tfbox" id="cmttext-${cid}" data-tf="${tfk}" placeholder="Ej.: Mar26 es el motor, ya le subimos el presupuesto a $80k; Ago26 dependía de un solo anuncio, separamos Ad2/Ad3 en testing…">${nGet(tfk)}</textarea>
+      <div class="expbar"><button class="expbtn" data-exp="${cid}">💾 Guardar y compartir</button><span class="expnote">Se guarda en tu navegador al toque; para que lo vean todos, pegámelo en el chat y lo publico en el hub.</span></div>
+    </div>`;
   // wire
   document.querySelectorAll('#body-analisis .pdone input').forEach(cb=>cb.addEventListener('change',()=>{ckSet(cb.dataset.dk,cb.checked);cb.closest('.pair').classList.toggle('done',cb.checked);}));
   document.querySelectorAll('#body-analisis .pnote').forEach(btn=>btn.addEventListener('click',()=>{
@@ -1470,16 +1566,23 @@ function renderAnalisis(cid){
   }));
   const tf=document.querySelector('#body-analisis .tfbox');
   tf.addEventListener('input',()=>nSet(tf.dataset.tf,tf.value.trim()));
+  const nmi=document.getElementById('cmtname-'+cid);
+  if(nmi) nmi.addEventListener('input',()=>nSet('maia_cmt_name',nmi.value.trim()));
   document.querySelector('#body-analisis .expbtn').addEventListener('click',()=>exportNotas(cid));
 }
 function exportNotas(cid){
-  const A=autoAnalisis(compute(cid)),D=DATA[cid];
-  let out='NOTAS · '+D.name+' · '+TODAY+'\n';
+  const D=DATA[cid];
+  const author=(nGet('maia_cmt_name')||'equipo').trim();
+  const text=(nGet('maia_tf_'+cid)||'').trim();
+  if(!text){toast('Escribí un comentario primero');return;}
+  let out='PUBLICAR COMENTARIO EN EL HUB (Claude: agregalo a site/comments.json y comiteá)\n';
+  out+='cliente: '+cid+' ('+D.name+')\nautor: '+author+'\nfecha: '+TODAY+'\ntexto: '+text+'\n';
+  // contexto: accionables marcados / con nota
+  const A=autoAnalisis(compute(cid)); let extra='';
   A.pairs.forEach((p,i)=>{const done=ckGet('maia_done_'+p[0]),note=nGet('maia_note_'+p[0]);
-    if(done||note){out+=`\n[${i+1}] ${p[1]}`;if(done)out+='\n  ✓ marcado como hecho';if(note)out+='\n  📝 '+note;}});
-  const tf=nGet('maia_tf_'+cid); if(tf)out+='\n\nComentarios del trafficker:\n'+tf;
-  if(out.trim()===('NOTAS · '+D.name+' · '+TODAY)){toast('Todavía no hay notas ni comentarios');return;}
-  try{navigator.clipboard.writeText(out);toast('Copiado. Pegámelo en el chat y lo guardo en memoria/Brand Brain');}
+    if(done||note){extra+=`\n[${i+1}] ${String(p[1]).replace(/<[^>]+>/g,'')}`;if(done)extra+=' · ✓ hecho';if(note)extra+=' · 📝 '+note;}});
+  if(extra) out+='\ncontexto (accionables tocados):'+extra+'\n';
+  try{navigator.clipboard.writeText(out);toast('Copiado. Pegámelo en el chat y lo publico para que lo vean todos');}
   catch(e){openNote('__tmp__','Copiá este texto y pegámelo en el chat',()=>{});setTimeout(()=>{const ta=document.querySelector('#notemodal .nm-ta');if(ta){ta.value=out;ta.select();}},80);}
 }
 function goAnalisis(cid){
@@ -1577,6 +1680,15 @@ buildPicker("pick-prop", renderProp, "piera");
 buildPicker("pick-est", renderEst, "vresia");
 renderGeneral();
 syncRangeBars();
+/* comentarios del equipo publicados (site/comments.json) */
+window.COMMENTS=window.COMMENTS||{};
+(function(){ try{
+  fetch('comments.json?h='+Math.floor(Date.now()/3600000)).then(r=>r.ok?r.json():{}).then(j=>{
+    window.COMMENTS=j||{};
+    const p=document.getElementById('p-analisis'), sel=document.getElementById('sel-ana');
+    if(p&&p.classList.contains('on')&&sel&&typeof renderAnalisis==='function') renderAnalisis(sel.value);
+  }).catch(()=>{});
+}catch(e){} })();
 /* tabs */
 document.querySelectorAll(".tab").forEach(t=>t.addEventListener("click",()=>{
   document.querySelectorAll(".tab").forEach(x=>x.setAttribute("aria-selected","false"));
@@ -1603,7 +1715,7 @@ document.addEventListener('mouseleave',()=>{const t=document.getElementById('cha
 /* clock */
 (function(){const el=document.getElementById("clock");const d=new Date(),m=["ene","feb","mar","abr","may","jun","jul","ago","sep","oct","nov","dic"];el.textContent=d.getDate()+" "+m[d.getMonth()]+" "+d.getFullYear();})();
 /* sello de versión visible para confirmar que estás en la última */
-const BUILD="v22.2 · 2 sep 2026 · Gráfico por período, tooltip por métrica y columna Resultado";
+const BUILD="v23 · 2 sep 2026 · Estabilidad %, análisis por recencia, cambios grandes y comentarios del equipo";
 (function(){const f=document.querySelector('.foot-note'); if(f)f.insertAdjacentHTML('beforeend',' · <b>Build '+BUILD+'</b>');
   const c=document.getElementById('clock'); if(c)c.insertAdjacentHTML('beforeend','<br><span style="color:var(--rose)">Build '+BUILD.split(' · ')[0]+'</span>');})();
 

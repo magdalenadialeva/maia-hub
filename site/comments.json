@@ -1,0 +1,10 @@
+{
+  "mossy": [
+    {"date":"2026-08-16","author":"Paz · auditorías","text":"Estructura simplificada a 1 conjunto por campaña. CAPI confirmado activo y funcionando para el evento Compra (+100% de conversiones registradas gracias al servidor)."},
+    {"date":"2026-08-22","author":"Paz · auditorías","text":"El fix de audience stacking en SV (16/8) bajó el CPA de $42.757 a $28.818. Hallazgo grande: fragmentación creativa — 79 anuncios activos y sólo 5 concentran casi todas las compras; el resto son copias duplicadas que diluyen la señal del algoritmo. Se limpiaron ~62 anuncios sin compras."},
+    {"date":"2026-08-27","author":"Paz · auditorías","text":"La limpieza de anuncios no se sostiene: la fragmentación se vuelve a acumular a los pocos días. Se sumaron los ángulos Ad2 (Viaje) y Ad3 (Producto Fit) a Ago26 para no depender de una sola pieza."},
+    {"date":"2026-09-02","author":"Paz · auditorías","text":"ROAS de cuenta ACELERANDO fuerte: 3,40 (14d) → 4,41 (7d) → 5,47 (4d), con la frecuencia BAJANDO (3,55 → 2,78 → 2,40). No es fatiga: es alcance fresco funcionando bien. Mar26 es el motor claro (ROAS 5,89/4d, CPA $19.955, el más bajo de la cuenta). Cuello del embudo sigue en Carrito→Pago."},
+    {"date":"2026-09-02","author":"Paz · auditorías","text":"Subí el presupuesto de Mar26 de $65k a $80k/día (+23%, dentro del rango recomendado). Vigilar que el ROAS de Mar26 se mantenga arriba de 3x los próximos 7 días y NO volver a tocar el presupuesto antes de 3 días (un salto reinicia parcialmente el aprendizaje)."},
+    {"date":"2026-09-02","author":"Paz · auditorías","text":"Ago26 dependía de un solo anuncio (Ad1 - Ángulo Anticipo Temporada, CPA $53.823/14d, en Aprendizaje limitado). Se separaron Ad2 y Ad3 en conjuntos de testing propios dentro del mismo CBO (piso 20-28% c/u, sin presupuesto extra). Revisar en 3-4 días cuál merece escalar. NO subirle presupuesto a Ago26 todavía. Anuncio líder de la cuenta: 'Ad6 - Secuencia - Nueva colección 202666' (24 compras/14d, CPA $24k, el más eficiente)."}
+  ]
+}
