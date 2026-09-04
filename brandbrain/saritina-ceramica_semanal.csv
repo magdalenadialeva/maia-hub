@@ -1,2 +1,2 @@
 ﻿slug,cliente,periodo,moneda,gasto,resultado,roas,cpa,cpl,cuello_embudo,diagnostico,veredictos
-saritina-ceramica,SARITINA CERAMICA,2026-09-01..2026-09-02,ARS,7268.3,0,,,,Vieron la landing (LPV),El cuello está en Vieron la landing (LPV) → Agregaron al carrito: 0.0% vs ~13.0% sano.,escalar:0 iterar:0 matar:0 pocaData:4
+saritina-ceramica,SARITINA CERAMICA,2026-09-01..2026-09-04,ARS,18432.62,5,,3687,,Vieron la landing (LPV),El cuello está en Vieron la landing (LPV) → Agregaron al carrito: 0.0% vs ~13.0% sano.,escalar:0 iterar:1 matar:0 pocaData:3

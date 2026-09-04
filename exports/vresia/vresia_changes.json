@@ -1,5 +1,11 @@
 [
  {
+  "date": "2026-09-03",
+  "cat": "segmentacion",
+  "text": "Público personalizado creado · asa_auto_custom_audience",
+  "src": "meta"
+ },
+ {
   "date": "2026-09-02",
   "cat": "presupuesto",
   "text": "Presupuesto del conjunto de anuncios actualizado · Vresia_Conversiones_2026_Purchase_Adv+ (20.000 → 15.000 ARS/día)",
@@ -188,24 +194,6 @@
  {
   "date": "2026-08-31",
   "cat": "creativo",
-  "text": "Anuncio creado · Catalogo + Video 3",
-  "src": "meta"
- },
- {
-  "date": "2026-08-31",
-  "cat": "creativo",
-  "text": "Anuncio creado · Catalogo + Video 2",
-  "src": "meta"
- },
- {
-  "date": "2026-08-31",
-  "cat": "creativo",
-  "text": "Anuncio creado · Catalogo + Video 5",
-  "src": "meta"
- },
- {
-  "date": "2026-08-31",
-  "cat": "creativo",
   "text": "Anuncio creado · Cardigam Roma",
   "src": "meta"
  },
@@ -219,6 +207,24 @@
   "date": "2026-08-31",
   "cat": "creativo",
   "text": "Anuncio creado · Catalogo + Video 4",
+  "src": "meta"
+ },
+ {
+  "date": "2026-08-31",
+  "cat": "creativo",
+  "text": "Anuncio creado · Catalogo + Video 5",
+  "src": "meta"
+ },
+ {
+  "date": "2026-08-31",
+  "cat": "creativo",
+  "text": "Anuncio creado · Catalogo + Video 2",
+  "src": "meta"
+ },
+ {
+  "date": "2026-08-31",
+  "cat": "creativo",
+  "text": "Anuncio creado · Catalogo + Video 3",
   "src": "meta"
  },
  {
@@ -711,12 +717,6 @@
   "date": "2026-08-12",
   "cat": "estado",
   "text": "Estado del anuncio actualizado cuando se completa su revisión · SW ARG2  | 07/08 ULTIMOS (Activo → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-12",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · SW ARG2  | 07/08 ULTIMOS (Activo → Procesamiento pendiente)",
   "src": "meta"
  }
 ]

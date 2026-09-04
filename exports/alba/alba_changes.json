@@ -1,8 +1,110 @@
 [
  {
   "date": "2026-09-03",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Catalogo_Karla (Procesamiento pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-03",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Catalogo_2 (Procesamiento pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-03",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Catalogo_4 ¿Es un varón? (Procesamiento pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-03",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Catalogo_5 (Procesamiento pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-03",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Catalogo_3 (Procesamiento pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-03",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado cuando se completa su revisión · Catalogo_Karla (Inactivo → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-03",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado cuando se completa su revisión · Catalogo_2 (Inactivo → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-03",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Catalogo_Karla (Inactivo → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-03",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Catalogo_2 (Inactivo → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-03",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado cuando se completa su revisión · Catalogo_4 ¿Es un varón? (Inactivo → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-03",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Catalogo_4 ¿Es un varón? (Inactivo → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-03",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado cuando se completa su revisión · Catalogo_5 (Inactivo → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-03",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Catalogo_5 (Inactivo → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-03",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado cuando se completa su revisión · Catalogo_3 (Inactivo → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-03",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Catalogo_3 (Inactivo → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-03",
+  "cat": "creativo",
+  "text": "Se reactivó «Catalogo_2»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-09-03",
   "cat": "creativo",
   "text": "Se reactivó «Catalogo_3»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-09-03",
+  "cat": "creativo",
+  "text": "Se reactivó «Catalogo_4 ¿Es un varón?»",
   "src": "auto"
  },
  {
@@ -68,25 +170,13 @@
  {
   "date": "2026-09-01",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · Catalogo_2 (Procesamiento pendiente → Revisión pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-01",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Catalogo_3 (Procesamiento pendiente → Revisión pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-01",
-  "cat": "estado",
   "text": "Estado del anuncio actualizado · Catalogo sin portada (Procesamiento pendiente → Revisión pendiente)",
   "src": "meta"
  },
  {
   "date": "2026-09-01",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · Catalogo_Karla (Procesamiento pendiente → Revisión pendiente)",
+  "text": "Estado del anuncio actualizado · Catalogo_4 ¿Es un varón? (Procesamiento pendiente → Revisión pendiente)",
   "src": "meta"
  },
  {
@@ -98,7 +188,19 @@
  {
   "date": "2026-09-01",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · Catalogo_4 ¿Es un varón? (Procesamiento pendiente → Revisión pendiente)",
+  "text": "Estado del anuncio actualizado · Catalogo_Karla (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-01",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Catalogo_2 (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-01",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Catalogo_3 (Procesamiento pendiente → Revisión pendiente)",
   "src": "meta"
  },
  {
@@ -123,6 +225,12 @@
   "date": "2026-09-01",
   "cat": "creativo",
   "text": "Se pausó «Catalogo_3»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-09-01",
+  "cat": "creativo",
+  "text": "Se pausó «Catalogo_4 ¿Es un varón?»",
   "src": "auto"
  },
  {
@@ -158,6 +266,12 @@
  {
   "date": "2026-08-31",
   "cat": "estado",
+  "text": "Estado del anuncio actualizado cuando se completa su revisión · Catalogo_3 (Activo → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-08-31",
+  "cat": "estado",
   "text": "Estado del anuncio actualizado cuando se completa su revisión · Catalogo_2 (Activo → Inactivo)",
   "src": "meta"
  },
@@ -170,37 +284,13 @@
  {
   "date": "2026-08-31",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · Catalogo_Karla (Activo → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-31",
-  "cat": "estado",
   "text": "Estado del anuncio actualizado cuando se completa su revisión · Catalogo_4 ¿Es un varón? (Activo → Inactivo)",
   "src": "meta"
  },
  {
   "date": "2026-08-31",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · Catalogo_3 (Activo → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-31",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Catalogo_5 (Activo → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-31",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Catalogo_Karla (Activo → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-31",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Catalogo_4 ¿Es un varón? (Activo → Procesamiento pendiente)",
+  "text": "Estado del anuncio actualizado cuando se completa su revisión · Catalogo_Karla (Activo → Inactivo)",
   "src": "meta"
  },
  {
@@ -212,13 +302,31 @@
  {
   "date": "2026-08-31",
   "cat": "estado",
+  "text": "Estado del anuncio actualizado · Catalogo_4 ¿Es un varón? (Activo → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-08-31",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Catalogo_Karla (Activo → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-08-31",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Catalogo_5 (Activo → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-08-31",
+  "cat": "estado",
   "text": "Estado del anuncio actualizado · Catalogo_2 (Activo → Procesamiento pendiente)",
   "src": "meta"
  },
  {
   "date": "2026-08-31",
   "cat": "creativo",
-  "text": "Se apagó «Catalogo_4 ¿Es un varón?»",
+  "text": "Se pausó «Catalogo_2»",
   "src": "auto"
  },
  {
@@ -252,21 +360,15 @@
   "src": "meta"
  },
  {
-  "date": "2026-08-30",
-  "cat": "creativo",
-  "text": "Se apagó «Catalogo_2»",
-  "src": "auto"
- },
- {
   "date": "2026-08-28",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · Catalogo_Karla (Procesamiento pendiente → Activo)",
+  "text": "Estado del anuncio actualizado · Catalogo_4 ¿Es un varón? (Procesamiento pendiente → Activo)",
   "src": "meta"
  },
  {
   "date": "2026-08-28",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · Catalogo_4 ¿Es un varón? (Procesamiento pendiente → Activo)",
+  "text": "Estado del anuncio actualizado · Catalogo_Karla (Procesamiento pendiente → Activo)",
   "src": "meta"
  },
  {
@@ -290,7 +392,7 @@
  {
   "date": "2026-08-28",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · Catalogo_5 (Inactivo → Activo)",
+  "text": "Estado del anuncio actualizado cuando se completa su revisión · Catalogo_Karla (Inactivo → Activo)",
   "src": "meta"
  },
  {
@@ -302,7 +404,7 @@
  {
   "date": "2026-08-28",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · Catalogo_Karla (Inactivo → Activo)",
+  "text": "Estado del anuncio actualizado cuando se completa su revisión · Catalogo_5 (Inactivo → Activo)",
   "src": "meta"
  },
  {
@@ -320,7 +422,7 @@
  {
   "date": "2026-08-28",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · Catalogo_4 ¿Es un varón? (Inactivo → Procesamiento pendiente)",
+  "text": "Estado del anuncio actualizado · Catalogo_2 (Inactivo → Procesamiento pendiente)",
   "src": "meta"
  },
  {
@@ -332,7 +434,7 @@
  {
   "date": "2026-08-28",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · Catalogo_2 (Inactivo → Procesamiento pendiente)",
+  "text": "Estado del anuncio actualizado · Catalogo_4 ¿Es un varón? (Inactivo → Procesamiento pendiente)",
   "src": "meta"
  },
  {
@@ -518,7 +620,7 @@
  {
   "date": "2026-08-21",
   "cat": "estado",
-  "text": "Estado de la campaña actualizado · Publicación de Instagram: Sabían que la granola... (Activa → Inactiva)",
+  "text": "Estado de la campaña actualizado · Publicación de Instagram: De los más elegidos 🏹🫶🏼... (Activa → Inactiva)",
   "src": "meta"
  },
  {
@@ -530,7 +632,7 @@
  {
   "date": "2026-08-21",
   "cat": "estado",
-  "text": "Estado de la campaña actualizado · Publicación de Instagram: De los más elegidos 🏹🫶🏼... (Activa → Inactiva)",
+  "text": "Estado de la campaña actualizado · Publicación de Instagram: Sabían que la granola... (Activa → Inactiva)",
   "src": "meta"
  },
  {
@@ -615,108 +717,6 @@
   "date": "2026-08-20",
   "cat": "estado",
   "text": "Estado del anuncio actualizado · Catalogo_3 (Revisión pendiente → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-20",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Catalogo_3 (Procesamiento pendiente → Revisión pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-20",
-  "cat": "creativo",
-  "text": "Anuncio creado · Catalogo_3",
-  "src": "meta"
- },
- {
-  "date": "2026-08-20",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Catalogo_2 (Procesamiento pendiente → Revisión pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-20",
-  "cat": "creativo",
-  "text": "Anuncio creado · Catalogo_2",
-  "src": "meta"
- },
- {
-  "date": "2026-08-20",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Catalogo sin portada (Procesamiento pendiente → Revisión pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-20",
-  "cat": "segmentacion",
-  "text": "Público personalizado creado · Pixel Audience: Purchase Event  30 Days - 767342713085602 - System Generated",
-  "src": "meta"
- },
- {
-  "date": "2026-08-20",
-  "cat": "estado",
-  "text": "Estado del conjunto de anuncios actualizado · Alba&Co_2026_Conversiones_Purchase_Adv+ (Procesamiento pendiente → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-20",
-  "cat": "creativo",
-  "text": "Anuncio creado · Catalogo sin portada",
-  "src": "meta"
- },
- {
-  "date": "2026-08-20",
-  "cat": "otros",
-  "text": "Segmentación del conjunto de anuncios actualizada · Alba&Co_2026_Conversiones_Purchase_Adv+",
-  "src": "meta"
- },
- {
-  "date": "2026-08-20",
-  "cat": "objetivo",
-  "text": "Objetivo de optimización del conjunto de anuncios actualizado · Alba&Co_2026_Conversiones_Purchase_Adv+",
-  "src": "meta"
- },
- {
-  "date": "2026-08-20",
-  "cat": "presupuesto",
-  "text": "Estrategia de puja del conjunto de anuncios actualizada · Alba&Co_2026_Conversiones_Purchase_Adv+",
-  "src": "meta"
- },
- {
-  "date": "2026-08-20",
-  "cat": "creativo",
-  "text": "Conjunto de anuncios creado · Alba&Co_2026_Conversiones_Purchase_Adv+",
-  "src": "meta"
- },
- {
-  "date": "2026-08-07",
-  "cat": "segmentacion",
-  "text": "Público personalizado creado · asa_auto_custom_audience",
-  "src": "meta"
- },
- {
-  "date": "2026-08-04",
-  "cat": "segmentacion",
-  "text": "Público personalizado creado · asa_auto_custom_audience",
-  "src": "meta"
- },
- {
-  "date": "2026-08-03",
-  "cat": "estado",
-  "text": "Estado de la cuenta actualizado · 498930606964785 (Pago necesario → Activa)",
-  "src": "meta"
- },
- {
-  "date": "2026-07-21",
-  "cat": "estado",
-  "text": "Estado de la cuenta actualizado · 498930606964785 (Activa → Pago necesario)",
-  "src": "meta"
- },
- {
-  "date": "2026-07-18",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Instagram Post (Activo → Eliminado)",
   "src": "meta"
  }
 ]
