@@ -1,5 +1,11 @@
 [
  {
+  "date": "2026-09-04",
+  "cat": "estado",
+  "text": "Estado de la campaña actualizado · PieraCeresa_2026_Conversiones (Activa → Inactiva)",
+  "src": "meta"
+ },
+ {
   "date": "2026-09-03",
   "cat": "estado",
   "text": "Estado del conjunto de anuncios actualizado · PieraCeresa_2026_Conversiones - V.3 (Inactivo → Activo)",
@@ -254,13 +260,13 @@
  {
   "date": "2026-09-02",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · Carrusel Catalogo - Video Nuevo 4 (Procesamiento pendiente → Revisión pendiente)",
+  "text": "Estado del anuncio actualizado · Carrusel Catalogo 2 - Video - AGO - Copia 4 (Procesamiento pendiente → Revisión pendiente)",
   "src": "meta"
  },
  {
   "date": "2026-09-02",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · Carrusel Catalogo 2 - Video - AGO - Copia 4 (Procesamiento pendiente → Revisión pendiente)",
+  "text": "Estado del anuncio actualizado · Carrusel Catalogo - Video Nuevo 4 (Procesamiento pendiente → Revisión pendiente)",
   "src": "meta"
  },
  {
@@ -362,7 +368,7 @@
  {
   "date": "2026-09-02",
   "cat": "creativo",
-  "text": "Anuncio creado · Carrusel Catalogo - Video Nuevo 2",
+  "text": "Anuncio creado · Carrusel Catalogo 2 - Video - AGO - Copia 2",
   "src": "meta"
  },
  {
@@ -386,7 +392,7 @@
  {
   "date": "2026-09-02",
   "cat": "creativo",
-  "text": "Anuncio creado · Carrusel Catalogo 2 - Video - AGO - Copia 2",
+  "text": "Anuncio creado · Carrusel Catalogo - Video Nuevo 2",
   "src": "meta"
  },
  {
@@ -711,12 +717,6 @@
   "date": "2026-08-31",
   "cat": "creativo",
   "text": "Se apagó «Carrusel Catalogo 1 - Video - AGO»",
-  "src": "auto"
- },
- {
-  "date": "2026-08-31",
-  "cat": "creativo",
-  "text": "Se encendió/lanzó «Carrusel Catalogo 2 - Video - AGO - Copia»",
   "src": "auto"
  }
 ]

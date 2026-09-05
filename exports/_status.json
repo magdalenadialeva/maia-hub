@@ -1,51 +1,51 @@
 {
   "piera": {
-    "fetched_at": "2026-09-04",
-    "ok": true,
-    "rows": 181,
-    "empty": false,
-    "through": "2026-09-04"
-  },
-  "mossy": {
-    "fetched_at": "2026-09-04",
-    "ok": true,
-    "rows": 533,
-    "empty": false,
-    "through": "2026-09-04"
-  },
-  "vresia": {
-    "fetched_at": "2026-09-04",
+    "fetched_at": "2026-09-05",
     "ok": true,
     "rows": 179,
     "empty": false,
-    "through": "2026-09-04"
+    "through": "2026-09-05"
+  },
+  "mossy": {
+    "fetched_at": "2026-09-05",
+    "ok": true,
+    "rows": 531,
+    "empty": false,
+    "through": "2026-09-05"
+  },
+  "vresia": {
+    "fetched_at": "2026-09-05",
+    "ok": true,
+    "rows": 180,
+    "empty": false,
+    "through": "2026-09-05"
   },
   "alba": {
-    "fetched_at": "2026-09-04",
+    "fetched_at": "2026-09-05",
     "ok": true,
-    "rows": 65,
+    "rows": 67,
     "empty": false,
-    "through": "2026-09-04"
+    "through": "2026-09-05"
   },
   "paz": {
-    "fetched_at": "2026-09-04",
+    "fetched_at": "2026-09-05",
     "ok": true,
-    "rows": 167,
+    "rows": 168,
     "empty": false,
-    "through": "2026-09-04"
+    "through": "2026-09-05"
   },
   "pulpa": {
-    "fetched_at": "2026-09-04",
+    "fetched_at": "2026-09-05",
     "ok": true,
-    "rows": 25,
+    "rows": 30,
     "empty": false,
-    "through": "2026-09-04"
+    "through": "2026-09-05"
   },
   "saritina-ceramica": {
-    "fetched_at": "2026-09-04",
+    "fetched_at": "2026-09-05",
     "ok": true,
-    "rows": 11,
+    "rows": 12,
     "empty": false,
-    "through": "2026-09-04"
+    "through": "2026-09-05"
   }
 }

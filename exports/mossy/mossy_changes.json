@@ -1,5 +1,29 @@
 [
  {
+  "date": "2026-09-04",
+  "cat": "estado",
+  "text": "Estado de la campaña actualizado · Ago26 - Ventas - CBO - Prospecting - Angulos Nuevos (Procesamiento pendiente → Activa)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-04",
+  "cat": "presupuesto",
+  "text": "Presupuesto de la campaña actualizado · Ago26 - Ventas - CBO - Prospecting - Angulos Nuevos (35.000 → 30.000 ARS/día)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-04",
+  "cat": "presupuesto",
+  "text": "Presupuesto de la campaña actualizado · Ago26 - Ventas - CBO - Prospecting - Angulos Nuevos (25.000 → 35.000 ARS/día)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-04",
+  "cat": "estado",
+  "text": "Estado de la campaña actualizado · Ago26 - Ventas - CBO - Prospecting - Angulos Nuevos (Activa → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
   "date": "2026-09-02",
   "cat": "estado",
   "text": "Estado del anuncio actualizado · Ad3 - Angulo Producto Fit (Revisión pendiente → Activo)",
@@ -693,30 +717,6 @@
   "date": "2026-08-22",
   "cat": "estado",
   "text": "Estado del anuncio actualizado · Ad3 - Angulo Producto Fit (Revisión pendiente → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-22",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Ad2 - Angulo Viaje (Revisión pendiente → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-22",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Ad5 - Video - Sale - Copia (Procesamiento pendiente → Revisión pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-22",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Ad1 - Angulo Anticipo Temporada (Procesamiento pendiente → Revisión pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-22",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Ad3 - Angulo Producto Fit (Procesamiento pendiente → Revisión pendiente)",
   "src": "meta"
  }
 ]

@@ -1,6 +1,102 @@
 [
  {
   "date": "2026-09-04",
+  "cat": "segmentacion",
+  "text": "Público personalizado creado · asa_auto_custom_audience",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-04",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · IG Post 4/9 C - Convocatoria (Dc1FCLwszOO) (Revisión pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-04",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · IG Post 4/9 C - Convocatoria (Dc1FCLwszOO) (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-04",
+  "cat": "creativo",
+  "text": "Anuncio creado · IG Post 4/9 C - Convocatoria (Dc1FCLwszOO)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-04",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · IG Post 4/9 B - Convocatoria (DcoR2g6s-IU)IG Post 29/8 B - Convocatoria (30 días publicidad) - Copia (Procesamiento pendiente → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-04",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado cuando se completa su revisión · IG Post 4/9 B - Convocatoria (DcoR2g6s-IU)IG Post 29/8 B - Convocatoria (30 días publicidad) - Copia (Activo → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-04",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · IG Post 4/9 B - Convocatoria (DcoR2g6s-IU)IG Post 29/8 B - Convocatoria (30 días publicidad) - Copia (Activo → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-04",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · IG Post 4/9 A - Convocatoria (Dc1mR9hsYkW) (Revisión pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-04",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · IG Post 4/9 B - Convocatoria (DcoR2g6s-IU)IG Post 29/8 B - Convocatoria (30 días publicidad) - Copia (Revisión pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-04",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · IG Post 4/9 B - Convocatoria (DcoR2g6s-IU)IG Post 29/8 B - Convocatoria (30 días publicidad) - Copia (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-04",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · IG Post 4/9 A - Convocatoria (Dc1mR9hsYkW) (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-04",
+  "cat": "creativo",
+  "text": "Anuncio creado · IG Post 4/9 B - Convocatoria (DcoR2g6s-IU)IG Post 29/8 B - Convocatoria (30 días publicidad) - Copia",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-04",
+  "cat": "creativo",
+  "text": "Anuncio creado · IG Post 4/9 A - Convocatoria (Dc1mR9hsYkW)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-04",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · 2 - Nueva - Copia (Procesamiento pendiente → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-04",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado cuando se completa su revisión · 2 - Nueva - Copia (Activo → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-04",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · 2 - Nueva - Copia (Activo → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-04",
   "cat": "creativo",
   "text": "Se encendió/lanzó «IG Post 4/9 A - Convocatoria (Dc1mR9hsYkW)»",
   "src": "auto"
@@ -28,6 +124,12 @@
   "cat": "estado",
   "text": "Estado del anuncio actualizado · IG Post 29/8 A - Convocatoria (nuevas convocatorias) (Activo → Procesamiento pendiente)",
   "src": "meta"
+ },
+ {
+  "date": "2026-09-03",
+  "cat": "creativo",
+  "text": "Se apagó «IG Post 29/8 A - Convocatoria (nuevas convocatorias)»",
+  "src": "auto"
  },
  {
   "date": "2026-08-31",
@@ -284,6 +386,12 @@
  {
   "date": "2026-08-23",
   "cat": "estado",
+  "text": "Estado del anuncio actualizado · 2 - Nueva - Copia 2 (Activo → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-08-23",
+  "cat": "estado",
   "text": "Estado del anuncio actualizado · 2 - Nueva - Copia 3 (Activo → Procesamiento pendiente)",
   "src": "meta"
  },
@@ -297,12 +405,6 @@
   "date": "2026-08-23",
   "cat": "estado",
   "text": "Estado del anuncio actualizado · Nuevo anuncio de Clientes potenciales - Copia 4 (Activo → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-23",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · 2 - Nueva - Copia 2 (Activo → Procesamiento pendiente)",
   "src": "meta"
  },
  {
@@ -452,13 +554,7 @@
  {
   "date": "2026-08-10",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · 2 - Nueva (Inactivo → Eliminado)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-10",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · 3 - Nueva (Inactivo → Eliminado)",
+  "text": "Estado del anuncio actualizado · 1 - Nueva (Revisión pendiente → Eliminado)",
   "src": "meta"
  },
  {
@@ -470,13 +566,19 @@
  {
   "date": "2026-08-10",
   "cat": "estado",
+  "text": "Estado del anuncio actualizado · 2 - Nueva (Inactivo → Eliminado)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-08-10",
+  "cat": "estado",
   "text": "Estado del anuncio actualizado · 2 - Nueva - Copia 4 (Revisión pendiente → Eliminado)",
   "src": "meta"
  },
  {
   "date": "2026-08-10",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · 1 - Nueva (Revisión pendiente → Eliminado)",
+  "text": "Estado del anuncio actualizado · 3 - Nueva (Inactivo → Eliminado)",
   "src": "meta"
  },
  {
@@ -542,7 +644,7 @@
  {
   "date": "2026-08-10",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · 3 - Nueva (Procesamiento pendiente → Revisión pendiente)",
+  "text": "Estado del anuncio actualizado · Nuevo anuncio de Clientes potenciales - Copia 3 (Procesamiento pendiente → Revisión pendiente)",
   "src": "meta"
  },
  {
@@ -560,7 +662,7 @@
  {
   "date": "2026-08-10",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · Nuevo anuncio de Clientes potenciales - Copia 3 (Procesamiento pendiente → Revisión pendiente)",
+  "text": "Estado del anuncio actualizado · 3 - Nueva (Procesamiento pendiente → Revisión pendiente)",
   "src": "meta"
  },
  {
@@ -616,107 +718,5 @@
   "cat": "estado",
   "text": "Estado del anuncio actualizado cuando se completa su revisión · 1 - Nueva (Activo → Inactivo)",
   "src": "meta"
- },
- {
-  "date": "2026-08-10",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · 1 - Nueva (Activo → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-10",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · 3 - Nueva (Activo → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-10",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · 3 - Nueva (Activo → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-10",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · 2 - Nueva - Copia 3 (Procesamiento pendiente → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-10",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · 2 - Nueva - Copia 3 (Inactivo → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-10",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · 2 - Nueva - Copia 3 (Inactivo → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-10",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · 2 - Nueva (Procesamiento pendiente → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-10",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · 2 - Nueva - Copia 3 (Procesamiento pendiente → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-10",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · 2 - Nueva (Activo → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-10",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · 2 - Nueva (Activo → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-10",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · 2 - Nueva - Copia 3 (Activo → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-10",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · 2 - Nueva - Copia 3 (Activo → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-10",
-  "cat": "creativo",
-  "text": "Se apagó «Nuevo anuncio de Clientes potenciales - Copia 3»",
-  "src": "auto"
- },
- {
-  "date": "2026-08-10",
-  "cat": "creativo",
-  "text": "Se apagó «1 - Nueva»",
-  "src": "auto"
- },
- {
-  "date": "2026-08-10",
-  "cat": "creativo",
-  "text": "Se apagó «3 - Nueva»",
-  "src": "auto"
- },
- {
-  "date": "2026-08-10",
-  "cat": "creativo",
-  "text": "Se apagó «2 - Nueva»",
-  "src": "auto"
- },
- {
-  "date": "2026-08-10",
-  "cat": "creativo",
-  "text": "Se encendió/lanzó «Nuevo anuncio de Clientes potenciales - Copia 4»",
-  "src": "auto"
  }
 ]
