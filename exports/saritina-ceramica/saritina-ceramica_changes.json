@@ -1,33 +1,51 @@
 [
  {
+  "date": "2026-09-06",
+  "cat": "creativo",
+  "text": "Se reactivó «Ad_Video_3»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-09-05",
+  "cat": "creativo",
+  "text": "Se reactivó «Ad_Video_1»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-09-05",
+  "cat": "creativo",
+  "text": "Se reactivó «Ad_Video_2»",
+  "src": "auto"
+ },
+ {
   "date": "2026-09-03",
   "cat": "estado",
   "text": "Estado de la cuenta actualizado · SARITINA CERAMICA (Pago necesario → Activa)",
   "src": "meta"
  },
  {
+  "date": "2026-09-03",
+  "cat": "creativo",
+  "text": "Se pausó «Ad_Video_1»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-09-03",
+  "cat": "creativo",
+  "text": "Se pausó «Ad_Video_2»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-09-03",
+  "cat": "creativo",
+  "text": "Se pausó «Ad_Video_3»",
+  "src": "auto"
+ },
+ {
   "date": "2026-09-02",
   "cat": "estado",
   "text": "Estado de la cuenta actualizado · SARITINA CERAMICA (Activa → En período de gracia)",
   "src": "meta"
- },
- {
-  "date": "2026-09-02",
-  "cat": "creativo",
-  "text": "Se apagó «Ad_Video_1»",
-  "src": "auto"
- },
- {
-  "date": "2026-09-02",
-  "cat": "creativo",
-  "text": "Se apagó «Ad_Video_2»",
-  "src": "auto"
- },
- {
-  "date": "2026-09-02",
-  "cat": "creativo",
-  "text": "Se apagó «Ad_Video_3»",
-  "src": "auto"
  },
  {
   "date": "2026-09-01",
@@ -56,25 +74,25 @@
  {
   "date": "2026-09-01",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · Ad_Video_3 (Activo → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-01",
-  "cat": "estado",
   "text": "Estado del anuncio actualizado · Ad_Video_4 (Activo → Procesamiento pendiente)",
   "src": "meta"
  },
  {
   "date": "2026-09-01",
-  "cat": "creativo",
-  "text": "Anuncio actualizado · Ad_Video_3",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Ad_Video_3 (Activo → Procesamiento pendiente)",
   "src": "meta"
  },
  {
   "date": "2026-09-01",
   "cat": "creativo",
   "text": "Anuncio actualizado · Ad_Video_4",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-01",
+  "cat": "creativo",
+  "text": "Anuncio actualizado · Ad_Video_3",
   "src": "meta"
  },
  {

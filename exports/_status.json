@@ -1,51 +1,51 @@
 {
   "piera": {
-    "fetched_at": "2026-09-05",
+    "fetched_at": "2026-09-06",
     "ok": true,
-    "rows": 179,
+    "rows": 177,
     "empty": false,
     "through": "2026-09-05"
   },
   "mossy": {
-    "fetched_at": "2026-09-05",
+    "fetched_at": "2026-09-06",
     "ok": true,
-    "rows": 531,
+    "rows": 534,
     "empty": false,
-    "through": "2026-09-05"
+    "through": "2026-09-06"
   },
   "vresia": {
-    "fetched_at": "2026-09-05",
+    "fetched_at": "2026-09-06",
     "ok": true,
-    "rows": 180,
+    "rows": 181,
     "empty": false,
-    "through": "2026-09-05"
+    "through": "2026-09-06"
   },
   "alba": {
-    "fetched_at": "2026-09-05",
+    "fetched_at": "2026-09-06",
     "ok": true,
-    "rows": 67,
+    "rows": 69,
     "empty": false,
-    "through": "2026-09-05"
+    "through": "2026-09-06"
   },
   "paz": {
-    "fetched_at": "2026-09-05",
+    "fetched_at": "2026-09-06",
     "ok": true,
-    "rows": 168,
+    "rows": 169,
     "empty": false,
-    "through": "2026-09-05"
+    "through": "2026-09-06"
   },
   "pulpa": {
-    "fetched_at": "2026-09-05",
+    "fetched_at": "2026-09-06",
     "ok": true,
-    "rows": 30,
+    "rows": 33,
     "empty": false,
-    "through": "2026-09-05"
+    "through": "2026-09-06"
   },
   "saritina-ceramica": {
-    "fetched_at": "2026-09-05",
+    "fetched_at": "2026-09-06",
     "ok": true,
-    "rows": 12,
+    "rows": 17,
     "empty": false,
-    "through": "2026-09-05"
+    "through": "2026-09-06"
   }
 }

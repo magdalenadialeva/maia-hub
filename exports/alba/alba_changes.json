@@ -1,8 +1,56 @@
 [
  {
-  "date": "2026-09-04",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Catalogo_4 ¿Es un varón? (Procesamiento pendiente → Inactivo)",
+  "date": "2026-09-05",
+  "cat": "segmentacion",
+  "text": "Público personalizado actualizado · asa_auto_custom_audience ({\"inclusions\":{\"operator\":\"or\",\"rules\":[{\"event_sources\":[{\"type\":\"pixel\",\"id\":363601748410463}],\"retention_seconds\":15552000,\"filter\":{\"operator\":\"and\",\"filters\":[{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"InitiateCheckout\"}]},\"aggregation\":{\"type\":\"sum\",\"method\":\"absolute\",\"field\":\"value\",\"operator\":\">=\",\"value\":0}}]}} → {\"inclusions\":{\"operator\":\"or\",\"rules\":[{\"event_sources\":[{\"type\":\"pixel\",\"id\":363601748410463},{\"type\":\"pixel\",\"id\":767342713085602}],\"retention_seconds\":15552000,\"filter\":{\"operator\":\"and\",\"filters\":[{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"InitiateCheckout\"}]},\"aggregation\":{\"type\":\"sum\",\"method\":\"absolute\",\"field\":\"value\",\"operator\":\">=\",\"value\":0}}]}})",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-05",
+  "cat": "segmentacion",
+  "text": "Público personalizado actualizado · asa_auto_custom_audience ({\"inclusions\":{\"operator\":\"or\",\"rules\":[{\"event_sources\":[{\"type\":\"pixel\",\"id\":363601748410463}],\"retention_seconds\":15552000,\"filter\":{\"operator\":\"and\",\"filters\":[{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"AddToCart\"}]},\"aggregation\":{\"type\":\"sum\",\"method\":\"absolute\",\"field\":\"value\",\"operator\":\">=\",\"value\":0}}]}} → {\"inclusions\":{\"operator\":\"or\",\"rules\":[{\"event_sources\":[{\"type\":\"pixel\",\"id\":363601748410463},{\"type\":\"pixel\",\"id\":767342713085602}],\"retention_seconds\":15552000,\"filter\":{\"operator\":\"and\",\"filters\":[{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"AddToCart\"}]},\"aggregation\":{\"type\":\"sum\",\"method\":\"absolute\",\"field\":\"value\",\"operator\":\">=\",\"value\":0}}]}})",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-05",
+  "cat": "segmentacion",
+  "text": "Público personalizado actualizado · asa_auto_custom_audience ({\"inclusions\":{\"operator\":\"or\",\"rules\":[{\"event_sources\":[{\"type\":\"pixel\",\"id\":363601748410463}],\"retention_seconds\":15552000,\"filter\":{\"operator\":\"and\",\"filters\":[{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"ViewContent\"}]},\"aggregation\":{\"type\":\"sum\",\"method\":\"absolute\",\"field\":\"value\",\"operator\":\">=\",\"value\":0}}]}} → {\"inclusions\":{\"operator\":\"or\",\"rules\":[{\"event_sources\":[{\"type\":\"pixel\",\"id\":363601748410463},{\"type\":\"pixel\",\"id\":767342713085602}],\"retention_seconds\":15552000,\"filter\":{\"operator\":\"and\",\"filters\":[{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"ViewContent\"}]},\"aggregation\":{\"type\":\"sum\",\"method\":\"absolute\",\"field\":\"value\",\"operator\":\">=\",\"value\":0}}]}})",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-05",
+  "cat": "segmentacion",
+  "text": "Público personalizado actualizado · asa_auto_custom_audience ({\"inclusions\":{\"operator\":\"or\",\"rules\":[{\"event_sources\":[{\"type\":\"pixel\",\"id\":363601748410463}],\"retention_seconds\":15552000,\"filter\":{\"operator\":\"and\",\"filters\":[{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"InitiateCheckout\"}]},\"aggregation\":{\"type\":\"count\",\"method\":\"absolute\",\"operator\":\">=\",\"value\":0}}]}} → {\"inclusions\":{\"operator\":\"or\",\"rules\":[{\"event_sources\":[{\"type\":\"pixel\",\"id\":363601748410463},{\"type\":\"pixel\",\"id\":767342713085602}],\"retention_seconds\":15552000,\"filter\":{\"operator\":\"and\",\"filters\":[{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"InitiateCheckout\"}]},\"aggregation\":{\"type\":\"count\",\"method\":\"absolute\",\"operator\":\">=\",\"value\":0}}]}})",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-05",
+  "cat": "segmentacion",
+  "text": "Público personalizado actualizado · asa_auto_custom_audience ({\"inclusions\":{\"operator\":\"or\",\"rules\":[{\"event_sources\":[{\"type\":\"pixel\",\"id\":363601748410463}],\"retention_seconds\":15552000,\"filter\":{\"operator\":\"and\",\"filters\":[{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"Purchase\"}]},\"aggregation\":{\"type\":\"sum\",\"method\":\"absolute\",\"field\":\"value\",\"operator\":\">=\",\"value\":0}}]}} → {\"inclusions\":{\"operator\":\"or\",\"rules\":[{\"event_sources\":[{\"type\":\"pixel\",\"id\":363601748410463},{\"type\":\"pixel\",\"id\":767342713085602}],\"retention_seconds\":15552000,\"filter\":{\"operator\":\"and\",\"filters\":[{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"Purchase\"}]},\"aggregation\":{\"type\":\"sum\",\"method\":\"absolute\",\"field\":\"value\",\"operator\":\">=\",\"value\":0}}]}})",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-05",
+  "cat": "segmentacion",
+  "text": "Público personalizado actualizado · asa_auto_custom_audience ({\"inclusions\":{\"operator\":\"or\",\"rules\":[{\"event_sources\":[{\"type\":\"pixel\",\"id\":363601748410463}],\"retention_seconds\":15552000,\"filter\":{\"operator\":\"and\",\"filters\":[{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"ViewContent\"}]},\"aggregation\":{\"type\":\"count\",\"method\":\"absolute\",\"operator\":\">=\",\"value\":0}}]}} → {\"inclusions\":{\"operator\":\"or\",\"rules\":[{\"event_sources\":[{\"type\":\"pixel\",\"id\":363601748410463},{\"type\":\"pixel\",\"id\":767342713085602}],\"retention_seconds\":15552000,\"filter\":{\"operator\":\"and\",\"filters\":[{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"ViewContent\"}]},\"aggregation\":{\"type\":\"count\",\"method\":\"absolute\",\"operator\":\">=\",\"value\":0}}]}})",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-05",
+  "cat": "segmentacion",
+  "text": "Público personalizado actualizado · asa_auto_custom_audience ({\"inclusions\":{\"operator\":\"or\",\"rules\":[{\"event_sources\":[{\"type\":\"pixel\",\"id\":363601748410463}],\"retention_seconds\":15552000,\"filter\":{\"operator\":\"and\",\"filters\":[{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"PageView\"}]},\"aggregation\":{\"type\":\"count\",\"method\":\"absolute\",\"operator\":\">=\",\"value\":0}}]}} → {\"inclusions\":{\"operator\":\"or\",\"rules\":[{\"event_sources\":[{\"type\":\"pixel\",\"id\":363601748410463},{\"type\":\"pixel\",\"id\":767342713085602}],\"retention_seconds\":15552000,\"filter\":{\"operator\":\"and\",\"filters\":[{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"PageView\"}]},\"aggregation\":{\"type\":\"count\",\"method\":\"absolute\",\"operator\":\">=\",\"value\":0}}]}})",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-05",
+  "cat": "segmentacion",
+  "text": "Público personalizado actualizado · asa_auto_custom_audience ({\"inclusions\":{\"operator\":\"or\",\"rules\":[{\"event_sources\":[{\"type\":\"pixel\",\"id\":363601748410463}],\"retention_seconds\":15552000,\"filter\":{\"operator\":\"and\",\"filters\":[{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"AddToCart\"}]},\"aggregation\":{\"type\":\"count\",\"method\":\"absolute\",\"operator\":\">=\",\"value\":0}}]}} → {\"inclusions\":{\"operator\":\"or\",\"rules\":[{\"event_sources\":[{\"type\":\"pixel\",\"id\":363601748410463},{\"type\":\"pixel\",\"id\":767342713085602}],\"retention_seconds\":15552000,\"filter\":{\"operator\":\"and\",\"filters\":[{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"AddToCart\"}]},\"aggregation\":{\"type\":\"count\",\"method\":\"absolute\",\"operator\":\">=\",\"value\":0}}]}})",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-05",
+  "cat": "segmentacion",
+  "text": "Público personalizado actualizado · asa_auto_custom_audience ({\"inclusions\":{\"operator\":\"or\",\"rules\":[{\"event_sources\":[{\"type\":\"pixel\",\"id\":363601748410463}],\"retention_seconds\":15552000,\"filter\":{\"operator\":\"and\",\"filters\":[{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"Purchase\"}]},\"aggregation\":{\"type\":\"count\",\"method\":\"absolute\",\"operator\":\">=\",\"value\":0}}]}} → {\"inclusions\":{\"operator\":\"or\",\"rules\":[{\"event_sources\":[{\"type\":\"pixel\",\"id\":363601748410463},{\"type\":\"pixel\",\"id\":767342713085602}],\"retention_seconds\":15552000,\"filter\":{\"operator\":\"and\",\"filters\":[{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"Purchase\"}]},\"aggregation\":{\"type\":\"count\",\"method\":\"absolute\",\"operator\":\">=\",\"value\":0}}]}})",
   "src": "meta"
  },
  {
@@ -15,6 +63,12 @@
   "date": "2026-09-04",
   "cat": "estado",
   "text": "Estado del anuncio actualizado · Catalogo_2 (Procesamiento pendiente → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-04",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Catalogo_4 ¿Es un varón? (Procesamiento pendiente → Inactivo)",
   "src": "meta"
  },
  {
@@ -38,6 +92,12 @@
  {
   "date": "2026-09-04",
   "cat": "estado",
+  "text": "Estado del anuncio actualizado cuando se completa su revisión · Catalogo_Karla (Activo → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-04",
+  "cat": "estado",
   "text": "Estado del anuncio actualizado · Catalogo_2 (Activo → Procesamiento pendiente)",
   "src": "meta"
  },
@@ -45,6 +105,12 @@
   "date": "2026-09-04",
   "cat": "estado",
   "text": "Estado del anuncio actualizado · Catalogo_4 ¿Es un varón? (Activo → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-04",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Catalogo_Karla (Activo → Procesamiento pendiente)",
   "src": "meta"
  },
  {
@@ -58,6 +124,12 @@
   "cat": "estado",
   "text": "Estado del anuncio actualizado · Catalogo_5 (Activo → Procesamiento pendiente)",
   "src": "meta"
+ },
+ {
+  "date": "2026-09-04",
+  "cat": "creativo",
+  "text": "Se apagó «Catalogo_2»",
+  "src": "auto"
  },
  {
   "date": "2026-09-03",
@@ -254,6 +326,12 @@
  {
   "date": "2026-09-01",
   "cat": "estado",
+  "text": "Estado del anuncio actualizado · Catalogo_3 (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-01",
+  "cat": "estado",
   "text": "Estado del anuncio actualizado · Catalogo_4 ¿Es un varón? (Procesamiento pendiente → Revisión pendiente)",
   "src": "meta"
  },
@@ -266,19 +344,13 @@
  {
   "date": "2026-09-01",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · Catalogo_Karla (Procesamiento pendiente → Revisión pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-01",
-  "cat": "estado",
   "text": "Estado del anuncio actualizado · Catalogo_2 (Procesamiento pendiente → Revisión pendiente)",
   "src": "meta"
  },
  {
   "date": "2026-09-01",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · Catalogo_3 (Procesamiento pendiente → Revisión pendiente)",
+  "text": "Estado del anuncio actualizado · Catalogo_Karla (Procesamiento pendiente → Revisión pendiente)",
   "src": "meta"
  },
  {
@@ -314,12 +386,6 @@
  {
   "date": "2026-08-31",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · Catalogo_3 (Procesamiento pendiente → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-31",
-  "cat": "estado",
   "text": "Estado del anuncio actualizado · Catalogo_4 ¿Es un varón? (Procesamiento pendiente → Inactivo)",
   "src": "meta"
  },
@@ -332,13 +398,19 @@
  {
   "date": "2026-08-31",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · Catalogo_2 (Procesamiento pendiente → Inactivo)",
+  "text": "Estado del anuncio actualizado · Catalogo_3 (Procesamiento pendiente → Inactivo)",
   "src": "meta"
  },
  {
   "date": "2026-08-31",
   "cat": "estado",
   "text": "Estado del anuncio actualizado · Catalogo_Karla (Procesamiento pendiente → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-08-31",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Catalogo_2 (Procesamiento pendiente → Inactivo)",
   "src": "meta"
  },
  {
@@ -440,13 +512,13 @@
  {
   "date": "2026-08-28",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · Catalogo_Karla (Procesamiento pendiente → Activo)",
+  "text": "Estado del anuncio actualizado · Catalogo_4 ¿Es un varón? (Procesamiento pendiente → Activo)",
   "src": "meta"
  },
  {
   "date": "2026-08-28",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · Catalogo_4 ¿Es un varón? (Procesamiento pendiente → Activo)",
+  "text": "Estado del anuncio actualizado · Catalogo_Karla (Procesamiento pendiente → Activo)",
   "src": "meta"
  },
  {
@@ -470,13 +542,13 @@
  {
   "date": "2026-08-28",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · Catalogo_5 (Inactivo → Activo)",
+  "text": "Estado del anuncio actualizado cuando se completa su revisión · Catalogo_4 ¿Es un varón? (Inactivo → Activo)",
   "src": "meta"
  },
  {
   "date": "2026-08-28",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · Catalogo_2 (Inactivo → Activo)",
+  "text": "Estado del anuncio actualizado cuando se completa su revisión · Catalogo_5 (Inactivo → Activo)",
   "src": "meta"
  },
  {
@@ -488,13 +560,7 @@
  {
   "date": "2026-08-28",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · Catalogo_4 ¿Es un varón? (Inactivo → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-28",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Catalogo_5 (Inactivo → Procesamiento pendiente)",
+  "text": "Estado del anuncio actualizado cuando se completa su revisión · Catalogo_2 (Inactivo → Activo)",
   "src": "meta"
  },
  {
@@ -506,13 +572,19 @@
  {
   "date": "2026-08-28",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · Catalogo_Karla (Inactivo → Procesamiento pendiente)",
+  "text": "Estado del anuncio actualizado · Catalogo_5 (Inactivo → Procesamiento pendiente)",
   "src": "meta"
  },
  {
   "date": "2026-08-28",
   "cat": "estado",
   "text": "Estado del anuncio actualizado · Catalogo_2 (Inactivo → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-08-28",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Catalogo_Karla (Inactivo → Procesamiento pendiente)",
   "src": "meta"
  },
  {
@@ -645,78 +717,6 @@
   "date": "2026-08-24",
   "cat": "otros",
   "text": "Nombre del anuncio actualizado · Catalogo_5 (Catalogo_4 ¿Es un varón? - Copy → Catalogo_5)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-24",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Catalogo_Karla (Procesamiento pendiente → Revisión pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-24",
-  "cat": "creativo",
-  "text": "Anuncio creado · Catalogo_5",
-  "src": "meta"
- },
- {
-  "date": "2026-08-24",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Catalogo_4 ¿Es un varón? (Procesamiento pendiente → Revisión pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-24",
-  "cat": "creativo",
-  "text": "Anuncio creado · Catalogo_Karla",
-  "src": "meta"
- },
- {
-  "date": "2026-08-24",
-  "cat": "creativo",
-  "text": "Anuncio creado · Catalogo_4 ¿Es un varón?",
-  "src": "meta"
- },
- {
-  "date": "2026-08-24",
-  "cat": "creativo",
-  "text": "Se encendió/lanzó «Catalogo_4 ¿Es un varón?»",
-  "src": "auto"
- },
- {
-  "date": "2026-08-24",
-  "cat": "creativo",
-  "text": "Se encendió/lanzó «Catalogo_Karla»",
-  "src": "auto"
- },
- {
-  "date": "2026-08-24",
-  "cat": "creativo",
-  "text": "Se encendió/lanzó «Catalogo_5»",
-  "src": "auto"
- },
- {
-  "date": "2026-08-21",
-  "cat": "estado",
-  "text": "Estado de la campaña actualizado · Publicación de Instagram: Sabían que la granola... (Activa → Inactiva)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-21",
-  "cat": "estado",
-  "text": "Estado de la campaña actualizado · Publicación de Instagram: De los más elegidos 🏹🫶🏼... (Activa → Inactiva)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-21",
-  "cat": "estado",
-  "text": "Estado de la campaña actualizado · Publicación de Instagram: Buen domingo 🤎\nTodos... (Activa → Inactiva)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-21",
-  "cat": "estado",
-  "text": "Estado de la campaña actualizado · Publicación de Instagram: VUELEEEEN TODO 💣 \n\n. (... (Activa → Inactiva)",
   "src": "meta"
  }
 ]

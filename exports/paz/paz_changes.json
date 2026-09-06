@@ -98,6 +98,12 @@
  {
   "date": "2026-09-04",
   "cat": "creativo",
+  "text": "Se apagó «2 - Nueva - Copia»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-09-04",
+  "cat": "creativo",
   "text": "Se encendió/lanzó «IG Post 4/9 A - Convocatoria (Dc1mR9hsYkW)»",
   "src": "auto"
  },
@@ -386,12 +392,6 @@
  {
   "date": "2026-08-23",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · 2 - Nueva - Copia 2 (Activo → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-23",
-  "cat": "estado",
   "text": "Estado del anuncio actualizado · 2 - Nueva - Copia 3 (Activo → Procesamiento pendiente)",
   "src": "meta"
  },
@@ -405,6 +405,12 @@
   "date": "2026-08-23",
   "cat": "estado",
   "text": "Estado del anuncio actualizado · Nuevo anuncio de Clientes potenciales - Copia 4 (Activo → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-08-23",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · 2 - Nueva - Copia 2 (Activo → Procesamiento pendiente)",
   "src": "meta"
  },
  {
@@ -554,13 +560,13 @@
  {
   "date": "2026-08-10",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · 1 - Nueva (Revisión pendiente → Eliminado)",
+  "text": "Estado del anuncio actualizado · 2 - Nueva - Copia 4 (Revisión pendiente → Eliminado)",
   "src": "meta"
  },
  {
   "date": "2026-08-10",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · Nuevo anuncio de Clientes potenciales - Copia 3 (Inactivo → Eliminado)",
+  "text": "Estado del anuncio actualizado · 3 - Nueva (Inactivo → Eliminado)",
   "src": "meta"
  },
  {
@@ -572,13 +578,13 @@
  {
   "date": "2026-08-10",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · 2 - Nueva - Copia 4 (Revisión pendiente → Eliminado)",
+  "text": "Estado del anuncio actualizado · Nuevo anuncio de Clientes potenciales - Copia 3 (Inactivo → Eliminado)",
   "src": "meta"
  },
  {
   "date": "2026-08-10",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · 3 - Nueva (Inactivo → Eliminado)",
+  "text": "Estado del anuncio actualizado · 1 - Nueva (Revisión pendiente → Eliminado)",
   "src": "meta"
  },
  {
@@ -711,12 +717,6 @@
   "date": "2026-08-10",
   "cat": "estado",
   "text": "Estado del anuncio actualizado · 3 - Nueva (Procesamiento pendiente → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-10",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · 1 - Nueva (Activo → Inactivo)",
   "src": "meta"
  }
 ]
