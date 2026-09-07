@@ -1,5 +1,35 @@
 [
  {
+  "date": "2026-09-07",
+  "cat": "creativo",
+  "text": "Se encendió/lanzó «Si cuando limpias tu trapo queda así… NO LO TIRES!»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-09-07",
+  "cat": "creativo",
+  "text": "Se encendió/lanzó «Así lavo mis toallas»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-09-07",
+  "cat": "creativo",
+  "text": "Se encendió/lanzó «Si hubiera desarrollado esto antes»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-09-07",
+  "cat": "creativo",
+  "text": "Se encendió/lanzó «Converse Blancas»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-09-07",
+  "cat": "creativo",
+  "text": "Se encendió/lanzó «Yo se que vos y yo...»",
+  "src": "auto"
+ },
+ {
   "date": "2026-09-05",
   "cat": "estado",
   "text": "Estado del conjunto de anuncios actualizado · Pulpa Verde_Conversiones_Purchase_2026_Adv+ (Inactivo → Activo)",
@@ -22,6 +52,18 @@
   "cat": "estado",
   "text": "Estado de la cuenta actualizado · Pulpa Cuenta publicitaria (Activa → En período de gracia)",
   "src": "meta"
+ },
+ {
+  "date": "2026-09-05",
+  "cat": "creativo",
+  "text": "Se apagó «Ad_Converse»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-09-05",
+  "cat": "creativo",
+  "text": "Se apagó «Ad_Manchas»",
+  "src": "auto"
  },
  {
   "date": "2026-09-04",
@@ -110,19 +152,7 @@
  {
   "date": "2026-09-04",
   "cat": "creativo",
-  "text": "Anuncio creado · Ad_Osito",
-  "src": "meta"
- },
- {
-  "date": "2026-09-04",
-  "cat": "creativo",
-  "text": "Anuncio creado · Ad_Toallas",
-  "src": "meta"
- },
- {
-  "date": "2026-09-04",
-  "cat": "creativo",
-  "text": "Anuncio creado · Ad_Manchas",
+  "text": "Anuncio creado · Ad_Vans",
   "src": "meta"
  },
  {
@@ -134,7 +164,19 @@
  {
   "date": "2026-09-04",
   "cat": "creativo",
-  "text": "Anuncio creado · Ad_Vans",
+  "text": "Anuncio creado · Ad_Manchas",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-04",
+  "cat": "creativo",
+  "text": "Anuncio creado · Ad_Toallas",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-04",
+  "cat": "creativo",
+  "text": "Anuncio creado · Ad_Osito",
   "src": "meta"
  },
  {
@@ -178,12 +220,6 @@
   "cat": "estado",
   "text": "Estado de la cuenta actualizado · Pulpa Cuenta publicitaria (Activa → Pago necesario)",
   "src": "meta"
- },
- {
-  "date": "2026-09-04",
-  "cat": "creativo",
-  "text": "Se apagó «Ad_Osito»",
-  "src": "auto"
  },
  {
   "date": "2026-09-03",
@@ -338,13 +374,13 @@
  {
   "date": "2026-09-01",
   "cat": "creativo",
-  "text": "Anuncio actualizado · Ad_Manchas",
+  "text": "Anuncio actualizado · Ad_Converse",
   "src": "meta"
  },
  {
   "date": "2026-09-01",
   "cat": "creativo",
-  "text": "Anuncio actualizado · Ad_Converse",
+  "text": "Anuncio actualizado · Ad_Manchas",
   "src": "meta"
  },
  {
@@ -404,19 +440,13 @@
  {
   "date": "2026-09-01",
   "cat": "creativo",
-  "text": "Anuncio creado · Ad_Osito",
-  "src": "meta"
- },
- {
-  "date": "2026-09-01",
-  "cat": "creativo",
-  "text": "Anuncio creado · Ad_Toallas",
-  "src": "meta"
- },
- {
-  "date": "2026-09-01",
-  "cat": "creativo",
   "text": "Anuncio creado · Ad_Manchas",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-01",
+  "cat": "creativo",
+  "text": "Anuncio creado · Ad_Vans",
   "src": "meta"
  },
  {
@@ -428,7 +458,13 @@
  {
   "date": "2026-09-01",
   "cat": "creativo",
-  "text": "Anuncio creado · Ad_Vans",
+  "text": "Anuncio creado · Ad_Osito",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-01",
+  "cat": "creativo",
+  "text": "Anuncio creado · Ad_Toallas",
   "src": "meta"
  },
  {
