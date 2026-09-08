@@ -1,6 +1,108 @@
 [
  {
   "date": "2026-09-07",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Yo se que vos y yo... (Revisión pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-07",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Converse Blancas (Revisión pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-07",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Converse Blancas (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-07",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Si hubiera desarrollado esto antes (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-07",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Así lavo mis toallas (Revisión pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-07",
+  "cat": "creativo",
+  "text": "Anuncio creado · Si hubiera desarrollado esto antes",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-07",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Si cuando limpias tu trapo queda así… NO LO TIRES! (Revisión pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-07",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Así lavo mis toallas (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-07",
+  "cat": "creativo",
+  "text": "Anuncio creado · Así lavo mis toallas",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-07",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Si cuando limpias tu trapo queda así… NO LO TIRES! (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-07",
+  "cat": "estado",
+  "text": "Estado del conjunto de anuncios actualizado · Pulpa Verde_Conversiones_Org_Purchase_2026_Adv+ (Procesamiento pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-07",
+  "cat": "creativo",
+  "text": "Anuncio creado · Si cuando limpias tu trapo queda así… NO LO TIRES!",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-07",
+  "cat": "otros",
+  "text": "Segmentación del conjunto de anuncios actualizada · Pulpa Verde_Conversiones_Org_Purchase_2026_Adv+",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-07",
+  "cat": "objetivo",
+  "text": "Objetivo de optimización del conjunto de anuncios actualizado · Pulpa Verde_Conversiones_Org_Purchase_2026_Adv+",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-07",
+  "cat": "presupuesto",
+  "text": "Estrategia de puja del conjunto de anuncios actualizada · Pulpa Verde_Conversiones_Org_Purchase_2026_Adv+",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-07",
+  "cat": "creativo",
+  "text": "Conjunto de anuncios creado · Pulpa Verde_Conversiones_Org_Purchase_2026_Adv+",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-07",
+  "cat": "estado",
+  "text": "Estado del conjunto de anuncios actualizado · Pulpa Verde_Conversiones_Purchase_2026_Adv+ (Activo → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-07",
   "cat": "creativo",
   "text": "Se encendió/lanzó «Si cuando limpias tu trapo queda así… NO LO TIRES!»",
   "src": "auto"
@@ -27,6 +129,18 @@
   "date": "2026-09-07",
   "cat": "creativo",
   "text": "Se encendió/lanzó «Yo se que vos y yo...»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-09-06",
+  "cat": "creativo",
+  "text": "Se apagó «Ad_Vans»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-09-06",
+  "cat": "creativo",
+  "text": "Se apagó «Ad_Osito»",
   "src": "auto"
  },
  {
@@ -110,13 +224,7 @@
  {
   "date": "2026-09-04",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · Ad_Osito (Procesamiento pendiente → Revisión pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-04",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Ad_Manchas (Procesamiento pendiente → Revisión pendiente)",
+  "text": "Estado del anuncio actualizado · Ad_Toallas (Procesamiento pendiente → Revisión pendiente)",
   "src": "meta"
  },
  {
@@ -128,7 +236,13 @@
  {
   "date": "2026-09-04",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · Ad_Toallas (Procesamiento pendiente → Revisión pendiente)",
+  "text": "Estado del anuncio actualizado · Ad_Manchas (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-04",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Ad_Osito (Procesamiento pendiente → Revisión pendiente)",
   "src": "meta"
  },
  {
@@ -260,13 +374,13 @@
  {
   "date": "2026-09-01",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · Ad_Osito (Revisión pendiente → Activo)",
+  "text": "Estado del anuncio actualizado · Ad_Vans (Revisión pendiente → Activo)",
   "src": "meta"
  },
  {
   "date": "2026-09-01",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · Ad_Vans (Revisión pendiente → Activo)",
+  "text": "Estado del anuncio actualizado · Ad_Osito (Revisión pendiente → Activo)",
   "src": "meta"
  },
  {
@@ -290,13 +404,13 @@
  {
   "date": "2026-09-01",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · Ad_Vans (Procesamiento pendiente → Revisión pendiente)",
+  "text": "Estado del anuncio actualizado · Ad_Toallas (Procesamiento pendiente → Revisión pendiente)",
   "src": "meta"
  },
  {
   "date": "2026-09-01",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · Ad_Toallas (Procesamiento pendiente → Revisión pendiente)",
+  "text": "Estado del anuncio actualizado · Ad_Vans (Procesamiento pendiente → Revisión pendiente)",
   "src": "meta"
  },
  {
@@ -308,13 +422,7 @@
  {
   "date": "2026-09-01",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · Ad_Vans (Activo → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-01",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Ad_Converse (Activo → Procesamiento pendiente)",
+  "text": "Estado del anuncio actualizado · Ad_Vans (Revisión pendiente → Procesamiento pendiente)",
   "src": "meta"
  },
  {
@@ -326,25 +434,7 @@
  {
   "date": "2026-09-01",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · Ad_Osito (Revisión pendiente → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-01",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Ad_Vans (Revisión pendiente → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-01",
-  "cat": "estado",
   "text": "Estado del anuncio actualizado · Ad_Toallas (Activo → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-01",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Ad_Converse (Revisión pendiente → Procesamiento pendiente)",
   "src": "meta"
  },
  {
@@ -361,6 +451,30 @@
  },
  {
   "date": "2026-09-01",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Ad_Converse (Revisión pendiente → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-01",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Ad_Osito (Revisión pendiente → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-01",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Ad_Converse (Activo → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-01",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Ad_Vans (Activo → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-01",
   "cat": "creativo",
   "text": "Anuncio actualizado · Ad_Osito",
   "src": "meta"
@@ -368,7 +482,7 @@
  {
   "date": "2026-09-01",
   "cat": "creativo",
-  "text": "Anuncio actualizado · Ad_Toallas",
+  "text": "Anuncio actualizado · Ad_Vans",
   "src": "meta"
  },
  {
@@ -386,7 +500,7 @@
  {
   "date": "2026-09-01",
   "cat": "creativo",
-  "text": "Anuncio actualizado · Ad_Vans",
+  "text": "Anuncio actualizado · Ad_Toallas",
   "src": "meta"
  },
  {
@@ -603,48 +717,6 @@
   "date": "2026-08-31",
   "cat": "creativo",
   "text": "Anuncio creado · Ad_Converse",
-  "src": "meta"
- },
- {
-  "date": "2026-08-31",
-  "cat": "segmentacion",
-  "text": "Público personalizado creado · Pixel Audience: Purchase Event  30 Days - 908953201780190 - System Generated",
-  "src": "meta"
- },
- {
-  "date": "2026-08-31",
-  "cat": "estado",
-  "text": "Estado del conjunto de anuncios actualizado · Pulpa Verde_Conversiones_Purchase_2026_Adv+ (Procesamiento pendiente → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-31",
-  "cat": "creativo",
-  "text": "Anuncio creado · Ad_Vans",
-  "src": "meta"
- },
- {
-  "date": "2026-08-31",
-  "cat": "otros",
-  "text": "Segmentación del conjunto de anuncios actualizada · Pulpa Verde_Conversiones_Purchase_2026_Adv+",
-  "src": "meta"
- },
- {
-  "date": "2026-08-31",
-  "cat": "objetivo",
-  "text": "Objetivo de optimización del conjunto de anuncios actualizado · Pulpa Verde_Conversiones_Purchase_2026_Adv+",
-  "src": "meta"
- },
- {
-  "date": "2026-08-31",
-  "cat": "presupuesto",
-  "text": "Estrategia de puja del conjunto de anuncios actualizada · Pulpa Verde_Conversiones_Purchase_2026_Adv+",
-  "src": "meta"
- },
- {
-  "date": "2026-08-31",
-  "cat": "creativo",
-  "text": "Conjunto de anuncios creado · Pulpa Verde_Conversiones_Purchase_2026_Adv+",
   "src": "meta"
  }
 ]
