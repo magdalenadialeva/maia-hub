@@ -128,6 +128,17 @@ def build_data(exports_dir: Path, site_dir: Path, config_dir: Path, verbose=True
             except Exception:
                 adstatus = {}
         hub["adstatus"] = adstatus
+        # Alcance/frecuencia deduplicados del período (nivel cuenta, sin desglose
+        # diario) que escribe fetch_meta. El hub los usa para el embudo en vez de
+        # la "suma diaria" (que sobreestima el alcance y subestima la frecuencia).
+        rc_path = exports_dir / slug / f"{slug}_reach.json"
+        reachd = {}
+        if rc_path.exists():
+            try:
+                reachd = json.loads(rc_path.read_text(encoding="utf-8")) or {}
+            except Exception:
+                reachd = {}
+        hub["reachd"] = reachd
         DATA[slug] = hub
         t = _client_totals(hub)
         diagnostics.append(

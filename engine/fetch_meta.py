@@ -429,6 +429,43 @@ def fetch_thumbs(acct: str, token: str, want_names: set) -> Dict[str, str]:
     return thumbs
 
 
+def fetch_reach_dedup(acct: str, token: str, since: str, until: str) -> Optional[dict]:
+    """Alcance y frecuencia DEDUPLICADOS del período, a nivel cuenta y SIN desglose
+    diario (time_increment=all_days). Esto es lo que Ads Manager muestra como
+    'Alcance'/'Frecuencia': personas únicas del período, no la suma día a día.
+    NO se puede reconstruir sumando el export diario, por eso se pide aparte.
+    Devuelve {reach, frequency, impressions, since, until} o None (nunca rompe)."""
+    params = {
+        "level": "account",
+        "time_increment": "all_days",
+        "limit": 1,
+        "fields": "reach,frequency,impressions",
+        "time_range": json.dumps({"since": since, "until": until}),
+        "action_attribution_windows": json.dumps(["7d_click", "1d_view"]),
+    }
+    try:
+        d = _api_get(f"act_{acct}/insights", params, token)
+        data = d.get("data") or []
+        if not data:
+            return None
+        r = data[0]
+        def _f(x):
+            try:
+                return float(x)
+            except (TypeError, ValueError):
+                return 0.0
+        reach = int(_f(r.get("reach")))
+        if reach <= 0:
+            return None
+        return {"reach": reach,
+                "frequency": round(_f(r.get("frequency")), 2),
+                "impressions": int(_f(r.get("impressions"))),
+                "since": since, "until": until}
+    except Exception as e:
+        print(f"  · reach deduplicado no disponible ({str(e)[:120]})")
+        return None
+
+
 def fetch_client(client: dict, days: int, token: str, exports_dir: Path) -> Optional[str]:
     acct = str(client.get("ad_account_id") or "").strip().replace("act_", "")
     slug = client["slug"]
@@ -526,6 +563,18 @@ def fetch_client(client: dict, days: int, token: str, exports_dir: Path) -> Opti
         print(f"  · {slug}: {len(th)} miniaturas de creativos")
     except Exception as e:
         print(f"  · {slug}: miniaturas no generadas ({str(e)[:120]})")
+    # Alcance/frecuencia DEDUPLICADOS del período con datos (para que coincidan con
+    # Ads Manager). El hub los muestra en vez de la "suma diaria" cuando existen.
+    try:
+        ds = sorted(r[1] for r in rows if r[1])
+        if ds:
+            rd = fetch_reach_dedup(acct, token, ds[0], ds[-1])
+            if rd:
+                (folder / f"{slug}_reach.json").write_text(
+                    json.dumps(rd, ensure_ascii=False), encoding="utf-8")
+                print(f"  · {slug}: alcance deduplicado {rd['reach']:,} · frec {rd['frequency']}")
+    except Exception as e:
+        print(f"  · {slug}: alcance deduplicado no generado ({str(e)[:120]})")
     return {"rows": len(rows), "through": through, "empty": False}
 
 
