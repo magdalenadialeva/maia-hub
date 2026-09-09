@@ -121,6 +121,14 @@
   table.cmp td{padding:12px 12px;border-bottom:1px solid var(--line);vertical-align:middle}
   table.cmp tr:last-child td{border-bottom:none}
   table.cmp td.num{font-family:var(--mono);font-variant-numeric:tabular-nums;white-space:nowrap}
+  table.cmp td[data-l="Actualizado"]{white-space:normal;max-width:160px;line-height:1.35}
+  /* Status por cliente (Daily) */
+  .stlist{display:grid;gap:8px;margin:6px 0 2px}
+  .stln{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:11px 15px;box-shadow:0 1px 2px rgba(21,26,33,.03);font-size:13.5px;line-height:1.5}
+  .stln .dot{align-self:center;flex:0 0 auto}
+  .stln .stcli{font-weight:600;color:var(--ink);min-width:118px}
+  .stln .stact{font-weight:700;font-size:11.5px;letter-spacing:.02em}
+  .stln .stwhy{color:var(--soft);flex:1;min-width:180px}
   table.cmp tr.attn td{background:linear-gradient(90deg,var(--rose-t),transparent 70%)}
 
   .chip{display:inline-flex;align-items:center;gap:6px;font-size:11.5px;font-family:var(--sans);font-weight:600;padding:3px 10px;border-radius:999px;border:1px solid var(--line);white-space:nowrap}
@@ -590,9 +598,9 @@ function updBadge(b){
   if(u.failed){
     const at=u.attempt?fmtD(u.attempt):'hoy';
     const motivo=(u.err&&/temporarily unavailable|unknown|desconocido|400/i.test(u.err))?'error de Meta':'no se pudo actualizar';
-    return `<span title="La actualización del ${at} falló (${motivo}). Se muestra el último dato bueno, del ${u.txt}." style="color:#b45309;font-weight:700;white-space:nowrap">⚠ ${u.txt} · la corrida del ${at} falló (${motivo}) — se muestra el último dato bueno</span>`;
+    return `<span title="La actualización del ${at} falló (${motivo}). Se muestra el último dato bueno, del ${u.txt}." style="color:#b45309;font-weight:700;white-space:normal">⚠ ${u.txt} · la corrida del ${at} falló (${motivo}) — se muestra el último dato bueno</span>`;
   }
-  if(u.staleDate) return `<span title="Quedó atrasada respecto de las demás." style="color:#b45309;font-weight:700;white-space:nowrap">⚠ ${u.txt} (quedó atrasada)</span>`;
+  if(u.staleDate) return `<span title="Quedó atrasada respecto de las demás." style="color:#b45309;font-weight:700;white-space:normal">⚠ ${u.txt} (quedó atrasada)</span>`;
   return u.txt;
 }
 const OBJLBL={ic:'Ventas · optimizando a Iniciar pago (validando checkout)',purchase:'Ventas · optimizando a Compra',lead:'Clientes potenciales (leads)',msg:'Mensajes de WhatsApp (tráfico)'};
@@ -830,7 +838,8 @@ function periodKey(){return RANGE.preset==='cust'?('c'+RANGE.from+RANGE.to):RANG
 const SEV={r:0,y:1,g:2,i:3};
 function renderGeneral(){
   const rows=CLIENTS.map(compute).sort((a,b)=>(SEV[a.st.sem]-SEV[b.st.sem])||(b.K.spend-a.K.spend));
-  const body=rows.map(x=>{
+  const OWN=['mossy','paz'];   // cuentas propias de la agencia (no clientes) -> tabla aparte
+  const built=rows.map(x=>{
     const D=x.D, msg=(D.obj==='msg'), lead=isLead(D.obj), S=sig(x.K,D);
     const msgNoData=msg && !(x.K.result>0);
     const res=msgNoData?'<span style="color:var(--soft)">s/d</span>':(lead?money(x.K.result)+' '+resWord(D.obj):money(x.K.result)+' compras');
@@ -842,7 +851,7 @@ function renderGeneral(){
     const rt=(msg||lead||!S.roas)?{dir:'na'}:trend(x.TR.cur.roas,x.TR.prev?x.TR.prev.roas:null,true);
     const lc=x.lcDays==null?'—':('hace '+x.lcDays+'d');
     const upCell=updBadge(x.b);
-    return `<tr class="row-${x.st.sem}">
+    const tr=`<tr class="row-${x.st.sem}">
       <td><b>${D.name}</b></td>
       <td data-l="Actualizado">${upCell}</td>
       <td class="num" data-l="Gasto">$${money(x.K.spend)} ${D.cur}</td>
@@ -852,16 +861,32 @@ function renderGeneral(){
       <td class="num" data-l="CPA / CPL">${msgNoData?'—':'$'+money(x.K.cpa)+' '+D.cur}</td>
       <td class="num" data-l="Últ. mod.">${lc}</td>
       <td data-l="Atención"><button class="act-link" data-go="${x.b}"><span class="act act-${x.st.sem}">${x.st.act}</span> <span class="act-arrow">→ análisis</span><div class="why">${x.st.why}</div></button></td>
-      </tr>`;}).join('');
+      </tr>`;
+    return {b:x.b, own:OWN.includes(x.b), tr};
+  });
+  const cliRows=built.filter(r=>!r.own).map(r=>r.tr).join('');
+  const ownRows=built.filter(r=>r.own).map(r=>r.tr).join('');
+  const THEAD=(c1)=>`<tr><th>${c1}</th><th>Actualizado</th><th>Gasto</th><th>Resultado</th><th title="ROAS = ingresos / gasto. Sólo es interpretable con volumen suficiente de compras; si no, aparece atenuado con * — mirá Resultado y CPA.">ROAS</th><th title="Variación del ROAS respecto del período inmediatamente anterior de igual duración (o 2ª mitad vs 1ª mitad si la marca no tenía pauta antes).">Tend.</th><th>CPA / CPL</th><th>Últ. mod. pauta</th><th>Atención → acción</th></tr>`;
+  const tbl=(rws,c1)=>`<div class="scroll"><table class="cmp">${THEAD(c1)}${rws}</table></div>`;
+  const NOTE=`<div class="mininote"><b>Actualizado</b> = último día que el sistema trajo datos de esa marca desde Meta. <span style="color:#b45309;font-weight:700">⚠</span> = quedó atrasada respecto de las demás <b>o</b> la última corrida falló (error de Meta) y se muestra el último dato bueno. <b>ROAS con *</b> = todavía no interpretable (pocas compras): guiate por Resultado y CPA. <b>Tend.</b> = variación del ROAS vs. el período inmediatamente anterior de igual duración (o 2ª mitad vs. 1ª mitad del período si la marca no tenía pauta antes); <span class="arrow a-up good">↑</span> verde = mejora, <span class="arrow a-down bad">↓</span> rojo = empeora, → estable, · sin período previo. <b>Últ. mod. pauta</b> = días desde el último cambio significativo. Embudo y creativos, en <b>Dashboard</b>.</div>`;
+  const SEMDOT={r:'bad',y:'warn',g:'good',i:'idle'};
+  const statusLines=rows.map(x=>{
+    const sem=x.st.sem||'i';
+    const why=x.st.why?`<span class="stwhy">${x.st.why}</span>`:'';
+    return `<div class="stln"><span class="dot d-${SEMDOT[sem]||'idle'}"></span><span class="stcli">${x.D.name}</span><span class="stact act-${sem}">${x.st.act}</span>${why}</div>`;
+  }).join('');
   document.getElementById('body-general').innerHTML=`
-    <div class="sec-h">Comparativa y control</div>
+    <div class="sec-h">Clientes</div>
     <div class="sec-s">Ordenadas por urgencia. El color de la fila y la acción te dicen qué hacer; el "por qué" muestra el número que lo explica. Piera en CLP, el resto en ARS — no se comparan entre sí.</div>
     <div class="sec-s">📅 <b>Datos actualizados al ${FRESH?fmtD(FRESH):'—'}</b> · se refrescan solos cada mañana desde Meta. Si una marca quedó atrás <b>o su última actualización falló</b>, aparece con <span style="color:#b45309;font-weight:700">⚠</span> en su fecha.</div>
-    <div class="scroll"><table class="cmp">
-      <tr><th>Cliente</th><th>Actualizado</th><th>Gasto</th><th>Resultado</th><th title="ROAS = ingresos / gasto. Sólo es interpretable con volumen suficiente de compras; si no, aparece atenuado con * — mirá Resultado y CPA.">ROAS</th><th title="Variación del ROAS respecto del período inmediatamente anterior de igual duración (o 2ª mitad vs 1ª mitad si la marca no tenía pauta antes).">Tend.</th><th>CPA / CPL</th><th>Últ. mod. pauta</th><th>Atención → acción</th></tr>
-      ${body}
-    </table></div>
-    <div class="mininote"><b>Actualizado</b> = último día que el sistema trajo datos de esa marca desde Meta. <span style="color:#b45309;font-weight:700">⚠</span> = quedó atrasada respecto de las demás <b>o</b> la última corrida falló (error de Meta) y se muestra el último dato bueno. <b>ROAS con *</b> = todavía no interpretable (pocas compras): guiate por Resultado y CPA. <b>Tend.</b> = variación del ROAS vs. el período inmediatamente anterior de igual duración (o 2ª mitad vs. 1ª mitad del período si la marca no tenía pauta antes); <span class="arrow a-up good">↑</span> verde = mejora, <span class="arrow a-down bad">↓</span> rojo = empeora, → estable, · sin período previo. <b>Últ. mod. pauta</b> = días desde el último cambio significativo. Embudo y creativos, en <b>Dashboard</b>.</div>`;
+    ${tbl(cliRows,'Cliente')}
+    ${ownRows?`<div class="sec-h" style="margin-top:30px">Cuentas propias</div>
+    <div class="sec-s">Cuentas de la agencia (no son clientes) — separadas para no mezclarlas con la cartera de arriba.</div>
+    ${tbl(ownRows,'Cuenta')}`:''}
+    <div class="sec-h" style="margin-top:30px">Status por cliente</div>
+    <div class="sec-s">Una línea por cuenta con el estado de hoy — los puntos para revisar en la Daily. Se actualiza solo con cada dato nuevo.</div>
+    <div class="stlist">${statusLines}</div>
+    ${NOTE}`;
   document.querySelectorAll('#body-general .act-link').forEach(btn=>btn.addEventListener('click',()=>goAnalisis(btn.dataset.go)));
 }
 
