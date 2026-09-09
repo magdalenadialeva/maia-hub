@@ -1,5 +1,11 @@
 [
  {
+  "date": "2026-09-07",
+  "cat": "creativo",
+  "text": "Se apagó «Catalogo + Video 4»",
+  "src": "auto"
+ },
+ {
   "date": "2026-09-03",
   "cat": "segmentacion",
   "text": "Público personalizado creado · asa_auto_custom_audience",
@@ -711,12 +717,6 @@
   "date": "2026-08-12",
   "cat": "estado",
   "text": "Estado del conjunto de anuncios actualizado · ADV | Sweater ARG | 07/08 (Activo → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-12",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · SW ARG2  | 07/08 ULTIMOS (Activo → Inactivo)",
   "src": "meta"
  }
 ]
