@@ -23,7 +23,7 @@
   "alba": {
     "fetched_at": "2026-09-09",
     "ok": true,
-    "rows": 81,
+    "rows": 82,
     "empty": false,
     "through": "2026-09-09"
   },
@@ -36,15 +36,17 @@
   },
   "pulpa": {
     "fetched_at": "2026-09-09",
-    "ok": true,
+    "ok": false,
     "rows": 54,
     "empty": false,
-    "through": "2026-09-09"
+    "through": "2026-09-09",
+    "last_error": "HTTP 403: {\"error\":{\"message\":\"(#200) Ad account owner has NOT grant ads_management or ads_read permission, refer to https:\\/\\/developers.facebook.com\\/docs\\/marketing-api\\/get-started\\/authorization\\",
+    "last_attempt": "2026-09-09"
   },
   "saritina-ceramica": {
     "fetched_at": "2026-09-09",
     "ok": true,
-    "rows": 26,
+    "rows": 27,
     "empty": false,
     "through": "2026-09-09"
   }
