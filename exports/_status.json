@@ -1,38 +1,38 @@
 {
   "piera": {
-    "fetched_at": "2026-09-09",
+    "fetched_at": "2026-09-10",
     "ok": true,
-    "rows": 159,
+    "rows": 155,
     "empty": false,
     "through": "2026-09-09"
   },
   "mossy": {
-    "fetched_at": "2026-09-09",
+    "fetched_at": "2026-09-10",
     "ok": true,
-    "rows": 532,
+    "rows": 529,
     "empty": false,
-    "through": "2026-09-09"
+    "through": "2026-09-10"
   },
   "vresia": {
-    "fetched_at": "2026-09-09",
+    "fetched_at": "2026-09-10",
     "ok": true,
     "rows": 184,
     "empty": false,
-    "through": "2026-09-09"
+    "through": "2026-09-10"
   },
   "alba": {
-    "fetched_at": "2026-09-09",
+    "fetched_at": "2026-09-10",
     "ok": true,
-    "rows": 82,
+    "rows": 85,
     "empty": false,
-    "through": "2026-09-09"
+    "through": "2026-09-10"
   },
   "paz": {
-    "fetched_at": "2026-09-09",
+    "fetched_at": "2026-09-10",
     "ok": true,
-    "rows": 170,
+    "rows": 168,
     "empty": false,
-    "through": "2026-09-09"
+    "through": "2026-09-10"
   },
   "pulpa": {
     "fetched_at": "2026-09-09",
@@ -41,13 +41,13 @@
     "empty": false,
     "through": "2026-09-09",
     "last_error": "HTTP 403: {\"error\":{\"message\":\"(#200) Ad account owner has NOT grant ads_management or ads_read permission, refer to https:\\/\\/developers.facebook.com\\/docs\\/marketing-api\\/get-started\\/authorization\\",
-    "last_attempt": "2026-09-09"
+    "last_attempt": "2026-09-10"
   },
   "saritina-ceramica": {
-    "fetched_at": "2026-09-09",
+    "fetched_at": "2026-09-10",
     "ok": true,
-    "rows": 27,
+    "rows": 28,
     "empty": false,
-    "through": "2026-09-09"
+    "through": "2026-09-10"
   }
 }
