@@ -1,5 +1,11 @@
 [
  {
+  "date": "2026-09-09",
+  "cat": "creativo",
+  "text": "Se apagó «Catalogo sin portada»",
+  "src": "auto"
+ },
+ {
   "date": "2026-09-08",
   "cat": "presupuesto",
   "text": "Presupuesto del conjunto de anuncios actualizado · Alba&Co_2026_Conversiones_Purchase_Adv+ (25.000 → 10.000 ARS/día)",
@@ -711,12 +717,6 @@
   "date": "2026-08-27",
   "cat": "estado",
   "text": "Estado del anuncio actualizado · Catalogo_3 (Procesamiento pendiente → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-27",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Catalogo_5 (Procesamiento pendiente → Inactivo)",
   "src": "meta"
  }
 ]

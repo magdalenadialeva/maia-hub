@@ -1,5 +1,11 @@
 [
  {
+  "date": "2026-09-09",
+  "cat": "creativo",
+  "text": "Se apagó «Ad6 - Secuencia - Nueva coleccion 202666 - Copia 6»",
+  "src": "auto"
+ },
+ {
   "date": "2026-08-30",
   "cat": "creativo",
   "text": "Se reactivó «Ad3 - Angulo Producto Fit»",
@@ -711,12 +717,6 @@
   "date": "2026-08-22",
   "cat": "estado",
   "text": "Estado del anuncio actualizado cuando se completa su revisión · Ad6 - Secuencia - Nueva coleccion 202666 - Copia 2 (Activo → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-22",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · Ad6 - Secuencia - Nueva coleccion 202666 - Copia (Activo → Inactivo)",
   "src": "meta"
  }
 ]
