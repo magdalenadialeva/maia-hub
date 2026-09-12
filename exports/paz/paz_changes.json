@@ -38,6 +38,24 @@
  {
   "date": "2026-09-09",
   "cat": "estado",
+  "text": "Estado del anuncio actualizado · IG Post 9/9 - Convocatoria (DdCWmL2Mn9t) (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-09",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · IG Post 9/9 - Convocatoria (DdCWmL2Mn9t) (Activo → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-09",
+  "cat": "creativo",
+  "text": "Anuncio actualizado · IG Post 9/9 - Convocatoria (DdCWmL2Mn9t)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-09",
+  "cat": "estado",
   "text": "Estado del anuncio actualizado cuando se completa su revisión · IG Post 8/9 C - Convocatoria (DdCc8HBss8Q) (Activo → Inactivo)",
   "src": "meta"
  },
@@ -51,12 +69,6 @@
   "date": "2026-09-09",
   "cat": "estado",
   "text": "Estado del anuncio actualizado · IG Post 9/9 - Convocatoria (DdCWmL2Mn9t) (Revisión pendiente → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-09",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · IG Post 9/9 - Convocatoria (DdCWmL2Mn9t) (Procesamiento pendiente → Revisión pendiente)",
   "src": "meta"
  },
  {
@@ -104,6 +116,12 @@
  {
   "date": "2026-09-08",
   "cat": "estado",
+  "text": "Estado del anuncio actualizado · IG Post 8/9 C - Convocatoria (DdCc8HBss8Q) (Revisión pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-08",
+  "cat": "estado",
   "text": "Estado del anuncio actualizado · IG Post 8/9 B - Convocatoria (DdCWmL2Mn9t) (Revisión pendiente → Activo)",
   "src": "meta"
  },
@@ -111,6 +129,12 @@
   "date": "2026-09-08",
   "cat": "estado",
   "text": "Estado del anuncio actualizado · IG Post 8/9 A - Convocatoria (DdCRh2tMXCc) (Revisión pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-08",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · IG Post 8/9 C - Convocatoria (DdCc8HBss8Q) (Procesamiento pendiente → Revisión pendiente)",
   "src": "meta"
  },
  {
@@ -632,13 +656,13 @@
  {
   "date": "2026-08-23",
   "cat": "creativo",
-  "text": "Anuncio actualizado · 2 - Nueva - Copia",
+  "text": "Anuncio actualizado · 2 - Nueva - Copia 3",
   "src": "meta"
  },
  {
   "date": "2026-08-23",
   "cat": "creativo",
-  "text": "Anuncio actualizado · 2 - Nueva - Copia 3",
+  "text": "Anuncio actualizado · 2 - Nueva - Copia",
   "src": "meta"
  },
  {
@@ -650,13 +674,7 @@
  {
   "date": "2026-08-23",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · 2 - Nueva - Copia 3 (Activo → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-23",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · 2 - Nueva - Copia (Activo → Procesamiento pendiente)",
+  "text": "Estado del anuncio actualizado · 2 - Nueva - Copia 2 (Activo → Procesamiento pendiente)",
   "src": "meta"
  },
  {
@@ -668,7 +686,13 @@
  {
   "date": "2026-08-23",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · 2 - Nueva - Copia 2 (Activo → Procesamiento pendiente)",
+  "text": "Estado del anuncio actualizado · 2 - Nueva - Copia (Activo → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-08-23",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · 2 - Nueva - Copia 3 (Activo → Procesamiento pendiente)",
   "src": "meta"
  },
  {
@@ -694,29 +718,5 @@
   "cat": "creativo",
   "text": "Se pausó «2 - Nueva - Copia 3»",
   "src": "auto"
- },
- {
-  "date": "2026-08-11",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · 2 - Nueva - Copia (Revisión pendiente → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-11",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · 2 - Nueva - Copia 2 (Revisión pendiente → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-11",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · 2 - Nueva - Copia 3 (Revisión pendiente → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-11",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · 2 - Nueva - Copia (Procesamiento pendiente → Revisión pendiente)",
-  "src": "meta"
  }
 ]

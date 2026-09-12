@@ -1,5 +1,11 @@
 [
  {
+  "date": "2026-09-10",
+  "cat": "creativo",
+  "text": "Se apagó «Catalogo_2»",
+  "src": "auto"
+ },
+ {
   "date": "2026-09-09",
   "cat": "creativo",
   "text": "Se apagó «Catalogo sin portada»",
@@ -711,12 +717,6 @@
   "date": "2026-08-28",
   "cat": "estado",
   "text": "Estado del anuncio actualizado · Catalogo_3 (Inactivo → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-27",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Catalogo_3 (Procesamiento pendiente → Inactivo)",
   "src": "meta"
  }
 ]

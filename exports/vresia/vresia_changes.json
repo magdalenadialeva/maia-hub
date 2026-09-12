@@ -1,8 +1,80 @@
 [
  {
-  "date": "2026-09-07",
+  "date": "2026-09-11",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Tu reme favorita ya llegó (Revisión pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-11",
+  "cat": "creativo",
+  "text": "Se encendió/lanzó «3x2 en tu remera Favorita»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-09-11",
+  "cat": "creativo",
+  "text": "Se encendió/lanzó «Envio Gratis»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-09-11",
+  "cat": "creativo",
+  "text": "Se encendió/lanzó «Tu reme favorita ya llegó»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-09-11",
+  "cat": "creativo",
+  "text": "Se encendió/lanzó «La basica que no puede faltar»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-09-11",
+  "cat": "creativo",
+  "text": "Se encendió/lanzó «3X2 Reme Sofia»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-09-11",
+  "cat": "creativo",
+  "text": "Se encendió/lanzó «Llegaron tus remes favoritas»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-09-10",
+  "cat": "creativo",
+  "text": "Se apagó «Catalogo + Video 1»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-09-10",
+  "cat": "creativo",
+  "text": "Se apagó «Catalogo + Video 3»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-09-10",
+  "cat": "creativo",
+  "text": "Se reactivó «Catalogo + Video 4»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-09-10",
   "cat": "creativo",
   "text": "Se apagó «Catalogo + Video 4»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-09-10",
+  "cat": "creativo",
+  "text": "Se apagó «Cardigam Roma»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-09-08",
+  "cat": "creativo",
+  "text": "Se pausó «Catalogo + Video 4»",
   "src": "auto"
  },
  {
@@ -200,25 +272,7 @@
  {
   "date": "2026-08-31",
   "cat": "creativo",
-  "text": "Anuncio creado · Cardigam Roma",
-  "src": "meta"
- },
- {
-  "date": "2026-08-31",
-  "cat": "creativo",
-  "text": "Anuncio creado · Catalogo + Video 4",
-  "src": "meta"
- },
- {
-  "date": "2026-08-31",
-  "cat": "creativo",
-  "text": "Anuncio creado · Catalogo + Video 1",
-  "src": "meta"
- },
- {
-  "date": "2026-08-31",
-  "cat": "creativo",
-  "text": "Anuncio creado · Catalogo + Video 5",
+  "text": "Anuncio creado · Catalogo + Video 3",
   "src": "meta"
  },
  {
@@ -230,7 +284,25 @@
  {
   "date": "2026-08-31",
   "cat": "creativo",
-  "text": "Anuncio creado · Catalogo + Video 3",
+  "text": "Anuncio creado · Catalogo + Video 5",
+  "src": "meta"
+ },
+ {
+  "date": "2026-08-31",
+  "cat": "creativo",
+  "text": "Anuncio creado · Cardigam Roma",
+  "src": "meta"
+ },
+ {
+  "date": "2026-08-31",
+  "cat": "creativo",
+  "text": "Anuncio creado · Catalogo + Video 1",
+  "src": "meta"
+ },
+ {
+  "date": "2026-08-31",
+  "cat": "creativo",
+  "text": "Anuncio creado · Catalogo + Video 4",
   "src": "meta"
  },
  {
@@ -352,6 +424,18 @@
   "cat": "creativo",
   "text": "Se pausó «Catalogo + Video 4»",
   "src": "auto"
+ },
+ {
+  "date": "2026-08-22",
+  "cat": "estado",
+  "text": "Estado de la campaña actualizado · TOFU 13/01 (Activa → Inactiva)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-08-22",
+  "cat": "estado",
+  "text": "Estado de la campaña actualizado · TRAFICO IG | 06/08 (Activa → Inactiva)",
+  "src": "meta"
  },
  {
   "date": "2026-08-21",
@@ -633,90 +717,6 @@
   "date": "2026-08-16",
   "cat": "estado",
   "text": "Estado del conjunto de anuncios actualizado · LAL Compradoras | 16/08 (Procesamiento pendiente → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-16",
-  "cat": "creativo",
-  "text": "Anuncio creado · wtf arg | 13/02",
-  "src": "meta"
- },
- {
-  "date": "2026-08-16",
-  "cat": "otros",
-  "text": "Segmentación del conjunto de anuncios actualizada · LAL Compradoras | 16/08",
-  "src": "meta"
- },
- {
-  "date": "2026-08-16",
-  "cat": "objetivo",
-  "text": "Objetivo de optimización del conjunto de anuncios actualizado · LAL Compradoras | 16/08",
-  "src": "meta"
- },
- {
-  "date": "2026-08-16",
-  "cat": "presupuesto",
-  "text": "Estrategia de puja del conjunto de anuncios actualizada · LAL Compradoras | 16/08",
-  "src": "meta"
- },
- {
-  "date": "2026-08-16",
-  "cat": "creativo",
-  "text": "Conjunto de anuncios creado · LAL Compradoras | 16/08",
-  "src": "meta"
- },
- {
-  "date": "2026-08-16",
-  "cat": "creativo",
-  "text": "Se encendió/lanzó «wtf arg | 13/02»",
-  "src": "auto"
- },
- {
-  "date": "2026-08-13",
-  "cat": "presupuesto",
-  "text": "Presupuesto del conjunto de anuncios actualizado · LAL Purchase + LAL ATC | 06/08 (1.500,38 → 1.750 ARS/día)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-13",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Cardigan  | 07/08 (Procesamiento pendiente → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-13",
-  "cat": "estado",
-  "text": "Estado del conjunto de anuncios actualizado · ADV | Cardigan | 07/08 (Activo → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-13",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · Cardigan  | 07/08 (Activo → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-13",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Cardigan  | 07/08 (Activo → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-13",
-  "cat": "creativo",
-  "text": "Se apagó «Cardigan  | 07/08»",
-  "src": "auto"
- },
- {
-  "date": "2026-08-12",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · SW ARG2  | 07/08 ULTIMOS (Procesamiento pendiente → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-12",
-  "cat": "estado",
-  "text": "Estado del conjunto de anuncios actualizado · ADV | Sweater ARG | 07/08 (Activo → Inactivo)",
   "src": "meta"
  }
 ]

@@ -1,5 +1,11 @@
 [
  {
+  "date": "2026-09-11",
+  "cat": "segmentacion",
+  "text": "Público personalizado creado · asa_auto_custom_audience",
+  "src": "meta"
+ },
+ {
   "date": "2026-09-10",
   "cat": "creativo",
   "text": "Se reactivó «Ad_Video_1»",
@@ -104,13 +110,13 @@
  {
   "date": "2026-09-01",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · Ad_Video_4 (Activo → Procesamiento pendiente)",
+  "text": "Estado del anuncio actualizado · Ad_Video_3 (Activo → Procesamiento pendiente)",
   "src": "meta"
  },
  {
   "date": "2026-09-01",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · Ad_Video_3 (Activo → Procesamiento pendiente)",
+  "text": "Estado del anuncio actualizado · Ad_Video_4 (Activo → Procesamiento pendiente)",
   "src": "meta"
  },
  {
