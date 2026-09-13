@@ -1,5 +1,11 @@
 [
  {
+  "date": "2026-09-12",
+  "cat": "creativo",
+  "text": "Se reactivó «Ad_Video_4»",
+  "src": "auto"
+ },
+ {
   "date": "2026-09-11",
   "cat": "segmentacion",
   "text": "Público personalizado creado · asa_auto_custom_audience",
@@ -12,9 +18,9 @@
   "src": "auto"
  },
  {
-  "date": "2026-09-09",
+  "date": "2026-09-10",
   "cat": "creativo",
-  "text": "Se apagó «Ad_Video_4»",
+  "text": "Se pausó «Ad_Video_4»",
   "src": "auto"
  },
  {

@@ -1,14 +1,14 @@
 [
  {
-  "date": "2026-09-10",
+  "date": "2026-09-12",
   "cat": "creativo",
-  "text": "Se apagó «Catalogo_2»",
+  "text": "Se reactivó «Catalogo sin portada»",
   "src": "auto"
  },
  {
-  "date": "2026-09-09",
+  "date": "2026-09-10",
   "cat": "creativo",
-  "text": "Se apagó «Catalogo sin portada»",
+  "text": "Se pausó «Catalogo sin portada»",
   "src": "auto"
  },
  {
