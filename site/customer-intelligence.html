@@ -1,0 +1,457 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Customer Intelligence — MAIA</title>
+</head>
+<body>
+<title>Customer Intelligence</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<style>
+  :root{
+    --ground:#eef1f5; --surface:#ffffff; --surface-2:#f7f9fb;
+    --ink:#141a21; --muted:#69727f; --faint:#98a2b0; --line:#e3e8ef;
+    --maroon:#8a2f3d; --maroon-deep:#5e2029; --maroon-tint:#f6ecee;
+    --amber:#946318; --amber-bg:#f9f2e6;
+    --good:#3d7a4c; --good-bg:#edf5ef;
+    --bad:#b23b3b;
+    --a1:#8a2f3d; --a2:#2f6f74; --a3:#9a6a1e; --a4:#345b8a; --a5:#6d477e;
+    --mono:'IBM Plex Mono',ui-monospace,SFMono-Regular,Menlo,monospace;
+    --sans:'Poppins',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;
+    --shadow:0 1px 2px rgba(20,26,33,.05),0 4px 16px rgba(20,26,33,.05);
+  }
+  @media (prefers-color-scheme:dark){
+    :root:not([data-theme="light"]){
+      --ground:#12151b; --surface:#1a1e26; --surface-2:#20252e;
+      --ink:#eef1f6; --muted:#9aa4b3; --faint:#6c7788; --line:#2b313b;
+      --maroon:#dd8b98; --maroon-deep:#e7a7b1; --maroon-tint:#2a1c20;
+      --amber:#d6a45a; --amber-bg:#2a2415;
+      --good:#7fc08f; --good-bg:#182417;
+      --bad:#e08a8a;
+      --a1:#dd8b98; --a2:#79c2c8; --a3:#d6a45a; --a4:#89b0e0; --a5:#c199d6;
+      --shadow:0 1px 2px rgba(0,0,0,.3),0 4px 18px rgba(0,0,0,.35);
+    }
+  }
+  :root[data-theme="dark"]{
+    --ground:#12151b; --surface:#1a1e26; --surface-2:#20252e;
+    --ink:#eef1f6; --muted:#9aa4b3; --faint:#6c7788; --line:#2b313b;
+    --maroon:#dd8b98; --maroon-deep:#e7a7b1; --maroon-tint:#2a1c20;
+    --amber:#d6a45a; --amber-bg:#2a2415;
+    --good:#7fc08f; --good-bg:#182417;
+    --bad:#e08a8a;
+    --a1:#dd8b98; --a2:#79c2c8; --a3:#d6a45a; --a4:#89b0e0; --a5:#c199d6;
+    --shadow:0 1px 2px rgba(0,0,0,.3),0 4px 18px rgba(0,0,0,.35);
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--ground);color:var(--ink);font-family:var(--sans);line-height:1.5;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:1120px;margin:0 auto;padding-inline:20px;padding-block:0}
+  a{color:inherit}
+  .mono{font-family:var(--mono)}
+  .tnum{font-variant-numeric:tabular-nums}
+
+  header.top{padding-block:26px 0}
+  .head-row{display:flex;align-items:flex-start;justify-content:space-between;gap:16px;flex-wrap:wrap}
+  .brand{display:flex;align-items:center;gap:14px}
+  .logo{width:46px;height:46px;border-radius:13px;background:linear-gradient(150deg,var(--maroon),var(--maroon-deep));color:#fff;display:grid;place-items:center;font-weight:700;font-size:20px;box-shadow:var(--shadow);flex:0 0 auto}
+  .logo span{transform:translateY(-1px)}
+  .over{font-family:var(--mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--faint);margin:0 0 2px}
+  h1{font-size:30px;font-weight:700;margin:0;letter-spacing:-.01em;text-wrap:balance}
+  .head-meta{font-family:var(--mono);font-size:11.5px;color:var(--faint);text-align:right;line-height:1.7;letter-spacing:.02em}
+  .head-meta b{color:var(--maroon);font-weight:600}
+
+  nav.tabs{display:flex;gap:4px;overflow-x:auto;border-bottom:1px solid var(--line);margin-top:20px;scrollbar-width:none}
+  nav.tabs::-webkit-scrollbar{display:none}
+  .tab{display:inline-flex;align-items:center;gap:7px;padding:12px 12px;font-size:13.5px;font-weight:500;color:var(--muted);white-space:nowrap;border-bottom:2px solid transparent;text-decoration:none}
+  .tab.active{color:var(--maroon);border-bottom-color:var(--maroon);font-weight:600}
+  .tab:not(.active):hover{color:var(--ink)}
+
+  main{padding-block:28px 60px}
+  section{margin-top:34px}
+  .sec-head{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;margin-bottom:6px}
+  h2{font-size:19px;font-weight:600;margin:0;letter-spacing:-.01em}
+  .sec-kick{font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--maroon)}
+  .sub{color:var(--muted);font-size:14px;max-width:72ch;margin:2px 0 0}
+
+  .intro{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:22px 24px;box-shadow:var(--shadow)}
+  .intro p{margin:0 0 10px;max-width:74ch}
+  .intro p:last-child{margin-bottom:0}
+  .intro strong{font-weight:600}
+  .flow{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}
+  .flow .step{flex:1 1 150px;min-width:140px;background:var(--surface-2);border:1px solid var(--line);border-radius:11px;padding:11px 13px}
+  .flow .n{font-family:var(--mono);font-size:11px;color:var(--maroon);font-weight:600}
+  .flow .t{font-weight:600;font-size:13.5px;margin-top:3px}
+  .flow .d{color:var(--muted);font-size:12px;margin-top:2px}
+  .arrow{align-self:center;color:var(--faint);font-family:var(--mono)}
+
+  .tiles{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+  .tile{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:16px 16px 15px;box-shadow:var(--shadow)}
+  .tile .k{font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--faint)}
+  .tile .v{font-family:var(--mono);font-size:27px;font-weight:600;letter-spacing:-.02em;margin-top:8px;line-height:1}
+  .tile .n{color:var(--muted);font-size:12px;margin-top:6px}
+
+  .panel{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:20px 22px;box-shadow:var(--shadow)}
+  .bars{display:flex;flex-direction:column;gap:11px;margin-top:6px}
+  .bar{display:grid;grid-template-columns:150px 1fr 52px;align-items:center;gap:12px}
+  .bar .lbl{font-size:13px;font-weight:500}
+  .bar .lbl small{display:block;color:var(--faint);font-size:11px;font-weight:400}
+  .track{height:11px;border-radius:6px;background:var(--surface-2);border:1px solid var(--line);overflow:hidden}
+  .fill{height:100%;border-radius:6px 0 0 6px;background:linear-gradient(90deg,var(--maroon),var(--maroon-deep))}
+  .bar .pct{font-family:var(--mono);font-size:13px;font-weight:600;text-align:right}
+  .legend{color:var(--faint);font-size:12px;margin-top:14px}
+  .legend b{color:var(--maroon)}
+
+  /* archetype cards */
+  .cards{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;align-items:start}
+  .card{background:var(--surface);border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow);overflow:hidden}
+  .card .strip{height:4px;background:var(--ac)}
+  .card .body{padding:18px 19px;display:flex;flex-direction:column;gap:12px}
+  .card .top{display:flex;align-items:flex-start;justify-content:space-between;gap:10px}
+  .card .name{font-size:16.5px;font-weight:600;letter-spacing:-.01em}
+  .rolerow{display:flex;align-items:center;gap:7px;margin-bottom:2px;flex-wrap:wrap}
+  .role{font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--ac);font-weight:600}
+  .chip{font-family:var(--mono);font-size:9px;letter-spacing:.07em;text-transform:uppercase;color:var(--faint);border:1px solid var(--line);border-radius:5px;padding:2px 6px}
+  .weight{font-family:var(--mono);font-size:12px;font-weight:600;color:var(--ac);background:var(--ac-bg);border:1px solid var(--ac-bd);padding:4px 9px;border-radius:20px;white-space:nowrap;flex:0 0 auto}
+  .card .line{color:var(--ink);font-size:13.5px;font-weight:500}
+  .insight{font-size:12.5px;background:var(--surface-2);border:1px solid var(--line);border-radius:9px;padding:9px 11px;color:var(--muted)}
+  .insight .tg{font-family:var(--mono);font-size:9.5px;text-transform:uppercase;letter-spacing:.1em;color:var(--ac);font-weight:600;display:block;margin-bottom:3px}
+  .insight b{color:var(--ink);font-weight:600}
+  .blk .k{font-family:var(--mono);font-size:9.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--faint);margin-bottom:6px}
+  ul.angles{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:7px}
+  ul.angles li{font-size:12.5px;color:var(--muted);padding-left:15px;position:relative;line-height:1.45}
+  ul.angles li::before{content:"▸";position:absolute;left:0;color:var(--ac);font-size:10px;top:3px}
+  ul.angles li b{color:var(--ink);font-weight:600}
+  ul.angles li i{color:var(--ink);font-style:italic;opacity:.9}
+  .twogrid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+  .kv .k{font-family:var(--mono);font-size:9.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--faint);margin-bottom:2px}
+  .kv .val{font-size:12.5px;color:var(--muted);line-height:1.45}
+  .kv.warn .k{color:var(--amber)}
+  .quote{border-left:2px solid var(--ac);background:var(--surface-2);padding:8px 11px;border-radius:0 8px 8px 0;font-size:12px;color:var(--ink);font-style:italic}
+  .quote::before{content:"“"}.quote::after{content:"”"}
+
+  details.twin{border-top:1px solid var(--line);padding-top:4px}
+  details.twin summary{cursor:pointer;list-style:none;padding:8px 0 2px;font-size:12.5px;font-weight:600;color:var(--ac);display:flex;align-items:center;gap:7px;user-select:none}
+  details.twin summary::-webkit-details-marker{display:none}
+  details.twin summary:focus-visible{outline:2px solid var(--ac);outline-offset:3px;border-radius:4px}
+  .chev{display:inline-block;transition:transform .2s;font-size:10px}
+  @media (prefers-reduced-motion:reduce){.chev{transition:none}}
+  details.twin[open] .chev{transform:rotate(90deg)}
+  .twin-body{position:relative;margin-top:9px}
+  .twin-body .prompt{font-family:var(--mono);font-size:11.5px;line-height:1.6;white-space:pre-wrap;background:var(--surface-2);border:1px solid var(--line);border-radius:10px;padding:13px 13px;color:var(--ink);overflow-x:auto}
+  .copy{position:absolute;top:8px;right:8px;font-family:var(--sans);font-size:11px;font-weight:600;color:#fff;background:var(--ac);border:none;border-radius:7px;padding:6px 11px;cursor:pointer;box-shadow:var(--shadow)}
+  .copy:hover{filter:brightness(.94)}
+  .copy:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
+
+  footer{margin-top:40px;border-top:1px solid var(--line);padding-top:16px;color:var(--faint);font-size:12px;line-height:1.7}
+  footer b{color:var(--muted);font-weight:600}
+  .note{background:var(--amber-bg);border:1px solid color-mix(in srgb,var(--amber) 35%,transparent);color:var(--amber);border-radius:11px;padding:11px 14px;font-size:12.5px;margin-top:12px}
+
+  @media (max-width:820px){
+    .tiles{grid-template-columns:repeat(2,1fr)}
+    .cards{grid-template-columns:1fr}
+    .bar{grid-template-columns:120px 1fr 46px}
+  }
+  @media (max-width:440px){
+    h1{font-size:24px}
+    .tiles{grid-template-columns:1fr 1fr}
+    .twogrid{grid-template-columns:1fr}
+    .bar{grid-template-columns:1fr;gap:5px}
+    .bar .pct{text-align:left}
+  }
+
+  /* coverage checklist */
+  .coverage{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:18px 20px;box-shadow:var(--shadow)}
+  .cov-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:10px}
+  .cov-item{display:flex;align-items:flex-start;gap:10px;padding:11px 12px;border-radius:11px;border:1px solid var(--line);background:var(--surface-2)}
+  .cov-item .mark{width:20px;height:20px;border-radius:6px;display:grid;place-items:center;font-size:12px;font-weight:700;flex:0 0 auto;line-height:1}
+  .cov-item.on .mark{background:var(--good-bg);color:var(--good);border:1px solid color-mix(in srgb,var(--good) 40%,transparent)}
+  .cov-item.off .mark{background:color-mix(in srgb,var(--bad) 12%,transparent);color:var(--bad);border:1px solid color-mix(in srgb,var(--bad) 40%,transparent)}
+  .cov-item .t{font-size:13px;font-weight:600}
+  .cov-item.off .t{color:var(--bad)}
+  .cov-item .d{font-size:11.5px;color:var(--muted);margin-top:1px}
+
+  /* status pill */
+  .status{font-family:var(--mono);font-size:9px;letter-spacing:.06em;text-transform:uppercase;font-weight:600;padding:2px 7px;border-radius:5px;border:1px solid}
+  .status.solido{color:var(--good);background:var(--good-bg);border-color:color-mix(in srgb,var(--good) 38%,transparent)}
+  .status.parcial{color:var(--amber);background:var(--amber-bg);border-color:color-mix(in srgb,var(--amber) 38%,transparent)}
+  .status.insuf{color:var(--bad);background:color-mix(in srgb,var(--bad) 11%,transparent);border-color:color-mix(in srgb,var(--bad) 38%,transparent)}
+</style>
+
+<div class="wrap">
+  <header class="top">
+    <div class="head-row">
+      <div class="brand">
+        <div class="logo"><span>M</span></div>
+        <div>
+          <p class="over">Operación · MAIA — capítulo</p>
+          <h1>Customer Intelligence</h1>
+        </div>
+      </div>
+      <div class="head-meta">
+        Piloto · <b>Mossy</b> · @wearemossy<br>
+        Fuente: Instagram Graph API<br>
+        Build v23
+      </div>
+    </div>
+    <nav class="tabs" aria-label="Capítulos del hub">
+      <a class="tab" href="#">▦ General</a>
+      <a class="tab" href="#">▤ Dashboard</a>
+      <a class="tab" href="#">◔ Análisis de pauta</a>
+      <a class="tab" href="#">▭ Reporte al cliente</a>
+      <a class="tab" href="#">◈ Propuesta de pauta</a>
+      <a class="tab" href="#">✎ Estrategia de contenido</a>
+      <a class="tab active" href="#" aria-current="page">✦ Customer Intelligence</a>
+    </nav>
+  </header>
+
+  <main>
+    <section aria-labelledby="s-cov">
+      <div class="sec-head"><span class="sec-kick">Cobertura de datos</span><h2 id="s-cov">Qué tenemos de Mossy · qué falta</h2></div>
+      <p class="sub">Un twin es tan fiable como los canales que lo alimentan. <b style="color:var(--good)">Verde</b> = ya ingestado · <b style="color:var(--bad)">rojo</b> = pendiente para completar la lectura.</p>
+      <div class="coverage" style="margin-top:14px">
+        <div class="cov-grid">
+          <div class="cov-item on"><div class="mark">✓</div><div><div class="t">Comentarios de IG</div><div class="d">~18.985 · 509 voces · listo</div></div></div>
+          <div class="cov-item off"><div class="mark">✗</div><div><div class="t">DMs de Instagram</div><div class="d">Pendiente · requiere App Review</div></div></div>
+          <div class="cov-item off"><div class="mark">✗</div><div><div class="t">WhatsApp</div><div class="d">Pendiente · intención y negociación real</div></div></div>
+          <div class="cov-item off"><div class="mark">✗</div><div><div class="t">Reseñas post-compra</div><div class="d">Pendiente · calce y satisfacción</div></div></div>
+          <div class="cov-item off"><div class="mark">✗</div><div><div class="t">Encuestas / devoluciones</div><div class="d">Pendiente · opcional, alta señal</div></div></div>
+        </div>
+        <p class="legend" style="margin-top:14px">Hoy Mossy corre <b>solo con comentarios</b>: alcanza para deseo y boca a boca, pero queda flojo para todo lo que pasa en el DM/WhatsApp (precio real, talle, envío, post-venta). Por eso cada twin de abajo lleva su estado — <b style="color:var(--good)">Sólido</b> / <b style="color:var(--amber)">Parcial</b> / <b style="color:var(--bad)">Insuficiente</b> — según los canales que hoy lo respaldan.</p>
+      </div>
+    </section>
+
+    <section aria-labelledby="s-intro">
+      <div class="sec-head"><span class="sec-kick">Qué es</span><h2 id="s-intro">La voz del cliente, hecha modelo</h2></div>
+      <p class="sub">Una marca no tiene un cliente: tiene varios. Por eso construimos <strong>un twin por arquetipo</strong> — no un promedio. Cada twin es una persona concreta con la que podés testear ángulos, precios y creativos <em>antes</em> de producir o gastar en pauta.</p>
+      <div class="intro" style="margin-top:14px">
+        <p>Cada twin se arma con la voz cruda del cliente de la marca — comentarios y DMs de Instagram, reseñas, WhatsApp — y responde <strong>como responde esa persona</strong>, apoyándose en lo que la gente realmente dijo. No es opinión del modelo: es el patrón de la marca, citado.</p>
+        <div class="flow">
+          <div class="step"><div class="n">01</div><div class="t">Ingesta</div><div class="d">Comentarios, DMs, reseñas y WhatsApp de la marca.</div></div>
+          <div class="arrow">→</div>
+          <div class="step"><div class="n">02</div><div class="t">Patrones</div><div class="d">Temas, preguntas y señales, agrupados por segmento.</div></div>
+          <div class="arrow">→</div>
+          <div class="step"><div class="n">03</div><div class="t">Twins + ángulos</div><div class="d">Una persona por arquetipo, con sus ángulos accionables.</div></div>
+        </div>
+      </div>
+    </section>
+
+    <section aria-labelledby="s-pilot">
+      <div class="sec-head"><span class="sec-kick">El piloto</span><h2 id="s-pilot">Mossy · lo que ya está en la cuenta</h2></div>
+      <p class="sub">Marca de mallas premium. La cuenta es una mina de voz de cliente: la clienta pregunta, desea y comparte en los comentarios.</p>
+      <div class="tiles" style="margin-top:14px">
+        <div class="tile"><div class="k">Posteos</div><div class="v tnum">638</div><div class="n">609 con comentarios</div></div>
+        <div class="tile"><div class="k">Comentarios totales</div><div class="v tnum">~18.985</div><div class="n">disponibles vía API</div></div>
+        <div class="tile"><div class="k">Analizados (muestra)</div><div class="v tnum">1.379</div><div class="n">1.018 coment. + 361 respuestas</div></div>
+        <div class="tile"><div class="k">Voces únicas</div><div class="v tnum">509</div><div class="n">clientas distintas</div></div>
+      </div>
+    </section>
+
+    <section aria-labelledby="s-signal">
+      <div class="sec-head"><span class="sec-kick">Qué dice la audiencia</span><h2 id="s-signal">Señales dominantes</h2></div>
+      <p class="sub">Sobre 1.069 comentarios de clientas (excluyendo las respuestas de la marca). Un comentario puede tener varias señales.</p>
+      <div class="panel" style="margin-top:14px">
+        <div class="bars">
+          <div class="bar"><div class="lbl">Etiqueta a una amiga<small>boca a boca</small></div><div class="track"><div class="fill" style="width:100%"></div></div><div class="pct">48.9%</div></div>
+          <div class="bar"><div class="lbl">Deseo / aspiración<small>“lo amo”, “lo necesito”</small></div><div class="track"><div class="fill" style="width:50%"></div></div><div class="pct">24.4%</div></div>
+          <div class="bar"><div class="lbl">Pregunta el precio<small>y a veces lo objeta</small></div><div class="track"><div class="fill" style="width:28%"></div></div><div class="pct">13.6%</div></div>
+          <div class="bar"><div class="lbl">Stock / disponibilidad<small></small></div><div class="track"><div class="fill" style="width:6.8%"></div></div><div class="pct">3.3%</div></div>
+          <div class="bar"><div class="lbl">Talle / calce<small></small></div><div class="track"><div class="fill" style="width:6.3%"></div></div><div class="pct">3.1%</div></div>
+          <div class="bar"><div class="lbl">Envío / entrega<small></small></div><div class="track"><div class="fill" style="width:4.5%"></div></div><div class="pct">2.2%</div></div>
+          <div class="bar"><div class="lbl">Dónde comprar<small>link, web, local</small></div><div class="track"><div class="fill" style="width:4.5%"></div></div><div class="pct">2.2%</div></div>
+          <div class="bar"><div class="lbl">Cuándo vuelve / lanza<small>preventa</small></div><div class="track"><div class="fill" style="width:1.6%"></div></div><div class="pct">0.8%</div></div>
+        </div>
+        <p class="legend">Lectura MAIA: la conversación la gobierna el <b>boca a boca</b> (media cuenta etiqueta a alguien) y el <b>deseo</b>; el <b>precio</b> es la fricción #1 — se pregunta mucho y, cuando aparece, a veces se objeta (“se les fue la mano con los precios”). Los modelos más nombrados son destinos: Brasil, Playa, Punta, Caná, Miami, Caribe, París. Se compra una fantasía de verano, y se cierra por DM.</p>
+      </div>
+    </section>
+
+    <section aria-labelledby="s-arch">
+      <div class="sec-head"><span class="sec-kick">Los twins</span><h2 id="s-arch">5 twins de Mossy, uno por arquetipo</h2></div>
+      <p class="sub">Cada tarjeta trae el insight, los ángulos con hook, la fricción a neutralizar y qué NO hacer. Tocá <b>“Ver prompt del twin”</b> para desplegar su personalidad completa y copiarla.</p>
+      <div class="cards" style="margin-top:14px">
+
+        <!-- 1 PRESCRIPTORA -->
+        <div class="card" style="--ac:var(--a1);--ac-bg:color-mix(in srgb,var(--a1) 10%,transparent);--ac-bd:color-mix(in srgb,var(--a1) 30%,transparent)">
+          <div class="strip"></div>
+          <div class="body">
+            <div class="top">
+              <div><div class="rolerow"><span class="role">Motor de crecimiento</span><span class="chip">TOFU</span><span class="status solido">Sólido</span></div><div class="name">Delfina · la Prescriptora</div></div>
+              <div class="weight">48.9% etiqueta</div>
+            </div>
+            <div class="line">Casi la mitad de los comentarios etiqueta a una amiga. Es tu canal de adquisición orgánico.</div>
+            <div class="insight"><span class="tg">Insight</span> No comparte la malla: comparte el <b>plan con amigas</b>. La compra es la excusa del plan.</div>
+            <div class="blk"><div class="k">Ángulos</div>
+              <ul class="angles">
+                <li><b>El plan de a dos.</b> <i>“El verano se planea entre amigas. Etiquetá a tu compañera de playa.”</i></li>
+                <li><b>Combo dúo.</b> <i>“Vengan juntas: 2 bikinis, envío bonificado.”</i></li>
+                <li><b>Prueba social.</b> Repost de clientas reales etiquetando → UGC.</li>
+              </ul>
+            </div>
+            <div class="twogrid">
+              <div class="kv warn"><div class="k">Fricción</div><div class="val">No hay fricción de compra; la fricción es que el contenido no sea etiquetable.</div></div>
+              <div class="kv"><div class="k">Palanca</div><div class="val">Mecánicas de referido, sorteo “etiquetá y ganá”, repost.</div></div>
+            </div>
+            <div class="kv warn"><div class="k">Qué no hacer</div><div class="val">Creativos fríos de producto sobre fondo blanco: no dan para compartir.</div></div>
+            <div class="quote">@caro @flor MIREN esto, nos compramos una para Cariló</div>
+            <details class="twin"><summary><span class="chev">▸</span> Ver prompt del twin</summary>
+              <div class="twin-body"><button class="copy" data-copy="tw1" type="button">Copiar</button>
+                <div class="prompt" id="tw1">Sos Delfina, 28, vivís en Pilar y laburás en comunicación de una marca. Sos la que arma los planes: si algo te gusta, lo primero que hacés es etiquetar a las chicas ("@caro @flor MIREN esto, nos compramos una para Cariló"). Comprás tanto por la malla como por el plan compartido. Escribís rápido, cálido, con emojis (❤️😍🙌) y etiquetás a alguien en casi todo. Seguís a Mossy hace rato y ya tenés la Brasil. No sos vos la que pregunta precio: eso lo pregunta tu amiga. Tu moneda es la pertenencia. Cuando te muestren algo, tu primer reflejo es "¿a quién se lo mando?". Hablás en rioplatense, informal. Nunca hablás como marca. Si algo no es etiquetable (no da para compartir), te aburre y lo decís.</div>
+              </div>
+            </details>
+          </div>
+        </div>
+
+        <!-- 2 CAZADORA DE PRECIO -->
+        <div class="card" style="--ac:var(--a3);--ac-bg:color-mix(in srgb,var(--a3) 12%,transparent);--ac-bd:color-mix(in srgb,var(--a3) 32%,transparent)">
+          <div class="strip"></div>
+          <div class="body">
+            <div class="top">
+              <div><div class="rolerow"><span class="role">Fricción #1</span><span class="chip">MOFU · BOFU</span><span class="status parcial">Parcial</span></div><div class="name">Caro · la Cazadora de Precio</div></div>
+              <div class="weight">13.6% precio</div>
+            </div>
+            <div class="line">Pregunta el precio antes que nada — y si le parece caro, lo dice sin filtro.</div>
+            <div class="insight"><span class="tg">Insight</span> No es que no pueda pagar: necesita que el precio se <b>justifique</b> y sea <b>inmediato</b>. El “te paso por privado” la pierde.</div>
+            <div class="blk"><div class="k">Ángulos</div>
+              <ul class="angles">
+                <li><b>Por qué vale.</b> <i>“Te dura 3 veranos y no destiñe. Por eso sale lo que sale.”</i></li>
+                <li><b>Sin fricción.</b> <i>“3 cuotas sin interés”</i> / <i>“llevá 2 y ahorrá”.</i></li>
+                <li><b>Precio a la vista.</b> Responder precio al toque (DM automático / precio en el posteo).</li>
+              </ul>
+            </div>
+            <div class="twogrid">
+              <div class="kv warn"><div class="k">Objeción</div><div class="val">“Es un montón” · “por ese precio me compro dos en otro lado”.</div></div>
+              <div class="kv"><div class="k">Palanca</div><div class="val">Transparencia de precio + cuotas + anclaje de valor.</div></div>
+            </div>
+            <div class="kv warn"><div class="k">Qué no hacer</div><div class="val">Esconder el precio u obligar a un DM eterno para saberlo.</div></div>
+            <div class="quote">divinas, pero me parece que se les fue la mano con los precios</div>
+            <details class="twin"><summary><span class="chev">▸</span> Ver prompt del twin</summary>
+              <div class="twin-body"><button class="copy" data-copy="tw2" type="button">Copiar</button>
+                <div class="prompt" id="tw2">Sos Caro, 34, laburás full time, te gustan las cosas lindas pero llevás la cuenta. Tu primer comentario siempre es "precio?" o "cuánto sale la mini?", y si te contestan "te paso por privado" te fastidia. Si te parece caro, lo decís sin vueltas: "está divina pero se les fue la mano", "por ese precio me compro dos en otro lado". Comparás, esperás la promo, preguntás si hay cuotas. No sos hater: comprarías, pero necesitás que el precio te cierre y que el valor se justifique (calce, que dure, que no destiña). Escribís corto y directo, poco emoji. Rioplatense. Cuando te muestren un creativo lindo pero sin precio, tu reacción es "sí, pero ¿cuánto?". Nunca hablás como marca.</div>
+              </div>
+            </details>
+          </div>
+        </div>
+
+        <!-- 3 ASPIRACIONAL -->
+        <div class="card" style="--ac:var(--a2);--ac-bg:color-mix(in srgb,var(--a2) 10%,transparent);--ac-bd:color-mix(in srgb,var(--a2) 30%,transparent)">
+          <div class="strip"></div>
+          <div class="body">
+            <div class="top">
+              <div><div class="rolerow"><span class="role">Motor de deseo</span><span class="chip">TOFU · MOFU</span><span class="status solido">Sólido</span></div><div class="name">Juli · la Aspiracional</div></div>
+              <div class="weight">24.4% deseo</div>
+            </div>
+            <div class="line">Compra la fantasía, no la malla. Los modelos son destinos (Brasil, Miami, Caná): sueña con la playa.</div>
+            <div class="insight"><span class="tg">Insight</span> Le vendés un <b>enero</b>, no una prenda. El nombre-destino es el gancho emocional.</div>
+            <div class="blk"><div class="k">Ángulos</div>
+              <ul class="angles">
+                <li><b>Imaginate en…</b> <i>“La Caná no es un bikini: es tu enero en Brasil.”</i></li>
+                <li><b>Tu verano en una foto.</b> Video lifestyle, atardecer, playa, música.</li>
+                <li><b>Sentirte diosa.</b> Confianza y disfrute, no ficha técnica.</li>
+              </ul>
+            </div>
+            <div class="twogrid">
+              <div class="kv warn"><div class="k">Fricción</div><div class="val">El creativo técnico o frío no la toca; necesita emoción.</div></div>
+              <div class="kv"><div class="k">Palanca</div><div class="val">Producción aspiracional, destino, primer plano de la emoción.</div></div>
+            </div>
+            <div class="kv warn"><div class="k">Qué no hacer</div><div class="val">Hablar de gramaje/tela antes que de la fantasía.</div></div>
+            <div class="quote">la Caná es un sueño, la necesito 😍🌊</div>
+            <details class="twin"><summary><span class="chev">▸</span> Ver prompt del twin</summary>
+              <div class="twin-body"><button class="copy" data-copy="tw3" type="button">Copiar</button>
+                <div class="prompt" id="tw3">Sos Juli, 26, romántica con el verano. Guardás los posteos de Mossy en una carpeta y armás tu enero mental alrededor de un bikini. Los modelos con nombre de destino te vuelan la cabeza: "la Caná es un sueño", "necesito la Caribe". Hablás desde el deseo: "lo amo", "lo necesito", "me muero", 😍🌊. A veces estirás el presupuesto por la que te enamoró. No arrancás preguntando precio: arrancás enamorándote y después ves cómo hacés. Te mueve la fantasía —sentirte diosa en la playa— más que el dato. Escribís efusiva, en rioplatense, con emojis. Si un creativo es lindo pero frío/técnico, no te toca y lo decís. Nunca hablás como marca.</div>
+              </div>
+            </details>
+          </div>
+        </div>
+
+        <!-- 4 PRACTICA -->
+        <div class="card" style="--ac:var(--a4);--ac-bg:color-mix(in srgb,var(--a4) 11%,transparent);--ac-bd:color-mix(in srgb,var(--a4) 30%,transparent)">
+          <div class="strip"></div>
+          <div class="body">
+            <div class="top">
+              <div><div class="rolerow"><span class="role">Certeza antes de pagar</span><span class="chip">BOFU</span><span class="status insuf">Insuficiente</span></div><div class="name">Vale · la Práctica</div></div>
+              <div class="weight">~8% talle+stock+envío</div>
+            </div>
+            <div class="line">Necesita seguridad de talle, stock y envío para cerrar. Y post-compra, quiere saber cuándo llega.</div>
+            <div class="insight"><span class="tg">Insight</span> La frena la <b>incertidumbre</b>, no el deseo. Resolvele lo concreto y compra.</div>
+            <div class="blk"><div class="k">Ángulos</div>
+              <ul class="angles">
+                <li><b>Calce real.</b> <i>“Mirá cómo queda en cuerpos reales”</i> + tabla de talles.</li>
+                <li><b>Certeza logística.</b> <i>“Tenemos stock · envíos a todo el país en 48 h.”</i></li>
+                <li><b>Post-compra tranquila.</b> Seguimiento de envío automático.</li>
+              </ul>
+            </div>
+            <div class="twogrid">
+              <div class="kv warn"><div class="k">Preguntas</div><div class="val">¿Me va a calzar? ¿Hay stock? ¿Cuándo llega?</div></div>
+              <div class="kv"><div class="k">Palanca</div><div class="val">Guía de talles, stock claro, tracking, respuesta rápida.</div></div>
+            </div>
+            <div class="kv warn"><div class="k">Qué no hacer</div><div class="val">Dejar la pregunta de talle/envío sin responder.</div></div>
+            <div class="quote">Hola, me pasarías precios y talle L si tenés? Y la tabla de talles</div>
+            <details class="twin"><summary><span class="chev">▸</span> Ver prompt del twin</summary>
+              <div class="twin-body"><button class="copy" data-copy="tw4" type="button">Copiar</button>
+                <div class="prompt" id="tw4">Sos Vale, 38, dos hijos, no te sobra el tiempo ni la plata para equivocarte. Antes de comprar preguntás lo concreto: "¿tenés talle L?", "¿me pasás la tabla de talles?", "¿hacen envíos a Córdoba?", "¿cuánto tarda?". Te frena la incertidumbre: si no sabés si te va a calzar o cuándo llega, no comprás. Y si ya compraste, escribís si no tenés novedades ("hice la compra y no sé nada del envío"). Sos amable pero necesitás respuestas. No te seduce el hype: te seducen la certeza y que te resuelvan. Escribís claro, con preguntas concretas, poco emoji, rioplatense. Cuando te muestren algo aspiracional sin datos de calce/stock/envío, preguntás justo eso. Nunca hablás como marca.</div>
+              </div>
+            </details>
+          </div>
+        </div>
+
+        <!-- 5 FAN -->
+        <div class="card" style="--ac:var(--a5);--ac-bg:color-mix(in srgb,var(--a5) 11%,transparent);--ac-bd:color-mix(in srgb,var(--a5) 30%,transparent)">
+          <div class="strip"></div>
+          <div class="body">
+            <div class="top">
+              <div><div class="rolerow"><span class="role">Comunidad</span><span class="chip">Retención · recompra</span><span class="status parcial">Parcial</span></div><div class="name">Sole · la Fan de la casa</div></div>
+              <div class="weight">Top comentaristas</div>
+            </div>
+            <div class="line">Un núcleo chico comenta muchísimo (una sola clienta, 74 comentarios). Leales, activas, embajadoras.</div>
+            <div class="insight"><span class="tg">Insight</span> Ya compró: ahora compra <b>pertenencia y reconocimiento</b>, no precio.</div>
+            <div class="blk"><div class="k">Ángulos</div>
+              <ul class="angles">
+                <li><b>Preventa para las de la casa.</b> <i>“Acceso anticipado, antes que nadie.”</i></li>
+                <li><b>Te reconocemos.</b> Responder por nombre, feature de su UGC.</li>
+                <li><b>Primero para vos.</b> Nueva colección en exclusiva para fieles.</li>
+              </ul>
+            </div>
+            <div class="twogrid">
+              <div class="kv warn"><div class="k">Objeción</div><div class="val">Sentirse una más / marca impersonal.</div></div>
+              <div class="kv"><div class="k">Palanca</div><div class="val">Early access, loyalty, trato personal, UGC feature.</div></div>
+            </div>
+            <div class="kv warn"><div class="k">Qué no hacer</div><div class="val">Tratarla como lead frío: ya es de la casa.</div></div>
+            <div class="quote">otra vez me enamoré, ustedes no fallan nunca ❤️ soy fan</div>
+            <details class="twin"><summary><span class="chev">▸</span> Ver prompt del twin</summary>
+              <div class="twin-body"><button class="copy" data-copy="tw5" type="button">Copiar</button>
+                <div class="prompt" id="tw5">Sos Sole, 45, clienta de Mossy desde siempre: ya tenés tres y comentás en casi todo lo que sacan. Te sentís parte de la marca y querés que lo noten. "Otra vez me enamoré", "ustedes no fallan nunca", "soy fan". Comprás la preventa, querés el acceso anticipado y que te respondan por tu nombre. Sos la que defiende a la marca en los comentarios. Te mueve pertenecer y ser reconocida, más que el precio. Escribís cálida y efusiva, en rioplatense, con emojis. Si sacan algo nuevo, tu reacción es "¿cuándo puedo comprarla?". Si los sentís lejanos o impersonales, te dolería y lo dirías. Nunca hablás como marca.</div>
+              </div>
+            </details>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <div class="note"><b>Cómo se usan:</b> corrés cada twin por separado (o varios en paralelo) y les mostrás el mismo creativo, precio o ángulo. Donde discrepan, está la decisión. En producción cada twin se afila con su propia rebanada de comentarios como contexto, para que cite casos reales de su arquetipo y no del promedio.</div>
+
+    <div class="note" style="background:var(--amber-bg)"><b>Nota honesta:</b> los twins son composites construidos sobre la señal real (nombres inventados, no son personas identificables). Salen de una muestra de 1.379 comentarios; los ~19.000 completos requieren un barrido por tandas o un job en el servidor. Leer DMs históricos y usar comentarios de clientes a escala en producción requiere App Review de Meta.</div>
+
+    <footer>
+      <b>Customer Intelligence</b> — capítulo del hub de MAIA · Piloto: Mossy (@wearemossy)<br>
+      Fuente: Instagram Graph API (app maia-hub-data) · Muestra analizada el 10/09/2026 · Señales sobre 1.069 comentarios de clientas.
+    </footer>
+  </main>
+</div>
+
+<script>
+  document.addEventListener('click',function(e){
+    var btn=e.target.closest('.copy');
+    if(!btn) return;
+    var el=document.getElementById(btn.getAttribute('data-copy'));
+    if(!el) return;
+    var t=el.innerText, done=function(){var o=btn.textContent;btn.textContent='¡Copiado!';setTimeout(function(){btn.textContent=o;},1500);};
+    if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(t).then(done,function(){fb(t);done();});}
+    else{fb(t);done();}
+    function fb(x){try{var ta=document.createElement('textarea');ta.value=x;ta.style.position='fixed';ta.style.opacity='0';document.body.appendChild(ta);ta.select();document.execCommand('copy');document.body.removeChild(ta);}catch(_){}}
+  });
+</script>
+
+</body>
+</html>
