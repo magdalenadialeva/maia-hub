@@ -1,5 +1,11 @@
 [
  {
+  "date": "2026-09-13",
+  "cat": "creativo",
+  "text": "Se reactivó «Catalogo_Karla»",
+  "src": "auto"
+ },
+ {
   "date": "2026-09-12",
   "cat": "creativo",
   "text": "Se reactivó «Catalogo sin portada»",
@@ -9,6 +15,12 @@
   "date": "2026-09-10",
   "cat": "creativo",
   "text": "Se pausó «Catalogo sin portada»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-09-09",
+  "cat": "creativo",
+  "text": "Se pausó «Catalogo_Karla»",
   "src": "auto"
  },
  {
@@ -105,12 +117,6 @@
   "date": "2026-09-08",
   "cat": "creativo",
   "text": "Se reactivó «Catalogo_Karla»",
-  "src": "auto"
- },
- {
-  "date": "2026-09-08",
-  "cat": "creativo",
-  "text": "Se apagó «Catalogo_Karla»",
   "src": "auto"
  },
  {
@@ -711,12 +717,6 @@
   "date": "2026-08-28",
   "cat": "estado",
   "text": "Estado del anuncio actualizado cuando se completa su revisión · Catalogo_3 (Inactivo → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-28",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Catalogo_3 (Inactivo → Procesamiento pendiente)",
   "src": "meta"
  }
 ]

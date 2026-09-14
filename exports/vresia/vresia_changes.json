@@ -1,9 +1,69 @@
 [
  {
+  "date": "2026-09-12",
+  "cat": "creativo",
+  "text": "Se apagó «Tu reme favorita ya llegó»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-09-12",
+  "cat": "creativo",
+  "text": "Se apagó «3X2 Reme Sofia»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-09-11",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Llegaron tus remes favoritas (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
   "date": "2026-09-11",
   "cat": "estado",
   "text": "Estado del anuncio actualizado · Tu reme favorita ya llegó (Revisión pendiente → Activo)",
   "src": "meta"
+ },
+ {
+  "date": "2026-09-11",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Envio Gratis (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-11",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado cuando se completa su revisión · Catalogo + Video 4 (Activo → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-11",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Catalogo + Video 4 (Activo → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-11",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Cardigam Roma (Procesamiento pendiente → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-11",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado cuando se completa su revisión · Orgullosamente argentinas (Activo → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-11",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Orgullosamente argentinas (Activo → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-11",
+  "cat": "creativo",
+  "text": "Se apagó «Catalogo + Video 5»",
+  "src": "auto"
  },
  {
   "date": "2026-09-11",
@@ -206,13 +266,13 @@
  {
   "date": "2026-08-31",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · Cardigam Roma (Revisión pendiente → Activo)",
+  "text": "Estado del anuncio actualizado · Catalogo + Video 5 (Revisión pendiente → Activo)",
   "src": "meta"
  },
  {
   "date": "2026-08-31",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · Catalogo + Video 5 (Revisión pendiente → Activo)",
+  "text": "Estado del anuncio actualizado · Cardigam Roma (Revisión pendiente → Activo)",
   "src": "meta"
  },
  {
@@ -272,19 +332,19 @@
  {
   "date": "2026-08-31",
   "cat": "creativo",
+  "text": "Anuncio creado · Catalogo + Video 1",
+  "src": "meta"
+ },
+ {
+  "date": "2026-08-31",
+  "cat": "creativo",
+  "text": "Anuncio creado · Catalogo + Video 4",
+  "src": "meta"
+ },
+ {
+  "date": "2026-08-31",
+  "cat": "creativo",
   "text": "Anuncio creado · Catalogo + Video 3",
-  "src": "meta"
- },
- {
-  "date": "2026-08-31",
-  "cat": "creativo",
-  "text": "Anuncio creado · Catalogo + Video 2",
-  "src": "meta"
- },
- {
-  "date": "2026-08-31",
-  "cat": "creativo",
-  "text": "Anuncio creado · Catalogo + Video 5",
   "src": "meta"
  },
  {
@@ -296,13 +356,13 @@
  {
   "date": "2026-08-31",
   "cat": "creativo",
-  "text": "Anuncio creado · Catalogo + Video 1",
+  "text": "Anuncio creado · Catalogo + Video 5",
   "src": "meta"
  },
  {
   "date": "2026-08-31",
   "cat": "creativo",
-  "text": "Anuncio creado · Catalogo + Video 4",
+  "text": "Anuncio creado · Catalogo + Video 2",
   "src": "meta"
  },
  {
@@ -657,66 +717,6 @@
   "date": "2026-08-20",
   "cat": "estado",
   "text": "Estado del conjunto de anuncios actualizado · LAL Compradoras | 16/08 (Activo → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-20",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · wtf arg | 13/02 (Activo → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-20",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · wtf arg | 13/02 (Activo → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-19",
-  "cat": "creativo",
-  "text": "Se apagó «wtf arg | 13/02»",
-  "src": "auto"
- },
- {
-  "date": "2026-08-17",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · wtf arg | 13/02 (Revisión pendiente → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-17",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · wtf arg | 13/02 (Procesamiento pendiente → Revisión pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-17",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · wtf arg | 13/02 (Activo → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-17",
-  "cat": "creativo",
-  "text": "Anuncio actualizado · wtf arg | 13/02",
-  "src": "meta"
- },
- {
-  "date": "2026-08-16",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · wtf arg | 13/02 (Revisión pendiente → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-16",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · wtf arg | 13/02 (Procesamiento pendiente → Revisión pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-16",
-  "cat": "estado",
-  "text": "Estado del conjunto de anuncios actualizado · LAL Compradoras | 16/08 (Procesamiento pendiente → Activo)",
   "src": "meta"
  }
 ]

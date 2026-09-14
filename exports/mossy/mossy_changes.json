@@ -6,6 +6,12 @@
   "src": "auto"
  },
  {
+  "date": "2026-09-12",
+  "cat": "creativo",
+  "text": "Se apagó «Ad2 - Angulo Viaje»",
+  "src": "auto"
+ },
+ {
   "date": "2026-09-10",
   "cat": "creativo",
   "text": "Se pausó «Ad6 - Secuencia - Nueva coleccion 202666 - Copia 6»",
@@ -506,13 +512,13 @@
  {
   "date": "2026-08-24",
   "cat": "creativo",
-  "text": "Se apagó «Ad5 - Video - Sale - Copia»",
+  "text": "Se pausó «Ad6 - Secuencia - Nueva coleccion 202666 - Copia 5»",
   "src": "auto"
  },
  {
   "date": "2026-08-24",
   "cat": "creativo",
-  "text": "Se pausó «Ad6 - Secuencia - Nueva coleccion 202666 - Copia 5»",
+  "text": "Se apagó «Ad5 - Video - Sale - Copia»",
   "src": "auto"
  },
  {
@@ -711,12 +717,6 @@
   "date": "2026-08-22",
   "cat": "estado",
   "text": "Estado del anuncio actualizado cuando se completa su revisión · Ad2 - Angulo Viaje (Activo → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-22",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · Ad6 - Secuencia - Nueva coleccion 2026 - Copia 2 (Activo → Inactivo)",
   "src": "meta"
  }
 ]
