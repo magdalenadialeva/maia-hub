@@ -1,5 +1,17 @@
 [
  {
+  "date": "2026-09-15",
+  "cat": "creativo",
+  "text": "Se encendió/lanzó «Nuevo anuncio de Tráfico»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-09-05",
+  "cat": "estado",
+  "text": "Cuenta sin gasto 2 días (posible pausa general)",
+  "src": "auto"
+ },
+ {
   "date": "2026-09-04",
   "cat": "estado",
   "text": "Estado de la campaña actualizado · PieraCeresa_2026_Conversiones (Activa → Inactiva)",
@@ -705,18 +717,6 @@
   "date": "2026-08-31",
   "cat": "creativo",
   "text": "Se apagó «Carrusel Catalogo 2 - Video»",
-  "src": "auto"
- },
- {
-  "date": "2026-08-31",
-  "cat": "creativo",
-  "text": "Se apagó «Carrusel Catalogo 2 - Video - AGO»",
-  "src": "auto"
- },
- {
-  "date": "2026-08-31",
-  "cat": "creativo",
-  "text": "Se apagó «Carrusel Catalogo 1 - Video - AGO»",
   "src": "auto"
  }
 ]

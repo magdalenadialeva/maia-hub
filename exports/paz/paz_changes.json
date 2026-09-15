@@ -1,9 +1,345 @@
 [
  {
+  "date": "2026-09-14",
+  "cat": "estado",
+  "text": "Estado de la campaña actualizado · Nueva campaña de Clientes potenciales V.2 (Procesamiento pendiente → Activa)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-14",
+  "cat": "presupuesto",
+  "text": "Presupuesto de la campaña actualizado · Nueva campaña de Clientes potenciales V.2 (15.000 → 20.000 ARS/día)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-14",
+  "cat": "estado",
+  "text": "Estado de la campaña actualizado · Nueva campaña de Clientes potenciales V.2 (Activa → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-14",
+  "cat": "presupuesto",
+  "text": "Presupuesto de la campaña actualizado · Nueva campaña de Clientes potenciales V.2 (10.000 → 15.000 ARS/día)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-14",
+  "cat": "presupuesto",
+  "text": "Presupuesto de la campaña actualizado · Nueva campaña de Clientes potenciales V.2 (105.000 → 10.000 ARS/día)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-14",
+  "cat": "presupuesto",
+  "text": "Presupuesto de la campaña actualizado · Nueva campaña de Clientes potenciales V.2 (10.000 → 105.000 ARS/día)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-14",
+  "cat": "otros",
+  "text": "Nombre del conjunto de anuncios actualizado · Nueva campaña de Clientes potenciales V.2 - UY - Madrid (Nueva campaña de Clientes potenciales V.2 - Argentina - Copia → Nueva campaña de Clientes potenciales V.2 - UY - Madrid)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-14",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · IG Post 10/9 - Convocatoria (DdFq8b0tHL3) (Revisión pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-14",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · 2 - Nueva - Copia (Revisión pendiente → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-14",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Nuevo anuncio de Clientes potenciales - Copia 4 (Revisión pendiente → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-14",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · 2 - Nueva - Copia 3 (Revisión pendiente → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-14",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · IG Post 29/8 A - Convocatoria (nuevas convocatorias) (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-14",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · IG Post 8/9 B - Convocatoria (DdCWmL2Mn9t) (Revisión pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-14",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · IG Post 8/9 B - Convocatoria (DdCWmL2Mn9t) (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-14",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · IG Post 4/9 C - Convocatoria (Dc1FCLwszOO) (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-14",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · IG Post 4/9 B - Convocatoria (DcoR2g6s-IU)IG Post 29/8 B - Convocatoria (30 días publicidad) - Copia (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-14",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · 2 - Nueva - Copia (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-14",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · IG Post 29/8 A - Convocatoria (nuevas convocatorias) (Revisión pendiente → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-14",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · IG Post 8/9 C - Convocatoria (DdCc8HBss8Q) (Revisión pendiente → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-14",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · IG Post 29/8 B - Convocatoria (30 días publicidad) (Revisión pendiente → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-14",
+  "cat": "estado",
+  "text": "Estado del conjunto de anuncios actualizado · Nueva campaña de Clientes potenciales V.2 - Argentina - Copia (Procesamiento pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-14",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · 2 - Nueva - Copia 2 (Revisión pendiente → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-14",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · IG Post 8/9 A - Convocatoria (DdCRh2tMXCc) (Revisión pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-14",
+  "cat": "otros",
+  "text": "Segmentación del conjunto de anuncios actualizada · Nueva campaña de Clientes potenciales V.2 - Argentina - Copia",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-14",
+  "cat": "estado",
+  "text": "Estado del conjunto de anuncios actualizado · Nueva campaña de Clientes potenciales V.2 - Argentina - Copia (Activo → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-14",
+  "cat": "estado",
+  "text": "Estado del conjunto de anuncios actualizado · Nueva campaña de Clientes potenciales V.2 - Argentina - Copia (Inactivo → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-14",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · 2 - Nueva - Copia 3 (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-14",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · IG Post 9/9 - Convocatoria (DdCWmL2Mn9t) (Revisión pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-14",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · IG Post 4/9 C - Convocatoria (Dc1FCLwszOO) (Revisión pendiente → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-14",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Nuevo anuncio de Clientes potenciales - Copia 4 (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-14",
+  "cat": "estado",
+  "text": "Estado del conjunto de anuncios actualizado · Nueva campaña de Clientes potenciales V.2 - Argentina (Activo → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-14",
+  "cat": "segmentacion",
+  "text": "Público personalizado creado · Similar (ES, UY, 1%) - Copia de Numeros Celular - Hoja 2.csv",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-14",
+  "cat": "segmentacion",
+  "text": "Público personalizado creado · Similar (ES, UY) - Copia de Numeros Celular - Hoja 2.csv",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-14",
+  "cat": "estado",
+  "text": "Estado del conjunto de anuncios actualizado · Nueva campaña de Clientes potenciales V.2 - UY - Madrid (Procesamiento pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-14",
+  "cat": "estado",
+  "text": "Estado del conjunto de anuncios actualizado · Nueva campaña de Clientes potenciales V.2 - Argentina - Copia (Activo → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-14",
+  "cat": "otros",
+  "text": "Segmentación del conjunto de anuncios actualizada · Nueva campaña de Clientes potenciales V.2 - UY - Madrid",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-14",
+  "cat": "estado",
+  "text": "Estado del conjunto de anuncios actualizado · Nueva campaña de Clientes potenciales V.2 - UY - Madrid (Activo → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-14",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · IG Post 8/9 A - Convocatoria (DdCRh2tMXCc) (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-14",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · IG Post 29/8 B - Convocatoria (30 días publicidad) (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-14",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · IG Post 4/9 A - Convocatoria (Dc1mR9hsYkW) (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-14",
+  "cat": "creativo",
+  "text": "Anuncio creado · 2 - Nueva - Copia 2",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-14",
+  "cat": "creativo",
+  "text": "Anuncio creado · IG Post 4/9 B - Convocatoria (DcoR2g6s-IU)IG Post 29/8 B - Convocatoria (30 días publicidad) - Copia",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-14",
+  "cat": "presupuesto",
+  "text": "Se habilitó la programación del presupuesto del conjunto de anuncios · Nueva campaña de Clientes potenciales V.2 - UY - Madrid",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-14",
+  "cat": "objetivo",
+  "text": "Objetivo de optimización del conjunto de anuncios actualizado · Nueva campaña de Clientes potenciales V.2 - UY - Madrid",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-14",
+  "cat": "presupuesto",
+  "text": "Estrategia de puja del conjunto de anuncios actualizada · Nueva campaña de Clientes potenciales V.2 - UY - Madrid",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-14",
+  "cat": "creativo",
+  "text": "Conjunto de anuncios creado · Nueva campaña de Clientes potenciales V.2 - UY - Madrid",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-14",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · IG Post 9/9 - Convocatoria (DdCWmL2Mn9t) (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-14",
+  "cat": "creativo",
+  "text": "Anuncio creado · IG Post 8/9 A - Convocatoria (DdCRh2tMXCc)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-14",
+  "cat": "creativo",
+  "text": "Anuncio creado · 2 - Nueva - Copia",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-14",
+  "cat": "creativo",
+  "text": "Anuncio creado · IG Post 4/9 A - Convocatoria (Dc1mR9hsYkW)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-14",
+  "cat": "presupuesto",
+  "text": "Se habilitó la programación del presupuesto del conjunto de anuncios · Nueva campaña de Clientes potenciales V.2 - Argentina - Copia",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-14",
+  "cat": "objetivo",
+  "text": "Objetivo de optimización del conjunto de anuncios actualizado · Nueva campaña de Clientes potenciales V.2 - Argentina - Copia",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-14",
+  "cat": "presupuesto",
+  "text": "Estrategia de puja del conjunto de anuncios actualizada · Nueva campaña de Clientes potenciales V.2 - Argentina - Copia",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-14",
+  "cat": "creativo",
+  "text": "Conjunto de anuncios creado · Nueva campaña de Clientes potenciales V.2 - Argentina - Copia",
+  "src": "meta"
+ },
+ {
   "date": "2026-09-12",
   "cat": "creativo",
   "text": "Se reactivó «IG Post 8/9 B - Convocatoria (DdCWmL2Mn9t)»",
   "src": "auto"
+ },
+ {
+  "date": "2026-09-11",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · IG Post 10/9 - Convocatoria (DdFq8b0tHL3) (Revisión pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-11",
+  "cat": "creativo",
+  "text": "Anuncio creado · IG Post 10/9 - Convocatoria (DdFq8b0tHL3)",
+  "src": "meta"
  },
  {
   "date": "2026-09-11",
@@ -176,12 +512,6 @@
  {
   "date": "2026-09-08",
   "cat": "creativo",
-  "text": "Anuncio creado · IG Post 8/9 C - Convocatoria (DdCc8HBss8Q)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-08",
-  "cat": "creativo",
   "text": "Anuncio creado · IG Post 8/9 B - Convocatoria (DdCWmL2Mn9t)",
   "src": "meta"
  },
@@ -189,6 +519,12 @@
   "date": "2026-09-08",
   "cat": "creativo",
   "text": "Anuncio creado · IG Post 8/9 A - Convocatoria (DdCRh2tMXCc)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-08",
+  "cat": "creativo",
+  "text": "Anuncio creado · IG Post 8/9 C - Convocatoria (DdCc8HBss8Q)",
   "src": "meta"
  },
  {
@@ -212,12 +548,6 @@
  {
   "date": "2026-09-08",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · 2 - Nueva - Copia 2 (Activo → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-08",
-  "cat": "estado",
   "text": "Estado del anuncio actualizado cuando se completa su revisión · IG Post 29/8 B - Convocatoria (30 días publicidad) (Activo → Inactivo)",
   "src": "meta"
  },
@@ -230,7 +560,13 @@
  {
   "date": "2026-09-08",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · 2 - Nueva - Copia 2 (Activo → Procesamiento pendiente)",
+  "text": "Estado del anuncio actualizado cuando se completa su revisión · 2 - Nueva - Copia 2 (Activo → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-08",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · IG Post 4/9 A - Convocatoria (Dc1mR9hsYkW) (Activo → Procesamiento pendiente)",
   "src": "meta"
  },
  {
@@ -242,7 +578,7 @@
  {
   "date": "2026-09-08",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · IG Post 4/9 A - Convocatoria (Dc1mR9hsYkW) (Activo → Procesamiento pendiente)",
+  "text": "Estado del anuncio actualizado · 2 - Nueva - Copia 2 (Activo → Procesamiento pendiente)",
   "src": "meta"
  },
  {
@@ -381,342 +717,6 @@
   "date": "2026-09-04",
   "cat": "creativo",
   "text": "Anuncio creado · IG Post 4/9 A - Convocatoria (Dc1mR9hsYkW)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-04",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · 2 - Nueva - Copia (Procesamiento pendiente → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-04",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · 2 - Nueva - Copia (Activo → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-04",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · 2 - Nueva - Copia (Activo → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-04",
-  "cat": "creativo",
-  "text": "Se apagó «2 - Nueva - Copia»",
-  "src": "auto"
- },
- {
-  "date": "2026-09-04",
-  "cat": "creativo",
-  "text": "Se encendió/lanzó «IG Post 4/9 A - Convocatoria (Dc1mR9hsYkW)»",
-  "src": "auto"
- },
- {
-  "date": "2026-09-04",
-  "cat": "creativo",
-  "text": "Se encendió/lanzó «IG Post 4/9 C - Convocatoria (Dc1FCLwszOO)»",
-  "src": "auto"
- },
- {
-  "date": "2026-09-03",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · IG Post 29/8 A - Convocatoria (nuevas convocatorias) (Procesamiento pendiente → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-03",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · IG Post 29/8 A - Convocatoria (nuevas convocatorias) (Activo → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-03",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · IG Post 29/8 A - Convocatoria (nuevas convocatorias) (Activo → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-03",
-  "cat": "creativo",
-  "text": "Se apagó «IG Post 29/8 A - Convocatoria (nuevas convocatorias)»",
-  "src": "auto"
- },
- {
-  "date": "2026-08-31",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · 2 - Nueva - Copia (Procesamiento pendiente → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-31",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · 2 - Nueva - Copia 2 (Procesamiento pendiente → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-31",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · 2 - Nueva - Copia (Inactivo → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-31",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · 2 - Nueva - Copia (Inactivo → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-31",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · 2 - Nueva - Copia 2 (Inactivo → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-31",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · 2 - Nueva - Copia 2 (Inactivo → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-31",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · 2 - Nueva - Copia 2 (Procesamiento pendiente → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-31",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · 2 - Nueva - Copia (Procesamiento pendiente → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-31",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · 2 - Nueva - Copia 2 (Activo → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-31",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · 2 - Nueva - Copia 2 (Activo → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-31",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · 2 - Nueva - Copia (Activo → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-31",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · 2 - Nueva - Copia (Activo → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-29",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · IG Post 29/8 B - Convocatoria (30 días publicidad) (Revisión pendiente → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-29",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · IG Post 29/8 A - Convocatoria (nuevas convocatorias) (Revisión pendiente → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-29",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · IG Post 29/8 B - Convocatoria (30 días publicidad) (Procesamiento pendiente → Revisión pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-29",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · IG Post 29/8 B - Convocatoria (30 días publicidad) (Inactivo → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-29",
-  "cat": "creativo",
-  "text": "Anuncio creado · IG Post 29/8 B - Convocatoria (30 días publicidad)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-29",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · IG Post 29/8 A - Convocatoria (nuevas convocatorias) (Procesamiento pendiente → Revisión pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-29",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · IG Post 29/8 A - Convocatoria (nuevas convocatorias) (Inactivo → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-29",
-  "cat": "creativo",
-  "text": "Anuncio creado · IG Post 29/8 A - Convocatoria (nuevas convocatorias)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-29",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Nuevo anuncio de Clientes potenciales - Copia 4 (Procesamiento pendiente → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-29",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · 2 - Nueva - Copia 3 (Procesamiento pendiente → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-29",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · Nuevo anuncio de Clientes potenciales - Copia 4 (Activo → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-29",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Nuevo anuncio de Clientes potenciales - Copia 4 (Activo → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-29",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · 2 - Nueva - Copia 3 (Activo → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-29",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · 2 - Nueva - Copia 3 (Activo → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-29",
-  "cat": "creativo",
-  "text": "Se encendió/lanzó «IG Post 29/8 B - Convocatoria (30 días publicidad)»",
-  "src": "auto"
- },
- {
-  "date": "2026-08-29",
-  "cat": "creativo",
-  "text": "Se encendió/lanzó «IG Post 29/8 A - Convocatoria (nuevas convocatorias)»",
-  "src": "auto"
- },
- {
-  "date": "2026-08-28",
-  "cat": "creativo",
-  "text": "Se apagó «2 - Nueva - Copia 3»",
-  "src": "auto"
- },
- {
-  "date": "2026-08-28",
-  "cat": "creativo",
-  "text": "Se apagó «Nuevo anuncio de Clientes potenciales - Copia 4»",
-  "src": "auto"
- },
- {
-  "date": "2026-08-23",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · 2 - Nueva - Copia 2 (Revisión pendiente → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-23",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · 2 - Nueva - Copia 3 (Revisión pendiente → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-23",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · 2 - Nueva - Copia (Revisión pendiente → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-23",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Nuevo anuncio de Clientes potenciales - Copia 4 (Revisión pendiente → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-23",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · 2 - Nueva - Copia 2 (Procesamiento pendiente → Revisión pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-23",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · 2 - Nueva - Copia 3 (Procesamiento pendiente → Revisión pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-23",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · 2 - Nueva - Copia (Procesamiento pendiente → Revisión pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-23",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Nuevo anuncio de Clientes potenciales - Copia 4 (Procesamiento pendiente → Revisión pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-23",
-  "cat": "creativo",
-  "text": "Anuncio actualizado · 2 - Nueva - Copia 2",
-  "src": "meta"
- },
- {
-  "date": "2026-08-23",
-  "cat": "creativo",
-  "text": "Anuncio actualizado · 2 - Nueva - Copia 3",
-  "src": "meta"
- },
- {
-  "date": "2026-08-23",
-  "cat": "creativo",
-  "text": "Anuncio actualizado · 2 - Nueva - Copia",
-  "src": "meta"
- },
- {
-  "date": "2026-08-23",
-  "cat": "creativo",
-  "text": "Anuncio actualizado · Nuevo anuncio de Clientes potenciales - Copia 4",
-  "src": "meta"
- },
- {
-  "date": "2026-08-23",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Nuevo anuncio de Clientes potenciales - Copia 4 (Activo → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-23",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · 2 - Nueva - Copia 2 (Activo → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-23",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · 2 - Nueva - Copia (Activo → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-23",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · 2 - Nueva - Copia 3 (Activo → Procesamiento pendiente)",
   "src": "meta"
  }
 ]
