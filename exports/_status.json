@@ -1,40 +1,38 @@
 {
   "piera": {
-    "fetched_at": "2026-09-15",
+    "fetched_at": "2026-09-16",
     "ok": true,
-    "rows": 129,
+    "rows": 126,
     "empty": false,
-    "through": "2026-09-15"
+    "through": "2026-09-16"
   },
   "mossy": {
-    "fetched_at": "2026-09-15",
+    "fetched_at": "2026-09-16",
     "ok": true,
-    "rows": 492,
+    "rows": 484,
     "empty": false,
-    "through": "2026-09-15"
+    "through": "2026-09-16"
   },
   "vresia": {
-    "fetched_at": "2026-09-14",
-    "ok": false,
-    "rows": 174,
+    "fetched_at": "2026-09-16",
+    "ok": true,
+    "rows": 168,
     "empty": false,
-    "through": "2026-09-14",
-    "last_error": "HTTP 400: {\"error\":{\"message\":\"Service temporarily unavailable\",\"type\":\"OAuthException\",\"is_transient\":false,\"code\":2,\"error_subcode\":1504044,\"error_user_title\":\"Se produjo un error desconocido\",\"erro",
-    "last_attempt": "2026-09-15"
+    "through": "2026-09-16"
   },
   "alba": {
-    "fetched_at": "2026-09-15",
+    "fetched_at": "2026-09-16",
     "ok": true,
-    "rows": 105,
+    "rows": 109,
     "empty": false,
-    "through": "2026-09-15"
+    "through": "2026-09-16"
   },
   "paz": {
-    "fetched_at": "2026-09-15",
+    "fetched_at": "2026-09-16",
     "ok": true,
     "rows": 139,
     "empty": false,
-    "through": "2026-09-15"
+    "through": "2026-09-16"
   },
   "pulpa": {
     "fetched_at": "2026-09-09",
@@ -43,13 +41,13 @@
     "empty": false,
     "through": "2026-09-09",
     "last_error": "HTTP 403: {\"error\":{\"message\":\"(#200) Ad account owner has NOT grant ads_management or ads_read permission, refer to https:\\/\\/developers.facebook.com\\/docs\\/marketing-api\\/get-started\\/authorization\\",
-    "last_attempt": "2026-09-15"
+    "last_attempt": "2026-09-16"
   },
   "saritina-ceramica": {
-    "fetched_at": "2026-09-15",
+    "fetched_at": "2026-09-16",
     "ok": true,
-    "rows": 46,
+    "rows": 50,
     "empty": false,
-    "through": "2026-09-15"
+    "through": "2026-09-16"
   }
 }

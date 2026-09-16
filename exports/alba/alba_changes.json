@@ -12,6 +12,12 @@
   "src": "meta"
  },
  {
+  "date": "2026-09-14",
+  "cat": "creativo",
+  "text": "Se apagó «Catalogo_5»",
+  "src": "auto"
+ },
+ {
   "date": "2026-09-13",
   "cat": "creativo",
   "text": "Se reactivó «Catalogo_Karla»",
@@ -711,12 +717,6 @@
   "date": "2026-08-28",
   "cat": "estado",
   "text": "Estado del anuncio actualizado · Catalogo_2 (Inactivo → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-28",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Catalogo_Karla (Inactivo → Procesamiento pendiente)",
   "src": "meta"
  }
 ]
