@@ -2,6 +2,18 @@
  {
   "date": "2026-09-15",
   "cat": "estado",
+  "text": "Estado del anuncio actualizado · Nuevo anuncio de Tráfico (Revisión pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-15",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Nuevo anuncio de Tráfico (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-15",
+  "cat": "estado",
   "text": "Estado del conjunto de anuncios actualizado · Trafico constante (Procesamiento pendiente → Activo)",
   "src": "meta"
  },
@@ -194,7 +206,7 @@
  {
   "date": "2026-09-02",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · Carrusel Catalogo (Revisión pendiente → Activo)",
+  "text": "Estado del anuncio actualizado · Carrusel Catalogo 2 - Video - AGO - Copia 4 (Revisión pendiente → Activo)",
   "src": "meta"
  },
  {
@@ -206,7 +218,7 @@
  {
   "date": "2026-09-02",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · Carrusel Catalogo 2 - Video - AGO - Copia 4 (Revisión pendiente → Activo)",
+  "text": "Estado del anuncio actualizado · Carrusel Catalogo (Revisión pendiente → Activo)",
   "src": "meta"
  },
  {
@@ -230,30 +242,6 @@
  {
   "date": "2026-09-02",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · Carrusel Catalogo 3 - Video - Copia 2 (Revisión pendiente → Eliminado)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-02",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Carrusel Catalogo - Video Nuevo 5 (Revisión pendiente → Eliminado)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-02",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Carrusel Catalogo - Video Nuevo 4 (Revisión pendiente → Eliminado)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-02",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Carrusel Catalogo 3 - Video (Revisión pendiente → Eliminado)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-02",
-  "cat": "estado",
   "text": "Estado del anuncio actualizado · Carrusel Catalogo - Video Nuevo 2 (Revisión pendiente → Eliminado)",
   "src": "meta"
  },
@@ -272,6 +260,30 @@
  {
   "date": "2026-09-02",
   "cat": "estado",
+  "text": "Estado del anuncio actualizado · Carrusel Catalogo 3 - Video (Revisión pendiente → Eliminado)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-02",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Carrusel Catalogo - Video Nuevo 5 (Revisión pendiente → Eliminado)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-02",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Carrusel Catalogo 3 - Video - Copia 2 (Revisión pendiente → Eliminado)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-02",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Carrusel Catalogo - Video Nuevo 4 (Revisión pendiente → Eliminado)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-02",
+  "cat": "estado",
   "text": "Estado del anuncio actualizado · Carrusel Catalogo - Video Nuevo 6 (Revisión pendiente → Inactivo)",
   "src": "meta"
  },
@@ -285,6 +297,12 @@
   "date": "2026-09-02",
   "cat": "estado",
   "text": "Estado del anuncio actualizado · Carrusel Catalogo 3 - Video - Copia 2 (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-02",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Carrusel Catalogo 1 - Video - AGO - Copia 2 (Procesamiento pendiente → Revisión pendiente)",
   "src": "meta"
  },
  {
@@ -314,25 +332,7 @@
  {
   "date": "2026-09-02",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · Carrusel Catalogo 1 - Video - AGO - Copia 2 (Procesamiento pendiente → Revisión pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-02",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Carrusel Catalogo - Video Nuevo 2 (Procesamiento pendiente → Revisión pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-02",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Carrusel Catalogo - Video Nuevo 1 (Procesamiento pendiente → Revisión pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-02",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Carrusel Catalogo 3 - Video - Copia (Procesamiento pendiente → Revisión pendiente)",
+  "text": "Estado del anuncio actualizado · Carrusel Catalogo 2 - Video - AGO - Copia 4 (Procesamiento pendiente → Revisión pendiente)",
   "src": "meta"
  },
  {
@@ -344,19 +344,25 @@
  {
   "date": "2026-09-02",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · Carrusel Catalogo 2 - Video - AGO - Copia 4 (Procesamiento pendiente → Revisión pendiente)",
+  "text": "Estado del anuncio actualizado · Carrusel Catalogo 3 - Video - Copia (Procesamiento pendiente → Revisión pendiente)",
   "src": "meta"
  },
  {
   "date": "2026-09-02",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · Carrusel Catalogo 1 - Video - AGO - Copia 3 (Procesamiento pendiente → Revisión pendiente)",
+  "text": "Estado del anuncio actualizado · Carrusel Catalogo - Video Nuevo 1 (Procesamiento pendiente → Revisión pendiente)",
   "src": "meta"
  },
  {
   "date": "2026-09-02",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · Carrusel Catalogo 2 - Video (Procesamiento pendiente → Revisión pendiente)",
+  "text": "Estado del anuncio actualizado · Carrusel Catalogo - Video Nuevo 2 (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-02",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Carrusel Catalogo 3 - Video (Procesamiento pendiente → Revisión pendiente)",
   "src": "meta"
  },
  {
@@ -374,13 +380,25 @@
  {
   "date": "2026-09-02",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · Carrusel Catalogo 3 - Video (Procesamiento pendiente → Revisión pendiente)",
+  "text": "Estado del anuncio actualizado · Carrusel Catalogo 1 - Video - AGO - Copia 3 (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-02",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Carrusel Catalogo 2 - Video (Procesamiento pendiente → Revisión pendiente)",
   "src": "meta"
  },
  {
   "date": "2026-09-02",
   "cat": "estado",
   "text": "Estado del conjunto de anuncios actualizado · PieraCeresa_2026_Conversiones - V.3 (Procesamiento pendiente → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-02",
+  "cat": "creativo",
+  "text": "Anuncio creado · Carrusel Catalogo 3 - Video - Copia 2",
   "src": "meta"
  },
  {
@@ -422,19 +440,19 @@
  {
   "date": "2026-09-02",
   "cat": "creativo",
-  "text": "Anuncio creado · Carrusel Catalogo 3 - Video - Copia 2",
-  "src": "meta"
- },
- {
-  "date": "2026-09-02",
-  "cat": "creativo",
-  "text": "Anuncio creado · Carrusel Catalogo 1 - Video - AGO - Copia 3",
+  "text": "Anuncio creado · Carrusel Catalogo - Video Nuevo 5",
   "src": "meta"
  },
  {
   "date": "2026-09-02",
   "cat": "creativo",
   "text": "Anuncio creado · Carrusel Catalogo 1 - Video - AGO - Copia 2",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-02",
+  "cat": "creativo",
+  "text": "Anuncio creado · Carrusel Catalogo 1 - Video - AGO - Copia 3",
   "src": "meta"
  },
  {
@@ -453,12 +471,6 @@
   "date": "2026-09-02",
   "cat": "creativo",
   "text": "Anuncio creado · Carrusel Catalogo 2 - Video - AGO - Copia 2",
-  "src": "meta"
- },
- {
-  "date": "2026-09-02",
-  "cat": "creativo",
-  "text": "Anuncio creado · Carrusel Catalogo - Video Nuevo 5",
   "src": "meta"
  },
  {
@@ -706,17 +718,5 @@
   "cat": "creativo",
   "text": "Se encendió/lanzó «Carrusel Catalogo 2 - Video - AGO - Copia 4»",
   "src": "auto"
- },
- {
-  "date": "2026-08-31",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Carrusel Catalogo 2 - Video - AGO - Copia 3 (Revisión pendiente → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-31",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Carrusel Catalogo 2 - Video - AGO - Copia 2 (Revisión pendiente → Activo)",
-  "src": "meta"
  }
 ]

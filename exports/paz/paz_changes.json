@@ -1,5 +1,23 @@
 [
  {
+  "date": "2026-09-16",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · IG Post 10/9 - Convocatoria (DdFq8b0tHL3) (Procesamiento pendiente → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-16",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado cuando se completa su revisión · IG Post 10/9 - Convocatoria (DdFq8b0tHL3) (Activo → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-16",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · IG Post 10/9 - Convocatoria (DdFq8b0tHL3) (Activo → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
   "date": "2026-09-15",
   "cat": "estado",
   "text": "Estado de la campaña actualizado · Nueva campaña de Clientes potenciales V.2 (Procesamiento pendiente → Activa)",
@@ -55,6 +73,12 @@
  },
  {
   "date": "2026-09-14",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · 2 - Nueva - Copia 3 (Revisión pendiente → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-14",
   "cat": "otros",
   "text": "Nombre del conjunto de anuncios actualizado · Nueva campaña de Clientes potenciales V.2 - UY - Madrid (Nueva campaña de Clientes potenciales V.2 - Argentina - Copia → Nueva campaña de Clientes potenciales V.2 - UY - Madrid)",
   "src": "meta"
@@ -80,7 +104,19 @@
  {
   "date": "2026-09-14",
   "cat": "estado",
+  "text": "Estado del anuncio actualizado · IG Post 9/9 - Convocatoria (DdCWmL2Mn9t) (Revisión pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-14",
+  "cat": "estado",
   "text": "Estado del anuncio actualizado · Nuevo anuncio de Clientes potenciales - Copia 4 (Revisión pendiente → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-14",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · 2 - Nueva - Copia 2 (Revisión pendiente → Inactivo)",
   "src": "meta"
  },
  {
@@ -92,7 +128,31 @@
  {
   "date": "2026-09-14",
   "cat": "estado",
+  "text": "Estado del anuncio actualizado · IG Post 29/8 A - Convocatoria (nuevas convocatorias) (Revisión pendiente → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-14",
+  "cat": "estado",
   "text": "Estado del anuncio actualizado · IG Post 4/9 B - Convocatoria (DcoR2g6s-IU)IG Post 29/8 B - Convocatoria (30 días publicidad) - Copia (Revisión pendiente → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-14",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · IG Post 29/8 B - Convocatoria (30 días publicidad) (Revisión pendiente → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-14",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · IG Post 8/9 C - Convocatoria (DdCc8HBss8Q) (Revisión pendiente → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-14",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · IG Post 4/9 C - Convocatoria (Dc1FCLwszOO) (Revisión pendiente → Inactivo)",
   "src": "meta"
  },
  {
@@ -104,7 +164,7 @@
  {
   "date": "2026-09-14",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · 2 - Nueva - Copia 3 (Revisión pendiente → Inactivo)",
+  "text": "Estado del anuncio actualizado · IG Post 9/9 - Convocatoria (DdCWmL2Mn9t) (Procesamiento pendiente → Revisión pendiente)",
   "src": "meta"
  },
  {
@@ -122,31 +182,31 @@
  {
   "date": "2026-09-14",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · 2 - Nueva - Copia 2 (Revisión pendiente → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-14",
-  "cat": "estado",
   "text": "Estado del anuncio actualizado · IG Post 4/9 A - Convocatoria (Dc1mR9hsYkW) (Procesamiento pendiente → Revisión pendiente)",
   "src": "meta"
  },
  {
   "date": "2026-09-14",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · 2 - Nueva - Copia (Procesamiento pendiente → Revisión pendiente)",
+  "text": "Estado del anuncio actualizado · IG Post 29/8 B - Convocatoria (30 días publicidad) (Procesamiento pendiente → Revisión pendiente)",
   "src": "meta"
  },
  {
   "date": "2026-09-14",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · IG Post 4/9 C - Convocatoria (Dc1FCLwszOO) (Procesamiento pendiente → Revisión pendiente)",
+  "text": "Estado del anuncio actualizado · 2 - Nueva - Copia 2 (Procesamiento pendiente → Revisión pendiente)",
   "src": "meta"
  },
  {
   "date": "2026-09-14",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · IG Post 4/9 B - Convocatoria (DcoR2g6s-IU)IG Post 29/8 B - Convocatoria (30 días publicidad) - Copia (Procesamiento pendiente → Revisión pendiente)",
+  "text": "Estado del anuncio actualizado · Nuevo anuncio de Clientes potenciales - Copia 4 (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-14",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · IG Post 8/9 C - Convocatoria (DdCc8HBss8Q) (Procesamiento pendiente → Revisión pendiente)",
   "src": "meta"
  },
  {
@@ -158,19 +218,31 @@
  {
   "date": "2026-09-14",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · IG Post 29/8 A - Convocatoria (nuevas convocatorias) (Revisión pendiente → Inactivo)",
+  "text": "Estado del anuncio actualizado · 2 - Nueva - Copia 3 (Procesamiento pendiente → Revisión pendiente)",
   "src": "meta"
  },
  {
   "date": "2026-09-14",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · IG Post 8/9 C - Convocatoria (DdCc8HBss8Q) (Revisión pendiente → Inactivo)",
+  "text": "Estado del anuncio actualizado · IG Post 8/9 A - Convocatoria (DdCRh2tMXCc) (Procesamiento pendiente → Revisión pendiente)",
   "src": "meta"
  },
  {
   "date": "2026-09-14",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · IG Post 29/8 B - Convocatoria (30 días publicidad) (Revisión pendiente → Inactivo)",
+  "text": "Estado del anuncio actualizado · IG Post 4/9 B - Convocatoria (DcoR2g6s-IU)IG Post 29/8 B - Convocatoria (30 días publicidad) - Copia (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-14",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · IG Post 4/9 C - Convocatoria (Dc1FCLwszOO) (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-14",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · 2 - Nueva - Copia (Procesamiento pendiente → Revisión pendiente)",
   "src": "meta"
  },
  {
@@ -194,43 +266,7 @@
  {
   "date": "2026-09-14",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · IG Post 4/9 C - Convocatoria (Dc1FCLwszOO) (Revisión pendiente → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-14",
-  "cat": "estado",
   "text": "Estado del conjunto de anuncios actualizado · Nueva campaña de Clientes potenciales V.2 - Argentina - Copia (Inactivo → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-14",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · 2 - Nueva - Copia 3 (Procesamiento pendiente → Revisión pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-14",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · IG Post 9/9 - Convocatoria (DdCWmL2Mn9t) (Revisión pendiente → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-14",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Nuevo anuncio de Clientes potenciales - Copia 4 (Procesamiento pendiente → Revisión pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-14",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · IG Post 8/9 A - Convocatoria (DdCRh2tMXCc) (Procesamiento pendiente → Revisión pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-14",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · IG Post 8/9 C - Convocatoria (DdCc8HBss8Q) (Procesamiento pendiente → Revisión pendiente)",
   "src": "meta"
  },
  {
@@ -242,13 +278,13 @@
  {
   "date": "2026-09-14",
   "cat": "segmentacion",
-  "text": "Público personalizado creado · Similar (ES, UY, 1%) - Copia de Numeros Celular - Hoja 2.csv",
+  "text": "Público personalizado creado · Similar (ES, UY) - Copia de Numeros Celular - Hoja 2.csv",
   "src": "meta"
  },
  {
   "date": "2026-09-14",
   "cat": "segmentacion",
-  "text": "Público personalizado creado · Similar (ES, UY) - Copia de Numeros Celular - Hoja 2.csv",
+  "text": "Público personalizado creado · Similar (ES, UY, 1%) - Copia de Numeros Celular - Hoja 2.csv",
   "src": "meta"
  },
  {
@@ -277,14 +313,8 @@
  },
  {
   "date": "2026-09-14",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · IG Post 29/8 B - Convocatoria (30 días publicidad) (Procesamiento pendiente → Revisión pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-14",
   "cat": "creativo",
-  "text": "Anuncio creado · IG Post 4/9 A - Convocatoria (Dc1mR9hsYkW)",
+  "text": "Anuncio creado · IG Post 10/9 - Convocatoria (DdFq8b0tHL3)",
   "src": "meta"
  },
  {
@@ -302,7 +332,7 @@
  {
   "date": "2026-09-14",
   "cat": "creativo",
-  "text": "Anuncio creado · 2 - Nueva - Copia 2",
+  "text": "Anuncio creado · IG Post 4/9 A - Convocatoria (Dc1mR9hsYkW)",
   "src": "meta"
  },
  {
@@ -314,19 +344,55 @@
  {
   "date": "2026-09-14",
   "cat": "creativo",
+  "text": "Anuncio creado · Nuevo anuncio de Clientes potenciales - Copia 4",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-14",
+  "cat": "creativo",
   "text": "Anuncio creado · IG Post 8/9 B - Convocatoria (DdCWmL2Mn9t)",
   "src": "meta"
  },
  {
   "date": "2026-09-14",
   "cat": "creativo",
-  "text": "Anuncio creado · IG Post 10/9 - Convocatoria (DdFq8b0tHL3)",
+  "text": "Anuncio creado · IG Post 29/8 A - Convocatoria (nuevas convocatorias)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-14",
+  "cat": "creativo",
+  "text": "Anuncio creado · IG Post 8/9 C - Convocatoria (DdCc8HBss8Q)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-14",
+  "cat": "creativo",
+  "text": "Anuncio creado · IG Post 29/8 B - Convocatoria (30 días publicidad)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-14",
+  "cat": "creativo",
+  "text": "Anuncio creado · 2 - Nueva - Copia 2",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-14",
+  "cat": "creativo",
+  "text": "Anuncio creado · 2 - Nueva - Copia 3",
   "src": "meta"
  },
  {
   "date": "2026-09-14",
   "cat": "creativo",
   "text": "Anuncio creado · 2 - Nueva - Copia",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-14",
+  "cat": "creativo",
+  "text": "Anuncio creado · IG Post 4/9 C - Convocatoria (Dc1FCLwszOO)",
   "src": "meta"
  },
  {
@@ -355,24 +421,6 @@
  },
  {
   "date": "2026-09-14",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · IG Post 9/9 - Convocatoria (DdCWmL2Mn9t) (Procesamiento pendiente → Revisión pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-14",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · 2 - Nueva - Copia 2 (Procesamiento pendiente → Revisión pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-14",
-  "cat": "creativo",
-  "text": "Anuncio creado · IG Post 29/8 B - Convocatoria (30 días publicidad)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-14",
   "cat": "presupuesto",
   "text": "Se habilitó la programación del presupuesto del conjunto de anuncios · Nueva campaña de Clientes potenciales V.2 - Argentina - Copia",
   "src": "meta"
@@ -394,12 +442,6 @@
   "cat": "creativo",
   "text": "Conjunto de anuncios creado · Nueva campaña de Clientes potenciales V.2 - Argentina - Copia",
   "src": "meta"
- },
- {
-  "date": "2026-09-14",
-  "cat": "creativo",
-  "text": "Se apagó «IG Post 8/9 B - Convocatoria (DdCWmL2Mn9t)»",
-  "src": "auto"
  },
  {
   "date": "2026-09-12",
@@ -632,13 +674,13 @@
  {
   "date": "2026-09-08",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · 2 - Nueva - Copia 2 (Activo → Inactivo)",
+  "text": "Estado del anuncio actualizado cuando se completa su revisión · IG Post 29/8 B - Convocatoria (30 días publicidad) (Activo → Inactivo)",
   "src": "meta"
  },
  {
   "date": "2026-09-08",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · IG Post 29/8 B - Convocatoria (30 días publicidad) (Activo → Inactivo)",
+  "text": "Estado del anuncio actualizado cuando se completa su revisión · 2 - Nueva - Copia 2 (Activo → Inactivo)",
   "src": "meta"
  },
  {
@@ -656,13 +698,13 @@
  {
   "date": "2026-09-08",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · IG Post 29/8 B - Convocatoria (30 días publicidad) (Activo → Procesamiento pendiente)",
+  "text": "Estado del anuncio actualizado · IG Post 4/9 A - Convocatoria (Dc1mR9hsYkW) (Activo → Procesamiento pendiente)",
   "src": "meta"
  },
  {
   "date": "2026-09-08",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · IG Post 4/9 A - Convocatoria (Dc1mR9hsYkW) (Activo → Procesamiento pendiente)",
+  "text": "Estado del anuncio actualizado · IG Post 29/8 B - Convocatoria (30 días publicidad) (Activo → Procesamiento pendiente)",
   "src": "meta"
  },
  {
@@ -676,47 +718,5 @@
   "cat": "estado",
   "text": "Estado del anuncio actualizado cuando se completa su revisión · IG Post 4/9 C - Convocatoria (Dc1FCLwszOO) (Activo → Inactivo)",
   "src": "meta"
- },
- {
-  "date": "2026-09-08",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · IG Post 4/9 C - Convocatoria (Dc1FCLwszOO) (Activo → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-08",
-  "cat": "creativo",
-  "text": "Se apagó «IG Post 29/8 B - Convocatoria (30 días publicidad)»",
-  "src": "auto"
- },
- {
-  "date": "2026-09-08",
-  "cat": "creativo",
-  "text": "Se apagó «IG Post 4/9 A - Convocatoria (Dc1mR9hsYkW)»",
-  "src": "auto"
- },
- {
-  "date": "2026-09-08",
-  "cat": "creativo",
-  "text": "Se apagó «IG Post 4/9 C - Convocatoria (Dc1FCLwszOO)»",
-  "src": "auto"
- },
- {
-  "date": "2026-09-08",
-  "cat": "creativo",
-  "text": "Se encendió/lanzó «IG Post 8/9 A - Convocatoria (DdCRh2tMXCc)»",
-  "src": "auto"
- },
- {
-  "date": "2026-09-08",
-  "cat": "creativo",
-  "text": "Se encendió/lanzó «IG Post 8/9 B - Convocatoria (DdCWmL2Mn9t)»",
-  "src": "auto"
- },
- {
-  "date": "2026-09-08",
-  "cat": "creativo",
-  "text": "Se encendió/lanzó «IG Post 8/9 C - Convocatoria (DdCc8HBss8Q)»",
-  "src": "auto"
  }
 ]

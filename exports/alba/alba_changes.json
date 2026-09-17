@@ -1,5 +1,11 @@
 [
  {
+  "date": "2026-09-15",
+  "cat": "creativo",
+  "text": "Se apagó «Catalogo_Karla»",
+  "src": "auto"
+ },
+ {
   "date": "2026-09-14",
   "cat": "presupuesto",
   "text": "Presupuesto del conjunto de anuncios actualizado · Alba&Co_2026_Conversiones_Purchase_Adv+ (10.000 → 5.000 ARS/día)",
@@ -10,12 +16,6 @@
   "cat": "estado",
   "text": "Estado de la cuenta actualizado · 498930606964785 (Activa → En período de gracia)",
   "src": "meta"
- },
- {
-  "date": "2026-09-14",
-  "cat": "creativo",
-  "text": "Se apagó «Catalogo_5»",
-  "src": "auto"
  },
  {
   "date": "2026-09-13",

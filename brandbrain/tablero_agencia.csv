@@ -1,8 +1,8 @@
 ﻿slug,cliente,periodo,moneda,gasto,resultado,roas,cpa,cpl,cuello_embudo,diagnostico,veredictos
-piera,Piera Ceresa,2026-08-12..2026-09-16,CLP,269667.0,4,0.89,67417,,Iniciaron el pago,El cuello está en Iniciaron el pago → Compraron: 6.5% vs ~45.0% sano.,escalar:0 iterar:0 matar:0 pocaData:14
+piera,Piera Ceresa,2026-08-13..2026-09-17,CLP,271298.0,4,0.89,67824,,Vieron la landing (LPV),El cuello está en Vieron la landing (LPV) → Agregaron al carrito: 2.0% vs ~13.0% sano.,escalar:0 iterar:0 matar:0 pocaData:14
 mossy,Mossy,2026-08-12..2026-09-16,ARS,3553180.19,113,3.15,31444,,Agregaron al carrito,El cuello está en Agregaron al carrito → Iniciaron el pago: 13.0% vs ~45.0% sano.,escalar:6 iterar:0 matar:0 pocaData:14
-vresia,Vresia,2026-08-12..2026-09-16,ARS,474808.84,16,2.09,29676,,Agregaron al carrito,El cuello está en Agregaron al carrito → Iniciaron el pago: 13.3% vs ~45.0% sano.,escalar:2 iterar:0 matar:0 pocaData:20
-alba,Alba & Co,2026-08-20..2026-09-16,ARS,466586.98,23,2.84,20286,,Agregaron al carrito,El cuello está en Agregaron al carrito → Iniciaron el pago: 19.3% vs ~45.0% sano.,escalar:2 iterar:0 matar:0 pocaData:5
-paz,Maia,2026-08-12..2026-09-16,ARS,358270.45,272,,,1317,Clics en el enlace,El cuello está en Clics en el enlace → Leads: 30.7% vs ~20.0% sano.,escalar:3 iterar:2 matar:0 pocaData:9
+vresia,Vresia,2026-08-13..2026-09-17,ARS,476059.52,16,2.09,29754,,Agregaron al carrito,El cuello está en Agregaron al carrito → Iniciaron el pago: 13.6% vs ~45.0% sano.,escalar:2 iterar:0 matar:0 pocaData:18
+alba,Alba & Co,2026-08-20..2026-09-17,ARS,470743.63,26,3.13,18106,,Agregaron al carrito,El cuello está en Agregaron al carrito → Iniciaron el pago: 19.8% vs ~45.0% sano.,escalar:2 iterar:0 matar:0 pocaData:5
+paz,Maia,2026-08-13..2026-09-17,ARS,358302.28,272,,,1317,Clics en el enlace,El cuello está en Clics en el enlace → Leads: 31.3% vs ~20.0% sano.,escalar:3 iterar:2 matar:0 pocaData:8
 pulpa,Pulpa Verde,2026-08-31..2026-09-09,ARS,111303.52,0,,,,Iniciaron el pago,El cuello está en Iniciaron el pago → Compraron: 0.0% vs ~45.0% sano.,escalar:0 iterar:0 matar:0 pocaData:10
-saritina-ceramica,SARITINA CERAMICA,2026-09-01..2026-09-16,ARS,152202.3,26,,5854,,Vieron la landing (LPV),El cuello está en Vieron la landing (LPV) → Agregaron al carrito: 0.0% vs ~13.0% sano.,escalar:0 iterar:2 matar:0 pocaData:2
+saritina-ceramica,SARITINA CERAMICA,2026-09-01..2026-09-17,ARS,157550.1,29,,5433,,Vieron la landing (LPV),El cuello está en Vieron la landing (LPV) → Agregaron al carrito: 0.0% vs ~13.0% sano.,escalar:0 iterar:3 matar:0 pocaData:1
