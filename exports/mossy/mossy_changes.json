@@ -1,5 +1,11 @@
 [
  {
+  "date": "2026-09-16",
+  "cat": "creativo",
+  "text": "Se apagó «Ad6 - Secuencia - Nueva coleccion 202666 - Copia 12»",
+  "src": "auto"
+ },
+ {
   "date": "2026-09-12",
   "cat": "creativo",
   "text": "Se reactivó «Ad6 - Secuencia - Nueva coleccion 202666 - Copia 6»",
@@ -711,12 +717,6 @@
   "date": "2026-08-22",
   "cat": "estado",
   "text": "Estado del anuncio actualizado cuando se completa su revisión · Ad6 - Secuencia - Nueva coleccion 2026 - Copia (Activo → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-22",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · Ad2 - Angulo Viaje (Activo → Inactivo)",
   "src": "meta"
  }
 ]
