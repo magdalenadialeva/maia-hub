@@ -1,0 +1,710 @@
+[
+ {
+  "date": "2026-09-24",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Conjunto Lugano - Copy (Revisión pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-24",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Conjunto Lugano - Copy (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-24",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado cuando se completa su revisión · Conjunto Lugano - Copy (Inactivo → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-24",
+  "cat": "creativo",
+  "text": "Anuncio creado · Conjunto Lugano - Copy",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-24",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Conjunto Lugano (Activo → Actualización necesaria)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-24",
+  "cat": "creativo",
+  "text": "Se apagó «Conjunto Lugano»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-09-24",
+  "cat": "creativo",
+  "text": "Se encendió/lanzó «Conjunto Lugano - Copy»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-09-11",
+  "cat": "otros",
+  "text": "Se actualizaron las reglas de valor del conjunto de anuncios · Traffic Lugano",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-11",
+  "cat": "estado",
+  "text": "Estado del conjunto de anuncios actualizado · Traffic Lugano (Procesamiento pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-11",
+  "cat": "estado",
+  "text": "Estado del conjunto de anuncios actualizado · Traffic Lugano (Activo → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-11",
+  "cat": "presupuesto",
+  "text": "Presupuesto del conjunto de anuncios actualizado · Traffic Lugano (5.000 → 2.000 ARS/día)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-11",
+  "cat": "estado",
+  "text": "Estado de la campaña actualizado · New Traffic Campaign with recommended settings (Activa → Inactiva)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-11",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Conjunto Toulouse (Revisión pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-11",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Total Look Loira (Revisión pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-11",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Conjunto Toulouse (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-11",
+  "cat": "creativo",
+  "text": "Anuncio creado · Conjunto Toulouse",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-11",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Conjunto Lugano (Revisión pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-11",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Total Look Loira (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-11",
+  "cat": "creativo",
+  "text": "Anuncio creado · Total Look Loira",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-11",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Conjunto Lugano (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-11",
+  "cat": "estado",
+  "text": "Estado del conjunto de anuncios actualizado · Basyco Jerez_Conversiones_Purchase_SEP2026_Interese+Adv+ (Procesamiento pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-11",
+  "cat": "creativo",
+  "text": "Anuncio creado · Conjunto Lugano",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-11",
+  "cat": "otros",
+  "text": "Segmentación del conjunto de anuncios actualizada · Basyco Jerez_Conversiones_Purchase_SEP2026_Interese+Adv+",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-11",
+  "cat": "objetivo",
+  "text": "Objetivo de optimización del conjunto de anuncios actualizado · Basyco Jerez_Conversiones_Purchase_SEP2026_Interese+Adv+",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-11",
+  "cat": "presupuesto",
+  "text": "Estrategia de puja del conjunto de anuncios actualizada · Basyco Jerez_Conversiones_Purchase_SEP2026_Interese+Adv+",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-11",
+  "cat": "creativo",
+  "text": "Conjunto de anuncios creado · Basyco Jerez_Conversiones_Purchase_SEP2026_Interese+Adv+",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-11",
+  "cat": "segmentacion",
+  "text": "Público personalizado creado · asa_auto_custom_audience",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-11",
+  "cat": "creativo",
+  "text": "Se encendió/lanzó «Conjunto Lugano»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-09-11",
+  "cat": "creativo",
+  "text": "Se encendió/lanzó «Total Look Loira»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-09-11",
+  "cat": "creativo",
+  "text": "Se encendió/lanzó «Conjunto Toulouse»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-09-09",
+  "cat": "estado",
+  "text": "Estado de la campaña actualizado · New Traffic Campaign with recommended settings (Inactiva → Activa)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-09",
+  "cat": "estado",
+  "text": "Estado de la campaña actualizado · Ventas - Conjunto Loira (Activa → Inactiva)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-09",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Loira video (Revisión pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-09",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Loira video (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-09",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Loira video (Activo → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-09",
+  "cat": "creativo",
+  "text": "Anuncio actualizado · Loira video",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-09",
+  "cat": "estado",
+  "text": "Estado de la campaña actualizado · New Traffic Campaign with recommended settings (Activa → Inactiva)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-09",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Ventas Rimini (Procesamiento pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-09",
+  "cat": "estado",
+  "text": "Estado de la campaña actualizado · Ventas - Conjunto Loira (Inactiva → Activa)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-09",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado cuando se completa su revisión · Ventas Rimini (Inactivo → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-09",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Ventas Rimini (Inactivo → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-09",
+  "cat": "creativo",
+  "text": "Se apagó «Loira video»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-09-08",
+  "cat": "estado",
+  "text": "Estado de la campaña actualizado · Ventas - Conjunto Loira (Activa → Inactiva)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-07",
+  "cat": "segmentacion",
+  "text": "Público personalizado creado · asa_auto_custom_audience",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-03",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Loira video (Revisión pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-03",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Loira video (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-03",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Loira video (Activo → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-03",
+  "cat": "creativo",
+  "text": "Anuncio actualizado · Loira video",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-03",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Ventas Rimini (Procesamiento pendiente → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-03",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado cuando se completa su revisión · Ventas Rimini (Activo → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-03",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Ventas Rimini (Activo → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-03",
+  "cat": "estado",
+  "text": "Estado de la campaña actualizado · Ventas - Conjunto Loira (Procesamiento pendiente → Activa)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-03",
+  "cat": "presupuesto",
+  "text": "Presupuesto de la campaña actualizado · Ventas - Conjunto Loira (27.650 → 5.000 ARS/día)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-03",
+  "cat": "estado",
+  "text": "Estado de la campaña actualizado · Ventas - Conjunto Loira (Activa → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-03",
+  "cat": "creativo",
+  "text": "Se apagó «Ventas Rimini»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-09-02",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Ventas Rimini (Revisión pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-02",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Ventas Rimini (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-02",
+  "cat": "otros",
+  "text": "Nombre del anuncio actualizado · Ventas Rimini (Loira video - Copy → Ventas Rimini)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-02",
+  "cat": "estado",
+  "text": "Estado de la campaña actualizado · Ventas - Conjunto Loira (Procesamiento pendiente → Activa)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-02",
+  "cat": "presupuesto",
+  "text": "Presupuesto de la campaña actualizado · Ventas - Conjunto Loira (5.000 → 27.650 ARS/día)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-02",
+  "cat": "estado",
+  "text": "Estado de la campaña actualizado · Ventas - Conjunto Loira (Activa → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-02",
+  "cat": "creativo",
+  "text": "Anuncio creado · Ventas Rimini",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-01",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Loira video (Revisión pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-01",
+  "cat": "estado",
+  "text": "Estado de la campaña actualizado · Ventas - Conjunto Loira (Inactiva → Activa)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-01",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Loira video (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-01",
+  "cat": "estado",
+  "text": "Estado del conjunto de anuncios actualizado · Loira video (Procesamiento pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-01",
+  "cat": "otros",
+  "text": "Segmentación del conjunto de anuncios actualizada · Loira video",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-01",
+  "cat": "estado",
+  "text": "Estado del conjunto de anuncios actualizado · Loira video (Activo → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-01",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · traffic lugano (Revisión pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-01",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · traffic lugano (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-01",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · traffic lugano (Activo → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-01",
+  "cat": "creativo",
+  "text": "Anuncio actualizado · traffic lugano",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-01",
+  "cat": "otros",
+  "text": "Nombre del conjunto de anuncios actualizado · Traffic Lugano (New Traffic Ad set with recommended settings → Traffic Lugano)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-01",
+  "cat": "otros",
+  "text": "Nombre del anuncio actualizado · traffic lugano (New Traffic Ad with recommended settings → traffic lugano)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-01",
+  "cat": "otros",
+  "text": "Se actualizaron las reglas de valor del conjunto de anuncios · Traffic Lugano",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-01",
+  "cat": "estado",
+  "text": "Estado del conjunto de anuncios actualizado · Traffic Lugano (Procesamiento pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-01",
+  "cat": "presupuesto",
+  "text": "Uso compartido del presupuesto del conjunto de anuncios actualizado · Traffic con conjunto Lugano",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-01",
+  "cat": "creativo",
+  "text": "Anuncio creado · traffic lugano",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-01",
+  "cat": "otros",
+  "text": "Segmentación del conjunto de anuncios actualizada · Traffic Lugano",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-01",
+  "cat": "objetivo",
+  "text": "Objetivo de optimización del conjunto de anuncios actualizado · Traffic Lugano",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-01",
+  "cat": "presupuesto",
+  "text": "Estrategia de puja del conjunto de anuncios actualizada · Traffic Lugano",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-01",
+  "cat": "creativo",
+  "text": "Conjunto de anuncios creado · Traffic Lugano",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-01",
+  "cat": "estado",
+  "text": "Estado de la campaña actualizado · Ventas - Conjunto Loira (Activa → Inactiva)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-01",
+  "cat": "creativo",
+  "text": "Se encendió/lanzó «Ventas Rimini»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-08-31",
+  "cat": "estado",
+  "text": "Estado de la campaña actualizado · Ventas - Conjunto Loira (Inactiva → Activa)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-08-31",
+  "cat": "estado",
+  "text": "Estado de la campaña actualizado · Ventas - Conjunto Loira (Activa → Inactiva)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-08-26",
+  "cat": "segmentacion",
+  "text": "Público personalizado creado · asa_auto_custom_audience",
+  "src": "meta"
+ },
+ {
+  "date": "2026-08-24",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Loira video (Revisión pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-08-24",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Loira video (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-08-24",
+  "cat": "estado",
+  "text": "Estado del conjunto de anuncios actualizado · Loira video (Procesamiento pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-08-24",
+  "cat": "otros",
+  "text": "Segmentación del conjunto de anuncios actualizada · Loira video",
+  "src": "meta"
+ },
+ {
+  "date": "2026-08-24",
+  "cat": "estado",
+  "text": "Estado del conjunto de anuncios actualizado · Loira video (Activo → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-08-24",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Loira video (Activo → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-08-24",
+  "cat": "creativo",
+  "text": "Anuncio actualizado · Loira video",
+  "src": "meta"
+ },
+ {
+  "date": "2026-08-22",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Loira video (Revisión pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-08-22",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Loira video (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-08-22",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Loira video (Activo → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-08-22",
+  "cat": "creativo",
+  "text": "Anuncio actualizado · Loira video",
+  "src": "meta"
+ },
+ {
+  "date": "2026-08-22",
+  "cat": "segmentacion",
+  "text": "Público personalizado creado · Pixel Audience: Purchase Event  30 Days - 2611091896012080 - System Generated",
+  "src": "meta"
+ },
+ {
+  "date": "2026-08-22",
+  "cat": "estado",
+  "text": "Estado del conjunto de anuncios actualizado · Loira video (Procesamiento pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-08-22",
+  "cat": "creativo",
+  "text": "Anuncio creado · Loira video",
+  "src": "meta"
+ },
+ {
+  "date": "2026-08-22",
+  "cat": "otros",
+  "text": "Segmentación del conjunto de anuncios actualizada · Loira video",
+  "src": "meta"
+ },
+ {
+  "date": "2026-08-22",
+  "cat": "objetivo",
+  "text": "Objetivo de optimización del conjunto de anuncios actualizado · Loira video",
+  "src": "meta"
+ },
+ {
+  "date": "2026-08-22",
+  "cat": "presupuesto",
+  "text": "Estrategia de puja del conjunto de anuncios actualizada · Loira video",
+  "src": "meta"
+ },
+ {
+  "date": "2026-08-22",
+  "cat": "creativo",
+  "text": "Conjunto de anuncios creado · Loira video",
+  "src": "meta"
+ },
+ {
+  "date": "2026-08-19",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · New Traffic Ad with recommended settings (Revisión pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-08-19",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · New Traffic Ad with recommended settings (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-08-19",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · New Traffic Ad with recommended settings (Activo → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-08-19",
+  "cat": "creativo",
+  "text": "Anuncio actualizado · New Traffic Ad with recommended settings",
+  "src": "meta"
+ },
+ {
+  "date": "2026-08-18",
+  "cat": "presupuesto",
+  "text": "Presupuesto del conjunto de anuncios actualizado · New Traffic Ad set with recommended settings (3.000 → 5.000 ARS/día)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-08-18",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · New Traffic Ad with recommended settings (Revisión pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-08-18",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · New Traffic Ad with recommended settings (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-08-18",
+  "cat": "creativo",
+  "text": "Anuncio creado · New Traffic Ad with recommended settings",
+  "src": "meta"
+ },
+ {
+  "date": "2026-08-18",
+  "cat": "estado",
+  "text": "Estado del conjunto de anuncios actualizado · New Traffic Ad set with recommended settings (Procesamiento pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-08-18",
+  "cat": "otros",
+  "text": "Segmentación del conjunto de anuncios actualizada · New Traffic Ad set with recommended settings",
+  "src": "meta"
+ },
+ {
+  "date": "2026-08-18",
+  "cat": "objetivo",
+  "text": "Objetivo de optimización del conjunto de anuncios actualizado · New Traffic Ad set with recommended settings",
+  "src": "meta"
+ },
+ {
+  "date": "2026-08-18",
+  "cat": "presupuesto",
+  "text": "Estrategia de puja del conjunto de anuncios actualizada · New Traffic Ad set with recommended settings",
+  "src": "meta"
+ },
+ {
+  "date": "2026-08-18",
+  "cat": "creativo",
+  "text": "Conjunto de anuncios creado · New Traffic Ad set with recommended settings",
+  "src": "meta"
+ }
+]

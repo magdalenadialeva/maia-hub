@@ -1,0 +1,33 @@
+[
+ {
+  "name": "Nueva campaña de Clientes potenciales V.2",
+  "objective": "OUTCOME_LEADS",
+  "status": "ACTIVE",
+  "spend": 360344.87,
+  "first": "2026-08-23",
+  "last": "2026-09-27",
+  "purch": 0.0,
+  "msg": 20.0,
+  "ads": [
+   "2 - Nueva - Copia",
+   "2 - Nueva - Copia 2",
+   "Nuevo anuncio de Clientes potenciales - Copia 4",
+   "2 - Nueva - Copia 3",
+   "IG Post 29/8 B - Convocatoria (30 días publicidad)",
+   "IG Post 29/8 A - Convocatoria (nuevas convocatorias)",
+   "IG Post 4/9 A - Convocatoria (Dc1mR9hsYkW)",
+   "IG Post 4/9 C - Convocatoria (Dc1FCLwszOO)",
+   "IG Post 8/9 A - Convocatoria (DdCRh2tMXCc)",
+   "IG Post 8/9 B - Convocatoria (DdCWmL2Mn9t)",
+   "IG Post 8/9 C - Convocatoria (DdCc8HBss8Q)",
+   "IG Post 9/9 - Convocatoria (DdCWmL2Mn9t)",
+   "IG Post 10/9 - Convocatoria (DdFq8b0tHL3)",
+   "IG Post 17/9 - Convocatoria (DdYXuX0MnGv)",
+   "IG Post 17/9 - Convocatoria (DdYXuX0MnGv) - Copia",
+   "IG Post 23/9 - Convocatoria $10K",
+   "IG Post 23/9 - Convocatoria Vendedores",
+   "IG Post 25/9 - Convocatoria Angulo Contenido sin Estrategia",
+   "IG Post 25/9 - Convocatoria Angulo Pauta sin Datos"
+  ]
+ }
+]

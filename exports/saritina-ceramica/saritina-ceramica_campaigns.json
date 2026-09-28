@@ -1,0 +1,18 @@
+[
+ {
+  "name": "Saritina_Trafico_Mensajes_Wsp_Sep",
+  "objective": "LINK_CLICKS",
+  "status": "ACTIVE",
+  "spend": 227714.05,
+  "first": "2026-09-01",
+  "last": "2026-09-27",
+  "purch": 35.0,
+  "msg": 922.0,
+  "ads": [
+   "Ad_Video_1",
+   "Ad_Video_2",
+   "Ad_Video_3",
+   "Ad_Video_4"
+  ]
+ }
+]

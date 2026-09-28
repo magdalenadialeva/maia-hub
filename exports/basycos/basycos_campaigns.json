@@ -1,0 +1,32 @@
+[
+ {
+  "name": "Basyco Jerez_Conversiones_Purchase_SEP2026",
+  "objective": "OUTCOME_SALES",
+  "status": "ACTIVE",
+  "spend": 421483.9,
+  "first": "2026-09-11",
+  "last": "2026-09-27",
+  "purch": 15.0,
+  "msg": 58.0,
+  "ads": [
+   "Conjunto Lugano",
+   "Total Look Loira",
+   "Conjunto Toulouse",
+   "Conjunto Lugano - Copy"
+  ]
+ },
+ {
+  "name": "Ventas - Conjunto Loira",
+  "objective": "OUTCOME_SALES",
+  "status": "PAUSED",
+  "spend": 111572.33,
+  "first": "2026-08-23",
+  "last": "2026-09-09",
+  "purch": 2.0,
+  "msg": 16.0,
+  "ads": [
+   "Loira video",
+   "Ventas Rimini"
+  ]
+ }
+]

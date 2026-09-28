@@ -75,5 +75,19 @@
     "rows": 121,
     "empty": false,
     "through": "2026-09-27"
+  },
+  "basycos": {
+    "fetched_at": "2026-09-28",
+    "ok": true,
+    "rows": 73,
+    "empty": false,
+    "through": "2026-09-27"
+  },
+  "cloe": {
+    "fetched_at": "2026-09-28",
+    "ok": true,
+    "rows": 50,
+    "empty": false,
+    "through": "2026-09-27"
   }
 }

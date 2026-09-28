@@ -1,0 +1,32 @@
+[
+ {
+  "name": "Cloe_Conversiones_Sep2026",
+  "objective": "OUTCOME_SALES",
+  "status": "PAUSED",
+  "spend": 51.24,
+  "first": "2026-09-18",
+  "last": "2026-09-25",
+  "purch": 0.0,
+  "msg": 3.0,
+  "ads": [
+   "Ad_1",
+   "Ad_2",
+   "Ad_3",
+   "Ad_4"
+  ]
+ },
+ {
+  "name": "Campaña Whatsapp B2B",
+  "objective": "OUTCOME_ENGAGEMENT",
+  "status": "ACTIVE",
+  "spend": 31.93,
+  "first": "2026-09-17",
+  "last": "2026-09-27",
+  "purch": 0.0,
+  "msg": 51.0,
+  "ads": [
+   "Anuncio mostrador b2b",
+   "Anuncio Keto b2b"
+  ]
+ }
+]
