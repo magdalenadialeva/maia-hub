@@ -27,6 +27,9 @@ from .parse import read_export
 from .hubdata import build_hub_client
 
 
+_BUILD_ERRORS = []
+
+
 def load_clients(config_dir: Path) -> List[dict]:
     cfg = yaml.safe_load((config_dir / "clients.yaml").read_text(encoding="utf-8"))
     return cfg.get("clients", [])
@@ -78,74 +81,80 @@ def build_data(exports_dir: Path, site_dir: Path, config_dir: Path, verbose=True
     DATA = {}
     diagnostics = []
     for client in clients:
-        slug = client["slug"]
-        rows, currency, files = load_client_rows(exports_dir, slug, mapping_yaml)
-        if not rows:
-            diagnostics.append(f"· {slug}: sin export (se omite)")
-            continue
-        hub = build_hub_client(client, rows, currency)
-        # Última actualización de ESTA marca: fecha real del último pull desde Meta
-        # (la escribe engine.fetch_meta). Si aún no hay estado, cae al último día
-        # con datos, así el hub siempre muestra algo razonable.
-        st = status.get(slug) or {}
-        hub["upd"] = st.get("fetched_at") or (hub["dates"][-1] if hub["dates"] else None)
-        hub["through"] = st.get("through") or (hub["dates"][-1] if hub["dates"] else None)
-        # Salud del último intento de actualización. Si el pull de HOY falló pero se
-        # conserva el CSV previo, fetched_at queda con la fecha vieja buena y el hub
-        # debe avisar con ⚠ que la ÚLTIMA corrida no trajo datos (aunque la fecha se
-        # vea reciente). Sin esto, una marca con error de Meta se mostraba "al día".
-        hub["ok"] = bool(st.get("ok", True))       # ¿anduvo el último intento?
-        hub["empty"] = bool(st.get("empty", False))
-        if not hub["ok"]:
-            hub["err"] = st.get("last_error")       # motivo (texto de Meta)
-            hub["attempt"] = st.get("last_attempt")  # cuándo se intentó y falló
-        # Historial de cambios (lo escribe engine.fetch_meta).
-        ch_path = exports_dir / slug / f"{slug}_changes.json"
-        changes = []
-        if ch_path.exists():
-            try:
-                changes = json.loads(ch_path.read_text(encoding="utf-8")) or []
-            except Exception:
-                changes = []
-        hub["changes"] = changes
-        # Miniaturas de creativos (nombre -> thumbnail_url), lo escribe fetch_meta.
-        th_path = exports_dir / slug / f"{slug}_thumbs.json"
-        thumbs = {}
-        if th_path.exists():
-            try:
-                thumbs = json.loads(th_path.read_text(encoding="utf-8")) or {}
-            except Exception:
-                thumbs = {}
-        hub["thumbs"] = thumbs
-        # Estado real por anuncio (nombre -> effective_status de Meta), lo escribe
-        # fetch_meta. El hub lo usa para la etiqueta activo/pausado; si no está,
-        # cae a una estimación por actividad.
-        ad_path = exports_dir / slug / f"{slug}_ads.json"
-        adstatus = {}
-        if ad_path.exists():
-            try:
-                adstatus = json.loads(ad_path.read_text(encoding="utf-8")) or {}
-            except Exception:
-                adstatus = {}
-        hub["adstatus"] = adstatus
-        # Alcance/frecuencia deduplicados del período (nivel cuenta, sin desglose
-        # diario) que escribe fetch_meta. El hub los usa para el embudo en vez de
-        # la "suma diaria" (que sobreestima el alcance y subestima la frecuencia).
-        rc_path = exports_dir / slug / f"{slug}_reach.json"
-        reachd = {}
-        if rc_path.exists():
-            try:
-                reachd = json.loads(rc_path.read_text(encoding="utf-8")) or {}
-            except Exception:
-                reachd = {}
-        hub["reachd"] = reachd
-        DATA[slug] = hub
-        t = _client_totals(hub)
-        diagnostics.append(
-            f"· {client['slug']:7s} {hub['cur']} gasto={t['spend']:>12,} "
-            f"compras={t['purch']:>3} ROAS={t['roas']:>4} leads={t['leads']:>4} "
-            f"| {len(hub['ads'])} anuncios, {len(hub['dates'])} días, {len(hub['rows'])} filas")
+        try:
+            slug = client["slug"]
+            rows, currency, files = load_client_rows(exports_dir, slug, mapping_yaml)
+            if not rows:
+                diagnostics.append(f"· {slug}: sin export (se omite)")
+                continue
+            hub = build_hub_client(client, rows, currency)
+            # Última actualización de ESTA marca: fecha real del último pull desde Meta
+            # (la escribe engine.fetch_meta). Si aún no hay estado, cae al último día
+            # con datos, así el hub siempre muestra algo razonable.
+            st = status.get(slug) or {}
+            hub["upd"] = st.get("fetched_at") or (hub["dates"][-1] if hub["dates"] else None)
+            hub["through"] = st.get("through") or (hub["dates"][-1] if hub["dates"] else None)
+            # Salud del último intento de actualización. Si el pull de HOY falló pero se
+            # conserva el CSV previo, fetched_at queda con la fecha vieja buena y el hub
+            # debe avisar con ⚠ que la ÚLTIMA corrida no trajo datos (aunque la fecha se
+            # vea reciente). Sin esto, una marca con error de Meta se mostraba "al día".
+            hub["ok"] = bool(st.get("ok", True))       # ¿anduvo el último intento?
+            hub["empty"] = bool(st.get("empty", False))
+            if not hub["ok"]:
+                hub["err"] = st.get("last_error")       # motivo (texto de Meta)
+                hub["attempt"] = st.get("last_attempt")  # cuándo se intentó y falló
+            # Historial de cambios (lo escribe engine.fetch_meta).
+            ch_path = exports_dir / slug / f"{slug}_changes.json"
+            changes = []
+            if ch_path.exists():
+                try:
+                    changes = json.loads(ch_path.read_text(encoding="utf-8")) or []
+                except Exception:
+                    changes = []
+            hub["changes"] = changes
+            # Miniaturas de creativos (nombre -> thumbnail_url), lo escribe fetch_meta.
+            th_path = exports_dir / slug / f"{slug}_thumbs.json"
+            thumbs = {}
+            if th_path.exists():
+                try:
+                    thumbs = json.loads(th_path.read_text(encoding="utf-8")) or {}
+                except Exception:
+                    thumbs = {}
+            hub["thumbs"] = thumbs
+            # Estado real por anuncio (nombre -> effective_status de Meta), lo escribe
+            # fetch_meta. El hub lo usa para la etiqueta activo/pausado; si no está,
+            # cae a una estimación por actividad.
+            ad_path = exports_dir / slug / f"{slug}_ads.json"
+            adstatus = {}
+            if ad_path.exists():
+                try:
+                    adstatus = json.loads(ad_path.read_text(encoding="utf-8")) or {}
+                except Exception:
+                    adstatus = {}
+            hub["adstatus"] = adstatus
+            # Alcance/frecuencia deduplicados del período (nivel cuenta, sin desglose
+            # diario) que escribe fetch_meta. El hub los usa para el embudo en vez de
+            # la "suma diaria" (que sobreestima el alcance y subestima la frecuencia).
+            rc_path = exports_dir / slug / f"{slug}_reach.json"
+            reachd = {}
+            if rc_path.exists():
+                try:
+                    reachd = json.loads(rc_path.read_text(encoding="utf-8")) or {}
+                except Exception:
+                    reachd = {}
+            hub["reachd"] = reachd
+            DATA[slug] = hub
+            t = _client_totals(hub)
+            diagnostics.append(
+                f"· {client['slug']:7s} {hub['cur']} gasto={t['spend']:>12,} "
+                f"compras={t['purch']:>3} ROAS={t['roas']:>4} leads={t['leads']:>4} "
+                f"| {len(hub['ads'])} anuncios, {len(hub['dates'])} días, {len(hub['rows'])} filas")
 
+        except Exception as _e:
+            import traceback as _tb
+            _msg = f"⚠ {client.get('slug')}: falló el armado ({_e}) -> se omite esta marca, sigue el resto"
+            print(_msg); _tb.print_exc()
+            _BUILD_ERRORS.append(_msg + "\n" + _tb.format_exc())
     site_dir.mkdir(parents=True, exist_ok=True)
     payload = json.dumps(DATA, ensure_ascii=False, separators=(",", ":"))
     try:
@@ -181,11 +190,34 @@ def main():
     exports, config = Path(args.exports), Path(args.config)
     build_data(exports, Path(args.site), config)
     if not args.only_data:
+        import traceback
         from .report import build_reports
         from .brandbrain import build_brandbrain
-        build_reports(exports, Path(args.reports), config)
-        build_brandbrain(exports, Path(args.brandbrain), config)
+        # Reportes y brand brain son secundarios: si fallan, el hub igual se publica.
+        for fn, out in ((build_reports, args.reports), (build_brandbrain, args.brandbrain)):
+            try:
+                fn(exports, Path(out), config)
+            except Exception as e:
+                msg = f"⚠ {fn.__name__} falló ({e}) -> el hub se publica igual"
+                print(msg); traceback.print_exc()
+                _BUILD_ERRORS.append(msg + "\n" + traceback.format_exc())
+    # Registro de errores del armado (queda en el repo para diagnosticar sin logs).
+    ep = exports / "_build_errors.txt"
+    if _BUILD_ERRORS:
+        ep.write_text("\n\n".join(_BUILD_ERRORS), encoding="utf-8")
+    elif ep.exists():
+        ep.unlink()
 
 
 if __name__ == "__main__":
-    main()
+    try:
+        main()
+    except Exception:
+        import traceback
+        _t = traceback.format_exc()
+        print(_t)
+        try:
+            Path("exports/_build_errors.txt").write_text("FATAL\n" + _t, encoding="utf-8")
+        except Exception:
+            pass
+        raise

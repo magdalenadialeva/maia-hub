@@ -23,6 +23,9 @@ from .metrics import _sum_rows, compute_metrics, build_funnel, STEP_LABELS
 from .signals import creative_signal, rank_creatives
 
 
+_BUILD_ERRORS = []
+
+
 def _prep_rows(rows: List[dict], objective: str) -> List[dict]:
     """Para lead-gen, leads = results (columna Resultados de Meta)."""
     if objective != "leads":
@@ -214,23 +217,29 @@ def build_reports(exports_dir: Path, out_dir: Path, config_dir: Path, verbose=Tr
     out_dir.mkdir(parents=True, exist_ok=True)
     done = []
     for client in clients:
-        folder = exports_dir / client["slug"]
-        files = sorted(folder.glob("*.csv")) + sorted(folder.glob("*.xlsx")) if folder.exists() else []
-        if not files:
-            continue
-        rows = []
-        for f in files:
-            df, _ = read_export(f, mapping_yaml)
-            rows.extend(df.to_dict(orient="records"))
-        st = status.get(client["slug"]) or {}
-        updated = st.get("fetched_at")
-        if not updated:  # sin estado aún: usar el último día con datos
-            _ds = sorted({r["date"] for r in rows if r.get("date")})
-            updated = _ds[-1] if _ds else None
-        html_str = _client_report_html(client, rows, updated)
-        p = out_dir / f"{client['slug']}.html"
-        p.write_text(html_str, encoding="utf-8")
-        done.append(client["slug"])
+        try:
+            folder = exports_dir / client["slug"]
+            files = sorted(folder.glob("*.csv")) + sorted(folder.glob("*.xlsx")) if folder.exists() else []
+            if not files:
+                continue
+            rows = []
+            for f in files:
+                df, _ = read_export(f, mapping_yaml)
+                rows.extend(df.to_dict(orient="records"))
+            st = status.get(client["slug"]) or {}
+            updated = st.get("fetched_at")
+            if not updated:  # sin estado aún: usar el último día con datos
+                _ds = sorted({r["date"] for r in rows if r.get("date")})
+                updated = _ds[-1] if _ds else None
+            html_str = _client_report_html(client, rows, updated)
+            p = out_dir / f"{client['slug']}.html"
+            p.write_text(html_str, encoding="utf-8")
+            done.append(client["slug"])
+        except Exception as _e:
+            import traceback as _tb
+            _msg = f"⚠ {client.get('slug')}: falló el armado ({_e}) -> se omite esta marca, sigue el resto"
+            print(_msg); _tb.print_exc()
+            _BUILD_ERRORS.append(_msg + "\n" + _tb.format_exc())
     if verbose:
         print(f"✓ reports/  ->  {', '.join(done)}")
     return done
