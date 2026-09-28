@@ -135,6 +135,15 @@ def build_data(exports_dir: Path, site_dir: Path, config_dir: Path, verbose=True
                 except Exception:
                     adstatus = {}
             hub["adstatus"] = adstatus
+            # Campañas (nombre, estado real de Meta, objetivo, gasto) que escribe fetch_meta.
+            cp_path = exports_dir / slug / f"{slug}_campaigns.json"
+            camps = []
+            if cp_path.exists():
+                try:
+                    camps = json.loads(cp_path.read_text(encoding="utf-8")) or []
+                except Exception:
+                    camps = []
+            hub["campaigns"] = camps
             # Alcance/frecuencia deduplicados del período (nivel cuenta, sin desglose
             # diario) que escribe fetch_meta. El hub los usa para el embudo en vez de
             # la "suma diaria" (que sobreestima el alcance y subestima la frecuencia).

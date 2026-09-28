@@ -18,6 +18,10 @@
 #             ni para el "atrasada"). Se siguen mostrando con su último dato.
 # start_maia: fecha (AAAA-MM-DD) en que arrancó la pauta con MAIA -> columna
 #             "Inicio pauta" del hub. null = cliente histórico.
+# ad_account_ids     : lista, si una marca tiene VARIAS cuentas (se suman en una sola marca).
+# campaign_objectives: sólo cuenta campañas con esos objetivos de Meta (p.ej. OUTCOME_SALES
+#                      = conversiones). Sirve cuando la cuenta tiene campañas que no hacemos nosotros.
+# campaign_exclude   : excluye campañas cuyo nombre contenga ese texto.
 # end_maia  : (solo perdidas) fecha de fin con MAIA -> "Fin" y "Con nosotros".
 #
 # ignore_account_ids: cuentas que NUNCA son clientes (personales, dormidas, la
@@ -29,6 +33,7 @@ ignore_account_ids:
   - "1669535646753394"    # Sole Pantano
   - "2394340120940661"    # Piera Ceresa Australia (dormida, AUD)
   - "2055620405050036"    # unknown (Read-Only)
+  - "1000207433066534"    # Cloe Nutricion Real (cuenta vieja: boosts/tráfico ago-2026, no es pauta MAIA)
 
 # El ORDEN de esta lista define el orden en el hub (CLIENTS).
 clients:
@@ -126,32 +131,26 @@ clients:
     # Para contar las conversaciones hay que sumar esa métrica de resultado en fetch_meta.
     notes: "Tráfico/Mensajes de WhatsApp (auto-agregada 2026-09-02). Resultado (conversaciones) no disponible en el export todavía."
 
-  - slug: "cuenta-1366858924962966"
-    name: "1366858924962966"
+  - slug: basycos
+    name: Basycos
     objective: ventas
     obj_code: purchase
     currency: ARS
     ad_account_id: "1366858924962966"
     start_label: "auto"
     margin: 0.5
-    notes: "Auto-agregado desde Meta (2026-09-28)."
+    # La cuenta tiene una campaña de TRÁFICO (la hace la marca) y una de CONVERSIONES
+    # (la hacemos nosotros). Sólo se cuenta la de conversiones.
+    campaign_objectives: [OUTCOME_SALES, CONVERSIONS, PRODUCT_CATALOG_SALES]
+    notes: "MAIA maneja SOLO la campaña de conversiones (la de tráfico es de la marca)."
 
-  - slug: cloe-nutricion-real
-    name: "Cloe Nutricion Real"
+  - slug: cloe
+    name: Cloe
     objective: ventas
-    obj_code: purchase
+    obj_code: msg          # hoy: WhatsApp B2B (resultado = conversaciones)
     currency: USD
-    ad_account_id: "1000207433066534"
-    start_label: "auto"
+    ad_account_ids: ["1568808024971225"]
+    start_maia: "2026-09-17"
+    start_label: "17 sep 2026"
     margin: 0.5
-    notes: "Auto-agregado desde Meta (2026-09-28)."
-
-  - slug: cuenta-publicitaria-de-c
-    name: "Cuenta publicitaria de Cloe Nutricion Real"
-    objective: ventas
-    obj_code: purchase
-    currency: USD
-    ad_account_id: "1568808024971225"
-    start_label: "auto"
-    margin: 0.5
-    notes: "Auto-agregado desde Meta (2026-09-28)."
+    notes: "Probamos conversiones y no funcionó -> se apagó. Hoy: campaña de WhatsApp B2B."

@@ -488,16 +488,57 @@ def fetch_reach_dedup(acct: str, token: str, since: str, until: str) -> Optional
         return None
 
 
+def _client_accounts(client: dict) -> List[str]:
+    """Cuentas publicitarias de una marca: `ad_account_ids` (lista, una marca con
+    varias cuentas) o `ad_account_id` (una sola)."""
+    ids = client.get("ad_account_ids") or [client.get("ad_account_id")]
+    out = []
+    for a in ids:
+        a = str(a or "").strip().replace("act_", "")
+        if a and a.upper() not in ("TODO", "NONE"):
+            out.append(a)
+    return out
+
+
+def _campaign_ok(client: dict, name: str, objective: str) -> bool:
+    """Filtro de campañas por marca (config):
+    campaign_objectives: [OUTCOME_SALES, ...] -> sólo esas (p.ej. Basycos: sólo conversiones).
+    campaign_exclude: ["trafico", ...]         -> excluye por texto en el nombre."""
+    objs = [str(o).upper() for o in (client.get("campaign_objectives") or [])]
+    if objs and (objective or "").upper() not in objs:
+        return False
+    nm = (name or "").lower()
+    for x in client.get("campaign_exclude") or []:
+        if str(x).lower() in nm:
+            return False
+    return True
+
+
+def fetch_campaigns(acct: str, token: str) -> Dict[str, dict]:
+    """Estado real de cada campaña (ACTIVE / PAUSED / ...) y su objetivo."""
+    out: Dict[str, dict] = {}
+    try:
+        d = _api_get(f"act_{acct}/campaigns",
+                     {"fields": "name,effective_status,objective", "limit": 200}, token)
+        for c in d.get("data", []):
+            out[c.get("name", "")] = {"status": c.get("effective_status"),
+                                      "objective": c.get("objective")}
+    except Exception as e:
+        print(f"  · campañas no disponibles ({str(e)[:100]})")
+    return out
+
+
 def fetch_client(client: dict, days: int, token: str, exports_dir: Path) -> Optional[str]:
-    acct = str(client.get("ad_account_id") or "").strip().replace("act_", "")
     slug = client["slug"]
-    if not acct or acct.upper() in ("", "TODO", "NONE"):
+    accts = _client_accounts(client)
+    if not accts:
         print(f"· {slug}: sin ad_account_id -> se saltea (usa el CSV que ya esté)")
         return None
+    filtered = bool(client.get("campaign_objectives") or client.get("campaign_exclude"))
 
-    currency = client.get("currency") or _account_currency(acct, token, "ARS")
+    currency = client.get("currency") or _account_currency(accts[0], token, "ARS")
     # Corte igual a Meta: hasta AYER completo en la zona horaria de la cuenta.
-    tz_name = _account_tz(acct, token)
+    tz_name = _account_tz(accts[0], token)
     until = _last_closed_day(tz_name)
     since = until - timedelta(days=days)
     print(f"· {slug}: ventana {since} → {until} (día cerrado, zona {tz_name})")
@@ -505,52 +546,86 @@ def fetch_client(client: dict, days: int, token: str, exports_dir: Path) -> Opti
         "level": "ad",
         "time_increment": 1,
         "limit": 500,
-        "fields": ",".join(INSIGHT_FIELDS),
+        "fields": ",".join(INSIGHT_FIELDS + ["campaign_name", "objective"]),
         "time_range": json.dumps({"since": since.isoformat(), "until": until.isoformat()}),
         # Igual atribución que el export manual: 7d clic / 1d visualización.
         "action_attribution_windows": json.dumps(["7d_click", "1d_view"]),
     }
 
     rows: List[List] = []
+    camps: Dict[str, dict] = {}        # campaña -> resumen (para el hub)
     is_leads = client.get("objective") == "leads"
     is_msg = client.get("obj_code") == "msg"   # Tráfico/Mensajes -> resultado = conversaciones
-    # Primera página vía params; después seguimos el `next` absoluto.
-    data = _api_get(f"act_{acct}/insights", params, token)
-    page = 0
-    while True:
-        for r in data.get("data", []):
-            actions = r.get("actions")
-            avals = r.get("action_values")
-            leads = _sum_action(actions, ACTION_MAP["lead"])
-            # "Resultados" = leads (lead-gen), conversaciones (mensajes) o vacío (ventas).
-            if is_msg:
-                results = _fmt(_sum_action(actions, ACTION_MAP["msg"]))
-            elif is_leads:
-                results = _fmt(leads)
-            else:
-                results = ""
-            rows.append([
-                r.get("ad_name", ""),
-                r.get("date_start", ""),
-                r.get("spend", ""),
-                r.get("impressions", ""),
-                r.get("reach", ""),
-                r.get("frequency", ""),
-                r.get("inline_link_clicks", ""),
-                _fmt(_sum_action(actions, ACTION_MAP["lpv"])),
-                _fmt(_sum_action(actions, ACTION_MAP["atc"])),
-                _fmt(_sum_action(actions, ACTION_MAP["ic"])),
-                _fmt(_sum_action(actions, ACTION_MAP["purch"])),
-                _fmt(_sum_action(avals, ACTION_MAP["purch"])),
-                _fmt(_first_value(r.get("video_play_actions"))),
-                _fmt(_first_value(r.get("video_thruplay_watched_actions"))),
-                results,
-            ])
-        nxt = (data.get("paging") or {}).get("next")
-        page += 1
-        if not nxt or page > 50:
-            break
-        data = _get_url(nxt)
+    for acct in accts:
+        cstat = fetch_campaigns(acct, token)
+        data = _api_get(f"act_{acct}/insights", params, token)
+        page = 0
+        while True:
+            for r in data.get("data", []):
+                cname = r.get("campaign_name", "")
+                cobj = r.get("objective", "") or (cstat.get(cname) or {}).get("objective", "")
+                if not _campaign_ok(client, cname, cobj):
+                    continue
+                actions = r.get("actions")
+                avals = r.get("action_values")
+                leads = _sum_action(actions, ACTION_MAP["lead"])
+                # "Resultados" = leads (lead-gen), conversaciones (mensajes) o vacío (ventas).
+                if is_msg:
+                    results = _fmt(_sum_action(actions, ACTION_MAP["msg"]))
+                elif is_leads:
+                    results = _fmt(leads)
+                else:
+                    results = ""
+                d = r.get("date_start", "")
+                cs = camps.setdefault(cname, {"name": cname, "objective": cobj,
+                                              "status": (cstat.get(cname) or {}).get("status"),
+                                              "spend": 0.0, "first": d, "last": d,
+                                              "purch": 0.0, "msg": 0.0, "ads": []})
+                sp = float(r.get("spend") or 0)
+                cs["spend"] += sp
+                cs["purch"] += _sum_action(actions, ACTION_MAP["purch"]) or 0
+                cs["msg"] += _sum_action(actions, ACTION_MAP["msg"]) or 0
+                if sp > 0:
+                    cs["first"] = min(cs["first"] or d, d); cs["last"] = max(cs["last"] or d, d)
+                an = r.get("ad_name", "")
+                if an and an not in cs["ads"]:
+                    cs["ads"].append(an)
+                rows.append([
+                    an,
+                    d,
+                    r.get("spend", ""),
+                    r.get("impressions", ""),
+                    r.get("reach", ""),
+                    r.get("frequency", ""),
+                    r.get("inline_link_clicks", ""),
+                    _fmt(_sum_action(actions, ACTION_MAP["lpv"])),
+                    _fmt(_sum_action(actions, ACTION_MAP["atc"])),
+                    _fmt(_sum_action(actions, ACTION_MAP["ic"])),
+                    _fmt(_sum_action(actions, ACTION_MAP["purch"])),
+                    _fmt(_sum_action(avals, ACTION_MAP["purch"])),
+                    _fmt(_first_value(r.get("video_play_actions"))),
+                    _fmt(_first_value(r.get("video_thruplay_watched_actions"))),
+                    results,
+                ])
+            nxt = (data.get("paging") or {}).get("next")
+            page += 1
+            if not nxt or page > 50:
+                break
+            data = _get_url(nxt)
+
+    folder0 = exports_dir / slug
+    folder0.mkdir(parents=True, exist_ok=True)
+    try:
+        cl = sorted(camps.values(), key=lambda c: -c["spend"])
+        for c in cl:
+            c["spend"] = round(c["spend"], 2)
+        (folder0 / f"{slug}_campaigns.json").write_text(
+            json.dumps(cl, ensure_ascii=False, indent=1), encoding="utf-8")
+        print(f"  · {slug}: {len(cl)} campaña(s): " + "; ".join(
+            f"{c['name'][:30]} [{c.get('status')}]" for c in cl))
+    except Exception as e:
+        print(f"  · {slug}: campañas no guardadas ({str(e)[:100]})")
+    acct = accts[0]
 
     if not rows:
         print(f"· {slug}: la API no devolvió filas (¿cuenta pausada?) -> no se toca el CSV")
@@ -576,13 +651,15 @@ def fetch_client(client: dict, days: int, token: str, exports_dir: Path) -> Opti
     # Historial de cambios (log de Meta + deducción del gasto). Ventana amplia
     # para cubrir desde el arranque de la pauta; no rompe si /activities falla.
     try:
-        write_changes(slug, acct, token, rows, folder, days_hist=120)
+        write_changes(slug, acct, token, rows, folder, days_hist=120)  # cuenta principal
     except Exception as e:
         print(f"  · {slug}: historial no generado ({str(e)[:120]})")
     # Miniaturas de los creativos activos (para el cuadro de señales).
     try:
         names = set(r[0] for r in rows if r[0])
-        th = fetch_thumbs(acct, token, names)
+        th = {}
+        for _a in accts:
+            th.update(fetch_thumbs(_a, token, names))
         (folder / f"{slug}_thumbs.json").write_text(
             json.dumps(th, ensure_ascii=False), encoding="utf-8")
         print(f"  · {slug}: {len(th)} miniaturas de creativos")
@@ -592,6 +669,11 @@ def fetch_client(client: dict, days: int, token: str, exports_dir: Path) -> Opti
     # Ads Manager). El hub los muestra en vez de la "suma diaria" cuando existen.
     try:
         ds = sorted(r[1] for r in rows if r[1])
+        if ds and (filtered or len(accts) > 1):
+            # Con filtro de campañas o varias cuentas, el alcance de la cuenta no
+            # corresponde a lo que mostramos -> el hub usa la suma diaria.
+            (folder / f"{slug}_reach.json").unlink(missing_ok=True)
+            ds = []
         if ds:
             rd = fetch_reach_dedup(acct, token, ds[0], ds[-1])
             if rd:
@@ -751,7 +833,10 @@ def main():
     cfg = yaml.safe_load(config_path.read_text(encoding="utf-8")) or {}
     clients = cfg.get("clients", [])
     ignore_ids = {str(x).replace("act_", "").strip() for x in (cfg.get("ignore_account_ids") or [])}
-    configured_ids = {str(c.get("ad_account_id", "")).replace("act_", "").strip() for c in clients}
+    configured_ids = set()
+    for c in clients:
+        for a in _client_accounts(c):
+            configured_ids.add(a)
     taken_slugs = {c.get("slug") for c in clients}
 
     # Descubrir TODAS las cuentas del portfolio y SUMAR solas las nuevas activas

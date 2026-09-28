@@ -1369,6 +1369,20 @@ function hitosHTML(b){
   }
   return out;
 }
+/* Campañas de la cuenta: prendida / apagada (estado real de Meta). */
+const OBJCAMP={OUTCOME_SALES:'Conversiones',CONVERSIONS:'Conversiones',PRODUCT_CATALOG_SALES:'Ventas de catálogo',OUTCOME_TRAFFIC:'Tráfico',LINK_CLICKS:'Tráfico',OUTCOME_ENGAGEMENT:'Interacción / Mensajes',MESSAGES:'Mensajes',OUTCOME_LEADS:'Clientes potenciales',OUTCOME_AWARENESS:'Reconocimiento'};
+function campaignsHTML(D){
+  const cs=(D.campaigns||[]).filter(c=>c.spend>0||c.status==='ACTIVE');
+  if(!cs.length) return '';
+  const on=c=>c.status==='ACTIVE';
+  const lbl=st=>st==='ACTIVE'?'<span class="act act-g">● PRENDIDA</span>':(st?'<span class="act act-i" style="color:var(--soft)">○ APAGADA</span>':'<span style="color:var(--soft)">—</span>');
+  const rows=cs.sort((a,b)=>(on(b)-on(a))||(b.spend-a.spend)).map(c=>`<tr${on(c)?'':' style="color:var(--soft)"'}>
+    <td><b>${esc(c.name)}</b></td><td>${OBJCAMP[c.objective]||esc(c.objective||'—')}</td><td>${lbl(c.status)}</td>
+    <td class="num">$${money(c.spend)} ${D.cur}</td><td style="white-space:nowrap">${c.first?fmtD(c.first):'—'} → ${c.last?fmtD(c.last):'—'}</td></tr>`).join('');
+  return `<div class="sec-h">Campañas</div>
+    <div class="sec-s">Estado real en Meta. Los números del tablero suman sólo las campañas que maneja MAIA.</div>
+    <div class="scroll"><table class="cmp"><tr><th>Campaña</th><th>Objetivo</th><th>Estado</th><th>Gasto (35 días)</th><th>Con gasto</th></tr>${rows}</table></div>`;
+}
 function renderDash(id){
   const x=compute(id),D=x.D,K=x.K,KP=x.KP,lead=isLead(D.obj),msg=(D.obj==='msg');
   const msgNoData=msg && !(K.result>0);   // mensajes sin conversaciones en el export
@@ -1414,6 +1428,7 @@ function renderDash(id){
     ${objbanner}
     <div class="tiles">${tiles}</div>
     ${interp}
+    ${campaignsHTML(D)}
     <div class="legend"><b>Color</b> sólo cuando la métrica tiene volumen para ser significativa: <span class="lg good">verde bien</span> <span class="lg warn">amarillo atención</span> <span class="lg bad">rojo mal</span> <span class="lg idle">gris = sin señal / no interpretable aún</span></div>
     <div class="legend">Flechas <span class="arrow a-up good">↑</span><span class="arrow a-down bad">↓</span> = variación de cada KPI vs. el <b>período inmediatamente anterior de igual duración</b> (si la marca no tenía pauta antes, compara la 2ª mitad contra la 1ª del período elegido). Verde = mejora · rojo = empeora · → = estable · · = sin período previo.</div>
     <div class="sec-h">Evolución de la pauta (período elegido)</div>
