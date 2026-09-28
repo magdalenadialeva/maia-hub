@@ -137,11 +137,14 @@ clients:
     obj_code: purchase
     currency: ARS
     ad_account_id: "1366858924962966"
-    start_label: "auto"
+    start_maia: "2026-09-11"
+    start_label: "11 sep 2026"
     margin: 0.5
     # La cuenta tiene una campaña de TRÁFICO (la hace la marca) y una de CONVERSIONES
     # (la hacemos nosotros). Sólo se cuenta la de conversiones.
     campaign_objectives: [OUTCOME_SALES, CONVERSIONS, PRODUCT_CATALOG_SALES]
+    # "Ventas - Conjunto Loira" (ago-sep, pausada) es previa a MAIA -> no se cuenta.
+    campaign_exclude: ["conjunto loira"]
     notes: "MAIA maneja SOLO la campaña de conversiones (la de tráfico es de la marca)."
 
   - slug: cloe
