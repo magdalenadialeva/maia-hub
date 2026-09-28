@@ -126,7 +126,7 @@ clients:
     # Para contar las conversaciones hay que sumar esa métrica de resultado en fetch_meta.
     notes: "Tráfico/Mensajes de WhatsApp (auto-agregada 2026-09-02). Resultado (conversaciones) no disponible en el export todavía."
 
-  - slug: 1366858924962966
+  - slug: "cuenta-1366858924962966"
     name: "1366858924962966"
     objective: ventas
     obj_code: purchase

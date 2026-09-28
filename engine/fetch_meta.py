@@ -652,7 +652,9 @@ def discover_accounts(token: str) -> List[dict]:
 def _slugify(s: str) -> str:
     s = "".join(c for c in unicodedata.normalize("NFKD", str(s)) if not unicodedata.combining(c))
     s = re.sub(r"[^a-z0-9]+", "-", s.lower()).strip("-")
-    return s[:24] or "cuenta"
+    s = s[:24] or "cuenta"
+    # Un slug solo numérico YAML lo lee como número y rompe el build -> prefijo.
+    return s if not s.replace("-", "").isdigit() else f"cuenta-{s}"
 
 
 def _unique_slug(base: str, taken: set) -> str:
@@ -670,7 +672,7 @@ def _append_clients_yaml(path: Path, entries: List[dict]) -> None:
     for e in entries:
         nm = str(e["name"]).replace('"', "'")
         chunks.append(
-            f"\n  - slug: {e['slug']}\n    name: \"{nm}\"\n    objective: ventas\n"
+            f"\n  - slug: \"{e['slug']}\"\n    name: \"{nm}\"\n    objective: ventas\n"
             f"    obj_code: purchase\n    currency: {e['currency'] or 'ARS'}\n"
             f"    ad_account_id: \"{e['id']}\"\n    start_label: \"auto\"\n"
             f"    margin: 0.5\n    notes: \"Auto-agregado desde Meta ({date.today().isoformat()}).\"\n")

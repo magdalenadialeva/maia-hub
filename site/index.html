@@ -842,7 +842,10 @@ function periodPhrase(){if(RANGE.preset==='7d')return 'En los últimos 7 días';
 function periodKey(){return RANGE.preset==='cust'?('c'+RANGE.from+RANGE.to):RANGE.preset;}
 const SEV={r:0,y:1,g:2,i:3};
 /* "Con nosotros": tiempo desde el inicio de pauta hasta hoy (o hasta el fin, si es perdida). */
+/* Inicio efectivo: el de config; si la cuenta se auto-agregó ("auto"), el primer día con gasto. */
+function startIso(D){ if(D.startIso) return D.startIso; if(D.start==='auto'&&D.dates&&D.dates.length) return D.dates[0]; return null; }
 function tenureTxt(D){
+  D={...D,startIso:startIso(D)};
   if(!D.startIso) return D.start?'<span style="color:var(--soft)">histórico</span>':'—';
   const end=D.endIso||TODAY; const d=Math.max(0,daysBetween(D.startIso,end));
   if(d<31) return d+(d===1?' día':' días');
@@ -850,6 +853,7 @@ function tenureTxt(D){
   return m+(m===1?' mes':' meses')+(r>0?' y '+r+(r===1?' día':' días'):'');
 }
 function startTxt(D){
+  D={...D,startIso:startIso(D)};
   if(D.startIso) return fmtD(D.startIso)+' '+D.startIso.slice(2,4);
   return D.start?`<span style="color:var(--soft)">${D.start}</span>`:'—';
 }

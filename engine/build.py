@@ -32,7 +32,10 @@ _BUILD_ERRORS = []
 
 def load_clients(config_dir: Path) -> List[dict]:
     cfg = yaml.safe_load((config_dir / "clients.yaml").read_text(encoding="utf-8"))
-    return cfg.get("clients", [])
+    clients = cfg.get("clients", []) or []
+    for c in clients:               # slug siempre texto (YAML puede leerlo como número)
+        c["slug"] = str(c.get("slug"))
+    return clients
 
 
 def load_client_rows(exports_dir: Path, slug: str, mapping_yaml: Path) -> Tuple[list, Optional[str], List[str]]:
