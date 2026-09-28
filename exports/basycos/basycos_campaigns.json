@@ -14,19 +14,5 @@
    "Conjunto Toulouse",
    "Conjunto Lugano - Copy"
   ]
- },
- {
-  "name": "Ventas - Conjunto Loira",
-  "objective": "OUTCOME_SALES",
-  "status": "PAUSED",
-  "spend": 111572.33,
-  "first": "2026-08-23",
-  "last": "2026-09-09",
-  "purch": 2.0,
-  "msg": 16.0,
-  "ads": [
-   "Loira video",
-   "Ventas Rimini"
-  ]
  }
 ]

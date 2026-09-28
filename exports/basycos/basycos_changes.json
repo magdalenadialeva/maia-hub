@@ -162,24 +162,6 @@
   "src": "meta"
  },
  {
-  "date": "2026-09-11",
-  "cat": "creativo",
-  "text": "Se encendió/lanzó «Conjunto Lugano»",
-  "src": "auto"
- },
- {
-  "date": "2026-09-11",
-  "cat": "creativo",
-  "text": "Se encendió/lanzó «Total Look Loira»",
-  "src": "auto"
- },
- {
-  "date": "2026-09-11",
-  "cat": "creativo",
-  "text": "Se encendió/lanzó «Conjunto Toulouse»",
-  "src": "auto"
- },
- {
   "date": "2026-09-09",
   "cat": "estado",
   "text": "Estado de la campaña actualizado · New Traffic Campaign with recommended settings (Inactiva → Activa)",
@@ -244,12 +226,6 @@
   "cat": "estado",
   "text": "Estado del anuncio actualizado · Ventas Rimini (Inactivo → Procesamiento pendiente)",
   "src": "meta"
- },
- {
-  "date": "2026-09-09",
-  "cat": "creativo",
-  "text": "Se apagó «Loira video»",
-  "src": "auto"
  },
  {
   "date": "2026-09-08",
@@ -322,12 +298,6 @@
   "cat": "estado",
   "text": "Estado de la campaña actualizado · Ventas - Conjunto Loira (Activa → Procesamiento pendiente)",
   "src": "meta"
- },
- {
-  "date": "2026-09-03",
-  "cat": "creativo",
-  "text": "Se apagó «Ventas Rimini»",
-  "src": "auto"
  },
  {
   "date": "2026-09-02",
@@ -496,12 +466,6 @@
   "cat": "estado",
   "text": "Estado de la campaña actualizado · Ventas - Conjunto Loira (Activa → Inactiva)",
   "src": "meta"
- },
- {
-  "date": "2026-09-01",
-  "cat": "creativo",
-  "text": "Se encendió/lanzó «Ventas Rimini»",
-  "src": "auto"
  },
  {
   "date": "2026-08-31",
