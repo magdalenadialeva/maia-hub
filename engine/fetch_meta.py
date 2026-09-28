@@ -154,6 +154,28 @@ def _account_currency(acct: str, token: str, fallback: str) -> str:
         return fallback
 
 
+def _account_tz(acct: str, token: str, fallback: str = "America/Argentina/Buenos_Aires") -> str:
+    """Zona horaria de la cuenta publicitaria (Meta corta el día a las 00:00 de ESTA zona)."""
+    try:
+        d = _api_get(f"act_{acct}", {"fields": "timezone_name"}, token)
+        return d.get("timezone_name") or fallback
+    except Exception:
+        return fallback
+
+
+def _last_closed_day(tz_name: str) -> date:
+    """Último día COMPLETO según el horario de la cuenta = mismo corte que Ads Manager.
+    El día de hoy (parcial) NO se trae: si se trae a media mañana, sus números quedan
+    incompletos y no coinciden con Meta. Así, cada corrida deja la info cerrada a AYER
+    a las 23:59 en la zona horaria de la cuenta."""
+    try:
+        from zoneinfo import ZoneInfo
+        now = datetime.now(ZoneInfo(tz_name))
+    except Exception:
+        now = datetime.now(_ART) if _ART else datetime.now()
+    return now.date() - timedelta(days=1)
+
+
 # ---------------------------------------------------------------------------
 # HISTORIAL DE CAMBIOS por cuenta.
 # Fuente 1 (autoritativa): /activities de Meta = el log real de la cuenta
@@ -474,8 +496,11 @@ def fetch_client(client: dict, days: int, token: str, exports_dir: Path) -> Opti
         return None
 
     currency = client.get("currency") or _account_currency(acct, token, "ARS")
-    until = date.today()
+    # Corte igual a Meta: hasta AYER completo en la zona horaria de la cuenta.
+    tz_name = _account_tz(acct, token)
+    until = _last_closed_day(tz_name)
     since = until - timedelta(days=days)
+    print(f"· {slug}: ventana {since} → {until} (día cerrado, zona {tz_name})")
     params = {
         "level": "ad",
         "time_increment": 1,

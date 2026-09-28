@@ -122,6 +122,11 @@ def build_hub_client(client: dict, rows: List[dict], currency: str | None) -> di
         "cur": client.get("currency") or currency or "ARS",
         "obj": client.get("obj_code") or ("lead" if is_leads else "purchase"),
         "start": client.get("start_label") or client.get("start_maia") or "",
+        # Fecha de inicio de pauta con MAIA (ISO) -> columna "Inicio pauta".
+        "startIso": str(client.get("start_maia") or "") or None,
+        "endIso": str(client.get("end_maia") or "") or None,
+        # Cuenta perdida -> va al capítulo CUENTAS PERDIDAS del General.
+        "lost": str(client.get("status") or "").lower() in ("perdida", "perdido", "lost"),
         "lastchg": client.get("lastchg"),
         # Fases de optimización de la cuenta (por qué evento optimizó en cada tramo).
         # Se declaran en config/clients.yaml -> opt_phases: [{from, opt, label?}].
