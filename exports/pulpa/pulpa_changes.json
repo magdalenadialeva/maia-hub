@@ -1,5 +1,485 @@
 [
  {
+  "date": "2026-09-27",
+  "cat": "estado",
+  "text": "Estado de la cuenta actualizado · Pulpa Cuenta publicitaria (Activa → En período de gracia)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-25",
+  "cat": "creativo",
+  "text": "Se reactivó «Ad_5»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-09-23",
+  "cat": "creativo",
+  "text": "Se pausó «Ad_5»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-09-21",
+  "cat": "estado",
+  "text": "Estado de la cuenta actualizado · Pulpa Cuenta publicitaria (En período de gracia → Activa)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-21",
+  "cat": "estado",
+  "text": "Estado de la cuenta actualizado · Pulpa Cuenta publicitaria (Activa → En período de gracia)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-20",
+  "cat": "estado",
+  "text": "Estado de la cuenta actualizado · Pulpa Cuenta publicitaria (En período de gracia → Activa)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-20",
+  "cat": "estado",
+  "text": "Estado de la cuenta actualizado · Pulpa Cuenta publicitaria (Activa → En período de gracia)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-19",
+  "cat": "estado",
+  "text": "Estado de la cuenta actualizado · Pulpa Cuenta publicitaria (En período de gracia → Activa)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-18",
+  "cat": "estado",
+  "text": "Estado de la cuenta actualizado · Pulpa Cuenta publicitaria (Activa → En período de gracia)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-18",
+  "cat": "creativo",
+  "text": "Se reactivó «Ad_6»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-09-16",
+  "cat": "estado",
+  "text": "Estado de la cuenta actualizado · Pulpa Cuenta publicitaria (Pago necesario → Activa)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-16",
+  "cat": "creativo",
+  "text": "Se pausó «Ad_6»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-09-15",
+  "cat": "estado",
+  "text": "Estado de la cuenta actualizado · Pulpa Cuenta publicitaria (En período de gracia → Pago necesario)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-15",
+  "cat": "estado",
+  "text": "Estado de la cuenta actualizado · Pulpa Cuenta publicitaria (Activa → En período de gracia)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-13",
+  "cat": "estado",
+  "text": "Estado de la cuenta actualizado · Pulpa Cuenta publicitaria (En período de gracia → Activa)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-13",
+  "cat": "estado",
+  "text": "Estado de la cuenta actualizado · Pulpa Cuenta publicitaria (Activa → En período de gracia)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-13",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Ad_6 (Revisión pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-13",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Ad_6 (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-13",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Ad_5 (Revisión pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-13",
+  "cat": "creativo",
+  "text": "Anuncio creado · Ad_6",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-13",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Ad_5 (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-13",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Ad_4 (Revisión pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-13",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Ad_3 (Revisión pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-13",
+  "cat": "creativo",
+  "text": "Anuncio creado · Ad_5",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-13",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Ad_4 (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-13",
+  "cat": "creativo",
+  "text": "Anuncio creado · Ad_4",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-13",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Ad_1 (Revisión pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-13",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Ad_3 (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-13",
+  "cat": "creativo",
+  "text": "Anuncio creado · Ad_3",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-13",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Ad_2 (Revisión pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-13",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Ad_2 (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-13",
+  "cat": "creativo",
+  "text": "Anuncio actualizado · Ad_2",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-13",
+  "cat": "creativo",
+  "text": "Anuncio creado · Ad_2",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-13",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Ad_1 (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-13",
+  "cat": "estado",
+  "text": "Estado del conjunto de anuncios actualizado · Pulpa Verde_Conversiones_Org_Mensajes_2026_Adv+ (Procesamiento pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-13",
+  "cat": "creativo",
+  "text": "Anuncio creado · Ad_1",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-13",
+  "cat": "otros",
+  "text": "Segmentación del conjunto de anuncios actualizada · Pulpa Verde_Conversiones_Org_Mensajes_2026_Adv+",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-13",
+  "cat": "objetivo",
+  "text": "Objetivo de optimización del conjunto de anuncios actualizado · Pulpa Verde_Conversiones_Org_Mensajes_2026_Adv+",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-13",
+  "cat": "presupuesto",
+  "text": "Estrategia de puja del conjunto de anuncios actualizada · Pulpa Verde_Conversiones_Org_Mensajes_2026_Adv+",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-13",
+  "cat": "creativo",
+  "text": "Conjunto de anuncios creado · Pulpa Verde_Conversiones_Org_Mensajes_2026_Adv+",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-13",
+  "cat": "creativo",
+  "text": "Se encendió/lanzó «Ad_1»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-09-13",
+  "cat": "creativo",
+  "text": "Se encendió/lanzó «Ad_2»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-09-13",
+  "cat": "creativo",
+  "text": "Se encendió/lanzó «Ad_3»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-09-13",
+  "cat": "creativo",
+  "text": "Se encendió/lanzó «Ad_4»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-09-13",
+  "cat": "creativo",
+  "text": "Se encendió/lanzó «Ad_5»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-09-13",
+  "cat": "creativo",
+  "text": "Se encendió/lanzó «Ad_6»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-09-12",
+  "cat": "estado",
+  "text": "Estado de la campaña actualizado · Pulpa Verde_Conversiones_Purchase_2026_Adv+ (Activa → Inactiva)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-12",
+  "cat": "creativo",
+  "text": "Se apagó «Ad_Converse»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-09-12",
+  "cat": "creativo",
+  "text": "Se apagó «Ad_Manchas»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-09-12",
+  "cat": "creativo",
+  "text": "Se apagó «Ad_Toallas»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-09-12",
+  "cat": "creativo",
+  "text": "Se apagó «Tengo un chisme»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-09-11",
+  "cat": "estado",
+  "text": "Estado de la cuenta actualizado · Pulpa Cuenta publicitaria (En período de gracia → Activa)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-11",
+  "cat": "estado",
+  "text": "Estado de la cuenta actualizado · Pulpa Cuenta publicitaria (Activa → En período de gracia)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-11",
+  "cat": "creativo",
+  "text": "Se reactivó «Ad_Vans»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-09-11",
+  "cat": "creativo",
+  "text": "Se apagó «Ad_Vans»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-09-10",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Tengo un chisme (Revisión pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-10",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Esto NO, Esto SI! (Revisión pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-10",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Tengo un chisme (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-10",
+  "cat": "creativo",
+  "text": "Anuncio creado · Tengo un chisme",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-10",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Esto NO, Esto SI! (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-10",
+  "cat": "estado",
+  "text": "Estado del conjunto de anuncios actualizado · Pulpa Verde_Conversiones_Purchase_2026_Adv+ (Inactivo → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-10",
+  "cat": "estado",
+  "text": "Estado del conjunto de anuncios actualizado · Pulpa Verde_Conversiones_Purchase_2026_Adv+ v.2 (Activo → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-10",
+  "cat": "creativo",
+  "text": "Anuncio creado · Esto NO, Esto SI!",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-10",
+  "cat": "estado",
+  "text": "Estado de la campaña actualizado · Pulpa Verde_Conversiones_Purchase_2026_Adv+ (Procesamiento pendiente → Activa)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-10",
+  "cat": "estado",
+  "text": "Estado de la campaña actualizado · Pulpa Verde_Conversiones_Org_Purchase_2026_Adv+ (Activa → Inactiva)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-10",
+  "cat": "presupuesto",
+  "text": "Presupuesto de la campaña actualizado · Pulpa Verde_Conversiones_Purchase_2026_Adv+ (20.000 → 15.000 ARS/día)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-10",
+  "cat": "estado",
+  "text": "Estado de la campaña actualizado · Pulpa Verde_Conversiones_Purchase_2026_Adv+ (Activa → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-10",
+  "cat": "estado",
+  "text": "Estado del conjunto de anuncios actualizado · Pulpa Verde_Conversiones_Purchase_2026_Adv+ v.2 (Inactivo → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-10",
+  "cat": "presupuesto",
+  "text": "Presupuesto del conjunto de anuncios actualizado · Pulpa Verde_Conversiones_Org_Purchase_2026_Adv+ (20.000 → 15.000 ARS/día)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-10",
+  "cat": "creativo",
+  "text": "Se reactivó «Ad_Converse»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-09-10",
+  "cat": "creativo",
+  "text": "Se reactivó «Ad_Manchas»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-09-10",
+  "cat": "creativo",
+  "text": "Se reactivó «Ad_Toallas»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-09-10",
+  "cat": "creativo",
+  "text": "Se encendió/lanzó «Tengo un chisme»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-09-09",
+  "cat": "estado",
+  "text": "Estado del conjunto de anuncios actualizado · Pulpa Verde_Conversiones_Org_Purchase_2026_Adv+ (Activo → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-09",
+  "cat": "estado",
+  "text": "Estado de la cuenta actualizado · Pulpa Cuenta publicitaria (Pago necesario → Activa)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-09",
+  "cat": "creativo",
+  "text": "Se apagó «Si cuando limpias tu trapo queda así… NO LO TIRES!»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-09-09",
+  "cat": "creativo",
+  "text": "Se apagó «Así lavo mis toallas»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-09-09",
+  "cat": "creativo",
+  "text": "Se apagó «Si hubiera desarrollado esto antes»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-09-09",
+  "cat": "creativo",
+  "text": "Se apagó «Converse Blancas»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-09-09",
+  "cat": "creativo",
+  "text": "Se apagó «Yo se que vos y yo...»",
+  "src": "auto"
+ },
+ {
   "date": "2026-09-08",
   "cat": "estado",
   "text": "Estado de la cuenta actualizado · Pulpa Cuenta publicitaria (Activa → Pago necesario)",
@@ -16,6 +496,12 @@
   "cat": "estado",
   "text": "Estado de la cuenta actualizado · Pulpa Cuenta publicitaria (Activa → En período de gracia)",
   "src": "meta"
+ },
+ {
+  "date": "2026-09-08",
+  "cat": "creativo",
+  "text": "Se pausó «Ad_Toallas»",
+  "src": "auto"
  },
  {
   "date": "2026-09-07",
@@ -146,7 +632,7 @@
  {
   "date": "2026-09-07",
   "cat": "creativo",
-  "text": "Se apagó «Ad_Toallas»",
+  "text": "Se pausó «Ad_Vans»",
   "src": "auto"
  },
  {
@@ -182,13 +668,19 @@
  {
   "date": "2026-09-06",
   "cat": "creativo",
-  "text": "Se apagó «Ad_Vans»",
+  "text": "Se pausó «Ad_Converse»",
   "src": "auto"
  },
  {
   "date": "2026-09-06",
   "cat": "creativo",
   "text": "Se apagó «Ad_Osito»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-09-06",
+  "cat": "creativo",
+  "text": "Se pausó «Ad_Manchas»",
   "src": "auto"
  },
  {
@@ -216,18 +708,6 @@
   "src": "meta"
  },
  {
-  "date": "2026-09-05",
-  "cat": "creativo",
-  "text": "Se apagó «Ad_Converse»",
-  "src": "auto"
- },
- {
-  "date": "2026-09-05",
-  "cat": "creativo",
-  "text": "Se apagó «Ad_Manchas»",
-  "src": "auto"
- },
- {
   "date": "2026-09-04",
   "cat": "estado",
   "text": "Estado de la cuenta actualizado · Pulpa Cuenta publicitaria (En período de gracia → Activa)",
@@ -237,486 +717,6 @@
   "date": "2026-09-04",
   "cat": "estado",
   "text": "Estado de la cuenta actualizado · Pulpa Cuenta publicitaria (Activa → En período de gracia)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-04",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Ad_Osito (Revisión pendiente → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-04",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Ad_Manchas (Revisión pendiente → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-04",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Ad_Vans (Revisión pendiente → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-04",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Ad_Converse (Revisión pendiente → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-04",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Ad_Toallas (Revisión pendiente → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-04",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Ad_Osito (Procesamiento pendiente → Revisión pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-04",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Ad_Manchas (Procesamiento pendiente → Revisión pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-04",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Ad_Converse (Procesamiento pendiente → Revisión pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-04",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Ad_Toallas (Procesamiento pendiente → Revisión pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-04",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Ad_Vans (Procesamiento pendiente → Revisión pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-04",
-  "cat": "estado",
-  "text": "Estado del conjunto de anuncios actualizado · Pulpa Verde_Conversiones_A2C_2026_Adv+ (Activo → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-04",
-  "cat": "estado",
-  "text": "Estado del conjunto de anuncios actualizado · Pulpa Verde_Conversiones_Purchase_2026_Adv+ v.2 (Procesamiento pendiente → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-04",
-  "cat": "creativo",
-  "text": "Anuncio creado · Ad_Osito",
-  "src": "meta"
- },
- {
-  "date": "2026-09-04",
-  "cat": "creativo",
-  "text": "Anuncio creado · Ad_Toallas",
-  "src": "meta"
- },
- {
-  "date": "2026-09-04",
-  "cat": "creativo",
-  "text": "Anuncio creado · Ad_Manchas",
-  "src": "meta"
- },
- {
-  "date": "2026-09-04",
-  "cat": "creativo",
-  "text": "Anuncio creado · Ad_Converse",
-  "src": "meta"
- },
- {
-  "date": "2026-09-04",
-  "cat": "creativo",
-  "text": "Anuncio creado · Ad_Vans",
-  "src": "meta"
- },
- {
-  "date": "2026-09-04",
-  "cat": "presupuesto",
-  "text": "Se habilitó la programación del presupuesto del conjunto de anuncios · Pulpa Verde_Conversiones_Purchase_2026_Adv+ v.2",
-  "src": "meta"
- },
- {
-  "date": "2026-09-04",
-  "cat": "otros",
-  "text": "Segmentación del conjunto de anuncios actualizada · Pulpa Verde_Conversiones_Purchase_2026_Adv+ v.2",
-  "src": "meta"
- },
- {
-  "date": "2026-09-04",
-  "cat": "objetivo",
-  "text": "Objetivo de optimización del conjunto de anuncios actualizado · Pulpa Verde_Conversiones_Purchase_2026_Adv+ v.2",
-  "src": "meta"
- },
- {
-  "date": "2026-09-04",
-  "cat": "presupuesto",
-  "text": "Estrategia de puja del conjunto de anuncios actualizada · Pulpa Verde_Conversiones_Purchase_2026_Adv+ v.2",
-  "src": "meta"
- },
- {
-  "date": "2026-09-04",
-  "cat": "creativo",
-  "text": "Conjunto de anuncios creado · Pulpa Verde_Conversiones_Purchase_2026_Adv+ v.2",
-  "src": "meta"
- },
- {
-  "date": "2026-09-04",
-  "cat": "estado",
-  "text": "Estado de la cuenta actualizado · Pulpa Cuenta publicitaria (Pago necesario → Activa)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-04",
-  "cat": "estado",
-  "text": "Estado de la cuenta actualizado · Pulpa Cuenta publicitaria (Activa → Pago necesario)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-03",
-  "cat": "estado",
-  "text": "Estado de la cuenta actualizado · Pulpa Cuenta publicitaria (Pago necesario → Activa)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-03",
-  "cat": "estado",
-  "text": "Estado de la cuenta actualizado · Pulpa Cuenta publicitaria (Activa → Pago necesario)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-03",
-  "cat": "segmentacion",
-  "text": "Público personalizado creado · asa_auto_custom_audience",
-  "src": "meta"
- },
- {
-  "date": "2026-09-03",
-  "cat": "estado",
-  "text": "Estado de la cuenta actualizado · Pulpa Cuenta publicitaria (Activa → En período de gracia)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-01",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Ad_Converse (Revisión pendiente → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-01",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Ad_Manchas (Revisión pendiente → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-01",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Ad_Osito (Revisión pendiente → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-01",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Ad_Vans (Revisión pendiente → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-01",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Ad_Toallas (Revisión pendiente → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-01",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Ad_Osito (Procesamiento pendiente → Revisión pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-01",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Ad_Converse (Procesamiento pendiente → Revisión pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-01",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Ad_Toallas (Procesamiento pendiente → Revisión pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-01",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Ad_Vans (Procesamiento pendiente → Revisión pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-01",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Ad_Manchas (Procesamiento pendiente → Revisión pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-01",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Ad_Toallas (Revisión pendiente → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-01",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Ad_Toallas (Activo → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-01",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Ad_Vans (Activo → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-01",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Ad_Converse (Activo → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-01",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Ad_Osito (Revisión pendiente → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-01",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Ad_Osito (Activo → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-01",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Ad_Vans (Revisión pendiente → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-01",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Ad_Manchas (Activo → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-01",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Ad_Converse (Revisión pendiente → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-01",
-  "cat": "creativo",
-  "text": "Anuncio actualizado · Ad_Osito",
-  "src": "meta"
- },
- {
-  "date": "2026-09-01",
-  "cat": "creativo",
-  "text": "Anuncio actualizado · Ad_Toallas",
-  "src": "meta"
- },
- {
-  "date": "2026-09-01",
-  "cat": "creativo",
-  "text": "Anuncio actualizado · Ad_Vans",
-  "src": "meta"
- },
- {
-  "date": "2026-09-01",
-  "cat": "creativo",
-  "text": "Anuncio actualizado · Ad_Manchas",
-  "src": "meta"
- },
- {
-  "date": "2026-09-01",
-  "cat": "creativo",
-  "text": "Anuncio actualizado · Ad_Converse",
-  "src": "meta"
- },
- {
-  "date": "2026-09-01",
-  "cat": "estado",
-  "text": "Estado del conjunto de anuncios actualizado · Pulpa Verde_Conversiones_A2C_2026_Adv+ (Procesamiento pendiente → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-01",
-  "cat": "estado",
-  "text": "Estado de la campaña actualizado · Pulpa Verde_Conversiones_Purchase_2026_Adv+ (Procesamiento pendiente → Activa)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-01",
-  "cat": "otros",
-  "text": "Segmentación del conjunto de anuncios actualizada · Pulpa Verde_Conversiones_A2C_2026_Adv+",
-  "src": "meta"
- },
- {
-  "date": "2026-09-01",
-  "cat": "estado",
-  "text": "Estado del conjunto de anuncios actualizado · Pulpa Verde_Conversiones_A2C_2026_Adv+ (Activo → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-01",
-  "cat": "presupuesto",
-  "text": "Presupuesto de la campaña actualizado · Pulpa Verde_Conversiones_Purchase_2026_Adv+",
-  "src": "meta"
- },
- {
-  "date": "2026-09-01",
-  "cat": "estado",
-  "text": "Estado de la campaña actualizado · Pulpa Verde_Conversiones_Purchase_2026_Adv+ (Activa → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-01",
-  "cat": "estado",
-  "text": "Estado del conjunto de anuncios actualizado · Pulpa Verde_Conversiones_Purchase_2026_Adv+ (Activo → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-01",
-  "cat": "otros",
-  "text": "Nombre del conjunto de anuncios actualizado · Pulpa Verde_Conversiones_A2C_2026_Adv+ (Pulpa Verde_Conversiones_Purchase_2026_Adv+ - Copy → Pulpa Verde_Conversiones_A2C_2026_Adv+)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-01",
-  "cat": "creativo",
-  "text": "Anuncio creado · Ad_Osito",
-  "src": "meta"
- },
- {
-  "date": "2026-09-01",
-  "cat": "creativo",
-  "text": "Anuncio creado · Ad_Toallas",
-  "src": "meta"
- },
- {
-  "date": "2026-09-01",
-  "cat": "creativo",
-  "text": "Anuncio creado · Ad_Vans",
-  "src": "meta"
- },
- {
-  "date": "2026-09-01",
-  "cat": "creativo",
-  "text": "Anuncio creado · Ad_Converse",
-  "src": "meta"
- },
- {
-  "date": "2026-09-01",
-  "cat": "creativo",
-  "text": "Anuncio creado · Ad_Manchas",
-  "src": "meta"
- },
- {
-  "date": "2026-09-01",
-  "cat": "presupuesto",
-  "text": "Se habilitó la programación del presupuesto del conjunto de anuncios · Pulpa Verde_Conversiones_A2C_2026_Adv+",
-  "src": "meta"
- },
- {
-  "date": "2026-09-01",
-  "cat": "objetivo",
-  "text": "Objetivo de optimización del conjunto de anuncios actualizado · Pulpa Verde_Conversiones_A2C_2026_Adv+",
-  "src": "meta"
- },
- {
-  "date": "2026-09-01",
-  "cat": "presupuesto",
-  "text": "Estrategia de puja del conjunto de anuncios actualizada · Pulpa Verde_Conversiones_A2C_2026_Adv+",
-  "src": "meta"
- },
- {
-  "date": "2026-09-01",
-  "cat": "creativo",
-  "text": "Conjunto de anuncios creado · Pulpa Verde_Conversiones_A2C_2026_Adv+",
-  "src": "meta"
- },
- {
-  "date": "2026-09-01",
-  "cat": "estado",
-  "text": "Estado de la cuenta actualizado · Pulpa Cuenta publicitaria (En período de gracia → Activa)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-01",
-  "cat": "estado",
-  "text": "Estado de la cuenta actualizado · Pulpa Cuenta publicitaria (Activa → En período de gracia)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-01",
-  "cat": "creativo",
-  "text": "Se encendió/lanzó «Ad_Toallas»",
-  "src": "auto"
- },
- {
-  "date": "2026-08-31",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Ad_Toallas (Revisión pendiente → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-31",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Ad_Toallas (Procesamiento pendiente → Revisión pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-31",
-  "cat": "creativo",
-  "text": "Anuncio creado · Ad_Toallas",
-  "src": "meta"
- },
- {
-  "date": "2026-08-31",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Ad_Manchas (Revisión pendiente → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-31",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Ad_Manchas (Procesamiento pendiente → Revisión pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-31",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Ad_Osito (Revisión pendiente → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-31",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Ad_Converse (Revisión pendiente → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-31",
-  "cat": "creativo",
-  "text": "Anuncio creado · Ad_Manchas",
   "src": "meta"
  }
 ]

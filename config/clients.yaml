@@ -125,3 +125,33 @@ clients:
     # muestra como objetivo "Mensajes" y la evalúa por señales de arriba (CTR/CPM).
     # Para contar las conversaciones hay que sumar esa métrica de resultado en fetch_meta.
     notes: "Tráfico/Mensajes de WhatsApp (auto-agregada 2026-09-02). Resultado (conversaciones) no disponible en el export todavía."
+
+  - slug: 1366858924962966
+    name: "1366858924962966"
+    objective: ventas
+    obj_code: purchase
+    currency: ARS
+    ad_account_id: "1366858924962966"
+    start_label: "auto"
+    margin: 0.5
+    notes: "Auto-agregado desde Meta (2026-09-28)."
+
+  - slug: cloe-nutricion-real
+    name: "Cloe Nutricion Real"
+    objective: ventas
+    obj_code: purchase
+    currency: USD
+    ad_account_id: "1000207433066534"
+    start_label: "auto"
+    margin: 0.5
+    notes: "Auto-agregado desde Meta (2026-09-28)."
+
+  - slug: cuenta-publicitaria-de-c
+    name: "Cuenta publicitaria de Cloe Nutricion Real"
+    objective: ventas
+    obj_code: purchase
+    currency: USD
+    ad_account_id: "1568808024971225"
+    start_label: "auto"
+    margin: 0.5
+    notes: "Auto-agregado desde Meta (2026-09-28)."

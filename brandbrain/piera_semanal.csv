@@ -1,2 +1,2 @@
 ﻿slug,cliente,periodo,moneda,gasto,resultado,roas,cpa,cpl,cuello_embudo,diagnostico,veredictos
-piera,Piera Ceresa,2026-08-18..2026-09-18,CLP,273076.0,4,0.88,68269,,Vieron la landing (LPV),El cuello está en Vieron la landing (LPV) → Agregaron al carrito: 2.0% vs ~13.0% sano.,escalar:0 iterar:0 matar:0 pocaData:14
+piera,Piera Ceresa,2026-08-23..2026-09-27,CLP,234659.0,2,0.54,117330,,Iniciaron el pago,El cuello está en Iniciaron el pago → Compraron: 3.9% vs ~45.0% sano.,escalar:0 iterar:0 matar:0 pocaData:14
