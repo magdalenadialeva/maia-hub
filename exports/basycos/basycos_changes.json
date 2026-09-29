@@ -1,5 +1,53 @@
 [
  {
+  "date": "2026-09-28",
+  "cat": "segmentacion",
+  "text": "Público personalizado creado · asa_auto_custom_audience",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-28",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Conjunto Lugano - Copy (Procesamiento pendiente → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-28",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Conjunto Lugano (Procesamiento pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-28",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado cuando se completa su revisión · Conjunto Lugano - Copy (Activo → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-28",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Conjunto Lugano - Copy (Activo → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-28",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Conjunto Lugano (Actualización necesaria → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-28",
+  "cat": "creativo",
+  "text": "Se reactivó «Conjunto Lugano»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-09-25",
+  "cat": "creativo",
+  "text": "Se pausó «Conjunto Lugano»",
+  "src": "auto"
+ },
+ {
   "date": "2026-09-24",
   "cat": "estado",
   "text": "Estado del anuncio actualizado · Conjunto Lugano - Copy (Revisión pendiente → Activo)",
@@ -28,12 +76,6 @@
   "cat": "estado",
   "text": "Estado del anuncio actualizado · Conjunto Lugano (Activo → Actualización necesaria)",
   "src": "meta"
- },
- {
-  "date": "2026-09-24",
-  "cat": "creativo",
-  "text": "Se apagó «Conjunto Lugano»",
-  "src": "auto"
  },
  {
   "date": "2026-09-24",

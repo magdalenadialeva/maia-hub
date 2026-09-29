@@ -1,5 +1,71 @@
 [
  {
+  "date": "2026-09-28",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Ventas bodys, calzas (Revisión pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-28",
+  "cat": "estado",
+  "text": "Estado de la campaña actualizado · ALBA-NUEVOS CLIENTES (Procesamiento pendiente → Activa)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-28",
+  "cat": "presupuesto",
+  "text": "Presupuesto de la campaña actualizado · ALBA-NUEVOS CLIENTES (5.000 → 10.000 ARS/día)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-28",
+  "cat": "estado",
+  "text": "Estado de la campaña actualizado · ALBA-NUEVOS CLIENTES (Activa → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-28",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Ventas bodys, calzas (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-28",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Ventas bodys, calzas (Activo → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-28",
+  "cat": "creativo",
+  "text": "Anuncio actualizado · Ventas bodys, calzas",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-28",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Ventas video regalo (Revisión pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-28",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Ventas video regalo (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-28",
+  "cat": "creativo",
+  "text": "Anuncio creado · Ventas video regalo",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-28",
+  "cat": "creativo",
+  "text": "Se encendió/lanzó «Ventas video regalo»",
+  "src": "auto"
+ },
+ {
   "date": "2026-09-27",
   "cat": "estado",
   "text": "Estado del anuncio actualizado · Ventas bodys, calzas (Revisión pendiente → Activo)",
@@ -290,13 +356,13 @@
  {
   "date": "2026-09-26",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · Catalogo_2 (Inactivo → Eliminado)",
+  "text": "Estado del anuncio actualizado · Catalogo_4 ¿Es un varón? (Inactivo → Eliminado)",
   "src": "meta"
  },
  {
   "date": "2026-09-26",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · Catalogo_4 ¿Es un varón? (Inactivo → Eliminado)",
+  "text": "Estado del anuncio actualizado · Catalogo_2 (Inactivo → Eliminado)",
   "src": "meta"
  },
  {
@@ -364,6 +430,12 @@
   "cat": "estado",
   "text": "Estado del conjunto de anuncios actualizado · Alba&Co_2026_ventas (Activo → Procesamiento pendiente)",
   "src": "meta"
+ },
+ {
+  "date": "2026-09-26",
+  "cat": "creativo",
+  "text": "Se apagó «Catalogo sin portada»",
+  "src": "auto"
  },
  {
   "date": "2026-09-25",
@@ -548,7 +620,7 @@
  {
   "date": "2026-09-24",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · Catalogo_Karla (Procesamiento pendiente → Revisión pendiente)",
+  "text": "Estado del anuncio actualizado · Catalogo_3 (Procesamiento pendiente → Revisión pendiente)",
   "src": "meta"
  },
  {
@@ -560,7 +632,7 @@
  {
   "date": "2026-09-24",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · Catalogo_3 (Procesamiento pendiente → Revisión pendiente)",
+  "text": "Estado del anuncio actualizado · Catalogo_Karla (Procesamiento pendiente → Revisión pendiente)",
   "src": "meta"
  },
  {
@@ -645,78 +717,6 @@
   "date": "2026-09-23",
   "cat": "estado",
   "text": "Estado del anuncio actualizado · Catalogo sin portada (Activo → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-23",
-  "cat": "creativo",
-  "text": "Anuncio actualizado · Catalogo sin portada",
-  "src": "meta"
- },
- {
-  "date": "2026-09-22",
-  "cat": "estado",
-  "text": "Estado de la campaña actualizado · Alba&Co_2026_septiembre (Inactiva → Activa)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-22",
-  "cat": "estado",
-  "text": "Estado de la campaña actualizado · Alba&Co_2026_septiembre (Activa → Inactiva)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-22",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Catalogo sin portada (Revisión pendiente → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-22",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Catalogo_3 (Revisión pendiente → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-22",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Catalogo_Karla (Revisión pendiente → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-22",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Catalogo_4 ¿Es un varón? (Revisión pendiente → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-22",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Catalogo_2 (Revisión pendiente → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-22",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · creativo (Revisión pendiente → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-21",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · creativo - Copia (Revisión pendiente → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-21",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · creativo - Copia (Procesamiento pendiente → Revisión pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-21",
-  "cat": "otros",
-  "text": "Segmentación del conjunto de anuncios actualizada · audience - retargeting",
   "src": "meta"
  }
 ]

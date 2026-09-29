@@ -3,33 +3,32 @@
   "name": "Mar26 - Ventas - A+ - Catalogo - Frio",
   "objective": "OUTCOME_SALES",
   "status": "ACTIVE",
-  "spend": 2944835.61,
-  "first": "2026-08-23",
-  "last": "2026-09-27",
+  "spend": 2938045.36,
+  "first": "2026-08-24",
+  "last": "2026-09-28",
   "purch": 81.0,
-  "msg": 48.0,
+  "msg": 47.0,
   "ads": [
-   "Ad6 - Secuencia - Nueva coleccion 202666 - Copia",
    "Ad6 - Secuencia - Nueva coleccion 2026 - Copia 3",
    "Ad6 - Secuencia - Nueva coleccion 2026 - Copia 4",
    "Ad6 - Secuencia - Nueva coleccion 202666 - Copia 8",
    "Ad6 - Secuencia - Nueva coleccion 202666 - Copia 6",
-   "Ad6 - Secuencia - Nueva coleccion 202666 - Copia 9",
    "Ad6 - Secuencia - Nueva coleccion 202666 - Copia 10",
+   "Ad6 - Secuencia - Nueva coleccion 202666 - Copia 9",
    "Ad6 - Secuencia - Nueva coleccion 202666 - Copia 7",
-   "Ad6 - Secuencia - Nueva coleccion 202666 - Copia 12",
-   "Ad6 - Secuencia - Nueva coleccion 2026 - Copia 2",
    "Ad6 - Secuencia - Nueva coleccion 202666 - Copia 11",
-   "Ad6 - Secuencia - Nueva coleccion 202666 - Copia 5"
+   "Ad6 - Secuencia - Nueva coleccion 202666 - Copia 12",
+   "Ad6 - Secuencia - Nueva coleccion 202666 - Copia 5",
+   "Ad6 - Video - Sale - Copia"
   ]
  },
  {
   "name": "Ago26 - Ventas - CBO - Prospecting - Angulos Nuevos",
   "objective": "OUTCOME_SALES",
   "status": "ACTIVE",
-  "spend": 864269.91,
-  "first": "2026-08-23",
-  "last": "2026-09-27",
+  "spend": 862526.23,
+  "first": "2026-08-24",
+  "last": "2026-09-28",
   "purch": 28.0,
   "msg": 12.0,
   "ads": [
@@ -42,15 +41,13 @@
   "name": "SV - Ventas - Seasonals",
   "objective": "OUTCOME_SALES",
   "status": "PAUSED",
-  "spend": 14399.39,
-  "first": "2026-08-23",
+  "spend": 2418.16,
+  "first": "2026-08-24",
   "last": "2026-08-24",
   "purch": 1.0,
   "msg": 0.0,
   "ads": [
-   "Ad5 - Video - Sale - Copia",
-   "Ad6 - Secuencia - Nueva coleccion 202666 - Copia 3",
-   "Ad6 - Secuencia - Nueva coleccion 202666 - Copia 5"
+   "Ad5 - Video - Sale - Copia"
   ]
  }
 ]

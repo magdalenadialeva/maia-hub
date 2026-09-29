@@ -1,17 +1,17 @@
 {
   "piera": {
-    "fetched_at": "2026-09-28",
+    "fetched_at": "2026-09-29",
     "ok": true,
-    "rows": 106,
+    "rows": 101,
     "empty": false,
-    "through": "2026-09-27"
+    "through": "2026-09-28"
   },
   "mossy": {
-    "fetched_at": "2026-09-28",
+    "fetched_at": "2026-09-29",
     "ok": true,
-    "rows": 415,
+    "rows": 413,
     "empty": false,
-    "through": "2026-09-27"
+    "through": "2026-09-28"
   },
   "vresia": {
     "fetched_at": "2026-09-17",
@@ -20,35 +20,35 @@
     "empty": false,
     "through": "2026-09-17",
     "last_error": "HTTP 403: {\"error\":{\"message\":\"(#200) Ad account owner has NOT grant ads_management or ads_read permission, refer to https:\\/\\/developers.facebook.com\\/docs\\/marketing-api\\/get-started\\/authorization\\",
-    "last_attempt": "2026-09-28"
+    "last_attempt": "2026-09-29"
   },
   "alba": {
-    "fetched_at": "2026-09-28",
+    "fetched_at": "2026-09-29",
     "ok": true,
-    "rows": 134,
+    "rows": 137,
     "empty": false,
-    "through": "2026-09-27"
+    "through": "2026-09-28"
   },
   "paz": {
-    "fetched_at": "2026-09-28",
+    "fetched_at": "2026-09-29",
     "ok": true,
-    "rows": 153,
+    "rows": 155,
     "empty": false,
-    "through": "2026-09-27"
+    "through": "2026-09-28"
   },
   "pulpa": {
-    "fetched_at": "2026-09-28",
+    "fetched_at": "2026-09-29",
     "ok": true,
-    "rows": 143,
+    "rows": 147,
     "empty": false,
-    "through": "2026-09-27"
+    "through": "2026-09-28"
   },
   "saritina-ceramica": {
-    "fetched_at": "2026-09-28",
+    "fetched_at": "2026-09-29",
     "ok": true,
-    "rows": 83,
+    "rows": 85,
     "empty": false,
-    "through": "2026-09-27"
+    "through": "2026-09-28"
   },
   "1366858924962966": {
     "ok": false,
@@ -77,17 +77,17 @@
     "through": "2026-09-27"
   },
   "basycos": {
-    "fetched_at": "2026-09-28",
+    "fetched_at": "2026-09-29",
     "ok": true,
-    "rows": 49,
+    "rows": 52,
     "empty": false,
-    "through": "2026-09-27"
+    "through": "2026-09-28"
   },
   "cloe": {
-    "fetched_at": "2026-09-28",
+    "fetched_at": "2026-09-29",
     "ok": true,
-    "rows": 50,
+    "rows": 52,
     "empty": false,
-    "through": "2026-09-27"
+    "through": "2026-09-28"
   }
 }

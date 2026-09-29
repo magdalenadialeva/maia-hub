@@ -1,10 +1,10 @@
 ﻿slug,cliente,periodo,moneda,gasto,resultado,roas,cpa,cpl,cuello_embudo,diagnostico,veredictos
-piera,Piera Ceresa,2026-08-23..2026-09-27,CLP,234659.0,2,0.54,117330,,Iniciaron el pago,El cuello está en Iniciaron el pago → Compraron: 3.9% vs ~45.0% sano.,escalar:0 iterar:0 matar:0 pocaData:14
-mossy,Mossy,2026-08-23..2026-09-27,ARS,3823504.91,110,2.91,34759,,Agregaron al carrito,El cuello está en Agregaron al carrito → Iniciaron el pago: 13.0% vs ~45.0% sano.,escalar:5 iterar:1 matar:0 pocaData:11
+piera,Piera Ceresa,2026-08-24..2026-09-28,CLP,219331.0,1,0.25,219331,,Iniciaron el pago,El cuello está en Iniciaron el pago → Compraron: 2.0% vs ~45.0% sano.,escalar:0 iterar:0 matar:0 pocaData:14
+mossy,Mossy,2026-08-24..2026-09-28,ARS,3802989.75,110,2.92,34573,,Agregaron al carrito,El cuello está en Agregaron al carrito → Iniciaron el pago: 12.8% vs ~45.0% sano.,escalar:5 iterar:1 matar:0 pocaData:9
 vresia,Vresia,2026-08-13..2026-09-17,ARS,476059.52,16,2.09,29754,,Agregaron al carrito,El cuello está en Agregaron al carrito → Iniciaron el pago: 13.6% vs ~45.0% sano.,escalar:2 iterar:0 matar:0 pocaData:18
-alba,Alba & Co,2026-08-23..2026-09-27,ARS,465277.91,21,2.47,22156,,Agregaron al carrito,El cuello está en Agregaron al carrito → Iniciaron el pago: 16.8% vs ~45.0% sano.,escalar:2 iterar:0 matar:0 pocaData:8
-paz,Maia,2026-08-23..2026-09-27,ARS,360344.87,284,,,1269,Clics en el enlace,El cuello está en Clics en el enlace → Leads: 33.3% vs ~20.0% sano.,escalar:4 iterar:1 matar:0 pocaData:14
-pulpa,Pulpa Verde,2026-08-31..2026-09-27,ARS,281721.58,2,0.17,140861,,Iniciaron el pago,El cuello está en Iniciaron el pago → Compraron: 7.4% vs ~45.0% sano.,escalar:0 iterar:0 matar:0 pocaData:17
-saritina-ceramica,SARITINA CERAMICA,2026-09-01..2026-09-27,ARS,227714.05,35,,6506,,Vieron la landing (LPV),El cuello está en Vieron la landing (LPV) → Agregaron al carrito: 0.0% vs ~13.0% sano.,escalar:0 iterar:4 matar:0 pocaData:0
-basycos,Basycos,2026-09-11..2026-09-27,ARS,421483.9,15,6.6,28099,,Vieron la landing (LPV),El cuello está en Vieron la landing (LPV) → Agregaron al carrito: 3.1% vs ~13.0% sano.,escalar:1 iterar:0 matar:0 pocaData:3
-cloe,Cloe,2026-09-17..2026-09-27,USD,83.17,0,,,,Iniciaron el pago,El cuello está en Iniciaron el pago → Compraron: 0.0% vs ~45.0% sano.,escalar:0 iterar:0 matar:0 pocaData:6
+alba,Alba & Co,2026-08-24..2026-09-28,ARS,449747.4,20,2.56,22487,,Agregaron al carrito,El cuello está en Agregaron al carrito → Iniciaron el pago: 15.8% vs ~45.0% sano.,escalar:2 iterar:0 matar:0 pocaData:9
+paz,Maia,2026-08-24..2026-09-28,ARS,357038.13,282,,,1266,Clics en el enlace,El cuello está en Clics en el enlace → Leads: 33.1% vs ~20.0% sano.,escalar:4 iterar:1 matar:0 pocaData:14
+pulpa,Pulpa Verde,2026-08-31..2026-09-28,ARS,292114.04,2,0.17,146057,,Iniciaron el pago,El cuello está en Iniciaron el pago → Compraron: 7.4% vs ~45.0% sano.,escalar:0 iterar:0 matar:0 pocaData:17
+saritina-ceramica,SARITINA CERAMICA,2026-09-01..2026-09-28,ARS,236610.04,35,,6760,,Vieron la landing (LPV),El cuello está en Vieron la landing (LPV) → Agregaron al carrito: 0.0% vs ~13.0% sano.,escalar:0 iterar:4 matar:0 pocaData:0
+basycos,Basycos,2026-09-11..2026-09-28,ARS,445309.17,17,6.97,26195,,Vieron la landing (LPV),El cuello está en Vieron la landing (LPV) → Agregaron al carrito: 3.2% vs ~13.0% sano.,escalar:1 iterar:0 matar:0 pocaData:3
+cloe,Cloe,2026-09-17..2026-09-28,USD,86.66,0,,,,Iniciaron el pago,El cuello está en Iniciaron el pago → Compraron: 0.0% vs ~45.0% sano.,escalar:0 iterar:0 matar:0 pocaData:6

@@ -1,5 +1,11 @@
 [
  {
+  "date": "2026-09-28",
+  "cat": "estado",
+  "text": "Estado de la cuenta actualizado · Pulpa Cuenta publicitaria (En período de gracia → Activa)",
+  "src": "meta"
+ },
+ {
   "date": "2026-09-27",
   "cat": "estado",
   "text": "Estado de la cuenta actualizado · Pulpa Cuenta publicitaria (Activa → En período de gracia)",
@@ -711,12 +717,6 @@
   "date": "2026-09-04",
   "cat": "estado",
   "text": "Estado de la cuenta actualizado · Pulpa Cuenta publicitaria (En período de gracia → Activa)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-04",
-  "cat": "estado",
-  "text": "Estado de la cuenta actualizado · Pulpa Cuenta publicitaria (Activa → En período de gracia)",
   "src": "meta"
  }
 ]

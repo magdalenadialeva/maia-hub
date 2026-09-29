@@ -3,15 +3,15 @@
   "name": "Alba&Co_2026_septiembre",
   "objective": "OUTCOME_SALES",
   "status": "PAUSED",
-  "spend": 461798.2,
-  "first": "2026-08-23",
+  "spend": 439393.25,
+  "first": "2026-08-24",
   "last": "2026-09-27",
-  "purch": 21.0,
+  "purch": 20.0,
   "msg": 38.0,
   "ads": [
+   "Catalogo sin portada",
    "Catalogo_2",
    "Catalogo_3",
-   "Catalogo sin portada",
    "Catalogo_4 ¿Es un varón?",
    "Catalogo_Karla",
    "Catalogo_5"
@@ -21,14 +21,15 @@
   "name": "ALBA-NUEVOS CLIENTES",
   "objective": "OUTCOME_SALES",
   "status": "ACTIVE",
-  "spend": 2195.07,
+  "spend": 9069.51,
   "first": "2026-09-27",
-  "last": "2026-09-27",
+  "last": "2026-09-28",
   "purch": 0.0,
-  "msg": 0.0,
+  "msg": 1.0,
   "ads": [
    "Ventas SWEATER",
-   "Ventas bodys, calzas"
+   "Ventas bodys, calzas",
+   "Ventas video regalo"
   ]
  },
  {
