@@ -18,12 +18,12 @@
  {
   "name": "Campaña Whatsapp B2B",
   "objective": "OUTCOME_ENGAGEMENT",
-  "status": "ACTIVE",
-  "spend": 35.42,
+  "status": "PAUSED",
+  "spend": 38.57,
   "first": "2026-09-17",
-  "last": "2026-09-28",
+  "last": "2026-09-29",
   "purch": 0.0,
-  "msg": 58.0,
+  "msg": 63.0,
   "ads": [
    "Anuncio mostrador b2b",
    "Anuncio Keto b2b"

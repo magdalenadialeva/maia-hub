@@ -218,6 +218,12 @@
  {
   "date": "2026-09-27",
   "cat": "creativo",
+  "text": "Se apagó «Catalogo_3»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-09-27",
+  "cat": "creativo",
   "text": "Se encendió/lanzó «Ventas SWEATER»",
   "src": "auto"
  },
@@ -711,12 +717,6 @@
   "date": "2026-09-24",
   "cat": "otros",
   "text": "Segmentación del conjunto de anuncios actualizada · Alba&Co_2026_ventas",
-  "src": "meta"
- },
- {
-  "date": "2026-09-24",
-  "cat": "estado",
-  "text": "Estado del conjunto de anuncios actualizado · Alba&Co_2026_ventas (Activo → Procesamiento pendiente)",
   "src": "meta"
  }
 ]
