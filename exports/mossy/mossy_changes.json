@@ -368,12 +368,6 @@
  {
   "date": "2026-09-12",
   "cat": "creativo",
-  "text": "Anuncio creado · Ad6 - Secuencia - Nueva coleccion 2026 - Reemplazo 12-9 (fix catalogo)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-12",
-  "cat": "creativo",
   "text": "Se reactivó «Ad6 - Secuencia - Nueva coleccion 202666 - Copia 6»",
   "src": "auto"
  },
@@ -718,5 +712,11 @@
   "cat": "estado",
   "text": "Estado del anuncio actualizado · Ad6 - Secuencia - Nueva coleccion 202666 - Copia 4 (Actualización necesaria → Procesamiento pendiente)",
   "src": "meta"
+ },
+ {
+  "date": "2026-08-27",
+  "cat": "creativo",
+  "text": "Se encendió/lanzó «Ad6 - Secuencia - Nueva coleccion 202666 - Copia 5»",
+  "src": "auto"
  }
 ]
