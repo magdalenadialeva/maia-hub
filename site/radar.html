@@ -1,0 +1,347 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex">
+<script>/* Completar con la URL de la función panel-api de tu proyecto Supabase */ window.RADAR_API = "https://qssjgwkgagzgkulqxavu.supabase.co/functions/v1/panel-api";</script>
+<style>body{margin:0}[hidden]{display:none!important}img{max-width:100%}</style>
+</head><body>
+<title>Radar WA · Pulpa Verde</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: panel operativo mobile-first — resumen arriba, "para atender hoy" como bandeja de trabajo, detalle abajo. */
+:root{
+  --bg:#F2EDE7; --surface:#FFFFFF; --line:#E1DACB; --fg:#0A0A0A; --muted:#6F6B61; --soft:#EAE4DA;
+  --mark:#E9EE6D; --mark-ink:#0A0A0A;
+  --s-nuevo:#8C877B; --s-calificado:#2F6FB0; --s-apunto:#B8740F; --s-compro:#2E7D4F; --s-perdido:#B4432F; --s-descartado:#A8A297;
+  --display:"Poppins", "Helvetica Neue", Arial, sans-serif;
+  --body:"Poppins", "Helvetica Neue", Arial, sans-serif;
+  --mono:"IBM Plex Mono", ui-monospace, Menlo, monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0E0E0D; --surface:#171716; --line:#2C2C2A; --fg:#F2EDE7; --muted:#AAA59B; --soft:#22221F;
+  --mark:#E9EE6D; --mark-ink:#0A0A0A;
+  --s-nuevo:#A8A297; --s-calificado:#6FA5DC; --s-apunto:#E0A13F; --s-compro:#5DB982; --s-perdido:#E07A63; --s-descartado:#77736A;
+  color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0E0E0D; --surface:#171716; --line:#2C2C2A; --fg:#F2EDE7; --muted:#AAA59B; --soft:#22221F;
+  --mark:#E9EE6D; --mark-ink:#0A0A0A;
+  --s-nuevo:#A8A297; --s-calificado:#6FA5DC; --s-apunto:#E0A13F; --s-compro:#5DB982; --s-perdido:#E07A63; --s-descartado:#77736A;
+  color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--fg);font-family:var(--body);font-size:14px;line-height:1.5}
+.wrap{max-width:1180px;margin:0 auto;padding-inline:20px;padding-block:24px 64px;display:flex;flex-direction:column;gap:28px}
+h1,h2{font-family:var(--display);margin:0;text-wrap:balance}
+h1{font-size:clamp(22px,4vw,30px);font-weight:700;letter-spacing:-.01em}
+h2{font-size:17px;font-weight:600}
+.hl{background:var(--mark);color:var(--mark-ink);padding:0 .18em;box-decoration-break:clone;-webkit-box-decoration-break:clone}
+.eyebrow{font-size:11px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.muted{color:var(--muted)}
+.num{font-variant-numeric:tabular-nums}
+header{display:flex;flex-wrap:wrap;gap:16px;align-items:flex-end;justify-content:space-between}
+header .l{display:flex;flex-direction:column;gap:6px;min-width:0}
+.demo{display:inline-flex;align-items:center;gap:8px;font-size:12px;border:1px dashed var(--muted);color:var(--muted);border-radius:999px;padding:3px 10px;width:max-content;max-width:100%}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:999px;background:var(--surface);padding:3px}
+.seg button{font:inherit;font-size:13px;border:0;background:transparent;color:var(--muted);padding:5px 12px;border-radius:999px;cursor:pointer}
+.seg button[aria-pressed="true"]{background:var(--fg);color:var(--bg)}
+button:focus-visible,a:focus-visible,input:focus-visible{outline:2px solid var(--s-calificado);outline-offset:2px}
+
+/* KPIs */
+.kpis{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:1px;background:var(--line);border:1px solid var(--line);border-radius:14px;overflow:hidden}
+.kpi{background:var(--surface);padding:14px 16px;display:flex;flex-direction:column;gap:2px;min-width:0}
+.kpi .v{font-family:var(--display);font-weight:700;font-size:clamp(20px,2.6vw,28px);font-variant-numeric:tabular-nums;line-height:1.2}
+.kpi .k{font-size:12px;color:var(--muted)}
+.kpi .sub{font-size:11.5px;color:var(--muted)}
+.kpi.key .v span{background:var(--mark);color:var(--mark-ink);padding:0 .15em}
+@media (max-width:900px){.kpis{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media (max-width:520px){.kpis{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+/* Embudo */
+.funnel{display:flex;flex-direction:column;gap:8px}
+.frow{display:grid;grid-template-columns:130px 1fr 110px;gap:12px;align-items:center}
+.fbar{height:26px;background:var(--soft);border-radius:6px;overflow:hidden}
+.fbar i{display:block;height:100%;border-radius:6px}
+.frow .n{font-variant-numeric:tabular-nums;text-align:right;font-size:13px}
+.frow .n b{font-weight:600}
+@media (max-width:520px){.frow{grid-template-columns:92px 1fr 78px;gap:8px}}
+
+.grid2{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);gap:28px}
+@media (max-width:900px){.grid2{grid-template-columns:1fr}}
+section{display:flex;flex-direction:column;gap:14px;min-width:0}
+.sechead{display:flex;flex-wrap:wrap;gap:8px 16px;align-items:baseline;justify-content:space-between}
+
+/* Bandeja: para atender hoy */
+.inbox{display:flex;flex-direction:column;gap:10px}
+.item{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:14px 16px;display:flex;flex-direction:column;gap:8px;min-width:0}
+.item .top{display:flex;flex-wrap:wrap;gap:6px 10px;align-items:center}
+.item .who{font-weight:600}
+.item .why{font-size:12px;color:var(--muted)}
+.item .sum{margin:0}
+.item .act{font-weight:600}
+.item .msg{background:var(--soft);border-radius:8px;padding:8px 10px;font-size:13px;white-space:pre-wrap;overflow-wrap:anywhere}
+.item .btns{display:flex;flex-wrap:wrap;gap:8px}
+.btn{font:inherit;font-size:12.5px;font-weight:500;border:1px solid var(--line);background:var(--surface);color:var(--fg);border-radius:8px;padding:6px 11px;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;gap:6px}
+.btn:hover{border-color:var(--fg)}
+.btn.primary{background:var(--fg);color:var(--bg);border-color:var(--fg)}
+.btn.ok{color:var(--s-compro)} .btn.no{color:var(--s-perdido)}
+.urg{font-size:11px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;padding:2px 8px;border-radius:999px;background:var(--mark);color:var(--mark-ink)}
+
+.chip{display:inline-flex;align-items:center;gap:6px;font-size:12px;font-weight:500;padding:2px 9px 2px 7px;border-radius:999px;border:1px solid var(--line);background:var(--surface);white-space:nowrap}
+.chip::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--c)}
+.tag{font-size:11.5px;color:var(--muted);border:1px solid var(--line);border-radius:6px;padding:1px 7px;white-space:nowrap}
+
+/* Tablas */
+.tbl{overflow-x:auto;border:1px solid var(--line);border-radius:12px;background:var(--surface)}
+table{width:100%;border-collapse:collapse;font-size:13px}
+th,td{padding:10px 12px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-size:11px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);white-space:nowrap;background:var(--surface);position:sticky;top:0}
+td.r,th.r{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+tr:last-child td{border-bottom:0}
+.adname{display:flex;gap:10px;align-items:center;min-width:170px}
+.thumb{width:30px;height:44px;border-radius:5px;background:var(--soft);flex:none;display:grid;place-items:center;font-size:10px;color:var(--muted);font-family:var(--mono);overflow:hidden}
+.thumb img{width:100%;height:100%;object-fit:cover}
+.best td{background:color-mix(in srgb,var(--mark) 22%,transparent)}
+
+.filters{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.filters input{font:inherit;font-size:13px;border:1px solid var(--line);background:var(--surface);color:var(--fg);border-radius:8px;padding:6px 10px;min-width:0;width:220px;max-width:100%}
+.fchip{font:inherit;font-size:12px;border:1px solid var(--line);background:var(--surface);color:var(--fg);border-radius:999px;padding:4px 10px;cursor:pointer}
+.fchip[aria-pressed="true"]{background:var(--fg);color:var(--bg);border-color:var(--fg)}
+.lost{display:flex;flex-direction:column;gap:6px}
+.lrow{display:grid;grid-template-columns:150px 1fr 30px;gap:10px;align-items:center;font-size:13px}
+.lrow i{display:block;height:10px;border-radius:5px;background:var(--s-perdido);opacity:.75}
+.foot{font-size:12px;color:var(--muted);border-top:1px solid var(--line);padding-top:14px}
+.toast{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(20px + env(safe-area-inset-bottom,0px));background:var(--fg);color:var(--bg);padding:9px 16px;border-radius:999px;font-size:13px;z-index:5}
+@media (prefers-reduced-motion:no-preference){.item{transition:border-color .15s}}
+</style>
+
+<div class="wrap">
+  <header>
+    <div class="l">
+      <span class="eyebrow">Radar WA · MAIA</span>
+      <h1 id="title">Pulpa Verde</h1>
+      <span class="demo" id="demoBadge">Ejemplo con conversaciones simuladas</span>
+    </div>
+    <div class="seg" role="group" aria-label="Período">
+      <button type="button" data-days="7" aria-pressed="false">7 días</button>
+      <button type="button" data-days="30" aria-pressed="true">30 días</button>
+      <button type="button" data-days="90" aria-pressed="false">90 días</button>
+    </div>
+  </header>
+
+  <div class="kpis" id="kpis"></div>
+
+  <section>
+    <div class="sechead"><h2>Del mensaje a la venta</h2><span class="muted" id="funnelNote"></span></div>
+    <div class="funnel" id="funnel"></div>
+  </section>
+
+  <div class="grid2">
+    <section>
+      <div class="sechead"><h2><span class="hl">Para atender hoy</span></h2><span class="muted" id="inboxCount"></span></div>
+      <div class="inbox" id="inbox"></div>
+    </section>
+    <section>
+      <div class="sechead"><h2>Qué anuncio trae ventas</h2></div>
+      <div class="tbl"><table id="ads"></table></div>
+      <div class="sechead" style="margin-top:10px"><h2>Por qué no compraron</h2></div>
+      <div class="lost" id="lost"></div>
+    </section>
+  </div>
+
+  <section>
+    <div class="sechead">
+      <h2>Todas las conversaciones</h2>
+      <div class="filters">
+        <input id="q" type="search" placeholder="Buscar nombre o producto" aria-label="Buscar">
+        <div class="filters" id="stageFilter"></div>
+      </div>
+    </div>
+    <div class="tbl"><table id="all"></table></div>
+  </section>
+
+  <p class="foot" id="foot">Las etapas las pone la IA leyendo cada chat; las compras se confirman con el comprobante, con Tiendanube o con la detección de Meta. Si algo está mal, tocá “Compró” o “No compró” y el Radar no lo vuelve a cambiar.</p>
+</div>
+<div class="toast" id="toast" hidden></div>
+
+<script>
+// ---------- Config ----------
+// En producción: servir este archivo con window.RADAR_API = "https://<proyecto>.supabase.co/functions/v1/panel-api"
+// y abrirlo con ?brand=<slug>&key=<panel_key>. Sin eso, muestra el ejemplo simulado.
+const params = new URLSearchParams(location.search);
+const API = window.RADAR_API || null;
+const LIVE = !!(API && params.get("brand") && params.get("key"));
+
+const STAGES = {
+  nuevo:{label:"Nuevo",c:"--s-nuevo"}, calificado:{label:"Calificado",c:"--s-calificado"},
+  a_punto:{label:"A punto",c:"--s-apunto"}, compro:{label:"Compró",c:"--s-compro"},
+  perdido:{label:"Perdido",c:"--s-perdido"}, descartado:{label:"Descartado",c:"--s-descartado"}
+};
+const TYPES = {consumidor_final:"Minorista",revendedor:"Revendedor",distribuidor:"Distribuidor",no_cliente:"No es cliente",desconocido:"—"};
+const LOST = {precio:"Precio",costo_envio:"Costo de envío",zona_sin_envio:"No llega a su zona",sin_stock:"Sin stock",medio_de_pago:"Medio de pago",compro_en_otro_lado:"Compró en otro lado",solo_consulta:"Solo consultaba",no_era_lo_que_buscaba:"No era lo que buscaba",otro:"Otro"};
+const money = n => n==null ? "—" : new Intl.NumberFormat("es-AR",{style:"currency",currency:"ARS",maximumFractionDigits:0}).format(n);
+const int = n => new Intl.NumberFormat("es-AR").format(n||0);
+const esc = s => String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const chip = s => `<span class="chip" style="--c:var(${STAGES[s]?.c||"--s-nuevo"})">${STAGES[s]?.label||s}</span>`;
+const ago = iso => { const h=(Date.now()-new Date(iso))/36e5; return h<1?`hace ${Math.max(1,Math.round(h*60))} min`:h<24?`hace ${Math.round(h)} h`:`hace ${Math.round(h/24)} d`; };
+function toast(t){const el=document.getElementById("toast");el.textContent=t;el.hidden=false;clearTimeout(toast._t);toast._t=setTimeout(()=>el.hidden=true,2200);}
+
+// ---------- Ejemplo simulado (misma forma que devuelve panel_data) ----------
+function demoData(days){
+  let seed=7; const rnd=()=>(seed=(seed*16807)%2147483647)/2147483647;
+  const ads=[
+    {ad_id:"ad6",ad_name:"Servilleta · “Mis antepasados estarían orgullosos”",w:.5,conv:.24,gasto:82000},
+    {ad_id:"ad1",ad_name:"Tablas · Antisarro",w:.17,conv:.12,gasto:55700},
+    {ad_id:"ad3",ad_name:"Trapo · “No lo tires”",w:.11,conv:.2,gasto:9700},
+    {ad_id:"ad4",ad_name:"Toallas",w:.07,conv:.1,gasto:8200},
+    {ad_id:"organico",ad_name:"Orgánico (sin anuncio)",w:.15,conv:.3,gasto:0}
+  ];
+  const names=["Laura","Marce","Sofi","Ana","Caro","Vale","Juli","Nora","Rosa","Pato","Mica","Flor","Agus","Lucía","Gabi","Dietética Morón","Almacén Don Pepe","Tami","Belu","Cami","Romi","Eli","Pau","Martín (Córdoba)","Sil","Moni","Clau","Ceci","Vero","Andre"];
+  const prods=[["Blanqueador 1 kg"],["Blanqueador 1 kg","Antisarro"],["Antisarro"],["Multiuso"],["Blanqueador 1 kg ×2"]];
+  const scale=days/30, n=Math.round(92*scale);
+  const contacts=[]; const now=Date.now();
+  for(let i=0;i<n;i++){
+    let r=rnd(),acc=0,ad=ads[0]; for(const a of ads){acc+=a.w;if(r<=acc){ad=a;break;}}
+    const x=rnd(); let stage="calificado";
+    if(x<ad.conv) stage="compro"; else if(x<ad.conv+.12) stage="a_punto"; else if(x<ad.conv+.24) stage="perdido"; else if(x<ad.conv+.46) stage="nuevo";
+    const tipo=rnd()<.05?"revendedor":(rnd()<.015?"distribuidor":"consumidor_final");
+    const p=prods[Math.floor(rnd()*prods.length)];
+    const val=tipo==="revendedor"?Math.round((80000+rnd()*120000)/100)*100:Math.round((9500+rnd()*22000)/100)*100;
+    const lastIn=rnd()<.16 && !["compro","perdido"].includes(stage);
+    const last=new Date(now-(lastIn?rnd()*20*36e5:rnd()*days*864e5)).toISOString();
+    contacts.push({
+      id:"d"+i, name:names[i%names.length]+(i>=names.length?" "+"BCDFGLMPRST"[(i*7)%11]+".":""), wa_id:"54911"+String(60000000+i),
+      stage, customer_type:tipo, source:ad.ad_id==="organico"?"organico":"anuncio", first_ad_id:ad.ad_id, products:p,
+      est_value:stage==="nuevo"?null:val, revenue:stage==="compro"?val:0, purchases_count:stage==="compro"?1:0,
+      lost_reason:stage==="perdido"?["precio","costo_envio","costo_envio","compro_en_otro_lado","solo_consulta"][Math.floor(rnd()*5)]:null,
+      intent_score:stage==="a_punto"?80:stage==="calificado"?45:10,
+      followup_state: stage==="compro"?"cerrado":stage==="perdido"?"perdido": lastIn?"esperando_negocio":(Date.now()-new Date(last)>72*36e5?"enfriado":"esperando_cliente"),
+      summary: stage==="a_punto"?`Quiere ${p.join(" + ")}, pidió el alias. Falta que transfiera.`:stage==="calificado"?`Preguntó precio y envío de ${p[0]}.`:stage==="compro"?`Compró ${p.join(" + ")} por transferencia.`:stage==="perdido"?"Le pareció caro con el envío.":"Solo saludó.",
+      next_action: stage==="a_punto"?`Recordale el total: ${money(val)} y el alias`:stage==="calificado"?"Contale cuánto rinde y ofrecé el envío":stage==="nuevo"?"Preguntale qué quiere limpiar":stage==="compro"?"Confirmá el envío":"Nada",
+      suggested_message: stage==="a_punto"?`¡Hola! Te guardo ${p.join(" y ")} 💚 El total con envío es ${money(val)}. Alias: pulpa.verde.mp`:stage==="calificado"?(p[0].startsWith("Antisarro")?`¡Hola! El antisarro saca la grasa sin dañar la madera ni el acero. ¿Te lo mando? Llega en 48/72 h`:p[0].startsWith("Multiuso")?`¡Hola! El multiuso sirve para cocina, baño y pisos, sin olor fuerte. ¿Querés que te lo prepare?`:`¡Hola! 1 kg de blanqueador te rinde para más de 40 lavados y no tiene cloro. ¿Te lo mando? Llega en 48/72 h`):stage==="nuevo"?`¡Hola! ¿Qué querés dejar impecable? Contame y te digo cuál te conviene 💚`:null,
+      last_message_at:last, last_inbound_at:last, first_message_at:last
+    });
+  }
+  const per=contacts.filter(c=>c.stage!=="descartado");
+  const buys=per.filter(c=>c.stage==="compro");
+  const gasto=Math.round(ads.reduce((a,x)=>a+x.gasto,0)*scale);
+  const fact=buys.reduce((a,c)=>a+c.revenue,0);
+  const embudo=ads.map(a=>{const cs=per.filter(c=>c.first_ad_id===a.ad_id);return {ad_id:a.ad_id,ad_name:a.ad_name,thumbnail_url:null,
+    conversaciones:cs.length,calificados:cs.filter(c=>c.stage!=="nuevo").length,a_punto:cs.filter(c=>["a_punto","compro"].includes(c.stage)).length,
+    compradores:cs.filter(c=>c.stage==="compro").length,facturacion:cs.reduce((s,c)=>s+c.revenue,0),gasto:Math.round(a.gasto*scale)};});
+  const motivos={}; per.filter(c=>c.lost_reason).forEach(c=>motivos[c.lost_reason]=(motivos[c.lost_reason]||0)+1);
+  const atender=per.filter(c=>c.followup_state==="esperando_negocio"||(["a_punto","calificado"].includes(c.stage)&&c.followup_state==="enfriado"))
+    .map(c=>({...c,prioridad:c.followup_state==="esperando_negocio"&&c.stage==="a_punto"?1:c.followup_state==="esperando_negocio"?2:c.stage==="a_punto"?3:4}))
+    .sort((a,b)=>a.prioridad-b.prioridad||new Date(b.last_inbound_at)-new Date(a.last_inbound_at)).slice(0,8);
+  const ads2=per.filter(c=>c.source==="anuncio").length;
+  return {brand:{name:"Pulpa Verde",slug:"pulpa",currency:"ARS"},kpis:{
+    conversaciones:per.length,desde_anuncios:ads2,calificados:per.filter(c=>c.stage!=="nuevo").length,
+    a_punto:per.filter(c=>["a_punto","compro"].includes(c.stage)).length,compradores:buys.length,ventas:buys.length,facturacion:fact,
+    mayoristas:per.filter(c=>c.customer_type!=="consumidor_final").length,gasto,costo_por_conversacion:Math.round(gasto/ads2),
+    costo_por_venta:Math.round(gasto/Math.max(1,buys.length)),roas:+(fact/gasto).toFixed(2),
+    sin_responder:per.filter(c=>c.followup_state==="esperando_negocio").length,casi_compra_frios:per.filter(c=>c.stage==="a_punto"&&c.followup_state==="enfriado").length},
+    embudo_por_anuncio:embudo,motivos_perdida:motivos,atender_hoy:atender,contactos:contacts};
+}
+
+// ---------- Estado ----------
+let DAYS=30, DATA=null, FILTER="todas";
+const overrides={}; // correcciones hechas en esta sesión
+
+async function load(){
+  if(LIVE){
+    const r=await fetch(`${API}?brand=${encodeURIComponent(params.get("brand"))}&key=${encodeURIComponent(params.get("key"))}&days=${DAYS}`);
+    const j=await r.json(); if(!j.ok){document.getElementById("kpis").innerHTML=`<div class="kpi">No se pudo cargar: ${esc(j.error)}</div>`;return;}
+    DATA=j.data; document.getElementById("demoBadge").hidden=true;
+  } else DATA=demoData(DAYS);
+  for(const c of [...DATA.contactos,...DATA.atender_hoy]) if(overrides[c.id]) Object.assign(c,overrides[c.id]);
+  render();
+}
+
+function render(){
+  const k=DATA.kpis;
+  document.getElementById("title").textContent=DATA.brand.name;
+  const tiles=[
+    ["Conversaciones",int(k.conversaciones),`${int(k.desde_anuncios)} desde anuncios`],
+    ["Calificados",int(k.calificados),`${Math.round(100*k.calificados/Math.max(1,k.conversaciones))}% de las conversaciones`],
+    ["A punto de comprar",int(k.a_punto),`${int(k.casi_compra_frios)} se enfriaron`],
+    ["Ventas",int(k.ventas),`${int(k.mayoristas)} mayoristas en el período`],
+    ["Facturación",money(k.facturacion),`ROAS ${k.roas??"—"}`],
+    ["Costo por venta",money(k.costo_por_venta),`${money(k.costo_por_conversacion)} por conversación`,true],
+  ];
+  document.getElementById("kpis").innerHTML=tiles.map(([l,v,s,key])=>`<div class="kpi${key?" key":""}"><span class="k">${l}</span><span class="v">${key?`<span>${v}</span>`:v}</span><span class="sub">${s}</span></div>`).join("");
+
+  const steps=[["Escribieron",k.conversaciones,"--s-nuevo"],["Calificados",k.calificados,"--s-calificado"],["A punto",k.a_punto,"--s-apunto"],["Compraron",k.compradores,"--s-compro"]];
+  const max=Math.max(1,k.conversaciones);
+  document.getElementById("funnel").innerHTML=steps.map(([l,n,c],i)=>`<div class="frow"><span>${l}</span><div class="fbar" role="img" aria-label="${l}: ${n}"><i style="width:${Math.max(2,100*n/max)}%;background:var(${c})"></i></div><span class="n"><b>${int(n)}</b>${i?` · ${Math.round(100*n/Math.max(1,steps[i-1][1]))}%`:""}</span></div>`).join("");
+  document.getElementById("funnelNote").textContent=`Cierre total: ${Math.round(100*k.compradores/max)}% de los que escribieron`;
+
+  const inbox=DATA.atender_hoy.filter(c=>!["compro","perdido","descartado"].includes(c.stage));
+  document.getElementById("inboxCount").textContent=`${inbox.length} conversaciones · ${int(k.sin_responder)} sin responder`;
+  document.getElementById("inbox").innerHTML=inbox.length?inbox.map(c=>`
+    <article class="item" data-id="${c.id}">
+      <div class="top">${c.followup_state==="esperando_negocio"?`<span class="urg">Te escribió ${ago(c.last_inbound_at)}</span>`:`<span class="why">Sin respuesta del cliente ${ago(c.last_message_at)}</span>`}
+        <span class="who">${esc(c.name||c.wa_id)}</span>${chip(c.stage)}${c.customer_type&&c.customer_type!=="consumidor_final"&&c.customer_type!=="desconocido"?`<span class="tag">${TYPES[c.customer_type]}</span>`:""}
+        ${c.est_value?`<span class="tag num">${money(c.est_value)}</span>`:""}</div>
+      <p class="sum">${esc(c.summary)}</p>
+      <div class="act">→ ${esc(c.next_action)}</div>
+      ${c.suggested_message?`<div class="msg" id="m-${c.id}">${esc(c.suggested_message)}</div>`:""}
+      <div class="btns">
+        ${c.suggested_message?`<button class="btn" type="button" data-copy="${c.id}">Copiar mensaje</button>`:""}
+        <a class="btn primary" href="https://wa.me/${esc(c.wa_id)}${c.suggested_message?`?text=${encodeURIComponent(c.suggested_message)}`:""}" target="_blank" rel="noopener">Abrir chat</a>
+        <button class="btn ok" type="button" data-set="compro" data-id="${c.id}">Compró</button>
+        <button class="btn no" type="button" data-set="perdido" data-id="${c.id}">No compró</button>
+      </div>
+    </article>`).join(""):`<p class="muted">No hay nadie esperando respuesta. 🙌</p>`;
+
+  const rows=[...DATA.embudo_por_anuncio].sort((a,b)=>b.compradores-a.compradores);
+  const cpv=r=>r.gasto&&r.compradores?Math.round(r.gasto/r.compradores):null;
+  const withCost=rows.filter(r=>cpv(r)!=null); const best=withCost.sort((a,b)=>cpv(a)-cpv(b))[0];
+  document.getElementById("ads").innerHTML=`<thead><tr><th>Anuncio</th><th class="r">Conv.</th><th class="r">Ventas</th><th class="r">$ x venta</th></tr></thead><tbody>`+
+    rows.map(r=>`<tr class="${best&&r.ad_id===best.ad_id?"best":""}"><td><div class="adname"><span class="thumb">${r.thumbnail_url?`<img src="${esc(r.thumbnail_url)}" alt="">`:(r.ad_id==="organico"?"ORG":"AD")}</span><span>${esc(r.ad_name||r.ad_id)}</span></div></td>
+      <td class="r">${int(r.conversaciones)}</td><td class="r">${int(r.compradores)}</td><td class="r">${cpv(r)!=null?money(cpv(r)):"—"}</td></tr>`).join("")+`</tbody>`;
+
+  const lost=Object.entries(DATA.motivos_perdida||{}).sort((a,b)=>b[1]-a[1]); const lmax=Math.max(1,...lost.map(x=>x[1]));
+  document.getElementById("lost").innerHTML=lost.length?lost.map(([k2,n])=>`<div class="lrow"><span>${LOST[k2]||k2}</span><i style="width:${100*n/lmax}%"></i><span class="num">${n}</span></div>`).join(""):`<p class="muted">Todavía no hay conversaciones perdidas.</p>`;
+
+  const counts={}; DATA.contactos.forEach(c=>counts[c.stage]=(counts[c.stage]||0)+1);
+  document.getElementById("stageFilter").innerHTML=[["todas","Todas",DATA.contactos.length],...Object.keys(STAGES).filter(s=>counts[s]).map(s=>[s,STAGES[s].label,counts[s]])]
+    .map(([s,l,n])=>`<button class="fchip" type="button" data-f="${s}" aria-pressed="${FILTER===s}">${l} ${n}</button>`).join("");
+  renderAll();
+}
+
+function renderAll(){
+  const q=document.getElementById("q").value.trim().toLowerCase();
+  const list=DATA.contactos.filter(c=>(FILTER==="todas"||c.stage===FILTER)&&(!q||(c.name||"").toLowerCase().includes(q)||(c.products||[]).join(" ").toLowerCase().includes(q)));
+  const adName=id=>(DATA.embudo_por_anuncio.find(a=>a.ad_id===id)||{}).ad_name||(id==="organico"?"Orgánico":id||"—");
+  document.getElementById("all").innerHTML=`<thead><tr><th>Persona</th><th>Etapa</th><th>Tipo</th><th>De dónde vino</th><th>Resumen</th><th class="r">Valor</th><th class="r">Último msj</th></tr></thead><tbody>`+
+    list.slice(0,200).map(c=>`<tr><td><b>${esc(c.name||c.wa_id)}</b></td><td>${chip(c.stage)}</td><td>${TYPES[c.customer_type]||"—"}</td><td class="muted">${esc(adName(c.first_ad_id))}</td>
+      <td style="min-width:240px">${esc(c.summary)}${c.lost_reason?` <span class="tag">${LOST[c.lost_reason]}</span>`:""}</td>
+      <td class="r">${c.revenue?money(c.revenue):c.est_value?`<span class="muted">${money(c.est_value)}</span>`:"—"}</td><td class="r muted">${ago(c.last_message_at)}</td></tr>`).join("")+
+    (list.length?"":`<tr><td colspan="7" class="muted">No hay conversaciones con ese filtro.</td></tr>`)+`</tbody>`;
+}
+
+// ---------- Interacción ----------
+document.querySelector(".seg").addEventListener("click",e=>{const b=e.target.closest("button[data-days]");if(!b)return;
+  DAYS=+b.dataset.days; document.querySelectorAll(".seg button").forEach(x=>x.setAttribute("aria-pressed",x===b));load();});
+document.getElementById("stageFilter").addEventListener("click",e=>{const b=e.target.closest("[data-f]");if(!b)return;FILTER=b.dataset.f;
+  document.querySelectorAll("#stageFilter .fchip").forEach(x=>x.setAttribute("aria-pressed",x===b));renderAll();});
+document.getElementById("q").addEventListener("input",renderAll);
+document.getElementById("inbox").addEventListener("click",async e=>{
+  const cp=e.target.closest("[data-copy]");
+  if(cp){const el=document.getElementById("m-"+cp.dataset.copy);
+    try{await navigator.clipboard.writeText(el.textContent);toast("Mensaje copiado");}
+    catch{const r=document.createRange();r.selectNodeContents(el);const s=getSelection();s.removeAllRanges();s.addRange(r);toast("Seleccionado: copialo con Ctrl/Cmd + C");}
+    return;}
+  const st=e.target.closest("[data-set]"); if(!st) return;
+  const id=st.dataset.id, stage=st.dataset.set;
+  if(LIVE){
+    const r=await fetch(`${API}?brand=${encodeURIComponent(params.get("brand"))}&key=${encodeURIComponent(params.get("key"))}`,{method:"POST",headers:{"content-type":"application/json"},body:JSON.stringify({contact_id:id,stage})});
+    const j=await r.json(); if(!j.ok){toast("No se pudo guardar: "+j.error);return;}
+  }
+  overrides[id]={stage,followup_state:stage==="compro"?"cerrado":"perdido"};
+  toast(stage==="compro"?"Marcada como venta":"Marcada como no compró");
+  for(const c of [...DATA.contactos,...DATA.atender_hoy]) if(c.id===id) Object.assign(c,overrides[id]);
+  render();
+});
+load();
+</script>
+</body></html>
