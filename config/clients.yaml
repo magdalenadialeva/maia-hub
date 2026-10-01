@@ -157,3 +157,13 @@ clients:
     start_label: "17 sep 2026"
     margin: 0.5
     notes: "Probamos conversiones y no funcionó -> se apagó. Hoy: campaña de WhatsApp B2B."
+
+  - slug: "cloe-nutricion-real"
+    name: "Cloe Nutricion Real"
+    objective: ventas
+    obj_code: purchase
+    currency: ARS
+    ad_account_id: "2485918971925353"
+    start_label: "auto"
+    margin: 0.5
+    notes: "Auto-agregado desde Meta (2026-10-01)."

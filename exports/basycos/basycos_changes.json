@@ -1,5 +1,155 @@
 [
  {
+  "date": "2026-09-30",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · ¿Conjunto o vestido? (Revisión pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-30",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · PRE-SALE · 20.08 (Revisión pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-30",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · ¿Conjunto o vestido? (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-30",
+  "cat": "presupuesto",
+  "text": "Presupuesto del conjunto de anuncios actualizado · Basyco Jerez_Conversiones_Purchase_SEP2026_Interese+Adv+ (25.000 → 30.000 ARS/día)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-30",
+  "cat": "creativo",
+  "text": "Anuncio creado · ¿Conjunto o vestido?",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-30",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · PRE-SALE · 20.08 (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-30",
+  "cat": "creativo",
+  "text": "Anuncio creado · PRE-SALE · 20.08",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-30",
+  "cat": "otros",
+  "text": "Se actualizaron las reglas de valor del conjunto de anuncios · Traffic Lugano",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-30",
+  "cat": "estado",
+  "text": "Estado del conjunto de anuncios actualizado · Traffic Lugano (Procesamiento pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-30",
+  "cat": "estado",
+  "text": "Estado del conjunto de anuncios actualizado · Traffic Lugano (Activo → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-30",
+  "cat": "otros",
+  "text": "Calendario del conjunto de anuncios actualizado · Traffic Lugano",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-30",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Conjunto Toulouse (Procesamiento pendiente → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-30",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado cuando se completa su revisión · Conjunto Toulouse (Activo → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-30",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Conjunto Toulouse (Activo → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-30",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Conjunto Toulouse 29/09 (Revisión pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-30",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Conjunto Toulouse 29/09 (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-30",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Total Look Loira (Procesamiento pendiente → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-30",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado cuando se completa su revisión · Total Look Loira (Activo → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-30",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Total Look Loira (Activo → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-30",
+  "cat": "creativo",
+  "text": "Anuncio creado · Conjunto Toulouse 29/09",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-30",
+  "cat": "segmentacion",
+  "text": "Público personalizado creado · asa_auto_custom_audience",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-30",
+  "cat": "creativo",
+  "text": "Se reactivó «Total Look Loira»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-09-30",
+  "cat": "creativo",
+  "text": "Se encendió/lanzó «Conjunto Toulouse 29/09»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-09-30",
+  "cat": "creativo",
+  "text": "Se encendió/lanzó «PRE-SALE · 20.08»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-09-30",
+  "cat": "creativo",
+  "text": "Se encendió/lanzó «¿Conjunto o vestido?»",
+  "src": "auto"
+ },
+ {
   "date": "2026-09-28",
   "cat": "segmentacion",
   "text": "Público personalizado creado · asa_auto_custom_audience",
@@ -42,9 +192,15 @@
   "src": "auto"
  },
  {
-  "date": "2026-09-27",
+  "date": "2026-09-28",
   "cat": "creativo",
-  "text": "Se apagó «Total Look Loira»",
+  "text": "Se pausó «Total Look Loira»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-09-28",
+  "cat": "creativo",
+  "text": "Se apagó «Conjunto Lugano - Copy»",
   "src": "auto"
  },
  {
@@ -561,162 +717,6 @@
   "date": "2026-08-24",
   "cat": "estado",
   "text": "Estado del conjunto de anuncios actualizado · Loira video (Activo → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-24",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Loira video (Activo → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-24",
-  "cat": "creativo",
-  "text": "Anuncio actualizado · Loira video",
-  "src": "meta"
- },
- {
-  "date": "2026-08-22",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Loira video (Revisión pendiente → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-22",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Loira video (Procesamiento pendiente → Revisión pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-22",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Loira video (Activo → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-22",
-  "cat": "creativo",
-  "text": "Anuncio actualizado · Loira video",
-  "src": "meta"
- },
- {
-  "date": "2026-08-22",
-  "cat": "segmentacion",
-  "text": "Público personalizado creado · Pixel Audience: Purchase Event  30 Days - 2611091896012080 - System Generated",
-  "src": "meta"
- },
- {
-  "date": "2026-08-22",
-  "cat": "estado",
-  "text": "Estado del conjunto de anuncios actualizado · Loira video (Procesamiento pendiente → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-22",
-  "cat": "creativo",
-  "text": "Anuncio creado · Loira video",
-  "src": "meta"
- },
- {
-  "date": "2026-08-22",
-  "cat": "otros",
-  "text": "Segmentación del conjunto de anuncios actualizada · Loira video",
-  "src": "meta"
- },
- {
-  "date": "2026-08-22",
-  "cat": "objetivo",
-  "text": "Objetivo de optimización del conjunto de anuncios actualizado · Loira video",
-  "src": "meta"
- },
- {
-  "date": "2026-08-22",
-  "cat": "presupuesto",
-  "text": "Estrategia de puja del conjunto de anuncios actualizada · Loira video",
-  "src": "meta"
- },
- {
-  "date": "2026-08-22",
-  "cat": "creativo",
-  "text": "Conjunto de anuncios creado · Loira video",
-  "src": "meta"
- },
- {
-  "date": "2026-08-19",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · New Traffic Ad with recommended settings (Revisión pendiente → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-19",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · New Traffic Ad with recommended settings (Procesamiento pendiente → Revisión pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-19",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · New Traffic Ad with recommended settings (Activo → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-19",
-  "cat": "creativo",
-  "text": "Anuncio actualizado · New Traffic Ad with recommended settings",
-  "src": "meta"
- },
- {
-  "date": "2026-08-18",
-  "cat": "presupuesto",
-  "text": "Presupuesto del conjunto de anuncios actualizado · New Traffic Ad set with recommended settings (3.000 → 5.000 ARS/día)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-18",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · New Traffic Ad with recommended settings (Revisión pendiente → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-18",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · New Traffic Ad with recommended settings (Procesamiento pendiente → Revisión pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-18",
-  "cat": "creativo",
-  "text": "Anuncio creado · New Traffic Ad with recommended settings",
-  "src": "meta"
- },
- {
-  "date": "2026-08-18",
-  "cat": "estado",
-  "text": "Estado del conjunto de anuncios actualizado · New Traffic Ad set with recommended settings (Procesamiento pendiente → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-18",
-  "cat": "otros",
-  "text": "Segmentación del conjunto de anuncios actualizada · New Traffic Ad set with recommended settings",
-  "src": "meta"
- },
- {
-  "date": "2026-08-18",
-  "cat": "objetivo",
-  "text": "Objetivo de optimización del conjunto de anuncios actualizado · New Traffic Ad set with recommended settings",
-  "src": "meta"
- },
- {
-  "date": "2026-08-18",
-  "cat": "presupuesto",
-  "text": "Estrategia de puja del conjunto de anuncios actualizada · New Traffic Ad set with recommended settings",
-  "src": "meta"
- },
- {
-  "date": "2026-08-18",
-  "cat": "creativo",
-  "text": "Conjunto de anuncios creado · New Traffic Ad set with recommended settings",
   "src": "meta"
  }
 ]

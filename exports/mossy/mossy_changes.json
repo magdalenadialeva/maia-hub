@@ -1,5 +1,53 @@
 [
  {
+  "date": "2026-09-30",
+  "cat": "segmentacion",
+  "text": "Público personalizado creado · asa_auto_custom_audience",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-30",
+  "cat": "estado",
+  "text": "Estado de la campaña actualizado · Mossy_AlwaysOn_Conversiones_Dinámicos (Procesamiento pendiente → Activa)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-30",
+  "cat": "presupuesto",
+  "text": "Presupuesto de la campaña actualizado · Mossy_AlwaysOn_Conversiones_Dinámicos (200.000 → 8.000 ARS/día)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-30",
+  "cat": "estado",
+  "text": "Estado de la campaña actualizado · Mossy_AlwaysOn_Conversiones_Dinámicos (Inactiva → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-30",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Ad3 - Angulo Producto Fit (Procesamiento pendiente → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-30",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado cuando se completa su revisión · Ad3 - Angulo Producto Fit (Activo → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-30",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Ad3 - Angulo Producto Fit (Activo → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-30",
+  "cat": "creativo",
+  "text": "Se encendió/lanzó «B agosto -  Catálogo contenido advantage + todos los productos - Copia 4»",
+  "src": "auto"
+ },
+ {
   "date": "2026-09-28",
   "cat": "estado",
   "text": "Estado del anuncio actualizado · Ad5 - Video - Sale - Copia 3 (Procesamiento pendiente → Inactivo)",
@@ -75,6 +123,12 @@
   "date": "2026-09-28",
   "cat": "creativo",
   "text": "Se reactivó «Ad1 - Angulo Anticipo Temporada»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-09-28",
+  "cat": "creativo",
+  "text": "Se apagó «Ad6 - Secuencia - Nueva coleccion 202666 - Copia 12»",
   "src": "auto"
  },
  {
@@ -349,24 +403,6 @@
  },
  {
   "date": "2026-09-12",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Ad6 - Secuencia - Nueva coleccion 2026 - Reemplazo 12-9 (fix catalogo) (Revisión pendiente → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-12",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Ad6 - Secuencia - Nueva coleccion 2026 - Reemplazo 12-9 (fix catalogo) (Procesamiento pendiente → Revisión pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-12",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · Ad6 - Secuencia - Nueva coleccion 2026 - Reemplazo 12-9 (fix catalogo) (Activo → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-12",
   "cat": "creativo",
   "text": "Se reactivó «Ad6 - Secuencia - Nueva coleccion 202666 - Copia 6»",
   "src": "auto"
@@ -392,13 +428,13 @@
  {
   "date": "2026-08-28",
   "cat": "creativo",
-  "text": "Se reactivó «Ad6 - Secuencia - Nueva coleccion 202666 - Copia 12»",
+  "text": "Se pausó «Ad3 - Angulo Producto Fit»",
   "src": "auto"
  },
  {
   "date": "2026-08-28",
   "cat": "creativo",
-  "text": "Se pausó «Ad3 - Angulo Producto Fit»",
+  "text": "Se encendió/lanzó «Ad6 - Secuencia - Nueva coleccion 202666 - Copia 12»",
   "src": "auto"
  },
  {
@@ -682,41 +718,5 @@
   "cat": "estado",
   "text": "Estado del anuncio actualizado · Ad6 - Secuencia - Nueva coleccion 202666 - Copia 4 (Procesamiento pendiente → Revisión pendiente)",
   "src": "meta"
- },
- {
-  "date": "2026-08-27",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Ad6 - Secuencia - Nueva coleccion 202666 - Copia 7 (Actualización necesaria → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-27",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · Ad6 - Secuencia - Nueva coleccion 202666 - Copia 5 (Inactivo → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-27",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Ad6 - Secuencia - Nueva coleccion 202666 - Copia 5 (Actualización necesaria → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-27",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · Ad6 - Secuencia - Nueva coleccion 202666 - Copia 4 (Inactivo → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-27",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Ad6 - Secuencia - Nueva coleccion 202666 - Copia 4 (Actualización necesaria → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-27",
-  "cat": "creativo",
-  "text": "Se encendió/lanzó «Ad6 - Secuencia - Nueva coleccion 202666 - Copia 5»",
-  "src": "auto"
  }
 ]

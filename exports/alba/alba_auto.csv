@@ -1,9 +1,4 @@
 Nombre del anuncio,Inicio del informe,Importe gastado (ARS),Impresiones,Alcance,Frecuencia,Clics en el enlace,Visitas a la página de destino,Artículos agregados al carrito,Pagos iniciados,Compras,Valor de conversión de compras,Reproducciones de video de 3 segundos,ThruPlays,Resultados
-Catalogo_2,2026-08-25,54.02,17,15,1.133333,0,0,0,0,0,0,4,0,
-Catalogo_3,2026-08-25,15631.71,4524,3892,1.162384,99,82,11,1,1,95000,3700,62,
-Catalogo_4 ¿Es un varón?,2026-08-25,1305.22,252,222,1.135135,14,12,1,0,0,0,172,5,
-Catalogo_Karla,2026-08-25,448.2,47,39,1.205128,1,1,4,0,0,0,7,2,
-Catalogo_5,2026-08-25,6020.16,1318,1019,1.293425,33,25,1,0,0,0,472,23,
 Catalogo sin portada,2026-08-26,56,14,12,1.166667,0,0,0,0,0,0,4,0,
 Catalogo_3,2026-08-26,22625.67,5859,5086,1.151986,98,88,9,4,1,20899.15,4697,65,
 Catalogo_4 ¿Es un varón?,2026-08-26,120.4,19,19,1,0,0,0,0,0,0,19,0,
@@ -133,3 +128,7 @@ Ventas video regalo,2026-09-28,5163.08,1412,1251,1.128697,23,44,12,1,0,0,1358,47
 Ventas SWEATER,2026-09-29,6406.05,1157,844,1.370853,17,14,10,1,1,0,921,28,
 "Ventas bodys, calzas",2026-09-29,980.09,142,100,1.42,6,1,1,0,0,0,390,20,
 Ventas video regalo,2026-09-29,2324.78,459,428,1.07243,15,16,7,1,0,0,448,22,
+Catalogo sin portada,2026-09-30,0,0,0,0,0,0,1,2,0,0,0,0,
+Ventas SWEATER,2026-09-30,7297.66,1870,1535,1.218241,28,22,10,1,0,0,1530,34,
+"Ventas bodys, calzas",2026-09-30,545.5,101,68,1.485294,1,0,0,0,0,0,64,0,
+Ventas video regalo,2026-09-30,2774.81,555,525,1.057143,12,9,4,0,0,0,543,14,
