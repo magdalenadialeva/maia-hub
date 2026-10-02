@@ -1,5 +1,17 @@
 [
  {
+  "date": "2026-10-01",
+  "cat": "segmentacion",
+  "text": "Público personalizado creado · asa_auto_custom_audience",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-01",
+  "cat": "creativo",
+  "text": "Se reactivó «Ad6 - Secuencia - Nueva coleccion 202666 - Copia 12»",
+  "src": "auto"
+ },
+ {
   "date": "2026-09-30",
   "cat": "segmentacion",
   "text": "Público personalizado creado · asa_auto_custom_audience",
@@ -45,6 +57,12 @@
   "date": "2026-09-30",
   "cat": "creativo",
   "text": "Se encendió/lanzó «B agosto -  Catálogo contenido advantage + todos los productos - Copia 4»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-09-29",
+  "cat": "creativo",
+  "text": "Se pausó «Ad6 - Secuencia - Nueva coleccion 202666 - Copia 12»",
   "src": "auto"
  },
  {
@@ -123,12 +141,6 @@
   "date": "2026-09-28",
   "cat": "creativo",
   "text": "Se reactivó «Ad1 - Angulo Anticipo Temporada»",
-  "src": "auto"
- },
- {
-  "date": "2026-09-28",
-  "cat": "creativo",
-  "text": "Se apagó «Ad6 - Secuencia - Nueva coleccion 202666 - Copia 12»",
   "src": "auto"
  },
  {
@@ -705,18 +717,6 @@
   "date": "2026-08-27",
   "cat": "estado",
   "text": "Estado del anuncio actualizado · Ad6 - Secuencia - Nueva coleccion 202666 - Copia 7 (Procesamiento pendiente → Actualización necesaria)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-27",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Ad6 - Secuencia - Nueva coleccion 202666 - Copia 5 (Procesamiento pendiente → Revisión pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-27",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Ad6 - Secuencia - Nueva coleccion 202666 - Copia 4 (Procesamiento pendiente → Revisión pendiente)",
   "src": "meta"
  }
 ]

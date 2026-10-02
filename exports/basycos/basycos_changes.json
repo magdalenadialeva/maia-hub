@@ -1,5 +1,11 @@
 [
  {
+  "date": "2026-10-01",
+  "cat": "segmentacion",
+  "text": "Público personalizado creado · asa_auto_custom_audience",
+  "src": "meta"
+ },
+ {
   "date": "2026-09-30",
   "cat": "estado",
   "text": "Estado del anuncio actualizado · ¿Conjunto o vestido? (Revisión pendiente → Activo)",
@@ -711,12 +717,6 @@
   "date": "2026-08-24",
   "cat": "otros",
   "text": "Segmentación del conjunto de anuncios actualizada · Loira video",
-  "src": "meta"
- },
- {
-  "date": "2026-08-24",
-  "cat": "estado",
-  "text": "Estado del conjunto de anuncios actualizado · Loira video (Activo → Procesamiento pendiente)",
   "src": "meta"
  }
 ]
