@@ -1,5 +1,83 @@
 [
  {
+  "date": "2026-10-02",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · B agosto -  Catálogo contenido advantage + todos los productos - Copia 4 (Revisión pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-02",
+  "cat": "estado",
+  "text": "Estado de la campaña actualizado · Mar26 - Ventas - A+ - Catalogo - Frio (Procesamiento pendiente → Activa)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-02",
+  "cat": "presupuesto",
+  "text": "Presupuesto de la campaña actualizado · Mar26 - Ventas - A+ - Catalogo - Frio (90.000 → 65.000 ARS/día)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-02",
+  "cat": "estado",
+  "text": "Estado de la campaña actualizado · Mar26 - Ventas - A+ - Catalogo - Frio (Activa → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-02",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · B agosto -  Catálogo contenido advantage + todos los productos - Copia 4 (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-02",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · B agosto -  Catálogo contenido advantage + todos los productos - Copia 4 (Actualización necesaria → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-02",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Ad1 - Angulo Anticipo Temporada - Copia (Revisión pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-02",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Ad1 - Angulo Anticipo Temporada - Copia (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-02",
+  "cat": "creativo",
+  "text": "Anuncio creado · Ad1 - Angulo Anticipo Temporada - Copia",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-02",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · B agosto -  Catálogo contenido advantage + todos los productos - Copia 4 (Procesamiento pendiente → Actualización necesaria)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-02",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · B agosto -  Catálogo contenido advantage + todos los productos - Copia 4 (Activo → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-02",
+  "cat": "creativo",
+  "text": "Anuncio actualizado · B agosto -  Catálogo contenido advantage + todos los productos - Copia 4",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-02",
+  "cat": "creativo",
+  "text": "Se encendió/lanzó «Ad1 - Angulo Anticipo Temporada - Copia»",
+  "src": "auto"
+ },
+ {
   "date": "2026-10-01",
   "cat": "segmentacion",
   "text": "Público personalizado creado · asa_auto_custom_audience",
@@ -415,6 +493,36 @@
  },
  {
   "date": "2026-09-12",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Ad6 - Secuencia - Nueva coleccion 2026 - Reemplazo 12-9 (fix catalogo) (Revisión pendiente → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-12",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Ad6 - Secuencia - Nueva coleccion 2026 - Reemplazo 12-9 (fix catalogo) (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-12",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado cuando se completa su revisión · Ad6 - Secuencia - Nueva coleccion 2026 - Reemplazo 12-9 (fix catalogo) (Activo → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-12",
+  "cat": "creativo",
+  "text": "Anuncio creado · Ad6 - Secuencia - Nueva coleccion 2026 - Reemplazo 12-9 (fix catalogo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-12",
+  "cat": "estado",
+  "text": "Estado del conjunto de anuncios actualizado · A+ - Testing - Angulo Viaje (Ad2) (Activo → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-12",
   "cat": "creativo",
   "text": "Se reactivó «Ad6 - Secuencia - Nueva coleccion 202666 - Copia 6»",
   "src": "auto"
@@ -432,291 +540,183 @@
   "src": "auto"
  },
  {
-  "date": "2026-08-30",
+  "date": "2026-09-07",
+  "cat": "estado",
+  "text": "Estado de la campaña actualizado · Mar26 - Ventas - A+ - Catalogo - Frio (Procesamiento pendiente → Activa)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-07",
+  "cat": "presupuesto",
+  "text": "Presupuesto de la campaña actualizado · Mar26 - Ventas - A+ - Catalogo - Frio (85.000 → 90.000 ARS/día)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-07",
+  "cat": "estado",
+  "text": "Estado de la campaña actualizado · Mar26 - Ventas - A+ - Catalogo - Frio (Activa → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-07",
+  "cat": "presupuesto",
+  "text": "Presupuesto de la campaña actualizado · Mar26 - Ventas - A+ - Catalogo - Frio (95.000 → 85.000 ARS/día)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-07",
+  "cat": "presupuesto",
+  "text": "Presupuesto de la campaña actualizado · Mar26 - Ventas - A+ - Catalogo - Frio (100.000 → 95.000 ARS/día)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-07",
+  "cat": "presupuesto",
+  "text": "Presupuesto de la campaña actualizado · Mar26 - Ventas - A+ - Catalogo - Frio (80.000 → 100.000 ARS/día)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-04",
+  "cat": "estado",
+  "text": "Estado de la campaña actualizado · Ago26 - Ventas - CBO - Prospecting - Angulos Nuevos (Procesamiento pendiente → Activa)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-04",
+  "cat": "presupuesto",
+  "text": "Presupuesto de la campaña actualizado · Ago26 - Ventas - CBO - Prospecting - Angulos Nuevos (35.000 → 30.000 ARS/día)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-04",
+  "cat": "presupuesto",
+  "text": "Presupuesto de la campaña actualizado · Ago26 - Ventas - CBO - Prospecting - Angulos Nuevos (25.000 → 35.000 ARS/día)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-04",
+  "cat": "estado",
+  "text": "Estado de la campaña actualizado · Ago26 - Ventas - CBO - Prospecting - Angulos Nuevos (Activa → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-02",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Ad3 - Angulo Producto Fit (Revisión pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-02",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Ad3 - Angulo Producto Fit (Procesamiento pendiente → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-02",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Ad2 - Angulo Viaje (Procesamiento pendiente → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-02",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado cuando se completa su revisión · Ad3 - Angulo Producto Fit (Activo → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-02",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Ad3 - Angulo Producto Fit (Activo → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-02",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado cuando se completa su revisión · Ad2 - Angulo Viaje (Activo → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-02",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Ad2 - Angulo Viaje (Activo → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-02",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Ad3 - Angulo Producto Fit (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-02",
+  "cat": "estado",
+  "text": "Estado del conjunto de anuncios actualizado · A+ - Testing - Angulo Producto Fit (Ad3) (Procesamiento pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-02",
   "cat": "creativo",
-  "text": "Se reactivó «Ad3 - Angulo Producto Fit»",
-  "src": "auto"
+  "text": "Anuncio creado · Ad3 - Angulo Producto Fit",
+  "src": "meta"
  },
  {
-  "date": "2026-08-28",
+  "date": "2026-09-02",
+  "cat": "presupuesto",
+  "text": "Se habilitó la programación del presupuesto del conjunto de anuncios · A+ - Testing - Angulo Producto Fit (Ad3)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-02",
+  "cat": "otros",
+  "text": "Segmentación del conjunto de anuncios actualizada · A+ - Testing - Angulo Producto Fit (Ad3)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-02",
+  "cat": "objetivo",
+  "text": "Objetivo de optimización del conjunto de anuncios actualizado · A+ - Testing - Angulo Producto Fit (Ad3)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-02",
+  "cat": "presupuesto",
+  "text": "Estrategia de puja del conjunto de anuncios actualizada · A+ - Testing - Angulo Producto Fit (Ad3)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-02",
   "cat": "creativo",
-  "text": "Se pausó «Ad3 - Angulo Producto Fit»",
-  "src": "auto"
+  "text": "Conjunto de anuncios creado · A+ - Testing - Angulo Producto Fit (Ad3)",
+  "src": "meta"
  },
  {
-  "date": "2026-08-28",
+  "date": "2026-09-02",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Ad2 - Angulo Viaje (Revisión pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-02",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Ad2 - Angulo Viaje (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-02",
+  "cat": "estado",
+  "text": "Estado del conjunto de anuncios actualizado · A+ - Testing - Angulo Viaje (Ad2) (Procesamiento pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-02",
   "cat": "creativo",
-  "text": "Se encendió/lanzó «Ad6 - Secuencia - Nueva coleccion 202666 - Copia 12»",
-  "src": "auto"
- },
- {
-  "date": "2026-08-27",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Ad6 - Secuencia - Nueva coleccion 202666 - Copia 7 (Procesamiento pendiente → Activo)",
+  "text": "Anuncio creado · Ad2 - Angulo Viaje",
   "src": "meta"
  },
  {
-  "date": "2026-08-27",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Ad6 - Secuencia - Nueva coleccion 202666 - Copia 6 (Procesamiento pendiente → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-27",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Ad6 - Secuencia - Nueva coleccion 202666 - Copia 9 (Procesamiento pendiente → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-27",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Ad6 - Secuencia - Nueva coleccion 202666 - Copia 12 (Procesamiento pendiente → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-27",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Ad6 - Secuencia - Nueva coleccion 202666 - Copia 10 (Procesamiento pendiente → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-27",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Ad6 - Secuencia - Nueva coleccion 2026 - Copia 4 (Procesamiento pendiente → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-27",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · Ad6 - Secuencia - Nueva coleccion 202666 - Copia 7 (Inactivo → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-27",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Ad6 - Secuencia - Nueva coleccion 202666 - Copia 7 (Inactivo → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-27",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · Ad6 - Secuencia - Nueva coleccion 202666 - Copia 6 (Inactivo → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-27",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Ad6 - Secuencia - Nueva coleccion 202666 - Copia 6 (Inactivo → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-27",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · Ad6 - Secuencia - Nueva coleccion 202666 - Copia 9 (Inactivo → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-27",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Ad6 - Secuencia - Nueva coleccion 202666 - Copia 9 (Inactivo → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-27",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · Ad6 - Secuencia - Nueva coleccion 202666 - Copia 12 (Inactivo → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-27",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Ad6 - Secuencia - Nueva coleccion 202666 - Copia 12 (Inactivo → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-27",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · Ad6 - Secuencia - Nueva coleccion 202666 - Copia 10 (Inactivo → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-27",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Ad6 - Secuencia - Nueva coleccion 202666 - Copia 10 (Inactivo → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-27",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · Ad6 - Secuencia - Nueva coleccion 2026 - Copia 4 (Inactivo → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-27",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Ad6 - Secuencia - Nueva coleccion 2026 - Copia 4 (Inactivo → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-27",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Ad6 - Secuencia - Nueva coleccion 202666 - Copia 9 (Procesamiento pendiente → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-27",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · Ad6 - Secuencia - Nueva coleccion 202666 - Copia 9 (Activo → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-27",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Ad6 - Secuencia - Nueva coleccion 202666 - Copia 9 (Activo → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-27",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Ad6 - Secuencia - Nueva coleccion 202666 - Copia 6 (Procesamiento pendiente → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-27",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · Ad6 - Secuencia - Nueva coleccion 202666 - Copia 6 (Activo → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-27",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Ad6 - Secuencia - Nueva coleccion 202666 - Copia 6 (Activo → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-27",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Ad6 - Secuencia - Nueva coleccion 202666 - Copia 5 (Procesamiento pendiente → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-27",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Ad6 - Secuencia - Nueva coleccion 202666 - Copia 4 (Procesamiento pendiente → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-27",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · Ad6 - Secuencia - Nueva coleccion 202666 - Copia 5 (Activo → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-27",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Ad6 - Secuencia - Nueva coleccion 202666 - Copia 5 (Activo → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-27",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · Ad6 - Secuencia - Nueva coleccion 202666 - Copia 4 (Activo → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-27",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Ad6 - Secuencia - Nueva coleccion 202666 - Copia 4 (Activo → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-27",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Ad6 - Secuencia - Nueva coleccion 2026 - Copia 4 (Procesamiento pendiente → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-27",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · Ad6 - Secuencia - Nueva coleccion 2026 - Copia 4 (Activo → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-27",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Ad6 - Secuencia - Nueva coleccion 2026 - Copia 4 (Activo → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-27",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Ad6 - Secuencia - Nueva coleccion 202666 - Copia 10 (Procesamiento pendiente → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-27",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · Ad6 - Secuencia - Nueva coleccion 202666 - Copia 10 (Activo → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-27",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Ad6 - Secuencia - Nueva coleccion 202666 - Copia 10 (Activo → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-27",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Ad6 - Secuencia - Nueva coleccion 202666 - Copia 12 (Procesamiento pendiente → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-27",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · Ad6 - Secuencia - Nueva coleccion 202666 - Copia 12 (Activo → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-27",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Ad6 - Secuencia - Nueva coleccion 202666 - Copia 12 (Activo → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-27",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Ad6 - Secuencia - Nueva coleccion 202666 - Copia 7 (Procesamiento pendiente → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-27",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · Ad6 - Secuencia - Nueva coleccion 202666 - Copia 7 (Activo → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-27",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Ad6 - Secuencia - Nueva coleccion 202666 - Copia 7 (Activo → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-27",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Ad6 - Secuencia - Nueva coleccion 202666 - Copia 4 (Revisión pendiente → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-27",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Ad6 - Secuencia - Nueva coleccion 202666 - Copia 5 (Revisión pendiente → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-27",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Ad6 - Secuencia - Nueva coleccion 202666 - Copia 7 (Procesamiento pendiente → Actualización necesaria)",
+  "date": "2026-09-02",
+  "cat": "presupuesto",
+  "text": "Se habilitó la programación del presupuesto del conjunto de anuncios · A+ - Testing - Angulo Viaje (Ad2)",
   "src": "meta"
  }
 ]

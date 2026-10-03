@@ -1,5 +1,41 @@
 [
  {
+  "date": "2026-10-02",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Ventas Rimini (Procesamiento pendiente → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-02",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Conjunto Toulouse (Procesamiento pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-02",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado cuando se completa su revisión · Ventas Rimini (Activo → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-02",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Ventas Rimini (Activo → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-02",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado cuando se completa su revisión · Conjunto Toulouse (Inactivo → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-02",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Conjunto Toulouse (Inactivo → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
   "date": "2026-10-01",
   "cat": "segmentacion",
   "text": "Público personalizado creado · asa_auto_custom_audience",
@@ -135,6 +171,12 @@
   "date": "2026-09-30",
   "cat": "creativo",
   "text": "Se reactivó «Total Look Loira»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-09-30",
+  "cat": "creativo",
+  "text": "Se apagó «Total Look Loira»",
   "src": "auto"
  },
  {
@@ -675,48 +717,6 @@
   "date": "2026-09-01",
   "cat": "estado",
   "text": "Estado de la campaña actualizado · Ventas - Conjunto Loira (Activa → Inactiva)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-31",
-  "cat": "estado",
-  "text": "Estado de la campaña actualizado · Ventas - Conjunto Loira (Inactiva → Activa)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-31",
-  "cat": "estado",
-  "text": "Estado de la campaña actualizado · Ventas - Conjunto Loira (Activa → Inactiva)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-26",
-  "cat": "segmentacion",
-  "text": "Público personalizado creado · asa_auto_custom_audience",
-  "src": "meta"
- },
- {
-  "date": "2026-08-24",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Loira video (Revisión pendiente → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-24",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Loira video (Procesamiento pendiente → Revisión pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-24",
-  "cat": "estado",
-  "text": "Estado del conjunto de anuncios actualizado · Loira video (Procesamiento pendiente → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-24",
-  "cat": "otros",
-  "text": "Segmentación del conjunto de anuncios actualizada · Loira video",
   "src": "meta"
  }
 ]
