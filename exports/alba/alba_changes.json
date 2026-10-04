@@ -1,5 +1,47 @@
 [
  {
+  "date": "2026-10-03",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Ventas SWEATER (Revisión pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-03",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Ventas SWEATER (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-03",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Ventas SWEATER (Activo → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-03",
+  "cat": "creativo",
+  "text": "Anuncio actualizado · Ventas SWEATER",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-03",
+  "cat": "estado",
+  "text": "Estado de la campaña actualizado · ALBA-NUEVOS CLIENTES (Procesamiento pendiente → Activa)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-03",
+  "cat": "presupuesto",
+  "text": "Presupuesto de la campaña actualizado · ALBA-NUEVOS CLIENTES (13.000 → 15.000 ARS/día)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-03",
+  "cat": "estado",
+  "text": "Estado de la campaña actualizado · ALBA-NUEVOS CLIENTES (Activa → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
   "date": "2026-10-02",
   "cat": "estado",
   "text": "Estado del anuncio actualizado · Ventas SWEATER (Revisión pendiente → Activo)",
@@ -572,13 +614,13 @@
  {
   "date": "2026-09-26",
   "cat": "estado",
-  "text": "Estado del conjunto de anuncios actualizado · audience - broad - Copia (Activo → Eliminado)",
+  "text": "Estado del conjunto de anuncios actualizado · audience (Activo → Eliminado)",
   "src": "meta"
  },
  {
   "date": "2026-09-26",
   "cat": "estado",
-  "text": "Estado del conjunto de anuncios actualizado · audience (Activo → Eliminado)",
+  "text": "Estado del conjunto de anuncios actualizado · audience - broad - Copia (Activo → Eliminado)",
   "src": "meta"
  },
  {
@@ -675,48 +717,6 @@
   "date": "2026-09-25",
   "cat": "estado",
   "text": "Estado del anuncio actualizado · Catalogo_2 (Revisión pendiente → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-25",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Catalogo sin portada (Revisión pendiente → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-25",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Catalogo_4 ¿Es un varón? (Revisión pendiente → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-25",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Catalogo_3 (Revisión pendiente → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-25",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Catalogo_2 (Procesamiento pendiente → Revisión pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-25",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Catalogo_4 ¿Es un varón? (Procesamiento pendiente → Revisión pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-25",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Catalogo_3 (Procesamiento pendiente → Revisión pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-25",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Catalogo sin portada (Procesamiento pendiente → Revisión pendiente)",
   "src": "meta"
  }
 ]

@@ -1,5 +1,29 @@
 [
  {
+  "date": "2026-10-03",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Ad3 - Angulo Producto Fit - Copia (Revisión pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-03",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Ad3 - Angulo Producto Fit - Copia (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-03",
+  "cat": "creativo",
+  "text": "Anuncio creado · Ad3 - Angulo Producto Fit - Copia",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-03",
+  "cat": "creativo",
+  "text": "Se encendió/lanzó «Ad3 - Angulo Producto Fit - Copia»",
+  "src": "auto"
+ },
+ {
   "date": "2026-10-02",
   "cat": "estado",
   "text": "Estado del anuncio actualizado · B agosto -  Catálogo contenido advantage + todos los productos - Copia 4 (Revisión pendiente → Activo)",
@@ -693,30 +717,6 @@
   "date": "2026-09-02",
   "cat": "estado",
   "text": "Estado del anuncio actualizado · Ad2 - Angulo Viaje (Revisión pendiente → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-02",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Ad2 - Angulo Viaje (Procesamiento pendiente → Revisión pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-02",
-  "cat": "estado",
-  "text": "Estado del conjunto de anuncios actualizado · A+ - Testing - Angulo Viaje (Ad2) (Procesamiento pendiente → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-02",
-  "cat": "creativo",
-  "text": "Anuncio creado · Ad2 - Angulo Viaje",
-  "src": "meta"
- },
- {
-  "date": "2026-09-02",
-  "cat": "presupuesto",
-  "text": "Se habilitó la programación del presupuesto del conjunto de anuncios · A+ - Testing - Angulo Viaje (Ad2)",
   "src": "meta"
  }
 ]

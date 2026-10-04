@@ -3,8 +3,8 @@
   "name": "PieraCeresa_2026_Conversiones - Add Payment Info",
   "objective": "OUTCOME_SALES",
   "status": "PAUSED",
-  "spend": 80503.0,
-  "first": "2026-08-28",
+  "spend": 55401.0,
+  "first": "2026-08-29",
   "last": "2026-09-01",
   "purch": 0.0,
   "msg": 0.0,
@@ -58,13 +58,27 @@
   "name": "Trafico constante - temporada de fiestas",
   "objective": "LINK_CLICKS",
   "status": "ACTIVE",
-  "spend": 6011.0,
+  "spend": 7974.0,
   "first": "2026-09-30",
-  "last": "2026-10-02",
+  "last": "2026-10-03",
   "purch": 0.0,
   "msg": 0.0,
   "ads": [
    "Nuevo anuncio de Tráfico"
+  ]
+ },
+ {
+  "name": "PIERA CERESA - CYBER 2026 - RETARGETING",
+  "objective": "OUTCOME_SALES",
+  "status": "ACTIVE",
+  "spend": 1325.0,
+  "first": "2026-10-03",
+  "last": "2026-10-03",
+  "purch": 0.0,
+  "msg": 0.0,
+  "ads": [
+   "AYMARA - LINK AD- V7",
+   "AYMARA - LINK AD- V7 - Copia"
   ]
  },
  {
