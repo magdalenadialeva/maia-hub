@@ -98,6 +98,12 @@
  {
   "date": "2026-10-02",
   "cat": "creativo",
+  "text": "Se apagó «Ad1 - Angulo Anticipo Temporada»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-10-02",
+  "cat": "creativo",
   "text": "Se encendió/lanzó «Ad1 - Angulo Anticipo Temporada - Copia»",
   "src": "auto"
  },
@@ -711,12 +717,6 @@
   "date": "2026-09-02",
   "cat": "creativo",
   "text": "Conjunto de anuncios creado · A+ - Testing - Angulo Producto Fit (Ad3)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-02",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Ad2 - Angulo Viaje (Revisión pendiente → Activo)",
   "src": "meta"
  }
 ]
