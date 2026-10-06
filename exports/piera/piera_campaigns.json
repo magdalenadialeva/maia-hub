@@ -1,28 +1,5 @@
 [
  {
-  "name": "PieraCeresa_2026_Conversiones - Add Payment Info",
-  "objective": "OUTCOME_SALES",
-  "status": "PAUSED",
-  "spend": 41259.0,
-  "first": "2026-08-30",
-  "last": "2026-09-01",
-  "purch": 0.0,
-  "msg": 0.0,
-  "ads": [
-   "Carrusel Catalogo - Video Nuevo 1",
-   "Carrusel Catalogo 2 - Video",
-   "Carrusel Catalogo",
-   "Carrusel Catalogo 2 - Video - AGO",
-   "Carrusel Catalogo 1 - Video - AGO",
-   "Carrusel Catalogo - Video Nuevo 1 - Copia",
-   "Carrusel Catalogo 1 - Video - AGO - Copia",
-   "Carrusel Catalogo 1 - Video - AGO - Copia 2",
-   "Carrusel Catalogo 2 - Video - AGO - Copia",
-   "Carrusel Catalogo 2 - Video - AGO - Copia 2",
-   "Carrusel Catalogo 2 - Video - AGO - Copia 3"
-  ]
- },
- {
   "name": "PieraCeresa_2026_Conversiones",
   "objective": "OUTCOME_SALES",
   "status": "PAUSED",
@@ -55,12 +32,35 @@
   ]
  },
  {
+  "name": "PieraCeresa_2026_Conversiones - Add Payment Info",
+  "objective": "OUTCOME_SALES",
+  "status": "PAUSED",
+  "spend": 21660.0,
+  "first": "2026-08-31",
+  "last": "2026-09-01",
+  "purch": 0.0,
+  "msg": 0.0,
+  "ads": [
+   "Carrusel Catalogo - Video Nuevo 1",
+   "Carrusel Catalogo 2 - Video",
+   "Carrusel Catalogo",
+   "Carrusel Catalogo 2 - Video - AGO",
+   "Carrusel Catalogo 1 - Video - AGO",
+   "Carrusel Catalogo - Video Nuevo 1 - Copia",
+   "Carrusel Catalogo 1 - Video - AGO - Copia",
+   "Carrusel Catalogo 1 - Video - AGO - Copia 2",
+   "Carrusel Catalogo 2 - Video - AGO - Copia",
+   "Carrusel Catalogo 2 - Video - AGO - Copia 2",
+   "Carrusel Catalogo 2 - Video - AGO - Copia 3"
+  ]
+ },
+ {
   "name": "Trafico constante - temporada de fiestas",
   "objective": "LINK_CLICKS",
   "status": "ACTIVE",
-  "spend": 10143.0,
+  "spend": 11574.0,
   "first": "2026-09-30",
-  "last": "2026-10-04",
+  "last": "2026-10-05",
   "purch": 0.0,
   "msg": 0.0,
   "ads": [
@@ -71,9 +71,9 @@
   "name": "PIERA CERESA - CYBER 2026 - RETARGETING",
   "objective": "OUTCOME_SALES",
   "status": "ACTIVE",
-  "spend": 3736.0,
+  "spend": 5916.0,
   "first": "2026-10-03",
-  "last": "2026-10-04",
+  "last": "2026-10-05",
   "purch": 1.0,
   "msg": 0.0,
   "ads": [

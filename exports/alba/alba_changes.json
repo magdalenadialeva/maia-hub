@@ -1,5 +1,101 @@
 [
  {
+  "date": "2026-10-05",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · vestido pre venta (Revisión pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-05",
+  "cat": "estado",
+  "text": "Estado de la campaña actualizado · ALBA-NUEVOS CLIENTES (Procesamiento pendiente → Activa)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-05",
+  "cat": "presupuesto",
+  "text": "Presupuesto de la campaña actualizado · ALBA-NUEVOS CLIENTES (15.000 → 13.000 ARS/día)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-05",
+  "cat": "estado",
+  "text": "Estado de la campaña actualizado · ALBA-NUEVOS CLIENTES (Activa → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-05",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · vestido pre venta (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-05",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · vestido pre venta (Activo → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-05",
+  "cat": "creativo",
+  "text": "Anuncio actualizado · vestido pre venta",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-05",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado cuando se completa su revisión · vestido pre venta (Inactivo → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-05",
+  "cat": "otros",
+  "text": "Nombre del anuncio actualizado · vestido pre venta (Ventas SWEATER → vestido pre venta)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-05",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · vestido pre venta (Inactivo → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-05",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Ventas bodys, calzas (Revisión pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-05",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Ventas bodys, calzas (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-05",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Ventas bodys, calzas (Activo → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-05",
+  "cat": "creativo",
+  "text": "Anuncio actualizado · Ventas bodys, calzas",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-05",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · vestido pre venta (Procesamiento pendiente → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-05",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado cuando se completa su revisión · vestido pre venta (Activo → Inactivo)",
+  "src": "meta"
+ },
+ {
   "date": "2026-10-03",
   "cat": "estado",
   "text": "Estado del anuncio actualizado · vestido pre venta (Revisión pendiente → Activo)",
@@ -583,14 +679,14 @@
  },
  {
   "date": "2026-09-26",
-  "cat": "objetivo",
-  "text": "Objetivo de optimización del conjunto de anuncios actualizado · Alba&Co_2026_ Copia",
+  "cat": "presupuesto",
+  "text": "Estrategia de puja del conjunto de anuncios actualizada · Alba&Co_2026_ Copia",
   "src": "meta"
  },
  {
   "date": "2026-09-26",
-  "cat": "presupuesto",
-  "text": "Estrategia de puja del conjunto de anuncios actualizada · Alba&Co_2026_ Copia",
+  "cat": "objetivo",
+  "text": "Objetivo de optimización del conjunto de anuncios actualizado · Alba&Co_2026_ Copia",
   "src": "meta"
  },
  {
@@ -621,102 +717,6 @@
   "date": "2026-09-26",
   "cat": "estado",
   "text": "Estado del conjunto de anuncios actualizado · audience - broad - Copia (Activo → Eliminado)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-26",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Catalogo_2 (Inactivo → Eliminado)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-26",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Catalogo_4 ¿Es un varón? (Inactivo → Eliminado)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-26",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Catalogo_Karla (Inactivo → Eliminado)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-26",
-  "cat": "estado",
-  "text": "Estado de la campaña actualizado · ventas-septiembre (Inactiva → Eliminada)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-26",
-  "cat": "estado",
-  "text": "Estado del conjunto de anuncios actualizado · audience - Copia (Activo → Eliminado)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-26",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Catalogo_4 ¿Es un varón? (Procesamiento pendiente → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-26",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Catalogo_2 (Procesamiento pendiente → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-26",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Catalogo sin portada (Procesamiento pendiente → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-26",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Catalogo_Karla (Procesamiento pendiente → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-26",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Catalogo_3 (Procesamiento pendiente → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-26",
-  "cat": "estado",
-  "text": "Estado del conjunto de anuncios actualizado · Alba&Co_2026_ventas (Procesamiento pendiente → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-26",
-  "cat": "otros",
-  "text": "Segmentación del conjunto de anuncios actualizada · Alba&Co_2026_ventas",
-  "src": "meta"
- },
- {
-  "date": "2026-09-26",
-  "cat": "estado",
-  "text": "Estado del conjunto de anuncios actualizado · Alba&Co_2026_ventas (Activo → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-26",
-  "cat": "creativo",
-  "text": "Se apagó «Catalogo sin portada»",
-  "src": "auto"
- },
- {
-  "date": "2026-09-25",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Catalogo_Karla (Revisión pendiente → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-25",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Catalogo_2 (Revisión pendiente → Inactivo)",
   "src": "meta"
  }
 ]

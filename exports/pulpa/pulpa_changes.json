@@ -1,5 +1,17 @@
 [
  {
+  "date": "2026-10-05",
+  "cat": "presupuesto",
+  "text": "Presupuesto del conjunto de anuncios actualizado · Pulpa Verde_Conversiones_Org_Mensajes_2026_Adv+ (10.000 → 7.000 ARS/día)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-05",
+  "cat": "estado",
+  "text": "Estado del conjunto de anuncios actualizado · Pulpa Verde_Conversiones_Purchase_2026_Adv+ (Activo → Inactivo)",
+  "src": "meta"
+ },
+ {
   "date": "2026-10-01",
   "cat": "segmentacion",
   "text": "Público personalizado creado · asa_auto_custom_audience",
@@ -705,18 +717,6 @@
   "date": "2026-09-05",
   "cat": "estado",
   "text": "Estado del conjunto de anuncios actualizado · Pulpa Verde_Conversiones_Purchase_2026_Adv+ (Inactivo → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-05",
-  "cat": "estado",
-  "text": "Estado del conjunto de anuncios actualizado · Pulpa Verde_Conversiones_Purchase_2026_Adv+ v.2 (Activo → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-05",
-  "cat": "estado",
-  "text": "Estado de la cuenta actualizado · Pulpa Cuenta publicitaria (En período de gracia → Activa)",
   "src": "meta"
  }
 ]

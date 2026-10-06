@@ -212,6 +212,12 @@
  {
   "date": "2026-09-29",
   "cat": "estado",
+  "text": "Estado del anuncio actualizado · AYMARA - LINK AD - V2 (Inactivo → Eliminado)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-29",
+  "cat": "estado",
   "text": "Estado del anuncio actualizado · AYMARA - LINK AD- V5 (Inactivo → Eliminado)",
   "src": "meta"
  },
@@ -219,12 +225,6 @@
   "date": "2026-09-29",
   "cat": "estado",
   "text": "Estado del anuncio actualizado · AYMARA - LINK AD - V3 (Activo → Eliminado)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-29",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · AYMARA - LINK AD - V2 (Inactivo → Eliminado)",
   "src": "meta"
  },
  {
@@ -350,19 +350,19 @@
  {
   "date": "2026-09-29",
   "cat": "creativo",
-  "text": "Anuncio creado · AYMARA - LINK AD - V3",
-  "src": "meta"
- },
- {
-  "date": "2026-09-29",
-  "cat": "creativo",
   "text": "Anuncio creado · AYMARA - LINK AD - V1",
   "src": "meta"
  },
  {
   "date": "2026-09-29",
   "cat": "creativo",
-  "text": "Anuncio creado · AYMARA - LINK AD- V5",
+  "text": "Anuncio creado · AYMARA - LINK AD - V3",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-29",
+  "cat": "creativo",
+  "text": "Anuncio creado · AYMARA - LINK AD- V6",
   "src": "meta"
  },
  {
@@ -374,13 +374,13 @@
  {
   "date": "2026-09-29",
   "cat": "creativo",
-  "text": "Anuncio creado · AYMARA - LINK AD - V2",
+  "text": "Anuncio creado · AYMARA - LINK AD- V5",
   "src": "meta"
  },
  {
   "date": "2026-09-29",
   "cat": "creativo",
-  "text": "Anuncio creado · AYMARA - LINK AD- V6",
+  "text": "Anuncio creado · AYMARA - LINK AD - V2",
   "src": "meta"
  },
  {
@@ -692,13 +692,13 @@
  {
   "date": "2026-09-02",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · Carrusel Catalogo - Video Nuevo 3 (Revisión pendiente → Eliminado)",
+  "text": "Estado del anuncio actualizado · Carrusel Catalogo - Video Nuevo 2 (Revisión pendiente → Eliminado)",
   "src": "meta"
  },
  {
   "date": "2026-09-02",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · Carrusel Catalogo - Video Nuevo 2 (Revisión pendiente → Eliminado)",
+  "text": "Estado del anuncio actualizado · Carrusel Catalogo - Video Nuevo 3 (Revisión pendiente → Eliminado)",
   "src": "meta"
  },
  {
@@ -710,7 +710,7 @@
  {
   "date": "2026-09-02",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · Carrusel Catalogo - Video Nuevo 5 (Revisión pendiente → Eliminado)",
+  "text": "Estado del anuncio actualizado · Carrusel Catalogo 3 - Video - Copia 2 (Revisión pendiente → Eliminado)",
   "src": "meta"
  },
  {

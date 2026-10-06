@@ -1,17 +1,17 @@
 {
   "piera": {
-    "fetched_at": "2026-10-05",
+    "fetched_at": "2026-10-06",
     "ok": true,
-    "rows": 71,
+    "rows": 66,
     "empty": false,
-    "through": "2026-10-04"
+    "through": "2026-10-05"
   },
   "mossy": {
-    "fetched_at": "2026-10-05",
+    "fetched_at": "2026-10-06",
     "ok": true,
-    "rows": 427,
+    "rows": 429,
     "empty": false,
-    "through": "2026-10-04"
+    "through": "2026-10-05"
   },
   "vresia": {
     "fetched_at": "2026-09-17",
@@ -20,35 +20,35 @@
     "empty": false,
     "through": "2026-09-17",
     "last_error": "HTTP 403: {\"error\":{\"message\":\"(#200) Ad account owner has NOT grant ads_management or ads_read permission, refer to https:\\/\\/developers.facebook.com\\/docs\\/marketing-api\\/get-started\\/authorization\\",
-    "last_attempt": "2026-10-05"
+    "last_attempt": "2026-10-06"
   },
   "alba": {
-    "fetched_at": "2026-10-05",
+    "fetched_at": "2026-10-06",
     "ok": true,
-    "rows": 125,
+    "rows": 122,
     "empty": false,
-    "through": "2026-10-04"
+    "through": "2026-10-05"
   },
   "paz": {
-    "fetched_at": "2026-10-05",
+    "fetched_at": "2026-10-06",
     "ok": true,
-    "rows": 157,
+    "rows": 159,
     "empty": false,
-    "through": "2026-10-04"
+    "through": "2026-10-05"
   },
   "pulpa": {
-    "fetched_at": "2026-10-05",
+    "fetched_at": "2026-10-06",
     "ok": true,
-    "rows": 175,
+    "rows": 181,
     "empty": false,
-    "through": "2026-10-04"
+    "through": "2026-10-05"
   },
   "saritina-ceramica": {
-    "fetched_at": "2026-10-05",
+    "fetched_at": "2026-10-06",
     "ok": true,
-    "rows": 108,
+    "rows": 112,
     "empty": false,
-    "through": "2026-10-04"
+    "through": "2026-10-05"
   },
   "1366858924962966": {
     "ok": false,
@@ -62,7 +62,7 @@
     "empty": true,
     "through": "2026-08-31",
     "last_error": "HTTP 403: {\"error\":{\"message\":\"(#200) Ad account owner has NOT grant ads_management or ads_read permission, refer to https:\\/\\/developers.facebook.com\\/docs\\/marketing-api\\/get-started\\/authorization\\",
-    "last_attempt": "2026-10-05"
+    "last_attempt": "2026-10-06"
   },
   "cuenta-publicitaria-de-c": {
     "fetched_at": "2026-09-28",
@@ -79,11 +79,11 @@
     "through": "2026-09-27"
   },
   "basycos": {
-    "fetched_at": "2026-10-05",
+    "fetched_at": "2026-10-06",
     "ok": true,
-    "rows": 81,
+    "rows": 86,
     "empty": false,
-    "through": "2026-10-04"
+    "through": "2026-10-05"
   },
   "cloe": {
     "fetched_at": "2026-10-04",
@@ -92,6 +92,6 @@
     "empty": false,
     "through": "2026-10-01",
     "last_error": "HTTP 403: {\"error\":{\"message\":\"(#200) Ad account owner has NOT grant ads_management or ads_read permission, refer to https:\\/\\/developers.facebook.com\\/docs\\/marketing-api\\/get-started\\/authorization\\",
-    "last_attempt": "2026-10-05"
+    "last_attempt": "2026-10-06"
   }
 }
