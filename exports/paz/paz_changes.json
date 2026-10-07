@@ -180,6 +180,12 @@
   "src": "auto"
  },
  {
+  "date": "2026-10-04",
+  "cat": "creativo",
+  "text": "Se apagó «IG Post 29/8 B - Convocatoria (30 días publicidad)»",
+  "src": "auto"
+ },
+ {
   "date": "2026-10-02",
   "cat": "estado",
   "text": "Estado de la campaña actualizado · Nueva campaña de Clientes potenciales V.2 (Procesamiento pendiente → Activa)",
@@ -452,7 +458,25 @@
  {
   "date": "2026-10-01",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · IG Post 4/9 B - Convocatoria (DcoR2g6s-IU)IG Post 29/8 B - Convocatoria (30 días publicidad) - Copia (Procesamiento pendiente → Revisión pendiente)",
+  "text": "Estado del anuncio actualizado · IG Post 8/9 C - Convocatoria (DdCc8HBss8Q) (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-01",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · 2 - Nueva - Copia 3 (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-01",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · IG Post 4/9 A - Convocatoria (Dc1mR9hsYkW) (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-01",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · IG Post 29/8 A - Convocatoria (nuevas convocatorias) (Procesamiento pendiente → Revisión pendiente)",
   "src": "meta"
  },
  {
@@ -470,25 +494,7 @@
  {
   "date": "2026-10-01",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · 2 - Nueva - Copia 3 (Procesamiento pendiente → Revisión pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-01",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · IG Post 29/8 A - Convocatoria (nuevas convocatorias) (Procesamiento pendiente → Revisión pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-01",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · IG Post 4/9 A - Convocatoria (Dc1mR9hsYkW) (Procesamiento pendiente → Revisión pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-01",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · IG Post 8/9 C - Convocatoria (DdCc8HBss8Q) (Procesamiento pendiente → Revisión pendiente)",
+  "text": "Estado del anuncio actualizado · IG Post 4/9 B - Convocatoria (DcoR2g6s-IU)IG Post 29/8 B - Convocatoria (30 días publicidad) - Copia (Procesamiento pendiente → Revisión pendiente)",
   "src": "meta"
  },
  {
@@ -711,12 +717,6 @@
   "date": "2026-09-30",
   "cat": "estado",
   "text": "Estado del anuncio actualizado cuando se completa su revisión · IG Post 23/9 - Convocatoria $10K (Activo → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-30",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · IG Post 23/9 - Convocatoria $10K (Activo → Procesamiento pendiente)",
   "src": "meta"
  }
 ]

@@ -1,5 +1,11 @@
 [
  {
+  "date": "2026-10-06",
+  "cat": "estado",
+  "text": "Estado de la campaña actualizado · Saritina_Trafico_Mensajes_Wsp_Sep (Activa → Inactiva)",
+  "src": "meta"
+ },
+ {
   "date": "2026-10-01",
   "cat": "segmentacion",
   "text": "Público personalizado creado · asa_auto_custom_audience",
@@ -194,13 +200,13 @@
  {
   "date": "2026-09-01",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · Ad_Video_3 (Activo → Procesamiento pendiente)",
+  "text": "Estado del anuncio actualizado · Ad_Video_4 (Activo → Procesamiento pendiente)",
   "src": "meta"
  },
  {
   "date": "2026-09-01",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · Ad_Video_4 (Activo → Procesamiento pendiente)",
+  "text": "Estado del anuncio actualizado · Ad_Video_3 (Activo → Procesamiento pendiente)",
   "src": "meta"
  },
  {

@@ -1,5 +1,35 @@
 [
  {
+  "date": "2026-10-06",
+  "cat": "segmentacion",
+  "text": "Público personalizado creado · asa_auto_custom_audience",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-06",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · vestido pre venta (Revisión pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-06",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · vestido pre venta (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-06",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · vestido pre venta (Activo → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-06",
+  "cat": "creativo",
+  "text": "Anuncio actualizado · vestido pre venta",
+  "src": "meta"
+ },
+ {
   "date": "2026-10-05",
   "cat": "estado",
   "text": "Estado del anuncio actualizado · vestido pre venta (Revisión pendiente → Activo)",
@@ -152,13 +182,13 @@
  {
   "date": "2026-10-02",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · vestido pre venta (Procesamiento pendiente → Revisión pendiente)",
+  "text": "Estado del anuncio actualizado · Ventas bodys, calzas (Procesamiento pendiente → Revisión pendiente)",
   "src": "meta"
  },
  {
   "date": "2026-10-02",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · Ventas bodys, calzas (Procesamiento pendiente → Revisión pendiente)",
+  "text": "Estado del anuncio actualizado · vestido pre venta (Procesamiento pendiente → Revisión pendiente)",
   "src": "meta"
  },
  {
@@ -679,44 +709,14 @@
  },
  {
   "date": "2026-09-26",
-  "cat": "presupuesto",
-  "text": "Estrategia de puja del conjunto de anuncios actualizada · Alba&Co_2026_ Copia",
-  "src": "meta"
- },
- {
-  "date": "2026-09-26",
   "cat": "objetivo",
   "text": "Objetivo de optimización del conjunto de anuncios actualizado · Alba&Co_2026_ Copia",
   "src": "meta"
  },
  {
   "date": "2026-09-26",
-  "cat": "creativo",
-  "text": "Conjunto de anuncios creado · Alba&Co_2026_ Copia",
-  "src": "meta"
- },
- {
-  "date": "2026-09-26",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · creativo - Copia (Activo → Eliminado)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-26",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · creativo (Activo → Eliminado)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-26",
-  "cat": "estado",
-  "text": "Estado del conjunto de anuncios actualizado · audience (Activo → Eliminado)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-26",
-  "cat": "estado",
-  "text": "Estado del conjunto de anuncios actualizado · audience - broad - Copia (Activo → Eliminado)",
+  "cat": "presupuesto",
+  "text": "Estrategia de puja del conjunto de anuncios actualizada · Alba&Co_2026_ Copia",
   "src": "meta"
  }
 ]

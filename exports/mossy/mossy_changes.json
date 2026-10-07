@@ -1,5 +1,17 @@
 [
  {
+  "date": "2026-10-06",
+  "cat": "segmentacion",
+  "text": "Público personalizado creado · asa_auto_custom_audience",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-06",
+  "cat": "creativo",
+  "text": "Se reactivó «Ad1 - Angulo Anticipo Temporada»",
+  "src": "auto"
+ },
+ {
   "date": "2026-10-03",
   "cat": "estado",
   "text": "Estado del anuncio actualizado · Ad3 - Angulo Producto Fit - Copia (Revisión pendiente → Activo)",
@@ -16,6 +28,12 @@
   "cat": "creativo",
   "text": "Anuncio creado · Ad3 - Angulo Producto Fit - Copia",
   "src": "meta"
+ },
+ {
+  "date": "2026-10-03",
+  "cat": "creativo",
+  "text": "Se pausó «Ad1 - Angulo Anticipo Temporada»",
+  "src": "auto"
  },
  {
   "date": "2026-10-03",
@@ -94,12 +112,6 @@
   "cat": "creativo",
   "text": "Anuncio actualizado · B agosto -  Catálogo contenido advantage + todos los productos - Copia 4",
   "src": "meta"
- },
- {
-  "date": "2026-10-02",
-  "cat": "creativo",
-  "text": "Se apagó «Ad1 - Angulo Anticipo Temporada»",
-  "src": "auto"
  },
  {
   "date": "2026-10-02",
@@ -705,18 +717,6 @@
   "date": "2026-09-02",
   "cat": "objetivo",
   "text": "Objetivo de optimización del conjunto de anuncios actualizado · A+ - Testing - Angulo Producto Fit (Ad3)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-02",
-  "cat": "presupuesto",
-  "text": "Estrategia de puja del conjunto de anuncios actualizada · A+ - Testing - Angulo Producto Fit (Ad3)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-02",
-  "cat": "creativo",
-  "text": "Conjunto de anuncios creado · A+ - Testing - Angulo Producto Fit (Ad3)",
   "src": "meta"
  }
 ]
