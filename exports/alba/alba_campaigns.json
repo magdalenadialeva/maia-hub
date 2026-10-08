@@ -3,34 +3,71 @@
   "name": "Alba&Co_2026_septiembre",
   "objective": "OUTCOME_SALES",
   "status": "PAUSED",
-  "spend": 290792.52,
-  "first": "2026-09-01",
+  "spend": 510343.76,
+  "first": "2026-08-20",
   "last": "2026-09-27",
-  "purch": 13.0,
-  "msg": 27.0,
+  "purch": 27.0,
+  "msg": 47.0,
   "ads": [
    "Catalogo sin portada",
-   "Catalogo_3",
    "Catalogo_2",
+   "Catalogo_3",
    "Catalogo_4 ¿Es un varón?",
    "Catalogo_Karla",
    "Catalogo_5"
-  ]
+  ],
+  "impr": 110106.0,
+  "lc": 2655.0,
+  "lpv": 2549.0,
+  "atc": 410.0,
+  "ic": 73.0,
+  "pval": 1511386.9,
+  "leads": 2.0,
+  "window_from": "2026-08-20"
  },
  {
   "name": "ALBA-NUEVOS CLIENTES",
   "objective": "OUTCOME_SALES",
-  "status": "PAUSED",
-  "spend": 117591.44,
+  "status": "ACTIVE",
+  "spend": 123088.94,
   "first": "2026-09-27",
-  "last": "2026-10-06",
-  "purch": 6.0,
+  "last": "2026-10-07",
+  "purch": 7.0,
   "msg": 9.0,
   "ads": [
-   "vestido pre venta",
-   "Ventas bodys, calzas",
+   "sweater mama  y vestido nena",
+   "si es una nena",
    "Ventas video regalo"
-  ]
+  ],
+  "impr": 49279.0,
+  "lc": 964.0,
+  "lpv": 985.0,
+  "atc": 324.0,
+  "ic": 22.0,
+  "pval": 477765.14,
+  "leads": 1.0,
+  "window_from": "2026-08-20"
+ },
+ {
+  "name": "Alba&Co_2026_Trafico",
+  "objective": "LINK_CLICKS",
+  "status": "PAUSED",
+  "spend": 1900.83,
+  "first": "2026-08-20",
+  "last": "2026-08-21",
+  "purch": 0.0,
+  "msg": 0.0,
+  "ads": [
+   "Ad-1"
+  ],
+  "impr": 1282.0,
+  "lc": 150.0,
+  "lpv": 102.0,
+  "atc": 0.0,
+  "ic": 0.0,
+  "pval": 0.0,
+  "leads": 0.0,
+  "window_from": "2026-08-20"
  },
  {
   "name": "ventas-septiembre",
@@ -44,6 +81,14 @@
   "ads": [
    "creativo",
    "creativo - Copia"
-  ]
+  ],
+  "impr": 277.0,
+  "lc": 8.0,
+  "lpv": 4.0,
+  "atc": 0.0,
+  "ic": 0.0,
+  "pval": 0.0,
+  "leads": 0.0,
+  "window_from": "2026-08-20"
  }
 ]

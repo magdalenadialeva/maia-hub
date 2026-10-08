@@ -3,20 +3,92 @@
   "name": "PieraCeresa_2026_Conversiones",
   "objective": "OUTCOME_SALES",
   "status": "PAUSED",
-  "spend": 28783.0,
-  "first": "2026-09-01",
+  "spend": 271649.0,
+  "first": "2026-07-28",
   "last": "2026-09-04",
-  "purch": 0.0,
-  "msg": 3.0,
+  "purch": 3.0,
+  "msg": 24.0,
   "ads": [
    "Carrusel Catalogo",
+   "Carrusel Catalogo 2 - Video",
+   "Carrusel Catalogo 3 - Video",
+   "Carrusel Catalogo 3 - Video - Copia",
+   "Carrusel Catalogo - Video Nuevo 1",
+   "Carrusel Catalogo - Video Nuevo 2",
+   "Carrusel Catalogo - Video Nuevo 3",
+   "Carrusel Catalogo - Video Nuevo 4",
+   "Carrusel Catalogo - Video Nuevo 5",
+   "Carrusel Catalogo - Video Nuevo 6",
    "Carrusel Catalogo 2 - Video - AGO - Copia 3",
    "Carrusel Catalogo 2 - Video - AGO - Copia 2",
    "Carrusel Catalogo 1 - Video - AGO - Copia 2",
    "Carrusel Catalogo 1 - Video - AGO - Copia 3",
-   "Carrusel Catalogo 2 - Video - AGO - Copia 4",
-   "Carrusel Catalogo - Video Nuevo 1"
-  ]
+   "Carrusel Catalogo 2 - Video - AGO - Copia 4"
+  ],
+  "impr": 44335.0,
+  "lc": 1842.0,
+  "lpv": 1569.0,
+  "atc": 29.0,
+  "ic": 18.0,
+  "pval": 303960.0,
+  "leads": 0.0,
+  "window_from": "2026-07-27"
+ },
+ {
+  "name": "PieraCeresa_2026_Conversiones - Add Payment Info",
+  "objective": "OUTCOME_SALES",
+  "status": "PAUSED",
+  "spend": 193119.0,
+  "first": "2026-08-18",
+  "last": "2026-09-01",
+  "purch": 4.0,
+  "msg": 6.0,
+  "ads": [
+   "Carrusel Catalogo - Video Nuevo 1",
+   "Carrusel Catalogo 2 - Video",
+   "Carrusel Catalogo",
+   "Carrusel Catalogo 2 - Video - AGO",
+   "Carrusel Catalogo 1 - Video - AGO",
+   "Carrusel Catalogo - Video Nuevo 1 - Copia",
+   "Carrusel Catalogo 1 - Video - AGO - Copia",
+   "Carrusel Catalogo 1 - Video - AGO - Copia 2",
+   "Carrusel Catalogo 2 - Video - AGO - Copia",
+   "Carrusel Catalogo 2 - Video - AGO - Copia 2",
+   "Carrusel Catalogo 2 - Video - AGO - Copia 3"
+  ],
+  "impr": 78046.0,
+  "lc": 4448.0,
+  "lpv": 3712.0,
+  "atc": 82.0,
+  "ic": 53.0,
+  "pval": 240379.0,
+  "leads": 0.0,
+  "window_from": "2026-07-27"
+ },
+ {
+  "name": "PieraCeresa_2026_Conversiones - Purchase V.2",
+  "objective": "OUTCOME_SALES",
+  "status": "PAUSED",
+  "spend": 43868.0,
+  "first": "2026-08-22",
+  "last": "2026-08-25",
+  "purch": 0.0,
+  "msg": 1.0,
+  "ads": [
+   "Carrusel Catalogo 1 - Video - AGO",
+   "Carrusel Catalogo 2 - Video - AGO",
+   "Carrusel Catalogo - Video Nuevo 1",
+   "Carrusel Catalogo",
+   "Carrusel Catalogo 2 - Video"
+  ],
+  "impr": 4660.0,
+  "lc": 222.0,
+  "lpv": 210.0,
+  "atc": 2.0,
+  "ic": 0.0,
+  "pval": 0.0,
+  "leads": 0.0,
+  "window_from": "2026-07-27"
  },
  {
   "name": "Trafico constante",
@@ -29,52 +101,57 @@
   "msg": 0.0,
   "ads": [
    "Nuevo anuncio de Tráfico"
-  ]
+  ],
+  "impr": 29125.0,
+  "lc": 2352.0,
+  "lpv": 1735.0,
+  "atc": 0.0,
+  "ic": 0.0,
+  "pval": 0.0,
+  "leads": 0.0,
+  "window_from": "2026-07-27"
  },
  {
   "name": "Trafico constante - temporada de fiestas",
   "objective": "LINK_CLICKS",
   "status": "ACTIVE",
-  "spend": 13439.0,
+  "spend": 15141.0,
   "first": "2026-09-30",
-  "last": "2026-10-06",
+  "last": "2026-10-07",
   "purch": 0.0,
   "msg": 0.0,
   "ads": [
    "Nuevo anuncio de Tráfico"
-  ]
+  ],
+  "impr": 15382.0,
+  "lc": 471.0,
+  "lpv": 338.0,
+  "atc": 0.0,
+  "ic": 0.0,
+  "pval": 0.0,
+  "leads": 0.0,
+  "window_from": "2026-07-27"
  },
  {
   "name": "PIERA CERESA - CYBER 2026 - RETARGETING",
   "objective": "OUTCOME_SALES",
   "status": "ACTIVE",
-  "spend": 7851.0,
+  "spend": 9281.0,
   "first": "2026-10-03",
-  "last": "2026-10-06",
+  "last": "2026-10-07",
   "purch": 1.0,
   "msg": 0.0,
   "ads": [
    "AYMARA - LINK AD- V7",
    "AYMARA - LINK AD- V7 - Copia"
-  ]
- },
- {
-  "name": "PieraCeresa_2026_Conversiones - Add Payment Info",
-  "objective": "OUTCOME_SALES",
-  "status": "PAUSED",
-  "spend": 5127.0,
-  "first": "2026-09-01",
-  "last": "2026-09-01",
-  "purch": 0.0,
-  "msg": 0.0,
-  "ads": [
-   "Carrusel Catalogo",
-   "Carrusel Catalogo - Video Nuevo 1 - Copia",
-   "Carrusel Catalogo 1 - Video - AGO - Copia",
-   "Carrusel Catalogo 1 - Video - AGO - Copia 2",
-   "Carrusel Catalogo 2 - Video - AGO - Copia",
-   "Carrusel Catalogo 2 - Video - AGO - Copia 2",
-   "Carrusel Catalogo 2 - Video - AGO - Copia 3"
-  ]
+  ],
+  "impr": 928.0,
+  "lc": 79.0,
+  "lpv": 73.0,
+  "atc": 6.0,
+  "ic": 8.0,
+  "pval": 134342.0,
+  "leads": 0.0,
+  "window_from": "2026-07-27"
  }
 ]

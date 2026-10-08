@@ -3,11 +3,11 @@
   "name": "Pulpa Verde_Conversiones_Org_Mensajes_2026_Adv+",
   "objective": "LINK_CLICKS",
   "status": "ACTIVE",
-  "spend": 231886.62,
+  "spend": 237557.27,
   "first": "2026-09-13",
-  "last": "2026-10-06",
+  "last": "2026-10-07",
   "purch": 2.0,
-  "msg": 407.0,
+  "msg": 418.0,
   "ads": [
    "Ad_1",
    "Ad_2",
@@ -15,7 +15,15 @@
    "Ad_4",
    "Ad_5",
    "Ad_6"
-  ]
+  ],
+  "impr": 50146.0,
+  "lc": 1333.0,
+  "lpv": 120.0,
+  "atc": 50.0,
+  "ic": 21.0,
+  "pval": 48644.6,
+  "leads": 0.0,
+  "window_from": "2026-09-01"
  },
  {
   "name": "Pulpa Verde_Conversiones_Purchase_2026_Adv+",
@@ -33,7 +41,15 @@
    "Ad_Converse",
    "Ad_Osito",
    "Tengo un chisme"
-  ]
+  ],
+  "impr": 22360.0,
+  "lc": 896.0,
+  "lpv": 846.0,
+  "atc": 75.0,
+  "ic": 6.0,
+  "pval": 0.0,
+  "leads": 0.0,
+  "window_from": "2026-09-01"
  },
  {
   "name": "Pulpa Verde_Conversiones_Org_Purchase_2026_Adv+",
@@ -50,6 +66,14 @@
    "Si hubiera desarrollado esto antes",
    "Converse Blancas",
    "Yo se que vos y yo..."
-  ]
+  ],
+  "impr": 5572.0,
+  "lc": 286.0,
+  "lpv": 284.0,
+  "atc": 40.0,
+  "ic": 4.0,
+  "pval": 0.0,
+  "leads": 0.0,
+  "window_from": "2026-09-01"
  }
 ]

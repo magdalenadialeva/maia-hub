@@ -1,5 +1,59 @@
 [
  {
+  "date": "2026-10-07",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · IG Reel 7/10 - Convocatoria Inmobiliarias - Angulo Sin Pauta (Revisión pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-07",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · IG Reel 7/10 - Convocatoria Inmobiliarias - Angulo Filtro de Leads (Revisión pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-07",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · IG Reel 7/10 - Convocatoria Inmobiliarias - Angulo Sin Pauta (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-07",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · IG Reel 7/10 - Convocatoria Inmobiliarias - Angulo Filtro de Leads (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-07",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · IG Reel 7/10 - Convocatoria Inmobiliarias - Angulo Sin Pauta (Activo → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-07",
+  "cat": "creativo",
+  "text": "Anuncio actualizado · IG Reel 7/10 - Convocatoria Inmobiliarias - Angulo Sin Pauta",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-07",
+  "cat": "creativo",
+  "text": "Anuncio creado · IG Reel 7/10 - Convocatoria Inmobiliarias - Angulo Filtro de Leads",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-07",
+  "cat": "creativo",
+  "text": "Anuncio creado · IG Reel 7/10 - Convocatoria Inmobiliarias - Angulo Sin Pauta",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-07",
+  "cat": "creativo",
+  "text": "Se encendió/lanzó «IG Reel 7/10 - Convocatoria Inmobiliarias - Angulo Sin Pauta»",
+  "src": "auto"
+ },
+ {
   "date": "2026-10-05",
   "cat": "estado",
   "text": "Estado del anuncio actualizado · IG Post 25/9 - Convocatoria Angulo Contenido sin Estrategia (Procesamiento pendiente → Activo)",
@@ -38,6 +92,12 @@
  {
   "date": "2026-10-05",
   "cat": "creativo",
+  "text": "Se apagó «IG Post 4/9 C - Convocatoria (Dc1FCLwszOO)»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-10-05",
+  "cat": "creativo",
   "text": "Se reactivó «IG Post 25/9 - Convocatoria Angulo Contenido sin Estrategia»",
   "src": "auto"
  },
@@ -45,6 +105,12 @@
   "date": "2026-10-05",
   "cat": "creativo",
   "text": "Se reactivó «IG Post 25/9 - Convocatoria Angulo Pauta sin Datos»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-10-05",
+  "cat": "creativo",
+  "text": "Se apagó «IG Post 25/9 - Convocatoria Angulo Pauta sin Datos»",
   "src": "auto"
  },
  {
@@ -458,31 +524,13 @@
  {
   "date": "2026-10-01",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · IG Post 8/9 C - Convocatoria (DdCc8HBss8Q) (Procesamiento pendiente → Revisión pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-01",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · 2 - Nueva - Copia 3 (Procesamiento pendiente → Revisión pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-01",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · IG Post 4/9 A - Convocatoria (Dc1mR9hsYkW) (Procesamiento pendiente → Revisión pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-01",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · IG Post 29/8 A - Convocatoria (nuevas convocatorias) (Procesamiento pendiente → Revisión pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-01",
-  "cat": "estado",
   "text": "Estado del anuncio actualizado · IG Post 8/9 B - Convocatoria (DdCWmL2Mn9t) (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-01",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · IG Post 4/9 B - Convocatoria (DcoR2g6s-IU)IG Post 29/8 B - Convocatoria (30 días publicidad) - Copia (Procesamiento pendiente → Revisión pendiente)",
   "src": "meta"
  },
  {
@@ -494,7 +542,25 @@
  {
   "date": "2026-10-01",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · IG Post 4/9 B - Convocatoria (DcoR2g6s-IU)IG Post 29/8 B - Convocatoria (30 días publicidad) - Copia (Procesamiento pendiente → Revisión pendiente)",
+  "text": "Estado del anuncio actualizado · IG Post 8/9 C - Convocatoria (DdCc8HBss8Q) (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-01",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · IG Post 29/8 A - Convocatoria (nuevas convocatorias) (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-01",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · IG Post 4/9 A - Convocatoria (Dc1mR9hsYkW) (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-01",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · 2 - Nueva - Copia 3 (Procesamiento pendiente → Revisión pendiente)",
   "src": "meta"
  },
  {
@@ -651,72 +717,6 @@
   "date": "2026-09-30",
   "cat": "estado",
   "text": "Estado del anuncio actualizado · IG Post 10/9 - Convocatoria (DdFq8b0tHL3) (Activo → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-30",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · IG Post 10/9 - Convocatoria (DdFq8b0tHL3) (Procesamiento pendiente → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-30",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · IG Post 10/9 - Convocatoria (DdFq8b0tHL3) (Inactivo → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-30",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · IG Post 10/9 - Convocatoria (DdFq8b0tHL3) (Inactivo → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-30",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · IG Post 23/9 - Convocatoria Vendedores (Procesamiento pendiente → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-30",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · IG Post 23/9 - Convocatoria Vendedores (Activo → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-30",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · IG Post 23/9 - Convocatoria Vendedores (Activo → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-30",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · IG Post 8/9 A - Convocatoria (DdCRh2tMXCc) (Procesamiento pendiente → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-30",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · IG Post 8/9 A - Convocatoria (DdCRh2tMXCc) (Inactivo → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-30",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · IG Post 8/9 A - Convocatoria (DdCRh2tMXCc) (Inactivo → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-30",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · IG Post 23/9 - Convocatoria $10K (Procesamiento pendiente → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-30",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · IG Post 23/9 - Convocatoria $10K (Activo → Inactivo)",
   "src": "meta"
  }
 ]

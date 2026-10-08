@@ -1,5 +1,167 @@
 [
  {
+  "date": "2026-10-07",
+  "cat": "segmentacion",
+  "text": "Público personalizado creado · asa_auto_custom_audience",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-07",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Ad11 - Secuencia - Mega Sale - No hay una sola forma de usar Mossy (Revisión pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-07",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Ad11 - Secuencia - Mega Sale - No hay una sola forma de usar Mossy (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-07",
+  "cat": "creativo",
+  "text": "Anuncio creado · Ad11 - Secuencia - Mega Sale - No hay una sola forma de usar Mossy",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-07",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Ad10 - Catalogo AlwaysOn - Mega Sale (Revisión pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-07",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Ad10 - Catalogo AlwaysOn - Mega Sale (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-07",
+  "cat": "creativo",
+  "text": "Anuncio creado · Ad10 - Catalogo AlwaysOn - Mega Sale",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-07",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Ad9 - Producto Fit - Mega Sale - Tu top tu bombacha tu talle (Revisión pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-07",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Ad9 - Producto Fit - Mega Sale - Tu top tu bombacha tu talle (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-07",
+  "cat": "creativo",
+  "text": "Anuncio creado · Ad9 - Producto Fit - Mega Sale - Tu top tu bombacha tu talle",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-07",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Ad7 - Secuencia - Mega Sale - Tu top tu bombacha tus reglas (Revisión pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-07",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Ad8 - Video - Anticipo Temporada - Mega Sale (Revisión pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-07",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Ad8 - Video - Anticipo Temporada - Mega Sale (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-07",
+  "cat": "creativo",
+  "text": "Anuncio creado · Ad8 - Video - Anticipo Temporada - Mega Sale",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-07",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Ad7 - Secuencia - Mega Sale - Tu top tu bombacha tus reglas (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-07",
+  "cat": "creativo",
+  "text": "Anuncio creado · Ad7 - Secuencia - Mega Sale - Tu top tu bombacha tus reglas",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-07",
+  "cat": "estado",
+  "text": "Estado de la campaña actualizado · Mossy_AlwaysOn_Conversiones_Dinámicos (Procesamiento pendiente → Activa)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-07",
+  "cat": "estado",
+  "text": "Estado de la campaña actualizado · Mar26 - Ventas - A+ - Catalogo - Frio (Procesamiento pendiente → Activa)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-07",
+  "cat": "presupuesto",
+  "text": "Presupuesto de la campaña actualizado · Mossy_AlwaysOn_Conversiones_Dinámicos (8.000 → 10.000 ARS/día)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-07",
+  "cat": "estado",
+  "text": "Estado de la campaña actualizado · Mossy_AlwaysOn_Conversiones_Dinámicos (Activa → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-07",
+  "cat": "presupuesto",
+  "text": "Presupuesto de la campaña actualizado · Mar26 - Ventas - A+ - Catalogo - Frio (65.000 → 55.000 ARS/día)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-07",
+  "cat": "estado",
+  "text": "Estado de la campaña actualizado · Mar26 - Ventas - A+ - Catalogo - Frio (Activa → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-07",
+  "cat": "creativo",
+  "text": "Se encendió/lanzó «Ad7 - Secuencia - Mega Sale - Tu top tu bombacha tus reglas»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-10-07",
+  "cat": "creativo",
+  "text": "Se encendió/lanzó «Ad8 - Video - Anticipo Temporada - Mega Sale»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-10-07",
+  "cat": "creativo",
+  "text": "Se encendió/lanzó «Ad9 - Producto Fit - Mega Sale - Tu top tu bombacha tu talle»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-10-07",
+  "cat": "creativo",
+  "text": "Se encendió/lanzó «Ad10 - Catalogo AlwaysOn - Mega Sale»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-10-07",
+  "cat": "creativo",
+  "text": "Se encendió/lanzó «Ad11 - Secuencia - Mega Sale - No hay una sola forma de usar Mossy»",
+  "src": "auto"
+ },
+ {
   "date": "2026-10-06",
   "cat": "segmentacion",
   "text": "Público personalizado creado · asa_auto_custom_audience",
@@ -555,168 +717,6 @@
   "date": "2026-09-12",
   "cat": "creativo",
   "text": "Anuncio creado · Ad6 - Secuencia - Nueva coleccion 2026 - Reemplazo 12-9 (fix catalogo)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-12",
-  "cat": "estado",
-  "text": "Estado del conjunto de anuncios actualizado · A+ - Testing - Angulo Viaje (Ad2) (Activo → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-12",
-  "cat": "creativo",
-  "text": "Se reactivó «Ad6 - Secuencia - Nueva coleccion 202666 - Copia 6»",
-  "src": "auto"
- },
- {
-  "date": "2026-09-12",
-  "cat": "creativo",
-  "text": "Se apagó «Ad2 - Angulo Viaje»",
-  "src": "auto"
- },
- {
-  "date": "2026-09-10",
-  "cat": "creativo",
-  "text": "Se pausó «Ad6 - Secuencia - Nueva coleccion 202666 - Copia 6»",
-  "src": "auto"
- },
- {
-  "date": "2026-09-07",
-  "cat": "estado",
-  "text": "Estado de la campaña actualizado · Mar26 - Ventas - A+ - Catalogo - Frio (Procesamiento pendiente → Activa)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-07",
-  "cat": "presupuesto",
-  "text": "Presupuesto de la campaña actualizado · Mar26 - Ventas - A+ - Catalogo - Frio (85.000 → 90.000 ARS/día)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-07",
-  "cat": "estado",
-  "text": "Estado de la campaña actualizado · Mar26 - Ventas - A+ - Catalogo - Frio (Activa → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-07",
-  "cat": "presupuesto",
-  "text": "Presupuesto de la campaña actualizado · Mar26 - Ventas - A+ - Catalogo - Frio (95.000 → 85.000 ARS/día)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-07",
-  "cat": "presupuesto",
-  "text": "Presupuesto de la campaña actualizado · Mar26 - Ventas - A+ - Catalogo - Frio (100.000 → 95.000 ARS/día)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-07",
-  "cat": "presupuesto",
-  "text": "Presupuesto de la campaña actualizado · Mar26 - Ventas - A+ - Catalogo - Frio (80.000 → 100.000 ARS/día)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-04",
-  "cat": "estado",
-  "text": "Estado de la campaña actualizado · Ago26 - Ventas - CBO - Prospecting - Angulos Nuevos (Procesamiento pendiente → Activa)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-04",
-  "cat": "presupuesto",
-  "text": "Presupuesto de la campaña actualizado · Ago26 - Ventas - CBO - Prospecting - Angulos Nuevos (35.000 → 30.000 ARS/día)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-04",
-  "cat": "presupuesto",
-  "text": "Presupuesto de la campaña actualizado · Ago26 - Ventas - CBO - Prospecting - Angulos Nuevos (25.000 → 35.000 ARS/día)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-04",
-  "cat": "estado",
-  "text": "Estado de la campaña actualizado · Ago26 - Ventas - CBO - Prospecting - Angulos Nuevos (Activa → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-02",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Ad3 - Angulo Producto Fit (Revisión pendiente → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-02",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Ad3 - Angulo Producto Fit (Procesamiento pendiente → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-02",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Ad2 - Angulo Viaje (Procesamiento pendiente → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-02",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · Ad3 - Angulo Producto Fit (Activo → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-02",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Ad3 - Angulo Producto Fit (Activo → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-02",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · Ad2 - Angulo Viaje (Activo → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-02",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Ad2 - Angulo Viaje (Activo → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-02",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Ad3 - Angulo Producto Fit (Procesamiento pendiente → Revisión pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-02",
-  "cat": "estado",
-  "text": "Estado del conjunto de anuncios actualizado · A+ - Testing - Angulo Producto Fit (Ad3) (Procesamiento pendiente → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-02",
-  "cat": "creativo",
-  "text": "Anuncio creado · Ad3 - Angulo Producto Fit",
-  "src": "meta"
- },
- {
-  "date": "2026-09-02",
-  "cat": "presupuesto",
-  "text": "Se habilitó la programación del presupuesto del conjunto de anuncios · A+ - Testing - Angulo Producto Fit (Ad3)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-02",
-  "cat": "otros",
-  "text": "Segmentación del conjunto de anuncios actualizada · A+ - Testing - Angulo Producto Fit (Ad3)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-02",
-  "cat": "objetivo",
-  "text": "Objetivo de optimización del conjunto de anuncios actualizado · A+ - Testing - Angulo Producto Fit (Ad3)",
   "src": "meta"
  }
 ]

@@ -1,5 +1,17 @@
 [
  {
+  "date": "2026-10-07",
+  "cat": "presupuesto",
+  "text": "Presupuesto del conjunto de anuncios actualizado · Basyco Jerez_Conversiones_Purchase_SEP2026_Interese+Adv+ (30.000 → 20.000 ARS/día)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-07",
+  "cat": "segmentacion",
+  "text": "Público personalizado creado · asa_auto_custom_audience",
+  "src": "meta"
+ },
+ {
   "date": "2026-10-02",
   "cat": "estado",
   "text": "Estado del anuncio actualizado · Ventas Rimini (Procesamiento pendiente → Inactivo)",
@@ -705,18 +717,6 @@
   "date": "2026-09-01",
   "cat": "presupuesto",
   "text": "Estrategia de puja del conjunto de anuncios actualizada · Traffic Lugano",
-  "src": "meta"
- },
- {
-  "date": "2026-09-01",
-  "cat": "creativo",
-  "text": "Conjunto de anuncios creado · Traffic Lugano",
-  "src": "meta"
- },
- {
-  "date": "2026-09-01",
-  "cat": "estado",
-  "text": "Estado de la campaña actualizado · Ventas - Conjunto Loira (Activa → Inactiva)",
   "src": "meta"
  }
 ]

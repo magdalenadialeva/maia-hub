@@ -3,52 +3,81 @@
   "name": "Mar26 - Ventas - A+ - Catalogo - Frio",
   "objective": "OUTCOME_SALES",
   "status": "ACTIVE",
-  "spend": 3053463.84,
-  "first": "2026-09-01",
-  "last": "2026-10-06",
-  "purch": 77.0,
+  "spend": 3047187.08,
+  "first": "2026-09-02",
+  "last": "2026-10-07",
+  "purch": 76.0,
   "msg": 44.0,
   "ads": [
    "Ad6 - Secuencia - Nueva coleccion 2026 - Copia 3",
    "Ad6 - Secuencia - Nueva coleccion 2026 - Copia 4",
    "Ad6 - Secuencia - Nueva coleccion 202666 - Copia 8",
    "Ad6 - Secuencia - Nueva coleccion 202666 - Copia 9",
-   "Ad6 - Secuencia - Nueva coleccion 202666 - Copia 10",
    "Ad6 - Secuencia - Nueva coleccion 202666 - Copia 6",
    "Ad6 - Secuencia - Nueva coleccion 202666 - Copia 7",
-   "Ad6 - Secuencia - Nueva coleccion 202666 - Copia 11",
    "Ad6 - Secuencia - Nueva coleccion 202666 - Copia 12",
-   "Ad6 - Video - Sale - Copia"
-  ]
+   "Ad6 - Secuencia - Nueva coleccion 202666 - Copia 10",
+   "Ad6 - Secuencia - Nueva coleccion 202666 - Copia 11",
+   "Ad6 - Video - Sale - Copia",
+   "Ad7 - Secuencia - Mega Sale - Tu top tu bombacha tus reglas",
+   "Ad11 - Secuencia - Mega Sale - No hay una sola forma de usar Mossy"
+  ],
+  "impr": 470812.0,
+  "lc": 11761.0,
+  "lpv": 10485.0,
+  "atc": 1177.0,
+  "ic": 154.0,
+  "pval": 7343328.76,
+  "leads": 0.0,
+  "window_from": "2026-09-02"
  },
  {
   "name": "Ago26 - Ventas - CBO - Prospecting - Angulos Nuevos",
   "objective": "OUTCOME_SALES",
   "status": "ACTIVE",
-  "spend": 753834.45,
-  "first": "2026-09-01",
-  "last": "2026-10-06",
-  "purch": 25.0,
-  "msg": 10.0,
+  "spend": 739343.71,
+  "first": "2026-09-02",
+  "last": "2026-10-07",
+  "purch": 24.0,
+  "msg": 9.0,
   "ads": [
    "Ad1 - Angulo Anticipo Temporada",
    "Ad2 - Angulo Viaje",
    "Ad3 - Angulo Producto Fit",
    "Ad1 - Angulo Anticipo Temporada - Copia",
-   "Ad3 - Angulo Producto Fit - Copia"
-  ]
+   "Ad3 - Angulo Producto Fit - Copia",
+   "Ad8 - Video - Anticipo Temporada - Mega Sale",
+   "Ad9 - Producto Fit - Mega Sale - Tu top tu bombacha tu talle"
+  ],
+  "impr": 65780.0,
+  "lc": 1932.0,
+  "lpv": 1879.0,
+  "atc": 280.0,
+  "ic": 40.0,
+  "pval": 2280038.98,
+  "leads": 0.0,
+  "window_from": "2026-09-02"
  },
  {
   "name": "Mossy_AlwaysOn_Conversiones_Dinámicos",
   "objective": "OUTCOME_SALES",
   "status": "ACTIVE",
-  "spend": 57691.59,
+  "spend": 67692.62,
   "first": "2026-09-30",
-  "last": "2026-10-06",
+  "last": "2026-10-07",
   "purch": 5.0,
   "msg": 1.0,
   "ads": [
-   "B agosto -  Catálogo contenido advantage + todos los productos - Copia 4"
-  ]
+   "B agosto -  Catálogo contenido advantage + todos los productos - Copia 4",
+   "Ad10 - Catalogo AlwaysOn - Mega Sale"
+  ],
+  "impr": 11168.0,
+  "lc": 313.0,
+  "lpv": 299.0,
+  "atc": 49.0,
+  "ic": 9.0,
+  "pval": 499397.9,
+  "leads": 0.0,
+  "window_from": "2026-09-02"
  }
 ]

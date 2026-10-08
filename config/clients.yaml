@@ -170,7 +170,7 @@ clients:
     objective: ventas
     obj_code: purchase
     currency: ARS
-    ad_account_id: "TODO"          # se completa solo por nombre (match_account_name)
+    ad_account_id: "3013490568829464"   # encontrada por nombre (2026-10-08)
     match_account_name: ["bepowder", "be powder", "be-powder", "be_powder"]
     start_label: "auto"            # = primer día con gasto; poner start_maia real cuando se confirme
     margin: 0.5

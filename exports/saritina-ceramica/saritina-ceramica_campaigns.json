@@ -2,17 +2,25 @@
  {
   "name": "Saritina_Trafico_Mensajes_Wsp_Sep",
   "objective": "LINK_CLICKS",
-  "status": "PAUSED",
+  "status": "ACTIVE",
   "spend": 290640.4,
   "first": "2026-09-01",
   "last": "2026-10-06",
   "purch": 42.0,
-  "msg": 1138.0,
+  "msg": 1139.0,
   "ads": [
    "Ad_Video_1",
    "Ad_Video_2",
    "Ad_Video_3",
    "Ad_Video_4"
-  ]
+  ],
+  "impr": 120538.0,
+  "lc": 1799.0,
+  "lpv": 167.0,
+  "atc": 0.0,
+  "ic": 0.0,
+  "pval": 0.0,
+  "leads": 44.0,
+  "window_from": "2026-09-01"
  }
 ]
