@@ -101,6 +101,11 @@ def _headers(currency: str) -> List[str]:
         "Reproducciones de video de 3 segundos",
         "ThruPlays",
         "Resultados",
+        # Agregadas oct-2026: permiten mirar resultados POR CAMPAÑA en el hub
+        # (cada campaña con su propio resultado: compras, conversaciones o leads).
+        "Nombre de la campaña",
+        "Conversaciones de mensajes",
+        "Clientes potenciales",
     ]
 
 
@@ -540,7 +545,17 @@ def fetch_client(client: dict, days: int, token: str, exports_dir: Path) -> Opti
     # Corte igual a Meta: hasta AYER completo en la zona horaria de la cuenta.
     tz_name = _account_tz(accts[0], token)
     until = _last_closed_day(tz_name)
-    since = until - timedelta(days=days)
+    # Ventana: como mínimo `days`; si la marca tiene start_maia, desde el inicio
+    # con MAIA (para tener TODAS las campañas que hizo con nosotros). Tope 200 días.
+    span = days
+    sm = str(client.get("start_maia") or "").strip()
+    if sm:
+        try:
+            span = max(days, (until - date.fromisoformat(sm)).days + 1)
+        except ValueError:
+            pass
+    span = min(span, 200)
+    since = until - timedelta(days=span)
     print(f"· {slug}: ventana {since} → {until} (día cerrado, zona {tz_name})")
     params = {
         "level": "ad",
@@ -556,8 +571,10 @@ def fetch_client(client: dict, days: int, token: str, exports_dir: Path) -> Opti
     camps: Dict[str, dict] = {}        # campaña -> resumen (para el hub)
     is_leads = client.get("objective") == "leads"
     is_msg = client.get("obj_code") == "msg"   # Tráfico/Mensajes -> resultado = conversaciones
+    cstat_all: Dict[str, dict] = {}
     for acct in accts:
         cstat = fetch_campaigns(acct, token)
+        cstat_all.update(cstat)
         data = _api_get(f"act_{acct}/insights", params, token)
         page = 0
         while True:
@@ -580,11 +597,21 @@ def fetch_client(client: dict, days: int, token: str, exports_dir: Path) -> Opti
                 cs = camps.setdefault(cname, {"name": cname, "objective": cobj,
                                               "status": (cstat.get(cname) or {}).get("status"),
                                               "spend": 0.0, "first": d, "last": d,
-                                              "purch": 0.0, "msg": 0.0, "ads": []})
+                                              "purch": 0.0, "msg": 0.0, "ads": [],
+                                              "impr": 0.0, "lc": 0.0, "lpv": 0.0, "atc": 0.0,
+                                              "ic": 0.0, "pval": 0.0, "leads": 0.0})
                 sp = float(r.get("spend") or 0)
+                msg_n = _sum_action(actions, ACTION_MAP["msg"]) or 0
                 cs["spend"] += sp
                 cs["purch"] += _sum_action(actions, ACTION_MAP["purch"]) or 0
-                cs["msg"] += _sum_action(actions, ACTION_MAP["msg"]) or 0
+                cs["msg"] += msg_n
+                cs["impr"] += float(r.get("impressions") or 0)
+                cs["lc"] += float(r.get("inline_link_clicks") or 0)
+                cs["lpv"] += _sum_action(actions, ACTION_MAP["lpv"]) or 0
+                cs["atc"] += _sum_action(actions, ACTION_MAP["atc"]) or 0
+                cs["ic"] += _sum_action(actions, ACTION_MAP["ic"]) or 0
+                cs["pval"] += _sum_action(avals, ACTION_MAP["purch"]) or 0
+                cs["leads"] += leads or 0
                 if sp > 0:
                     cs["first"] = min(cs["first"] or d, d); cs["last"] = max(cs["last"] or d, d)
                 an = r.get("ad_name", "")
@@ -606,6 +633,9 @@ def fetch_client(client: dict, days: int, token: str, exports_dir: Path) -> Opti
                     _fmt(_first_value(r.get("video_play_actions"))),
                     _fmt(_first_value(r.get("video_thruplay_watched_actions"))),
                     results,
+                    cname,
+                    _fmt(msg_n),
+                    _fmt(leads),
                 ])
             nxt = (data.get("paging") or {}).get("next")
             page += 1
@@ -616,9 +646,32 @@ def fetch_client(client: dict, days: int, token: str, exports_dir: Path) -> Opti
     folder0 = exports_dir / slug
     folder0.mkdir(parents=True, exist_ok=True)
     try:
+        # Historial de campañas: se FUSIONA con el archivo anterior, así una campaña
+        # que ya salió de la ventana de fetch no desaparece del hub (queda con sus
+        # últimos totales conocidos). Las que vienen en esta corrida se pisan.
+        cp_file = folder0 / f"{slug}_campaigns.json"
+        prev_c = []
+        if cp_file.exists():
+            try:
+                prev_c = json.loads(cp_file.read_text(encoding="utf-8")) or []
+            except Exception:
+                prev_c = []
+        for pc in prev_c:
+            nm = pc.get("name")
+            if nm and nm not in camps and pc.get("spend", 0) > 0:
+                pc["archived"] = True
+                if nm in cstat_all:
+                    pc["status"] = (cstat_all.get(nm) or {}).get("status") or pc.get("status")
+                camps[nm] = pc
         cl = sorted(camps.values(), key=lambda c: -c["spend"])
         for c in cl:
-            c["spend"] = round(c["spend"], 2)
+            for k in ("spend", "impr", "lc", "lpv", "atc", "ic", "pval", "leads", "purch", "msg"):
+                if k in c:
+                    c[k] = round(float(c[k] or 0), 2)
+        c_since = since.isoformat()
+        for c in cl:
+            if not c.get("archived"):
+                c["window_from"] = c_since
         (folder0 / f"{slug}_campaigns.json").write_text(
             json.dumps(cl, ensure_ascii=False, indent=1), encoding="utf-8")
         print(f"  · {slug}: {len(cl)} campaña(s): " + "; ".join(
@@ -762,6 +815,22 @@ def _append_clients_yaml(path: Path, entries: List[dict]) -> None:
         f.write("".join(chunks))
 
 
+def _set_account_ids(path: Path, matched: Dict[str, str]) -> None:
+    """Escribe el ad_account_id encontrado por nombre en el bloque de esa marca
+    (reemplaza su `ad_account_id: "TODO"`), preservando comentarios."""
+    lines = path.read_text(encoding="utf-8").splitlines(keepends=True)
+    cur = None
+    for i, ln in enumerate(lines):
+        m = re.match(r'\s*-\s*slug:\s*"?([^"\s#]+)"?', ln)
+        if m:
+            cur = m.group(1)
+            continue
+        if cur in matched and re.match(r'\s*ad_account_id:\s*"?TODO"?', ln):
+            indent = ln[:len(ln) - len(ln.lstrip())]
+            lines[i] = f'{indent}ad_account_id: "{matched[cur]}"   # encontrada por nombre ({date.today().isoformat()})\n'
+    path.write_text("".join(lines), encoding="utf-8")
+
+
 def refresh_token(token: str) -> str:
     """Renueva el token: lo intercambia por uno nuevo de larga duración (~60 días).
 
@@ -838,6 +907,8 @@ def main():
         for a in _client_accounts(c):
             configured_ids.add(a)
     taken_slugs = {c.get("slug") for c in clients}
+    # Marcas dadas de alta por NOMBRE (ad_account_id TODO + match_account_name).
+    pending_match = [c for c in clients if not _client_accounts(c) and c.get("match_account_name")]
 
     # Descubrir TODAS las cuentas del portfolio y SUMAR solas las nuevas activas
     # (con gasto, no ya configuradas, no en la lista de ignoradas).
@@ -845,6 +916,28 @@ def main():
         accts = discover_accounts(token)
         print(f"\n== Cuentas en tu Meta ({len(accts)}) · ordenadas por gasto 90d ==")
         new_entries = []
+        matched = {}
+        for c in pending_match:
+            keys = [_slugify(k) for k in (c.get("match_account_name") or []) if k]
+            for a in sorted(accts, key=lambda x: -x["spend"]):
+                if a["id"] in configured_ids or a["id"] in ignore_ids or a["id"] in matched.values():
+                    continue
+                an = _slugify(a["name"])
+                if any(k and (k in an or k.replace("-", "") in an.replace("-", "")) for k in keys):
+                    matched[c["slug"]] = a["id"]
+                    configured_ids.add(a["id"])
+                    print(f"✓ {c['slug']}: cuenta encontrada por nombre -> act_{a['id']} ({a['name']})")
+                    break
+        if matched:
+            _set_account_ids(config_path, matched)
+            clients = (yaml.safe_load(config_path.read_text(encoding="utf-8")) or {}).get("clients", [])
+        try:
+            (Path(args.exports) / "_accounts.json").write_text(json.dumps(
+                [{"id": a["id"], "name": a["name"], "currency": a["currency"],
+                  "spend90d": round(a["spend"])} for a in sorted(accts, key=lambda x: -x["spend"])],
+                ensure_ascii=False, indent=1), encoding="utf-8")
+        except Exception as e:
+            print(f"  · no se pudo escribir _accounts.json ({e})")
         for a in sorted(accts, key=lambda x: -x["spend"]):
             aid = a["id"]
             if aid in configured_ids:

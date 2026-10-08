@@ -19,15 +19,37 @@ from .config import DEFAULT_THRESHOLDS, target_roas_from_margin
 
 # Orden EXACTO de campos que espera el hub (no cambiar).
 HUB_FIELDS = ["spend", "impr", "reach", "lc", "lpv", "atc", "ic",
-              "purch", "pval", "leads", "v3s", "thru"]
+              "purch", "pval", "leads", "v3s", "thru", "msgs", "lds"]
+# (msgs = conversaciones de mensajería y lds = leads crudos, agregados oct-2026
+#  al FINAL para no romper índices; el hub los lee por nombre.)
 
 # Campo del hub  ->  campo interno del parser.
 FIELD_SRC = {
     "spend": "spend", "impr": "impressions", "reach": "reach", "lc": "link_clicks",
     "lpv": "lpv", "atc": "atc", "ic": "ic", "purch": "purchases",
     "pval": "revenue", "leads": "leads", "v3s": "video_3s", "thru": "thruplay",
+    "msgs": "msgs", "lds": "leads",
 }
-INT_FIELDS = {"impr", "reach", "lc", "lpv", "atc", "ic", "purch", "leads", "v3s", "thru"}
+INT_FIELDS = {"impr", "reach", "lc", "lpv", "atc", "ic", "purch", "leads", "v3s", "thru",
+              "msgs", "lds"}
+
+# Objetivo de Meta -> tipo de resultado de la campaña (lo que se mide en el hub).
+_SALES_OBJ = {"OUTCOME_SALES", "CONVERSIONS", "PRODUCT_CATALOG_SALES"}
+_LEAD_OBJ = {"OUTCOME_LEADS", "LEAD_GENERATION"}
+
+
+def camp_kind(c: dict) -> str:
+    """purchase | lead | msg | traffic | other, según el objetivo de la campaña."""
+    o = str(c.get("objective") or "").upper()
+    if o in _SALES_OBJ:
+        return "purchase"
+    if o in _LEAD_OBJ:
+        return "lead"
+    if (c.get("msg") or 0) > 0 or o == "MESSAGES":
+        return "msg"
+    if o in ("LINK_CLICKS", "OUTCOME_TRAFFIC", "OUTCOME_ENGAGEMENT"):
+        return "traffic"
+    return "other"
 
 
 def _num(x) -> float:
@@ -40,8 +62,29 @@ def _num(x) -> float:
     return 0.0 if math.isnan(v) else v
 
 
-def build_hub_client(client: dict, rows: List[dict], currency: str | None) -> dict:
-    """rows = filas normalizadas (una por anuncio-día) de UN cliente."""
+def build_hub_client(client: dict, rows: List[dict], currency: str | None,
+                     campaigns: List[dict] | None = None,
+                     manual: List[dict] | None = None) -> dict:
+    """rows = filas normalizadas (una por anuncio-día) de UN cliente.
+    campaigns = exports/<slug>/<slug>_campaigns.json (para tipo de resultado y
+    para mapear anuncio -> campaña cuando el CSV no trae la columna de campaña).
+    manual = ventas que reporta la marca (config/manual_results.yaml)."""
+    campaigns = campaigns or []
+    camp_names: List[str] = [c.get("name") or "" for c in campaigns]
+    camp_idx: Dict[str, int] = {n: i for i, n in enumerate(camp_names)}
+    kind_by_camp = {c.get("name"): camp_kind(c) for c in campaigns}
+    # Fallback anuncio -> campaña desde campaigns.json (CSV viejos sin columna).
+    ad2camp_fb: Dict[str, str] = {}
+    for c in campaigns:
+        for an in c.get("ads") or []:
+            ad2camp_fb.setdefault(an, c.get("name"))
+
+    def _camp_of(r) -> str:
+        cn = r.get("campaign")
+        if isinstance(cn, str) and cn.strip() and cn.lower() != "nan":
+            return cn.strip()
+        return ad2camp_fb.get(r.get("ad_name") or "", "") or ""
+
     objective = client.get("objective", "ventas")
     obj_code = client.get("obj_code")
     is_leads = (objective == "leads")
@@ -62,14 +105,23 @@ def build_hub_client(client: dict, rows: List[dict], currency: str | None) -> di
 
     # Orden estable: anuncios por primera aparición (solo los que tienen
     # actividad), fechas ascendentes.
+    # Un "anuncio" del hub = (campaña, nombre): el mismo nombre en dos campañas
+    # son dos filas distintas, así se puede mirar cada campaña por separado.
     ads: List[str] = []
-    ad_idx: Dict[str, int] = {}
+    adcamp: List[int] = []
+    ad_idx: Dict[tuple, int] = {}
     dates_set = set()
     for r in active_rows:
         name = r.get("ad_name") or "sin nombre"
-        if name not in ad_idx:
-            ad_idx[name] = len(ads)
+        cn = _camp_of(r)
+        if cn and cn not in camp_idx:
+            camp_idx[cn] = len(camp_names)
+            camp_names.append(cn)
+        key = (cn, name)
+        if key not in ad_idx:
+            ad_idx[key] = len(ads)
             ads.append(name)
+            adcamp.append(camp_idx[cn] if cn else -1)
         dates_set.add(r["date"])
     dates = sorted(dates_set)
     date_idx = {d: i for i, d in enumerate(dates)}
@@ -77,13 +129,21 @@ def build_hub_client(client: dict, rows: List[dict], currency: str | None) -> di
     # Consolidar por (ad, date) por si hubiera filas repetidas.
     bucket: Dict[tuple, Dict[str, float]] = {}
     for r in active_rows:
-        key = (date_idx[r["date"]], ad_idx[r.get("ad_name") or "sin nombre"])
+        cn = _camp_of(r)
+        key = (date_idx[r["date"]], ad_idx[(cn, r.get("ad_name") or "sin nombre")])
         acc = bucket.setdefault(key, {f: 0.0 for f in HUB_FIELDS})
+        ck = kind_by_camp.get(cn)
         for hub_f, src in FIELD_SRC.items():
             if hub_f == "leads":
-                # conteo de resultado no-venta (leads o conversaciones): viene de
-                # "results" (Resultados de Meta) para lead-gen y mensajes.
-                val = _num(r.get("results")) if has_result_count else 0.0
+                # conteo de resultado no-venta (leads o conversaciones). Si la
+                # campaña es de mensajes / leads y el CSV trae la columna propia,
+                # se usa esa; si no, "Resultados" de Meta (como antes).
+                if ck == "msg" and _num(r.get("msgs")) > 0:
+                    val = _num(r.get("msgs"))
+                elif ck == "lead" and _num(r.get("leads")) > 0:
+                    val = _num(r.get("leads"))
+                else:
+                    val = _num(r.get("results")) if has_result_count else 0.0
             else:
                 val = _num(r.get(src))
             acc[hub_f] += val
@@ -136,6 +196,10 @@ def build_hub_client(client: dict, rows: List[dict], currency: str | None) -> di
         "optphases": client.get("opt_phases") or [],
         "th": th_out,
         "ads": ads,
+        "adcamp": adcamp,             # anuncio -> índice en `camps` (-1 = sin campaña)
+        "camps": camp_names,          # nombres de campaña (mismo orden que campaigns.json + extras)
+        "campkind": [kind_by_camp.get(n) or "other" for n in camp_names],
+        "manual": manual or [],
         "dates": dates,
         "f": list(HUB_FIELDS),
         "rows": out_rows,

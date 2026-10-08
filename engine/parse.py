@@ -64,6 +64,7 @@ DEFAULT_ALIASES: Dict[str, List[str]] = {
     "revenue":     ["valor de conversion de compras", "valor de conversiones de compras",
                     "purchase conversion value", "valor de conversion"],
     "leads":       ["clientes potenciales", "leads", "prospectos"],
+    "msgs":        ["conversaciones de mensajes", "conversaciones"],
     # "Resultados" = el resultado optimizado de la campaña (leads para lead-gen,
     # compras/pagos para ventas). En build se usa como leads SOLO si el objetivo
     # del cliente es leads; para ventas se ignora (se usa purch/ic directo).
@@ -80,7 +81,7 @@ DEFAULT_ALIASES: Dict[str, List[str]] = {
 NUMERIC_FIELDS = {
     "spend", "impressions", "reach", "frequency", "clicks", "link_clicks",
     "video_3s", "thruplay", "video_25", "video_50", "video_75", "video_100",
-    "lpv", "atc", "ic", "purchases", "revenue", "leads", "results",
+    "lpv", "atc", "ic", "purchases", "revenue", "leads", "msgs", "results",
     "roas_meta", "ctr_meta", "cpc_meta", "cpm_meta",
 }
 

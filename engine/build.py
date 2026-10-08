@@ -81,7 +81,16 @@ def build_data(exports_dir: Path, site_dir: Path, config_dir: Path, verbose=True
     mapping_yaml = config_dir / "mapping.yaml"
     clients = load_clients(config_dir)
     status = _load_status(exports_dir)
+    # Ventas que reporta la marca (WhatsApp, local, etc.) -> config/manual_results.yaml
+    manual_all = {}
+    mp = config_dir / "manual_results.yaml"
+    if mp.exists():
+        try:
+            manual_all = yaml.safe_load(mp.read_text(encoding="utf-8")) or {}
+        except Exception as e:
+            _BUILD_ERRORS.append(f"⚠ manual_results.yaml ilegible ({e})")
     DATA = {}
+    PENDING = []   # marcas activas sin datos todavía (p.ej. recién dadas de alta)
     diagnostics = []
     for client in clients:
         try:
@@ -89,8 +98,25 @@ def build_data(exports_dir: Path, site_dir: Path, config_dir: Path, verbose=True
             rows, currency, files = load_client_rows(exports_dir, slug, mapping_yaml)
             if not rows:
                 diagnostics.append(f"· {slug}: sin export (se omite)")
+                if str(client.get("status") or "").lower() not in ("perdida", "perdido", "lost"):
+                    acc = [a for a in ([client.get("ad_account_id")] + list(client.get("ad_account_ids") or []))
+                           if a and str(a).upper() not in ("TODO", "NONE")]
+                    PENDING.append({"slug": slug, "name": client.get("name", slug),
+                                    "reason": ("sin cuenta de Meta asignada todavía" if not acc
+                                               else "la cuenta todavía no tiene gasto")})
                 continue
-            hub = build_hub_client(client, rows, currency)
+            cp_path = exports_dir / slug / f"{slug}_campaigns.json"
+            camps = []
+            if cp_path.exists():
+                try:
+                    camps = json.loads(cp_path.read_text(encoding="utf-8")) or []
+                except Exception:
+                    camps = []
+            manual = []
+            for m in (manual_all.get(slug) or []):
+                manual.append({k: (str(v) if k in ("reported", "from", "to") else v)
+                               for k, v in (m or {}).items()})
+            hub = build_hub_client(client, rows, currency, camps, manual)
             # Última actualización de ESTA marca: fecha real del último pull desde Meta
             # (la escribe engine.fetch_meta). Si aún no hay estado, cae al último día
             # con datos, así el hub siempre muestra algo razonable.
@@ -135,14 +161,7 @@ def build_data(exports_dir: Path, site_dir: Path, config_dir: Path, verbose=True
                 except Exception:
                     adstatus = {}
             hub["adstatus"] = adstatus
-            # Campañas (nombre, estado real de Meta, objetivo, gasto) que escribe fetch_meta.
-            cp_path = exports_dir / slug / f"{slug}_campaigns.json"
-            camps = []
-            if cp_path.exists():
-                try:
-                    camps = json.loads(cp_path.read_text(encoding="utf-8")) or []
-                except Exception:
-                    camps = []
+            # Campañas (nombre, estado real de Meta, objetivo, totales) que escribe fetch_meta.
             hub["campaigns"] = camps
             # Alcance/frecuencia deduplicados del período (nivel cuenta, sin desglose
             # diario) que escribe fetch_meta. El hub los usa para el embudo en vez de
@@ -177,7 +196,8 @@ def build_data(exports_dir: Path, site_dir: Path, config_dir: Path, verbose=True
     (site_dir / "data.js").write_text(
         "/* Generado por engine.build — NO editar a mano. */\n"
         "window.DATA_EXT = " + payload + ";\n"
-        "window.DATA_BUILT = " + json.dumps(built) + ";\n", encoding="utf-8")
+        "window.DATA_BUILT = " + json.dumps(built) + ";\n"
+        "window.DATA_PENDING = " + json.dumps(PENDING, ensure_ascii=False) + ";\n", encoding="utf-8")
     (site_dir / "data.json").write_text(
         json.dumps({"generated_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
                     "DATA": DATA}, ensure_ascii=False, indent=2), encoding="utf-8")

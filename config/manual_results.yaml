@@ -1,0 +1,32 @@
+# MAIA · Resultados que REPORTA LA MARCA (no los ve Meta).
+#
+# Para ventas que se cierran por WhatsApp, en el local, o que el píxel no ve.
+# El hub las muestra al lado de lo que atribuye Meta y calcula el "ROAS real"
+# (ventas reportadas / inversión del mismo período).
+#
+# Por cliente (slug de clients.yaml), una fila por reporte:
+#   reported : fecha en que la marca lo informó
+#   from/to  : período que cubren esas ventas (se reparten parejo por día
+#              para poder filtrarlas por período en el hub)
+#   channel  : whatsapp | anuncios | web | local | otro
+#   campaign : (opcional) nombre exacto de la campaña a la que se atribuyen
+#   sales    : cantidad de ventas
+#   amount   : monto total (moneda de la cuenta)
+#   note     : texto libre
+
+pulpa:
+  - reported: "2026-09-29"
+    from: "2026-09-01"
+    to: "2026-09-30"
+    channel: whatsapp
+    campaign: "Pulpa Verde_Conversiones_Org_Mensajes_2026_Adv+"
+    sales: 16
+    amount: 773667
+    note: "Ventas por WhatsApp de septiembre (reporte de la marca)."
+  - reported: "2026-10-07"
+    from: "2026-10-01"
+    to: "2026-10-07"
+    channel: anuncios
+    sales: 1
+    amount: 14980
+    note: "Venta de octubre atribuida a anuncios (reporte de la marca)."

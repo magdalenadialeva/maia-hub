@@ -23,6 +23,10 @@
 #                      = conversiones). Sirve cuando la cuenta tiene campañas que no hacemos nosotros.
 # campaign_exclude   : excluye campañas cuyo nombre contenga ese texto.
 # end_maia  : (solo perdidas) fecha de fin con MAIA -> "Fin" y "Con nosotros".
+# match_account_name: lista de textos. Si la marca todavía no tiene ad_account_id
+#             (TODO), fetch_meta busca en el portfolio una cuenta cuyo NOMBRE contenga
+#             alguno de estos textos y le escribe el ID solo (sirve para dar de alta
+#             una marca nueva sin saber su ID).
 #
 # ignore_account_ids: cuentas que NUNCA son clientes (personales, dormidas, la
 # propia agencia). Nunca se agregan aunque tengan gasto.
@@ -34,6 +38,7 @@ ignore_account_ids:
   - "2394340120940661"    # Piera Ceresa Australia (dormida, AUD)
   - "2055620405050036"    # unknown (Read-Only)
   - "1000207433066534"    # Cloe Nutricion Real (cuenta vieja: boosts/tráfico ago-2026, no es pauta MAIA)
+  - "2485918971925353"    # Cloe Nutricion Real (ARS, auto-agregada 1/10; Cloe ya es cuenta perdida)
 
 # El ORDEN de esta lista define el orden en el hub (CLIENTS).
 clients:
@@ -148,6 +153,8 @@ clients:
     notes: "MAIA maneja SOLO la campaña de conversiones (la de tráfico es de la marca)."
 
   - slug: cloe
+    status: perdida
+    end_maia: "2026-09-30"   # último día con pauta MAIA (campaña WhatsApp B2B)
     name: Cloe
     objective: ventas
     obj_code: msg          # hoy: WhatsApp B2B (resultado = conversaciones)
@@ -158,12 +165,13 @@ clients:
     margin: 0.5
     notes: "Probamos conversiones y no funcionó -> se apagó. Hoy: campaña de WhatsApp B2B."
 
-  - slug: "cloe-nutricion-real"
-    name: "Cloe Nutricion Real"
+  - slug: bepowder
+    name: Bepowder
     objective: ventas
     obj_code: purchase
     currency: ARS
-    ad_account_id: "2485918971925353"
-    start_label: "auto"
+    ad_account_id: "TODO"          # se completa solo por nombre (match_account_name)
+    match_account_name: ["bepowder", "be powder", "be-powder", "be_powder"]
+    start_label: "auto"            # = primer día con gasto; poner start_maia real cuando se confirme
     margin: 0.5
-    notes: "Auto-agregado desde Meta (2026-10-01)."
+    notes: "Cliente nuevo (alta 8/10/2026)."

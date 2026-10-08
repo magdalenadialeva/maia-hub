@@ -449,6 +449,48 @@
   .regen:hover{border-color:var(--rose);color:var(--rose)}
   @media print{.regen,.rs-period{display:none !important}}
 
+  /* ===== v24 · Seguimiento + campañas ===== */
+  .sgtop{display:grid;grid-template-columns:1.4fr 1fr;gap:12px;margin:10px 0 18px}
+  @media (max-width:820px){.sgtop{grid-template-columns:1fr}}
+  .sgtodo{display:block;width:100%;text-align:left;appearance:none;border:1px solid var(--line);background:var(--panel2);border-radius:10px;padding:8px 11px;margin-top:7px;font:inherit;font-size:13px;color:var(--ink);cursor:pointer;border-left:4px solid var(--idle)}
+  .sgtodo:hover{border-color:var(--rose)}
+  .sgtodo.sg-r{border-left-color:var(--bad)} .sgtodo.sg-y{border-left-color:var(--rose)} .sgtodo.sg-y2{border-left-color:var(--warn)} .sgtodo.sg-w{border-left-color:var(--idle);cursor:default}
+  .sgcards{display:grid;grid-template-columns:repeat(auto-fill,minmax(520px,1fr));gap:14px}
+  @media (max-width:600px){.sgcards{grid-template-columns:1fr}}
+  .sgcard{background:var(--panel);border:1px solid var(--line);border-radius:var(--r);padding:15px 17px;box-shadow:var(--shadow);border-top:4px solid var(--idle);scroll-margin-top:12px;transition:box-shadow .3s}
+  .sgcard.sem-bad{border-top-color:var(--bad)} .sgcard.sem-warn{border-top-color:var(--warn)} .sgcard.sem-good{border-top-color:var(--good)}
+  .sgcard.flash{box-shadow:0 0 0 3px var(--rose-t),var(--shadow-lg)}
+  .sghead{display:flex;justify-content:space-between;align-items:center;gap:8px;flex-wrap:wrap}
+  .sgname{font-size:16px}
+  .sglinks{display:flex;gap:6px}
+  .sglink{appearance:none;border:1px solid var(--line);background:none;border-radius:999px;font:inherit;font-size:11.5px;padding:3px 10px;color:var(--soft);cursor:pointer}
+  .sglink:hover{border-color:var(--rose);color:var(--rose)}
+  .sglab{font-size:10.5px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--soft)}
+  .sgal{font-size:13px;border-radius:9px;padding:7px 10px;margin-top:8px}
+  .sgal.sg-r{background:#FDECEC;color:#8f1d1d} .sgal.sg-y{background:var(--gold-t);color:#7a520c}
+  .sgks{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:6px}
+  @media (max-width:600px){.sgks{grid-template-columns:repeat(2,1fr)}}
+  .sgk{background:var(--panel2);border:1px solid var(--line);border-radius:10px;padding:8px 10px}
+  .sgk .k{font-size:11px;color:var(--soft)} .sgk .v{font-weight:700;font-size:15px} .sgk .s{font-size:11px;color:var(--faint)}
+  .dlt{font-size:11px;font-weight:700;margin-left:3px} .dlt.good{color:var(--good)} .dlt.bad{color:var(--bad)} .dlt.flat{color:var(--faint)}
+  .sgct{width:100%;border-collapse:collapse;margin-top:10px;font-size:12.5px}
+  .sgct th{text-align:left;font-size:10.5px;color:var(--soft);font-weight:600;border-bottom:1px solid var(--line);padding:4px 6px}
+  .sgct td{border-bottom:1px solid var(--line);padding:5px 6px} .sgct td.num,.sgct th:not(:first-child){text-align:right;white-space:nowrap}
+  .sgdot{display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--idle);margin-right:6px} .sgdot.on{background:var(--good)}
+  .sgman{margin-top:10px;font-size:12.5px;background:var(--rose-t);border-radius:9px;padding:7px 10px}
+  .sgrev{margin-top:12px;border:1px dashed var(--line);border-radius:11px;padding:10px 12px;background:var(--panel2)}
+  .sgrevh{display:flex;justify-content:space-between;align-items:center;gap:8px;flex-wrap:wrap}
+  .sgmove{font-size:13px;margin:6px 0}
+  .sgimp{font-size:13px;margin-top:6px} .sgnext{margin-top:5px}
+  .sgb{font-size:11.5px;font-weight:600;border-radius:999px;padding:2px 9px;white-space:nowrap}
+  .b-done{background:#E5F3EA;color:#16803a} .b-due{background:var(--rose-t);color:var(--rose-d)} .b-late{background:#FDECEC;color:#8f1d1d} .b-wait{background:#EEF1F5;color:var(--soft)}
+  .sgnote{margin-top:10px} .sgta{width:100%;min-height:46px;border:1px solid var(--line);border-radius:9px;padding:7px 9px;font:inherit;font-size:12.5px;resize:vertical;margin-top:4px;background:var(--panel)}
+  table.camps tr.camprow{cursor:pointer} table.camps tr.camprow:hover td{background:var(--rose-t)}
+  table.camps tr.csel td{background:var(--rose-t)} table.camps tr.coff td{color:var(--soft)}
+  .cman{font-size:11.5px;color:var(--rose-d);margin-top:2px}
+  .objbanner.camp-on{border-color:var(--rose);background:var(--rose-t)}
+  .interp.manual{background:var(--rose-t)}
+
 </style>
 
 <div class="wrap">
@@ -460,7 +502,8 @@
     <div class="clock" id="clock"></div>
   </div>
   <div class="tabs" role="tablist">
-    <button class="tab" role="tab" aria-selected="true" data-tab="general"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg><span>General</span></button>
+    <button class="tab" role="tab" aria-selected="true" data-tab="seguimiento"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3 8-8"/><path d="M20 12v7a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h9"/></svg><span>Seguimiento</span></button>
+    <button class="tab" role="tab" aria-selected="false" data-tab="general"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg><span>General</span></button>
     <button class="tab" role="tab" aria-selected="false" data-tab="dashboard"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="20" x2="4" y2="12"/><line x1="10" y1="20" x2="10" y2="5"/><line x1="16" y1="20" x2="16" y2="9"/><line x1="21" y1="20" x2="3" y2="20"/></svg><span>Dashboard</span></button>
     <button class="tab" role="tab" aria-selected="false" data-tab="analisis"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.5" y2="16.5"/></svg><span>Análisis de pauta</span></button>
     <button class="tab" role="tab" aria-selected="false" data-tab="reporte"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5"/><line x1="9" y1="13" x2="15" y2="13"/><line x1="9" y1="17" x2="13" y2="17"/></svg><span>Reporte al cliente</span></button>
@@ -468,13 +511,17 @@
     <button class="tab" role="tab" aria-selected="false" data-tab="estrategia"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l2.1 4.9L19 10l-4.9 2.1L12 17l-2.1-4.9L5 10l4.9-2.1z"/><circle cx="18" cy="18" r="2.4"/></svg><span>Estrategia de contenido</span></button>
   </div>
 
-  <section class="panel on" id="p-general" role="tabpanel">
+  <section class="panel on" id="p-seguimiento" role="tabpanel">
+    <div id="body-seg"></div>
+  </section>
+  <section class="panel" id="p-general" role="tabpanel">
     <div class="rangebar" id="range-gen"></div>
     <div id="body-general"></div>
   </section>
   <section class="panel" id="p-dashboard" role="tabpanel">
     <div class="barra"><span class="lab">Cliente</span><div class="picker" id="pick-dash"></div></div>
     <div class="rangebar" id="range-dash"></div>
+    <div class="barra" id="campbar" hidden></div>
     <div id="body-dash"></div>
   </section>
   <section class="panel" id="p-analisis" role="tabpanel">
@@ -576,11 +623,25 @@ const DMIN=ALLDATES[0], DMAX=ALLDATES[ALLDATES.length-1];
 function addDays(iso,n){const p=iso.split('-').map(Number);const dt=new Date(Date.UTC(p[0],p[1]-1,p[2]));dt.setUTCDate(dt.getUTCDate()+n);return dt.toISOString().slice(0,10);}
 function daysBetween(a,b){return Math.round((Date.parse(b)-Date.parse(a))/864e5);}
 const LAST7_FROM=addDays(DMAX,-6);
-let RANGE={from:DMIN,to:DMAX,preset:'30d'};
+const LAST30_FROM=(addDays(DMAX,-29)>DMIN)?addDays(DMAX,-29):DMIN;
+let RANGE={from:LAST30_FROM,to:DMAX,preset:'30d'};
 /* Lista de marcas = TODAS las que traiga data.js (data-driven). Así cuando el
    sistema suma un cliente nuevo (p.ej. Pulpa Verde, o el de mañana), aparece
    solo en el hub sin tocar este archivo. */
 const CLIENTS=Object.keys(DATA);
+/* ===== Campañas (oct-2026) =====
+   Cada anuncio del hub pertenece a una campaña (D.adcamp -> D.camps). En el
+   Dashboard se puede elegir UNA campaña y todo (KPIs, gráfico, embudo,
+   creativos) se recalcula sólo con ella, con SU propio resultado:
+   compras (conversiones), conversaciones (mensajes), leads o clics (tráfico). */
+let CAMPCTX=null;                 // {b, ci} mientras se dibuja el Dashboard filtrado
+const DASHCAMP={};                // b -> índice de campaña elegida (o null = todas)
+const KIND2OBJ={purchase:'purchase',lead:'lead',msg:'msg',traffic:'traffic',other:'traffic'};
+function campOf(D,a){ return (D.adcamp&&D.adcamp[a]!=null)?D.adcamp[a]:-1; }
+function rowIn(D,b,r,ci){ if(ci==null) return true; return campOf(D,r[1])===ci; }
+function ctxCamp(b){ return (CAMPCTX&&CAMPCTX.b===b)?CAMPCTX.ci:null; }
+function campKind(D,ci){ return (D.campkind&&D.campkind[ci])||'other'; }
+function campMeta(D,ci){ const nm=(D.camps||[])[ci]; return (D.campaigns||[]).find(c=>c.name===nm)||{name:nm}; }
 /* ---- Última actualización por marca ----
    D.upd = fecha real del último pull desde Meta (la escribe engine.fetch_meta).
    Si una marca falla su actualización, conserva la fecha vieja y queda atrasada
@@ -608,8 +669,8 @@ function updBadge(b){
   if(u.staleDate) return W(u.txt,'Quedó atrasada respecto de las demás.');
   return u.txt;
 }
-const OBJLBL={ic:'Ventas · optimizando a Iniciar pago (validando checkout)',purchase:'Ventas · optimizando a Compra',lead:'Clientes potenciales (leads)',msg:'Mensajes de WhatsApp (tráfico)'};
-const OBJSHORT={ic:'Iniciar pago',purchase:'Compra',lead:'Leads',msg:'Mensajes de WhatsApp'};
+const OBJLBL={ic:'Ventas · optimizando a Iniciar pago (validando checkout)',purchase:'Ventas · optimizando a Compra',lead:'Clientes potenciales (leads)',msg:'Mensajes de WhatsApp (tráfico)',traffic:'Tráfico / interacción (clics)'};
+const OBJSHORT={ic:'Iniciar pago',purchase:'Compra',lead:'Leads',msg:'Mensajes de WhatsApp',traffic:'Clics (tráfico)'};
 /* Objetivo por el que optimiza la cuenta HOY. Si hay fases de optimización
    declaradas (D.optphases), usa la última (la vigente). */
 function objText(D){
@@ -618,8 +679,8 @@ function objText(D){
   return OBJSHORT[D.obj]||'—';
 }
 /* Objetivos SIN ROAS (no hay conversión de venta): leads y mensajes. */
-function isLead(o){return o==='lead'||o==='msg';}
-function resWord(o){return o==='lead'?'leads':(o==='msg'?'conversaciones':'compras');}
+function isLead(o){return o==='lead'||o==='msg'||o==='traffic';}
+function resWord(o){return o==='lead'?'leads':(o==='msg'?'conversaciones':(o==='traffic'?'clics':'compras'));}
 /* ¿El resultado de esta marca se está midiendo? (msg: hoy el export no trae las
    conversaciones de WhatsApp -> no disponible). */
 function resultTracked(D){return D.obj!=='msg';}
@@ -630,11 +691,13 @@ function fmtD(iso){const p=iso.split('-');return (+p[2])+' '+MES[+p[1]-1];}
 function rangeLen(){return daysBetween(RANGE.from,RANGE.to)+1;}
 function prevRange(){const len=rangeLen();const to=addDays(RANGE.from,-1);return {from:addDays(to,-(len-1)),to};}
 
-function agg(b,from,to){
+function agg(b,from,to,ciArg){
   const D=DATA[b]; const T={}; FIELDS.forEach(k=>T[k]=0);
   const per={}, daily={};
+  const ci=(ciArg!==undefined)?ciArg:ctxCamp(b);
   for(const r of D.rows){
     const dt=D.dates[r[0]]; if(dt<from||dt>to) continue;
+    if(!rowIn(D,b,r,ci)) continue;
     for(const k of FIELDS) T[k]+=r[FI[k]];
     const a=r[1]; if(!per[a]){per[a]={}; FIELDS.forEach(k=>per[a][k]=0);}
     for(const k of FIELDS) per[a][k]+=r[FI[k]];
@@ -649,9 +712,9 @@ function kpis(T,obj){
     ctr:pct(lc,impr),cpm:impr?1000*spend/impr:0,cpc:lc?spend/lc:0,
     roas:spend?T.pval/spend:0,
     purch:T.purch,leads:T.leads,pval:T.pval,
-    result: isLead(obj)?T.leads:T.purch,
+    result: obj==='traffic'?T.lc:(isLead(obj)?T.leads:T.purch),
     atc:T.atc,ic:T.ic,
-    cpa: isLead(obj)?(T.leads?spend/T.leads:0):(T.purch?spend/T.purch:0)};
+    cpa: obj==='traffic'?(T.lc?spend/T.lc:0):(isLead(obj)?(T.leads?spend/T.leads:0):(T.purch?spend/T.purch:0))};
 }
 /* ===== Significancia / interpretabilidad de cada métrica =====
    Una métrica sólo es "interpretable" si tiene volumen suficiente para significancia:
@@ -689,7 +752,8 @@ function adStatusMap(b){
   const D=DATA[b]; const through=(D.through||(D.dates&&D.dates.length?D.dates[D.dates.length-1]:null));
   const real=D.adstatus||{};   // nombre -> effective_status de Meta (si fetch_meta lo trajo)
   const act={};  // ad idx -> {first,last}
-  for(const r of D.rows){ if(r[FI.impr]>0){ const a=r[1], dt=D.dates[r[0]];
+  const ci=ctxCamp(b);
+  for(const r of D.rows){ if(r[FI.impr]>0 && rowIn(D,b,r,ci)){ const a=r[1], dt=D.dates[r[0]];
     if(!act[a]) act[a]={first:dt,last:dt}; else { if(dt<act[a].first)act[a].first=dt; if(dt>act[a].last)act[a].last=dt; } } }
   const map={};
   for(const a in act){ const {first,last}=act[a]; const name=D.ads[a];
@@ -837,8 +901,8 @@ function arrowHTML(t){
 
 /* ---------- General ---------- */
 function periodLabel(){return fmtD(RANGE.from)+' – '+fmtD(RANGE.to)+' 2026 · '+rangeLen()+' días';}
-function periodShort(){if(RANGE.preset==='7d')return 'últ. 7 días';if(RANGE.preset==='30d')return 'últ. 30 días';return fmtD(RANGE.from)+'–'+fmtD(RANGE.to);}
-function periodPhrase(){if(RANGE.preset==='7d')return 'En los últimos 7 días';if(RANGE.preset==='30d')return 'En los últimos 30 días';return 'Entre el '+fmtD(RANGE.from)+' y el '+fmtD(RANGE.to);}
+function periodShort(){if(RANGE.preset==='7d')return 'últ. 7 días';if(RANGE.preset==='30d')return 'últ. 30 días';if(RANGE.preset==='all')return 'todo el historial';return fmtD(RANGE.from)+'–'+fmtD(RANGE.to);}
+function periodPhrase(){if(RANGE.preset==='7d')return 'En los últimos 7 días';if(RANGE.preset==='30d')return 'En los últimos 30 días';if(RANGE.preset==='all')return 'Desde el inicio';return 'Entre el '+fmtD(RANGE.from)+' y el '+fmtD(RANGE.to);}
 function periodKey(){return RANGE.preset==='cust'?('c'+RANGE.from+RANGE.to):RANGE.preset;}
 const SEV={r:0,y:1,g:2,i:3};
 /* "Con nosotros": tiempo desde el inicio de pauta hasta hoy (o hasta el fin, si es perdida). */
@@ -887,7 +951,9 @@ function renderGeneral(){
   const built=rows.map(x=>{
     const D=x.D, msg=(D.obj==='msg'), lead=isLead(D.obj), S=sig(x.K,D);
     const msgNoData=msg && !(x.K.result>0);
-    const res=msgNoData?'<span style="color:var(--soft)">s/d</span>':(lead?money(x.K.result)+' '+resWord(D.obj):money(x.K.result)+' compras');
+    let res=msgNoData?'<span style="color:var(--soft)">s/d</span>':(lead?money(x.K.result)+' '+resWord(D.obj):money(x.K.result)+' compras');
+    const MG=manualIn(D,RANGE.from,RANGE.to,null);
+    if(MG.any) res+=`<div class="why" title="Ventas que reportó la marca (WhatsApp, etc.) en el período. ROAS real = monto reportado / gasto.">+${money(MG.sales)} ventas reportadas · ROAS real ${dec(x.K.spend?MG.amount/x.K.spend:0)}x</div>`;
     // ROAS: sólo se muestra "limpio" si es interpretable; si no, va atenuado con * y aclaración.
     const roas = (msg||lead) ? '—'
       : (S.roas ? dec(x.K.roas)+'x'
@@ -1030,8 +1096,8 @@ function sigHTML(x){
 }
 /* mini time-series: full history (<=30d) */
 function dailySeries(b){
-  const D=DATA[b]; const m={};
-  for(const r of D.rows){const dt=D.dates[r[0]];if(!m[dt])m[dt]={spend:0,purch:0,pval:0,atc:0,ic:0,leads:0};
+  const D=DATA[b]; const m={}; const ci=ctxCamp(b);
+  for(const r of D.rows){if(!rowIn(D,b,r,ci))continue;const dt=D.dates[r[0]];if(!m[dt])m[dt]={spend:0,purch:0,pval:0,atc:0,ic:0,leads:0};
     m[dt].spend+=r[FI.spend];m[dt].purch+=r[FI.purch];m[dt].pval+=r[FI.pval];
     m[dt].atc+=r[FI.atc];m[dt].ic+=r[FI.ic];m[dt].leads+=r[FI.leads];}
   return Object.keys(m).sort().map(d=>({d,dEnd:d,...m[d],roas:m[d].spend?m[d].pval/m[d].spend:0}));
@@ -1369,21 +1435,98 @@ function hitosHTML(b){
   }
   return out;
 }
-/* Campañas de la cuenta: prendida / apagada (estado real de Meta). */
-const OBJCAMP={OUTCOME_SALES:'Conversiones',CONVERSIONS:'Conversiones',PRODUCT_CATALOG_SALES:'Ventas de catálogo',OUTCOME_TRAFFIC:'Tráfico',LINK_CLICKS:'Tráfico',OUTCOME_ENGAGEMENT:'Interacción / Mensajes',MESSAGES:'Mensajes',OUTCOME_LEADS:'Clientes potenciales',OUTCOME_AWARENESS:'Reconocimiento'};
-function campaignsHTML(D){
-  const cs=(D.campaigns||[]).filter(c=>c.spend>0||c.status==='ACTIVE');
-  if(!cs.length) return '';
-  const on=c=>c.status==='ACTIVE';
-  const lbl=st=>st==='ACTIVE'?'<span class="act act-g">● PRENDIDA</span>':(st?'<span class="act act-i" style="color:var(--soft)">○ APAGADA</span>':'<span style="color:var(--soft)">—</span>');
-  const rows=cs.sort((a,b)=>(on(b)-on(a))||(b.spend-a.spend)).map(c=>`<tr${on(c)?'':' style="color:var(--soft)"'}>
-    <td><b>${esc(c.name)}</b></td><td>${OBJCAMP[c.objective]||esc(c.objective||'—')}</td><td>${lbl(c.status)}</td>
-    <td class="num">$${money(c.spend)} ${D.cur}</td><td style="white-space:nowrap">${c.first?fmtD(c.first):'—'} → ${c.last?fmtD(c.last):'—'}</td></tr>`).join('');
-  return `<div class="sec-h">Campañas</div>
-    <div class="sec-s">Estado real en Meta. Los números del tablero suman sólo las campañas que maneja MAIA.</div>
-    <div class="scroll"><table class="cmp"><tr><th>Campaña</th><th>Objetivo</th><th>Estado</th><th>Gasto (35 días)</th><th>Con gasto</th></tr>${rows}</table></div>`;
+/* ===== Ventas que REPORTA LA MARCA (config/manual_results.yaml) =====
+   Se reparten parejo por día dentro de su período (from→to) para poder
+   filtrarlas por fechas. campName: sólo las atribuidas a esa campaña. */
+function manualIn(D,from,to,campName){
+  let sales=0,amount=0,n=0,last=null;
+  for(const m of (D.manual||[])){
+    if(campName!=null && (m.campaign||'')!==campName) continue;
+    const f=m.from||m.reported, t=m.to||m.reported; if(!f||!t) continue;
+    const a=f>from?f:from, z=t<to?t:to; const ov=daysBetween(a,z)+1; if(ov<=0) continue;
+    const share=ov/(daysBetween(f,t)+1);
+    sales+=(+m.sales||0)*share; amount+=(+m.amount||0)*share; n++;
+    if(!last||(m.reported||'')>last) last=m.reported||null;
+  }
+  return {sales,amount,n,last,any:n>0};
 }
+const ALLF='0000-01-01', ALLT='9999-12-31';
+/* Totales históricos de UNA campaña (todo lo que hay en la data + archivo de campañas). */
+function campTotals(b,ci){
+  const D=DATA[b], c=campMeta(D,ci), A=agg(b,ALLF,ALLT,ci), R=A.T;
+  const ds=Object.keys(A.daily).filter(d=>A.daily[d].spend>0).sort();
+  const useRows=R.spend>0 && !c.archived;
+  const T=useRows
+    ? {spend:R.spend,purch:R.purch,pval:R.pval,msgs:Math.max(R.msgs||0,c.msg||0),lds:Math.max(R.lds||0,c.leads||0),lc:R.lc,impr:R.impr,
+       first:ds[0]||c.first,last:ds[ds.length-1]||c.last}
+    : {spend:c.spend||0,purch:c.purch||0,pval:c.pval||0,msgs:c.msg||0,lds:c.leads||0,lc:c.lc||0,impr:c.impr||0,first:c.first,last:c.last};
+  return {c,T,kind:campKind(D,ci)};
+}
+function campResult(kind,T){
+  if(kind==='purchase') return {n:T.purch,w:'compras',cost:T.purch?T.spend/T.purch:0,roas:T.spend?T.pval/T.spend:null};
+  if(kind==='msg') return {n:T.msgs,w:'conversaciones',cost:T.msgs?T.spend/T.msgs:0,roas:null};
+  if(kind==='lead') return {n:T.lds,w:'leads',cost:T.lds?T.spend/T.lds:0,roas:null};
+  return {n:T.lc,w:'clics',cost:T.lc?T.spend/T.lc:0,roas:null};
+}
+const KINDLBL={purchase:'Conversiones (venta)',msg:'Mensajes / WhatsApp',lead:'Clientes potenciales',traffic:'Tráfico / interacción',other:'Otro'};
+const OBJCAMP={OUTCOME_SALES:'Conversiones',CONVERSIONS:'Conversiones',PRODUCT_CATALOG_SALES:'Ventas de catálogo',OUTCOME_TRAFFIC:'Tráfico',LINK_CLICKS:'Tráfico',OUTCOME_ENGAGEMENT:'Interacción / Mensajes',MESSAGES:'Mensajes',OUTCOME_LEADS:'Clientes potenciales',OUTCOME_AWARENESS:'Reconocimiento'};
+/* Tabla de TODAS las campañas que tuvo la marca con MAIA, cada una con SU resultado. */
+function campaignsHTML(b){
+  const D=DATA[b]; const camps=(D.camps||[]).map((nm,ci)=>({ci,...campTotals(b,ci)})).filter(x=>x.T.spend>0||x.c.status==='ACTIVE');
+  if(!camps.length) return '';
+  const on=x=>x.c.status==='ACTIVE';
+  camps.sort((a,z)=>(on(z)-on(a))||String(z.T.last||'').localeCompare(String(a.T.last||''))||(z.T.spend-a.T.spend));
+  const sel=DASHCAMP[b];
+  const lbl=st=>st==='ACTIVE'?'<span class="act act-g">● PRENDIDA</span>':(st?'<span class="act act-i" style="color:var(--soft)">○ APAGADA</span>':'<span style="color:var(--soft)">—</span>');
+  let totManual=0;
+  const rows=camps.map(x=>{
+    const r=campResult(x.kind,x.T), M=manualIn(D,ALLF,ALLT,x.c.name);
+    totManual+=M.n;
+    const res=`<b>${money(r.n)}</b> ${r.w}`;
+    const cost=r.n?'$'+money(r.cost):'—';
+    const roas=r.roas!=null?(dec(r.roas)+'x'):'—';
+    const man=M.any?`<div class="cman">+ ${money(M.sales)} ventas reportadas · $${money(M.amount)} · <b>ROAS real ${dec(x.T.spend?M.amount/x.T.spend:0)}x</b></div>`:'';
+    return `<tr class="camprow${sel===x.ci?' csel':''}${on(x)?'':' coff'}" data-ci="${x.ci}" title="Ver el dashboard sólo de esta campaña">
+      <td><b>${esc(x.c.name)}</b>${x.c.archived?' <span class="chsrc auto">archivo</span>':''}${man}</td>
+      <td data-l="Objetivo">${OBJCAMP[x.c.objective]||KINDLBL[x.kind]||'—'}</td>
+      <td data-l="Estado">${lbl(x.c.status)}</td>
+      <td data-l="Fechas" style="white-space:nowrap">${x.T.first?fmtD(x.T.first):'—'} → ${x.T.last?fmtD(x.T.last):'—'}</td>
+      <td class="num" data-l="Gasto">$${money(x.T.spend)}</td>
+      <td class="num" data-l="Resultado">${res}</td>
+      <td class="num" data-l="Costo/result.">${cost}</td>
+      <td class="num" data-l="ROAS (Meta)">${roas}</td></tr>`;}).join('');
+  const unas=manualIn(D,ALLF,ALLT,'');   // ventas reportadas sin campaña asignada
+  const unasRow=unas.any?`<tr class="coff"><td colspan="8"><span class="cman" style="display:inline">📋 Además, la marca reportó <b>${money(unas.sales)} ventas</b> ($${money(unas.amount)} ${D.cur}) sin campaña asignada.</span></td></tr>`:'';
+  const W=(D.campaigns||[]).map(c=>c.window_from).filter(Boolean).sort()[0];
+  return `<div class="sec-h">Campañas con MAIA</div>
+    <div class="sec-s">Todas las campañas que tuvo la marca con nosotros, cada una medida por <b>su propio resultado</b> (compras, conversaciones de WhatsApp, leads o clics). Totales de todo el historial${W?' disponible (desde el '+fmtD(W)+')':''}. <b>Tocá una fila</b> para ver el dashboard sólo de esa campaña. Moneda: ${D.cur}.</div>
+    <div class="scroll"><table class="cmp camps"><tr><th>Campaña</th><th>Objetivo</th><th>Estado</th><th>Fechas</th><th>Gasto</th><th>Resultado</th><th>Costo/result.</th><th>ROAS (Meta)</th></tr>${rows}${unasRow}</table></div>`;
+}
+function campBar(b){
+  const D=DATA[b], el=document.getElementById('campbar'); if(!el) return;
+  const cs=(D.camps||[]).map((nm,ci)=>({ci,nm,c:campMeta(D,ci)})).filter(x=>(x.c.spend||0)>0||x.c.status==='ACTIVE'||agg(b,ALLF,ALLT,x.ci).T.spend>0);
+  if(cs.length<1){el.innerHTML='';el.hidden=true;return;}
+  el.hidden=false;
+  const cur=DASHCAMP[b];
+  el.innerHTML=`<span class="lab">Campaña</span><select class="dd" id="sel-camp"><option value="">Todas las campañas de MAIA (${cs.length})</option>${cs.map(x=>`<option value="${x.ci}" ${cur===x.ci?'selected':''}>${esc(x.nm)} · ${KINDLBL[campKind(D,x.ci)]}${x.c.status==='ACTIVE'?' · prendida':''}</option>`).join('')}</select>`;
+  el.querySelector('select').addEventListener('change',e=>{const v=e.target.value;DASHCAMP[b]=(v===''?null:+v);renderDash(b);});
+}
+/* Dashboard: si hay una campaña elegida, todo se calcula sólo con ella y con
+   SU objetivo (compras / conversaciones / leads / clics). */
 function renderDash(id){
+  const D=DATA[id]; if(!D) return;
+  const ci=(DASHCAMP[id]!=null)?DASHCAMP[id]:null;
+  const o=D.obj, ph=D.optphases;
+  if(ci!=null){ CAMPCTX={b:id,ci}; D.obj=KIND2OBJ[campKind(D,ci)]||'traffic'; D.optphases=[]; }
+  try{ renderDashInner(id,ci); } finally { CAMPCTX=null; D.obj=o; D.optphases=ph; }
+  campBar(id);
+  const cl=document.getElementById('campclear'); if(cl) cl.addEventListener('click',e=>{e.preventDefault();DASHCAMP[id]=null;renderDash(id);});
+  document.querySelectorAll('#body-dash .camprow').forEach(tr=>tr.addEventListener('click',()=>{
+    const v=+tr.dataset.ci; DASHCAMP[id]=(DASHCAMP[id]===v?null:v); renderDash(id);
+    const cb=document.getElementById('campbar'); if(cb) cb.scrollIntoView({behavior:'smooth',block:'start'});
+  }));
+}
+function renderDashInner(id,ci){
   const x=compute(id),D=x.D,K=x.K,KP=x.KP,lead=isLead(D.obj),msg=(D.obj==='msg');
   const msgNoData=msg && !(K.result>0);   // mensajes sin conversaciones en el export
   const S=sig(K,D);
@@ -1421,14 +1564,20 @@ function renderDash(id){
   else if(msg) interp=`<div class="interp">🎯 <b>Objetivo Mensajes de WhatsApp.</b> El resultado son <b>${money(K.result)} conversaciones</b> a $${money(K.cpa)} ${D.cur} cada una. No hay ROAS (no es venta): se evalúa por las conversaciones y las señales de arriba (CTR, CPM).</div>`;
   else if(!lead && !S.roas) interp=`<div class="interp">⚠ <b>El ROAS todavía no es interpretable</b> en este período: hay ${K.purch} de las ${S.cCS} compras que hacen falta para que sea estadísticamente confiable. Mientras tanto, ${S.alt}.</div>`;
   else if(lead && !S.cpa) interp=`<div class="interp">⚠ <b>El costo por resultado todavía no es firme</b> (${money(K.result)} de ${S.cLS} ${resWord(D.obj)}). Mientras tanto, ${S.alt}.</div>`;
-  const objbanner=`<div class="objbanner">🎯 <span class="obk">Optimiza por</span> <b>${objText(D)}</b>${(D.optphases&&D.optphases.length>1)?` <span class="objsub">· cambió de optimización durante el historial (ver colores en el gráfico)</span>`:''}</div>`;
+  let objbanner=`<div class="objbanner">🎯 <span class="obk">Optimiza por</span> <b>${objText(D)}</b>${(D.optphases&&D.optphases.length>1)?` <span class="objsub">· cambió de optimización durante el historial (ver colores en el gráfico)</span>`:''}</div>`;
+  if(ci!=null){ const cm=campMeta(D,ci);
+    objbanner=`<div class="objbanner camp-on">🔎 <span class="obk">Mirando sólo la campaña</span> <b>${esc(cm.name)}</b> <span class="objsub">· ${KINDLBL[campKind(D,ci)]} · resultado = ${resWord(D.obj)} · <a href="#" id="campclear">ver todas</a></span></div>`; }
+  // Ventas que reportó la marca en el período (WhatsApp, etc.) -> ROAS real.
+  const MM=manualIn(D,RANGE.from,RANGE.to,ci!=null?campMeta(D,ci).name:null);
+  const manualBox=MM.any?`<div class="interp manual">📋 <b>Ventas reportadas por la marca en el período:</b> ${money(MM.sales)} ventas · $${money(MM.amount)} ${D.cur}${K.spend?` · <b>ROAS real ${dec(MM.amount/K.spend)}x</b> (vs ${dec(K.roas)}x que ve Meta)`:''}. Son ventas que Meta no atribuye (WhatsApp, etc.); se cargan cuando la marca las informa${MM.last?' — último reporte: '+fmtD(MM.last):''}.</div>`:'';
   document.getElementById('body-dash').innerHTML=`
     <div class="dhead"><h2>${D.name}</h2><div class="meta">${OBJLBL[D.obj]} · ${D.cur} · ${periodLabel()}</div>
     <div class="meta">🔄 <b>Última actualización:</b> ${updBadge(id)} · datos automáticos de Meta</div></div>
     ${objbanner}
     <div class="tiles">${tiles}</div>
     ${interp}
-    ${campaignsHTML(D)}
+    ${manualBox}
+    ${campaignsHTML(id)}
     <div class="legend"><b>Color</b> sólo cuando la métrica tiene volumen para ser significativa: <span class="lg good">verde bien</span> <span class="lg warn">amarillo atención</span> <span class="lg bad">rojo mal</span> <span class="lg idle">gris = sin señal / no interpretable aún</span></div>
     <div class="legend">Flechas <span class="arrow a-up good">↑</span><span class="arrow a-down bad">↓</span> = variación de cada KPI vs. el <b>período inmediatamente anterior de igual duración</b> (si la marca no tenía pauta antes, compara la 2ª mitad contra la 1ª del período elegido). Verde = mejora · rojo = empeora · → = estable · · = sin período previo.</div>
     <div class="sec-h">Evolución de la pauta (período elegido)</div>
@@ -1451,6 +1600,7 @@ function buildRangeBar(hostId){
     <select class="dd" data-role="preset">
       <option value="7d">Última semana</option>
       <option value="30d" selected>Últimos 30 días</option>
+      <option value="all">Desde el inicio (todo el historial)</option>
       <option value="cust">Fechas exactas…</option>
     </select>
     <span class="cust" data-cust hidden>del <input type="date" data-from min="${DMIN}" max="${DMAX}" value="${RANGE.from}"> al <input type="date" data-to min="${DMIN}" max="${DMAX}" value="${RANGE.to}"></span>
@@ -1458,7 +1608,8 @@ function buildRangeBar(hostId){
   el.querySelector('[data-role=preset]').addEventListener('change',e=>{
     const p=e.target.value;
     if(p==='7d')RANGE={from:LAST7_FROM,to:DMAX,preset:'7d'};
-    else if(p==='30d')RANGE={from:DMIN,to:DMAX,preset:'30d'};
+    else if(p==='30d')RANGE={from:LAST30_FROM,to:DMAX,preset:'30d'};
+    else if(p==='all')RANGE={from:DMIN,to:DMAX,preset:'all'};
     else RANGE.preset='cust';
     applyRange();
   });
@@ -1789,6 +1940,204 @@ function goReporte(cid){
   renderReporte(cid);
 }
 
+
+/* =====================================================================
+   SEGUIMIENTO DIARIO (oct-2026)
+   La pantalla para llevar el día a día de cada cliente en 2 minutos:
+   · qué hay que hacer HOY (revisiones que vencen + alertas),
+   · cómo vienen los últimos 3 días vs los 3 anteriores (total y por campaña),
+   · el último cambio que hicimos, su efecto y CUÁNDO revisarlo.
+   REGLA MAIA: después de un cambio, 3 días sin tocar y se vuelve a revisar.
+   ===================================================================== */
+const REVIEW_DAYS=3;
+const NOW=(function(){try{return new Date().toLocaleDateString('en-CA',{timeZone:'America/Argentina/Buenos_Aires'});}catch(e){return TODAY;}})();
+/* Cambios que cuentan para la regla de 3 días (acciones nuestras, no ruido de Meta). */
+function isTrackChange(ev){
+  const k=ev.kind;
+  if(k==='seg'){ const n=String(ev.name||'').toLowerCase(); return !(n.includes('asa_auto')||n.includes('auto_custom')); }
+  return ['budget','budget0','bid','objetivo','ad_new','ad_on','ad_off','ad_del','campaña_on','campaña_off','conjunto_on','conjunto_off','camp_new','set_new','acct_pause'].includes(k);
+}
+/* Agrupa los cambios por día: cada día con cambios = una "movida". */
+function movesOf(b){
+  const ev=groupChanges(DATA[b]&&DATA[b].changes).filter(isTrackChange).filter(e=>/^\d{4}-\d{2}-\d{2}$/.test(String(e.date)));
+  const by={}; ev.forEach(e=>{(by[e.date]=by[e.date]||[]).push(e);});
+  return Object.keys(by).sort().reverse().map(d=>({date:d,items:by[d]}));
+}
+function revKey(b,d){return 'maia_rev_'+b+'_'+d;}
+/* Problema de cuenta (pago / período de gracia) según el último estado de la cuenta. */
+function acctIssue(b){
+  const raw=(DATA[b]&&DATA[b].changes)||[];
+  const e=raw.find(x=>/estado de la cuenta/i.test(x.text||''));
+  if(!e) return null;
+  const m=String(e.text).match(/→\s*([^()]+)\)\s*$/); const st=m?m[1].trim():'';
+  if(/gracia|pago|deshabilit|desactiv|cerrad/i.test(st)) return {date:e.date,st};
+  return null;
+}
+/* Resultado principal de la marca (o de una campaña) en una ventana. */
+function winK(b,from,to,ci,obj){ return kpis(agg(b,from,to,ci).T,obj); }
+function fmtCost(K,obj){ return K.result?('$'+money(K.cpa)):'—'; }
+function deltaTxt(cur,prev,betterUp,unit){
+  if(!(prev>0)||!isFinite(cur)) return '';
+  const d=(cur-prev)/prev; if(Math.abs(d)<0.05) return '<span class="dlt flat">=</span>';
+  const good=betterUp?(d>0):(d<0);
+  return `<span class="dlt ${good?'good':'bad'}">${d>0?'↑':'↓'}${Math.round(Math.abs(d)*100)}%</span>`;
+}
+/* Efecto de un cambio: 3 días antes vs los días completos posteriores (máx. 3). */
+function impact(b,d,obj){
+  const D=DATA[b]; const through=D.through||(D.dates||[]).slice(-1)[0];
+  const bFrom=addDays(d,-REVIEW_DAYS), bTo=addDays(d,-1);
+  const aFrom=addDays(d,1), aTo=(addDays(d,REVIEW_DAYS)<through)?addDays(d,REVIEW_DAYS):through;
+  const post=Math.max(0,daysBetween(aFrom,aTo)+1);
+  const Kb=winK(b,bFrom,bTo,null,obj), Ka=post?winK(b,aFrom,aTo,null,obj):null;
+  const sales=!isLead(obj);
+  if(!post) return {post,verdict:'wait',txt:'Todavía no hay ningún día completo de datos después del cambio.'};
+  const perDay=(K,n)=>K.result/n;
+  const rb=perDay(Kb,REVIEW_DAYS), ra=perDay(Ka,post);
+  const sb=Kb.spend/REVIEW_DAYS, sa=Ka.spend/post;
+  const w=resWord(obj);
+  let verdict='flat', txt;
+  const enough=(Kb.result>=3&&Ka.result>=2)||(sales&&Kb.purch>=2&&Ka.purch>=2);
+  if(!enough){
+    const ct=deltaTxt(Ka.ctr,Kb.ctr,true);
+    txt=`Poca data de ${w} para juzgar (${money(Kb.result)} antes · ${money(Ka.result)} después). Mientras tanto mirá el CTR: ${dec(Kb.ctr)}% → ${dec(Ka.ctr)}% ${ct}.`;
+    verdict=(Kb.ctr>0&&Ka.ctr<Kb.ctr*0.8)?'ctrdown':((Kb.ctr>0&&Ka.ctr>Kb.ctr*1.15)?'ctrup':'thin');
+  } else {
+    const main = sales ? {lab:'ROAS',b:Kb.roas,a:Ka.roas,up:true,f:v=>dec(v)+'x'} : {lab:'costo por '+w.replace(/s$/,''),b:Kb.cpa,a:Ka.cpa,up:false,f:v=>'$'+money(v)};
+    const dm=main.b?(main.a-main.b)/main.b:0; const better=main.up?dm>0.1:dm<-0.1, worse=main.up?dm<-0.15:dm>0.15;
+    verdict=better?'better':(worse?'worse':'flat');
+    txt=`${main.lab}: <b>${main.f(main.b)} → ${main.f(main.a)}</b> ${deltaTxt(main.a,main.b,main.up)} · ${w}/día ${dec(rb,1)} → ${dec(ra,1)} ${deltaTxt(ra,rb,true)} · gasto/día $${money(sb)} → $${money(sa)}.`;
+  }
+  const NEXT={better:'✅ <b>Funcionó.</b> Mantener; si sigue así 2–3 días más, escalar +20%.',
+    worse:'⚠️ <b>Empeoró.</b> Si mañana sigue igual: revertir el cambio o rotar el creativo/ángulo.',
+    flat:'➡️ <b>Sin cambio claro.</b> Dejar correr y volver a mirar en 2 días.',
+    thin:'⏳ <b>Poca data.</b> No tocar: esperar a juntar más resultados.',
+    ctrup:'🟡 <b>Señal temprana buena</b> (CTR↑), pero todavía sin resultados suficientes: no tocar y revisar en 2 días.',
+    ctrdown:'🟠 <b>Señal temprana floja</b> (CTR↓) y sin resultados suficientes: preparar creativo de recambio; decidir en 2 días.',
+    wait:'⏳ Esperar datos.'};
+  return {post,verdict,txt,next:NEXT[verdict],from:aFrom,to:aTo};
+}
+function moveTitle(m){
+  const it=m.items; const t=it.slice(0,3).map(e=>`${KIND_ICON[e.kind]||'•'} ${chTitle(e)}${e.detail?` <span class="chdet">· ${esc(e.detail)}</span>`:''}`).join('<br>');
+  return t+(it.length>3?`<br><span class="chdet">+ ${it.length-3} cambio(s) más</span>`:'');
+}
+/* Lectura de los últimos 3 días vs los 3 anteriores. */
+function last3(b,obj){
+  const D=DATA[b]; const to=D.through||(D.dates||[]).slice(-1)[0];
+  const from=addDays(to,-(REVIEW_DAYS-1)), pTo=addDays(from,-1), pFrom=addDays(pTo,-(REVIEW_DAYS-1));
+  return {from,to,pFrom,pTo,K:winK(b,from,to,null,obj),P:winK(b,pFrom,pTo,null,obj)};
+}
+/* Qué resultado mirar en el seguimiento: si todas las campañas que gastaron en
+   los últimos días son del mismo tipo (p.ej. sólo WhatsApp), ESE resultado;
+   si se mezclan, el objetivo general de la marca. */
+function segObj(b){
+  const D=DATA[b]; const to=D.through||(D.dates||[]).slice(-1)[0]; if(!to) return D.obj;
+  const from=addDays(to,-(REVIEW_DAYS*2-1)); const kinds=new Set();
+  (D.camps||[]).forEach((nm,ci)=>{ if(agg(b,from,to,ci).T.spend>0) kinds.add(campKind(D,ci)); });
+  if(kinds.size===1){ const k=[...kinds][0]; const o=KIND2OBJ[k]; if(o&&o!==D.obj&&!(D.obj==='ic'&&o==='purchase')) return o; }
+  return D.obj;
+}
+function segData(b){
+  const D=DATA[b], obj=segObj(b), L=last3(b,obj), moves=movesOf(b);
+  const alerts=[];
+  const ai=acctIssue(b); if(ai) alerts.push({sev:'r',t:`Cuenta en estado “${esc(ai.st)}” desde el ${fmtD(ai.date)} — revisar el medio de pago.`});
+  const activeC=(D.campaigns||[]).filter(c=>c.status==='ACTIVE');
+  if(L.K.spend<=0 && activeC.length) alerts.push({sev:'r',t:`Sin gasto en los últimos ${REVIEW_DAYS} días con campañas prendidas (¿pago? ¿rechazo? ¿presupuesto?).`});
+  const tracked=resultTracked(D)||L.K.result>0;
+  if(L.K.spend>0 && tracked && L.K.result===0 && L.P.result>0) alerts.push({sev:'r',t:`0 ${resWord(obj)} en los últimos ${REVIEW_DAYS} días con $${money(L.K.spend)} de gasto (antes: ${money(L.P.result)}).`});
+  if(L.K.result>=3&&L.P.result>=3&&L.K.cpa>L.P.cpa*1.3) alerts.push({sev:'y',t:`Costo por ${resWord(obj).replace(/s$/,'')} +${Math.round((L.K.cpa/L.P.cpa-1)*100)}% vs los 3 días anteriores.`});
+  if(L.K.impr>=1500&&L.P.impr>=1500&&L.K.ctr<L.P.ctr*0.75) alerts.push({sev:'y',t:`CTR cayó ${Math.round((1-L.K.ctr/L.P.ctr)*100)}% (${dec(L.P.ctr)}% → ${dec(L.K.ctr)}%): posible fatiga de creativo.`});
+  if(!isLead(obj)&&L.K.purch>=3&&L.P.purch>=3&&L.K.roas<L.P.roas*0.75) alerts.push({sev:'y',t:`ROAS cayó de ${dec(L.P.roas)}x a ${dec(L.K.roas)}x.`});
+  // Revisión pendiente: la última movida.
+  let rev=null;
+  const m=moves[0];
+  if(m){
+    const due=addDays(m.date,REVIEW_DAYS), done=ckGet(revKey(b,m.date));
+    const imp=impact(b,m.date,obj);
+    let st;
+    if(done) st='done'; else if(NOW>=due) st=(daysBetween(due,NOW)>=2?'late':'due'); else st='wait';
+    rev={m,due,st,imp,left:daysBetween(NOW,due)};
+  }
+  // Campañas prendidas o con gasto en los últimos 3 días: cómo viene cada una.
+  const cl=(D.camps||[]).map((nm,ci)=>{const k=campKind(D,ci), o=KIND2OBJ[k]||'traffic';
+      const K=winK(b,L.from,L.to,ci,o), P=winK(b,L.pFrom,L.pTo,ci,o), c=campMeta(D,ci);
+      return {ci,nm,k,o,K,P,c};}).filter(x=>x.K.spend>0||x.c.status==='ACTIVE');
+  const sevRank=alerts.some(a=>a.sev==='r')?0:((rev&&(rev.st==='due'||rev.st==='late'))?1:(alerts.length?2:(rev&&rev.st==='wait'?3:4)));
+  return {b,D,obj,L,alerts,rev,cl,sevRank,M:manualIn(D,ALLF,ALLT,null)};
+}
+function segCard(x){
+  const D=x.D, obj=x.obj, L=x.L, w=resWord(obj);
+  const SEMC=['bad','warn','warn','idle','good'][x.sevRank];
+  const tile=(lab,cur,prev,up,fmt)=>`<div class="sgk"><div class="k">${lab}</div><div class="v">${fmt(cur)} ${deltaTxt(cur,prev,up)}</div><div class="s">antes ${fmt(prev)}</div></div>`;
+  const resLab=isLead(obj)?w.charAt(0).toUpperCase()+w.slice(1):'Compras (Meta)';
+  const tiles=[
+    tile('Gasto',L.K.spend,L.P.spend,true,v=>'$'+money(v)),
+    tile(resLab,L.K.result,L.P.result,true,v=>money(v)),
+    tile('Costo/result.',L.K.cpa,L.P.cpa,false,v=>v?'$'+money(v):'—'),
+    isLead(obj)?tile('CTR',L.K.ctr,L.P.ctr,true,v=>dec(v)+'%'):tile('ROAS (Meta)',L.K.roas,L.P.roas,true,v=>dec(v)+'x'),
+  ].join('');
+  const al=x.alerts.map(a=>`<div class="sgal sg-${a.sev}">${a.sev==='r'?'🚨':'⚠️'} ${a.t}</div>`).join('');
+  let rv='';
+  if(x.rev){ const r=x.rev;
+    const badge={done:'<span class="sgb b-done">✓ revisado</span>',due:'<span class="sgb b-due">🔔 toca revisar hoy</span>',late:`<span class="sgb b-late">🔔 revisión atrasada (${daysBetween(r.due,NOW)} días)</span>`,wait:`<span class="sgb b-wait">⏳ no tocar · revisar el ${fmtD(r.due)} (faltan ${r.left} día${r.left===1?'':'s'})</span>`}[r.st];
+    rv=`<div class="sgrev">
+      <div class="sgrevh"><span class="sglab">Último cambio · ${fmtD(r.m.date)}</span>${badge}</div>
+      <div class="sgmove">${moveTitle(r.m)}</div>
+      <div class="sgimp"><span class="sglab">Efecto hasta ahora</span> <span class="chdet">(${REVIEW_DAYS} días antes vs ${r.imp.post} día${r.imp.post===1?'':'s'} después)</span><div>${r.imp.txt}</div>${r.imp.next?`<div class="sgnext">${r.imp.next}</div>`:''}</div>
+      <label class="pdone"><input type="checkbox" data-rev="${revKey(x.b,r.m.date)}" ${r.st==='done'?'checked':''}> Ya lo revisé</label>
+    </div>`;
+  } else rv=`<div class="sgrev"><div class="sgrevh"><span class="sglab">Último cambio</span><span class="sgb b-wait">sin cambios registrados</span></div></div>`;
+  const camps=x.cl.length?`<table class="sgct"><tr><th>Campaña (últ. ${REVIEW_DAYS} días)</th><th>Gasto</th><th>Resultado</th><th>Costo/result.</th></tr>${x.cl.map(c=>`<tr><td><span class="sgdot ${c.c.status==='ACTIVE'?'on':''}"></span>${esc(c.nm)} <span class="chdet">· ${KINDLBL[c.k]}</span></td><td class="num">$${money(c.K.spend)}</td><td class="num">${money(c.K.result)} ${resWord(c.o)} ${deltaTxt(c.K.result,c.P.result,true)}</td><td class="num">${c.K.result?'$'+money(c.K.cpa):'—'}</td></tr>`).join('')}</table>`:'';
+  const man=x.M.any?(()=>{const sp=agg(x.b,ALLF,ALLT,null).T.spend;return `<div class="sgman">📋 <b>Ventas reportadas por la marca:</b> ${money(x.M.sales)} ventas · $${money(x.M.amount)} ${D.cur}${sp?` · <b>ROAS real ${dec(x.M.amount/sp)}x</b> sobre $${money(sp)} invertidos`:''} (Meta atribuye ${money(agg(x.b,ALLF,ALLT,null).T.purch)} compras)${x.M.last?' · último reporte '+fmtD(x.M.last):''}.</div>`;})():'';
+  const nk='maia_next_'+x.b, note=nGet(nk);
+  return `<div class="sgcard sem-${SEMC}" id="sg-${x.b}">
+    <div class="sghead"><div><span class="dot d-${SEMC}"></span><b class="sgname">${D.name}</b> <span class="chdet">· ${OBJSHORT[obj]||''} · ${D.cur} · datos al ${D.through?fmtD(D.through):'—'}</span></div>
+      <div class="sglinks"><button class="sglink" data-dash="${x.b}">Dashboard →</button><button class="sglink" data-ana="${x.b}">Análisis →</button></div></div>
+    ${al}
+    <div class="sglab" style="margin-top:6px">Últimos ${REVIEW_DAYS} días (${fmtD(L.from)}–${fmtD(L.to)}) vs los ${REVIEW_DAYS} anteriores</div>
+    <div class="sgks">${tiles}</div>
+    ${camps}
+    ${man}
+    ${rv}
+    <div class="sgnote"><span class="sglab">Próximo paso acordado</span>
+      <textarea class="sgta" data-nk="${nk}" placeholder="Ej.: bajamos presupuesto el 5/10 → si el costo/conversación no baja de $500 el 8/10, rotamos creativos.">${esc(note)}</textarea></div>
+  </div>`;
+}
+function renderSeg(){
+  const xs=CLIENTS.filter(b=>!isLost(b)).map(segData).sort((a,z)=>(a.sevRank-z.sevRank)||(z.L.K.spend-a.L.K.spend));
+  const todo=[];
+  xs.forEach(x=>{
+    x.alerts.filter(a=>a.sev==='r').forEach(a=>todo.push({b:x.b,n:x.D.name,t:a.t,c:'r'}));
+    if(x.rev&&(x.rev.st==='due'||x.rev.st==='late')) todo.push({b:x.b,n:x.D.name,t:`Revisar el cambio del ${fmtD(x.rev.m.date)} → ${x.rev.imp.next||''}`,c:'y'});
+    x.alerts.filter(a=>a.sev==='y').forEach(a=>todo.push({b:x.b,n:x.D.name,t:a.t,c:'y2'}));
+  });
+  const waiting=xs.filter(x=>x.rev&&x.rev.st==='wait');
+  const pend=(window.DATA_PENDING||[]);
+  const li=t=>`<button class="sgtodo sg-${t.c}" data-go="${t.b}"><b>${esc(t.n)}</b> · ${t.t}</button>`;
+  document.getElementById('body-seg').innerHTML=`
+    <div class="sec-h">Seguimiento diario</div>
+    <div class="sec-s">Hoy <b>${fmtD(NOW)}</b> · datos de Meta cerrados al <b>${CLOSED?fmtD(CLOSED):'—'}</b>. <b>Regla MAIA:</b> después de cada cambio, ${REVIEW_DAYS} días sin tocar y se vuelve a revisar — cada tarjeta te avisa el día que toca y te muestra el efecto del cambio.</div>
+    <div class="sgtop">
+      <div class="card"><div class="h3b">🔔 Para hacer hoy <span class="chdet">(${todo.length})</span></div>${todo.length?todo.map(li).join(''):'<div class="sec-s" style="margin:0">Nada urgente: no hay alertas ni revisiones vencidas. 👌</div>'}</div>
+      <div class="card"><div class="h3b">⏳ En espera — no tocar</div>${waiting.length?waiting.map(x=>`<button class="sgtodo sg-w" data-go="${x.b}"><b>${esc(x.D.name)}</b> · cambio del ${fmtD(x.rev.m.date)} · revisar el <b>${fmtD(x.rev.due)}</b></button>`).join(''):'<div class="sec-s" style="margin:0">Ninguna cuenta en ventana de espera.</div>'}
+      ${pend.length?`<div class="h3b" style="margin-top:12px">🆕 Esperando datos</div>`+pend.map(p=>`<div class="sgtodo sg-w"><b>${esc(p.name)}</b> · ${esc(p.reason)}</div>`).join(''):''}</div>
+    </div>
+    <div class="sgcards">${xs.map(segCard).join('')}</div>
+    <div class="mininote">Semáforo de la tarjeta: rojo = alerta grave (sin resultados, sin gasto, problema de pago) · amarillo = revisión que vence o señal a vigilar · gris = en espera · verde = todo en orden. El “Efecto” compara los ${REVIEW_DAYS} días previos al cambio con los días completos posteriores; el día del cambio no se cuenta. Las notas y los “ya lo revisé” se guardan en este navegador.</div>`;
+  const B=document.getElementById('body-seg');
+  B.querySelectorAll('[data-rev]').forEach(cb=>cb.addEventListener('change',()=>{ckSet(cb.dataset.rev,cb.checked);renderSeg();}));
+  B.querySelectorAll('.sgta').forEach(ta=>ta.addEventListener('input',()=>nSet(ta.dataset.nk,ta.value.trim())));
+  B.querySelectorAll('.sgtodo[data-go]').forEach(bt=>bt.addEventListener('click',()=>{const el=document.getElementById('sg-'+bt.dataset.go); if(el){el.scrollIntoView({behavior:'smooth',block:'start'});el.classList.add('flash');setTimeout(()=>el.classList.remove('flash'),1400);}}));
+  B.querySelectorAll('[data-dash]').forEach(bt=>bt.addEventListener('click',()=>goTab('dashboard',bt.dataset.dash)));
+  B.querySelectorAll('[data-ana]').forEach(bt=>bt.addEventListener('click',()=>goAnalisis(bt.dataset.ana)));
+}
+function goTab(tab,cid){
+  document.querySelectorAll('.tab').forEach(x=>x.setAttribute('aria-selected',x.dataset.tab===tab?'true':'false'));
+  document.querySelectorAll('.panel').forEach(x=>x.classList.remove('on'));
+  document.getElementById('p-'+tab).classList.add('on');
+  if(tab==='dashboard'&&cid){const sel=document.getElementById('sel-dash'); if(sel)sel.value=cid; renderDash(cid);}
+  try{window.scrollTo(0,0);}catch(e){}
+}
+
 /* ---------- init ---------- */
 buildRangeBar("range-gen");
 buildRangeBar("range-dash");
@@ -1799,6 +2148,7 @@ buildPicker("pick-prop", renderProp, "piera");
 buildPicker("pick-est", renderEst, "vresia");
 renderGeneral();
 syncRangeBars();
+renderSeg();
 /* comentarios del equipo publicados (site/comments.json) */
 window.COMMENTS=window.COMMENTS||{};
 (function(){ try{
@@ -1834,7 +2184,7 @@ document.addEventListener('mouseleave',()=>{const t=document.getElementById('cha
 /* clock */
 (function(){const el=document.getElementById("clock");const d=new Date(),m=["ene","feb","mar","abr","may","jun","jul","ago","sep","oct","nov","dic"];el.textContent=d.getDate()+" "+m[d.getMonth()]+" "+d.getFullYear();})();
 /* sello de versión visible para confirmar que estás en la última */
-const BUILD="v23 · 2 sep 2026 · Estabilidad %, análisis por recencia, cambios grandes y comentarios del equipo";
+const BUILD="v24 · 8 oct 2026 · Seguimiento diario (regla 3 días), campañas con su resultado y ventas reportadas";
 (function(){const f=document.querySelector('.foot-note'); if(f)f.insertAdjacentHTML('beforeend',' · <b>Build '+BUILD+'</b>');
   const c=document.getElementById('clock'); if(c)c.insertAdjacentHTML('beforeend','<br><span style="color:var(--rose)">Build '+BUILD.split(' · ')[0]+'</span>');})();
 
