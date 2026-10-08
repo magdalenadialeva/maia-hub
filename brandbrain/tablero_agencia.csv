@@ -1,6 +1,6 @@
 ﻿slug,cliente,periodo,moneda,gasto,resultado,roas,cpa,cpl,cuello_embudo,diagnostico,veredictos
 piera,Piera Ceresa,2026-07-28..2026-10-07,CLP,561627.0,8,1.21,70203,,Vieron la landing (LPV),El cuello está en Vieron la landing (LPV) → Agregaron al carrito: 1.6% vs ~13.0% sano.,escalar:0 iterar:0 matar:0 pocaData:23
-mossy,Mossy,2026-09-02..2026-10-07,ARS,3854223.41,105,2.63,36707,,Agregaron al carrito,El cuello está en Agregaron al carrito → Iniciaron el pago: 13.5% vs ~45.0% sano.,escalar:5 iterar:2 matar:0 pocaData:14
+mossy,Mossy,2026-09-02..2026-10-07,ARS,3854224.17,105,2.63,36707,,Agregaron al carrito,El cuello está en Agregaron al carrito → Iniciaron el pago: 13.5% vs ~45.0% sano.,escalar:5 iterar:2 matar:0 pocaData:14
 vresia,Vresia,2026-08-13..2026-09-17,ARS,476059.52,16,2.09,29754,,Agregaron al carrito,El cuello está en Agregaron al carrito → Iniciaron el pago: 13.6% vs ~45.0% sano.,escalar:2 iterar:0 matar:0 pocaData:18
 alba,Alba & Co,2026-08-20..2026-10-07,ARS,636618.17,34,3.12,18724,212206,Agregaron al carrito,El cuello está en Agregaron al carrito → Iniciaron el pago: 12.9% vs ~45.0% sano.,escalar:3 iterar:0 matar:0 pocaData:9
 paz,Maia,2026-06-30..2026-10-07,ARS,798749.06,609,,,1312,Clics en el enlace,El cuello está en Clics en el enlace → Leads: 28.3% vs ~20.0% sano.,escalar:7 iterar:2 matar:0 pocaData:21
