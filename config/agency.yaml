@@ -1,0 +1,100 @@
+# MAIA · Números de la AGENCIA (capítulo "Agencia" del hub).
+# Lo que MAIA cobra y gasta por cliente. Moneda: ARS. Editar acá y pushear.
+#
+# setup_cost           : costo único de seteo de campaña por cliente nuevo.
+# acquisition_account  : slug de la cuenta cuya pauta es para CONSEGUIR clientes
+#                        (campaña de MAIA / pazfolgueiro). Su gasto = inversión en adquisición.
+# targets              : umbrales de los colores (verde si se cumple).
+#
+# Por cliente:
+#   source     : convocatoria (mes gratis) | directo
+#   start/end  : inicio / fin con MAIA (end vacío = sigue)
+#   free_days  : días del mes gratis (0 si pagó desde el inicio)
+#   status     : pagando | gratis | a_confirmar | perdido
+#   payments   : lo que nos pagó  [{month, concept: pauta|creativo|otro, amount, cost}]
+#                cost = costo directo de ese servicio (p.ej. diseñadora)
+#   pending    : cobro esperado si confirma {amount, concept}
+#   setup      : false si no se le hizo seteo (default true)
+
+setup_cost: 250000
+acquisition_account: paz
+targets:
+  conversion_free_to_paid: 0.5   # >= 50% de los que terminan el mes gratis pasan a pagar
+  retention_paid: 0.8            # >= 80% de los clientes pagos renuevan
+  creative_margin: 0.4           # >= 40% de margen en servicio creativo
+  payback_months: 3              # recuperar lo invertido por cliente en <= 3 meses
+
+clients:
+  - slug: piera
+    name: Piera Ceresa
+    source: convocatoria
+    start: "2026-07-28"
+    end: "2026-09-04"
+    free_days: 30
+    status: perdido
+    payments: []
+
+  - slug: vresia
+    name: Vresia
+    source: convocatoria
+    start: "2026-08-21"
+    end: "2026-09-18"
+    free_days: 30
+    status: perdido
+    payments: []
+
+  - slug: alba
+    name: Alba & Co
+    source: convocatoria
+    start: "2026-08-21"
+    end: "2026-09-19"
+    free_days: 30
+    status: perdido
+    payments: []
+
+  - slug: pulpa
+    name: Pulpa Verde
+    source: convocatoria
+    start: "2026-09-02"
+    free_days: 30
+    status: pagando
+    payments:
+      - {month: "2026-10", concept: pauta, amount: 300000, cost: 0}
+      - {month: "2026-10", concept: creativo, amount: 200000, cost: 150000}
+
+  - slug: saritina-ceramica
+    name: Saritina Cerámica
+    source: convocatoria
+    start: "2026-09-02"
+    free_days: 30
+    status: a_confirmar
+    payments: []
+    pending: {amount: 200000, concept: pauta}
+
+  - slug: basycos
+    name: Basycos
+    source: convocatoria
+    start: "2026-09-11"
+    free_days: 30
+    status: gratis
+    payments: []
+
+  - slug: bepowder
+    name: Bepowder
+    source: convocatoria
+    start: "2026-09-25"          # A CONFIRMAR (primera campaña con nombre MAIA)
+    free_days: 30
+    status: gratis               # pauta gratis, pero ya paga creativo
+    payments:
+      - {month: "2026-10", concept: creativo, amount: 300000, cost: 200000}
+
+  - slug: cloe
+    name: Cloe
+    source: directo
+    start: "2026-09-17"
+    end: "2026-09-30"
+    free_days: 0
+    status: perdido
+    payments:
+      - {month: "2026-09", concept: pauta, amount: 300000, cost: 0}
+      - {month: "2026-09", concept: creativo, amount: 120000, cost: 0}

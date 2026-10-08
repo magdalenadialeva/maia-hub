@@ -449,6 +449,24 @@
   .regen:hover{border-color:var(--rose);color:var(--rose)}
   @media print{.regen,.rs-period{display:none !important}}
 
+
+  /* ===== v25 · Agencia ===== */
+  .agtiles{grid-template-columns:repeat(4,1fr)}
+  @media (max-width:900px){.agtiles{grid-template-columns:repeat(2,1fr)}}
+  .tile.good{border-top-color:var(--good)} .tile.warn{border-top-color:var(--warn)} .tile.bad{border-top-color:var(--bad)}
+  .aglecs{display:grid;gap:9px}
+  .aglec{background:var(--panel);border:1px solid var(--line);border-left:5px solid var(--idle);border-radius:12px;padding:11px 14px;font-size:13.5px;box-shadow:var(--shadow)}
+  .aglec.ag-r{border-left-color:var(--bad)} .aglec.ag-y{border-left-color:var(--warn)} .aglec.ag-g{border-left-color:var(--good)} .aglec.ag-i{border-left-color:var(--rose)}
+  .agdo{margin-top:5px;color:var(--soft);font-size:13px}
+  .aggrid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:18px}
+  @media (max-width:820px){.aggrid{grid-template-columns:1fr}}
+  .agrow{display:grid;grid-template-columns:minmax(150px,1.3fr) 1fr auto;gap:10px;align-items:center;padding:7px 0;border-top:1px solid var(--line);font-size:13px}
+  .agrow:first-of-type{border-top:none} .agrow.agtot{border-top:2px solid var(--ink);font-weight:700}
+  .agbar{height:12px;background:var(--panel2);border-radius:6px;overflow:hidden}
+  .agfill{height:100%;border-radius:6px} .agfill.good{background:var(--good)} .agfill.bad{background:var(--bad)}
+  .agv{font-family:var(--mono);font-variant-numeric:tabular-nums;white-space:nowrap} .agv.neg{color:var(--bad)}
+  .agpill{display:inline-block;border-radius:999px;padding:1px 9px;font-weight:700;font-size:12px}
+  .agpill.good{background:#E5F3EA;color:#16803a} .agpill.warn{background:var(--gold-t);color:#7a520c} .agpill.bad{background:#FDECEC;color:#8f1d1d}
   /* ===== v24 · Seguimiento + campañas ===== */
   .sgtop{display:grid;grid-template-columns:1.4fr 1fr;gap:12px;margin:10px 0 18px}
   @media (max-width:820px){.sgtop{grid-template-columns:1fr}}
@@ -504,6 +522,7 @@
   <div class="tabs" role="tablist">
     <button class="tab" role="tab" aria-selected="true" data-tab="seguimiento"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3 8-8"/><path d="M20 12v7a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h9"/></svg><span>Seguimiento</span></button>
     <button class="tab" role="tab" aria-selected="false" data-tab="general"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg><span>General</span></button>
+    <button class="tab" role="tab" aria-selected="false" data-tab="agencia"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M5 21V9l7-5 7 5v12"/><path d="M10 21v-6h4v6"/></svg><span>Agencia</span></button>
     <button class="tab" role="tab" aria-selected="false" data-tab="dashboard"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="20" x2="4" y2="12"/><line x1="10" y1="20" x2="10" y2="5"/><line x1="16" y1="20" x2="16" y2="9"/><line x1="21" y1="20" x2="3" y2="20"/></svg><span>Dashboard</span></button>
     <button class="tab" role="tab" aria-selected="false" data-tab="analisis"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.5" y2="16.5"/></svg><span>Análisis de pauta</span></button>
     <button class="tab" role="tab" aria-selected="false" data-tab="reporte"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5"/><line x1="9" y1="13" x2="15" y2="13"/><line x1="9" y1="17" x2="13" y2="17"/></svg><span>Reporte al cliente</span></button>
@@ -517,6 +536,9 @@
   <section class="panel" id="p-general" role="tabpanel">
     <div class="rangebar" id="range-gen"></div>
     <div id="body-general"></div>
+  </section>
+  <section class="panel" id="p-agencia" role="tabpanel">
+    <div id="body-agencia"></div>
   </section>
   <section class="panel" id="p-dashboard" role="tabpanel">
     <div class="barra"><span class="lab">Cliente</span><div class="picker" id="pick-dash"></div></div>
@@ -2138,6 +2160,140 @@ function goTab(tab,cid){
   try{window.scrollTo(0,0);}catch(e){}
 }
 
+/* =====================================================================
+   AGENCIA (oct-2026): cómo venimos NOSOTRAS como negocio.
+   Fuente: config/agency.yaml (cobros, costos, origen y estado de cada
+   cliente) + la pauta de captación (cuenta de MAIA) que ya trae el hub.
+   ===================================================================== */
+const SRCLBL={convocatoria:'Convocatoria (mes gratis)',directo:'Directo (pago desde el inicio)'};
+const STLBL={pagando:['Pagando','g'],gratis:['Mes gratis','i'],a_confirmar:['A confirmar','y'],perdido:['Perdido','r']};
+function agencyCalc(){
+  const A=window.AGENCY||{}; const cl=(A.clients||[]).map(c=>({...c}));
+  const T=A.targets||{}; const setup=+A.setup_cost||0;
+  const acq=A.acquisition_account; let acqSpend=0, acqLeads=0, acqFrom=null;
+  if(acq&&DATA[acq]){ const t=agg(acq,ALLF,ALLT,null).T; acqSpend=t.spend; acqLeads=t.leads; acqFrom=DATA[acq].dates[0]; }
+  const conv=cl.filter(c=>c.source==='convocatoria');
+  const acqPer=conv.length?acqSpend/conv.length:0;
+  cl.forEach(c=>{
+    c.rev=(c.payments||[]).reduce((s,p)=>s+(+p.amount||0),0);
+    c.dcost=(c.payments||[]).reduce((s,p)=>s+(+p.cost||0),0);
+    c.setup=(c.setup===false)?0:setup;
+    c.acq=c.source==='convocatoria'?acqPer:0;
+    c.invest=c.setup+c.acq+c.dcost;
+    c.net=c.rev-c.invest;
+    c.freeEnd=c.free_days?addDays(c.start,c.free_days):null;
+    c.active=c.status!=='perdido';
+    c.days=daysBetween(c.start,c.end||NOW);
+    c.paid=c.rev>0;
+    c.svc=[...new Set((c.payments||[]).map(p=>p.concept))];
+    const D=DATA[c.slug];
+    if(D){ const t=agg(c.slug,c.start,c.end||ALLT,null).T; c.spend=t.spend; c.purch=t.purch; c.roas=t.spend?t.pval/t.spend:0; c.res=t.leads; c.obj=D.obj; }
+  });
+  const ended=conv.filter(c=>c.freeEnd&&c.freeEnd<=NOW);
+  const decided=ended.filter(c=>c.status==='pagando'||c.status==='perdido');
+  const converted=decided.filter(c=>c.status==='pagando');
+  const everPaid=cl.filter(c=>c.paid), paidActive=everPaid.filter(c=>c.active);
+  const rev=cl.reduce((s,c)=>s+c.rev,0), dcost=cl.reduce((s,c)=>s+c.dcost,0);
+  const setups=cl.reduce((s,c)=>s+c.setup,0);
+  const gm=rev-dcost, net=gm-setups-acqSpend;
+  const mon=NOW.slice(0,7);
+  const thisM=cl.filter(c=>c.active).flatMap(c=>(c.payments||[]).filter(p=>p.month===mon));
+  const mrr=thisM.reduce((s,p)=>s+(+p.amount||0),0), mrrM=mrr-thisM.reduce((s,p)=>s+(+p.cost||0),0);
+  const pend=cl.filter(c=>c.active&&c.pending).reduce((s,c)=>s+(+c.pending.amount||0),0);
+  const svc={};
+  cl.forEach(c=>(c.payments||[]).forEach(p=>{const k=p.concept;svc[k]=svc[k]||{n:new Set(),rev:0,cost:0};svc[k].n.add(c.slug);svc[k].rev+=+p.amount||0;svc[k].cost+=+p.cost||0;}));
+  const paidConv=conv.filter(c=>c.paid).length;
+  const cacPaid=paidConv?(acqSpend+conv.reduce((s,c)=>s+c.setup,0))/paidConv:null;
+  const payM=paidActive.length?paidActive.reduce((s,c)=>s+(c.rev-c.dcost),0)/paidActive.length:0;  // margen mensual promedio de los que pagan
+  const lost=cl.filter(c=>c.status==='perdido');
+  return {A,T,cl,conv,acqSpend,acqLeads,acqFrom,acqPer,ended,decided,converted,everPaid,paidActive,rev,dcost,setups,gm,net,mrr,mrrM,pend,svc,cacPaid,payM,lost,setup};
+}
+function agTile(k,v,sub,cls){return `<div class="tile ${cls||''}"><div class="k">${k}</div><div class="v">${v}</div>${sub?`<div class="s">${sub}</div>`:''}</div>`;}
+function renderAgencia(){
+  const X=agencyCalc(), T=X.T, el=document.getElementById('body-agencia');
+  if(!X.cl.length){el.innerHTML='<div class="empty"><div class="big">Falta config/agency.yaml</div></div>';return;}
+  const $=v=>'$'+money(v), P=v=>Math.round(v*100)+'%';
+  const convR=X.decided.length?X.converted.length/X.decided.length:0;
+  const retR=X.everPaid.length?X.paidActive.length/X.everPaid.length:0;
+  const actives=X.cl.filter(c=>c.active);
+  const crea=X.svc.creativo, creaM=crea&&crea.rev?(crea.rev-crea.cost)/crea.rev:null;
+  const payback=(X.cacPaid&&X.payM)?X.cacPaid/X.payM:null;
+  const avgLost=X.lost.length?Math.round(X.lost.reduce((s,c)=>s+c.days,0)/X.lost.length):0;
+  const c=(ok,mid)=>ok?'good':(mid?'warn':'bad');
+  const tiles=[
+    agTile('Clientes captados',X.cl.length,`${X.conv.length} por convocatoria · ${X.cl.length-X.conv.length} directo`,''),
+    agTile('Activos hoy',actives.length,`${X.paidActive.length} pagando · ${actives.length-X.paidActive.length} gratis o a confirmar`,c(actives.length/X.cl.length>=0.7,actives.length/X.cl.length>=0.5)),
+    agTile('Gratis → pago',P(convR),`${X.converted.length} de ${X.decided.length} que ya decidieron${X.ended.length>X.decided.length?` · ${X.ended.length-X.decided.length} pendiente`:''} · objetivo ${P(T.conversion_free_to_paid||.5)}`,c(convR>=(T.conversion_free_to_paid||.5),convR>=(T.conversion_free_to_paid||.5)/2)),
+    agTile('Pagaron y siguen',P(retR),`${X.paidActive.length} de ${X.everPaid.length} clientes que alguna vez pagaron · objetivo ${P(T.retention_paid||.8)}`,c(retR>=(T.retention_paid||.8),retR>=0.5)),
+    agTile('Facturación del mes',$(X.mrr),`margen ${$(X.mrrM)}${X.pend?` · +${$(X.pend)} a confirmar`:''}`,c(X.mrrM>0&&X.mrr>=X.setup*4,X.mrr>0)),
+    agTile('Resultado acumulado',(X.net<0?'−':'')+$(Math.abs(X.net)),`facturado ${$(X.rev)} − costos y captación ${$(X.dcost+X.setups+X.acqSpend)}`,X.net>=0?'good':'bad'),
+    agTile('Costo por cliente captado',$(X.setup+X.acqPer),`seteo ${$(X.setup)} + pauta de captación ${$(X.acqPer)}`,''),
+    agTile('Costo por cliente que PAGA',X.cacPaid?$(X.cacPaid):'—',payback?`se recupera en ≈${dec(payback,1)} meses de margen · objetivo ≤${T.payback_months||3}`:'todavía ningún cliente de convocatoria pagó',payback?c(payback<=(T.payback_months||3),payback<=(T.payback_months||3)*2):'bad'),
+  ].join('');
+  // Embudo de la agencia
+  const steps=[['Leads de la campaña MAIA',X.acqLeads],['Clientes por convocatoria',X.conv.length],['Terminaron el mes gratis',X.ended.length],['Pasaron a pagar',X.converted.length]];
+  const fn=steps.map((s,i)=>{const base=i?steps[i-1][1]:s[1]; const r=base?s[1]/base:0; const w=i?Math.max(3,r*100):100;
+    const h=i===0?'na':(i===3?c(r>=(T.conversion_free_to_paid||.5),r>=0.25):(i===1?'na':'good'));
+    return `<div class="frow"><div class="fl">${s[0]}</div><div class="fv">${money(s[1])}</div><div class="ftrack"><div class="ffill ${h==='na'?'good':h}" style="width:${w}%"></div><span class="fpct">${i?dec(r*100,1)+'%':''}</span></div></div>`;}).join('');
+  // Economía acumulada
+  const eco=[['Facturado a clientes',X.rev,'good'],['Costos directos (diseñadoras)',-X.dcost,'bad'],['Seteo de campañas ('+X.cl.filter(c=>c.setup).length+' × '+$(X.setup)+')',-X.setups,'bad'],['Pauta de captación (campaña MAIA'+(X.acqFrom?' desde '+fmtD(X.acqFrom):'')+')',-X.acqSpend,'bad']];
+  const mx=Math.max(...eco.map(e=>Math.abs(e[1])),Math.abs(X.net),1);
+  const ecoH=eco.concat([['Resultado acumulado',X.net,X.net>=0?'good':'bad']]).map((e,i,a)=>`<div class="agrow${i===a.length-1?' agtot':''}"><div class="agl">${e[0]}</div><div class="agbar"><div class="agfill ${e[2]}" style="width:${Math.max(2,Math.abs(e[1])/mx*100)}%"></div></div><div class="agv ${e[1]<0?'neg':''}">${e[1]<0?'−':''}${$(Math.abs(e[1]))}</div></div>`).join('');
+  // Servicios
+  const svcRows=Object.entries(X.svc).map(([k,v])=>{const m=v.rev?(v.rev-v.cost)/v.rev:0; const tgt=k==='creativo'?(T.creative_margin||.4):.5;
+    return `<tr><td><b>${k==='pauta'?'Pauta (gestión de Meta)':(k==='creativo'?'Servicio creativo':k)}</b></td><td class="num">${v.n.size}</td><td class="num">${$(v.rev)}</td><td class="num">${$(v.cost)}</td><td class="num"><span class="agpill ${c(m>=tgt,m>=tgt/2)}">${P(m)}</span></td></tr>`;}).join('');
+  // Tabla por cliente
+  const order={a_confirmar:0,gratis:1,pagando:2,perdido:3};
+  const rows=X.cl.slice().sort((a,b)=>(order[a.status]-order[b.status])||String(b.start).localeCompare(a.start)).map(cc=>{
+    const st=STLBL[cc.status]||[cc.status,'i'];
+    let next='—';
+    if(cc.status==='a_confirmar') next=`<b>Definir ya</b>${cc.pending?` · cobrar ${$(cc.pending.amount)}`:''}`;
+    else if(cc.status==='gratis'&&cc.freeEnd){const d=daysBetween(NOW,cc.freeEnd); next=d<0?`<b>Mes gratis vencido hace ${-d} d</b>`:`Vence el mes gratis el <b>${fmtD(cc.freeEnd)}</b> (${d} d)`;}
+    else if(cc.status==='pagando') next='Renovación mensual';
+    else if(cc.status==='perdido') next=`Se fue a los ${cc.days} días`;
+    let perf=cc.spend==null?'—':(isLead(cc.obj)?`${money(cc.res)} ${resWord(cc.obj)}`:`ROAS ${dec(cc.roas)}x`);
+    if(DATA[cc.slug]){ const MM=manualIn(DATA[cc.slug],cc.start,cc.end||ALLT,null); if(MM.any&&cc.spend) perf=`ROAS real ${dec(MM.amount/cc.spend)}x<div class="why">Meta ${dec(cc.roas)}x · ${money(MM.sales)} ventas reportadas</div>`; }
+    return `<tr class="row-${st[1]==='r'?'lost':''}"><td><b>${esc(cc.name)}</b><div class="why">${SRCLBL[cc.source]||cc.source}</div></td>
+      <td data-l="Inicio">${fmtD(cc.start)}</td>
+      <td data-l="Estado"><span class="act act-${st[1]}">${st[0]}</span></td>
+      <td data-l="Servicios">${cc.svc.length?cc.svc.join(' + '):'<span style="color:var(--soft)">nada pago</span>'}</td>
+      <td class="num" data-l="Facturado">${$(cc.rev)}</td>
+      <td class="num" data-l="Invertido" title="seteo + pauta de captación + costos directos">${$(cc.invest)}</td>
+      <td class="num" data-l="Neto"><span class="agpill ${cc.net>=0?'good':'bad'}">${cc.net<0?'−':''}${$(Math.abs(cc.net))}</span></td>
+      <td class="num" data-l="Resultado de su pauta">${perf}</td>
+      <td data-l="Próximo hito">${next}</td></tr>`;}).join('');
+  // Lecturas
+  const L=[];
+  const tgtC=T.conversion_free_to_paid||.5;
+  if(X.decided.length) L.push([convR>=tgtC?'g':'r',`<b>Conversión del mes gratis: ${X.converted.length} de ${X.decided.length} (${P(convR)}).</b> Cada cliente de convocatoria nos cuesta ${$(X.setup+X.acqPer)} (seteo + captación); con esta conversión, cada cliente que paga nos costó ${X.cacPaid?$(X.cacPaid):'—'}. Es la palanca #1: subir la conversión vale más que conseguir más gratis.`,`Desde el día 1 del mes gratis: precio y fecha de decisión por escrito; reunión de resultados el día ~21 con la propuesta de continuidad; no arrancar un gratis sin ese acuerdo.`]);
+  const goodLost=X.lost.filter(cc=>cc.source==='convocatoria'&&!isLead(cc.obj||'purchase')&&cc.roas>=2);
+  if(goodLost.length) L.push(['y',`<b>Se fueron clientes con buenos resultados:</b> ${goodLost.map(cc=>`${esc(cc.name)} (ROAS ${dec(cc.roas)}x)`).join(', ')}. El problema no fue sólo la performance: falló el paso de “gratis” a “pago”.`,`Revisar con ellas por qué no siguieron (precio, percepción de valor, comunicación). Usar sus resultados como caso para las próximas.`]);
+  if(X.lost.length) L.push(['y',`<b>Los que se van, se van rápido:</b> en promedio a los ${avgLost} días — justo cuando termina el mes (o el primer pago).`,`La retención se juega en las primeras 3 semanas: reporte semanal + aviso proactivo + charla de expectativas (ver “Comunicación y Procesos Simples”).`]);
+  if(crea) L.push([creaM>=(T.creative_margin||.4)?'g':'y',`<b>El servicio creativo se vende:</b> lo compraron ${crea.n.size} de ${X.everPaid.length} clientes que pagaron, con margen ${P(creaM)}.${X.cl.filter(cc=>(cc.payments||[]).some(p=>p.concept==='creativo'&&p.amount&&(p.amount-p.cost)/p.amount<(T.creative_margin||.4))).map(cc=>` En ${esc(cc.name)} el margen es ${P(((cc.payments||[]).filter(p=>p.concept==='creativo').reduce((s,p)=>s+p.amount-p.cost,0))/((cc.payments||[]).filter(p=>p.concept==='creativo').reduce((s,p)=>s+p.amount,0)))}.`).join('')}`,`Ofrecerlo a todos desde el arranque (es lo que más paga hoy) y llevar el margen a ≥${P(T.creative_margin||.4)}: precio mínimo por pieza o diseñadora a tarifa fija.`]);
+  if(X.setups>X.rev) L.push(['r',`<b>El seteo pesa más que lo que facturamos:</b> ${$(X.setups)} en seteos vs ${$(X.rev)} facturados.`,`Cobrar el seteo (aunque sea parcial) o achicarlo para los gratis; recuperarlo en el primer pago.`]);
+  const up=X.cl.filter(cc=>cc.status==='a_confirmar'||(cc.status==='gratis'&&cc.freeEnd));
+  if(up.length) L.push(['i',`<b>Próximas decisiones:</b> ${up.sort((a,b)=>String(a.freeEnd).localeCompare(b.freeEnd)).map(cc=>`${esc(cc.name)} — ${cc.status==='a_confirmar'?'a confirmar'+(cc.pending?' ('+$(cc.pending.amount)+')':''):'mes gratis vence '+fmtD(cc.freeEnd)}${cc.spend!=null&&!isLead(cc.obj)?' · ROAS '+dec(cc.roas)+'x':''}`).join(' · ')}.`,`Agendar ya la reunión de continuidad de cada una, antes de que venza; llegar con sus números de la pestaña Dashboard.`]);
+  const lec=L.map(l=>`<div class="aglec ag-${l[0]}"><div>${l[1]}</div><div class="agdo">👉 ${l[2]}</div></div>`).join('');
+  el.innerHTML=`
+    <div class="sec-h">Cómo venimos como agencia</div>
+    <div class="sec-s">Retención, clientes pagos, servicios y plata de MAIA (en ARS). Fuente: <code>config/agency.yaml</code> (cobros y costos que cargamos) + el gasto real de la campaña de captación de MAIA. Al ${fmtD(NOW)}. <b>Verde</b> = cumple el objetivo · <b>amarillo</b> = mirar · <b>rojo</b> = acá está el problema.</div>
+    <div class="tiles agtiles">${tiles}</div>
+    <div class="sec-h">Dónde mirar</div>
+    <div class="aglecs">${lec}</div>
+    <div class="aggrid">
+      <div class="card"><div class="h3b">🔻 Embudo de clientes</div><div class="fnl">${fn}</div>
+        <div class="mininote">Pauta de captación: ${$(X.acqSpend)} · ${money(X.acqLeads)} leads · ${$(X.acqLeads?X.acqSpend/X.acqLeads:0)} por lead · ${dec(X.acqLeads?X.conv.length/X.acqLeads*100:0,1)}% de los leads se volvió cliente.</div></div>
+      <div class="card"><div class="h3b">💰 Economía acumulada</div>${ecoH}
+        <div class="mininote">La pauta de captación se reparte entre los ${X.conv.length} clientes de convocatoria (${$(X.acqPer)} c/u). Pauta y creativo hechos por nosotras = costo $0.</div></div>
+    </div>
+    <div class="sec-h">Servicios contratados</div>
+    <div class="scroll"><table class="cmp"><tr><th>Servicio</th><th>Clientes</th><th>Facturado</th><th>Costo directo</th><th>Margen</th></tr>${svcRows||'<tr><td colspan="5">Todavía no hay servicios pagos.</td></tr>'}</table></div>
+    <div class="sec-h">Cliente por cliente</div>
+    <div class="sec-s">Neto = lo que nos pagó − (seteo + su parte de la pauta de captación + costos directos). “Resultado de su pauta” = lo que logramos para la marca mientras estuvo con nosotras.</div>
+    <div class="scroll"><table class="cmp"><tr><th>Cliente</th><th>Inicio</th><th>Estado</th><th>Servicios pagos</th><th>Facturado</th><th>Invertido</th><th>Neto</th><th>Resultado de su pauta</th><th>Próximo hito</th></tr>${rows}</table></div>
+    <div class="mininote">Para actualizar (nuevo cobro, cliente que confirma o se va): decímelo en el chat y lo cargo en <code>config/agency.yaml</code>.</div>`;
+}
+
 /* ---------- init ---------- */
 buildRangeBar("range-gen");
 buildRangeBar("range-dash");
@@ -2149,6 +2305,7 @@ buildPicker("pick-est", renderEst, "vresia");
 renderGeneral();
 syncRangeBars();
 renderSeg();
+renderAgencia();
 /* comentarios del equipo publicados (site/comments.json) */
 window.COMMENTS=window.COMMENTS||{};
 (function(){ try{
@@ -2184,7 +2341,7 @@ document.addEventListener('mouseleave',()=>{const t=document.getElementById('cha
 /* clock */
 (function(){const el=document.getElementById("clock");const d=new Date(),m=["ene","feb","mar","abr","may","jun","jul","ago","sep","oct","nov","dic"];el.textContent=d.getDate()+" "+m[d.getMonth()]+" "+d.getFullYear();})();
 /* sello de versión visible para confirmar que estás en la última */
-const BUILD="v24 · 8 oct 2026 · Seguimiento diario (regla 3 días), campañas con su resultado y ventas reportadas";
+const BUILD="v25 · 8 oct 2026 · Capítulo Agencia (retención, clientes pagos, servicios, economía) + Seguimiento diario";
 (function(){const f=document.querySelector('.foot-note'); if(f)f.insertAdjacentHTML('beforeend',' · <b>Build '+BUILD+'</b>');
   const c=document.getElementById('clock'); if(c)c.insertAdjacentHTML('beforeend','<br><span style="color:var(--rose)">Build '+BUILD.split(' · ')[0]+'</span>');})();
 
