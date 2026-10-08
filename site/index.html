@@ -450,6 +450,38 @@
   @media print{.regen,.rs-period{display:none !important}}
 
 
+
+  /* ===== v26 · Seguimiento simple + Agencia plena ===== */
+  .sgcard{border-top:0 !important;border-left:8px solid var(--idle)}
+  .sgcard.c-good{border-left-color:var(--good)} .sgcard.c-warn{border-left-color:#F2B400} .sgcard.c-bad{border-left-color:var(--bad)}
+  .sghead{display:flex;justify-content:space-between;align-items:center}
+  .sghl{font-size:17px;font-weight:600;line-height:1.35;margin-top:6px}
+  .sgsub{font-size:11.5px;color:var(--faint);margin-top:8px}
+  .sgsub2{font-size:13px;color:var(--soft);margin-top:3px}
+  .sgns{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:4px}
+  .sgn{background:var(--panel2);border-radius:10px;padding:8px 10px}
+  .sgn .v{font-size:19px;font-weight:700} .sgn .l{font-size:11.5px;color:var(--soft)}
+  .sgrev{margin-top:12px;border-radius:11px;padding:10px 12px;background:var(--panel2);font-size:13.5px}
+  .sgrev.st-due,.sgrev.st-late{background:#FFF4CC} .sgrev.st-done{opacity:.75}
+  .sgwhen{font-weight:700;margin-top:3px} .sgverd{margin-top:4px}
+  .sgok{display:inline-flex;gap:6px;align-items:center;margin-top:8px;font-size:13px;cursor:pointer}
+  .sgnote{margin-top:10px;font-size:13px} .sgnote summary{cursor:pointer;color:var(--soft)}
+  .agv2 .agbig{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:12px;margin-top:10px}
+  .agk{border-radius:16px;padding:18px 20px;color:#fff;box-shadow:var(--shadow)}
+  .agk.g{background:#16A34A} .agk.r{background:#DC2626} .agk.y{background:#F2B400;color:#2b2100}
+  .agk .q{font-size:13px;font-weight:600;opacity:.92} .agk .a{font-size:30px;font-weight:800;line-height:1.1;margin:6px 0}
+  .agk .e{font-size:13.5px;line-height:1.4} .agk .d{margin-top:10px;padding-top:9px;border-top:1px solid rgba(255,255,255,.35);font-size:13px;font-weight:600}
+  .agk.y .d{border-top-color:rgba(0,0,0,.18)}
+  .agverdict{border-radius:16px;padding:18px 22px;color:#fff;font-size:18px;font-weight:600;line-height:1.4}
+  .agverdict.r{background:#DC2626} .agverdict.y{background:#F2B400;color:#2b2100} .agverdict.g{background:#16A34A}
+  .agre{display:grid;gap:10px;margin-top:10px}
+  .agri{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:14px 16px;box-shadow:var(--shadow);display:grid;grid-template-columns:34px 1fr;gap:10px}
+  .agri .n{width:30px;height:30px;border-radius:50%;background:var(--ink);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700}
+  .agri .t{font-weight:700;font-size:15px} .agri .w{color:var(--soft);font-size:13.5px;margin-top:2px} .agri .h{font-size:13.5px;margin-top:5px}
+  .agnext{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+  .agchip{border-radius:999px;padding:7px 13px;font-size:13px;font-weight:600;color:#fff}
+  .agchip.r{background:#DC2626} .agchip.y{background:#F2B400;color:#2b2100} .agchip.g{background:#16A34A}
+  details.agmore{margin-top:22px} details.agmore>summary{cursor:pointer;font-weight:600;color:var(--soft)}
   /* ===== v25 · Agencia ===== */
   .agtiles{grid-template-columns:repeat(4,1fr)}
   @media (max-width:900px){.agtiles{grid-template-columns:repeat(2,1fr)}}
@@ -520,9 +552,9 @@
     <div class="clock" id="clock"></div>
   </div>
   <div class="tabs" role="tablist">
-    <button class="tab" role="tab" aria-selected="true" data-tab="seguimiento"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3 8-8"/><path d="M20 12v7a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h9"/></svg><span>Seguimiento</span></button>
+    <button class="tab" role="tab" aria-selected="true" data-tab="agencia"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M5 21V9l7-5 7 5v12"/><path d="M10 21v-6h4v6"/></svg><span>Agencia</span></button>
+    <button class="tab" role="tab" aria-selected="false" data-tab="seguimiento"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3 8-8"/><path d="M20 12v7a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h9"/></svg><span>Seguimiento</span></button>
     <button class="tab" role="tab" aria-selected="false" data-tab="general"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg><span>General</span></button>
-    <button class="tab" role="tab" aria-selected="false" data-tab="agencia"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M5 21V9l7-5 7 5v12"/><path d="M10 21v-6h4v6"/></svg><span>Agencia</span></button>
     <button class="tab" role="tab" aria-selected="false" data-tab="dashboard"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="20" x2="4" y2="12"/><line x1="10" y1="20" x2="10" y2="5"/><line x1="16" y1="20" x2="16" y2="9"/><line x1="21" y1="20" x2="3" y2="20"/></svg><span>Dashboard</span></button>
     <button class="tab" role="tab" aria-selected="false" data-tab="analisis"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.5" y2="16.5"/></svg><span>Análisis de pauta</span></button>
     <button class="tab" role="tab" aria-selected="false" data-tab="reporte"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5"/><line x1="9" y1="13" x2="15" y2="13"/><line x1="9" y1="17" x2="13" y2="17"/></svg><span>Reporte al cliente</span></button>
@@ -530,14 +562,14 @@
     <button class="tab" role="tab" aria-selected="false" data-tab="estrategia"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l2.1 4.9L19 10l-4.9 2.1L12 17l-2.1-4.9L5 10l4.9-2.1z"/><circle cx="18" cy="18" r="2.4"/></svg><span>Estrategia de contenido</span></button>
   </div>
 
-  <section class="panel on" id="p-seguimiento" role="tabpanel">
+  <section class="panel" id="p-seguimiento" role="tabpanel">
     <div id="body-seg"></div>
   </section>
   <section class="panel" id="p-general" role="tabpanel">
     <div class="rangebar" id="range-gen"></div>
     <div id="body-general"></div>
   </section>
-  <section class="panel" id="p-agencia" role="tabpanel">
+  <section class="panel on" id="p-agencia" role="tabpanel">
     <div id="body-agencia"></div>
   </section>
   <section class="panel" id="p-dashboard" role="tabpanel">
@@ -886,7 +918,16 @@ function compute(b){
   }
   cre.sort((x,y)=>y.spend-x.spend);
   // status → action + reason + sem
-  const st=statusOf(D.obj,K,fatiga,ctr_dir,cpm_dir);
+  let st=statusOf(D.obj,K,fatiga,ctr_dir,cpm_dir);
+  /* Marcas que venden por WhatsApp (Pulpa): Meta mide conversaciones, nosotras
+     medimos VENTAS. Si la marca reportó ventas, el estado sale del ROAS real. */
+  if(!isLead(D.obj) && D.manual && D.manual.length && K.spend>0){
+    const MM=manualIn(D,RANGE.from,RANGE.to,null);
+    if(MM.any){ const rr=MM.amount/K.spend;
+      st = rr>=3 ? {sem:'g',act:'VENDE BIEN — ESCALAR',why:`ROAS real ${dec(rr)}x · ${money(MM.sales)} ventas reportadas por la marca`}
+         : rr>=1.5 ? {sem:'y',act:'VENDE — SEGUIR OPTIMIZANDO',why:`ROAS real ${dec(rr)}x · ${money(MM.sales)} ventas reportadas por la marca`}
+         : {sem:'r',act:'VENDE POCO — REVISAR',why:`ROAS real ${dec(rr)}x · ${money(MM.sales)} ventas reportadas por la marca`}; }
+  }
   // last change
   let lc=D.lastchg||LASTCHG_FB[b]||null;
   const lcDays=lc?daysBetween(lc,TODAY):null;
@@ -2065,9 +2106,9 @@ function segData(b){
   const activeC=(D.campaigns||[]).filter(c=>c.status==='ACTIVE');
   if(L.K.spend<=0 && activeC.length) alerts.push({sev:'r',t:`Sin gasto en los últimos ${REVIEW_DAYS} días con campañas prendidas (¿pago? ¿rechazo? ¿presupuesto?).`});
   const tracked=resultTracked(D)||L.K.result>0;
-  if(L.K.spend>0 && tracked && L.K.result===0 && L.P.result>0) alerts.push({sev:'r',t:`0 ${resWord(obj)} en los últimos ${REVIEW_DAYS} días con $${money(L.K.spend)} de gasto (antes: ${money(L.P.result)}).`});
-  if(L.K.result>=3&&L.P.result>=3&&L.K.cpa>L.P.cpa*1.3) alerts.push({sev:'y',t:`Costo por ${resWord(obj).replace(/s$/,'')} +${Math.round((L.K.cpa/L.P.cpa-1)*100)}% vs los 3 días anteriores.`});
-  if(L.K.impr>=1500&&L.P.impr>=1500&&L.K.ctr<L.P.ctr*0.75) alerts.push({sev:'y',t:`CTR cayó ${Math.round((1-L.K.ctr/L.P.ctr)*100)}% (${dec(L.P.ctr)}% → ${dec(L.K.ctr)}%): posible fatiga de creativo.`});
+  if(L.K.spend>0 && tracked && L.K.result===0 && L.P.result>0) alerts.push({sev:'r',t:`${obj==='lead'?'Ningún':'Ninguna'} ${sing(resWord(obj))} en 3 días, con $${money(L.K.spend)} invertidos (antes hubo ${money(L.P.result)}).`});
+  if(L.K.result>=3&&L.P.result>=3&&L.K.cpa>L.P.cpa*1.3) alerts.push({sev:'y',t:`Cada ${sing(resWord(obj))} sale ${Math.round((L.K.cpa/L.P.cpa-1)*100)}% ${obj==='lead'?'más caro':'más cara'} que en los 3 días anteriores.`});
+  if(L.K.impr>=1500&&L.P.impr>=1500&&L.K.ctr<L.P.ctr*0.75) alerts.push({sev:'y',t:`La gente hace menos clic en los anuncios (−${Math.round((1-L.K.ctr/L.P.ctr)*100)}%): pueden estar cansando. Preparar creativo nuevo.`});
   if(!isLead(obj)&&L.K.purch>=3&&L.P.purch>=3&&L.K.roas<L.P.roas*0.75) alerts.push({sev:'y',t:`ROAS cayó de ${dec(L.P.roas)}x a ${dec(L.K.roas)}x.`});
   // Revisión pendiente: la última movida.
   let rev=null;
@@ -2086,71 +2127,99 @@ function segData(b){
   const sevRank=alerts.some(a=>a.sev==='r')?0:((rev&&(rev.st==='due'||rev.st==='late'))?1:(alerts.length?2:(rev&&rev.st==='wait'?3:4)));
   return {b,D,obj,L,alerts,rev,cl,sevRank,M:manualIn(D,ALLF,ALLT,null)};
 }
+const SING={compras:'compra',conversaciones:'conversación',leads:'lead',clics:'clic'};
+function sing(w){return SING[w]||w.replace(/s$/,'');}
+/* Frase principal de la tarjeta, en criollo. */
+function segHeadline(x){
+  const H=segHeadline0(x);
+  if(x.M&&x.M.any&&!x.alerts.some(a=>a.sev==='r')){   // marca que vende fuera de Meta: manda la VENTA
+    const sp=agg(x.b,ALLF,ALLT,null).T.spend, rr=sp?x.M.amount/sp:0;
+    return {c:rr>=3?'good':(rr>=1.5?'good':'bad'),t:`Vende: ${money(x.M.sales)} ventas que nos pasó la marca → por cada $1 invertido volvieron $${dec(rr)}.`,sub:H.t};
+  }
+  return H;
+}
+function segHeadline0(x){
+  const L=x.L, obj=x.obj, w=resWord(obj), one=sing(w);
+  const red=x.alerts.find(a=>a.sev==='r'); if(red) return {c:'bad',t:red.t};
+  if(L.K.spend<=0) return {c:'idle',t:'No gastó en los últimos 3 días.'};
+  if(!L.K.result) return {c:'warn',t:`Todavía sin ${w} en los últimos 3 días (se invirtieron $${money(L.K.spend)}).`};
+  if(!isLead(obj)&&L.K.purch>=2&&L.P.purch>=2){
+    const d=(L.K.roas-L.P.roas)/(L.P.roas||1);
+    if(d>=0.1) return {c:'good',t:`Viene mejorando: por cada $1 vuelven $${dec(L.K.roas)} (antes $${dec(L.P.roas)}).`};
+    if(d<=-0.15) return {c:'bad',t:`Viene peor: por cada $1 vuelven $${dec(L.K.roas)} (antes $${dec(L.P.roas)}).`};
+    return {c:'good',t:`Viene estable: por cada $1 vuelven $${dec(L.K.roas)}.`};
+  }
+  if(L.P.result){ const d=(L.K.cpa-L.P.cpa)/(L.P.cpa||1);
+    if(d<=-0.1) return {c:'good',t:`Viene mejorando: cada ${one} cuesta $${money(L.K.cpa)} (antes $${money(L.P.cpa)}).`};
+    if(d>=0.15) return {c:'warn',t:`Viene ${obj==='lead'?'más caro':'más cara'}: cada ${one} cuesta $${money(L.K.cpa)} (antes $${money(L.P.cpa)}).`};
+    return {c:'good',t:`Viene estable: cada ${one} cuesta $${money(L.K.cpa)}.`};
+  }
+  return {c:'good',t:`${money(L.K.result)} ${w} en los últimos 3 días, a $${money(L.K.cpa)} cada una.`};
+}
+const MOVE_PLAIN={ad_new:'Subimos anuncios nuevos',ad_on:'Prendimos anuncios',ad_off:'Pausamos anuncios',ad_del:'Borramos anuncios',
+  'campaña_on':'Prendimos una campaña','campaña_off':'Pausamos una campaña','conjunto_on':'Prendimos un conjunto','conjunto_off':'Pausamos un conjunto',
+  camp_new:'Creamos una campaña',set_new:'Creamos un conjunto',bid:'Cambiamos la puja',objetivo:'Cambiamos el objetivo',seg:'Cambiamos el público',acct_pause:'La cuenta estuvo sin gasto',budget0:'Ajustamos el presupuesto'};
+function movePlain(m){
+  const parts=[]; const seen=new Set();
+  m.items.forEach(e=>{ let t;
+    if(e.kind==='budget') t=`${e.up?'Subimos':'Bajamos'} el presupuesto ${Math.abs(e.pct)}%`;
+    else t=MOVE_PLAIN[e.kind]||'Hicimos un cambio';
+    if(!seen.has(t)){seen.add(t);parts.push(t);} });
+  return parts.slice(0,3).join(' · ');
+}
+const VERD_PLAIN={better:'✅ Funcionó. Mantener; si sigue así 2–3 días, escalar +20%.',worse:'⚠️ Empeoró. Si mañana sigue igual, volver atrás o cambiar el creativo.',
+  flat:'➡️ Sin cambios claros. Dejar correr 2 días más.',thin:'⏳ Todavía hay pocos datos. No tocar.',ctrup:'🟡 Arranca bien (más clics), pero faltan resultados. No tocar.',
+  ctrdown:'🟠 Arranca flojo (menos clics). Ir preparando un creativo nuevo.',wait:'⏳ Todavía no hay datos después del cambio.'};
 function segCard(x){
-  const D=x.D, obj=x.obj, L=x.L, w=resWord(obj);
-  const SEMC=['bad','warn','warn','idle','good'][x.sevRank];
-  const tile=(lab,cur,prev,up,fmt)=>`<div class="sgk"><div class="k">${lab}</div><div class="v">${fmt(cur)} ${deltaTxt(cur,prev,up)}</div><div class="s">antes ${fmt(prev)}</div></div>`;
-  const resLab=isLead(obj)?w.charAt(0).toUpperCase()+w.slice(1):'Compras (Meta)';
-  const tiles=[
-    tile('Gasto',L.K.spend,L.P.spend,true,v=>'$'+money(v)),
-    tile(resLab,L.K.result,L.P.result,true,v=>money(v)),
-    tile('Costo/result.',L.K.cpa,L.P.cpa,false,v=>v?'$'+money(v):'—'),
-    isLead(obj)?tile('CTR',L.K.ctr,L.P.ctr,true,v=>dec(v)+'%'):tile('ROAS (Meta)',L.K.roas,L.P.roas,true,v=>dec(v)+'x'),
-  ].join('');
-  const al=x.alerts.map(a=>`<div class="sgal sg-${a.sev}">${a.sev==='r'?'🚨':'⚠️'} ${a.t}</div>`).join('');
+  const D=x.D, obj=x.obj, L=x.L, w=resWord(obj), H=segHeadline(x);
+  const num=(v,l)=>`<div class="sgn"><div class="v">${v}</div><div class="l">${l}</div></div>`;
+  const nums=[num('$'+money(L.K.spend),'invertido'), num(money(L.K.result),w), num(L.K.result?'$'+money(L.K.cpa):'—','cada '+sing(w))].join('');
+  const man=H.sub?`<div class="sgsub2">En Meta ${H.sub.charAt(0).toLowerCase()+H.sub.slice(1)}</div>`:'';
+  const others=x.alerts.filter(a=>a.sev!=='r'||a.t!==H.t).map(a=>`<div class="sgal sg-${a.sev}">${a.sev==='r'?'🚨':'👀'} ${a.t}</div>`).join('');
   let rv='';
   if(x.rev){ const r=x.rev;
-    const badge={done:'<span class="sgb b-done">✓ revisado</span>',due:'<span class="sgb b-due">🔔 toca revisar hoy</span>',late:`<span class="sgb b-late">🔔 revisión atrasada (${daysBetween(r.due,NOW)} días)</span>`,wait:`<span class="sgb b-wait">⏳ no tocar · revisar el ${fmtD(r.due)} (faltan ${r.left} día${r.left===1?'':'s'})</span>`}[r.st];
-    rv=`<div class="sgrev">
-      <div class="sgrevh"><span class="sglab">Último cambio · ${fmtD(r.m.date)}</span>${badge}</div>
-      <div class="sgmove">${moveTitle(r.m)}</div>
-      <div class="sgimp"><span class="sglab">Efecto hasta ahora</span> <span class="chdet">(${REVIEW_DAYS} días antes vs ${r.imp.post} día${r.imp.post===1?'':'s'} después)</span><div>${r.imp.txt}</div>${r.imp.next?`<div class="sgnext">${r.imp.next}</div>`:''}</div>
-      <label class="pdone"><input type="checkbox" data-rev="${revKey(x.b,r.m.date)}" ${r.st==='done'?'checked':''}> Ya lo revisé</label>
-    </div>`;
-  } else rv=`<div class="sgrev"><div class="sgrevh"><span class="sglab">Último cambio</span><span class="sgb b-wait">sin cambios registrados</span></div></div>`;
-  const camps=x.cl.length?`<table class="sgct"><tr><th>Campaña (últ. ${REVIEW_DAYS} días)</th><th>Gasto</th><th>Resultado</th><th>Costo/result.</th></tr>${x.cl.map(c=>`<tr><td><span class="sgdot ${c.c.status==='ACTIVE'?'on':''}"></span>${esc(c.nm)} <span class="chdet">· ${KINDLBL[c.k]}</span></td><td class="num">$${money(c.K.spend)}</td><td class="num">${money(c.K.result)} ${resWord(c.o)} ${deltaTxt(c.K.result,c.P.result,true)}</td><td class="num">${c.K.result?'$'+money(c.K.cpa):'—'}</td></tr>`).join('')}</table>`:'';
-  const man=x.M.any?(()=>{const sp=agg(x.b,ALLF,ALLT,null).T.spend;return `<div class="sgman">📋 <b>Ventas reportadas por la marca:</b> ${money(x.M.sales)} ventas · $${money(x.M.amount)} ${D.cur}${sp?` · <b>ROAS real ${dec(x.M.amount/sp)}x</b> sobre $${money(sp)} invertidos`:''} (Meta atribuye ${money(agg(x.b,ALLF,ALLT,null).T.purch)} compras)${x.M.last?' · último reporte '+fmtD(x.M.last):''}.</div>`;})():'';
+    const when={done:'✓ Ya lo revisamos',due:'🔔 Hoy toca revisarlo',late:`🔔 Había que revisarlo el ${fmtD(r.due)}`,wait:`⏳ No tocar hasta el ${fmtD(r.due)}`}[r.st];
+    const verdict=(r.st==='wait'&&r.imp.post<1)?'':`<div class="sgverd">${VERD_PLAIN[r.imp.verdict]||''}</div>`;
+    rv=`<div class="sgrev st-${r.st}"><div class="sgrevt"><b>${fmtD(r.m.date)}:</b> ${movePlain(r.m)}</div><div class="sgwhen">${when}</div>${verdict}
+      ${r.st==='done'?'':`<label class="sgok"><input type="checkbox" data-rev="${revKey(x.b,r.m.date)}"> Listo, lo revisé</label>`}</div>`;
+  }
   const nk='maia_next_'+x.b, note=nGet(nk);
-  return `<div class="sgcard sem-${SEMC}" id="sg-${x.b}">
-    <div class="sghead"><div><span class="dot d-${SEMC}"></span><b class="sgname">${D.name}</b> <span class="chdet">· ${OBJSHORT[obj]||''} · ${D.cur} · datos al ${D.through?fmtD(D.through):'—'}</span></div>
-      <div class="sglinks"><button class="sglink" data-dash="${x.b}">Dashboard →</button><button class="sglink" data-ana="${x.b}">Análisis →</button></div></div>
-    ${al}
-    <div class="sglab" style="margin-top:6px">Últimos ${REVIEW_DAYS} días (${fmtD(L.from)}–${fmtD(L.to)}) vs los ${REVIEW_DAYS} anteriores</div>
-    <div class="sgks">${tiles}</div>
-    ${camps}
+  return `<div class="sgcard c-${H.c}" id="sg-${x.b}">
+    <div class="sghead"><b class="sgname">${D.name}</b><button class="sglink" data-dash="${x.b}">Ver detalle →</button></div>
+    <div class="sghl">${H.t}</div>
     ${man}
-    ${rv}
-    <div class="sgnote"><span class="sglab">Próximo paso acordado</span>
-      <textarea class="sgta" data-nk="${nk}" placeholder="Ej.: bajamos presupuesto el 5/10 → si el costo/conversación no baja de $500 el 8/10, rotamos creativos.">${esc(note)}</textarea></div>
+    <div class="sgsub">Últimos 3 días · ${OBJSHORT[obj]||''}</div>
+    <div class="sgns">${nums}</div>
+    ${others}${rv}
+    <details class="sgnote"${note?' open':''}><summary>📝 Próximo paso</summary><textarea class="sgta" data-nk="${nk}" placeholder="Ej.: si el 10/10 la conversación sigue arriba de $600, cambiamos creativos.">${esc(note)}</textarea></details>
   </div>`;
 }
+const SEG_SKIP=['mossy'];   // cuentas propias que no se siguen acá
 function renderSeg(){
-  const xs=CLIENTS.filter(b=>!isLost(b)).map(segData).sort((a,z)=>(a.sevRank-z.sevRank)||(z.L.K.spend-a.L.K.spend));
+  const xs=CLIENTS.filter(b=>!isLost(b)&&!SEG_SKIP.includes(b)).map(segData).sort((a,z)=>(a.sevRank-z.sevRank)||(z.L.K.spend-a.L.K.spend));
   const todo=[];
   xs.forEach(x=>{
     x.alerts.filter(a=>a.sev==='r').forEach(a=>todo.push({b:x.b,n:x.D.name,t:a.t,c:'r'}));
-    if(x.rev&&(x.rev.st==='due'||x.rev.st==='late')) todo.push({b:x.b,n:x.D.name,t:`Revisar el cambio del ${fmtD(x.rev.m.date)} → ${x.rev.imp.next||''}`,c:'y'});
-    x.alerts.filter(a=>a.sev==='y').forEach(a=>todo.push({b:x.b,n:x.D.name,t:a.t,c:'y2'}));
+    if(x.rev&&(x.rev.st==='due'||x.rev.st==='late')) todo.push({b:x.b,n:x.D.name,t:`revisar lo que cambiamos el ${fmtD(x.rev.m.date)}`,c:'y'});
   });
   const waiting=xs.filter(x=>x.rev&&x.rev.st==='wait');
   const pend=(window.DATA_PENDING||[]);
-  const li=t=>`<button class="sgtodo sg-${t.c}" data-go="${t.b}"><b>${esc(t.n)}</b> · ${t.t}</button>`;
+  const li=t=>`<button class="sgtodo sg-${t.c}" data-go="${t.b}"><b>${esc(t.n)}</b>: ${t.t}</button>`;
   document.getElementById('body-seg').innerHTML=`
-    <div class="sec-h">Seguimiento diario</div>
-    <div class="sec-s">Hoy <b>${fmtD(NOW)}</b> · datos de Meta cerrados al <b>${CLOSED?fmtD(CLOSED):'—'}</b>. <b>Regla MAIA:</b> después de cada cambio, ${REVIEW_DAYS} días sin tocar y se vuelve a revisar — cada tarjeta te avisa el día que toca y te muestra el efecto del cambio.</div>
+    <div class="sec-h">Seguimiento de clientes</div>
+    <div class="sec-s">Cómo viene cada cliente en los últimos 3 días y qué hay que hacer hoy. <b>Regla:</b> después de cada cambio, 3 días sin tocar; después se revisa. Datos al ${CLOSED?fmtD(CLOSED):'—'}.</div>
     <div class="sgtop">
-      <div class="card"><div class="h3b">🔔 Para hacer hoy <span class="chdet">(${todo.length})</span></div>${todo.length?todo.map(li).join(''):'<div class="sec-s" style="margin:0">Nada urgente: no hay alertas ni revisiones vencidas. 👌</div>'}</div>
-      <div class="card"><div class="h3b">⏳ En espera — no tocar</div>${waiting.length?waiting.map(x=>`<button class="sgtodo sg-w" data-go="${x.b}"><b>${esc(x.D.name)}</b> · cambio del ${fmtD(x.rev.m.date)} · revisar el <b>${fmtD(x.rev.due)}</b></button>`).join(''):'<div class="sec-s" style="margin:0">Ninguna cuenta en ventana de espera.</div>'}
-      ${pend.length?`<div class="h3b" style="margin-top:12px">🆕 Esperando datos</div>`+pend.map(p=>`<div class="sgtodo sg-w"><b>${esc(p.name)}</b> · ${esc(p.reason)}</div>`).join(''):''}</div>
+      <div class="card"><div class="h3b">🔔 Hoy</div>${todo.length?todo.map(li).join(''):'<div class="sec-s" style="margin:0">Nada urgente hoy. 👌</div>'}</div>
+      <div class="card"><div class="h3b">⏳ No tocar todavía</div>${waiting.length?waiting.map(x=>`<button class="sgtodo sg-w" data-go="${x.b}"><b>${esc(x.D.name)}</b>: revisar el ${fmtD(x.rev.due)}</button>`).join(''):'<div class="sec-s" style="margin:0">—</div>'}
+      ${pend.map(p=>`<div class="sgtodo sg-w"><b>${esc(p.name)}</b>: esperando datos</div>`).join('')}</div>
     </div>
     <div class="sgcards">${xs.map(segCard).join('')}</div>
-    <div class="mininote">Semáforo de la tarjeta: rojo = alerta grave (sin resultados, sin gasto, problema de pago) · amarillo = revisión que vence o señal a vigilar · gris = en espera · verde = todo en orden. El “Efecto” compara los ${REVIEW_DAYS} días previos al cambio con los días completos posteriores; el día del cambio no se cuenta. Las notas y los “ya lo revisé” se guardan en este navegador.</div>`;
+    <div class="mininote">Color: 🟩 viene bien · 🟨 mirar · 🟥 problema. “Listo, lo revisé” y las notas se guardan en este navegador.</div>`;
   const B=document.getElementById('body-seg');
   B.querySelectorAll('[data-rev]').forEach(cb=>cb.addEventListener('change',()=>{ckSet(cb.dataset.rev,cb.checked);renderSeg();}));
   B.querySelectorAll('.sgta').forEach(ta=>ta.addEventListener('input',()=>nSet(ta.dataset.nk,ta.value.trim())));
   B.querySelectorAll('.sgtodo[data-go]').forEach(bt=>bt.addEventListener('click',()=>{const el=document.getElementById('sg-'+bt.dataset.go); if(el){el.scrollIntoView({behavior:'smooth',block:'start'});el.classList.add('flash');setTimeout(()=>el.classList.remove('flash'),1400);}}));
   B.querySelectorAll('[data-dash]').forEach(bt=>bt.addEventListener('click',()=>goTab('dashboard',bt.dataset.dash)));
-  B.querySelectorAll('[data-ana]').forEach(bt=>bt.addEventListener('click',()=>goAnalisis(bt.dataset.ana)));
 }
 function goTab(tab,cid){
   document.querySelectorAll('.tab').forEach(x=>x.setAttribute('aria-selected',x.dataset.tab===tab?'true':'false'));
@@ -2209,9 +2278,9 @@ function agencyCalc(){
   return {A,T,cl,conv,acqSpend,acqLeads,acqFrom,acqPer,ended,decided,converted,everPaid,paidActive,rev,dcost,setups,gm,net,mrr,mrrM,pend,svc,cacPaid,payM,lost,setup};
 }
 function agTile(k,v,sub,cls){return `<div class="tile ${cls||''}"><div class="k">${k}</div><div class="v">${v}</div>${sub?`<div class="s">${sub}</div>`:''}</div>`;}
-function renderAgencia(){
-  const X=agencyCalc(), T=X.T, el=document.getElementById('body-agencia');
-  if(!X.cl.length){el.innerHTML='<div class="empty"><div class="big">Falta config/agency.yaml</div></div>';return;}
+function agencyDetail(){
+  const X=agencyCalc(), T=X.T;
+  if(!X.cl.length) return '';
   const $=v=>'$'+money(v), P=v=>Math.round(v*100)+'%';
   const convR=X.decided.length?X.converted.length/X.decided.length:0;
   const retR=X.everPaid.length?X.paidActive.length/X.everPaid.length:0;
@@ -2274,12 +2343,7 @@ function renderAgencia(){
   const up=X.cl.filter(cc=>cc.status==='a_confirmar'||(cc.status==='gratis'&&cc.freeEnd));
   if(up.length) L.push(['i',`<b>Próximas decisiones:</b> ${up.sort((a,b)=>String(a.freeEnd).localeCompare(b.freeEnd)).map(cc=>`${esc(cc.name)} — ${cc.status==='a_confirmar'?'a confirmar'+(cc.pending?' ('+$(cc.pending.amount)+')':''):'mes gratis vence '+fmtD(cc.freeEnd)}${cc.spend!=null&&!isLead(cc.obj)?' · ROAS '+dec(cc.roas)+'x':''}`).join(' · ')}.`,`Agendar ya la reunión de continuidad de cada una, antes de que venza; llegar con sus números de la pestaña Dashboard.`]);
   const lec=L.map(l=>`<div class="aglec ag-${l[0]}"><div>${l[1]}</div><div class="agdo">👉 ${l[2]}</div></div>`).join('');
-  el.innerHTML=`
-    <div class="sec-h">Cómo venimos como agencia</div>
-    <div class="sec-s">Retención, clientes pagos, servicios y plata de MAIA (en ARS). Fuente: <code>config/agency.yaml</code> (cobros y costos que cargamos) + el gasto real de la campaña de captación de MAIA. Al ${fmtD(NOW)}. <b>Verde</b> = cumple el objetivo · <b>amarillo</b> = mirar · <b>rojo</b> = acá está el problema.</div>
-    <div class="tiles agtiles">${tiles}</div>
-    <div class="sec-h">Dónde mirar</div>
-    <div class="aglecs">${lec}</div>
+  return `
     <div class="aggrid">
       <div class="card"><div class="h3b">🔻 Embudo de clientes</div><div class="fnl">${fn}</div>
         <div class="mininote">Pauta de captación: ${$(X.acqSpend)} · ${money(X.acqLeads)} leads · ${$(X.acqLeads?X.acqSpend/X.acqLeads:0)} por lead · ${dec(X.acqLeads?X.conv.length/X.acqLeads*100:0,1)}% de los leads se volvió cliente.</div></div>
@@ -2292,6 +2356,68 @@ function renderAgencia(){
     <div class="sec-s">Neto = lo que nos pagó − (seteo + su parte de la pauta de captación + costos directos). “Resultado de su pauta” = lo que logramos para la marca mientras estuvo con nosotras.</div>
     <div class="scroll"><table class="cmp"><tr><th>Cliente</th><th>Inicio</th><th>Estado</th><th>Servicios pagos</th><th>Facturado</th><th>Invertido</th><th>Neto</th><th>Resultado de su pauta</th><th>Próximo hito</th></tr>${rows}</table></div>
     <div class="mininote">Para actualizar (nuevo cobro, cliente que confirma o se va): decímelo en el chat y lo cargo en <code>config/agency.yaml</code>.</div>`;
+}
+
+function renderAgencia(){
+  const X=agencyCalc(), T=X.T, el=document.getElementById('body-agencia');
+  if(!X.cl.length){el.innerHTML='<div class="empty"><div class="big">Falta config/agency.yaml</div></div>';return;}
+  const $=v=>'$'+money(v), M=v=>(v<0?'−':'')+'$'+(Math.abs(v)>=1e6?dec(Math.abs(v)/1e6,2).replace(/,?0+$/,'')+'M':money(Math.round(Math.abs(v)/1000))+'k');
+  const tC=T.conversion_free_to_paid||.5, tP=T.payback_months||3;
+  const convR=X.decided.length?X.converted.length/X.decided.length:0;
+  const costLead=X.setup+X.acqPer;                             // conseguir 1 cliente (gratis)
+  const payM=X.payM;                                            // margen mensual de un cliente que paga
+  const monthsPaid=X.everPaid.length?X.everPaid.reduce((s,c)=>s+new Set((c.payments||[]).map(p=>p.month)).size,0)/X.everPaid.length:0;
+  const payback=(X.cacPaid&&payM)?X.cacPaid/payM:null;
+  const convNeed=payM?Math.min(1,costLead/(tP*payM)):null;
+  const sust=payback!=null&&payback<=tP&&monthsPaid>=payback;
+  const lostN=X.lost.length, goodLost=X.lost.filter(c=>c.source==='convocatoria'&&c.roas>=2);
+  const avgLost=lostN?Math.round(X.lost.reduce((s,c)=>s+c.days,0)/lostN):0;
+  const payingNow=X.paidActive.map(c=>c.name);
+  const crea=X.svc.creativo, creaM=crea&&crea.rev?(crea.rev-crea.cost)/crea.rev:0;
+  const card=(cls,q,a,e,d)=>`<div class="agk ${cls}"><div class="q">${q}</div><div class="a">${a}</div><div class="e">${e}</div>${d?`<div class="d">👉 ${d}</div>`:''}</div>`;
+  const cards=[
+    card(sust?'g':'r','¿Es sostenible conseguir clientes con pauta + mes gratis?',sust?'Sí':'No, todavía no',
+      `Cada cliente que termina pagando nos costó <b>${M(X.cacPaid||0)}</b> conseguirlo. Para recuperarlo tiene que pagarnos <b>${payback?Math.ceil(payback):'—'} meses</b>; hoy los que pagan llevan <b>${dec(monthsPaid,0)} mes</b> en promedio.`,
+      convNeed?`Cierra si pasan a pagar <b>${Math.round(convNeed*100)}%</b> de los gratis (hoy ${Math.round(convR*100)}%) o si bajamos el costo de conseguir cada uno (hoy ${M(costLead)}).`:''),
+    card(convR>=tC?'g':(convR>tC/2?'y':'r'),'¿Cuántos pasan de gratis a pagar?',`${X.converted.length} de ${X.decided.length}`,
+      `${Math.round(convR*100)}% de los que terminaron el mes gratis. Meta: ${Math.round(tC*100)}%.${goodLost.length?` Se fueron ${goodLost.map(c=>c.name).join(' y ')} <b>con buenos resultados</b>: no falla la pauta, falla el pase a pago.`:''}`,
+      'Precio y fecha de decisión por escrito el día 1. Reunión de resultados el día 21.'),
+    card(lostN/X.cl.length>=0.4?'r':(lostN?'y':'g'),'¿Se quedan los clientes?',`Se fueron ${lostN} de ${X.cl.length}`,
+      `Se van a los <b>${avgLost} días</b> en promedio: justo cuando termina el primer mes.`,'La renovación se gana en las primeras 3 semanas: reporte semanal y aviso antes de que pregunten.'),
+    card(X.mrr>0?(X.mrrM>=payM*3?'g':'y'):'r','¿Cuánto entra por mes?',M(X.mrr),
+      `${payingNow.length} cliente${payingNow.length===1?'':'s'} pagando (${payingNow.join(', ')||'—'}). Nos quedan <b>${M(X.mrrM)}</b> después de diseñadoras.${X.pend?` Si confirma lo pendiente: +${M(X.pend)}.`:''}`,
+      'Cerrar a los que están por decidir (abajo) es lo que más mueve este número.'),
+    card(X.net>=0?'g':'r','¿Cómo venimos en plata, en total?',M(X.net),
+      `Facturamos ${M(X.rev)}. Gastamos ${M(X.setups)} en seteos, ${M(X.acqSpend)} en pauta para conseguir clientes y ${M(X.dcost)} en diseñadoras.`,
+      X.setups>X.rev?'El seteo es el gasto más grande: cobrarlo o achicarlo.':''),
+    card(creaM>=(T.creative_margin||.4)?'g':'y','¿Qué servicio funciona?','Creativo',
+      `Lo compraron <b>${crea?crea.n.size:0} de ${X.everPaid.length}</b> clientes que pagaron. Deja ${Math.round(creaM*100)}% de margen.`,'Venderlo junto con la pauta desde el primer día.'),
+  ].join('');
+  // Replanteos
+  const R=[];
+  if(convR<tC) R.push(['Dejar de regalar el mes completo',`Hoy, por cada cliente que paga, ${Math.max(0,Math.round(X.decided.length/(X.converted.length||1))-1)} se van después del mes gratis: para conseguir uno que pague invertimos ${M(costLead*(X.decided.length/(X.converted.length||1)))} en seteos y pauta de captación.`,'Opciones: primer mes a mitad de precio · gratis sólo con compromiso de 3 meses · prueba de 15 días.']);
+  if(X.setups>X.rev*0.5) R.push(['Cobrar (o achicar) el seteo de campaña',`Son ${M(X.setup)} por cliente: ${M(X.setups)} en total, ${X.setups>X.rev?'más que todo lo que facturamos':'una parte enorme de lo facturado'}.`,'Cobrarlo aparte o descontarlo del primer pago; para los gratis, un seteo más chico.']);
+  if(!sust) R.push(['No sumar más clientes gratis hasta mejorar la conversión',`Cada gratis nuevo cuesta ${M(costLead)} y hoy 3 de cada 4 no pagan.`,'Achicar la campaña de captación y filtrar mejor: que ya vendan, que tengan presupuesto de pauta y que acepten el precio antes de arrancar.']);
+  if(crea&&crea.n.size) R.push(['Paquete pauta + creativo por defecto','Es lo que más compran y lo que más margen deja.','Una sola propuesta con las dos cosas; la pauta sola como opción más cara en proporción.']);
+  if(lostN) R.push(['Asegurar la renovación antes del día 30',`Los que se van, se van al terminar el mes (${avgLost} días en promedio).`,'Reunión el día 21 con resultados + propuesta de continuidad + fecha de decisión.']);
+  const rep_=R.map((r,i)=>`<div class="agri"><div class="n">${i+1}</div><div><div class="t">${r[0]}</div><div class="w">${r[1]}</div><div class="h">👉 ${r[2]}</div></div></div>`).join('');
+  // Próximas decisiones
+  const up=X.cl.filter(c=>c.status==='a_confirmar'||(c.status==='gratis'&&c.freeEnd)).map(c=>{
+    const d=c.freeEnd?daysBetween(NOW,c.freeEnd):0; const cls=(c.status==='a_confirmar'||d<=3)?'r':(d<=10?'y':'g');
+    return {d:c.status==='a_confirmar'?-99:d,h:`<span class="agchip ${cls}">${esc(c.name)} · ${c.status==='a_confirmar'?'a confirmar'+(c.pending?' ('+M(c.pending.amount)+')':''):'decide el '+fmtD(c.freeEnd)+' ('+(d<0?'vencido':d+' días')+')'}</span>`};}).sort((a,b)=>a.d-b.d).map(x=>x.h).join('');
+  const vcls=(X.net<0&&!sust)?'r':(X.net<0?'y':'g');
+  const vtxt=vcls==='r'?'Hoy la agencia pierde plata: conseguimos clientes, pero pocos pasan a pagar y los que pagan duran poco. <b>La prioridad no es conseguir más clientes: es que los que llegan paguen y se queden.</b>'
+    :(vcls==='y'?'Vamos en camino, pero todavía no recuperamos lo invertido en conseguir clientes.':'La agencia es rentable y la captación se paga sola.');
+  el.innerHTML=`<div class="agv2">
+    <div class="sec-h">Cómo venimos como agencia</div>
+    <div class="sec-s">Al ${fmtD(NOW)} · en pesos · 🟩 bien · 🟨 mirar · 🟥 problema</div>
+    <div class="agverdict ${vcls}">${vtxt}</div>
+    <div class="agbig">${cards}</div>
+    ${up?`<div class="sec-h">Decisiones que vienen</div><div class="agnext">${up}</div>`:''}
+    <div class="sec-h">Replanteos</div>
+    <div class="agre">${rep_}</div>
+    <details class="agmore"><summary>Ver los números completos (embudo, plata y cliente por cliente)</summary>${agencyDetail()}</details>
+  </div>`;
 }
 
 /* ---------- init ---------- */
@@ -2341,7 +2467,7 @@ document.addEventListener('mouseleave',()=>{const t=document.getElementById('cha
 /* clock */
 (function(){const el=document.getElementById("clock");const d=new Date(),m=["ene","feb","mar","abr","may","jun","jul","ago","sep","oct","nov","dic"];el.textContent=d.getDate()+" "+m[d.getMonth()]+" "+d.getFullYear();})();
 /* sello de versión visible para confirmar que estás en la última */
-const BUILD="v25 · 8 oct 2026 · Capítulo Agencia (retención, clientes pagos, servicios, economía) + Seguimiento diario";
+const BUILD="v26 · 8 oct 2026 · Agencia simple con veredictos y replanteos · Seguimiento amigable · Pulpa medida por ventas";
 (function(){const f=document.querySelector('.foot-note'); if(f)f.insertAdjacentHTML('beforeend',' · <b>Build '+BUILD+'</b>');
   const c=document.getElementById('clock'); if(c)c.insertAdjacentHTML('beforeend','<br><span style="color:var(--rose)">Build '+BUILD.split(' · ')[0]+'</span>');})();
 
