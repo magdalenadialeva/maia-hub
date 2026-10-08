@@ -514,7 +514,11 @@ def _campaign_ok(client: dict, name: str, objective: str) -> bool:
         return False
     nm = (name or "").lower()
     for x in client.get("campaign_exclude") or []:
-        if str(x).lower() in nm:
+        x = str(x).lower()
+        if x.startswith("="):                 # "=nombre" -> sólo nombre exacto
+            if nm.strip() == x[1:].strip():
+                return False
+        elif x in nm:
             return False
     return True
 

@@ -1,56 +1,5 @@
 [
  {
-  "name": "TOFU - VENTA (N - AB)",
-  "objective": "OUTCOME_SALES",
-  "status": "PAUSED",
-  "spend": 463914.72,
-  "first": "2026-09-02",
-  "last": "2026-09-25",
-  "purch": 7.0,
-  "msg": 4.0,
-  "ads": [
-   "04-TOFU-AO2-Video",
-   "03-TOFU-AO1-Carru",
-   "02-TOFU-AO1-Gif",
-   "video novo 2 (22-10-2025) — Cópia - Copia",
-   "Forever Bliss - Video Mixer - Copia",
-   "01-TOFU-AO1-Video",
-   "01-tofu-nuevo-sept",
-   "02-tofu-nuevo-sept"
-  ],
-  "impr": 30406.0,
-  "lc": 723.0,
-  "lpv": 591.0,
-  "atc": 56.0,
-  "ic": 15.0,
-  "pval": 237970.0,
-  "leads": 0.0,
-  "window_from": "2026-09-02"
- },
- {
-  "name": "TAP",
-  "objective": "LINK_CLICKS",
-  "status": "PAUSED",
-  "spend": 93971.58,
-  "first": "2026-09-02",
-  "last": "2026-09-25",
-  "purch": 0.0,
-  "msg": 11.0,
-  "ads": [
-   "01-TAP-0726",
-   "02-TAP-30-07",
-   "19/08"
-  ],
-  "impr": 23753.0,
-  "lc": 1427.0,
-  "lpv": 56.0,
-  "atc": 0.0,
-  "ic": 0.0,
-  "pval": 0.0,
-  "leads": 0.0,
-  "window_from": "2026-09-02"
- },
- {
   "name": "BePowder_Sep-2026_Conversiones",
   "objective": "OUTCOME_SALES",
   "status": "ACTIVE",

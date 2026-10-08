@@ -21,7 +21,7 @@
 # ad_account_ids     : lista, si una marca tiene VARIAS cuentas (se suman en una sola marca).
 # campaign_objectives: sólo cuenta campañas con esos objetivos de Meta (p.ej. OUTCOME_SALES
 #                      = conversiones). Sirve cuando la cuenta tiene campañas que no hacemos nosotros.
-# campaign_exclude   : excluye campañas cuyo nombre contenga ese texto.
+# campaign_exclude   : excluye campañas cuyo nombre contenga ese texto ("=texto" = nombre exacto).
 # end_maia  : (solo perdidas) fecha de fin con MAIA -> "Fin" y "Con nosotros".
 # match_account_name: lista de textos. Si la marca todavía no tiene ad_account_id
 #             (TODO), fetch_meta busca en el portfolio una cuenta cuyo NOMBRE contenga
@@ -172,6 +172,9 @@ clients:
     currency: ARS
     ad_account_id: "3013490568829464"   # encontrada por nombre (2026-10-08)
     match_account_name: ["bepowder", "be powder", "be-powder", "be_powder"]
-    start_label: "auto"            # = primer día con gasto; poner start_maia real cuando se confirme
+    start_maia: "2026-09-25"
+    start_label: "25 sep 2026"
     margin: 0.5
-    notes: "Cliente nuevo (alta 8/10/2026)."
+    # Las campañas previas a MAIA ("TOFU - VENTA (N - AB)" y "TAP", 2–25 sep) no se cuentan.
+    campaign_exclude: ["tofu - venta", "=tap"]
+    notes: "25/09: prendimos campaña con contenido que ya tenían -> no vendía, se pausó. Lunes 6/10: campaña nueva con materiales nuevos."
