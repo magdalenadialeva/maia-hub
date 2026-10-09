@@ -1,5 +1,65 @@
 [
  {
+  "date": "2026-10-08",
+  "cat": "segmentacion",
+  "text": "Público personalizado creado · asa_auto_custom_audience",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-08",
+  "cat": "estado",
+  "text": "Estado de la campaña actualizado · Mossy_AlwaysOn_Conversiones_Dinámicos (Procesamiento pendiente → Activa)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-08",
+  "cat": "estado",
+  "text": "Estado de la campaña actualizado · Mar26 - Ventas - A+ - Catalogo - Frio (Procesamiento pendiente → Activa)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-08",
+  "cat": "estado",
+  "text": "Estado de la campaña actualizado · Ago26 - Ventas - CBO - Prospecting - Angulos Nuevos (Procesamiento pendiente → Activa)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-08",
+  "cat": "presupuesto",
+  "text": "Presupuesto de la campaña actualizado · Mossy_AlwaysOn_Conversiones_Dinámicos (10.000 → 15.000 ARS/día)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-08",
+  "cat": "estado",
+  "text": "Estado de la campaña actualizado · Mossy_AlwaysOn_Conversiones_Dinámicos (Activa → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-08",
+  "cat": "presupuesto",
+  "text": "Presupuesto de la campaña actualizado · Mar26 - Ventas - A+ - Catalogo - Frio (55.000 → 45.000 ARS/día)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-08",
+  "cat": "estado",
+  "text": "Estado de la campaña actualizado · Mar26 - Ventas - A+ - Catalogo - Frio (Activa → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-08",
+  "cat": "presupuesto",
+  "text": "Presupuesto de la campaña actualizado · Ago26 - Ventas - CBO - Prospecting - Angulos Nuevos (10.000 → 8.000 ARS/día)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-08",
+  "cat": "estado",
+  "text": "Estado de la campaña actualizado · Ago26 - Ventas - CBO - Prospecting - Angulos Nuevos (Activa → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
   "date": "2026-10-07",
   "cat": "segmentacion",
   "text": "Público personalizado creado · asa_auto_custom_audience",
@@ -657,66 +717,6 @@
   "date": "2026-09-15",
   "cat": "segmentacion",
   "text": "Público personalizado creado · asa_auto_custom_audience",
-  "src": "meta"
- },
- {
-  "date": "2026-09-15",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Ad3 - Angulo Producto Fit (Procesamiento pendiente → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-15",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · Ad3 - Angulo Producto Fit (Activo → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-15",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Ad3 - Angulo Producto Fit (Activo → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-15",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Ad3 - Angulo Producto Fit (Procesamiento pendiente → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-15",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · Ad3 - Angulo Producto Fit (Inactivo → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-15",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Ad3 - Angulo Producto Fit (Inactivo → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-12",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Ad6 - Secuencia - Nueva coleccion 2026 - Reemplazo 12-9 (fix catalogo) (Revisión pendiente → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-12",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Ad6 - Secuencia - Nueva coleccion 2026 - Reemplazo 12-9 (fix catalogo) (Procesamiento pendiente → Revisión pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-12",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · Ad6 - Secuencia - Nueva coleccion 2026 - Reemplazo 12-9 (fix catalogo) (Activo → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-12",
-  "cat": "creativo",
-  "text": "Anuncio creado · Ad6 - Secuencia - Nueva coleccion 2026 - Reemplazo 12-9 (fix catalogo)",
   "src": "meta"
  }
 ]

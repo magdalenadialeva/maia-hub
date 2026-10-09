@@ -1,9 +1,39 @@
 [
  {
+  "date": "2026-10-08",
+  "cat": "estado",
+  "text": "Estado de la campaña actualizado · Saritina_Trafico_Mensajes_Wsp_Sep (Inactiva → Activa)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-08",
+  "cat": "creativo",
+  "text": "Se reactivó «Ad_Video_1»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-10-08",
+  "cat": "creativo",
+  "text": "Se reactivó «Ad_Video_3»",
+  "src": "auto"
+ },
+ {
   "date": "2026-10-06",
   "cat": "estado",
   "text": "Estado de la campaña actualizado · Saritina_Trafico_Mensajes_Wsp_Sep (Activa → Inactiva)",
   "src": "meta"
+ },
+ {
+  "date": "2026-10-06",
+  "cat": "creativo",
+  "text": "Se pausó «Ad_Video_1»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-10-06",
+  "cat": "creativo",
+  "text": "Se pausó «Ad_Video_3»",
+  "src": "auto"
  },
  {
   "date": "2026-10-01",

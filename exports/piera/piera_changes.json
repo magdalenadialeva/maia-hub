@@ -6,6 +6,12 @@
   "src": "meta"
  },
  {
+  "date": "2026-10-06",
+  "cat": "creativo",
+  "text": "Se apagó «AYMARA - LINK AD- V7 - Copia»",
+  "src": "auto"
+ },
+ {
   "date": "2026-10-03",
   "cat": "creativo",
   "text": "Se encendió/lanzó «AYMARA - LINK AD- V7»",
@@ -711,12 +717,6 @@
   "date": "2026-09-02",
   "cat": "estado",
   "text": "Estado del anuncio actualizado · Carrusel Catalogo - Video Nuevo 6 (Inactivo → Eliminado)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-02",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Carrusel Catalogo 3 - Video - Copia 2 (Revisión pendiente → Eliminado)",
   "src": "meta"
  }
 ]

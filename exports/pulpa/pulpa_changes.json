@@ -1,5 +1,11 @@
 [
  {
+  "date": "2026-10-08",
+  "cat": "segmentacion",
+  "text": "Público personalizado creado · asa_auto_custom_audience",
+  "src": "meta"
+ },
+ {
   "date": "2026-10-06",
   "cat": "estado",
   "text": "Estado de la cuenta actualizado · Pulpa Cuenta publicitaria (En período de gracia → Activa)",
@@ -711,12 +717,6 @@
   "date": "2026-09-07",
   "cat": "creativo",
   "text": "Se encendió/lanzó «Yo se que vos y yo...»",
-  "src": "auto"
- },
- {
-  "date": "2026-09-06",
-  "cat": "creativo",
-  "text": "Se pausó «Ad_Manchas»",
   "src": "auto"
  }
 ]

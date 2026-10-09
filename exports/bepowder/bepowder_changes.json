@@ -1,5 +1,113 @@
 [
  {
+  "date": "2026-10-08",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Anuncio Video pudin + mate día con be powder (Revisión pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-08",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Anuncio dios de la semana (Revisión pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-08",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Anuncio Vaso de Leche Cacao Video (Revisión pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-08",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Carrusel productos (Revisión pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-08",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Carrusel productos (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-08",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Anuncio dios de la semana (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-08",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Anuncio Video pudin + mate día con be powder (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-08",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Anuncio Vaso de Leche Cacao Video (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-08",
+  "cat": "estado",
+  "text": "Estado del conjunto de anuncios actualizado · BePowder_Sep-2026_Conversiones_Adv+Intereses (Procesamiento pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-08",
+  "cat": "otros",
+  "text": "Segmentación del conjunto de anuncios actualizada · BePowder_Sep-2026_Conversiones_Adv+Intereses",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-08",
+  "cat": "estado",
+  "text": "Estado del conjunto de anuncios actualizado · BePowder_Sep-2026_Conversiones_Adv+Intereses (Activo → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-08",
+  "cat": "segmentacion",
+  "text": "Público personalizado creado · ret 90 dias",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-08",
+  "cat": "segmentacion",
+  "text": "Público personalizado creado · retargeting 90 dias",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-08",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Anuncio Vaso de Leche Cacao Video (Activo → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-08",
+  "cat": "creativo",
+  "text": "Anuncio actualizado · Anuncio Vaso de Leche Cacao Video",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-08",
+  "cat": "creativo",
+  "text": "Anuncio creado · Carrusel productos",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-08",
+  "cat": "creativo",
+  "text": "Anuncio creado · Anuncio Vaso de Leche Cacao Video",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-08",
+  "cat": "creativo",
+  "text": "Se encendió/lanzó «Carrusel productos»",
+  "src": "auto"
+ },
+ {
   "date": "2026-10-07",
   "cat": "segmentacion",
   "text": "Público personalizado creado · asa_auto_custom_audience",
@@ -212,13 +320,13 @@
  {
   "date": "2026-09-05",
   "cat": "segmentacion",
-  "text": "Público personalizado actualizado · asa_auto_custom_audience ({\"inclusions\":{\"operator\":\"or\",\"rules\":[{\"event_sources\":[{\"type\":\"pixel\",\"id\":1217061329555554}],\"retention_seconds\":15552000,\"filter\":{\"operator\":\"and\",\"filters\":[{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"InitiateCheckout\"}]}},{\"event_sources\":[{\"type\":\"pixel\",\"id\":1217061329555554}],\"retention_seconds\":15552000,\"filter\":{\"operator\":\"and\",\"filters\":[{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"AddToCart\"}]}},{\"event_sources\":[{\"type\":\"pixel\",\"id\":1217061329555554}],\"retention_seconds\":15552000,\"filter\":{\"operator\":\"and\",\"filters\":[{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"ViewContent\"}]}}]}} → {\"inclusions\":{\"operator\":\"or\",\"rules\":[{\"event_sources\":[{\"type\":\"pixel\",\"id\":1149879373665723},{\"type\":\"pixel\",\"id\":1217061329555554}],\"retention_seconds\":15552000,\"filter\":{\"operator\":\"and\",\"filters\":[{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"InitiateCheckout\"}]}},{\"event_sources\":[{\"type\":\"pixel\",\"id\":1149879373665723},{\"type\":\"pixel\",\"id\":1217061329555554}],\"retention_seconds\":15552000,\"filter\":{\"operator\":\"and\",\"filters\":[{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"AddToCart\"}]}},{\"event_sources\":[{\"type\":\"pixel\",\"id\":1149879373665723},{\"type\":\"pixel\",\"id\":1217061329555554}],\"retention_seconds\":15552000,\"filter\":{\"operator\":\"and\",\"filters\":[{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"ViewContent\"}]}}]}})",
+  "text": "Público personalizado actualizado · asa_auto_custom_audience ({\"inclusions\":{\"operator\":\"or\",\"rules\":[{\"event_sources\":[{\"type\":\"pixel\",\"id\":1217061329555554}],\"retention_seconds\":15552000,\"filter\":{\"operator\":\"and\",\"filters\":[{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"Purchase\"}]}}]}} → {\"inclusions\":{\"operator\":\"or\",\"rules\":[{\"event_sources\":[{\"type\":\"pixel\",\"id\":1149879373665723},{\"type\":\"pixel\",\"id\":1217061329555554}],\"retention_seconds\":15552000,\"filter\":{\"operator\":\"and\",\"filters\":[{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"Purchase\"}]}}]}})",
   "src": "meta"
  },
  {
   "date": "2026-09-05",
   "cat": "segmentacion",
-  "text": "Público personalizado actualizado · asa_auto_custom_audience ({\"inclusions\":{\"operator\":\"or\",\"rules\":[{\"event_sources\":[{\"type\":\"pixel\",\"id\":1217061329555554}],\"retention_seconds\":15552000,\"filter\":{\"operator\":\"and\",\"filters\":[{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"Purchase\"}]}}]}} → {\"inclusions\":{\"operator\":\"or\",\"rules\":[{\"event_sources\":[{\"type\":\"pixel\",\"id\":1149879373665723},{\"type\":\"pixel\",\"id\":1217061329555554}],\"retention_seconds\":15552000,\"filter\":{\"operator\":\"and\",\"filters\":[{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"Purchase\"}]}}]}})",
+  "text": "Público personalizado actualizado · asa_auto_custom_audience ({\"inclusions\":{\"operator\":\"or\",\"rules\":[{\"event_sources\":[{\"type\":\"pixel\",\"id\":1217061329555554}],\"retention_seconds\":15552000,\"filter\":{\"operator\":\"and\",\"filters\":[{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"InitiateCheckout\"}]}},{\"event_sources\":[{\"type\":\"pixel\",\"id\":1217061329555554}],\"retention_seconds\":15552000,\"filter\":{\"operator\":\"and\",\"filters\":[{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"AddToCart\"}]}},{\"event_sources\":[{\"type\":\"pixel\",\"id\":1217061329555554}],\"retention_seconds\":15552000,\"filter\":{\"operator\":\"and\",\"filters\":[{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"ViewContent\"}]}}]}} → {\"inclusions\":{\"operator\":\"or\",\"rules\":[{\"event_sources\":[{\"type\":\"pixel\",\"id\":1149879373665723},{\"type\":\"pixel\",\"id\":1217061329555554}],\"retention_seconds\":15552000,\"filter\":{\"operator\":\"and\",\"filters\":[{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"InitiateCheckout\"}]}},{\"event_sources\":[{\"type\":\"pixel\",\"id\":1149879373665723},{\"type\":\"pixel\",\"id\":1217061329555554}],\"retention_seconds\":15552000,\"filter\":{\"operator\":\"and\",\"filters\":[{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"AddToCart\"}]}},{\"event_sources\":[{\"type\":\"pixel\",\"id\":1149879373665723},{\"type\":\"pixel\",\"id\":1217061329555554}],\"retention_seconds\":15552000,\"filter\":{\"operator\":\"and\",\"filters\":[{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"ViewContent\"}]}}]}})",
   "src": "meta"
  },
  {
@@ -609,114 +717,6 @@
   "date": "2026-08-20",
   "cat": "estado",
   "text": "Estado del anuncio actualizado · 07-TOFU-AO3-Video (Procesamiento pendiente → Revisión pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-20",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · 01-TOFU-AO1-Video (Procesamiento pendiente → Revisión pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-20",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · 05-TOFU-AO2-GIF (Procesamiento pendiente → Revisión pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-20",
-  "cat": "estado",
-  "text": "Estado del conjunto de anuncios actualizado · LAL SUG + ABIERTO - OPT (Procesamiento pendiente → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-20",
-  "cat": "creativo",
-  "text": "Anuncio creado · 01-TOFU-AO1-Video",
-  "src": "meta"
- },
- {
-  "date": "2026-08-20",
-  "cat": "creativo",
-  "text": "Anuncio creado · 02-TOFU-AO1-Gif",
-  "src": "meta"
- },
- {
-  "date": "2026-08-20",
-  "cat": "creativo",
-  "text": "Anuncio creado · 06-TOFU-AO2-Carru",
-  "src": "meta"
- },
- {
-  "date": "2026-08-20",
-  "cat": "creativo",
-  "text": "Anuncio creado · 03-TOFU-AO1-Carru",
-  "src": "meta"
- },
- {
-  "date": "2026-08-20",
-  "cat": "creativo",
-  "text": "Anuncio creado · 05-TOFU-AO2-GIF",
-  "src": "meta"
- },
- {
-  "date": "2026-08-20",
-  "cat": "creativo",
-  "text": "Anuncio creado · 07-TOFU-AO3-Video",
-  "src": "meta"
- },
- {
-  "date": "2026-08-20",
-  "cat": "presupuesto",
-  "text": "Se habilitó la programación del presupuesto del conjunto de anuncios · LAL SUG + ABIERTO - OPT",
-  "src": "meta"
- },
- {
-  "date": "2026-08-20",
-  "cat": "otros",
-  "text": "Segmentación del conjunto de anuncios actualizada · LAL SUG + ABIERTO - OPT",
-  "src": "meta"
- },
- {
-  "date": "2026-08-20",
-  "cat": "objetivo",
-  "text": "Objetivo de optimización del conjunto de anuncios actualizado · LAL SUG + ABIERTO - OPT",
-  "src": "meta"
- },
- {
-  "date": "2026-08-20",
-  "cat": "presupuesto",
-  "text": "Estrategia de puja del conjunto de anuncios actualizada · LAL SUG + ABIERTO - OPT",
-  "src": "meta"
- },
- {
-  "date": "2026-08-20",
-  "cat": "creativo",
-  "text": "Conjunto de anuncios creado · LAL SUG + ABIERTO - OPT",
-  "src": "meta"
- },
- {
-  "date": "2026-08-20",
-  "cat": "presupuesto",
-  "text": "Presupuesto del conjunto de anuncios actualizado · LAL SUG + ABIERTO (15.000 → 5.000 ARS/día)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-20",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · 07-TOFU-AO3-Video (Procesamiento pendiente → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-20",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · 02-TOFU-AO1-Gif (Procesamiento pendiente → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-20",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · 05-TOFU-AO2-GIF (Procesamiento pendiente → Inactivo)",
   "src": "meta"
  }
 ]
