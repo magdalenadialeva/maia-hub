@@ -1,5 +1,35 @@
 [
  {
+  "date": "2026-10-09",
+  "cat": "estado",
+  "text": "Estado de la campaña actualizado · BePowder_Sep-2026_Conversiones (Activa → Inactiva)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-09",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Anuncio Dia de la madre (Revisión pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-09",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Anuncio Dia de la madre (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-09",
+  "cat": "creativo",
+  "text": "Anuncio creado · Anuncio Dia de la madre",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-09",
+  "cat": "creativo",
+  "text": "Se encendió/lanzó «Anuncio Dia de la madre»",
+  "src": "auto"
+ },
+ {
   "date": "2026-10-08",
   "cat": "estado",
   "text": "Estado del anuncio actualizado · Anuncio Video pudin + mate día con be powder (Revisión pendiente → Activo)",
@@ -464,13 +494,13 @@
  {
   "date": "2026-09-03",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · Forever Bliss - Video Mixer - Copia (Procesamiento pendiente → Revisión pendiente)",
+  "text": "Estado del anuncio actualizado · video novo 2 (22-10-2025) — Cópia - Copia (Procesamiento pendiente → Revisión pendiente)",
   "src": "meta"
  },
  {
   "date": "2026-09-03",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · video novo 2 (22-10-2025) — Cópia - Copia (Procesamiento pendiente → Revisión pendiente)",
+  "text": "Estado del anuncio actualizado · Forever Bliss - Video Mixer - Copia (Procesamiento pendiente → Revisión pendiente)",
   "src": "meta"
  },
  {
@@ -500,12 +530,6 @@
  {
   "date": "2026-09-03",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · 05-TOFU-AO2-GIF (Procesamiento pendiente → Revisión pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-03",
-  "cat": "estado",
   "text": "Estado del anuncio actualizado · 03-TOFU-AO1-Carru (Procesamiento pendiente → Revisión pendiente)",
   "src": "meta"
  },
@@ -513,6 +537,12 @@
   "date": "2026-09-03",
   "cat": "estado",
   "text": "Estado del anuncio actualizado · 07-TOFU-AO3-Video (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-03",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · 05-TOFU-AO2-GIF (Procesamiento pendiente → Revisión pendiente)",
   "src": "meta"
  },
  {
@@ -687,36 +717,6 @@
   "date": "2026-08-20",
   "cat": "estado",
   "text": "Estado del anuncio actualizado cuando se completa su revisión · 03-TOFU-AO1-Carru (Inactivo → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-20",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · 03-TOFU-AO1-Carru (Revisión pendiente → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-20",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · 06-TOFU-AO2-Carru (Inactivo → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-20",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · 06-TOFU-AO2-Carru (Revisión pendiente → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-20",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · 02-TOFU-AO1-Gif (Procesamiento pendiente → Revisión pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-20",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · 07-TOFU-AO3-Video (Procesamiento pendiente → Revisión pendiente)",
   "src": "meta"
  }
 ]

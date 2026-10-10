@@ -3,24 +3,25 @@
   "name": "BePowder_Sep-2026_Conversiones",
   "objective": "OUTCOME_SALES",
   "status": "PAUSED",
-  "spend": 97432.95,
+  "spend": 108674.53,
   "first": "2026-09-25",
-  "last": "2026-10-08",
+  "last": "2026-10-09",
   "purch": 0.0,
   "msg": 2.0,
   "ads": [
    "Anuncio dios de la semana",
    "Anuncio Video pudin + mate día con be powder",
    "Anuncio Vaso de Leche Cacao Video",
-   "Carrusel productos"
+   "Carrusel productos",
+   "Anuncio Dia de la madre"
   ],
-  "impr": 7613.0,
-  "lc": 133.0,
-  "lpv": 79.0,
+  "impr": 8476.0,
+  "lc": 151.0,
+  "lpv": 92.0,
   "atc": 8.0,
   "ic": 2.0,
   "pval": 0.0,
   "leads": 0.0,
-  "window_from": "2026-09-03"
+  "window_from": "2026-09-04"
  }
 ]

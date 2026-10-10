@@ -1,5 +1,23 @@
 [
  {
+  "date": "2026-10-09",
+  "cat": "estado",
+  "text": "Estado de la cuenta actualizado · Pulpa Cuenta publicitaria (En período de gracia → Activa)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-09",
+  "cat": "presupuesto",
+  "text": "Presupuesto del conjunto de anuncios actualizado · Pulpa Verde_Conversiones_Org_Mensajes_2026_Adv+ (7.000 → 10.000 ARS/día)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-09",
+  "cat": "estado",
+  "text": "Estado de la cuenta actualizado · Pulpa Cuenta publicitaria (Activa → En período de gracia)",
+  "src": "meta"
+ },
+ {
   "date": "2026-10-08",
   "cat": "segmentacion",
   "text": "Público personalizado creado · asa_auto_custom_audience",
@@ -699,24 +717,6 @@
   "date": "2026-09-07",
   "cat": "creativo",
   "text": "Se encendió/lanzó «Así lavo mis toallas»",
-  "src": "auto"
- },
- {
-  "date": "2026-09-07",
-  "cat": "creativo",
-  "text": "Se encendió/lanzó «Si hubiera desarrollado esto antes»",
-  "src": "auto"
- },
- {
-  "date": "2026-09-07",
-  "cat": "creativo",
-  "text": "Se encendió/lanzó «Converse Blancas»",
-  "src": "auto"
- },
- {
-  "date": "2026-09-07",
-  "cat": "creativo",
-  "text": "Se encendió/lanzó «Yo se que vos y yo...»",
   "src": "auto"
  }
 ]

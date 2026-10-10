@@ -2,31 +2,13 @@
  {
   "date": "2026-10-07",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · sweater mama  y vestido nena (Procesamiento pendiente → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-07",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · sweater mama  y vestido nena (Activo → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-07",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · sweater mama  y vestido nena (Activo → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-07",
-  "cat": "estado",
   "text": "Estado del anuncio actualizado · Ventas video regalo (Revisión pendiente → Activo)",
   "src": "meta"
  },
  {
   "date": "2026-10-07",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · si es una nena (Revisión pendiente → Activo)",
+  "text": "Estado del anuncio actualizado · sweater dibujo mama (Revisión pendiente → Activo)",
   "src": "meta"
  },
  {
@@ -56,61 +38,67 @@
  {
   "date": "2026-10-07",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · sweater mama  y vestido nena (Procesamiento pendiente → Activo)",
+  "text": "Estado del anuncio actualizado · video pedido (Procesamiento pendiente → Activo)",
   "src": "meta"
  },
  {
   "date": "2026-10-07",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · sweater mama  y vestido nena (Inactivo → Activo)",
+  "text": "Estado del anuncio actualizado cuando se completa su revisión · video pedido (Inactivo → Activo)",
   "src": "meta"
  },
  {
   "date": "2026-10-07",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · sweater mama  y vestido nena (Inactivo → Procesamiento pendiente)",
+  "text": "Estado del anuncio actualizado · video pedido (Inactivo → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-07",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · video pedido (Procesamiento pendiente → Inactivo)",
   "src": "meta"
  },
  {
   "date": "2026-10-07",
   "cat": "otros",
-  "text": "Nombre del anuncio actualizado · sweater mama  y vestido nena (vestido pre venta → sweater mama  y vestido nena)",
+  "text": "Nombre del anuncio actualizado · video pedido (vestido pre venta → sweater mama  y vestido nena)",
   "src": "meta"
  },
  {
   "date": "2026-10-07",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · si es una nena (Procesamiento pendiente → Revisión pendiente)",
+  "text": "Estado del anuncio actualizado · sweater dibujo mama (Procesamiento pendiente → Revisión pendiente)",
   "src": "meta"
  },
  {
   "date": "2026-10-07",
   "cat": "otros",
-  "text": "Nombre del anuncio actualizado · si es una nena (Ventas bodys, calzas → si es una nena)",
+  "text": "Nombre del anuncio actualizado · sweater dibujo mama (Ventas bodys, calzas → si es una nena)",
   "src": "meta"
  },
  {
   "date": "2026-10-07",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · si es una nena (Activo → Procesamiento pendiente)",
+  "text": "Estado del anuncio actualizado · sweater dibujo mama (Activo → Procesamiento pendiente)",
   "src": "meta"
  },
  {
   "date": "2026-10-07",
   "cat": "creativo",
-  "text": "Anuncio actualizado · si es una nena",
+  "text": "Anuncio actualizado · sweater dibujo mama",
   "src": "meta"
  },
  {
   "date": "2026-10-07",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · sweater mama  y vestido nena (Revisión pendiente → Inactivo)",
+  "text": "Estado del anuncio actualizado · video pedido (Revisión pendiente → Inactivo)",
   "src": "meta"
  },
  {
   "date": "2026-10-07",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · sweater mama  y vestido nena (Procesamiento pendiente → Revisión pendiente)",
+  "text": "Estado del anuncio actualizado · video pedido (Procesamiento pendiente → Revisión pendiente)",
   "src": "meta"
  },
  {
@@ -140,13 +128,13 @@
  {
   "date": "2026-10-07",
   "cat": "otros",
-  "text": "Segmentación del anuncio actualizada · sweater mama  y vestido nena",
+  "text": "Segmentación del anuncio actualizada · video pedido",
   "src": "meta"
  },
  {
   "date": "2026-10-07",
   "cat": "creativo",
-  "text": "Anuncio actualizado · sweater mama  y vestido nena",
+  "text": "Anuncio actualizado · video pedido",
   "src": "meta"
  },
  {
@@ -171,6 +159,18 @@
   "date": "2026-10-07",
   "cat": "creativo",
   "text": "Anuncio actualizado · bordado mama",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-07",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado cuando se completa su revisión · video pedido (Activo → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-07",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · video pedido (Activo → Procesamiento pendiente)",
   "src": "meta"
  },
  {
@@ -222,6 +222,12 @@
   "src": "meta"
  },
  {
+  "date": "2026-10-07",
+  "cat": "creativo",
+  "text": "Se apagó «video pedido»",
+  "src": "auto"
+ },
+ {
   "date": "2026-10-06",
   "cat": "segmentacion",
   "text": "Público personalizado creado · asa_auto_custom_audience",
@@ -230,31 +236,31 @@
  {
   "date": "2026-10-06",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · sweater mama  y vestido nena (Revisión pendiente → Activo)",
+  "text": "Estado del anuncio actualizado · video pedido (Revisión pendiente → Activo)",
   "src": "meta"
  },
  {
   "date": "2026-10-06",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · sweater mama  y vestido nena (Procesamiento pendiente → Revisión pendiente)",
+  "text": "Estado del anuncio actualizado · video pedido (Procesamiento pendiente → Revisión pendiente)",
   "src": "meta"
  },
  {
   "date": "2026-10-06",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · sweater mama  y vestido nena (Activo → Procesamiento pendiente)",
+  "text": "Estado del anuncio actualizado · video pedido (Activo → Procesamiento pendiente)",
   "src": "meta"
  },
  {
   "date": "2026-10-06",
   "cat": "creativo",
-  "text": "Anuncio actualizado · sweater mama  y vestido nena",
+  "text": "Anuncio actualizado · video pedido",
   "src": "meta"
  },
  {
   "date": "2026-10-05",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · sweater mama  y vestido nena (Revisión pendiente → Activo)",
+  "text": "Estado del anuncio actualizado · video pedido (Revisión pendiente → Activo)",
   "src": "meta"
  },
  {
@@ -278,139 +284,97 @@
  {
   "date": "2026-10-05",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · sweater mama  y vestido nena (Procesamiento pendiente → Revisión pendiente)",
+  "text": "Estado del anuncio actualizado · video pedido (Procesamiento pendiente → Revisión pendiente)",
   "src": "meta"
  },
  {
   "date": "2026-10-05",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · sweater mama  y vestido nena (Activo → Procesamiento pendiente)",
+  "text": "Estado del anuncio actualizado · video pedido (Activo → Procesamiento pendiente)",
   "src": "meta"
  },
  {
   "date": "2026-10-05",
   "cat": "creativo",
-  "text": "Anuncio actualizado · sweater mama  y vestido nena",
+  "text": "Anuncio actualizado · video pedido",
   "src": "meta"
  },
  {
   "date": "2026-10-05",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · sweater mama  y vestido nena (Inactivo → Activo)",
+  "text": "Estado del anuncio actualizado cuando se completa su revisión · video pedido (Inactivo → Activo)",
   "src": "meta"
  },
  {
   "date": "2026-10-05",
   "cat": "otros",
-  "text": "Nombre del anuncio actualizado · sweater mama  y vestido nena (Ventas SWEATER → vestido pre venta)",
+  "text": "Nombre del anuncio actualizado · video pedido (Ventas SWEATER → vestido pre venta)",
   "src": "meta"
  },
  {
   "date": "2026-10-05",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · sweater mama  y vestido nena (Inactivo → Procesamiento pendiente)",
+  "text": "Estado del anuncio actualizado · video pedido (Inactivo → Procesamiento pendiente)",
   "src": "meta"
  },
  {
   "date": "2026-10-05",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · si es una nena (Revisión pendiente → Activo)",
+  "text": "Estado del anuncio actualizado · sweater dibujo mama (Revisión pendiente → Activo)",
   "src": "meta"
  },
  {
   "date": "2026-10-05",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · si es una nena (Procesamiento pendiente → Revisión pendiente)",
+  "text": "Estado del anuncio actualizado · sweater dibujo mama (Procesamiento pendiente → Revisión pendiente)",
   "src": "meta"
  },
  {
   "date": "2026-10-05",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · si es una nena (Activo → Procesamiento pendiente)",
+  "text": "Estado del anuncio actualizado · sweater dibujo mama (Activo → Procesamiento pendiente)",
   "src": "meta"
  },
  {
   "date": "2026-10-05",
   "cat": "creativo",
-  "text": "Anuncio actualizado · si es una nena",
+  "text": "Anuncio actualizado · sweater dibujo mama",
   "src": "meta"
  },
  {
   "date": "2026-10-05",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · sweater mama  y vestido nena (Procesamiento pendiente → Inactivo)",
+  "text": "Estado del anuncio actualizado · video pedido (Procesamiento pendiente → Inactivo)",
   "src": "meta"
  },
  {
   "date": "2026-10-05",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · sweater mama  y vestido nena (Activo → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-03",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · sweater mama  y vestido nena (Revisión pendiente → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-03",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · sweater mama  y vestido nena (Procesamiento pendiente → Revisión pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-03",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · sweater mama  y vestido nena (Activo → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-03",
-  "cat": "creativo",
-  "text": "Anuncio actualizado · sweater mama  y vestido nena",
-  "src": "meta"
- },
- {
-  "date": "2026-10-03",
-  "cat": "estado",
-  "text": "Estado de la campaña actualizado · ALBA-NUEVOS CLIENTES (Procesamiento pendiente → Activa)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-03",
-  "cat": "presupuesto",
-  "text": "Presupuesto de la campaña actualizado · ALBA-NUEVOS CLIENTES (13.000 → 15.000 ARS/día)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-03",
-  "cat": "estado",
-  "text": "Estado de la campaña actualizado · ALBA-NUEVOS CLIENTES (Activa → Procesamiento pendiente)",
+  "text": "Estado del anuncio actualizado cuando se completa su revisión · video pedido (Activo → Inactivo)",
   "src": "meta"
  },
  {
   "date": "2026-10-02",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · sweater mama  y vestido nena (Revisión pendiente → Activo)",
+  "text": "Estado del anuncio actualizado · video pedido (Revisión pendiente → Activo)",
   "src": "meta"
  },
  {
   "date": "2026-10-02",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · si es una nena (Revisión pendiente → Activo)",
+  "text": "Estado del anuncio actualizado · sweater dibujo mama (Revisión pendiente → Activo)",
   "src": "meta"
  },
  {
   "date": "2026-10-02",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · si es una nena (Procesamiento pendiente → Revisión pendiente)",
+  "text": "Estado del anuncio actualizado · video pedido (Procesamiento pendiente → Revisión pendiente)",
   "src": "meta"
  },
  {
   "date": "2026-10-02",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · sweater mama  y vestido nena (Procesamiento pendiente → Revisión pendiente)",
+  "text": "Estado del anuncio actualizado · sweater dibujo mama (Procesamiento pendiente → Revisión pendiente)",
   "src": "meta"
  },
  {
@@ -422,37 +386,37 @@
  {
   "date": "2026-10-02",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · sweater mama  y vestido nena (Activo → Procesamiento pendiente)",
+  "text": "Estado del anuncio actualizado · video pedido (Activo → Procesamiento pendiente)",
   "src": "meta"
  },
  {
   "date": "2026-10-02",
   "cat": "creativo",
-  "text": "Anuncio actualizado · sweater mama  y vestido nena",
+  "text": "Anuncio actualizado · video pedido",
   "src": "meta"
  },
  {
   "date": "2026-10-01",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · sweater mama  y vestido nena (Procesamiento pendiente → Revisión pendiente)",
+  "text": "Estado del anuncio actualizado · video pedido (Procesamiento pendiente → Revisión pendiente)",
   "src": "meta"
  },
  {
   "date": "2026-10-01",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · sweater mama  y vestido nena (Activo → Procesamiento pendiente)",
+  "text": "Estado del anuncio actualizado · video pedido (Activo → Procesamiento pendiente)",
   "src": "meta"
  },
  {
   "date": "2026-10-01",
   "cat": "creativo",
-  "text": "Anuncio actualizado · sweater mama  y vestido nena",
+  "text": "Anuncio actualizado · video pedido",
   "src": "meta"
  },
  {
   "date": "2026-10-01",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · sweater mama  y vestido nena (Revisión pendiente → Activo)",
+  "text": "Estado del anuncio actualizado · video pedido (Revisión pendiente → Activo)",
   "src": "meta"
  },
  {
@@ -476,37 +440,37 @@
  {
   "date": "2026-10-01",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · si es una nena (Revisión pendiente → Activo)",
+  "text": "Estado del anuncio actualizado · sweater dibujo mama (Revisión pendiente → Activo)",
   "src": "meta"
  },
  {
   "date": "2026-10-01",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · si es una nena (Procesamiento pendiente → Revisión pendiente)",
+  "text": "Estado del anuncio actualizado · sweater dibujo mama (Procesamiento pendiente → Revisión pendiente)",
   "src": "meta"
  },
  {
   "date": "2026-10-01",
   "cat": "otros",
-  "text": "Segmentación del anuncio actualizada · si es una nena",
+  "text": "Segmentación del anuncio actualizada · sweater dibujo mama",
   "src": "meta"
  },
  {
   "date": "2026-10-01",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · si es una nena (Activo → Procesamiento pendiente)",
+  "text": "Estado del anuncio actualizado · sweater dibujo mama (Activo → Procesamiento pendiente)",
   "src": "meta"
  },
  {
   "date": "2026-10-01",
   "cat": "creativo",
-  "text": "Anuncio actualizado · si es una nena",
+  "text": "Anuncio actualizado · sweater dibujo mama",
   "src": "meta"
  },
  {
   "date": "2026-10-01",
   "cat": "otros",
-  "text": "Segmentación del anuncio actualizada · sweater mama  y vestido nena",
+  "text": "Segmentación del anuncio actualizada · video pedido",
   "src": "meta"
  },
  {
@@ -536,13 +500,13 @@
  {
   "date": "2026-09-30",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · si es una nena (Revisión pendiente → Activo)",
+  "text": "Estado del anuncio actualizado · sweater dibujo mama (Revisión pendiente → Activo)",
   "src": "meta"
  },
  {
   "date": "2026-09-30",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · si es una nena (Procesamiento pendiente → Revisión pendiente)",
+  "text": "Estado del anuncio actualizado · sweater dibujo mama (Procesamiento pendiente → Revisión pendiente)",
   "src": "meta"
  },
  {
@@ -554,49 +518,49 @@
  {
   "date": "2026-09-29",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · sweater mama  y vestido nena (Revisión pendiente → Activo)",
+  "text": "Estado del anuncio actualizado · video pedido (Revisión pendiente → Activo)",
   "src": "meta"
  },
  {
   "date": "2026-09-29",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · sweater mama  y vestido nena (Procesamiento pendiente → Revisión pendiente)",
+  "text": "Estado del anuncio actualizado · video pedido (Procesamiento pendiente → Revisión pendiente)",
   "src": "meta"
  },
  {
   "date": "2026-09-29",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · sweater mama  y vestido nena (Activo → Procesamiento pendiente)",
+  "text": "Estado del anuncio actualizado · video pedido (Activo → Procesamiento pendiente)",
   "src": "meta"
  },
  {
   "date": "2026-09-29",
   "cat": "creativo",
-  "text": "Anuncio actualizado · sweater mama  y vestido nena",
+  "text": "Anuncio actualizado · video pedido",
   "src": "meta"
  },
  {
   "date": "2026-09-29",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · si es una nena (Revisión pendiente → Activo)",
+  "text": "Estado del anuncio actualizado · sweater dibujo mama (Revisión pendiente → Activo)",
   "src": "meta"
  },
  {
   "date": "2026-09-29",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · si es una nena (Procesamiento pendiente → Revisión pendiente)",
+  "text": "Estado del anuncio actualizado · sweater dibujo mama (Procesamiento pendiente → Revisión pendiente)",
   "src": "meta"
  },
  {
   "date": "2026-09-29",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · si es una nena (Activo → Procesamiento pendiente)",
+  "text": "Estado del anuncio actualizado · sweater dibujo mama (Activo → Procesamiento pendiente)",
   "src": "meta"
  },
  {
   "date": "2026-09-29",
   "cat": "creativo",
-  "text": "Anuncio actualizado · si es una nena",
+  "text": "Anuncio actualizado · sweater dibujo mama",
   "src": "meta"
  },
  {
@@ -614,7 +578,7 @@
  {
   "date": "2026-09-28",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · si es una nena (Revisión pendiente → Activo)",
+  "text": "Estado del anuncio actualizado · sweater dibujo mama (Revisión pendiente → Activo)",
   "src": "meta"
  },
  {
@@ -638,19 +602,19 @@
  {
   "date": "2026-09-28",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · si es una nena (Procesamiento pendiente → Revisión pendiente)",
+  "text": "Estado del anuncio actualizado · sweater dibujo mama (Procesamiento pendiente → Revisión pendiente)",
   "src": "meta"
  },
  {
   "date": "2026-09-28",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · si es una nena (Activo → Procesamiento pendiente)",
+  "text": "Estado del anuncio actualizado · sweater dibujo mama (Activo → Procesamiento pendiente)",
   "src": "meta"
  },
  {
   "date": "2026-09-28",
   "cat": "creativo",
-  "text": "Anuncio actualizado · si es una nena",
+  "text": "Anuncio actualizado · sweater dibujo mama",
   "src": "meta"
  },
  {
@@ -680,7 +644,7 @@
  {
   "date": "2026-09-27",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · si es una nena (Revisión pendiente → Activo)",
+  "text": "Estado del anuncio actualizado · sweater dibujo mama (Revisión pendiente → Activo)",
   "src": "meta"
  },
  {
@@ -692,7 +656,7 @@
  {
   "date": "2026-09-27",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · si es una nena (Procesamiento pendiente → Revisión pendiente)",
+  "text": "Estado del anuncio actualizado · sweater dibujo mama (Procesamiento pendiente → Revisión pendiente)",
   "src": "meta"
  },
  {
@@ -704,19 +668,55 @@
  {
   "date": "2026-09-27",
   "cat": "creativo",
-  "text": "Anuncio creado · si es una nena",
+  "text": "Anuncio creado · sweater dibujo mama",
   "src": "meta"
  },
  {
   "date": "2026-09-27",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · sweater mama  y vestido nena (Revisión pendiente → Activo)",
+  "text": "Estado del anuncio actualizado · video pedido (Revisión pendiente → Activo)",
   "src": "meta"
  },
  {
   "date": "2026-09-27",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · sweater mama  y vestido nena (Procesamiento pendiente → Revisión pendiente)",
+  "text": "Estado del anuncio actualizado · video pedido (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-27",
+  "cat": "estado",
+  "text": "Estado del conjunto de anuncios actualizado · Conjunto de anuncios de Ventas (Procesamiento pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-27",
+  "cat": "creativo",
+  "text": "Anuncio creado · video pedido",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-27",
+  "cat": "otros",
+  "text": "Segmentación del conjunto de anuncios actualizada · Conjunto de anuncios de Ventas",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-27",
+  "cat": "objetivo",
+  "text": "Objetivo de optimización del conjunto de anuncios actualizado · Conjunto de anuncios de Ventas",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-27",
+  "cat": "presupuesto",
+  "text": "Estrategia de puja del conjunto de anuncios actualizada · Conjunto de anuncios de Ventas",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-27",
+  "cat": "creativo",
+  "text": "Conjunto de anuncios creado · Conjunto de anuncios de Ventas",
   "src": "meta"
  }
 ]

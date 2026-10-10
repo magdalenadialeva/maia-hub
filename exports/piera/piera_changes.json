@@ -6,6 +6,12 @@
   "src": "meta"
  },
  {
+  "date": "2026-10-07",
+  "cat": "creativo",
+  "text": "Se apagó «AYMARA - LINK AD- V7»",
+  "src": "auto"
+ },
+ {
   "date": "2026-10-06",
   "cat": "creativo",
   "text": "Se apagó «AYMARA - LINK AD- V7 - Copia»",
@@ -182,13 +188,13 @@
  {
   "date": "2026-09-29",
   "cat": "segmentacion",
-  "text": "Público personalizado creado · Público similar (CL, 1%) - Agregaron al carrito 180 días",
+  "text": "Público personalizado creado · Público similar (CL) - Agregaron al carrito 180 días",
   "src": "meta"
  },
  {
   "date": "2026-09-29",
   "cat": "segmentacion",
-  "text": "Público personalizado creado · Público similar (CL) - Agregaron al carrito 180 días",
+  "text": "Público personalizado creado · Público similar (CL, 1%) - Agregaron al carrito 180 días",
   "src": "meta"
  },
  {
@@ -218,13 +224,13 @@
  {
   "date": "2026-09-29",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · AYMARA - LINK AD- V6 (Inactivo → Eliminado)",
+  "text": "Estado del anuncio actualizado · AYMARA - LINK AD - V4 (Inactivo → Eliminado)",
   "src": "meta"
  },
  {
   "date": "2026-09-29",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · AYMARA - LINK AD - V4 (Inactivo → Eliminado)",
+  "text": "Estado del anuncio actualizado · AYMARA - LINK AD- V6 (Inactivo → Eliminado)",
   "src": "meta"
  },
  {
@@ -374,7 +380,7 @@
  {
   "date": "2026-09-29",
   "cat": "creativo",
-  "text": "Anuncio creado · AYMARA - LINK AD- V5",
+  "text": "Anuncio creado · AYMARA - LINK AD - V2",
   "src": "meta"
  },
  {
@@ -386,7 +392,7 @@
  {
   "date": "2026-09-29",
   "cat": "creativo",
-  "text": "Anuncio creado · AYMARA - LINK AD - V2",
+  "text": "Anuncio creado · AYMARA - LINK AD- V5",
   "src": "meta"
  },
  {
@@ -711,12 +717,6 @@
   "date": "2026-09-02",
   "cat": "estado",
   "text": "Estado del anuncio actualizado · Carrusel Catalogo - Video Nuevo 3 (Revisión pendiente → Eliminado)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-02",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Carrusel Catalogo - Video Nuevo 6 (Inactivo → Eliminado)",
   "src": "meta"
  }
 ]

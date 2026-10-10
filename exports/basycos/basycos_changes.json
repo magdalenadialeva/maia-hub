@@ -1,5 +1,77 @@
 [
  {
+  "date": "2026-10-09",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · 10% Off Toulouse (Revisión pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-09",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · 10% Off Toulouse (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-09",
+  "cat": "creativo",
+  "text": "Anuncio creado · 10% Off Toulouse",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-09",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · 10% Off Toscana (Revisión pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-09",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · 10% Off Lugano (Revisión pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-09",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · 10% Off Toscana (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-09",
+  "cat": "creativo",
+  "text": "Anuncio creado · 10% Off Toscana",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-09",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · 10% Off Lugano (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-09",
+  "cat": "creativo",
+  "text": "Anuncio creado · 10% Off Lugano",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-09",
+  "cat": "creativo",
+  "text": "Se encendió/lanzó «10% Off Lugano»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-10-09",
+  "cat": "creativo",
+  "text": "Se encendió/lanzó «10% Off Toscana»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-10-09",
+  "cat": "creativo",
+  "text": "Se encendió/lanzó «10% Off Toulouse»",
+  "src": "auto"
+ },
+ {
   "date": "2026-10-07",
   "cat": "presupuesto",
   "text": "Presupuesto del conjunto de anuncios actualizado · Basyco Jerez_Conversiones_Purchase_SEP2026_Interese+Adv+ (30.000 → 20.000 ARS/día)",
@@ -645,78 +717,6 @@
   "date": "2026-09-01",
   "cat": "estado",
   "text": "Estado del anuncio actualizado · traffic lugano (Revisión pendiente → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-01",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · traffic lugano (Procesamiento pendiente → Revisión pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-01",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · traffic lugano (Activo → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-01",
-  "cat": "creativo",
-  "text": "Anuncio actualizado · traffic lugano",
-  "src": "meta"
- },
- {
-  "date": "2026-09-01",
-  "cat": "otros",
-  "text": "Nombre del conjunto de anuncios actualizado · Traffic Lugano (New Traffic Ad set with recommended settings → Traffic Lugano)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-01",
-  "cat": "otros",
-  "text": "Nombre del anuncio actualizado · traffic lugano (New Traffic Ad with recommended settings → traffic lugano)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-01",
-  "cat": "otros",
-  "text": "Se actualizaron las reglas de valor del conjunto de anuncios · Traffic Lugano",
-  "src": "meta"
- },
- {
-  "date": "2026-09-01",
-  "cat": "estado",
-  "text": "Estado del conjunto de anuncios actualizado · Traffic Lugano (Procesamiento pendiente → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-01",
-  "cat": "presupuesto",
-  "text": "Uso compartido del presupuesto del conjunto de anuncios actualizado · Traffic con conjunto Lugano",
-  "src": "meta"
- },
- {
-  "date": "2026-09-01",
-  "cat": "creativo",
-  "text": "Anuncio creado · traffic lugano",
-  "src": "meta"
- },
- {
-  "date": "2026-09-01",
-  "cat": "otros",
-  "text": "Segmentación del conjunto de anuncios actualizada · Traffic Lugano",
-  "src": "meta"
- },
- {
-  "date": "2026-09-01",
-  "cat": "objetivo",
-  "text": "Objetivo de optimización del conjunto de anuncios actualizado · Traffic Lugano",
-  "src": "meta"
- },
- {
-  "date": "2026-09-01",
-  "cat": "presupuesto",
-  "text": "Estrategia de puja del conjunto de anuncios actualizada · Traffic Lugano",
   "src": "meta"
  }
 ]
