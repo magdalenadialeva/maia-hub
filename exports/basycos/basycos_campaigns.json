@@ -3,11 +3,11 @@
   "name": "Basyco Jerez_Conversiones_Purchase_SEP2026",
   "objective": "OUTCOME_SALES",
   "status": "ACTIVE",
-  "spend": 747305.11,
+  "spend": 767420.88,
   "first": "2026-09-11",
-  "last": "2026-10-09",
+  "last": "2026-10-10",
   "purch": 25.0,
-  "msg": 101.0,
+  "msg": 104.0,
   "ads": [
    "Conjunto Lugano",
    "Total Look Loira",
@@ -20,13 +20,13 @@
    "10% Off Toscana",
    "10% Off Toulouse"
   ],
-  "impr": 112917.0,
-  "lc": 5067.0,
-  "lpv": 5605.0,
-  "atc": 164.0,
-  "ic": 104.0,
+  "impr": 116118.0,
+  "lc": 5215.0,
+  "lpv": 5742.0,
+  "atc": 167.0,
+  "ic": 105.0,
   "pval": 4497700.0,
   "leads": 3.0,
-  "window_from": "2026-09-04"
+  "window_from": "2026-09-05"
  }
 ]

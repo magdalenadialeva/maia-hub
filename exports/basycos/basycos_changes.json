@@ -72,6 +72,18 @@
   "src": "auto"
  },
  {
+  "date": "2026-10-08",
+  "cat": "creativo",
+  "text": "Se apagó «Conjunto Toulouse 29/09»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-10-08",
+  "cat": "creativo",
+  "text": "Se apagó «¿Conjunto o vestido?»",
+  "src": "auto"
+ },
+ {
   "date": "2026-10-07",
   "cat": "presupuesto",
   "text": "Presupuesto del conjunto de anuncios actualizado · Basyco Jerez_Conversiones_Purchase_SEP2026_Interese+Adv+ (30.000 → 20.000 ARS/día)",
@@ -705,18 +717,6 @@
   "date": "2026-09-01",
   "cat": "otros",
   "text": "Segmentación del conjunto de anuncios actualizada · Loira video",
-  "src": "meta"
- },
- {
-  "date": "2026-09-01",
-  "cat": "estado",
-  "text": "Estado del conjunto de anuncios actualizado · Loira video (Activo → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-01",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · traffic lugano (Revisión pendiente → Activo)",
   "src": "meta"
  }
 ]
