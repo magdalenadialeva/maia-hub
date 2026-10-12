@@ -1,5 +1,35 @@
 [
  {
+  "date": "2026-10-11",
+  "cat": "estado",
+  "text": "Estado de la campaña actualizado · Mossy_AlwaysOn_Conversiones_Dinámicos (Procesamiento pendiente → Activa)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-11",
+  "cat": "presupuesto",
+  "text": "Presupuesto de la campaña actualizado · Mossy_AlwaysOn_Conversiones_Dinámicos (15.000 → 18.000 ARS/día)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-11",
+  "cat": "estado",
+  "text": "Estado de la campaña actualizado · Mossy_AlwaysOn_Conversiones_Dinámicos (Activa → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-09",
+  "cat": "creativo",
+  "text": "Se apagó «Ad6 - Secuencia - Nueva coleccion 202666 - Copia 7»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-10-09",
+  "cat": "creativo",
+  "text": "Se apagó «Ad6 - Secuencia - Nueva coleccion 202666 - Copia 11»",
+  "src": "auto"
+ },
+ {
   "date": "2026-10-08",
   "cat": "segmentacion",
   "text": "Público personalizado creado · asa_auto_custom_audience",
@@ -687,36 +717,6 @@
   "date": "2026-09-18",
   "cat": "estado",
   "text": "Estado de la campaña actualizado · Ago26 - Ventas - CBO - Prospecting - Angulos Nuevos (Procesamiento pendiente → Activa)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-18",
-  "cat": "presupuesto",
-  "text": "Presupuesto de la campaña actualizado · Ago26 - Ventas - CBO - Prospecting - Angulos Nuevos (30.000 → 40.000 ARS/día)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-18",
-  "cat": "estado",
-  "text": "Estado de la campaña actualizado · Ago26 - Ventas - CBO - Prospecting - Angulos Nuevos (Activa → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-17",
-  "cat": "segmentacion",
-  "text": "Público personalizado actualizado · asa_auto_custom_audience ({\"inclusions\":{\"operator\":\"or\",\"rules\":[{\"event_sources\":[{\"type\":\"pixel\",\"id\":137541523473236}],\"retention_seconds\":15552000,\"filter\":{\"operator\":\"and\",\"filters\":[{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"Purchase\"}]}}]}} → {\"inclusions\":{\"operator\":\"or\",\"rules\":[{\"event_sources\":[{\"type\":\"pixel\",\"id\":137541523473236}],\"retention_seconds\":63072000,\"filter\":{\"operator\":\"and\",\"filters\":[{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"Purchase\"}]}}]}})",
-  "src": "meta"
- },
- {
-  "date": "2026-09-17",
-  "cat": "creativo",
-  "text": "Se pausó «Ad6 - Secuencia - Nueva coleccion 202666 - Copia 12»",
-  "src": "auto"
- },
- {
-  "date": "2026-09-15",
-  "cat": "segmentacion",
-  "text": "Público personalizado creado · asa_auto_custom_audience",
   "src": "meta"
  }
 ]

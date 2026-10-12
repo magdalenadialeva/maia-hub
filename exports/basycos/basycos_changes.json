@@ -1,5 +1,17 @@
 [
  {
+  "date": "2026-10-11",
+  "cat": "presupuesto",
+  "text": "Presupuesto del conjunto de anuncios actualizado · Basyco Jerez_Conversiones_Purchase_SEP2026_Interese+Adv+ (20.000 → 25.000 ARS/día)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-11",
+  "cat": "creativo",
+  "text": "Se reactivó «¿Conjunto o vestido?»",
+  "src": "auto"
+ },
+ {
   "date": "2026-10-09",
   "cat": "estado",
   "text": "Estado del anuncio actualizado · 10% Off Toulouse (Revisión pendiente → Activo)",
@@ -56,6 +68,12 @@
  {
   "date": "2026-10-09",
   "cat": "creativo",
+  "text": "Se pausó «¿Conjunto o vestido?»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-10-09",
+  "cat": "creativo",
   "text": "Se encendió/lanzó «10% Off Lugano»",
   "src": "auto"
  },
@@ -75,12 +93,6 @@
   "date": "2026-10-08",
   "cat": "creativo",
   "text": "Se apagó «Conjunto Toulouse 29/09»",
-  "src": "auto"
- },
- {
-  "date": "2026-10-08",
-  "cat": "creativo",
-  "text": "Se apagó «¿Conjunto o vestido?»",
   "src": "auto"
  },
  {
@@ -705,18 +717,6 @@
   "date": "2026-09-01",
   "cat": "estado",
   "text": "Estado del anuncio actualizado · Loira video (Procesamiento pendiente → Revisión pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-01",
-  "cat": "estado",
-  "text": "Estado del conjunto de anuncios actualizado · Loira video (Procesamiento pendiente → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-01",
-  "cat": "otros",
-  "text": "Segmentación del conjunto de anuncios actualizada · Loira video",
   "src": "meta"
  }
 ]

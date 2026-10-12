@@ -3,9 +3,9 @@
   "name": "Basyco Jerez_Conversiones_Purchase_SEP2026",
   "objective": "OUTCOME_SALES",
   "status": "ACTIVE",
-  "spend": 767420.88,
+  "spend": 787275.75,
   "first": "2026-09-11",
-  "last": "2026-10-10",
+  "last": "2026-10-11",
   "purch": 25.0,
   "msg": 104.0,
   "ads": [
@@ -20,13 +20,13 @@
    "10% Off Toscana",
    "10% Off Toulouse"
   ],
-  "impr": 116118.0,
-  "lc": 5215.0,
-  "lpv": 5742.0,
-  "atc": 167.0,
-  "ic": 105.0,
+  "impr": 119878.0,
+  "lc": 5374.0,
+  "lpv": 5893.0,
+  "atc": 169.0,
+  "ic": 107.0,
   "pval": 4497700.0,
   "leads": 3.0,
-  "window_from": "2026-09-05"
+  "window_from": "2026-09-06"
  }
 ]
