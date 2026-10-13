@@ -1,5 +1,11 @@
 [
  {
+  "date": "2026-10-12",
+  "cat": "creativo",
+  "text": "Se reactivó «Conjunto Toulouse 29/09»",
+  "src": "auto"
+ },
+ {
   "date": "2026-10-11",
   "cat": "presupuesto",
   "text": "Presupuesto del conjunto de anuncios actualizado · Basyco Jerez_Conversiones_Purchase_SEP2026_Interese+Adv+ (20.000 → 25.000 ARS/día)",
@@ -68,6 +74,12 @@
  {
   "date": "2026-10-09",
   "cat": "creativo",
+  "text": "Se pausó «Conjunto Toulouse 29/09»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-10-09",
+  "cat": "creativo",
   "text": "Se pausó «¿Conjunto o vestido?»",
   "src": "auto"
  },
@@ -87,12 +99,6 @@
   "date": "2026-10-09",
   "cat": "creativo",
   "text": "Se encendió/lanzó «10% Off Toulouse»",
-  "src": "auto"
- },
- {
-  "date": "2026-10-08",
-  "cat": "creativo",
-  "text": "Se apagó «Conjunto Toulouse 29/09»",
   "src": "auto"
  },
  {
@@ -711,12 +717,6 @@
   "date": "2026-09-01",
   "cat": "estado",
   "text": "Estado de la campaña actualizado · Ventas - Conjunto Loira (Inactiva → Activa)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-01",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Loira video (Procesamiento pendiente → Revisión pendiente)",
   "src": "meta"
  }
 ]

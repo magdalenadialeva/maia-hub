@@ -1,5 +1,11 @@
 [
  {
+  "date": "2026-10-12",
+  "cat": "creativo",
+  "text": "Se encendió/lanzó «Modelo nuevo»",
+  "src": "auto"
+ },
+ {
   "date": "2026-10-07",
   "cat": "segmentacion",
   "text": "Público personalizado creado · asa_auto_custom_audience",
@@ -218,25 +224,7 @@
  {
   "date": "2026-09-29",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · AYMARA - LINK AD- V6 (Inactivo → Eliminado)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-29",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · AYMARA - LINK AD - V4 (Inactivo → Eliminado)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-29",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · AYMARA - LINK AD- V5 (Inactivo → Eliminado)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-29",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · AYMARA - LINK AD - V3 (Activo → Eliminado)",
+  "text": "Estado del anuncio actualizado · AYMARA - LINK AD - V1 (Activo → Eliminado)",
   "src": "meta"
  },
  {
@@ -248,7 +236,25 @@
  {
   "date": "2026-09-29",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · AYMARA - LINK AD - V1 (Activo → Eliminado)",
+  "text": "Estado del anuncio actualizado · AYMARA - LINK AD - V3 (Activo → Eliminado)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-29",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · AYMARA - LINK AD- V5 (Inactivo → Eliminado)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-29",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · AYMARA - LINK AD - V4 (Inactivo → Eliminado)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-29",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · AYMARA - LINK AD- V6 (Inactivo → Eliminado)",
   "src": "meta"
  },
  {
@@ -368,6 +374,24 @@
  {
   "date": "2026-09-29",
   "cat": "creativo",
+  "text": "Anuncio creado · AYMARA - LINK AD - V2",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-29",
+  "cat": "creativo",
+  "text": "Anuncio creado · AYMARA - LINK AD- V5",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-29",
+  "cat": "creativo",
+  "text": "Anuncio creado · AYMARA - LINK AD - V4",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-29",
+  "cat": "creativo",
   "text": "Anuncio creado · AYMARA - LINK AD - V1",
   "src": "meta"
  },
@@ -381,24 +405,6 @@
   "date": "2026-09-29",
   "cat": "creativo",
   "text": "Anuncio creado · AYMARA - LINK AD- V6",
-  "src": "meta"
- },
- {
-  "date": "2026-09-29",
-  "cat": "creativo",
-  "text": "Anuncio creado · AYMARA - LINK AD - V4",
-  "src": "meta"
- },
- {
-  "date": "2026-09-29",
-  "cat": "creativo",
-  "text": "Anuncio creado · AYMARA - LINK AD- V5",
-  "src": "meta"
- },
- {
-  "date": "2026-09-29",
-  "cat": "creativo",
-  "text": "Anuncio creado · AYMARA - LINK AD - V2",
   "src": "meta"
  },
  {
@@ -469,54 +475,6 @@
  },
  {
   "date": "2026-09-15",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Nuevo anuncio de Tráfico (Revisión pendiente → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-15",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Nuevo anuncio de Tráfico (Procesamiento pendiente → Revisión pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-15",
-  "cat": "estado",
-  "text": "Estado del conjunto de anuncios actualizado · Trafico constante (Procesamiento pendiente → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-15",
-  "cat": "creativo",
-  "text": "Anuncio creado · Nuevo anuncio de Tráfico",
-  "src": "meta"
- },
- {
-  "date": "2026-09-15",
-  "cat": "otros",
-  "text": "Segmentación del conjunto de anuncios actualizada · Trafico constante",
-  "src": "meta"
- },
- {
-  "date": "2026-09-15",
-  "cat": "objetivo",
-  "text": "Objetivo de optimización del conjunto de anuncios actualizado · Trafico constante",
-  "src": "meta"
- },
- {
-  "date": "2026-09-15",
-  "cat": "presupuesto",
-  "text": "Estrategia de puja del conjunto de anuncios actualizada · Trafico constante",
-  "src": "meta"
- },
- {
-  "date": "2026-09-15",
-  "cat": "creativo",
-  "text": "Conjunto de anuncios creado · Trafico constante",
-  "src": "meta"
- },
- {
-  "date": "2026-09-15",
   "cat": "creativo",
   "text": "Se encendió/lanzó «Nuevo anuncio de Tráfico»",
   "src": "auto"
@@ -529,12 +487,6 @@
  },
  {
   "date": "2026-09-04",
-  "cat": "estado",
-  "text": "Estado de la campaña actualizado · PieraCeresa_2026_Conversiones (Activa → Inactiva)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-04",
   "cat": "creativo",
   "text": "Se apagó «Carrusel Catalogo»",
   "src": "auto"
@@ -544,12 +496,6 @@
   "cat": "creativo",
   "text": "Se apagó «Carrusel Catalogo - Video Nuevo 1»",
   "src": "auto"
- },
- {
-  "date": "2026-09-03",
-  "cat": "estado",
-  "text": "Estado del conjunto de anuncios actualizado · PieraCeresa_2026_Conversiones - V.3 (Inactivo → Activo)",
-  "src": "meta"
  },
  {
   "date": "2026-09-02",
@@ -710,13 +656,67 @@
  {
   "date": "2026-09-02",
   "cat": "estado",
+  "text": "Estado del anuncio actualizado · Carrusel Catalogo - Video Nuevo 3 (Revisión pendiente → Eliminado)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-02",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Carrusel Catalogo - Video Nuevo 6 (Inactivo → Eliminado)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-02",
+  "cat": "estado",
   "text": "Estado del anuncio actualizado · Carrusel Catalogo - Video Nuevo 2 (Revisión pendiente → Eliminado)",
   "src": "meta"
  },
  {
   "date": "2026-09-02",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · Carrusel Catalogo - Video Nuevo 3 (Revisión pendiente → Eliminado)",
+  "text": "Estado del anuncio actualizado · Carrusel Catalogo 3 - Video (Revisión pendiente → Eliminado)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-02",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Carrusel Catalogo - Video Nuevo 5 (Revisión pendiente → Eliminado)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-02",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Carrusel Catalogo 3 - Video - Copia 2 (Revisión pendiente → Eliminado)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-02",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Carrusel Catalogo - Video Nuevo 4 (Revisión pendiente → Eliminado)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-02",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Carrusel Catalogo - Video Nuevo 6 (Revisión pendiente → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-02",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Carrusel Catalogo 3 - Video - Copia (Revisión pendiente → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-02",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Carrusel Catalogo 3 - Video - Copia 2 (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-02",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Carrusel Catalogo 1 - Video - AGO - Copia 2 (Procesamiento pendiente → Revisión pendiente)",
   "src": "meta"
  }
 ]

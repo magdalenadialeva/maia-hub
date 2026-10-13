@@ -1,5 +1,53 @@
 [
  {
+  "date": "2026-10-12",
+  "cat": "estado",
+  "text": "Estado de la campaña actualizado · Mar26 - Ventas - A+ - Catalogo - Frio (Procesamiento pendiente → Activa)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-12",
+  "cat": "estado",
+  "text": "Estado de la campaña actualizado · Mossy_AlwaysOn_Conversiones_Dinámicos (Procesamiento pendiente → Activa)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-12",
+  "cat": "presupuesto",
+  "text": "Presupuesto de la campaña actualizado · Mar26 - Ventas - A+ - Catalogo - Frio (45.000 → 54.000 ARS/día)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-12",
+  "cat": "estado",
+  "text": "Estado de la campaña actualizado · Mar26 - Ventas - A+ - Catalogo - Frio (Activa → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-12",
+  "cat": "presupuesto",
+  "text": "Presupuesto de la campaña actualizado · Mossy_AlwaysOn_Conversiones_Dinámicos (18.000 → 21.500 ARS/día)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-12",
+  "cat": "estado",
+  "text": "Estado de la campaña actualizado · Mossy_AlwaysOn_Conversiones_Dinámicos (Activa → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-12",
+  "cat": "estado",
+  "text": "Estado de la campaña actualizado · Ago26 - Ventas - CBO - Prospecting - Angulos Nuevos (Activa → Inactiva)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-12",
+  "cat": "creativo",
+  "text": "Se reactivó «Ad6 - Secuencia - Nueva coleccion 202666 - Copia 7»",
+  "src": "auto"
+ },
+ {
   "date": "2026-10-11",
   "cat": "estado",
   "text": "Estado de la campaña actualizado · Mossy_AlwaysOn_Conversiones_Dinámicos (Procesamiento pendiente → Activa)",
@@ -18,9 +66,15 @@
   "src": "meta"
  },
  {
-  "date": "2026-10-09",
+  "date": "2026-10-10",
   "cat": "creativo",
-  "text": "Se apagó «Ad6 - Secuencia - Nueva coleccion 202666 - Copia 7»",
+  "text": "Se pausó «Ad6 - Secuencia - Nueva coleccion 202666 - Copia 7»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-10-10",
+  "cat": "creativo",
+  "text": "Se apagó «Ad3 - Angulo Producto Fit - Copia»",
   "src": "auto"
  },
  {
@@ -664,59 +718,5 @@
   "cat": "creativo",
   "text": "Se pausó «Ad6 - Secuencia - Nueva coleccion 2026 - Copia 3»",
   "src": "auto"
- },
- {
-  "date": "2026-09-20",
-  "cat": "creativo",
-  "text": "Se pausó «Ad1 - Angulo Anticipo Temporada»",
-  "src": "auto"
- },
- {
-  "date": "2026-09-19",
-  "cat": "estado",
-  "text": "Estado de la cuenta actualizado · Mossy - cuenta publicitaria (Activa → En período de gracia)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-19",
-  "cat": "estado",
-  "text": "Estado de la cuenta actualizado · Mossy - cuenta publicitaria (En período de gracia → Activa)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-19",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Ad1 - Angulo Anticipo Temporada (Procesamiento pendiente → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-19",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · Ad1 - Angulo Anticipo Temporada (Activo → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-19",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Ad1 - Angulo Anticipo Temporada (Activo → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-19",
-  "cat": "creativo",
-  "text": "Se reactivó «Ad6 - Secuencia - Nueva coleccion 202666 - Copia 12»",
-  "src": "auto"
- },
- {
-  "date": "2026-09-18",
-  "cat": "segmentacion",
-  "text": "Público personalizado creado · asa_auto_custom_audience",
-  "src": "meta"
- },
- {
-  "date": "2026-09-18",
-  "cat": "estado",
-  "text": "Estado de la campaña actualizado · Ago26 - Ventas - CBO - Prospecting - Angulos Nuevos (Procesamiento pendiente → Activa)",
-  "src": "meta"
  }
 ]

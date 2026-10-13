@@ -1,5 +1,11 @@
 [
  {
+  "date": "2026-10-12",
+  "cat": "estado",
+  "text": "Estado de la cuenta actualizado · Pulpa Cuenta publicitaria (En período de gracia → Activa)",
+  "src": "meta"
+ },
+ {
   "date": "2026-10-11",
   "cat": "estado",
   "text": "Estado de la cuenta actualizado · Pulpa Cuenta publicitaria (Activa → En período de gracia)",
@@ -711,12 +717,6 @@
   "date": "2026-09-07",
   "cat": "creativo",
   "text": "Se pausó «Ad_Vans»",
-  "src": "auto"
- },
- {
-  "date": "2026-09-07",
-  "cat": "creativo",
-  "text": "Se encendió/lanzó «Si cuando limpias tu trapo queda así… NO LO TIRES!»",
   "src": "auto"
  }
 ]

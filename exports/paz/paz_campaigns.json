@@ -3,9 +3,9 @@
   "name": "Nueva campaña de Clientes potenciales V.2",
   "objective": "OUTCOME_LEADS",
   "status": "ACTIVE",
-  "spend": 696711.65,
+  "spend": 705834.92,
   "first": "2026-07-31",
-  "last": "2026-10-11",
+  "last": "2026-10-12",
   "purch": 0.0,
   "msg": 83.0,
   "ads": [
@@ -35,13 +35,13 @@
    "IG Reel 7/10 - Convocatoria Inmobiliarias - Angulo Sin Pauta",
    "IG Reel 7/10 - Convocatoria Inmobiliarias - Angulo Filtro de Leads"
   ],
-  "impr": 140774.0,
-  "lc": 1795.0,
+  "impr": 143206.0,
+  "lc": 1826.0,
   "lpv": 0.0,
   "atc": 0.0,
   "ic": 0.0,
   "pval": 0.0,
-  "leads": 518.0,
+  "leads": 523.0,
   "window_from": "2026-06-30"
  },
  {

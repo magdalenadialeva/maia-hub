@@ -1,5 +1,17 @@
 [
  {
+  "date": "2026-10-12",
+  "cat": "creativo",
+  "text": "Se reactivó «sweater dibujo mama»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-10-12",
+  "cat": "creativo",
+  "text": "Se reactivó «Ventas video regalo»",
+  "src": "auto"
+ },
+ {
   "date": "2026-10-11",
   "cat": "estado",
   "text": "Estado del anuncio actualizado · sweater dibujo mama (Revisión pendiente → Activo)",
@@ -114,6 +126,12 @@
   "src": "auto"
  },
  {
+  "date": "2026-10-10",
+  "cat": "creativo",
+  "text": "Se pausó «Ventas video regalo»",
+  "src": "auto"
+ },
+ {
   "date": "2026-10-09",
   "cat": "estado",
   "text": "Estado del anuncio actualizado · video pedido (Revisión pendiente → Activo)",
@@ -216,15 +234,15 @@
   "src": "meta"
  },
  {
-  "date": "2026-10-08",
+  "date": "2026-10-09",
   "cat": "creativo",
-  "text": "Se pausó «video pedido»",
+  "text": "Se pausó «sweater dibujo mama»",
   "src": "auto"
  },
  {
   "date": "2026-10-08",
   "cat": "creativo",
-  "text": "Se apagó «sweater dibujo mama»",
+  "text": "Se pausó «video pedido»",
   "src": "auto"
  },
  {
@@ -699,24 +717,6 @@
   "date": "2026-10-01",
   "cat": "estado",
   "text": "Estado de la campaña actualizado · ALBA-NUEVOS CLIENTES (Activa → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-01",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · sweater dibujo mama (Revisión pendiente → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-01",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · sweater dibujo mama (Procesamiento pendiente → Revisión pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-01",
-  "cat": "otros",
-  "text": "Segmentación del anuncio actualizada · sweater dibujo mama",
   "src": "meta"
  }
 ]
