@@ -320,7 +320,7 @@
  {
   "date": "2026-09-25",
   "cat": "objetivo",
-  "text": "Objetivo de optimización del conjunto de anuncios actualizado · BePowder_Sep-2026_Conversiones_Adv+Intereses",
+  "text": "Ad set performance goal updated · BePowder_Sep-2026_Conversiones_Adv+Intereses",
   "src": "meta"
  },
  {
@@ -458,25 +458,25 @@
  {
   "date": "2026-09-03",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · 01-TOFU-AO1-Video (Activo → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-03",
-  "cat": "estado",
   "text": "Estado del anuncio actualizado cuando se completa su revisión · 02-TOFU-AO1-Gif (Activo → Inactivo)",
   "src": "meta"
  },
  {
   "date": "2026-09-03",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · 01-TOFU-AO1-Video (Revisión pendiente → Procesamiento pendiente)",
+  "text": "Estado del anuncio actualizado cuando se completa su revisión · 01-TOFU-AO1-Video (Activo → Inactivo)",
   "src": "meta"
  },
  {
   "date": "2026-09-03",
   "cat": "estado",
   "text": "Estado del anuncio actualizado · 02-TOFU-AO1-Gif (Revisión pendiente → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-03",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · 01-TOFU-AO1-Video (Revisión pendiente → Procesamiento pendiente)",
   "src": "meta"
  },
  {
@@ -494,13 +494,13 @@
  {
   "date": "2026-09-03",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · video novo 2 (22-10-2025) — Cópia - Copia (Procesamiento pendiente → Revisión pendiente)",
+  "text": "Estado del anuncio actualizado · Forever Bliss - Video Mixer - Copia (Procesamiento pendiente → Revisión pendiente)",
   "src": "meta"
  },
  {
   "date": "2026-09-03",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · Forever Bliss - Video Mixer - Copia (Procesamiento pendiente → Revisión pendiente)",
+  "text": "Estado del anuncio actualizado · video novo 2 (22-10-2025) — Cópia - Copia (Procesamiento pendiente → Revisión pendiente)",
   "src": "meta"
  },
  {
