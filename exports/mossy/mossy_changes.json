@@ -1,5 +1,53 @@
 [
  {
+  "date": "2026-10-14",
+  "cat": "estado",
+  "text": "Estado de la cuenta actualizado · Mossy - cuenta publicitaria (Activa → En período de gracia)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-14",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Ad6 - Secuencia - Nueva coleccion 202666 - Copia 10 (Procesamiento pendiente → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-14",
+  "cat": "estado",
+  "text": "Estado de la campaña actualizado · Mossy_AlwaysOn_Conversiones_Dinámicos (Procesamiento pendiente → Activa)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-14",
+  "cat": "presupuesto",
+  "text": "Presupuesto de la campaña actualizado · Mossy_AlwaysOn_Conversiones_Dinámicos (27.000 → 30.000 ARS/día)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-14",
+  "cat": "estado",
+  "text": "Estado de la campaña actualizado · Mossy_AlwaysOn_Conversiones_Dinámicos (Activa → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-14",
+  "cat": "presupuesto",
+  "text": "Presupuesto del conjunto de anuncios actualizado · ARG (25.000 → 20.000 ARS/día)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-14",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado cuando se completa su revisión · Ad6 - Secuencia - Nueva coleccion 202666 - Copia 10 (Activo → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-14",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Ad6 - Secuencia - Nueva coleccion 202666 - Copia 10 (Activo → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
   "date": "2026-10-13",
   "cat": "estado",
   "text": "Estado del anuncio actualizado · Secuencia_Todos los productos - Copia 9 (Revisión pendiente → Activo)",
@@ -324,6 +372,30 @@
   "src": "auto"
  },
  {
+  "date": "2026-10-12",
+  "cat": "creativo",
+  "text": "Se apagó «Ad6 - Secuencia - Nueva coleccion 202666 - Copia 12»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-10-12",
+  "cat": "creativo",
+  "text": "Se apagó «Ad3 - Angulo Producto Fit»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-10-12",
+  "cat": "creativo",
+  "text": "Se apagó «Ad8 - Video - Anticipo Temporada - Mega Sale»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-10-12",
+  "cat": "creativo",
+  "text": "Se apagó «Ad9 - Producto Fit - Mega Sale - Tu top tu bombacha tu talle»",
+  "src": "auto"
+ },
+ {
   "date": "2026-10-11",
   "cat": "estado",
   "text": "Estado de la campaña actualizado · Mossy_AlwaysOn_Conversiones_Dinámicos (Procesamiento pendiente → Activa)",
@@ -645,78 +717,6 @@
   "date": "2026-10-02",
   "cat": "estado",
   "text": "Estado de la campaña actualizado · Mar26 - Ventas - A+ - Catalogo - Frio (Procesamiento pendiente → Activa)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-02",
-  "cat": "presupuesto",
-  "text": "Presupuesto de la campaña actualizado · Mar26 - Ventas - A+ - Catalogo - Frio (90.000 → 65.000 ARS/día)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-02",
-  "cat": "estado",
-  "text": "Estado de la campaña actualizado · Mar26 - Ventas - A+ - Catalogo - Frio (Activa → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-02",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · B agosto -  Catálogo contenido advantage + todos los productos - Copia 4 (Procesamiento pendiente → Revisión pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-02",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · B agosto -  Catálogo contenido advantage + todos los productos - Copia 4 (Actualización necesaria → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-02",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Ad1 - Angulo Anticipo Temporada - Copia (Revisión pendiente → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-02",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Ad1 - Angulo Anticipo Temporada - Copia (Procesamiento pendiente → Revisión pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-02",
-  "cat": "creativo",
-  "text": "Anuncio creado · Ad1 - Angulo Anticipo Temporada - Copia",
-  "src": "meta"
- },
- {
-  "date": "2026-10-02",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · B agosto -  Catálogo contenido advantage + todos los productos - Copia 4 (Procesamiento pendiente → Actualización necesaria)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-02",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · B agosto -  Catálogo contenido advantage + todos los productos - Copia 4 (Activo → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-02",
-  "cat": "creativo",
-  "text": "Anuncio actualizado · B agosto -  Catálogo contenido advantage + todos los productos - Copia 4",
-  "src": "meta"
- },
- {
-  "date": "2026-10-02",
-  "cat": "creativo",
-  "text": "Se encendió/lanzó «Ad1 - Angulo Anticipo Temporada - Copia»",
-  "src": "auto"
- },
- {
-  "date": "2026-10-01",
-  "cat": "segmentacion",
-  "text": "Público personalizado creado · asa_auto_custom_audience",
   "src": "meta"
  }
 ]

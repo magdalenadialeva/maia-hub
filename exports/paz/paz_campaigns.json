@@ -3,9 +3,9 @@
   "name": "Nueva campaña de Clientes potenciales V.2",
   "objective": "OUTCOME_LEADS",
   "status": "ACTIVE",
-  "spend": 714181.15,
+  "spend": 722172.36,
   "first": "2026-07-31",
-  "last": "2026-10-13",
+  "last": "2026-10-14",
   "purch": 0.0,
   "msg": 83.0,
   "ads": [
@@ -37,13 +37,13 @@
    "IG Img 13/10 B - Convocatoria Ya invierte (+USD 5K)",
    "IG Img 13/10 A - Convocatoria Escalar (+USD 5K) v2"
   ],
-  "impr": 145392.0,
-  "lc": 1857.0,
+  "impr": 147903.0,
+  "lc": 1888.0,
   "lpv": 0.0,
   "atc": 0.0,
   "ic": 0.0,
   "pval": 0.0,
-  "leads": 531.0,
+  "leads": 539.0,
   "window_from": "2026-06-30"
  },
  {

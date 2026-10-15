@@ -198,6 +198,12 @@
   "src": "meta"
  },
  {
+  "date": "2026-10-12",
+  "cat": "creativo",
+  "text": "Se apagó «IG Post 25/9 - Convocatoria Angulo Pauta sin Datos»",
+  "src": "auto"
+ },
+ {
   "date": "2026-10-11",
   "cat": "estado",
   "text": "Estado del anuncio actualizado · IG Post 10/9 - Convocatoria (DdFq8b0tHL3) (Procesamiento pendiente → Inactivo)",
@@ -712,11 +718,5 @@
   "cat": "estado",
   "text": "Estado de la campaña actualizado · Nueva campaña de Clientes potenciales V.2 (Activa → Procesamiento pendiente)",
   "src": "meta"
- },
- {
-  "date": "2026-10-04",
-  "cat": "creativo",
-  "text": "Se reactivó «2 - Nueva - Copia»",
-  "src": "auto"
  }
 ]

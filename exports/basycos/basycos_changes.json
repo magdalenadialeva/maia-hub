@@ -1,5 +1,41 @@
 [
  {
+  "date": "2026-10-14",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · PRE-SALE · 20.08 (Procesamiento pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-14",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado cuando se completa su revisión · PRE-SALE · 20.08 (Inactivo → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-14",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · PRE-SALE · 20.08 (Inactivo → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-14",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · New Traffic Ad with recommended settings (Procesamiento pendiente → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-14",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado cuando se completa su revisión · New Traffic Ad with recommended settings (Activo → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-14",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · New Traffic Ad with recommended settings (Activo → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
   "date": "2026-10-13",
   "cat": "estado",
   "text": "Estado del anuncio actualizado · 10% Off Lugano (Procesamiento pendiente → Activo)",
@@ -194,12 +230,6 @@
  {
   "date": "2026-10-13",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · Conjunto Lugano (Procesamiento pendiente → Revisión pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-13",
-  "cat": "estado",
   "text": "Estado del anuncio actualizado · Conjunto Lugano - Copy (Procesamiento pendiente → Revisión pendiente)",
   "src": "meta"
  },
@@ -207,6 +237,12 @@
   "date": "2026-10-13",
   "cat": "estado",
   "text": "Estado del anuncio actualizado · PRE-SALE · 20.08 (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-13",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Conjunto Lugano (Procesamiento pendiente → Revisión pendiente)",
   "src": "meta"
  },
  {
@@ -681,42 +717,6 @@
   "date": "2026-09-11",
   "cat": "presupuesto",
   "text": "Presupuesto del conjunto de anuncios actualizado · Traffic Lugano (5.000 → 2.000 ARS/día)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-11",
-  "cat": "estado",
-  "text": "Estado de la campaña actualizado · New Traffic Campaign with recommended settings (Activa → Inactiva)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-11",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Conjunto Toulouse (Revisión pendiente → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-11",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Total Look Loira (Revisión pendiente → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-11",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Conjunto Toulouse (Procesamiento pendiente → Revisión pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-11",
-  "cat": "creativo",
-  "text": "Anuncio creado · Conjunto Toulouse",
-  "src": "meta"
- },
- {
-  "date": "2026-09-11",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Conjunto Lugano (Revisión pendiente → Activo)",
   "src": "meta"
  }
 ]
