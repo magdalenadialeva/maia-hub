@@ -1,32 +1,110 @@
 [
  {
+  "date": "2026-10-15",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · sweater dibujo mama (Revisión pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-15",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · sweater dibujo mama (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-15",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · PUBLICACION VESTIDO - (Revisión pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-15",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · publicacion sweater (Revisión pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-15",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · sweater dibujo mama (Activo → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-15",
+  "cat": "creativo",
+  "text": "Anuncio actualizado · sweater dibujo mama",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-15",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · PUBLICACION VESTIDO - (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-15",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · publicacion sweater (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-15",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · PUBLICACION VESTIDO - (Activo → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-15",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · publicacion sweater (Activo → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-15",
+  "cat": "creativo",
+  "text": "Anuncio actualizado · PUBLICACION VESTIDO -",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-15",
+  "cat": "creativo",
+  "text": "Anuncio actualizado · publicacion sweater",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-15",
+  "cat": "creativo",
+  "text": "Se encendió/lanzó «video pedido sofi»",
+  "src": "auto"
+ },
+ {
   "date": "2026-10-14",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · publicacion sweater RETARGETING (Revisión pendiente → Activo)",
+  "text": "Estado del anuncio actualizado · publicacion sweater (Revisión pendiente → Activo)",
   "src": "meta"
  },
  {
   "date": "2026-10-14",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · publicacion sweater RETARGETING (Procesamiento pendiente → Revisión pendiente)",
+  "text": "Estado del anuncio actualizado · publicacion sweater (Procesamiento pendiente → Revisión pendiente)",
   "src": "meta"
  },
  {
   "date": "2026-10-14",
   "cat": "otros",
-  "text": "Nombre del anuncio actualizado · publicacion sweater RETARGETING (Ventas video regalo → publicacion sweater RETARGETING)",
+  "text": "Nombre del anuncio actualizado · publicacion sweater (Ventas video regalo → publicacion sweater RETARGETING)",
   "src": "meta"
  },
  {
   "date": "2026-10-14",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · publicacion sweater RETARGETING (Activo → Procesamiento pendiente)",
+  "text": "Estado del anuncio actualizado · publicacion sweater (Activo → Procesamiento pendiente)",
   "src": "meta"
  },
  {
   "date": "2026-10-14",
   "cat": "creativo",
-  "text": "Anuncio actualizado · publicacion sweater RETARGETING",
+  "text": "Anuncio actualizado · publicacion sweater",
   "src": "meta"
  },
  {
@@ -38,7 +116,7 @@
  {
   "date": "2026-10-14",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · PUBLICACION VESTIDO - RETARGETING (Revisión pendiente → Activo)",
+  "text": "Estado del anuncio actualizado · PUBLICACION VESTIDO - (Revisión pendiente → Activo)",
   "src": "meta"
  },
  {
@@ -62,31 +140,31 @@
  {
   "date": "2026-10-14",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · PUBLICACION VESTIDO - RETARGETING (Procesamiento pendiente → Revisión pendiente)",
+  "text": "Estado del anuncio actualizado · PUBLICACION VESTIDO - (Procesamiento pendiente → Revisión pendiente)",
   "src": "meta"
  },
  {
   "date": "2026-10-14",
   "cat": "otros",
-  "text": "Nombre del anuncio actualizado · PUBLICACION VESTIDO - RETARGETING (video pedido - RETARGETING → PUBLICACION VESTIDO - RETARGETING)",
+  "text": "Nombre del anuncio actualizado · PUBLICACION VESTIDO - (video pedido - RETARGETING → PUBLICACION VESTIDO - RETARGETING)",
   "src": "meta"
  },
  {
   "date": "2026-10-14",
   "cat": "otros",
-  "text": "Nombre del anuncio actualizado · PUBLICACION VESTIDO - RETARGETING (video pedido → video pedido - RETARGETING)",
+  "text": "Nombre del anuncio actualizado · PUBLICACION VESTIDO - (video pedido → video pedido - RETARGETING)",
   "src": "meta"
  },
  {
   "date": "2026-10-14",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · PUBLICACION VESTIDO - RETARGETING (Activo → Procesamiento pendiente)",
+  "text": "Estado del anuncio actualizado · PUBLICACION VESTIDO - (Activo → Procesamiento pendiente)",
   "src": "meta"
  },
  {
   "date": "2026-10-14",
   "cat": "creativo",
-  "text": "Anuncio actualizado · PUBLICACION VESTIDO - RETARGETING",
+  "text": "Anuncio actualizado · PUBLICACION VESTIDO -",
   "src": "meta"
  },
  {
@@ -182,49 +260,49 @@
  {
   "date": "2026-10-13",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · publicacion sweater RETARGETING (Revisión pendiente → Activo)",
+  "text": "Estado del anuncio actualizado · publicacion sweater (Revisión pendiente → Activo)",
   "src": "meta"
  },
  {
   "date": "2026-10-13",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · PUBLICACION VESTIDO - RETARGETING (Revisión pendiente → Activo)",
+  "text": "Estado del anuncio actualizado · PUBLICACION VESTIDO - (Revisión pendiente → Activo)",
   "src": "meta"
  },
  {
   "date": "2026-10-13",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · publicacion sweater RETARGETING (Procesamiento pendiente → Revisión pendiente)",
+  "text": "Estado del anuncio actualizado · publicacion sweater (Procesamiento pendiente → Revisión pendiente)",
   "src": "meta"
  },
  {
   "date": "2026-10-13",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · PUBLICACION VESTIDO - RETARGETING (Procesamiento pendiente → Revisión pendiente)",
+  "text": "Estado del anuncio actualizado · PUBLICACION VESTIDO - (Procesamiento pendiente → Revisión pendiente)",
   "src": "meta"
  },
  {
   "date": "2026-10-13",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · PUBLICACION VESTIDO - RETARGETING (Activo → Procesamiento pendiente)",
+  "text": "Estado del anuncio actualizado · PUBLICACION VESTIDO - (Activo → Procesamiento pendiente)",
   "src": "meta"
  },
  {
   "date": "2026-10-13",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · publicacion sweater RETARGETING (Activo → Procesamiento pendiente)",
+  "text": "Estado del anuncio actualizado · publicacion sweater (Activo → Procesamiento pendiente)",
   "src": "meta"
  },
  {
   "date": "2026-10-13",
   "cat": "creativo",
-  "text": "Anuncio actualizado · publicacion sweater RETARGETING",
+  "text": "Anuncio actualizado · publicacion sweater",
   "src": "meta"
  },
  {
   "date": "2026-10-13",
   "cat": "creativo",
-  "text": "Anuncio actualizado · PUBLICACION VESTIDO - RETARGETING",
+  "text": "Anuncio actualizado · PUBLICACION VESTIDO -",
   "src": "meta"
  },
  {
@@ -248,7 +326,7 @@
  {
   "date": "2026-10-12",
   "cat": "creativo",
-  "text": "Se reactivó «publicacion sweater RETARGETING»",
+  "text": "Se reactivó «publicacion sweater»",
   "src": "auto"
  },
  {
@@ -278,25 +356,25 @@
  {
   "date": "2026-10-11",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · publicacion sweater RETARGETING (Revisión pendiente → Activo)",
+  "text": "Estado del anuncio actualizado · publicacion sweater (Revisión pendiente → Activo)",
   "src": "meta"
  },
  {
   "date": "2026-10-11",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · PUBLICACION VESTIDO - RETARGETING (Revisión pendiente → Activo)",
+  "text": "Estado del anuncio actualizado · PUBLICACION VESTIDO - (Revisión pendiente → Activo)",
   "src": "meta"
  },
  {
   "date": "2026-10-11",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · publicacion sweater RETARGETING (Procesamiento pendiente → Revisión pendiente)",
+  "text": "Estado del anuncio actualizado · publicacion sweater (Procesamiento pendiente → Revisión pendiente)",
   "src": "meta"
  },
  {
   "date": "2026-10-11",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · PUBLICACION VESTIDO - RETARGETING (Procesamiento pendiente → Revisión pendiente)",
+  "text": "Estado del anuncio actualizado · PUBLICACION VESTIDO - (Procesamiento pendiente → Revisión pendiente)",
   "src": "meta"
  },
  {
@@ -326,25 +404,25 @@
  {
   "date": "2026-10-11",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · publicacion sweater RETARGETING (Activo → Procesamiento pendiente)",
+  "text": "Estado del anuncio actualizado · publicacion sweater (Activo → Procesamiento pendiente)",
   "src": "meta"
  },
  {
   "date": "2026-10-11",
   "cat": "creativo",
-  "text": "Anuncio actualizado · publicacion sweater RETARGETING",
+  "text": "Anuncio actualizado · publicacion sweater",
   "src": "meta"
  },
  {
   "date": "2026-10-11",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · PUBLICACION VESTIDO - RETARGETING (Activo → Procesamiento pendiente)",
+  "text": "Estado del anuncio actualizado · PUBLICACION VESTIDO - (Activo → Procesamiento pendiente)",
   "src": "meta"
  },
  {
   "date": "2026-10-11",
   "cat": "creativo",
-  "text": "Anuncio actualizado · PUBLICACION VESTIDO - RETARGETING",
+  "text": "Anuncio actualizado · PUBLICACION VESTIDO -",
   "src": "meta"
  },
  {
@@ -362,43 +440,43 @@
  {
   "date": "2026-10-11",
   "cat": "creativo",
-  "text": "Se reactivó «PUBLICACION VESTIDO - RETARGETING»",
+  "text": "Se reactivó «PUBLICACION VESTIDO -»",
   "src": "auto"
  },
  {
   "date": "2026-10-10",
   "cat": "creativo",
-  "text": "Se pausó «publicacion sweater RETARGETING»",
+  "text": "Se pausó «publicacion sweater»",
   "src": "auto"
  },
  {
   "date": "2026-10-09",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · PUBLICACION VESTIDO - RETARGETING (Revisión pendiente → Activo)",
+  "text": "Estado del anuncio actualizado · PUBLICACION VESTIDO - (Revisión pendiente → Activo)",
   "src": "meta"
  },
  {
   "date": "2026-10-09",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · PUBLICACION VESTIDO - RETARGETING (Procesamiento pendiente → Revisión pendiente)",
+  "text": "Estado del anuncio actualizado · PUBLICACION VESTIDO - (Procesamiento pendiente → Revisión pendiente)",
   "src": "meta"
  },
  {
   "date": "2026-10-09",
   "cat": "otros",
-  "text": "Nombre del anuncio actualizado · PUBLICACION VESTIDO - RETARGETING (sweater mama  y vestido nena → video pedido)",
+  "text": "Nombre del anuncio actualizado · PUBLICACION VESTIDO - (sweater mama  y vestido nena → video pedido)",
   "src": "meta"
  },
  {
   "date": "2026-10-09",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · PUBLICACION VESTIDO - RETARGETING (Activo → Procesamiento pendiente)",
+  "text": "Estado del anuncio actualizado · PUBLICACION VESTIDO - (Activo → Procesamiento pendiente)",
   "src": "meta"
  },
  {
   "date": "2026-10-09",
   "cat": "creativo",
-  "text": "Anuncio actualizado · PUBLICACION VESTIDO - RETARGETING",
+  "text": "Anuncio actualizado · PUBLICACION VESTIDO -",
   "src": "meta"
  },
  {
@@ -452,13 +530,7 @@
  {
   "date": "2026-10-09",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · PUBLICACION VESTIDO - RETARGETING (Inactivo → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-09",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · PUBLICACION VESTIDO - RETARGETING (Inactivo → Procesamiento pendiente)",
+  "text": "Estado del anuncio actualizado cuando se completa su revisión · PUBLICACION VESTIDO - (Inactivo → Activo)",
   "src": "meta"
  },
  {
@@ -470,13 +542,13 @@
  {
   "date": "2026-10-08",
   "cat": "creativo",
-  "text": "Se pausó «PUBLICACION VESTIDO - RETARGETING»",
+  "text": "Se pausó «PUBLICACION VESTIDO -»",
   "src": "auto"
  },
  {
   "date": "2026-10-07",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · publicacion sweater RETARGETING (Revisión pendiente → Activo)",
+  "text": "Estado del anuncio actualizado · publicacion sweater (Revisión pendiente → Activo)",
   "src": "meta"
  },
  {
@@ -488,7 +560,7 @@
  {
   "date": "2026-10-07",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · publicacion sweater RETARGETING (Procesamiento pendiente → Revisión pendiente)",
+  "text": "Estado del anuncio actualizado · publicacion sweater (Procesamiento pendiente → Revisión pendiente)",
   "src": "meta"
  },
  {
@@ -500,43 +572,43 @@
  {
   "date": "2026-10-07",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · publicacion sweater RETARGETING (Activo → Procesamiento pendiente)",
+  "text": "Estado del anuncio actualizado · publicacion sweater (Activo → Procesamiento pendiente)",
   "src": "meta"
  },
  {
   "date": "2026-10-07",
   "cat": "creativo",
-  "text": "Anuncio actualizado · publicacion sweater RETARGETING",
+  "text": "Anuncio actualizado · publicacion sweater",
   "src": "meta"
  },
  {
   "date": "2026-10-07",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · PUBLICACION VESTIDO - RETARGETING (Procesamiento pendiente → Activo)",
+  "text": "Estado del anuncio actualizado · PUBLICACION VESTIDO - (Procesamiento pendiente → Activo)",
   "src": "meta"
  },
  {
   "date": "2026-10-07",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · PUBLICACION VESTIDO - RETARGETING (Inactivo → Activo)",
+  "text": "Estado del anuncio actualizado cuando se completa su revisión · PUBLICACION VESTIDO - (Inactivo → Activo)",
   "src": "meta"
  },
  {
   "date": "2026-10-07",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · PUBLICACION VESTIDO - RETARGETING (Inactivo → Procesamiento pendiente)",
+  "text": "Estado del anuncio actualizado · PUBLICACION VESTIDO - (Inactivo → Procesamiento pendiente)",
   "src": "meta"
  },
  {
   "date": "2026-10-07",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · PUBLICACION VESTIDO - RETARGETING (Procesamiento pendiente → Inactivo)",
+  "text": "Estado del anuncio actualizado · PUBLICACION VESTIDO - (Procesamiento pendiente → Inactivo)",
   "src": "meta"
  },
  {
   "date": "2026-10-07",
   "cat": "otros",
-  "text": "Nombre del anuncio actualizado · PUBLICACION VESTIDO - RETARGETING (vestido pre venta → sweater mama  y vestido nena)",
+  "text": "Nombre del anuncio actualizado · PUBLICACION VESTIDO - (vestido pre venta → sweater mama  y vestido nena)",
   "src": "meta"
  },
  {
@@ -566,13 +638,13 @@
  {
   "date": "2026-10-07",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · PUBLICACION VESTIDO - RETARGETING (Revisión pendiente → Inactivo)",
+  "text": "Estado del anuncio actualizado · PUBLICACION VESTIDO - (Revisión pendiente → Inactivo)",
   "src": "meta"
  },
  {
   "date": "2026-10-07",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · PUBLICACION VESTIDO - RETARGETING (Procesamiento pendiente → Revisión pendiente)",
+  "text": "Estado del anuncio actualizado · PUBLICACION VESTIDO - (Procesamiento pendiente → Revisión pendiente)",
   "src": "meta"
  },
  {
@@ -602,13 +674,13 @@
  {
   "date": "2026-10-07",
   "cat": "otros",
-  "text": "Segmentación del anuncio actualizada · PUBLICACION VESTIDO - RETARGETING",
+  "text": "Segmentación del anuncio actualizada · PUBLICACION VESTIDO -",
   "src": "meta"
  },
  {
   "date": "2026-10-07",
   "cat": "creativo",
-  "text": "Anuncio actualizado · PUBLICACION VESTIDO - RETARGETING",
+  "text": "Anuncio actualizado · PUBLICACION VESTIDO -",
   "src": "meta"
  },
  {
@@ -638,85 +710,13 @@
  {
   "date": "2026-10-07",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · PUBLICACION VESTIDO - RETARGETING (Activo → Inactivo)",
+  "text": "Estado del anuncio actualizado cuando se completa su revisión · PUBLICACION VESTIDO - (Activo → Inactivo)",
   "src": "meta"
  },
  {
   "date": "2026-10-07",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · PUBLICACION VESTIDO - RETARGETING (Activo → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-07",
-  "cat": "estado",
-  "text": "Estado del conjunto de anuncios actualizado · Conjunto amplio (Procesamiento pendiente → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-07",
-  "cat": "creativo",
-  "text": "Anuncio creado · bordado mama",
-  "src": "meta"
- },
- {
-  "date": "2026-10-07",
-  "cat": "presupuesto",
-  "text": "Se habilitó la programación del presupuesto del conjunto de anuncios · Conjunto amplio",
-  "src": "meta"
- },
- {
-  "date": "2026-10-07",
-  "cat": "otros",
-  "text": "Segmentación del conjunto de anuncios actualizada · Conjunto amplio",
-  "src": "meta"
- },
- {
-  "date": "2026-10-07",
-  "cat": "objetivo",
-  "text": "Ad set performance goal updated · Conjunto amplio",
-  "src": "meta"
- },
- {
-  "date": "2026-10-07",
-  "cat": "presupuesto",
-  "text": "Estrategia de puja del conjunto de anuncios actualizada · Conjunto amplio",
-  "src": "meta"
- },
- {
-  "date": "2026-10-07",
-  "cat": "creativo",
-  "text": "Conjunto de anuncios creado · Conjunto amplio",
-  "src": "meta"
- },
- {
-  "date": "2026-10-07",
-  "cat": "estado",
-  "text": "Estado de la campaña actualizado · ALBA-NUEVOS CLIENTES (Activa → Inactiva)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-06",
-  "cat": "segmentacion",
-  "text": "Público personalizado creado · asa_auto_custom_audience",
-  "src": "meta"
- },
- {
-  "date": "2026-10-06",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · PUBLICACION VESTIDO - RETARGETING (Revisión pendiente → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-06",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · PUBLICACION VESTIDO - RETARGETING (Procesamiento pendiente → Revisión pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-06",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · PUBLICACION VESTIDO - RETARGETING (Activo → Procesamiento pendiente)",
+  "text": "Estado del anuncio actualizado · PUBLICACION VESTIDO - (Activo → Procesamiento pendiente)",
   "src": "meta"
  }
 ]
