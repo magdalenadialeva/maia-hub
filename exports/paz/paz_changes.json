@@ -1,5 +1,125 @@
 [
  {
+  "date": "2026-10-16",
+  "cat": "estado",
+  "text": "Estado de la campaña actualizado · Nueva campaña de Clientes potenciales V.2 (Procesamiento pendiente → Activa)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-16",
+  "cat": "presupuesto",
+  "text": "Presupuesto de la campaña actualizado · Nueva campaña de Clientes potenciales V.2 (8.000 → 10.000 ARS/día)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-16",
+  "cat": "estado",
+  "text": "Estado de la campaña actualizado · Nueva campaña de Clientes potenciales V.2 (Activa → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-16",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · IG Img 17/10 - Convocatoria Mayoristas (+USD 5K) (Revisión pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-16",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · IG Img 17/10 - Convocatoria Mayoristas (+USD 5K) (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-16",
+  "cat": "creativo",
+  "text": "Anuncio creado · IG Img 17/10 - Convocatoria Mayoristas (+USD 5K)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-16",
+  "cat": "segmentacion",
+  "text": "Público personalizado creado · asa_auto_custom_audience",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-16",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · IG Video 16/10 B - Convocatoria Inmobiliarias (Muchas consultas, pocas visitas) (Revisión pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-16",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · IG Img 16/10 A - Convocatoria Marcas por Lanzar (Revisión pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-16",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · IG Video 16/10 B - Convocatoria Inmobiliarias (Muchas consultas, pocas visitas) (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-16",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · IG Img 16/10 A - Convocatoria Marcas por Lanzar (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-16",
+  "cat": "creativo",
+  "text": "Anuncio creado · IG Video 16/10 B - Convocatoria Inmobiliarias (Muchas consultas, pocas visitas)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-16",
+  "cat": "creativo",
+  "text": "Anuncio creado · IG Img 16/10 A - Convocatoria Marcas por Lanzar",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-16",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · IG Img 13/10 B - Convocatoria Ya invierte (+USD 5K) (Revisión pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-16",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · IG Img 13/10 B - Convocatoria Ya invierte (+USD 5K) (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-16",
+  "cat": "otros",
+  "text": "Segmentación del anuncio actualizada · IG Img 13/10 B - Convocatoria Ya invierte (+USD 5K)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-16",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · IG Img 13/10 B - Convocatoria Ya invierte (+USD 5K) (Activo → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-16",
+  "cat": "creativo",
+  "text": "Anuncio actualizado · IG Img 13/10 B - Convocatoria Ya invierte (+USD 5K)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-16",
+  "cat": "creativo",
+  "text": "Se encendió/lanzó «IG Img 16/10 A - Convocatoria Marcas por Lanzar»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-10-16",
+  "cat": "creativo",
+  "text": "Se encendió/lanzó «IG Img 17/10 - Convocatoria Mayoristas (+USD 5K)»",
+  "src": "auto"
+ },
+ {
   "date": "2026-10-13",
   "cat": "estado",
   "text": "Estado del anuncio actualizado · IG Post 25/9 - Convocatoria Angulo Pauta sin Datos (Procesamiento pendiente → Inactivo)",
@@ -598,125 +718,5 @@
   "cat": "creativo",
   "text": "Se pausó «IG Post 29/8 B - Convocatoria (30 días publicidad)»",
   "src": "auto"
- },
- {
-  "date": "2026-10-05",
-  "cat": "creativo",
-  "text": "Se apagó «IG Post 4/9 C - Convocatoria (Dc1FCLwszOO)»",
-  "src": "auto"
- },
- {
-  "date": "2026-10-05",
-  "cat": "creativo",
-  "text": "Se reactivó «IG Post 25/9 - Convocatoria Angulo Contenido sin Estrategia»",
-  "src": "auto"
- },
- {
-  "date": "2026-10-05",
-  "cat": "creativo",
-  "text": "Se reactivó «IG Post 25/9 - Convocatoria Angulo Pauta sin Datos»",
-  "src": "auto"
- },
- {
-  "date": "2026-10-04",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · IG Post 25/9 - Convocatoria Angulo Contenido sin Estrategia (Revisión pendiente → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-04",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · IG Post 17/9 - Convocatoria (DdYXuX0MnGv) - Copia (Procesamiento pendiente → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-04",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · IG Post 29/8 B - Convocatoria (30 días publicidad) (Procesamiento pendiente → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-04",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · IG Post 17/9 - Convocatoria (DdYXuX0MnGv) - Copia (Activo → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-04",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · IG Post 17/9 - Convocatoria (DdYXuX0MnGv) - Copia (Activo → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-04",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · IG Post 29/8 B - Convocatoria (30 días publicidad) (Inactivo → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-04",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · IG Post 29/8 B - Convocatoria (30 días publicidad) (Inactivo → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-04",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · IG Post 25/9 - Convocatoria Angulo Contenido sin Estrategia (Procesamiento pendiente → Revisión pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-04",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · 2 - Nueva - Copia 2 (Procesamiento pendiente → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-04",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · 2 - Nueva - Copia (Procesamiento pendiente → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-04",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · 2 - Nueva - Copia 2 (Inactivo → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-04",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · 2 - Nueva - Copia 2 (Inactivo → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-04",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · 2 - Nueva - Copia (Inactivo → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-04",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · 2 - Nueva - Copia (Inactivo → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-04",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · IG Post 25/9 - Convocatoria Angulo Contenido sin Estrategia (Activo → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-04",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · IG Post 25/9 - Convocatoria Angulo Contenido sin Estrategia (Activo → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-04",
-  "cat": "estado",
-  "text": "Estado de la campaña actualizado · Nueva campaña de Clientes potenciales V.2 (Procesamiento pendiente → Activa)",
-  "src": "meta"
  }
 ]

@@ -1,5 +1,65 @@
 [
  {
+  "date": "2026-10-16",
+  "cat": "segmentacion",
+  "text": "Público personalizado creado · asa_auto_custom_audience",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-16",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Modelo nuevo (Procesamiento pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-16",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado cuando se completa su revisión · Modelo nuevo (Inactivo → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-16",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Modelo nuevo (Inactivo → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-16",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Modelo nuevo (Procesamiento pendiente → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-16",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado cuando se completa su revisión · Modelo nuevo (Activo → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-16",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Modelo nuevo (Activo → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-16",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Nuevo anuncio de Tráfico (Procesamiento pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-16",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado cuando se completa su revisión · Nuevo anuncio de Tráfico (Inactivo → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-16",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Nuevo anuncio de Tráfico (Inactivo → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
   "date": "2026-10-14",
   "cat": "estado",
   "text": "Estado del anuncio actualizado · Nuevo anuncio de Tráfico (Revisión pendiente → Inactivo)",
@@ -40,6 +100,12 @@
   "cat": "estado",
   "text": "Estado del anuncio actualizado · Nuevo anuncio de Tráfico (Activo → Procesamiento pendiente)",
   "src": "meta"
+ },
+ {
+  "date": "2026-10-14",
+  "cat": "creativo",
+  "text": "Se apagó «Nuevo anuncio de Tráfico»",
+  "src": "auto"
  },
  {
   "date": "2026-10-13",
@@ -254,13 +320,13 @@
  {
   "date": "2026-09-29",
   "cat": "segmentacion",
-  "text": "Público personalizado creado · Público similar (CL, 1%) - Agregaron al carrito 180 días",
+  "text": "Público personalizado creado · Público similar (CL) - Agregaron al carrito 180 días",
   "src": "meta"
  },
  {
   "date": "2026-09-29",
   "cat": "segmentacion",
-  "text": "Público personalizado creado · Público similar (CL) - Agregaron al carrito 180 días",
+  "text": "Público personalizado creado · Público similar (CL, 1%) - Agregaron al carrito 180 días",
   "src": "meta"
  },
  {
@@ -404,7 +470,7 @@
  {
   "date": "2026-09-29",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · AYMARA - LINK AD- V5 (Procesamiento pendiente → Revisión pendiente)",
+  "text": "Estado del anuncio actualizado · AYMARA - LINK AD - V1 (Procesamiento pendiente → Revisión pendiente)",
   "src": "meta"
  },
  {
@@ -416,19 +482,19 @@
  {
   "date": "2026-09-29",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · AYMARA - LINK AD - V1 (Procesamiento pendiente → Revisión pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-29",
-  "cat": "segmentacion",
-  "text": "Público personalizado creado · Público similar (CL, 1%) - Visitantes sitio web 60 dias - Cyber 2026",
+  "text": "Estado del anuncio actualizado · AYMARA - LINK AD- V5 (Procesamiento pendiente → Revisión pendiente)",
   "src": "meta"
  },
  {
   "date": "2026-09-29",
   "cat": "segmentacion",
   "text": "Público personalizado creado · Público similar (CL) - Visitantes sitio web 60 dias - Cyber 2026",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-29",
+  "cat": "segmentacion",
+  "text": "Público personalizado creado · Público similar (CL, 1%) - Visitantes sitio web 60 dias - Cyber 2026",
   "src": "meta"
  },
  {
@@ -651,72 +717,6 @@
   "date": "2026-09-02",
   "cat": "estado",
   "text": "Estado del anuncio actualizado cuando se completa su revisión · Carrusel Catalogo 2 - Video - AGO - Copia 4 (Activo → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-02",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Carrusel Catalogo 2 - Video - AGO - Copia 4 (Activo → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-02",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · Carrusel Catalogo 2 - Video - AGO - Copia 2 (Activo → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-02",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Carrusel Catalogo 2 - Video - AGO - Copia 2 (Activo → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-02",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Carrusel Catalogo 2 - Video - AGO - Copia 3 (Procesamiento pendiente → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-02",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Carrusel Catalogo 1 - Video - AGO - Copia 2 (Procesamiento pendiente → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-02",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Carrusel Catalogo 2 - Video (Procesamiento pendiente → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-02",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · Carrusel Catalogo 2 - Video - AGO - Copia 3 (Activo → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-02",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Carrusel Catalogo 2 - Video - AGO - Copia 3 (Activo → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-02",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · Carrusel Catalogo 1 - Video - AGO - Copia 2 (Activo → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-02",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Carrusel Catalogo 1 - Video - AGO - Copia 2 (Activo → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-02",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · Carrusel Catalogo 2 - Video (Activo → Inactivo)",
   "src": "meta"
  }
 ]
