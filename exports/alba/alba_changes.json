@@ -1,5 +1,23 @@
 [
  {
+  "date": "2026-10-17",
+  "cat": "estado",
+  "text": "Estado de la campaña actualizado · ALBA-NUEVOS CLIENTES (Procesamiento pendiente → Activa)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-17",
+  "cat": "presupuesto",
+  "text": "Presupuesto de la campaña actualizado · ALBA-NUEVOS CLIENTES (15.000 → 18.000 ARS/día)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-17",
+  "cat": "estado",
+  "text": "Estado de la campaña actualizado · ALBA-NUEVOS CLIENTES (Activa → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
   "date": "2026-10-16",
   "cat": "estado",
   "text": "Estado del anuncio actualizado · pedido petra (Revisión pendiente → Activo)",
@@ -362,6 +380,12 @@
  {
   "date": "2026-10-15",
   "cat": "creativo",
+  "text": "Se apagó «PUBLICACION VESTIDO -»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-10-15",
+  "cat": "creativo",
   "text": "Se encendió/lanzó «video pedido sofi»",
   "src": "auto"
  },
@@ -602,13 +626,13 @@
  {
   "date": "2026-10-13",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · PUBLICACION VESTIDO - (Activo → Procesamiento pendiente)",
+  "text": "Estado del anuncio actualizado · publicacion sweater (Activo → Procesamiento pendiente)",
   "src": "meta"
  },
  {
   "date": "2026-10-13",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · publicacion sweater (Activo → Procesamiento pendiente)",
+  "text": "Estado del anuncio actualizado · PUBLICACION VESTIDO - (Activo → Procesamiento pendiente)",
   "src": "meta"
  },
  {
@@ -693,30 +717,6 @@
   "date": "2026-10-11",
   "cat": "estado",
   "text": "Estado del anuncio actualizado · PUBLICACION VESTIDO - (Procesamiento pendiente → Revisión pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-11",
-  "cat": "estado",
-  "text": "Estado del conjunto de anuncios actualizado · Conjunto de anuncios de Ventas (Procesamiento pendiente → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-11",
-  "cat": "otros",
-  "text": "Segmentación del conjunto de anuncios actualizada · Conjunto de anuncios de Ventas",
-  "src": "meta"
- },
- {
-  "date": "2026-10-11",
-  "cat": "estado",
-  "text": "Estado del conjunto de anuncios actualizado · Conjunto de anuncios de Ventas (Inactivo → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-11",
-  "cat": "estado",
-  "text": "Estado de la campaña actualizado · ALBA-NUEVOS CLIENTES (Inactiva → Activa)",
   "src": "meta"
  }
 ]

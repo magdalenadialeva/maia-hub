@@ -276,6 +276,24 @@
   "src": "auto"
  },
  {
+  "date": "2026-10-15",
+  "cat": "creativo",
+  "text": "Se apagó «Ad_2»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-10-15",
+  "cat": "creativo",
+  "text": "Se apagó «Ad_4»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-10-15",
+  "cat": "creativo",
+  "text": "Se apagó «Ad_5»",
+  "src": "auto"
+ },
+ {
   "date": "2026-10-12",
   "cat": "estado",
   "text": "Estado de la cuenta actualizado · Pulpa Cuenta publicitaria (En período de gracia → Activa)",
@@ -699,24 +717,6 @@
   "date": "2026-09-10",
   "cat": "estado",
   "text": "Estado del anuncio actualizado · Esto NO, Esto SI! (Revisión pendiente → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-10",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Tengo un chisme (Procesamiento pendiente → Revisión pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-10",
-  "cat": "creativo",
-  "text": "Anuncio creado · Tengo un chisme",
-  "src": "meta"
- },
- {
-  "date": "2026-09-10",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Esto NO, Esto SI! (Procesamiento pendiente → Revisión pendiente)",
   "src": "meta"
  }
 ]

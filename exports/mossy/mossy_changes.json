@@ -1,5 +1,149 @@
 [
  {
+  "date": "2026-10-17",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Stack - Nuevo 2026 02 (Revisión pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-17",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Stack - Nuevo 2026 01 (Revisión pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-17",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Stack - Nuevo 2026 02 (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-17",
+  "cat": "creativo",
+  "text": "Anuncio creado · Stack - Nuevo 2026 02",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-17",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Stack - Nuevo 2026 01 (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-17",
+  "cat": "creativo",
+  "text": "Anuncio creado · Stack - Nuevo 2026 01",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-17",
+  "cat": "estado",
+  "text": "Estado de la campaña actualizado · Mar26 - Ventas - A+ - Catalogo - Frio (Activa → Inactiva)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-17",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Dia de la Madre - Super Sale - Todo para Mama - AlwaysOn Stack (Revisión pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-17",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Dia de la Madre - Super Sale - Summer Feeling - AlwaysOn Stack (Revisión pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-17",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Dia de la Madre - Super Sale - Summer Feeling - AlwaysOn (Procesamiento pendiente → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-17",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Dia de la Madre - Super Sale - Todo para Mama - AlwaysOn (Procesamiento pendiente → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-17",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Dia de la Madre - Super Sale - Summer Feeling - AlwaysOn Stack (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-17",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Dia de la Madre - Super Sale - Todo para Mama - AlwaysOn Stack (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-17",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado cuando se completa su revisión · Dia de la Madre - Super Sale - Summer Feeling - AlwaysOn (Activo → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-17",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Dia de la Madre - Super Sale - Summer Feeling - AlwaysOn (Activo → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-17",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado cuando se completa su revisión · Dia de la Madre - Super Sale - Todo para Mama - AlwaysOn (Activo → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-17",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Dia de la Madre - Super Sale - Todo para Mama - AlwaysOn (Activo → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-17",
+  "cat": "creativo",
+  "text": "Anuncio creado · Dia de la Madre - Super Sale - Todo para Mama - AlwaysOn Stack",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-17",
+  "cat": "creativo",
+  "text": "Anuncio creado · Dia de la Madre - Super Sale - Summer Feeling - AlwaysOn Stack",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-17",
+  "cat": "creativo",
+  "text": "Se reactivó «Ad6 - Secuencia - Nueva coleccion 2026 - Copia»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-10-17",
+  "cat": "creativo",
+  "text": "Se encendió/lanzó «Dia de la Madre - Super Sale - Todo para Mama - AlwaysOn Stack»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-10-17",
+  "cat": "creativo",
+  "text": "Se encendió/lanzó «Dia de la Madre - Super Sale - Summer Feeling - AlwaysOn Stack»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-10-17",
+  "cat": "creativo",
+  "text": "Se encendió/lanzó «Stack - Nuevo 2026 01»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-10-17",
+  "cat": "creativo",
+  "text": "Se encendió/lanzó «Stack - Nuevo 2026 02»",
+  "src": "auto"
+ },
+ {
   "date": "2026-10-16",
   "cat": "segmentacion",
   "text": "Público personalizado creado · asa_auto_custom_audience",
@@ -320,6 +464,12 @@
  {
   "date": "2026-10-15",
   "cat": "estado",
+  "text": "Estado del anuncio actualizado cuando se completa su revisión · Ad6 - Secuencia - Nueva coleccion 202666 - Copia 8 (Activo → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-15",
+  "cat": "estado",
   "text": "Estado del anuncio actualizado cuando se completa su revisión · Ad6 - Secuencia - Nueva coleccion 202666 - Copia 9 (Activo → Inactivo)",
   "src": "meta"
  },
@@ -327,12 +477,6 @@
   "date": "2026-10-15",
   "cat": "estado",
   "text": "Estado del anuncio actualizado cuando se completa su revisión · Ad6 - Secuencia - Nueva coleccion 202666 - Copia 12 (Activo → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-15",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · Ad6 - Secuencia - Nueva coleccion 202666 - Copia 8 (Activo → Inactivo)",
   "src": "meta"
  },
  {
@@ -350,13 +494,13 @@
  {
   "date": "2026-10-15",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · Ad6 - Secuencia - Nueva coleccion 202666 - Copia 9 (Activo → Procesamiento pendiente)",
+  "text": "Estado del anuncio actualizado · Ad6 - Secuencia - Nueva coleccion 202666 - Copia 12 (Activo → Procesamiento pendiente)",
   "src": "meta"
  },
  {
   "date": "2026-10-15",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · Ad6 - Secuencia - Nueva coleccion 202666 - Copia 12 (Activo → Procesamiento pendiente)",
+  "text": "Estado del anuncio actualizado · Ad6 - Secuencia - Nueva coleccion 202666 - Copia 9 (Activo → Procesamiento pendiente)",
   "src": "meta"
  },
  {
@@ -406,6 +550,48 @@
   "cat": "estado",
   "text": "Estado de la campaña actualizado · Mar26 - Ventas - A+ - Catalogo - Frio (Activa → Procesamiento pendiente)",
   "src": "meta"
+ },
+ {
+  "date": "2026-10-15",
+  "cat": "creativo",
+  "text": "Se apagó «Ad6 - Secuencia - Nueva coleccion 2026 - Copia 3»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-10-15",
+  "cat": "creativo",
+  "text": "Se apagó «Ad6 - Secuencia - Nueva coleccion 2026 - Copia 4»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-10-15",
+  "cat": "creativo",
+  "text": "Se apagó «Ad6 - Secuencia - Nueva coleccion 202666 - Copia 8»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-10-15",
+  "cat": "creativo",
+  "text": "Se apagó «Ad11 - Secuencia - Mega Sale - No hay una sola forma de usar Mossy»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-10-15",
+  "cat": "creativo",
+  "text": "Se apagó «Secuencia_Todos los productos - Copia 11»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-10-15",
+  "cat": "creativo",
+  "text": "Se pausó «Ad6 - Secuencia - Nueva coleccion 2026 - Copia»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-10-15",
+  "cat": "creativo",
+  "text": "Se apagó «Ad6 - Secuencia - Nueva coleccion 2026 - Copia 2»",
+  "src": "auto"
  },
  {
   "date": "2026-10-15",
@@ -510,12 +696,6 @@
   "src": "auto"
  },
  {
-  "date": "2026-10-14",
-  "cat": "creativo",
-  "text": "Se apagó «Ad6 - Secuencia - Nueva coleccion 2026 - Copia»",
-  "src": "auto"
- },
- {
   "date": "2026-10-13",
   "cat": "estado",
   "text": "Estado del anuncio actualizado · Secuencia_Todos los productos - Copia 9 (Revisión pendiente → Activo)",
@@ -537,186 +717,6 @@
   "date": "2026-10-13",
   "cat": "estado",
   "text": "Estado del anuncio actualizado · Ad6 - Secuencia - Nueva coleccion 202666 - Copia 11 (Procesamiento pendiente → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-13",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Ad7 - Secuencia - Mega Sale - Tu top tu bombacha tus reglas (Procesamiento pendiente → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-13",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Secuencia_Todos los productos - Copia 9 (Procesamiento pendiente → Revisión pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-13",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Ad6 - Secuencia - Nueva coleccion 2026 - Copia 2 (Procesamiento pendiente → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-13",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Secuencia imagenes 1 - Minimal SS25 - Copia (Procesamiento pendiente → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-13",
-  "cat": "presupuesto",
-  "text": "Presupuesto del conjunto de anuncios actualizado · ARG (30.000 → 25.000 ARS/día)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-13",
-  "cat": "estado",
-  "text": "Estado de la campaña actualizado · Mossy_AlwaysOn_Conversiones_Dinámicos (Procesamiento pendiente → Activa)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-13",
-  "cat": "presupuesto",
-  "text": "Presupuesto de la campaña actualizado · Mossy_AlwaysOn_Conversiones_Dinámicos (30.000 → 27.000 ARS/día)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-13",
-  "cat": "estado",
-  "text": "Estado de la campaña actualizado · Mossy_AlwaysOn_Conversiones_Dinámicos (Activa → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-13",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Ad6 - Video - Sale - Copia (Procesamiento pendiente → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-13",
-  "cat": "estado",
-  "text": "Estado de la campaña actualizado · Mar26 - Ventas - A+ - Catalogo - Frio (Procesamiento pendiente → Activa)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-13",
-  "cat": "presupuesto",
-  "text": "Presupuesto del conjunto de anuncios actualizado · ARG (20.000 → 30.000 ARS/día)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-13",
-  "cat": "presupuesto",
-  "text": "Presupuesto de la campaña actualizado · Mar26 - Ventas - A+ - Catalogo - Frio (20.000 → 15.000 ARS/día)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-13",
-  "cat": "estado",
-  "text": "Estado de la campaña actualizado · Mar26 - Ventas - A+ - Catalogo - Frio (Activa → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-13",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · Ad6 - Secuencia - Nueva coleccion 2026 - Copia 2 (Inactivo → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-13",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · Ad6 - Secuencia - Nueva coleccion 2026 - Copia 2 (Activo → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-13",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Ad6 - Secuencia - Nueva coleccion 2026 - Copia 2 (Activo → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-13",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · Secuencia imagenes 1 - Minimal SS25 - Copia (Activo → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-13",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Secuencia imagenes 1 - Minimal SS25 - Copia (Activo → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-13",
-  "cat": "creativo",
-  "text": "Anuncio actualizado · Secuencia_Todos los productos - Copia 9",
-  "src": "meta"
- },
- {
-  "date": "2026-10-13",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · Secuencia_Todos los productos - Copia 9 (Inactivo → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-13",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Secuencia_Todos los productos - Copia 9 (Inactivo → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-13",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · Secuencia_Todos los productos - Copia 11 (Inactivo → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-13",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Secuencia_Todos los productos - Copia 11 (Inactivo → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-13",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · Ad6 - Secuencia - Nueva coleccion 202666 - Copia 7 (Activo → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-13",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Ad6 - Secuencia - Nueva coleccion 202666 - Copia 7 (Activo → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-13",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · Ad6 - Video - Sale - Copia (Activo → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-13",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Ad6 - Video - Sale - Copia (Activo → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-13",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · Ad7 - Secuencia - Mega Sale - Tu top tu bombacha tus reglas (Activo → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-13",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Ad7 - Secuencia - Mega Sale - Tu top tu bombacha tus reglas (Activo → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-13",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · Ad6 - Secuencia - Nueva coleccion 202666 - Copia 11 (Activo → Inactivo)",
   "src": "meta"
  }
 ]

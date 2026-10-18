@@ -29,9 +29,9 @@
   "name": "ALBA-NUEVOS CLIENTES",
   "objective": "OUTCOME_SALES",
   "status": "ACTIVE",
-  "spend": 214142.91,
+  "spend": 230295.39,
   "first": "2026-09-27",
-  "last": "2026-10-16",
+  "last": "2026-10-17",
   "purch": 9.0,
   "msg": 17.0,
   "ads": [
@@ -42,11 +42,11 @@
    "pedido petra",
    "video pedido sofi"
   ],
-  "impr": 80506.0,
-  "lc": 1600.0,
-  "lpv": 1537.0,
-  "atc": 555.0,
-  "ic": 31.0,
+  "impr": 86713.0,
+  "lc": 1701.0,
+  "lpv": 1624.0,
+  "atc": 586.0,
+  "ic": 32.0,
   "pval": 669404.3,
   "leads": 1.0,
   "window_from": "2026-08-20"

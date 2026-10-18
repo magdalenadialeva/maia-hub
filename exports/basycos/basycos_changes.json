@@ -90,6 +90,12 @@
   "src": "auto"
  },
  {
+  "date": "2026-10-15",
+  "cat": "creativo",
+  "text": "Se apagó «10% Off Lugano»",
+  "src": "auto"
+ },
+ {
   "date": "2026-10-14",
   "cat": "estado",
   "text": "Estado del anuncio actualizado · PRE-SALE · 20.08 (Procesamiento pendiente → Activo)",
@@ -290,7 +296,7 @@
  {
   "date": "2026-10-13",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · Conjunto Toulouse (Procesamiento pendiente → Revisión pendiente)",
+  "text": "Estado del anuncio actualizado · 10% Off Lugano (Procesamiento pendiente → Revisión pendiente)",
   "src": "meta"
  },
  {
@@ -302,19 +308,13 @@
  {
   "date": "2026-10-13",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · 10% Off Lugano (Procesamiento pendiente → Revisión pendiente)",
+  "text": "Estado del anuncio actualizado · Conjunto Toulouse (Procesamiento pendiente → Revisión pendiente)",
   "src": "meta"
  },
  {
   "date": "2026-10-13",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · Conjunto Toulouse 29/09 (Procesamiento pendiente → Revisión pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-13",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · ¿Conjunto o vestido? (Procesamiento pendiente → Revisión pendiente)",
+  "text": "Estado del anuncio actualizado · Conjunto Lugano (Procesamiento pendiente → Revisión pendiente)",
   "src": "meta"
  },
  {
@@ -332,7 +332,13 @@
  {
   "date": "2026-10-13",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · Conjunto Lugano (Procesamiento pendiente → Revisión pendiente)",
+  "text": "Estado del anuncio actualizado · Conjunto Toulouse 29/09 (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-13",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · ¿Conjunto o vestido? (Procesamiento pendiente → Revisión pendiente)",
   "src": "meta"
  },
  {
@@ -711,12 +717,6 @@
   "date": "2026-09-28",
   "cat": "estado",
   "text": "Estado del anuncio actualizado cuando se completa su revisión · Conjunto Lugano - Copy (Activo → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-28",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Conjunto Lugano - Copy (Activo → Procesamiento pendiente)",
   "src": "meta"
  }
 ]
