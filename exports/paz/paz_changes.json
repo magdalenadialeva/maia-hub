@@ -110,7 +110,19 @@
  {
   "date": "2026-10-16",
   "cat": "creativo",
+  "text": "Se apagó «IG Img 13/10 B - Convocatoria Ya invierte (+USD 5K)»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-10-16",
+  "cat": "creativo",
   "text": "Se encendió/lanzó «IG Img 16/10 A - Convocatoria Marcas por Lanzar»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-10-16",
+  "cat": "creativo",
+  "text": "Se apagó «IG Img 16/10 A - Convocatoria Marcas por Lanzar»",
   "src": "auto"
  },
  {
@@ -706,17 +718,5 @@
   "cat": "estado",
   "text": "Estado del anuncio actualizado cuando se completa su revisión · IG Post 4/9 C - Convocatoria (Dc1FCLwszOO) (Activo → Inactivo)",
   "src": "meta"
- },
- {
-  "date": "2026-10-05",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · IG Post 4/9 C - Convocatoria (Dc1FCLwszOO) (Activo → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-05",
-  "cat": "creativo",
-  "text": "Se pausó «IG Post 29/8 B - Convocatoria (30 días publicidad)»",
-  "src": "auto"
  }
 ]

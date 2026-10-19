@@ -254,7 +254,25 @@
  {
   "date": "2026-10-16",
   "cat": "creativo",
+  "text": "Se apagó «Ad_1»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-10-16",
+  "cat": "creativo",
+  "text": "Se apagó «Ad_3»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-10-16",
+  "cat": "creativo",
   "text": "Se encendió/lanzó «Ad_6 - Copia»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-10-16",
+  "cat": "creativo",
+  "text": "Se apagó «Ad_6 - Copia»",
   "src": "auto"
  },
  {
@@ -700,23 +718,5 @@
   "cat": "creativo",
   "text": "Se reactivó «Ad_Vans»",
   "src": "auto"
- },
- {
-  "date": "2026-09-11",
-  "cat": "creativo",
-  "text": "Se apagó «Ad_Vans»",
-  "src": "auto"
- },
- {
-  "date": "2026-09-10",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Tengo un chisme (Revisión pendiente → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-10",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Esto NO, Esto SI! (Revisión pendiente → Activo)",
-  "src": "meta"
  }
 ]

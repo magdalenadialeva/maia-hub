@@ -86,6 +86,24 @@
  {
   "date": "2026-10-16",
   "cat": "creativo",
+  "text": "Se apagó «Conjunto Toulouse 29/09»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-10-16",
+  "cat": "creativo",
+  "text": "Se apagó «10% Off Toscana»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-10-16",
+  "cat": "creativo",
+  "text": "Se apagó «10% Off Toulouse»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-10-16",
+  "cat": "creativo",
   "text": "Se encendió/lanzó «Vestido Orleans»",
   "src": "auto"
  },
@@ -296,13 +314,13 @@
  {
   "date": "2026-10-13",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · 10% Off Lugano (Procesamiento pendiente → Revisión pendiente)",
+  "text": "Estado del anuncio actualizado · Total Look Loira (Procesamiento pendiente → Revisión pendiente)",
   "src": "meta"
  },
  {
   "date": "2026-10-13",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · Total Look Loira (Procesamiento pendiente → Revisión pendiente)",
+  "text": "Estado del anuncio actualizado · 10% Off Lugano (Procesamiento pendiente → Revisión pendiente)",
   "src": "meta"
  },
  {
@@ -699,24 +717,6 @@
   "date": "2026-09-28",
   "cat": "segmentacion",
   "text": "Público personalizado creado · asa_auto_custom_audience",
-  "src": "meta"
- },
- {
-  "date": "2026-09-28",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Conjunto Lugano - Copy (Procesamiento pendiente → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-28",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Conjunto Lugano (Procesamiento pendiente → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-28",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · Conjunto Lugano - Copy (Activo → Inactivo)",
   "src": "meta"
  }
 ]

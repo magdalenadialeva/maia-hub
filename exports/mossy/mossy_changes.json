@@ -1,5 +1,83 @@
 [
  {
+  "date": "2026-10-18",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Dia de la Madre - Super Sale - Summer Feeling - AlwaysOn (Procesamiento pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-18",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Dia de la Madre - Super Sale - Todo para Mama - AlwaysOn (Procesamiento pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-18",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado cuando se completa su revisión · Dia de la Madre - Super Sale - Summer Feeling - AlwaysOn (Inactivo → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-18",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Dia de la Madre - Super Sale - Summer Feeling - AlwaysOn (Inactivo → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-18",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado cuando se completa su revisión · Dia de la Madre - Super Sale - Todo para Mama - AlwaysOn (Inactivo → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-18",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Dia de la Madre - Super Sale - Todo para Mama - AlwaysOn (Inactivo → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-18",
+  "cat": "estado",
+  "text": "Estado del conjunto de anuncios actualizado · Sin intereses (Inactivo → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-18",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Stack - Nuevo 2026 03 (Revisión pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-18",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Stack - Nuevo 2026 03 (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-18",
+  "cat": "creativo",
+  "text": "Anuncio creado · Stack - Nuevo 2026 03",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-18",
+  "cat": "creativo",
+  "text": "Se encendió/lanzó «Dia de la Madre - Super Sale - Todo para Mama - AlwaysOn»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-10-18",
+  "cat": "creativo",
+  "text": "Se encendió/lanzó «Dia de la Madre - Super Sale - Summer Feeling - AlwaysOn»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-10-18",
+  "cat": "creativo",
+  "text": "Se encendió/lanzó «Stack - Nuevo 2026 03»",
+  "src": "auto"
+ },
+ {
   "date": "2026-10-17",
   "cat": "estado",
   "text": "Estado del anuncio actualizado · Stack - Nuevo 2026 02 (Revisión pendiente → Activo)",
@@ -222,6 +300,36 @@
   "src": "meta"
  },
  {
+  "date": "2026-10-16",
+  "cat": "creativo",
+  "text": "Se apagó «Ad12 - UGC Creadoras - Try on»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-10-16",
+  "cat": "creativo",
+  "text": "Se apagó «Ad13 - UGC - Shein vs Mossy»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-10-16",
+  "cat": "creativo",
+  "text": "Se apagó «Ad14 - Producto - Estampados flat lay»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-10-16",
+  "cat": "creativo",
+  "text": "Se apagó «Ad15 - UGC - Mix and Match»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-10-16",
+  "cat": "creativo",
+  "text": "Se apagó «Ad16 - Testimonios - WhatsApp calce»",
+  "src": "auto"
+ },
+ {
   "date": "2026-10-15",
   "cat": "estado",
   "text": "Estado del anuncio actualizado · Dia de la Madre - Super Sale - Todo para Mama (Revisión pendiente → Activo)",
@@ -440,13 +548,13 @@
  {
   "date": "2026-10-15",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · Secuencia_Todos los productos - Copia 11 (Activo → Inactivo)",
+  "text": "Estado del anuncio actualizado cuando se completa su revisión · Secuencia_Todos los productos - Copia 9 (Activo → Inactivo)",
   "src": "meta"
  },
  {
   "date": "2026-10-15",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · Secuencia_Todos los productos - Copia 9 (Activo → Inactivo)",
+  "text": "Estado del anuncio actualizado cuando se completa su revisión · Secuencia_Todos los productos - Copia 11 (Activo → Inactivo)",
   "src": "meta"
  },
  {
@@ -476,19 +584,19 @@
  {
   "date": "2026-10-15",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · Ad6 - Secuencia - Nueva coleccion 202666 - Copia 12 (Activo → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-15",
-  "cat": "estado",
   "text": "Estado del anuncio actualizado cuando se completa su revisión · Ad6 - Secuencia - Nueva coleccion 2026 - Copia 4 (Activo → Inactivo)",
   "src": "meta"
  },
  {
   "date": "2026-10-15",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · Ad6 - Secuencia - Nueva coleccion 202666 - Copia 8 (Activo → Procesamiento pendiente)",
+  "text": "Estado del anuncio actualizado cuando se completa su revisión · Ad6 - Secuencia - Nueva coleccion 202666 - Copia 12 (Activo → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-15",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Ad6 - Secuencia - Nueva coleccion 202666 - Copia 9 (Activo → Procesamiento pendiente)",
   "src": "meta"
  },
  {
@@ -500,7 +608,7 @@
  {
   "date": "2026-10-15",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · Ad6 - Secuencia - Nueva coleccion 202666 - Copia 9 (Activo → Procesamiento pendiente)",
+  "text": "Estado del anuncio actualizado · Ad6 - Secuencia - Nueva coleccion 202666 - Copia 8 (Activo → Procesamiento pendiente)",
   "src": "meta"
  },
  {
@@ -610,113 +718,5 @@
   "cat": "creativo",
   "text": "Se encendió/lanzó «Ad14 - Producto - Estampados flat lay»",
   "src": "auto"
- },
- {
-  "date": "2026-10-15",
-  "cat": "creativo",
-  "text": "Se encendió/lanzó «Ad15 - UGC - Mix and Match»",
-  "src": "auto"
- },
- {
-  "date": "2026-10-15",
-  "cat": "creativo",
-  "text": "Se encendió/lanzó «Ad16 - Testimonios - WhatsApp calce»",
-  "src": "auto"
- },
- {
-  "date": "2026-10-15",
-  "cat": "creativo",
-  "text": "Se encendió/lanzó «Dia de la Madre - Super Sale - Summer Feeling»",
-  "src": "auto"
- },
- {
-  "date": "2026-10-15",
-  "cat": "creativo",
-  "text": "Se encendió/lanzó «Dia de la Madre - Super Sale - Todo para Mama»",
-  "src": "auto"
- },
- {
-  "date": "2026-10-14",
-  "cat": "estado",
-  "text": "Estado de la cuenta actualizado · Mossy - cuenta publicitaria (Activa → En período de gracia)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-14",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Ad6 - Secuencia - Nueva coleccion 202666 - Copia 10 (Procesamiento pendiente → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-14",
-  "cat": "estado",
-  "text": "Estado de la campaña actualizado · Mossy_AlwaysOn_Conversiones_Dinámicos (Procesamiento pendiente → Activa)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-14",
-  "cat": "presupuesto",
-  "text": "Presupuesto de la campaña actualizado · Mossy_AlwaysOn_Conversiones_Dinámicos (27.000 → 30.000 ARS/día)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-14",
-  "cat": "estado",
-  "text": "Estado de la campaña actualizado · Mossy_AlwaysOn_Conversiones_Dinámicos (Activa → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-14",
-  "cat": "presupuesto",
-  "text": "Presupuesto del conjunto de anuncios actualizado · ARG (25.000 → 20.000 ARS/día)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-14",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · Ad6 - Secuencia - Nueva coleccion 202666 - Copia 10 (Activo → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-14",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Ad6 - Secuencia - Nueva coleccion 202666 - Copia 10 (Activo → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-14",
-  "cat": "creativo",
-  "text": "Se apagó «Ad6 - Secuencia - Nueva coleccion 202666 - Copia 9»",
-  "src": "auto"
- },
- {
-  "date": "2026-10-14",
-  "cat": "creativo",
-  "text": "Se apagó «Ad6 - Video - Sale - Copia»",
-  "src": "auto"
- },
- {
-  "date": "2026-10-13",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Secuencia_Todos los productos - Copia 9 (Revisión pendiente → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-13",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Secuencia_Todos los productos - Copia 11 (Procesamiento pendiente → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-13",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Ad6 - Secuencia - Nueva coleccion 202666 - Copia 7 (Procesamiento pendiente → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-13",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Ad6 - Secuencia - Nueva coleccion 202666 - Copia 11 (Procesamiento pendiente → Inactivo)",
-  "src": "meta"
  }
 ]
