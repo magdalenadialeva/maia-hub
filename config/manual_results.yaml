@@ -10,7 +10,10 @@
 #              para poder filtrarlas por período en el hub)
 #   channel  : whatsapp | anuncios | web | local | otro
 #   campaign : (opcional) nombre exacto de la campaña a la que se atribuyen
+#   ad       : (opcional) nombre del anuncio que trajo la venta (el hub la suma a ese creativo)
 #   sales    : cantidad de ventas
+#   (channel anuncios/web = ya las ve Meta: el hub NO las suma de nuevo a las compras;
+#    whatsapp/local/otro = se SUMAN a las compras de Meta)
 #   amount   : monto total (moneda de la cuenta)
 #   note     : texto libre
 
@@ -30,3 +33,21 @@ pulpa:
     sales: 1
     amount: 14980
     note: "Venta de octubre atribuida a anuncios (reporte de la marca)."
+  - reported: "2026-10-20"
+    from: "2026-10-18"
+    to: "2026-10-18"
+    channel: whatsapp
+    campaign: "Pulpa Verde_Conversiones_Org_Mensajes_2026_Adv+"
+    ad: "Ad_6 - Copia 4"
+    sales: 1
+    amount: null       # monto pendiente (pedido a Magui)
+    note: "Venta del domingo 18/10, vino de Ad_6 - Copia 4 (orgullo, antes/después claro)."
+  - reported: "2026-10-20"
+    from: "2026-10-19"
+    to: "2026-10-19"
+    channel: whatsapp
+    campaign: "Pulpa Verde_Conversiones_Org_Mensajes_2026_Adv+"
+    ad: "Ad_6 - Copia 4"
+    sales: 1
+    amount: null       # monto pendiente (pedido a Magui)
+    note: "Venta del lunes 19/10, vino de Ad_6 - Copia 4."

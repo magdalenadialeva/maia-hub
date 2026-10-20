@@ -1,0 +1,127 @@
+# MAIA · Estrategias de contenido por marca (pestaña "Estrategia de contenido" del hub).
+# Resumen operativo de la estrategia aprobada/propuesta de cada marca. La versión completa
+# vive en el deck del proyecto de cada cliente (link en `fuente`).
+#
+# Por marca (slug de clients.yaml):
+#   titulo, estado, resumen, fuente {nombre, url, fecha}
+#   posicionamiento: {categoria, territorio, idea, diferencial, voz_si[], voz_no[]}
+#   arquetipos: [{nombre, estado, deseo, como}]
+#   matriz: [{arquetipo, angulo, etapa, hook, tag}]   (6-B)
+#       tag = nombre del ángulo en brands.yaml -> el hub muestra el estado REAL en pauta
+#             (validado / refutado / en prueba / sin pautar) al lado de cada ángulo.
+#   piezas: [{titulo, etapa, para, formato, testea, estado}]   (6-C)
+#   plan:   [{cuando, que}]
+#   reglas: [texto]
+# Las marcas que no están acá no aparecen en la pestaña.
+
+pulpa:
+  titulo: "La que sabe"
+  estado: "Aprobada · octubre 2026"
+  resumen: "Pulpa no vende productos de limpieza: vende a alguien que sabe, del otro lado. El orgullo abre la conversación; el acompañamiento de Sole cierra la venta por WhatsApp."
+  fuente: {nombre: "Pulpa - Estrategia de Pauta Oct26", url: "https://docs.google.com/presentation/d/1EIuutxqQ2P-Ig3AEGXEEpMqM1GHDzyGsl6NaWsTiv-w/edit", fecha: "2026-10-09"}
+  posicionamiento:
+    categoria: "Todos hablan del producto (Vanish y Ayudín de poder, Mr Músculo de escapar de limpiar, las eco de lo que no llevan). Nadie hace protagonista a la que limpia."
+    territorio: "La que sabe. Limpiar bien es un saber: con qué, cuánto y cómo. Pulpa es ese saber hecho producto."
+    idea: "El orgullo es la promesa; el acompañamiento es cómo se cumple."
+    diferencial: "Ninguna marca de góndola te contesta un WhatsApp. Sole asesora antes, acompaña el primer lavado y, si no salió, lo resuelve."
+    voz_si: ["Una amiga que sabe y te pasa el dato", "Sole a cámara, en su casa, mostrando el resultado", "El resultado real, con orgullo y humor", "Cierra con «escribime y te ayudo»"]
+    voz_no: ["Laboratorio: «fórmula avanzada», «tecnología oxi»", "Superlativos: «3X», «99,9%»", "Antes/después partido al medio, en estudio", "Sermón eco o «limpiá menos»"]
+  arquetipos:
+    - {nombre: "La Orgullosa", estado: "validada", deseo: "Lucirse: ser la que sabe.", como: "El orgullo la hace frenar; el acompañamiento la hace quedar bien."}
+    - {nombre: "La Práctica que Rinde", estado: "sin probar", deseo: "Que la cuenta cierre.", como: "La cuenta por lavado hecha para su casa y 250 g para probar."}
+    - {nombre: "La que lo quiere porque la otra lo tiene", estado: "sin probar", deseo: "No quedarse afuera del dato que circula.", como: "Llega preguntando «¿es el que saca todo?»: Sole confirma y le dice cuánto usar."}
+  matriz:
+    - {arquetipo: "La Orgullosa", angulo: "Conexión humana y humor", etapa: TOFU, hook: "«Mis antepasados estarían orgullosos…»", tag: "Orgullo · humor (servilleta)"}
+    - {arquetipo: "La Orgullosa", angulo: "Deseo aspiracional", etapa: TOFU, hook: "«Le mostré el mantel a mi suegra…»"}
+    - {arquetipo: "La Orgullosa", angulo: "Dolor y problema", etapa: TOFU, hook: "«Si tu repasador queda así… no lo tires.»", tag: "Dolor y problema (trapo)"}
+    - {arquetipo: "La Orgullosa", angulo: "Creencia desafiada", etapa: TOFU, hook: "«Si creés que las manchas de vino no salen…»"}
+    - {arquetipo: "La Práctica que Rinde", angulo: "Comparación y reemplazo", etapa: MOFU, hook: "«Reemplacé 3 productos por 1…»"}
+    - {arquetipo: "La Práctica que Rinde", angulo: "Autoridad: el método", etapa: MOFU, hook: "«Para los que piensan que es percarbonato…»"}
+    - {arquetipo: "La Práctica que Rinde", angulo: "Precio · rinde", etapa: MOFU, hook: "«Tengo un chisme… rinde un montón»", tag: "Precio · rinde (tengo chisme)"}
+    - {arquetipo: "La que lo quiere porque la otra lo tiene", angulo: "Prueba social", etapa: MOFU, hook: "«Me preguntan por el polvo que saca todo.»"}
+    - {arquetipo: "La Práctica que Rinde", angulo: "Riesgo cero", etapa: BOFU, hook: "«Si no te funciona, escribime: lo resolvemos.»"}
+    - {arquetipo: "(fuera de estrategia)", angulo: "Eco · sin químicos", etapa: TOFU, hook: "Tablas, antisarro", tag: "Eco · sin químicos (tablas)"}
+    - {arquetipo: "(fuera de estrategia)", angulo: "Objeto ocasional", etapa: TOFU, hook: "Zapatillas, peluche", tag: "Objeto ocasional (zapatillas/peluche)"}
+  piezas:
+    - {titulo: "Ad_6 - Copia 4 · servilleta, antes/después muy claro", etapa: TOFU, para: "La Orgullosa", formato: "El rescate", testea: "¿Una versión con el antes/después más claro rinde como el original?", estado: "al aire · ganó: trajo las ventas del 18 y 19/10"}
+    - {titulo: "P1 · «Le mostré el mantel a mi suegra…»", etapa: TOFU, para: "La Orgullosa", formato: "El rescate · 12–15 s", testea: "¿El orgullo funciona con otro objeto y otra frase?", estado: "a grabar"}
+    - {titulo: "P2 · «Para los que creen que el vino no sale…»", etapa: TOFU, para: "La que ya probó todo", formato: "El rescate · 12–15 s", testea: "¿Hay otra puerta además del orgullo?", estado: "a grabar"}
+    - {titulo: "P3 · «Reemplacé 3 productos por 1»", etapa: MOFU, para: "La Práctica que Rinde", formato: "La cuenta en la mesada · 15–20 s", testea: "¿La cuenta hace escribir a otra clienta?", estado: "a grabar"}
+    - {titulo: "P4 · La objeción del percarbonato", etapa: MOFU, para: "La que duda", formato: "La pregunta que te hacen · 20–25 s", testea: "¿Responder la objeción trae conversaciones que compran?", estado: "a regrabar (en color, con prueba)"}
+    - {titulo: "P5 · «Me preguntan por el polvo que saca todo»", etapa: MOFU, para: "La que lo quiere porque la otra lo tiene", formato: "El dato que circula · 15–20 s", testea: "¿El dato que se pasa trae conversaciones nuevas?", estado: "a grabar"}
+  plan:
+    - {cuando: "Semana 0", que: "Estrategia y feedback con Sole."}
+    - {cuando: "Semanas 1 a 3", que: "2 piezas grabadas y cerradas por semana; siempre ~5 anuncios activos. Un solo cambio por semana en pauta."}
+    - {cuando: "Semana 4", que: "Revisión con ventas: se escala sólo si las ventas pagan."}
+  reglas:
+    - "Lo que funcionó no se toca: objeto manchado en el primer segundo, escena del día, una medida y se lava solo, resultado antes de la mitad, frase de orgullo, cierre «escribime y te ayudo»."
+    - "Objetos de todos los días (repasador, servilleta, mantel, toalla). Nada de zapatillas ni peluches: traen curiosas que no compran."
+    - "El precio va en la conversación, no en el titular."
+
+saritina-ceramica:
+  titulo: "Objeto con nombre propio"
+  estado: "Contenido propuesto · pauta mayorista sin renovar desde el 1/9"
+  resumen: "Cerámica pintada a mano por Narella. La pauta (WhatsApp, mayorista) corre con los mismos 4 videos desde el 1/9 y se está cansando: la prioridad es renovar creativos con ángulos B2B que todavía no se probaron."
+  fuente: {nombre: "Saritina_Estrategia_Contenido + Mapa de hipótesis B2B", url: "https://docs.google.com/presentation/d/1db3t7YKKgtvZifFH3q7mGxAh4ncxgnTikgxi5n_YlL0/edit", fecha: "2026-10-15"}
+  posicionamiento:
+    categoria: "Vajilla de mayorista: todas las tiendas venden lo mismo."
+    territorio: "Un objeto con nombre propio: cada pieza nace de una historia real, no de una planilla de diseño."
+    idea: "Para el comercio, un catálogo que no tiene su competencia. Para quien compra, una pieza tan personal como la historia que la inspiró."
+    diferencial: "Narella la fabrica y pinta a mano en Oncativo, una por una. Nunca hay dos iguales."
+    voz_si: ["El proceso real, con Narella", "La pieza puesta en una mesa o en un local", "Comentarios reales de clientas y comercios"]
+    voz_no: ["Producción en serie", "Flat lay de catálogo sin contexto"]
+  arquetipos:
+    - {nombre: "Tienda de deco / concept store", estado: "foco de la pauta", deseo: "Diferenciar su surtido.", como: "«Vajilla que no encontrás en cualquier mayorista.»"}
+    - {nombre: "Emprendedora de regalos / desayunos", estado: "sin probar", deseo: "Que su box se sienta más especial y suba el ticket.", como: "«Una taza puede convertir un desayuno en un regalo.»"}
+    - {nombre: "Tienda multimarca que busca novedades", estado: "sin probar", deseo: "Novedad con bajo riesgo de stock.", como: "«Renová tu tienda sin llenarte de stock que no sabés si va a salir.»"}
+    - {nombre: "Café / gastronomía", estado: "sin probar", deseo: "Que lo que sirve se vea mejor.", como: "«Servís un gran café. Que la taza esté a la altura.»"}
+  matriz:
+    - {arquetipo: "Tienda de deco", angulo: "Diferenciación del surtido", etapa: TOFU, hook: "«Si tus clientes ya lo vieron en otras 20 tiendas, no es una novedad.»"}
+    - {arquetipo: "Tienda de deco", angulo: "Comparación: no es producción en serie", etapa: MOFU, hook: "«No es producción en serie. Es una por una, con pincel.»"}
+    - {arquetipo: "Emprendedora de regalos", angulo: "Valor percibido", etapa: TOFU, hook: "«No vendas solo un desayuno. Convertilo en un regalo que queda.»"}
+    - {arquetipo: "Tienda multimarca", angulo: "Novedad con bajo riesgo", etapa: BOFU, hook: "«Novedades que podés probar sin llenar el depósito.»"}
+    - {arquetipo: "Café / gastronomía", angulo: "Experiencia", etapa: TOFU, hook: "«Tu café también entra por los ojos.»"}
+    - {arquetipo: "Todos", angulo: "Autoridad de oficio", etapa: MOFU, hook: "«Esto no salió de un molde. Salió de este pincel.»"}
+    - {arquetipo: "Todos", angulo: "Prueba social de comercios", etapa: BOFU, hook: "Lo que dicen los locales que ya la venden."}
+  piezas:
+    - {titulo: "Iteración 1 de Ad_Video_2 · arranque nuevo", etapa: TOFU, para: "Tienda de deco", formato: "Mismo video, primeros 3 s nuevos: «Si tus clientes ya lo vieron en otras 20 tiendas…»", testea: "¿Un gancho de diferenciación le devuelve el CTR al ganador?", estado: "semana 1"}
+    - {titulo: "Nuevo · Narella pintando de punta a punta", etapa: MOFU, para: "Todos", formato: "Proceso en video corto, acelerado", testea: "¿La autoridad de oficio baja el costo por conversación?", estado: "semana 1"}
+    - {titulo: "Iteración 2 de Ad_Video_2 · otro arranque", etapa: TOFU, para: "Tienda de deco", formato: "Mismo video: «Vajilla para tiendas que no quieren parecerse a todas las demás.»", testea: "Segundo gancho sobre el mismo concepto", estado: "semana 2"}
+    - {titulo: "Nuevo · la taza dentro de un box de regalo", etapa: TOFU, para: "Emprendedora de regalos", formato: "Antes/después: box sin taza → con taza", testea: "¿Abre un arquetipo nuevo?", estado: "semana 2"}
+    - {titulo: "Nuevo · grilla mayorista con precio y mínimo", etapa: BOFU, para: "Tienda multimarca", formato: "Estático/carrusel de catálogo", testea: "¿Mostrar precio y mínimo trae conversaciones que terminan en pedido?", estado: "semana 2"}
+  plan:
+    - {cuando: "Esta semana", que: "Subir 2 piezas (iteración 1 del ganador + Narella pintando) al mismo conjunto. No tocar presupuesto."}
+    - {cuando: "Semana 2", que: "Subir 2–3 piezas más (iteración 2, box de regalo, grilla mayorista). Pausar Ad_Video_1 (el más caro: $458 por conversación del 6 al 19/10)."}
+    - {cuando: "Fin de semana 2", que: "Decidir con datos: el objetivo es volver a ~$250 por conversación (lo que costaba en septiembre) y saber cuántas conversaciones terminan en pedido."}
+  reglas:
+    - "Por cada concepto cansado entra 1 iteración del ganador + 1 concepto nuevo (no clones: Meta agrupa lo parecido como si fuera uno)."
+    - "Diversidad entre ángulos y entre arquetipos, no dentro de uno."
+    - "Pedirle a Narella cuántas conversaciones terminaron en pedido: sin eso no sabemos si $300 por conversación es caro o barato."
+
+bepowder:
+  titulo: "Primero la casa, después la pauta"
+  estado: "Propuesta enviada · esperando aprobación · pauta en pausa"
+  resumen: "Hay demanda (211 ventas en 6 meses), pero desde abril cada $1 de pauta devolvió menos de $1: el problema está al llegar a la web. Propuesta en 2 etapas: validar qué mensaje vende y después lanzar el blend nuevo."
+  fuente: {nombre: "Propuesta BePowder + BePowder Diagnóstico Pauta", url: "https://docs.google.com/presentation/d/1z2SV-ExKmB0KjFaqxzDBcpyBvjJH492yF2_tZqHiHc8/edit", fecha: "2026-10-19"}
+  posicionamiento:
+    categoria: "Hoy la web se ve como vidriera de suplemento («tus necesidades, totalmente cubiertas», filtro por 12 beneficios)."
+    territorio: "A definir en la semana 4 entre 3 territorios: la bebida conocida en la que se para cada blend."
+    idea: "Cada blend con un momento concreto del día (Calm & Focus = la chocolatada o el café de la tarde; Forever Bliss = el desayuno que da glow)."
+    diferencial: "Ingrediente entero, no extracto. Sabor (lo que destacan las reseñas)."
+    voz_si: ["Momento del día y qué reemplaza", "Qué es, para qué momento, cómo sabe", "Precio por día de consumo (~$1.885)"]
+    voz_no: ["Hablar como suplemento", "«100% natural / sin aditivos»"]
+  arquetipos:
+    - {nombre: "Mujeres de 35 a 54", estado: "dato (6 de cada 10 ventas)", deseo: "A definir en la semana 4.", como: "Creadoras que se parezcan a ellas: profesional sin tiempo, skincare, mamá que trabaja, desayunos rápidos."}
+  matriz:
+    - {arquetipo: "Mujeres 35–54", angulo: "Momento de consumo · receta", etapa: TOFU, hook: "Pudín + mate / vaso de leche con cacao", tag: "Momento de consumo · receta"}
+  piezas:
+    - {titulo: "3 videos UGC para validar la estrategia (o 4 estáticos)", etapa: TOFU, para: "Mujeres 35–54", formato: "UGC con creadoras nano/micro", testea: "Qué territorio vende", estado: "esperando aprobación"}
+    - {titulo: "Campaña de WhatsApp", etapa: MOFU, para: "—", formato: "Pauta a conversaciones (15 días bonificados)", testea: "Qué frena la compra (objeciones)", estado: "esperando aprobación"}
+  plan:
+    - {cuando: "Semanas 1–4", que: "Estrategia y territorios, producción UGC, web y oferta (envío gratis en vez de 10%). Decidir categoría, a quién, momento, promesa."}
+    - {cuando: "Semanas 5–8", que: "Test de estrategia y de ángulos, wishlist del blend nuevo. Decidir precio/oferta y nombre/pack."}
+    - {cuando: "Desde semana 9", que: "Lanzamiento con el mensaje ganador, creadoras y campaña web."}
+  reglas:
+    - "Seguir si hay 2+ compras cada 100 visitas y el costo por venta queda debajo del margen (hoy 0,6)."
+    - "Una vuelta más si se recupera el pago pero agregan al carrito menos de 12 de cada 100."
+    - "Pausar si hay menos de 1 compra cada 100 visitas."

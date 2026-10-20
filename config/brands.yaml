@@ -7,7 +7,9 @@
 #   foco     : qué estamos haciendo este mes con la pauta (sale de la última estrategia aprobada).
 #   pedidos  : lo que le pedimos a la marca de forma recurrente (va al Reporte, "Qué necesitamos de vos").
 #   arquetipos: los arquetipos de la estrategia (para los filtros del Dashboard).
-#   creativos: anuncio -> {arquetipo, angulo, etapa_declarada}
+#   creativos: anuncio -> {arquetipo, angulo, etapa}
+#       · etapa = la DECLARADA por estrategia (TOFU/MOFU/BOFU según mensaje y a quién le habla).
+#         El hub muestra al lado el ROL que observa en la pauta (atrae / cierra), que no es lo mismo.
 #       · la clave es el NOMBRE BASE del anuncio. Las copias/iteraciones ("Ad_6 - Copia 4")
 #         heredan solas el tag del original ("Ad_6").
 #       · si la clave empieza con "~" es "contiene" (ej. "~Mega Sale" taggea todo lo que diga Mega Sale).
@@ -22,11 +24,11 @@ pulpa:
     - "Las ventas por WhatsApp de la semana, para saber cuánto nos cuesta cada venta real."
   arquetipos: ["La Orgullosa", "La Práctica que Rinde", "La que lo quiere porque la otra lo tiene"]
   creativos:
-    "Ad_6": {arquetipo: "La Orgullosa", angulo: "Orgullo · humor (servilleta)"}
-    "Ad_3": {arquetipo: "La Orgullosa", angulo: "Dolor y problema (trapo)"}
-    "~trapo queda así": {arquetipo: "La Orgullosa", angulo: "Dolor y problema (trapo)"}
-    "Ad_2": {arquetipo: "La Práctica que Rinde", angulo: "Precio · rinde (tengo chisme)"}
-    "Tengo un chisme": {arquetipo: "La Práctica que Rinde", angulo: "Precio · rinde (tengo chisme)"}
+    "Ad_6": {arquetipo: "La Orgullosa", angulo: "Orgullo · humor (servilleta)", etapa: TOFU}
+    "Ad_3": {arquetipo: "La Orgullosa", angulo: "Dolor y problema (trapo)", etapa: TOFU}
+    "~trapo queda así": {arquetipo: "La Orgullosa", angulo: "Dolor y problema (trapo)", etapa: TOFU}
+    "Ad_2": {arquetipo: "La Práctica que Rinde", angulo: "Precio · rinde (tengo chisme)", etapa: MOFU}
+    "Tengo un chisme": {arquetipo: "La Práctica que Rinde", angulo: "Precio · rinde (tengo chisme)", etapa: MOFU}
     "Ad_4": {angulo: "Tip suelto (toallas)"}
     "Ad_Toallas": {angulo: "Tip suelto (toallas)"}
     "Así lavo mis toallas": {angulo: "Tip suelto (toallas)"}
@@ -55,15 +57,16 @@ basycos:
 
 saritina-ceramica:
   contexto: "Cerámica pintada a mano por Narella. Dos públicos: mayorista (tiendas de deco y regalería, 7 de cada 10 clientes) y minorista. La pauta lleva a WhatsApp."
-  foco: "Campaña de mensajes de WhatsApp para el canal mayorista; separar mayorista de minorista en el contenido."
+  foco: "Renovar creativos YA: la campaña mayorista corre con los mismos 4 videos desde el 1/9 y se está cansando. Plan de 2 semanas: 2 iteraciones del ganador + 2 conceptos nuevos por semana (ver Estrategia de contenido)."
   pedidos:
+    - "4 videos nuevos en 2 semanas (2 por semana): Narella pintando, la grilla mayorista con precio y mínimo, y la pieza dentro de un box de regalo."
     - "Cuántas conversaciones de la semana terminaron en pedido (y de qué monto)."
   arquetipos: ["Tienda de deco / concept store", "Emprendedora de regalos / desayunos", "Local gastronómico"]
   creativos: {}
 
 bepowder:
   contexto: "Be Powder: polvos para preparar bebidas y recetas. Diagnóstico de octubre: hoy no conviene pautar a venta directa; la propuesta es validar el mensaje primero (UGC + WhatsApp) y después lanzar el blend nuevo."
-  foco: "Pauta en pausa hasta validar el mensaje ganador con creativos UGC."
+  foco: "Pauta en pausa. Propusimos replanteo estratégico de marca + lanzamiento del blend nuevo (validar el mensaje con UGC y WhatsApp, después lanzar); esperando aprobación."
   pedidos: []
   arquetipos: []
   creativos:

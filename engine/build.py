@@ -89,16 +89,17 @@ def _load_agency(config_dir: Path) -> dict:
         return {}
 
 
-def _load_brands(config_dir):
-    """config/brands.yaml -> contexto, foco, pedidos y tags (arquetipo/ángulo) por marca."""
+def _load_brands(config_dir, fname="brands.yaml"):
+    """config/brands.yaml -> contexto, foco, pedidos y tags (arquetipo/ángulo) por marca.
+    También sirve para config/estrategias.yaml (pestaña Estrategia de contenido)."""
     import yaml
-    p = Path(config_dir) / "brands.yaml"
+    p = Path(config_dir) / fname
     if not p.exists():
         return {}
     try:
         return yaml.safe_load(p.read_text(encoding="utf-8")) or {}
     except Exception as e:  # un yaml roto no puede tirar el build
-        _BUILD_ERRORS.append(f"⚠ brands.yaml inválido: {e}")
+        _BUILD_ERRORS.append(f"⚠ {fname} inválido: {e}")
         return {}
 
 
@@ -224,7 +225,8 @@ def build_data(exports_dir: Path, site_dir: Path, config_dir: Path, verbose=True
         "window.DATA_BUILT = " + json.dumps(built) + ";\n"
         "window.DATA_PENDING = " + json.dumps(PENDING, ensure_ascii=False) + ";\n"
         "window.AGENCY = " + json.dumps(_load_agency(config_dir), ensure_ascii=False, default=str) + ";\n"
-        "window.BRANDS = " + json.dumps(_load_brands(config_dir), ensure_ascii=False, default=str) + ";\n",
+        "window.BRANDS = " + json.dumps(_load_brands(config_dir), ensure_ascii=False, default=str) + ";\n"
+        "window.ESTRATEGIAS = " + json.dumps(_load_brands(config_dir, "estrategias.yaml"), ensure_ascii=False, default=str) + ";\n",
         encoding="utf-8")
     (site_dir / "data.json").write_text(
         json.dumps({"generated_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),

@@ -67,16 +67,16 @@ clients:
     source: convocatoria
     start: "2026-09-02"
     free_days: 30
-    status: a_confirmar
-    payments: []
-    pending: {amount: 200000, concept: pauta}
+    status: pagando
+    payments:
+      - {month: "2026-10", concept: pauta, amount: 200000, cost: 0}
 
   - slug: basycos
     name: Basycos
     source: convocatoria
     start: "2026-09-11"
     free_days: 30
-    status: gratis
+    status: a_confirmar          # terminó el mes gratis; propuesta paga a confirmar
     payments: []
 
   - slug: bepowder
@@ -84,7 +84,8 @@ clients:
     source: convocatoria
     start: "2026-09-25"          # A CONFIRMAR (primera campaña con nombre MAIA)
     free_days: 30
-    status: gratis               # pauta gratis, pero ya paga creativo
+    status: a_confirmar          # pauta pausada; propuesta de replanteo de marca + lanzamiento enviada, esperando aprobación
+    note: "Propuesta de replanteo estratégico de marca y lanzamiento del blend nuevo, en espera de aprobación."
     payments:
       - {month: "2026-10", concept: creativo, amount: 300000, cost: 200000}
 

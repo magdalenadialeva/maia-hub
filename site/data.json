@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-20T13:26:59+00:00",
+  "generated_at": "2026-10-20T13:53:32+00:00",
   "DATA": {
     "piera": {
       "name": "Piera Ceresa",
@@ -30451,6 +30451,28 @@
           "sales": 1,
           "amount": 14980,
           "note": "Venta de octubre atribuida a anuncios (reporte de la marca)."
+        },
+        {
+          "reported": "2026-10-20",
+          "from": "2026-10-18",
+          "to": "2026-10-18",
+          "channel": "whatsapp",
+          "campaign": "Pulpa Verde_Conversiones_Org_Mensajes_2026_Adv+",
+          "ad": "Ad_6 - Copia 4",
+          "sales": 1,
+          "amount": null,
+          "note": "Venta del domingo 18/10, vino de Ad_6 - Copia 4 (orgullo, antes/después claro)."
+        },
+        {
+          "reported": "2026-10-20",
+          "from": "2026-10-19",
+          "to": "2026-10-19",
+          "channel": "whatsapp",
+          "campaign": "Pulpa Verde_Conversiones_Org_Mensajes_2026_Adv+",
+          "ad": "Ad_6 - Copia 4",
+          "sales": 1,
+          "amount": null,
+          "note": "Venta del lunes 19/10, vino de Ad_6 - Copia 4."
         }
       ],
       "dates": [
