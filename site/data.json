@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-20T15:28:19+00:00",
+  "generated_at": "2026-10-20T17:47:18+00:00",
   "DATA": {
     "piera": {
       "name": "Piera Ceresa",
@@ -30461,8 +30461,8 @@
           "campaign": "Pulpa Verde_Conversiones_Org_Mensajes_2026_Adv+",
           "ad": "Ad_6 - Copia 4",
           "sales": 1,
-          "amount": 23990,
-          "note": "1 kg de blanqueador. Venta del domingo 18/10, vino de Ad_6 - Copia 4 (orgullo, antes/después claro)."
+          "amount": 29990,
+          "note": "1 kg de blanqueador a precio de lista web ($29.990). Venta del domingo 18/10, vino de Ad_6 - Copia 4 (orgullo, antes/después claro)."
         },
         {
           "reported": "2026-10-20",
@@ -30472,8 +30472,18 @@
           "campaign": "Pulpa Verde_Conversiones_Org_Mensajes_2026_Adv+",
           "ad": "Ad_6 - Copia 4",
           "sales": 1,
-          "amount": 23990,
-          "note": "1 kg de blanqueador. Venta del lunes 19/10, vino de Ad_6 - Copia 4."
+          "amount": 29990,
+          "note": "1 kg de blanqueador a precio de lista web ($29.990). Venta del lunes 19/10, vino de Ad_6 - Copia 4."
+        },
+        {
+          "reported": "2026-10-20",
+          "from": "2026-10-20",
+          "to": "2026-10-20",
+          "channel": "whatsapp",
+          "campaign": "Pulpa Verde_Conversiones_Org_Mensajes_2026_Adv+",
+          "sales": 1,
+          "amount": 96000,
+          "note": "Pedido grande por WhatsApp: 3 jabones líquidos 1 L, 3 enjuagues 1 L, 10 blanqueadores, 3 multiusos 1 L. Anuncio de origen: sin dato."
         }
       ],
       "dates": [

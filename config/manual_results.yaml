@@ -40,8 +40,8 @@ pulpa:
     campaign: "Pulpa Verde_Conversiones_Org_Mensajes_2026_Adv+"
     ad: "Ad_6 - Copia 4"
     sales: 1
-    amount: 23990
-    note: "1 kg de blanqueador. Venta del domingo 18/10, vino de Ad_6 - Copia 4 (orgullo, antes/después claro)."
+    amount: 29990
+    note: "1 kg de blanqueador a precio de lista web ($29.990). Venta del domingo 18/10, vino de Ad_6 - Copia 4 (orgullo, antes/después claro)."
   - reported: "2026-10-20"
     from: "2026-10-19"
     to: "2026-10-19"
@@ -49,8 +49,16 @@ pulpa:
     campaign: "Pulpa Verde_Conversiones_Org_Mensajes_2026_Adv+"
     ad: "Ad_6 - Copia 4"
     sales: 1
-    amount: 23990
-    note: "1 kg de blanqueador. Venta del lunes 19/10, vino de Ad_6 - Copia 4."
+    amount: 29990
+    note: "1 kg de blanqueador a precio de lista web ($29.990). Venta del lunes 19/10, vino de Ad_6 - Copia 4."
+  - reported: "2026-10-20"
+    from: "2026-10-20"
+    to: "2026-10-20"
+    channel: whatsapp
+    campaign: "Pulpa Verde_Conversiones_Org_Mensajes_2026_Adv+"
+    sales: 1
+    amount: 96000
+    note: "Pedido grande por WhatsApp: 3 jabones líquidos 1 L, 3 enjuagues 1 L, 10 blanqueadores, 3 multiusos 1 L. Anuncio de origen: sin dato."
 
 saritina-ceramica:
   - reported: "2026-10-20"
