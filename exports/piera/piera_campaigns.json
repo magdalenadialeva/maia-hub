@@ -94,7 +94,7 @@
   "name": "Trafico constante - temporada de fiestas",
   "objective": "LINK_CLICKS",
   "status": "ACTIVE",
-  "spend": 40301.0,
+  "spend": 40302.0,
   "first": "2026-09-30",
   "last": "2026-10-19",
   "purch": 0.0,
@@ -103,7 +103,7 @@
    "Nuevo anuncio de Tráfico",
    "Modelo nuevo"
   ],
-  "impr": 44600.0,
+  "impr": 44601.0,
   "lc": 2415.0,
   "lpv": 1720.0,
   "atc": 0.0,
