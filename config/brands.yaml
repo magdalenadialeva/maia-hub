@@ -1,0 +1,96 @@
+# MAIA · Contexto de cada marca para el hub (v27).
+# Esto es lo que hace que el Análisis y el Reporte NO sean genéricos.
+# Se edita a mano (o se lo pedís a Claude en el proyecto del cliente) y se pushea.
+#
+# Por marca (slug = el mismo de clients.yaml):
+#   contexto : 1–2 líneas. Qué vende, cómo vende, qué sabemos que importa.
+#   foco     : qué estamos haciendo este mes con la pauta (sale de la última estrategia aprobada).
+#   pedidos  : lo que le pedimos a la marca de forma recurrente (va al Reporte, "Qué necesitamos de vos").
+#   arquetipos: los arquetipos de la estrategia (para los filtros del Dashboard).
+#   creativos: anuncio -> {arquetipo, angulo, etapa_declarada}
+#       · la clave es el NOMBRE BASE del anuncio. Las copias/iteraciones ("Ad_6 - Copia 4")
+#         heredan solas el tag del original ("Ad_6").
+#       · si la clave empieza con "~" es "contiene" (ej. "~Mega Sale" taggea todo lo que diga Mega Sale).
+#       · si el nombre del anuncio dice "Angulo X", el hub toma "X" como ángulo aunque no esté acá.
+#   Lo que no está taggeado aparece como "sin taggear" (gris), no se inventa.
+
+pulpa:
+  contexto: "Blanqueador sin cloro y productos de limpieza. Vende por WhatsApp: Sole cierra la venta conversando (la web tuvo 117 carritos y 0 compras en septiembre)."
+  foco: "Escalar el territorio «La que sabe» (orgullo que abre + acompañamiento que cierra) por WhatsApp, de a 2 piezas nuevas por semana, y medir qué conversación termina en venta."
+  pedidos:
+    - "2 videos nuevos por semana (piezas del plan de octubre: mantel/suegra, vino, la cuenta, la objeción, el dato que circula)."
+    - "Las ventas por WhatsApp de la semana, para saber cuánto nos cuesta cada venta real."
+  arquetipos: ["La Orgullosa", "La Práctica que Rinde", "La que lo quiere porque la otra lo tiene"]
+  creativos:
+    "Ad_6": {arquetipo: "La Orgullosa", angulo: "Orgullo · humor (servilleta)"}
+    "Ad_3": {arquetipo: "La Orgullosa", angulo: "Dolor y problema (trapo)"}
+    "~trapo queda así": {arquetipo: "La Orgullosa", angulo: "Dolor y problema (trapo)"}
+    "Ad_2": {arquetipo: "La Práctica que Rinde", angulo: "Precio · rinde (tengo chisme)"}
+    "Tengo un chisme": {arquetipo: "La Práctica que Rinde", angulo: "Precio · rinde (tengo chisme)"}
+    "Ad_4": {angulo: "Tip suelto (toallas)"}
+    "Ad_Toallas": {angulo: "Tip suelto (toallas)"}
+    "Así lavo mis toallas": {angulo: "Tip suelto (toallas)"}
+    "Ad_1": {angulo: "Eco · sin químicos (tablas)"}
+    "Ad_5": {angulo: "Objeto ocasional (zapatillas/peluche)"}
+    "Ad_Converse": {angulo: "Objeto ocasional (zapatillas/peluche)"}
+    "Converse Blancas": {angulo: "Objeto ocasional (zapatillas/peluche)"}
+    "Ad_Vans": {angulo: "Objeto ocasional (zapatillas/peluche)"}
+    "Ad_Osito": {angulo: "Objeto ocasional (zapatillas/peluche)"}
+
+basycos:
+  contexto: "Basyco Jerez: moda española (conjuntos y vestidos), ticket ~$178k. Vende en la web; la fuga más grande está en el pago (3 de cada 4 que inician el pago no compran)."
+  foco: "Preparar Cyber Monday (2–4/11): testear 4 ángulos nuevos en un conjunto aparte, escalar Toulouse y armar retargeting desde el 27/10."
+  pedidos:
+    - "8 videos 9:16 para el testeo (4 ángulos × 2) y reseñas o fotos de clientas reales."
+    - "Oferta del Cyber definida con el margen (nivel de descuento, cuotas, envío)."
+  arquetipos: ["La invitada", "La cazadora de oportunidad", "La que busca algo distinto", "La práctica", "La que regala"]
+  creativos:
+    "Conjunto Lugano": {arquetipo: "La cazadora de oportunidad", angulo: "El más elegido + 20% OFF"}
+    "Conjunto Toulouse": {arquetipo: "La invitada", angulo: "Versatilidad · ocasión concreta"}
+    "Conjunto Toulouse 29/09": {arquetipo: "La invitada", angulo: "Perfect summer set · 10% OFF"}
+    "PRE-SALE · 20.08": {arquetipo: "La que busca algo distinto", angulo: "Lanzamiento · moda española"}
+    "Total Look Loira": {arquetipo: "La que busca algo distinto", angulo: "Lanzamiento · moda española"}
+    "~10% Off": {arquetipo: "La que regala", angulo: "Regalo · Día de la Madre 10% OFF"}
+    "¿Conjunto o vestido?": {arquetipo: "La práctica", angulo: "Dilema de elección"}
+
+saritina-ceramica:
+  contexto: "Cerámica pintada a mano por Narella. Dos públicos: mayorista (tiendas de deco y regalería, 7 de cada 10 clientes) y minorista. La pauta lleva a WhatsApp."
+  foco: "Campaña de mensajes de WhatsApp para el canal mayorista; separar mayorista de minorista en el contenido."
+  pedidos:
+    - "Cuántas conversaciones de la semana terminaron en pedido (y de qué monto)."
+  arquetipos: ["Tienda de deco / concept store", "Emprendedora de regalos / desayunos", "Local gastronómico"]
+  creativos: {}
+
+bepowder:
+  contexto: "Be Powder: polvos para preparar bebidas y recetas. Diagnóstico de octubre: hoy no conviene pautar a venta directa; la propuesta es validar el mensaje primero (UGC + WhatsApp) y después lanzar el blend nuevo."
+  foco: "Pauta en pausa hasta validar el mensaje ganador con creativos UGC."
+  pedidos: []
+  arquetipos: []
+  creativos:
+    "~pudin": {angulo: "Momento de consumo · receta"}
+    "~Vaso de Leche": {angulo: "Momento de consumo · receta"}
+    "Carrusel productos": {angulo: "Catálogo"}
+
+mossy:
+  contexto: "Mossy: ecommerce propio (ropa interior y básicos). Cuenta de prueba del método MAIA."
+  foco: ""
+  pedidos: []
+  arquetipos: []
+  creativos:
+    "~Nueva coleccion": {angulo: "Nueva colección"}
+    "~Mega Sale": {angulo: "Oferta · Mega Sale"}
+    "~Dia de la Madre": {angulo: "Regalo · Día de la Madre"}
+    "~Catalogo": {angulo: "Catálogo"}
+    "~Catálogo": {angulo: "Catálogo"}
+    "~Testimonios": {angulo: "Prueba social"}
+    "~UGC": {angulo: "UGC"}
+
+paz:
+  contexto: "Campaña de captación de MAIA: formulario de la convocatoria (mes gratis)."
+  foco: "Conseguir marcas que puedan pagar pauta después del mes gratis."
+  pedidos: []
+  arquetipos: []
+  creativos:
+    "~Convocatoria $10K": {angulo: "Precio · desde $10K"}
+    "~Escalar": {angulo: "Escalar a +USD 5K"}
+    "~Vendedores": {angulo: "Vendedores"}

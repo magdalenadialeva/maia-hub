@@ -89,6 +89,19 @@ def _load_agency(config_dir: Path) -> dict:
         return {}
 
 
+def _load_brands(config_dir):
+    """config/brands.yaml -> contexto, foco, pedidos y tags (arquetipo/ángulo) por marca."""
+    import yaml
+    p = Path(config_dir) / "brands.yaml"
+    if not p.exists():
+        return {}
+    try:
+        return yaml.safe_load(p.read_text(encoding="utf-8")) or {}
+    except Exception as e:  # un yaml roto no puede tirar el build
+        _BUILD_ERRORS.append(f"⚠ brands.yaml inválido: {e}")
+        return {}
+
+
 def build_data(exports_dir: Path, site_dir: Path, config_dir: Path, verbose=True) -> dict:
     mapping_yaml = config_dir / "mapping.yaml"
     clients = load_clients(config_dir)
@@ -210,7 +223,8 @@ def build_data(exports_dir: Path, site_dir: Path, config_dir: Path, verbose=True
         "window.DATA_EXT = " + payload + ";\n"
         "window.DATA_BUILT = " + json.dumps(built) + ";\n"
         "window.DATA_PENDING = " + json.dumps(PENDING, ensure_ascii=False) + ";\n"
-        "window.AGENCY = " + json.dumps(_load_agency(config_dir), ensure_ascii=False, default=str) + ";\n",
+        "window.AGENCY = " + json.dumps(_load_agency(config_dir), ensure_ascii=False, default=str) + ";\n"
+        "window.BRANDS = " + json.dumps(_load_brands(config_dir), ensure_ascii=False, default=str) + ";\n",
         encoding="utf-8")
     (site_dir / "data.json").write_text(
         json.dumps({"generated_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),

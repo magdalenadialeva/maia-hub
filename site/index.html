@@ -542,6 +542,7 @@
   .interp.manual{background:var(--rose-t)}
 
 </style>
+<link rel="stylesheet" href="theme.css?v=27">
 
 <div class="wrap">
   <div class="top">
@@ -2420,34 +2421,7 @@ function renderAgencia(){
   </div>`;
 }
 
-/* ---------- init ---------- */
-buildRangeBar("range-gen");
-buildRangeBar("range-dash");
-buildPicker("pick-dash", renderDash, "mossy");
-buildPicker("pick-ana", renderAnalisis, "mossy");
-buildPicker("pick-rep", renderReporte, "mossy");
-buildPicker("pick-prop", renderProp, "piera");
-buildPicker("pick-est", renderEst, "vresia");
-renderGeneral();
-syncRangeBars();
-renderSeg();
-renderAgencia();
-/* comentarios del equipo publicados (site/comments.json) */
-window.COMMENTS=window.COMMENTS||{};
-(function(){ try{
-  fetch('comments.json?h='+Math.floor(Date.now()/3600000)).then(r=>r.ok?r.json():{}).then(j=>{
-    window.COMMENTS=j||{};
-    const p=document.getElementById('p-analisis'), sel=document.getElementById('sel-ana');
-    if(p&&p.classList.contains('on')&&sel&&typeof renderAnalisis==='function') renderAnalisis(sel.value);
-  }).catch(()=>{});
-}catch(e){} })();
-/* tabs */
-document.querySelectorAll(".tab").forEach(t=>t.addEventListener("click",()=>{
-  document.querySelectorAll(".tab").forEach(x=>x.setAttribute("aria-selected","false"));
-  document.querySelectorAll(".panel").forEach(x=>x.classList.remove("on"));
-  t.setAttribute("aria-selected","true"); document.getElementById("p-"+t.dataset.tab).classList.add("on");
-  document.querySelectorAll("#p-"+t.dataset.tab+" iframe").forEach(fit);
-}));
+/* init: movido a app.js (v27) */
 window.addEventListener("resize",()=>document.querySelectorAll(".panel.on iframe").forEach(fit));
 /* ---- tooltip del gráfico de evolución (arregla el hover que no mostraba nada) ---- */
 function _charttip(){let t=document.getElementById('charttip');if(!t){t=document.createElement('div');t.id='charttip';document.body.appendChild(t);}return t;}
@@ -2467,9 +2441,11 @@ document.addEventListener('mouseleave',()=>{const t=document.getElementById('cha
 /* clock */
 (function(){const el=document.getElementById("clock");const d=new Date(),m=["ene","feb","mar","abr","may","jun","jul","ago","sep","oct","nov","dic"];el.textContent=d.getDate()+" "+m[d.getMonth()]+" "+d.getFullYear();})();
 /* sello de versión visible para confirmar que estás en la última */
-const BUILD="v26 · 8 oct 2026 · Agencia simple con veredictos y replanteos · Seguimiento amigable · Pulpa medida por ventas";
+const BUILD="v27 · 20 oct 2026 · Identidad MAIA · motor de insights · creativos con arquetipo/ángulo/etapa";
 (function(){const f=document.querySelector('.foot-note'); if(f)f.insertAdjacentHTML('beforeend',' · <b>Build '+BUILD+'</b>');
   const c=document.getElementById('clock'); if(c)c.insertAdjacentHTML('beforeend','<br><span style="color:var(--rose)">Build '+BUILD.split(' · ')[0]+'</span>');})();
 
 </script>
-<script async src="/.netlify/scripts/hud?variant=public" data-nf-variant="public" data-netlify-site-id="0a032fd6-c068-482c-8e05-af8cce553d8e" data-app-host="app.netlify.com"></script>
+<script src="app.js?v=27"></script>
+
+

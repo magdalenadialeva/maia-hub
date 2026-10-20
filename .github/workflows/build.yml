@@ -10,6 +10,8 @@ on:
       - "engine/**"
       - "site/index.html"
       - "site/radar.html"
+      - "site/app.js"
+      - "site/theme.css"
       - "config/**"
       - ".github/workflows/build.yml"
   workflow_dispatch: {}
@@ -69,6 +71,7 @@ jobs:
           mkdir -p _site
           cp site/index.html site/data.js _site/ 2>/dev/null || cp site/data.js _site/
           cp site/comments.json _site/ 2>/dev/null || true
+          cp site/app.js site/theme.css _site/
           cp site/radar.html _site/ 2>/dev/null || true
           mkdir -p _site/reports && cp reports/*.html _site/reports/ 2>/dev/null || true
 
