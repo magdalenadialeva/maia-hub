@@ -1,5 +1,179 @@
 [
  {
+  "date": "2026-10-19",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · video pedido sofi (Revisión pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-19",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · pedido petra (Revisión pendiente → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-19",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · video pedido sofi (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-19",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · pedido petra (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-19",
+  "cat": "estado",
+  "text": "Estado del conjunto de anuncios actualizado · publico retargeting (Procesamiento pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-19",
+  "cat": "otros",
+  "text": "Segmentación del conjunto de anuncios actualizada · publico retargeting",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-19",
+  "cat": "estado",
+  "text": "Estado del conjunto de anuncios actualizado · publico retargeting (Inactivo → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-19",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · vestido + sweater (Revisión pendiente → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-19",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · sw MAMA (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-19",
+  "cat": "otros",
+  "text": "Segmentación del anuncio actualizada · sw MAMA",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-19",
+  "cat": "otros",
+  "text": "Nombre del anuncio actualizado · sw MAMA (sweater dibujo mama → sw MAMA)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-19",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · sw MAMA (Inactivo → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-19",
+  "cat": "creativo",
+  "text": "Anuncio actualizado · sw MAMA",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-19",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · vestido + sweater (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-19",
+  "cat": "otros",
+  "text": "Nombre del anuncio actualizado · vestido + sweater (pedido vestido + sweater → vestido + sweater)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-19",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado cuando se completa su revisión · vestido + sweater (Activo → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-19",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · vestido + sweater (Activo → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-19",
+  "cat": "creativo",
+  "text": "Anuncio actualizado · vestido + sweater",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-19",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · regala bordado (Revisión pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-19",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · regala bordado (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-19",
+  "cat": "otros",
+  "text": "Segmentación del anuncio actualizada · regala bordado",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-19",
+  "cat": "otros",
+  "text": "Nombre del anuncio actualizado · regala bordado (publicacion sweater → regala bordado)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-19",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · regala bordado (Activo → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-19",
+  "cat": "creativo",
+  "text": "Anuncio actualizado · regala bordado",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-19",
+  "cat": "estado",
+  "text": "Estado del conjunto de anuncios actualizado · publico retargeting (Activo → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-19",
+  "cat": "estado",
+  "text": "Estado del conjunto de anuncios actualizado · publico retargeting (Activo → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-19",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · pedido petra (Procesamiento pendiente → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-19",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado cuando se completa su revisión · pedido petra (Activo → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-19",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · pedido petra (Activo → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
   "date": "2026-10-17",
   "cat": "estado",
   "text": "Estado de la campaña actualizado · ALBA-NUEVOS CLIENTES (Procesamiento pendiente → Activa)",
@@ -356,13 +530,13 @@
  {
   "date": "2026-10-15",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · regala bordado (Activo → Procesamiento pendiente)",
+  "text": "Estado del anuncio actualizado · PUBLICACION VESTIDO - (Activo → Procesamiento pendiente)",
   "src": "meta"
  },
  {
   "date": "2026-10-15",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · PUBLICACION VESTIDO - (Activo → Procesamiento pendiente)",
+  "text": "Estado del anuncio actualizado · regala bordado (Activo → Procesamiento pendiente)",
   "src": "meta"
  },
  {
@@ -543,180 +717,6 @@
   "date": "2026-10-14",
   "cat": "presupuesto",
   "text": "Presupuesto de la campaña actualizado · ALBA-NUEVOS CLIENTES (10.000 → 15.000 ARS/día)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-14",
-  "cat": "estado",
-  "text": "Estado de la campaña actualizado · ALBA-NUEVOS CLIENTES (Activa → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-14",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · sw MAMA (Revisión pendiente → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-14",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · sw MAMA (Procesamiento pendiente → Revisión pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-14",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · sw MAMA (Activo → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-14",
-  "cat": "creativo",
-  "text": "Anuncio actualizado · sw MAMA",
-  "src": "meta"
- },
- {
-  "date": "2026-10-14",
-  "cat": "creativo",
-  "text": "Anuncio creado · vestido + sweater",
-  "src": "meta"
- },
- {
-  "date": "2026-10-14",
-  "cat": "estado",
-  "text": "Estado de la cuenta actualizado · 498930606964785 (En período de gracia → Activa)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-14",
-  "cat": "creativo",
-  "text": "Se apagó «sw MAMA»",
-  "src": "auto"
- },
- {
-  "date": "2026-10-14",
-  "cat": "creativo",
-  "text": "Se encendió/lanzó «pedido petra»",
-  "src": "auto"
- },
- {
-  "date": "2026-10-13",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · regala bordado (Revisión pendiente → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-13",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · PUBLICACION VESTIDO - (Revisión pendiente → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-13",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · regala bordado (Procesamiento pendiente → Revisión pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-13",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · PUBLICACION VESTIDO - (Procesamiento pendiente → Revisión pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-13",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · regala bordado (Activo → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-13",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · PUBLICACION VESTIDO - (Activo → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-13",
-  "cat": "creativo",
-  "text": "Anuncio actualizado · regala bordado",
-  "src": "meta"
- },
- {
-  "date": "2026-10-13",
-  "cat": "creativo",
-  "text": "Anuncio actualizado · PUBLICACION VESTIDO -",
-  "src": "meta"
- },
- {
-  "date": "2026-10-13",
-  "cat": "estado",
-  "text": "Estado de la cuenta actualizado · 498930606964785 (Activa → En período de gracia)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-13",
-  "cat": "creativo",
-  "text": "Se encendió/lanzó «vestido + sweater»",
-  "src": "auto"
- },
- {
-  "date": "2026-10-12",
-  "cat": "creativo",
-  "text": "Se reactivó «sw MAMA»",
-  "src": "auto"
- },
- {
-  "date": "2026-10-12",
-  "cat": "creativo",
-  "text": "Se reactivó «regala bordado»",
-  "src": "auto"
- },
- {
-  "date": "2026-10-11",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · sw MAMA (Revisión pendiente → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-11",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · sw MAMA (Procesamiento pendiente → Revisión pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-11",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · sw MAMA (Activo → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-11",
-  "cat": "creativo",
-  "text": "Anuncio actualizado · sw MAMA",
-  "src": "meta"
- },
- {
-  "date": "2026-10-11",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · regala bordado (Revisión pendiente → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-11",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · PUBLICACION VESTIDO - (Revisión pendiente → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-11",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · regala bordado (Procesamiento pendiente → Revisión pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-11",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · PUBLICACION VESTIDO - (Procesamiento pendiente → Revisión pendiente)",
   "src": "meta"
  }
 ]

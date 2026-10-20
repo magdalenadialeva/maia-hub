@@ -3,9 +3,9 @@
   "name": "Nueva campaña de Clientes potenciales V.2",
   "objective": "OUTCOME_LEADS",
   "status": "ACTIVE",
-  "spend": 757201.84,
+  "spend": 765466.59,
   "first": "2026-07-31",
-  "last": "2026-10-18",
+  "last": "2026-10-19",
   "purch": 0.0,
   "msg": 83.0,
   "ads": [
@@ -39,13 +39,13 @@
    "IG Img 16/10 A - Convocatoria Marcas por Lanzar",
    "IG Img 17/10 - Convocatoria Mayoristas (+USD 5K)"
   ],
-  "impr": 157863.0,
-  "lc": 2064.0,
+  "impr": 160685.0,
+  "lc": 2101.0,
   "lpv": 0.0,
   "atc": 0.0,
   "ic": 0.0,
   "pval": 0.0,
-  "leads": 579.0,
+  "leads": 587.0,
   "window_from": "2026-06-30"
  },
  {

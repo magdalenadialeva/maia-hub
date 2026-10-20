@@ -1,5 +1,41 @@
 [
  {
+  "date": "2026-10-19",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · ¿Conjunto o vestido? (Procesamiento pendiente → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-19",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Conjunto Lugano (Procesamiento pendiente → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-19",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado cuando se completa su revisión · ¿Conjunto o vestido? (Activo → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-19",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · ¿Conjunto o vestido? (Activo → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-19",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado cuando se completa su revisión · Conjunto Lugano (Activo → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-19",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Conjunto Lugano (Activo → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
   "date": "2026-10-16",
   "cat": "estado",
   "text": "Estado del anuncio actualizado · 10% Off Toscana (Procesamiento pendiente → Inactivo)",
@@ -314,6 +350,12 @@
  {
   "date": "2026-10-13",
   "cat": "estado",
+  "text": "Estado del anuncio actualizado · Conjunto Toulouse (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-13",
+  "cat": "estado",
   "text": "Estado del anuncio actualizado · Total Look Loira (Procesamiento pendiente → Revisión pendiente)",
   "src": "meta"
  },
@@ -326,19 +368,13 @@
  {
   "date": "2026-10-13",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · Conjunto Toulouse (Procesamiento pendiente → Revisión pendiente)",
+  "text": "Estado del anuncio actualizado · Conjunto Toulouse 29/09 (Procesamiento pendiente → Revisión pendiente)",
   "src": "meta"
  },
  {
   "date": "2026-10-13",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · Conjunto Lugano (Procesamiento pendiente → Revisión pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-13",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · PRE-SALE · 20.08 (Procesamiento pendiente → Revisión pendiente)",
+  "text": "Estado del anuncio actualizado · ¿Conjunto o vestido? (Procesamiento pendiente → Revisión pendiente)",
   "src": "meta"
  },
  {
@@ -350,13 +386,13 @@
  {
   "date": "2026-10-13",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · Conjunto Toulouse 29/09 (Procesamiento pendiente → Revisión pendiente)",
+  "text": "Estado del anuncio actualizado · PRE-SALE · 20.08 (Procesamiento pendiente → Revisión pendiente)",
   "src": "meta"
  },
  {
   "date": "2026-10-13",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · ¿Conjunto o vestido? (Procesamiento pendiente → Revisión pendiente)",
+  "text": "Estado del anuncio actualizado · Conjunto Lugano (Procesamiento pendiente → Revisión pendiente)",
   "src": "meta"
  },
  {
@@ -679,42 +715,6 @@
  },
  {
   "date": "2026-09-30",
-  "cat": "segmentacion",
-  "text": "Público personalizado creado · asa_auto_custom_audience",
-  "src": "meta"
- },
- {
-  "date": "2026-09-30",
-  "cat": "creativo",
-  "text": "Se reactivó «Total Look Loira»",
-  "src": "auto"
- },
- {
-  "date": "2026-09-30",
-  "cat": "creativo",
-  "text": "Se apagó «Total Look Loira»",
-  "src": "auto"
- },
- {
-  "date": "2026-09-30",
-  "cat": "creativo",
-  "text": "Se encendió/lanzó «Conjunto Toulouse 29/09»",
-  "src": "auto"
- },
- {
-  "date": "2026-09-30",
-  "cat": "creativo",
-  "text": "Se encendió/lanzó «PRE-SALE · 20.08»",
-  "src": "auto"
- },
- {
-  "date": "2026-09-30",
-  "cat": "creativo",
-  "text": "Se encendió/lanzó «¿Conjunto o vestido?»",
-  "src": "auto"
- },
- {
-  "date": "2026-09-28",
   "cat": "segmentacion",
   "text": "Público personalizado creado · asa_auto_custom_audience",
   "src": "meta"

@@ -194,7 +194,25 @@
  {
   "date": "2026-10-17",
   "cat": "creativo",
+  "text": "Se apagó «Ad6 - Secuencia - Nueva coleccion 202666 - Copia 6»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-10-17",
+  "cat": "creativo",
+  "text": "Se apagó «Secuencia imagenes 1 - Minimal SS25»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-10-17",
+  "cat": "creativo",
   "text": "Se reactivó «Ad6 - Secuencia - Nueva coleccion 2026 - Copia»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-10-17",
+  "cat": "creativo",
+  "text": "Se apagó «Dia de la Madre - Super Sale - Summer Feeling»",
   "src": "auto"
  },
  {
@@ -699,24 +717,6 @@
   "date": "2026-10-15",
   "cat": "creativo",
   "text": "Se apagó «Ad6 - Secuencia - Nueva coleccion 2026 - Copia 2»",
-  "src": "auto"
- },
- {
-  "date": "2026-10-15",
-  "cat": "creativo",
-  "text": "Se encendió/lanzó «Ad12 - UGC Creadoras - Try on»",
-  "src": "auto"
- },
- {
-  "date": "2026-10-15",
-  "cat": "creativo",
-  "text": "Se encendió/lanzó «Ad13 - UGC - Shein vs Mossy»",
-  "src": "auto"
- },
- {
-  "date": "2026-10-15",
-  "cat": "creativo",
-  "text": "Se encendió/lanzó «Ad14 - Producto - Estampados flat lay»",
   "src": "auto"
  }
 ]

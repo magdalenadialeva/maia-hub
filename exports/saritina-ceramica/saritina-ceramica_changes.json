@@ -1,8 +1,26 @@
 [
  {
+  "date": "2026-10-19",
+  "cat": "creativo",
+  "text": "Se reactivó «Ad_Video_3»",
+  "src": "auto"
+ },
+ {
   "date": "2026-10-17",
   "cat": "creativo",
   "text": "Se reactivó «Ad_Video_1»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-10-17",
+  "cat": "creativo",
+  "text": "Se apagó «Ad_Video_1»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-10-17",
+  "cat": "creativo",
+  "text": "Se pausó «Ad_Video_3»",
   "src": "auto"
  },
  {
@@ -10,12 +28,6 @@
   "cat": "segmentacion",
   "text": "Público personalizado creado · asa_auto_custom_audience",
   "src": "meta"
- },
- {
-  "date": "2026-10-16",
-  "cat": "creativo",
-  "text": "Se apagó «Ad_Video_3»",
-  "src": "auto"
  },
  {
   "date": "2026-10-15",
