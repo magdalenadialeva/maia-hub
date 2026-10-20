@@ -40,8 +40,8 @@ pulpa:
     campaign: "Pulpa Verde_Conversiones_Org_Mensajes_2026_Adv+"
     ad: "Ad_6 - Copia 4"
     sales: 1
-    amount: null       # monto pendiente (pedido a Magui)
-    note: "Venta del domingo 18/10, vino de Ad_6 - Copia 4 (orgullo, antes/después claro)."
+    amount: 23990
+    note: "1 kg de blanqueador. Venta del domingo 18/10, vino de Ad_6 - Copia 4 (orgullo, antes/después claro)."
   - reported: "2026-10-20"
     from: "2026-10-19"
     to: "2026-10-19"
@@ -49,5 +49,21 @@ pulpa:
     campaign: "Pulpa Verde_Conversiones_Org_Mensajes_2026_Adv+"
     ad: "Ad_6 - Copia 4"
     sales: 1
-    amount: null       # monto pendiente (pedido a Magui)
-    note: "Venta del lunes 19/10, vino de Ad_6 - Copia 4."
+    amount: 23990
+    note: "1 kg de blanqueador. Venta del lunes 19/10, vino de Ad_6 - Copia 4."
+
+saritina-ceramica:
+  - reported: "2026-10-20"
+    from: "2026-09-01"
+    to: "2026-09-30"
+    channel: whatsapp
+    sales: 8
+    amount: 2082480
+    note: "Pedidos mayoristas por publicidad, septiembre: Nancy 279.000 · Agustina 219.000 · Mariela 477.940 · Bonafide 269.770 · Ana 224.770 · Vico 382.000 · Carola 150.000 · Velas 64.000."
+  - reported: "2026-10-20"
+    from: "2026-10-01"
+    to: "2026-10-15"
+    channel: whatsapp
+    sales: 4
+    amount: 1970300
+    note: "Pedidos mayoristas por publicidad, 1 al 15/10: Lorena 271.000 (Córdoba/Colonia Caroya) · Male 909.300 (Bariloche) · Debora 490.000 (La Rioja) · Moni 300.700 (Rosario)."

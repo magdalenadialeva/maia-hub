@@ -12,6 +12,7 @@
 #         El hub muestra al lado el ROL que observa en la pauta (atrae / cierra), que no es lo mismo.
 #       · la clave es el NOMBRE BASE del anuncio. Las copias/iteraciones ("Ad_6 - Copia 4")
 #         heredan solas el tag del original ("Ad_6").
+#       · si la clave empieza con "=" es el nombre EXACTO (gana sobre el nombre base: sirve para copias que son piezas nuevas).
 #       · si la clave empieza con "~" es "contiene" (ej. "~Mega Sale" taggea todo lo que diga Mega Sale).
 #       · si el nombre del anuncio dice "Angulo X", el hub toma "X" como ángulo aunque no esté acá.
 #   Lo que no está taggeado aparece como "sin taggear" (gris), no se inventa.
@@ -20,11 +21,17 @@ pulpa:
   contexto: "Blanqueador sin cloro y productos de limpieza. Vende por WhatsApp: Sole cierra la venta conversando (la web tuvo 117 carritos y 0 compras en septiembre)."
   foco: "Escalar el territorio «La que sabe» (orgullo que abre + acompañamiento que cierra) por WhatsApp, de a 2 piezas nuevas por semana, y medir qué conversación termina en venta."
   pedidos:
-    - "2 videos nuevos por semana (piezas del plan de octubre: mantel/suegra, vino, la cuenta, la objeción, el dato que circula)."
+    - "2 videos nuevos por semana (piezas del plan: vino, la objeción del percarbonato, el dato que circula, toallas)."
     - "Las ventas por WhatsApp de la semana, para saber cuánto nos cuesta cada venta real."
   arquetipos: ["La Orgullosa", "La Práctica que Rinde", "La que lo quiere porque la otra lo tiene"]
   creativos:
-    "Ad_6": {arquetipo: "La Orgullosa", angulo: "Orgullo · humor (servilleta)", etapa: TOFU}
+    # Copias de Ad_6 que en realidad son piezas nuevas (planilla "Contenidos Pauta - Clientes"):
+    # el nombre EXACTO gana sobre el nombre base, así no heredan el tag de Ad_6.
+    "=Ad_6 - Copia 4": {arquetipo: "La Orgullosa", angulo: "Conexión humana · humor", etapa: TOFU, pieza: "Ad 10 · Blanqueador · repasador «mi suegra»"}
+    "=Ad_6 - Copia 3": {arquetipo: "La Práctica que Rinde", angulo: "Comparación de precio (3 en 1)", etapa: BOFU, pieza: "Ad 7 · Multiuso · «reemplazás 3 productos por 1»"}
+    "=Ad_6 - Copia 2": {arquetipo: "La Orgullosa", angulo: "Antes y después", etapa: MOFU, pieza: "Ad 9 · Blanqueador · mancha de humedad en la pared"}
+    "=Ad_6 - Copia": {arquetipo: "La Orgullosa", angulo: "Antes y después", etapa: MOFU, pieza: "Ad 8 · Antisarro · freidora (carrusel)"}
+    "Ad_6": {arquetipo: "La Orgullosa", angulo: "Conexión humana · humor", etapa: TOFU, pieza: "Servilleta «mis antepasados estarían orgullosos»"}
     "Ad_3": {arquetipo: "La Orgullosa", angulo: "Dolor y problema (trapo)", etapa: TOFU}
     "~trapo queda así": {arquetipo: "La Orgullosa", angulo: "Dolor y problema (trapo)", etapa: TOFU}
     "Ad_2": {arquetipo: "La Práctica que Rinde", angulo: "Precio · rinde (tengo chisme)", etapa: MOFU}
@@ -57,7 +64,8 @@ basycos:
 
 saritina-ceramica:
   contexto: "Cerámica pintada a mano por Narella. Dos públicos: mayorista (tiendas de deco y regalería, 7 de cada 10 clientes) y minorista. La pauta lleva a WhatsApp."
-  foco: "Renovar creativos YA: la campaña mayorista corre con los mismos 4 videos desde el 1/9 y se está cansando. Plan de 2 semanas: 2 iteraciones del ganador + 2 conceptos nuevos por semana (ver Estrategia de contenido)."
+  foco: "Desde el 20/10 la inversión sube de $7k a $11k por día (aprobado por la marca). Renovar creativos YA: la campaña mayorista corre con los mismos 4 videos desde el 1/9 y se está cansando; sin piezas nuevas, la plata extra va a anuncios cansados. Plan: 2 piezas nuevas por semana (ver Estrategia de contenido)."
+  compras: reportadas   # Meta registra "compras" sin monto en esta cuenta: se usan sólo las ventas que reporta la marca
   pedidos:
     - "4 videos nuevos en 2 semanas (2 por semana): Narella pintando, la grilla mayorista con precio y mínimo, y la pieza dentro de un box de regalo."
     - "Cuántas conversaciones de la semana terminaron en pedido (y de qué monto)."

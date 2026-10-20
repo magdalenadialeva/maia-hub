@@ -31,11 +31,11 @@ pulpa:
     - {nombre: "La Práctica que Rinde", estado: "sin probar", deseo: "Que la cuenta cierre.", como: "La cuenta por lavado hecha para su casa y 250 g para probar."}
     - {nombre: "La que lo quiere porque la otra lo tiene", estado: "sin probar", deseo: "No quedarse afuera del dato que circula.", como: "Llega preguntando «¿es el que saca todo?»: Sole confirma y le dice cuánto usar."}
   matriz:
-    - {arquetipo: "La Orgullosa", angulo: "Conexión humana y humor", etapa: TOFU, hook: "«Mis antepasados estarían orgullosos…»", tag: "Orgullo · humor (servilleta)"}
-    - {arquetipo: "La Orgullosa", angulo: "Deseo aspiracional", etapa: TOFU, hook: "«Le mostré el mantel a mi suegra…»"}
+    - {arquetipo: "La Orgullosa", angulo: "Conexión humana y humor", etapa: TOFU, hook: "«Mis antepasados estarían orgullosos…» (Ad_6) · «Mi suegra me preguntó si había comprado repasadores nuevos» (Ad_6 - Copia 4)", tag: "Conexión humana · humor"}
+    - {arquetipo: "La Orgullosa", angulo: "Antes y después", etapa: MOFU, hook: "Freidora con antisarro (Ad_6 - Copia) · mancha de humedad en la pared (Ad_6 - Copia 2)", tag: "Antes y después"}
     - {arquetipo: "La Orgullosa", angulo: "Dolor y problema", etapa: TOFU, hook: "«Si tu repasador queda así… no lo tires.»", tag: "Dolor y problema (trapo)"}
     - {arquetipo: "La Orgullosa", angulo: "Creencia desafiada", etapa: TOFU, hook: "«Si creés que las manchas de vino no salen…»"}
-    - {arquetipo: "La Práctica que Rinde", angulo: "Comparación y reemplazo", etapa: MOFU, hook: "«Reemplacé 3 productos por 1…»"}
+    - {arquetipo: "La Práctica que Rinde", angulo: "Comparación de precio (3 en 1)", etapa: BOFU, hook: "«Con el Multiuso reemplazás 3 productos por 1» (Ad_6 - Copia 3)", tag: "Comparación de precio (3 en 1)"}
     - {arquetipo: "La Práctica que Rinde", angulo: "Autoridad: el método", etapa: MOFU, hook: "«Para los que piensan que es percarbonato…»"}
     - {arquetipo: "La Práctica que Rinde", angulo: "Precio · rinde", etapa: MOFU, hook: "«Tengo un chisme… rinde un montón»", tag: "Precio · rinde (tengo chisme)"}
     - {arquetipo: "La que lo quiere porque la otra lo tiene", angulo: "Prueba social", etapa: MOFU, hook: "«Me preguntan por el polvo que saca todo.»"}
@@ -43,10 +43,12 @@ pulpa:
     - {arquetipo: "(fuera de estrategia)", angulo: "Eco · sin químicos", etapa: TOFU, hook: "Tablas, antisarro", tag: "Eco · sin químicos (tablas)"}
     - {arquetipo: "(fuera de estrategia)", angulo: "Objeto ocasional", etapa: TOFU, hook: "Zapatillas, peluche", tag: "Objeto ocasional (zapatillas/peluche)"}
   piezas:
-    - {titulo: "Ad_6 - Copia 4 · servilleta, antes/después muy claro", etapa: TOFU, para: "La Orgullosa", formato: "El rescate", testea: "¿Una versión con el antes/después más claro rinde como el original?", estado: "al aire · ganó: trajo las ventas del 18 y 19/10"}
-    - {titulo: "P1 · «Le mostré el mantel a mi suegra…»", etapa: TOFU, para: "La Orgullosa", formato: "El rescate · 12–15 s", testea: "¿El orgullo funciona con otro objeto y otra frase?", estado: "a grabar"}
+    - {titulo: "Ad 10 · «Mi suegra me preguntó si había comprado repasadores nuevos» (Ad_6 - Copia 4)", etapa: TOFU, para: "La Orgullosa", formato: "Video · blanqueador · repasador", testea: "¿El orgullo funciona con otro objeto y otra frase? (imitar Ad_6)", estado: "al aire desde 16/10 · trajo las ventas del 18 y 19/10"}
+    - {titulo: "Ad 7 · «Reemplazás 3 productos por 1» (Ad_6 - Copia 3)", etapa: BOFU, para: "La Práctica que Rinde", formato: "Video · multiuso · baños y griferías", testea: "¿La cuenta hace escribir a otra clienta?", estado: "al aire desde 16/10"}
+    - {titulo: "Ad 8 · Freidora con antisarro (Ad_6 - Copia)", etapa: MOFU, para: "La Orgullosa", formato: "Carrusel · antes y después", testea: "¿El antes/después sirve con otro producto?", estado: "al aire desde 16/10"}
+    - {titulo: "Ad 9 · Mancha de humedad en la pared (Ad_6 - Copia 2)", etapa: MOFU, para: "La Orgullosa", formato: "Video · blanqueador · pared", testea: "¿Un uso inesperado del blanqueador trae conversaciones?", estado: "al aire desde 16/10"}
+    - {titulo: "Ad 11 · Toallas «necesitan algo más que fe»", etapa: MOFU, para: "La Orgullosa", formato: "Video · antes y después", testea: "Antes/después con objeto de todos los días", estado: "pendiente: falta el video"}
     - {titulo: "P2 · «Para los que creen que el vino no sale…»", etapa: TOFU, para: "La que ya probó todo", formato: "El rescate · 12–15 s", testea: "¿Hay otra puerta además del orgullo?", estado: "a grabar"}
-    - {titulo: "P3 · «Reemplacé 3 productos por 1»", etapa: MOFU, para: "La Práctica que Rinde", formato: "La cuenta en la mesada · 15–20 s", testea: "¿La cuenta hace escribir a otra clienta?", estado: "a grabar"}
     - {titulo: "P4 · La objeción del percarbonato", etapa: MOFU, para: "La que duda", formato: "La pregunta que te hacen · 20–25 s", testea: "¿Responder la objeción trae conversaciones que compran?", estado: "a regrabar (en color, con prueba)"}
     - {titulo: "P5 · «Me preguntan por el polvo que saca todo»", etapa: MOFU, para: "La que lo quiere porque la otra lo tiene", formato: "El dato que circula · 15–20 s", testea: "¿El dato que se pasa trae conversaciones nuevas?", estado: "a grabar"}
   plan:
@@ -93,6 +95,7 @@ saritina-ceramica:
     - {cuando: "Esta semana", que: "Subir 2 piezas (iteración 1 del ganador + Narella pintando) al mismo conjunto. No tocar presupuesto."}
     - {cuando: "Semana 2", que: "Subir 2–3 piezas más (iteración 2, box de regalo, grilla mayorista). Pausar Ad_Video_1 (el más caro: $458 por conversación del 6 al 19/10)."}
     - {cuando: "Fin de semana 2", que: "Decidir con datos: el objetivo es volver a ~$250 por conversación (lo que costaba en septiembre) y saber cuántas conversaciones terminan en pedido."}
+    - {cuando: "Desde el 20/10", que: "Presupuesto de $7k a $11k por día. Ojo: subirlo con los mismos 4 videos cansados encarece cada conversación; las piezas nuevas tienen que entrar esta semana."}
   reglas:
     - "Por cada concepto cansado entra 1 iteración del ganador + 1 concepto nuevo (no clones: Meta agrupa lo parecido como si fuera uno)."
     - "Diversidad entre ángulos y entre arquetipos, no dentro de uno."

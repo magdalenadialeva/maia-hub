@@ -23,6 +23,7 @@ function isActiveBrand(b){ return !isLost(b); }
 function brand(b){ return BRANDS[b]||{}; }
 
 /* ---------- Tags: arquetipo / ángulo ---------- */
+function adLbl(b,ad){ const t=tagOf(b,ad); return t.pieza?`${ad} (${t.pieza.replace(/^Ad \d+ · /,'')})`:ad; }
 function normBase(n){
   let s=String(n||'').toLowerCase().replace(/\s+/g,' ').trim();
   let prev; do{ prev=s; s=s.replace(/\s*[-–]\s*(copia|copy)(\s*\d+)?\s*$/,'').replace(/\s+(copia|copy)(\s*\d+)?\s*$/,'').trim(); }while(s!==prev);
@@ -30,7 +31,9 @@ function normBase(n){
 }
 function tagOf(b,ad){
   const C=(brand(b).creativos)||{}; const base=normBase(ad), low=String(ad||'').toLowerCase();
-  for(const k in C){ if(k[0]!=='~' && normBase(k)===base) return {...C[k],src:'tag'}; }
+  const exact=low.replace(/\s+/g,' ').trim();
+  for(const k in C){ if(k[0]==='=' && k.slice(1).toLowerCase().replace(/\s+/g,' ').trim()===exact) return {...C[k],src:'tag'}; }
+  for(const k in C){ if(k[0]!=='~' && k[0]!=='=' && normBase(k)===base) return {...C[k],src:'tag'}; }
   for(const k in C){ if(k[0]==='~' && low.includes(k.slice(1).toLowerCase())) return {...C[k],src:'tag'}; }
   const m=String(ad||'').match(/[áa]ngulo\s+(.+?)(\s+[-–·]\s+|$)/i);
   if(m) return {angulo:m[1].trim(),src:'nombre'};
@@ -83,8 +86,9 @@ function stats(v,R){
 /* Ventas = compras que ve Meta + ventas que reporta la marca por fuera (WhatsApp/local).
    Las reportadas con canal "anuncios"/"web" se asumen ya contadas por Meta (no se duplican). */
 const DUP_CH=new Set(['anuncios','web']);
+function slugOf(D){ for(const k in DATA) if(DATA[k]===D) return k; return null; }
 function repSales(D,from,to,adName){
-  let n=0,amt=0,unk=0;
+  let n=0,amt=0,unk=0; const onlyRep=(brand(slugOf(D)).compras==='reportadas');
   for(const m of (D.manual||[])){
     if(DUP_CH.has(String(m.channel||'').toLowerCase())) continue;
     if(adName!==undefined && String(m.ad||'').toLowerCase().trim()!==String(adName).toLowerCase().trim()) continue;
@@ -93,16 +97,16 @@ function repSales(D,from,to,adName){
     const sh=ov/(daysBetween(f,t)+1), q=(+m.sales||0)*sh;
     n+=q; if(m.amount==null||m.amount==='') unk+=q; else amt+=(+m.amount||0)*sh;
   }
-  return {n,amt,unk};
+  return {n,amt,unk,onlyRep};
 }
 function salesOf(v,rp){
-  const meta=v.purch||0, compras=meta+rp.n, valor=(v.pval||0)+rp.amt, spend=v.spend||0;
+  const meta=rp.onlyRep?0:(v.purch||0), compras=meta+rp.n, valor=(rp.onlyRep?0:(v.pval||0))+rp.amt, spend=v.spend||0;
   return {meta,rep:rp.n,compras,valor,unk:rp.unk,cpa:compras?spend/compras:null,roas:spend?valor/spend:0,
     partial:rp.unk>0.01, noValue:compras>0&&valor===0&&rp.unk<0.01};
 }
 function roasTxt(S){ return S.noValue?'s/monto':((S.partial&&!S.valor)?'falta monto':(dec(S.roas)+'x')); }
 function salesNote(S){ const p=[];
-  if(S.rep>0.01) p.push(`${money(S.meta)} de Meta + ${money(S.rep)} reportada${Math.round(S.rep)===1?'':'s'}`);
+  if(S.rep>0.01) p.push(S.meta?`${money(S.meta)} de Meta + ${money(S.rep)} reportada${Math.round(S.rep)===1?'':'s'}`:`reportadas por la marca`);
   if(S.partial) p.push(`ROAS parcial: ${money(S.unk)} venta${Math.round(S.unk)===1?'':'s'} sin monto cargado`);
   if(S.noValue) p.push('Meta registra compras sin monto');
   return p.join(' · '); }
@@ -181,7 +185,7 @@ function analyze(b,opt){
 
   /* 2 · Concentración en un solo anuncio */
   const top=ads[0];
-  const famOf=a=>normBase(a);
+  const famOf=a=>normBase(a)+'|'+(tagOf(b,a).angulo||'');
   if(top && ads.length>=1 && top.share>=0.6){
     const famShare=ads.filter(x=>famOf(x.ad)===famOf(top.ad)).reduce((s,x)=>s+x.share,0);
     const angs=new Set(ads.filter(x=>x.share>=0.05).map(x=>x.tag.angulo||'?'));
@@ -210,9 +214,9 @@ function analyze(b,opt){
     if(solid.length){
       const e=solid[0]; const ratio=(e.a.cpr&&e.o.cpr)?e.a.cpr/e.o.cpr:null;
       if(ratio!=null && ratio<=1.1){
-        push({sev:'bien',key:'iter',t:`Desde el ${fmtWd(e.since)}, la iteración «${esc(e.it.ad)}» rinde igual o mejor que el original`,
+        push({sev:'bien',key:'iter',t:`Desde el ${fmtWd(e.since)}, la iteración «${esc(adLbl(b,e.it.ad))}» rinde igual o mejor que el original`,
           d:`${$m(e.a.cpr)} vs ${$m(e.o.cpr)} por ${U[0]} (${resTxt(e.a.res,R)} vs ${resTxt(e.o.res,R)} en los mismos días).${solid.length>1?` Hay ${solid.length} iteraciones con datos.`:''}`,
-          a:`Seguir por ese camino: hacer 2–3 iteraciones más de ${esc(e.it.ad.replace(/\s*[-–]\s*(copia|copy).*$/i,''))} y pasarles presupuesto de a poco.`,
+          a:`Seguir por ese camino: 2–3 piezas más con la misma idea${e.it.tag&&e.it.tag.angulo?` («${esc(e.it.tag.angulo)}»)`:''} y otro objeto u otro arranque, y pasarles presupuesto de a poco.`,
           ev:`${fmtDM(e.since)}–${fmtDM(to)} · mismo período para los dos`,
           rep:{aprendimos:`La nueva versión del anuncio ganador funciona igual o mejor que el original (${$m(e.a.cpr)} vs ${$m(e.o.cpr)} por ${U[0]}): el concepto se puede seguir estirando.`,hacemos:'Más versiones del anuncio ganador, con otro objeto u otro arranque.'}});
       } else if(ratio!=null && ratio>=1.3){
@@ -279,8 +283,8 @@ function analyze(b,opt){
     if(M30.any) push({sev:'info',key:'manual',t:`Ventas que nos pasó la marca: ${money(M30.sales)} en los últimos 30 días`,
       d:`${$m(M30.amount)} vendidos con ${$m(sp30)} invertidos → por cada $1 volvieron $${dec(sp30?M30.amount/sp30:0)}.`,
       a:'Usar este número (no el de Meta) para decidir si escalar.',ev:`Último reporte: ${M30.last?fmtDM(M30.last):'—'}`});
-    if(!Mw.any && lastTo<from) push({sev:'atencion',key:'manualmiss',t:'Falta el reporte de ventas de esta semana',
-      d:`El último dato de ventas que nos pasó la marca llega hasta el ${fmtDM(lastTo)}. Sin eso no sabemos cuánto cuesta cada venta real.`,
+    if(lastTo<to) push({sev:'atencion',key:'manualmiss',t:lastTo<from?'Falta el reporte de ventas de esta semana':`Faltan las ventas del ${fmtDM(addDays(lastTo,1))} al ${fmtDM(to)}`,
+      d:`El último dato de ventas que nos pasó la marca llega hasta el ${fmtDM(lastTo)}.${Mw.any?' Las compras, el CPA y el ROAS de la semana están estimados repartiendo ese reporte por día.':''} Sin el dato completo no sabemos cuánto cuesta cada venta real.`,
       a:'Pedirle a la marca las ventas de la semana (cantidad y monto).',ev:'',rep:{necesitamos:'Las ventas de la semana que entraron por WhatsApp (cantidad y monto).'}});
   }
 
@@ -294,7 +298,7 @@ function analyze(b,opt){
       const c1=e1[R.field]?e1.spend/e1[R.field]:null, c2=e2[R.field]?e2.spend/e2[R.field]:null;
       const ctr1=e1.impr?100*e1.lc/e1.impr:0, ctr2=e2.impr?100*e2.lc/e2.impr:0;
       const worse=c1&&c2&&c2>c1*1.15;
-      push({sev:(age>=35||worse)?'urgente':'atencion',key:'stale',
+      push({sev:(age>=35||worse)?'urgente':'atencion',key:'stale',worse,
         t:`Hace ${age} días que no entra un creativo nuevo`,
         d:`Los ${ads.length} anuncios que gastan arrancaron entre el ${fmtDM(firstAll)} y el ${fmtDM(lastNew)}.${(c1&&c2)?` ${cprLbl(R)[0].toUpperCase()+cprLbl(R).slice(1)}: ${$m(c1)} en las primeras 3 semanas → ${$m(c2)} en las últimas 2 (${c2>=c1?'+':'−'}${pctTxt(Math.abs(c2/c1-1))}); CTR ${dec(ctr1)}% → ${dec(ctr2)}%.`:''} Aunque hoy rinda, la pauta sin renovación se cae.`,
         a:'Renovar con método: por cada concepto cansado, 1 iteración del ganador + 1 concepto nuevo. 2 piezas nuevas por semana hasta tener 3–5 conceptos distintos corriendo.',
@@ -319,6 +323,9 @@ function analyze(b,opt){
   // Semáforo de la semana = cómo vino el resultado (no los riesgos)
   out.sem = !T.res ? (R.kind==='msg'||R.sales?'bad':'idle')
           : (tr.c==null ? 'idle' : ((tr.main==='roas'?-tr.c:tr.c) > 0.35 ? 'bad' : ((tr.main==='roas'?-tr.c:tr.c) > 0.12 ? 'warn' : 'good')));
+  // si la semana vino bien pero hay deterioro de fondo (cansancio, costo subiendo vs su base), no es verde
+  const det=F.find(f=>f.key==='fatiga'||(f.key==='stale'&&f.worse));
+  if(det && (out.sem==='good'||out.sem==='idle')){ out.sem='warn'; out.semWhy=det.t; }
   return out;
 }
 
@@ -439,7 +446,7 @@ function bindFindings(root,rerender){
   root.querySelectorAll('[data-ok]').forEach(cb=>cb.addEventListener('change',()=>{lsSet(cb.dataset.ok,cb.checked?'1':''); rerender();}));
   root.querySelectorAll('[data-note]').forEach(t=>t.addEventListener('input',()=>lsSet(t.dataset.note,t.value.trim())));
 }
-function kpiBox(k,v,s){ return `<div class="lcard kpi"><div class="k">${k}</div><div class="v">${v}</div>${s?`<div class="s">${s}</div>`:''}</div>`; }
+function kpiBox(k,v,s,sem){ return `<div class="lcard kpi"><div class="k">${sem?`<span class="sem ${sem}"></span>`:''}${k}</div><div class="v">${v}</div>${s?`<div class="s">${s}</div>`:''}</div>`; }
 let DLT_LBL='la semana anterior';
 function dlt(cur,prev,betterUp){ const c=chg(cur,prev); if(c==null) return `<span class="muted">sin dato de ${DLT_LBL}</span>`;
   if(Math.abs(c)<0.05) return `<span class="muted">= que ${DLT_LBL}</span>`;
@@ -494,7 +501,7 @@ function sigHTML(x){
     const ang=tg.angulo?esc(tg.angulo)+(tg.src==='nombre'?' <span class="muted" title="Tomado del nombre del anuncio">·n</span>':''):'<span class="tag ghost">sin taggear</span>';
     return `<tr class="${s.rank===1&&s.tier===0?'top1':''} ${s.tier===2?'nosig':''}">
       <td class="rk">${s.rank}</td>
-      <td><div class="adc">${thumb}<div style="min-width:0"><div class="adn" title="${esc(s.ad)}">${esc(s.ad)}</div><div class="adm">${stB[0]}${s.stateEst?'*':''} · ${s.isVid?'video':'imagen'}</div></div></div></td>
+      <td><div class="adc">${thumb}<div style="min-width:0"><div class="adn" title="${esc(s.ad)}">${esc(s.ad)}</div><div class="adm">${tg.pieza?esc(tg.pieza)+'<br>':''}${stB[0]}${s.stateEst?'*':''} · ${s.isVid?'video':'imagen'}</div></div></div></td>
       <td>${arq}</td><td>${ang}</td>
       <td>${tg.etapa?`<span class="tag">${esc(tg.etapa)}</span>`:'<span class="tag ghost">—</span>'}</td>
       <td><span class="${STAGECLS[s.stage]}" title="${esc(STAGEHELP[s.stage]+' '+(s.stageWhy||''))}">${s.stage}</span></td>
@@ -585,7 +592,8 @@ function uniq(a){ const s=new Set(); return a.filter(v=>v&&!s.has(v)&&s.add(v));
 function reportModel(b){
   const to=throughOf(b); const x=analyze(b,{from:addDays(to,-6),to}); const D=x.D, B=x.B, R=x.R, T=x.T, TP=x.TP;
   const sem=x.sem;
-  const semWhy={good:'La semana vino bien.',warn:'La semana vino un poco más floja.',bad:'La semana vino floja.',idle:'Todavía no hay una semana anterior comparable.'}[sem];
+  let semWhy={good:'La semana vino bien.',warn:'La semana vino un poco más floja.',bad:'La semana vino floja.',idle:'Todavía no hay una semana anterior comparable.'}[sem];
+  if(sem==='warn'&&x.semWhy) semWhy='Los resultados se sostienen, pero los anuncios se están cansando: hay que renovarlos.';
   let num=[];
   num.push(['Invertimos',$m(T.spend),TP.spend?`la semana anterior: ${$m(TP.spend)}`:'']);
   num.push([R.unit[1][0].toUpperCase()+R.unit[1].slice(1),money(T.res),TP.spend?`la semana anterior: ${money(TP.res)}`:'']);
@@ -707,21 +715,14 @@ function renderAgencia(){
     <div class="grid g4" style="margin-bottom:20px">
       ${kpiBox('Clientes activos',String(act.length),`${paying.length} pagando · ${free.length} gratis · ${toConf.length} a confirmar`)}
       ${kpiBox('Entra este mes',M(X.mrr),`nos quedan ${M(X.mrrM)} después de diseñadoras`)}
-      ${kpiBox('Gratis → pago',convR!=null?`${X.converted.length} de ${X.decided.length}`:'—',`meta: ${Math.round((X.T.conversion_free_to_paid||.5)*100)}%`)}
-      ${kpiBox('Resultado acumulado',M(X.net),`facturado ${M(X.rev)} − seteos, captación y diseñadoras`)}
+      ${kpiBox('Gratis → pago',convR!=null?`${X.converted.length} de ${X.decided.length}`:'—',`${convR!=null?Math.round(convR*100)+'% · ':''}meta: ${Math.round((X.T.conversion_free_to_paid||.5)*100)}%`,convR==null?'':(convR>=(X.T.conversion_free_to_paid||.5)?'good':'bad'))}
+      ${kpiBox('Resultado acumulado',M(X.net),`facturado ${M(X.rev)} − seteos, captación y diseñadoras`,X.net>=0?'good':'bad')}
     </div>
     <h3>Qué hacer esta semana</h3>
     <div class="acts" style="margin-top:8px">${A.length?A.map(a=>`<div class="act"><div class="when">${a.cls?`<span class="sem ${a.cls}"></span>`:''}${a.when}</div><div><div class="at">${a.t}</div><div class="ad">${a.d}</div></div></div>`).join(''):'<div class="lcard">Nada pendiente esta semana.</div>'}</div>
     <h3>Clientes</h3>
     <div class="lcard scrollx" style="margin-top:8px;padding:6px 10px"><table class="cl"><tr><th>Cliente</th><th>Estado</th><th class="r">Nos pagó</th><th>Servicios</th><th>Pauta · última semana</th></tr>${rowsC}</table></div>
-    <h3>Captación</h3>
-    <p class="sub">Campaña de la convocatoria (mes gratis) desde ${X.acqFrom?fmtDM(X.acqFrom):'—'}.</p>
-    <div class="funnel">
-      <div class="st"><div class="v">${money(X.acqLeads)}</div><div class="k">formularios · ${M(X.acqSpend)} invertidos${X.acqLeads?` (${$m(X.acqSpend/X.acqLeads)} c/u)`:''}</div></div><div class="ar">→</div>
-      <div class="st"><div class="v">${X.conv.length}</div><div class="k">arrancaron el mes gratis</div></div><div class="ar">→</div>
-      <div class="st"><div class="v">${X.conv.filter(c=>c.paid).length}</div><div class="k">pagaron algo</div></div><div class="ar">→</div>
-      <div class="st"><div class="v">${X.conv.filter(c=>c.status==='pagando').length}</div><div class="k">siguen pagando</div></div>
-    </div>
+    ${captacionHTML(X)}
     <details><summary>Ver la plata y los replanteos</summary>
       <div class="lcard" style="margin-top:6px"><table class="cl">
         <tr><td>Facturado (todo)</td><td class="r">${M(X.rev)}</td></tr>
@@ -780,6 +781,40 @@ function estPicker(){
   const box=document.getElementById('pick-est'); const ids=Object.keys(ESTR).filter(k=>DATA[k]||true);
   box.innerHTML=`<select class="dd" id="sel-est">${ids.map(k=>`<option value="${k}">${esc((DATA[k]&&DATA[k].name)||k)}</option>`).join('')}</select>`;
   const sel=box.querySelector('select'); sel.addEventListener('change',()=>renderEst(sel.value)); if(ids.length) renderEst(ids[0]);
+}
+
+
+/* ---------- Captación: plan de calidad (config/captacion.yaml) ---------- */
+function captacionHTML(X){
+  const C=window.CAPTACION||{}; if(!C.semanas) return '';
+  const acq=(window.AGENCY||{}).acquisition_account;
+  const wk=C.semanas; const cur=wk.filter(w=>w.inicio<=NOW).slice(-1)[0]||wk[0];
+  // gasto de captación de la última semana con datos
+  let sp7=0,ld7=0; if(acq&&DATA[acq]){ const to=throughOf(acq); const t=agg(acq,addDays(to,-6),to,null).T; sp7=t.spend; ld7=t.leads; }
+  const tope=+((C.pauta||{}).tope_semanal)||0;
+  const over=tope&&sp7>tope*1.1;
+  const KEYS=[['prospectos','Prospectos'],['contactos','Contactos'],['reuniones','Reuniones'],['propuestas','Propuestas'],['cierres','Clientes nuevos']];
+  const cell=(w,k)=>{ const m=(w.metas||{})[k]||0, r=(w.real||{})[k]; const past=addDays(w.inicio,6)<NOW;
+    if(r==null) return `<td class="r"><span class="muted">${m||'—'}</span></td>`;
+    const ok=r>=m; return `<td class="r">${past&&!ok?'<span class="sem bad"></span>':''}<b>${r}</b><span class="muted"> / ${m}</span></td>`; };
+  const ST={foco:['Foco','y'],probar:['Probar',''],hipotesis:['Hipótesis','ghost'],salir:['Salir','bad']};
+  return `<h3>Captación · calidad, no cantidad</h3>
+    <p class="sub">${esc(C.objetivo||'')}</p>
+    <div class="darkband" style="margin-bottom:14px">
+      <div class="eyebrow">Esta semana · desde el ${fmtWd(cur.inicio)} · ${esc(cur.foco||'')}</div>
+      <ol style="margin:8px 0 0;padding-left:20px">${(cur.tareas||[]).map(t=>`<li style="margin:3px 0">${esc(t)}</li>`).join('')}</ol>
+    </div>
+    <div class="grid g2" style="margin-bottom:14px">
+      <div class="lcard"><div class="eyebrow"><span class="sem ${over?'bad':(sp7?'warn':'good')}"></span>Pauta de captación · regla de corte</div>
+        <div style="font-size:14px;margin:4px 0 6px">Última semana: <b>${$m(sp7)}</b> invertidos · ${money(ld7)} formularios${ld7?` (${$m(sp7/ld7)} c/u)`:''}. Tope de la prueba: <b>${$m(tope)}/semana</b>${over?' — <b>hoy está por encima del tope</b>':''}.</div>
+        <div style="font-size:13px;color:var(--soft)">${esc((C.pauta||{}).corte||'')}</div></div>
+      <div class="lcard"><div class="eyebrow">Cliente que sí</div><ul style="margin:6px 0 0;padding-left:18px;font-size:13.5px">${(C.fit||[]).map(f=>`<li>${esc(f)}</li>`).join('')}</ul></div>
+    </div>
+    <div class="lcard scrollx" style="padding:6px 10px;margin-bottom:14px"><table class="cl"><tr><th>Rubro</th><th></th><th>Por qué (evidencia)</th><th>Qué les ofrecemos</th></tr>
+      ${(C.rubros||[]).map(r=>{const t=ST[r.estado]||['','']; return `<tr><td><b>${esc(r.nombre)}</b></td><td><span class="tag ${t[1]}">${t[0]}</span></td><td style="font-size:13px">${esc(r.evidencia||'')}</td><td style="font-size:13px">${esc(r.oferta||'')}</td></tr>`;}).join('')}</table></div>
+    <div class="lcard scrollx" style="padding:6px 10px"><div class="eyebrow" style="margin:8px 0 0 4px">Metas por semana · real / meta (se carga cada lunes en config/captacion.yaml)</div>
+      <table class="cl"><tr><th>Semana</th>${KEYS.map(k=>`<th class="r">${k[1]}</th>`).join('')}</tr>
+      ${wk.map(w=>`<tr${w===cur?' style="background:#FBFAE6"':''}><td><b>${fmtDM(w.inicio)}</b> <span class="muted">· ${esc(w.foco||'')}</span></td>${KEYS.map(k=>cell(w,k[0])).join('')}</tr>`).join('')}</table></div>`;
 }
 
 /* =====================================================================

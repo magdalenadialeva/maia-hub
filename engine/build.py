@@ -226,7 +226,8 @@ def build_data(exports_dir: Path, site_dir: Path, config_dir: Path, verbose=True
         "window.DATA_PENDING = " + json.dumps(PENDING, ensure_ascii=False) + ";\n"
         "window.AGENCY = " + json.dumps(_load_agency(config_dir), ensure_ascii=False, default=str) + ";\n"
         "window.BRANDS = " + json.dumps(_load_brands(config_dir), ensure_ascii=False, default=str) + ";\n"
-        "window.ESTRATEGIAS = " + json.dumps(_load_brands(config_dir, "estrategias.yaml"), ensure_ascii=False, default=str) + ";\n",
+        "window.ESTRATEGIAS = " + json.dumps(_load_brands(config_dir, "estrategias.yaml"), ensure_ascii=False, default=str) + ";\n"
+        "window.CAPTACION = " + json.dumps(_load_brands(config_dir, "captacion.yaml"), ensure_ascii=False, default=str) + ";\n",
         encoding="utf-8")
     (site_dir / "data.json").write_text(
         json.dumps({"generated_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),

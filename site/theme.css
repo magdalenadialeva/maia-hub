@@ -169,3 +169,4 @@ h1 .hl, .hl{background:var(--yellow);color:var(--ink0);padding:0 .18em;box-decor
 .card{background:#fff;border-color:var(--lcardline);box-shadow:none}
 
 .tile .v{font-size:clamp(20px,2.1vw,27px);overflow-wrap:anywhere}
+.v3 .ctab td:nth-child(2){min-width:240px}

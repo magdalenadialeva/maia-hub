@@ -1,0 +1,80 @@
+# MAIA · Plan de captación (capítulo Agencia del hub).
+# Desde oct-2026 el objetivo NO es cantidad de clientes: es CALIDAD (marcas que puedan pagar
+# pauta + fee y se queden). Se edita a mano: cada lunes cargar lo `real` de la semana anterior.
+
+objetivo: "Salir de indumentaria y sumar clientes que paguen desde el día 1: inmobiliarias, mayoristas y rubros con ticket alto."
+
+# Cliente que SÍ (filtro de fit, se pregunta en el formulario y en la primera llamada)
+fit:
+  - "Rubro con ticket alto o venta recurrente (ver rubros)."
+  - "Presupuesto de pauta ≥ USD 1.000/mes además de nuestro fee (ideal ≥ USD 1.500)."
+  - "Ya vende (aunque sea por WhatsApp u orgánico) y sabe cuánto."
+  - "Un decisor (la dueña/el dueño), no un empleado."
+  - "Acepta precio y fecha de inicio pago antes de arrancar: sin mes gratis."
+
+rubros:
+  - nombre: "Inmobiliarias y desarrolladoras"
+    evidencia: "Ticket promedio de venta US$167.000 (RE/MAX Premium, 2025) y el sector proyecta +15% de operaciones en 2026 con la vuelta del crédito hipotecario. Viven de leads: encaja con nuestro caso de leads (Maia)."
+    oferta: "Leads calificados por WhatsApp/formulario para lanzamientos y propiedades premium."
+    estado: foco
+  - nombre: "Mayoristas y distribuidores (B2B)"
+    evidencia: "Caso propio: Saritina vendió $2,08M en septiembre y $1,97M del 1 al 15/10 por WhatsApp mayorista, con ~$7k/día de pauta. Pedido promedio > $250k."
+    oferta: "Campaña a WhatsApp para comercios + catálogo mayorista."
+    estado: foco
+  - nombre: "Alimentos y bebidas"
+    evidencia: "Una de las ramas industriales que más crece en 2026 (+7,4% en enero)."
+    oferta: "Venta directa y canal mayorista/comercios."
+    estado: probar
+  - nombre: "Muebles, colchones y equipamiento del hogar"
+    evidencia: "Ticket alto; la rama creció en el arranque de 2026 (+3,3%) y acompaña la mudanza/compra de vivienda."
+    oferta: "Leads o venta con cuotas; se cruza con inmobiliarias."
+    estado: probar
+  - nombre: "Salud y estética privada (clínicas, odontología, dermatología)"
+    evidencia: "Hipótesis sin dato propio todavía: servicio de ticket alto que se vende por WhatsApp/turnos."
+    oferta: "Turnos/consultas por WhatsApp."
+    estado: hipotesis
+  - nombre: "Indumentaria"
+    evidencia: "Textiles -28,7% en la industria; nuestros clientes de moda se fueron al terminar el mes gratis."
+    oferta: "No buscar más. Sólo si cumplen el filtro de fit sin excepción."
+    estado: salir
+
+# Regla de corte de la pauta de captación (para no licuarse)
+pauta:
+  tope_semanal: 40000          # ARS por semana para la campaña nueva (formulario calificado)
+  semanas_prueba: 4
+  corte: "Pausar la pauta de captación si en 2 semanas el costo por lead calificado supera $20.000 o hay menos de 2 reuniones con leads calificados; cortar del todo a las 4 semanas si no hay ninguna propuesta aceptada. La convocatoria de mes gratis se apaga ya."
+  costo_max_lead_calificado: 20000
+
+# Metas por semana (lunes de inicio). `real` se carga cada lunes.
+semanas:
+  - inicio: "2026-10-20"
+    foco: "Ordenar la oferta y dejar de licuarse"
+    metas: {prospectos: 40, contactos: 15, reuniones: 2, propuestas: 0, cierres: 0}
+    tareas:
+      - "Apagar la convocatoria de mes gratis."
+      - "Caso Saritina en 1 página: ventas mayoristas vs inversión."
+      - "Lista de 40 prospectos: 20 inmobiliarias/desarrolladoras + 20 mayoristas (IG, Google Maps, cámaras del rubro)."
+      - "Lanzar formulario calificado (rubro, ventas/mes, presupuesto de pauta, decisor) con tope de $40k/semana."
+    real: {}
+  - inicio: "2026-10-27"
+    foco: "Primeras reuniones"
+    metas: {prospectos: 20, contactos: 20, reuniones: 4, propuestas: 1, cierres: 0}
+    tareas:
+      - "Primer contacto: escuchar, no marcar errores de su cuenta."
+      - "Diagnóstico express (no mes gratis) para los que cumplen el filtro."
+      - "Checkpoint de la pauta de captación: costo por lead calificado."
+    real: {}
+  - inicio: "2026-11-03"
+    foco: "Propuestas"
+    metas: {prospectos: 10, contactos: 15, reuniones: 4, propuestas: 3, cierres: 0}
+    tareas:
+      - "3 propuestas con precio y fecha de inicio pago."
+      - "Decidir si la pauta de captación sigue (regla de corte)."
+    real: {}
+  - inicio: "2026-11-10"
+    foco: "Cerrar el primero de calidad"
+    metas: {prospectos: 10, contactos: 10, reuniones: 3, propuestas: 2, cierres: 1}
+    tareas:
+      - "1 cliente nuevo pagando desde el día 1 (inmobiliaria o mayorista)."
+      - "Revisión del plan: rubros que respondieron, cuál escalar."
+    real: {}
