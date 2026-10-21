@@ -1,5 +1,35 @@
 [
  {
+  "date": "2026-10-20",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Ad_6 - Copia (Revisión pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-20",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Ad_6 - Copia (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-20",
+  "cat": "creativo",
+  "text": "Anuncio creado · Ad_6 - Copia",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-20",
+  "cat": "creativo",
+  "text": "Se reactivó «Ad_6 - Copia»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-10-17",
+  "cat": "creativo",
+  "text": "Se pausó «Ad_6 - Copia»",
+  "src": "auto"
+ },
+ {
   "date": "2026-10-16",
   "cat": "estado",
   "text": "Estado del anuncio actualizado · Ad_6 - Copia 2 (Revisión pendiente → Activo)",
@@ -267,12 +297,6 @@
   "date": "2026-10-16",
   "cat": "creativo",
   "text": "Se encendió/lanzó «Ad_6 - Copia»",
-  "src": "auto"
- },
- {
-  "date": "2026-10-16",
-  "cat": "creativo",
-  "text": "Se apagó «Ad_6 - Copia»",
   "src": "auto"
  },
  {
@@ -693,30 +717,6 @@
   "date": "2026-09-12",
   "cat": "creativo",
   "text": "Se apagó «Ad_Converse»",
-  "src": "auto"
- },
- {
-  "date": "2026-09-12",
-  "cat": "creativo",
-  "text": "Se apagó «Tengo un chisme»",
-  "src": "auto"
- },
- {
-  "date": "2026-09-11",
-  "cat": "estado",
-  "text": "Estado de la cuenta actualizado · Pulpa Cuenta publicitaria (En período de gracia → Activa)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-11",
-  "cat": "estado",
-  "text": "Estado de la cuenta actualizado · Pulpa Cuenta publicitaria (Activa → En período de gracia)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-11",
-  "cat": "creativo",
-  "text": "Se reactivó «Ad_Vans»",
   "src": "auto"
  }
 ]

@@ -1,5 +1,35 @@
 [
  {
+  "date": "2026-10-20",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · IG Img 20/10 - Convocatoria Inmobiliarias (Buscamos inmobiliarias que quieran crecer) (Revisión pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-20",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · IG Img 20/10 - Convocatoria Inmobiliarias (Buscamos inmobiliarias que quieran crecer) (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-20",
+  "cat": "creativo",
+  "text": "Anuncio creado · IG Img 20/10 - Convocatoria Inmobiliarias (Buscamos inmobiliarias que quieran crecer)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-20",
+  "cat": "creativo",
+  "text": "Se encendió/lanzó «IG Img 20/10 - Convocatoria Inmobiliarias (Buscamos inmobiliarias que quieran crecer)»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-10-18",
+  "cat": "creativo",
+  "text": "Se apagó «IG Img 17/10 - Convocatoria Mayoristas (+USD 5K)»",
+  "src": "auto"
+ },
+ {
   "date": "2026-10-16",
   "cat": "estado",
   "text": "Estado de la campaña actualizado · Nueva campaña de Clientes potenciales V.2 (Procesamiento pendiente → Activa)",
@@ -688,35 +718,5 @@
   "cat": "creativo",
   "text": "Se pausó «IG Post 25/9 - Convocatoria Angulo Pauta sin Datos»",
   "src": "auto"
- },
- {
-  "date": "2026-10-05",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · IG Post 25/9 - Convocatoria Angulo Contenido sin Estrategia (Procesamiento pendiente → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-05",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · IG Post 4/9 C - Convocatoria (Dc1FCLwszOO) (Procesamiento pendiente → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-05",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · IG Post 25/9 - Convocatoria Angulo Contenido sin Estrategia (Inactivo → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-05",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · IG Post 25/9 - Convocatoria Angulo Contenido sin Estrategia (Inactivo → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-05",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · IG Post 4/9 C - Convocatoria (Dc1FCLwszOO) (Activo → Inactivo)",
-  "src": "meta"
  }
 ]

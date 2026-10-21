@@ -138,12 +138,6 @@
   "src": "meta"
  },
  {
-  "date": "2026-10-08",
-  "cat": "creativo",
-  "text": "Se encendió/lanzó «Carrusel productos»",
-  "src": "auto"
- },
- {
   "date": "2026-10-07",
   "cat": "segmentacion",
   "text": "Público personalizado creado · asa_auto_custom_audience",
@@ -222,18 +216,6 @@
   "src": "meta"
  },
  {
-  "date": "2026-10-07",
-  "cat": "creativo",
-  "text": "Se reactivó «Anuncio dios de la semana»",
-  "src": "auto"
- },
- {
-  "date": "2026-10-07",
-  "cat": "creativo",
-  "text": "Se encendió/lanzó «Anuncio Vaso de Leche Cacao Video»",
-  "src": "auto"
- },
- {
   "date": "2026-10-01",
   "cat": "segmentacion",
   "text": "Público personalizado creado · asa_auto_custom_audience",
@@ -250,12 +232,6 @@
   "cat": "estado",
   "text": "Estado de la campaña actualizado · BePowder_Sep-2026_Conversiones (Activa → Inactiva)",
   "src": "meta"
- },
- {
-  "date": "2026-09-26",
-  "cat": "creativo",
-  "text": "Se pausó «Anuncio dios de la semana»",
-  "src": "auto"
  },
  {
   "date": "2026-09-25",
@@ -717,6 +693,30 @@
   "date": "2026-08-20",
   "cat": "estado",
   "text": "Estado del anuncio actualizado · 06-TOFU-AO2-Carru (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-08-20",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado cuando se completa su revisión · 03-TOFU-AO1-Carru (Inactivo → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-08-20",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · 03-TOFU-AO1-Carru (Revisión pendiente → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-08-20",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado cuando se completa su revisión · 06-TOFU-AO2-Carru (Inactivo → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-08-20",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · 06-TOFU-AO2-Carru (Revisión pendiente → Procesamiento pendiente)",
   "src": "meta"
  }
 ]

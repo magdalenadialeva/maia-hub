@@ -102,12 +102,6 @@
   "src": "meta"
  },
  {
-  "date": "2026-10-14",
-  "cat": "creativo",
-  "text": "Se apagó «Nuevo anuncio de Tráfico»",
-  "src": "auto"
- },
- {
   "date": "2026-10-13",
   "cat": "estado",
   "text": "Estado del anuncio actualizado · Modelo nuevo (Revisión pendiente → Activo)",
@@ -126,40 +120,10 @@
   "src": "meta"
  },
  {
-  "date": "2026-10-12",
-  "cat": "creativo",
-  "text": "Se encendió/lanzó «Modelo nuevo»",
-  "src": "auto"
- },
- {
   "date": "2026-10-07",
   "cat": "segmentacion",
   "text": "Público personalizado creado · asa_auto_custom_audience",
   "src": "meta"
- },
- {
-  "date": "2026-10-07",
-  "cat": "creativo",
-  "text": "Se apagó «AYMARA - LINK AD- V7»",
-  "src": "auto"
- },
- {
-  "date": "2026-10-06",
-  "cat": "creativo",
-  "text": "Se apagó «AYMARA - LINK AD- V7 - Copia»",
-  "src": "auto"
- },
- {
-  "date": "2026-10-03",
-  "cat": "creativo",
-  "text": "Se encendió/lanzó «AYMARA - LINK AD- V7»",
-  "src": "auto"
- },
- {
-  "date": "2026-10-03",
-  "cat": "creativo",
-  "text": "Se encendió/lanzó «AYMARA - LINK AD- V7 - Copia»",
-  "src": "auto"
  },
  {
   "date": "2026-09-30",
@@ -648,34 +612,10 @@
   "src": "meta"
  },
  {
-  "date": "2026-09-15",
-  "cat": "creativo",
-  "text": "Se encendió/lanzó «Nuevo anuncio de Tráfico»",
-  "src": "auto"
- },
- {
-  "date": "2026-09-05",
-  "cat": "estado",
-  "text": "Cuenta sin gasto 2 días (posible pausa general)",
-  "src": "auto"
- },
- {
   "date": "2026-09-04",
   "cat": "estado",
   "text": "Estado de la campaña actualizado · PieraCeresa_2026_Conversiones (Activa → Inactiva)",
   "src": "meta"
- },
- {
-  "date": "2026-09-04",
-  "cat": "creativo",
-  "text": "Se apagó «Carrusel Catalogo»",
-  "src": "auto"
- },
- {
-  "date": "2026-09-04",
-  "cat": "creativo",
-  "text": "Se apagó «Carrusel Catalogo - Video Nuevo 1»",
-  "src": "auto"
  },
  {
   "date": "2026-09-03",
@@ -717,6 +657,66 @@
   "date": "2026-09-02",
   "cat": "estado",
   "text": "Estado del anuncio actualizado cuando se completa su revisión · Carrusel Catalogo 2 - Video - AGO - Copia 4 (Activo → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-02",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Carrusel Catalogo 2 - Video - AGO - Copia 4 (Activo → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-02",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado cuando se completa su revisión · Carrusel Catalogo 2 - Video - AGO - Copia 2 (Activo → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-02",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Carrusel Catalogo 2 - Video - AGO - Copia 2 (Activo → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-02",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Carrusel Catalogo 2 - Video - AGO - Copia 3 (Procesamiento pendiente → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-02",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Carrusel Catalogo 1 - Video - AGO - Copia 2 (Procesamiento pendiente → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-02",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Carrusel Catalogo 2 - Video (Procesamiento pendiente → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-02",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado cuando se completa su revisión · Carrusel Catalogo 2 - Video - AGO - Copia 3 (Activo → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-02",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Carrusel Catalogo 2 - Video - AGO - Copia 3 (Activo → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-02",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado cuando se completa su revisión · Carrusel Catalogo 1 - Video - AGO - Copia 2 (Activo → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-02",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Carrusel Catalogo 1 - Video - AGO - Copia 2 (Activo → Procesamiento pendiente)",
   "src": "meta"
  }
 ]

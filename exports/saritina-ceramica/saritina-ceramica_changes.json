@@ -1,20 +1,98 @@
 [
  {
+  "date": "2026-10-20",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Ad_Video_1 (Revisión pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-20",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Ad_Video_3 (Revisión pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-20",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Ad_Video_4 (Revisión pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-20",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Ad_Video_2 (Revisión pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-20",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Ad_Video_1 (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-20",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Ad_Video_2 (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-20",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Ad_Video_4 (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-20",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Ad_Video_3 (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-20",
+  "cat": "estado",
+  "text": "Estado del conjunto de anuncios actualizado · Saritina_Trafico_Mensajes_Wsp_Sep (Procesamiento pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-20",
+  "cat": "otros",
+  "text": "Segmentación del conjunto de anuncios actualizada · Saritina_Trafico_Mensajes_Wsp_Sep",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-20",
+  "cat": "estado",
+  "text": "Estado del conjunto de anuncios actualizado · Saritina_Trafico_Mensajes_Wsp_Sep (Activo → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-20",
+  "cat": "presupuesto",
+  "text": "Presupuesto del conjunto de anuncios actualizado · Saritina_Trafico_Mensajes_Wsp_Sep (7.000 → 11.000 ARS/día)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-20",
+  "cat": "creativo",
+  "text": "Se reactivó «Ad_Video_1»",
+  "src": "auto"
+ },
+ {
   "date": "2026-10-19",
   "cat": "creativo",
   "text": "Se reactivó «Ad_Video_3»",
   "src": "auto"
  },
  {
-  "date": "2026-10-17",
+  "date": "2026-10-18",
   "cat": "creativo",
-  "text": "Se reactivó «Ad_Video_1»",
+  "text": "Se pausó «Ad_Video_1»",
   "src": "auto"
  },
  {
   "date": "2026-10-17",
   "cat": "creativo",
-  "text": "Se apagó «Ad_Video_1»",
+  "text": "Se reactivó «Ad_Video_1»",
   "src": "auto"
  },
  {
@@ -278,13 +356,13 @@
  {
   "date": "2026-09-01",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · Ad_Video_4 (Activo → Procesamiento pendiente)",
+  "text": "Estado del anuncio actualizado · Ad_Video_3 (Activo → Procesamiento pendiente)",
   "src": "meta"
  },
  {
   "date": "2026-09-01",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · Ad_Video_3 (Activo → Procesamiento pendiente)",
+  "text": "Estado del anuncio actualizado · Ad_Video_4 (Activo → Procesamiento pendiente)",
   "src": "meta"
  },
  {

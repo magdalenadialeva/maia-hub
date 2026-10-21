@@ -3,7 +3,7 @@
   "name": "BePowder_Sep-2026_Conversiones",
   "objective": "OUTCOME_SALES",
   "status": "PAUSED",
-  "spend": 108674.53,
+  "spend": 20.49,
   "first": "2026-09-25",
   "last": "2026-10-09",
   "purch": 0.0,
@@ -15,13 +15,13 @@
    "Carrusel productos",
    "Anuncio Dia de la madre"
   ],
-  "impr": 8476.0,
+  "impr": 2.0,
   "lc": 151.0,
   "lpv": 92.0,
   "atc": 8.0,
   "ic": 2.0,
   "pval": 0.0,
   "leads": 0.0,
-  "window_from": "2026-09-14"
+  "window_from": "2026-09-15"
  }
 ]

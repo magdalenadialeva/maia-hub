@@ -120,36 +120,6 @@
   "src": "meta"
  },
  {
-  "date": "2026-10-16",
-  "cat": "creativo",
-  "text": "Se apagó «Conjunto Toulouse 29/09»",
-  "src": "auto"
- },
- {
-  "date": "2026-10-16",
-  "cat": "creativo",
-  "text": "Se apagó «10% Off Toscana»",
-  "src": "auto"
- },
- {
-  "date": "2026-10-16",
-  "cat": "creativo",
-  "text": "Se apagó «10% Off Toulouse»",
-  "src": "auto"
- },
- {
-  "date": "2026-10-16",
-  "cat": "creativo",
-  "text": "Se encendió/lanzó «Vestido Orleans»",
-  "src": "auto"
- },
- {
-  "date": "2026-10-15",
-  "cat": "creativo",
-  "text": "Se apagó «10% Off Lugano»",
-  "src": "auto"
- },
- {
   "date": "2026-10-14",
   "cat": "estado",
   "text": "Estado del anuncio actualizado · PRE-SALE · 20.08 (Procesamiento pendiente → Activo)",
@@ -368,13 +338,13 @@
  {
   "date": "2026-10-13",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · Conjunto Toulouse 29/09 (Procesamiento pendiente → Revisión pendiente)",
+  "text": "Estado del anuncio actualizado · ¿Conjunto o vestido? (Procesamiento pendiente → Revisión pendiente)",
   "src": "meta"
  },
  {
   "date": "2026-10-13",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · ¿Conjunto o vestido? (Procesamiento pendiente → Revisión pendiente)",
+  "text": "Estado del anuncio actualizado · Conjunto Toulouse 29/09 (Procesamiento pendiente → Revisión pendiente)",
   "src": "meta"
  },
  {
@@ -438,22 +408,10 @@
   "src": "meta"
  },
  {
-  "date": "2026-10-12",
-  "cat": "creativo",
-  "text": "Se reactivó «Conjunto Toulouse 29/09»",
-  "src": "auto"
- },
- {
   "date": "2026-10-11",
   "cat": "presupuesto",
   "text": "Presupuesto del conjunto de anuncios actualizado · Basyco Jerez_Conversiones_Purchase_SEP2026_Interese+Adv+ (20.000 → 25.000 ARS/día)",
   "src": "meta"
- },
- {
-  "date": "2026-10-11",
-  "cat": "creativo",
-  "text": "Se reactivó «¿Conjunto o vestido?»",
-  "src": "auto"
  },
  {
   "date": "2026-10-09",
@@ -508,36 +466,6 @@
   "cat": "creativo",
   "text": "Anuncio creado · 10% Off Lugano",
   "src": "meta"
- },
- {
-  "date": "2026-10-09",
-  "cat": "creativo",
-  "text": "Se pausó «Conjunto Toulouse 29/09»",
-  "src": "auto"
- },
- {
-  "date": "2026-10-09",
-  "cat": "creativo",
-  "text": "Se pausó «¿Conjunto o vestido?»",
-  "src": "auto"
- },
- {
-  "date": "2026-10-09",
-  "cat": "creativo",
-  "text": "Se encendió/lanzó «10% Off Lugano»",
-  "src": "auto"
- },
- {
-  "date": "2026-10-09",
-  "cat": "creativo",
-  "text": "Se encendió/lanzó «10% Off Toscana»",
-  "src": "auto"
- },
- {
-  "date": "2026-10-09",
-  "cat": "creativo",
-  "text": "Se encendió/lanzó «10% Off Toulouse»",
-  "src": "auto"
  },
  {
   "date": "2026-10-07",
@@ -717,6 +645,78 @@
   "date": "2026-09-30",
   "cat": "segmentacion",
   "text": "Público personalizado creado · asa_auto_custom_audience",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-28",
+  "cat": "segmentacion",
+  "text": "Público personalizado creado · asa_auto_custom_audience",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-28",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Conjunto Lugano - Copy (Procesamiento pendiente → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-28",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Conjunto Lugano (Procesamiento pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-28",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado cuando se completa su revisión · Conjunto Lugano - Copy (Activo → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-28",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Conjunto Lugano - Copy (Activo → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-28",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Conjunto Lugano (Actualización necesaria → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-24",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Conjunto Lugano - Copy (Revisión pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-24",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Conjunto Lugano - Copy (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-24",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado cuando se completa su revisión · Conjunto Lugano - Copy (Inactivo → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-24",
+  "cat": "creativo",
+  "text": "Anuncio creado · Conjunto Lugano - Copy",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-24",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Conjunto Lugano (Activo → Actualización necesaria)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-11",
+  "cat": "otros",
+  "text": "Se actualizaron las reglas de valor del conjunto de anuncios · Traffic Lugano",
   "src": "meta"
  }
 ]
