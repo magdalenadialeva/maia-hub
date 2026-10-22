@@ -1,5 +1,11 @@
 [
  {
+  "date": "2026-10-21",
+  "cat": "creativo",
+  "text": "Se reactivó «IG Img 16/10 A - Convocatoria Marcas por Lanzar»",
+  "src": "auto"
+ },
+ {
   "date": "2026-10-20",
   "cat": "estado",
   "text": "Estado del anuncio actualizado · IG Img 20/10 - Convocatoria Inmobiliarias (Buscamos inmobiliarias que quieran crecer) (Revisión pendiente → Activo)",
@@ -27,6 +33,12 @@
   "date": "2026-10-18",
   "cat": "creativo",
   "text": "Se apagó «IG Img 17/10 - Convocatoria Mayoristas (+USD 5K)»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-10-17",
+  "cat": "creativo",
+  "text": "Se pausó «IG Img 16/10 A - Convocatoria Marcas por Lanzar»",
   "src": "auto"
  },
  {
@@ -147,12 +159,6 @@
   "date": "2026-10-16",
   "cat": "creativo",
   "text": "Se encendió/lanzó «IG Img 16/10 A - Convocatoria Marcas por Lanzar»",
-  "src": "auto"
- },
- {
-  "date": "2026-10-16",
-  "cat": "creativo",
-  "text": "Se apagó «IG Img 16/10 A - Convocatoria Marcas por Lanzar»",
   "src": "auto"
  },
  {
@@ -711,12 +717,6 @@
   "date": "2026-10-07",
   "cat": "creativo",
   "text": "Se encendió/lanzó «IG Reel 7/10 - Convocatoria Inmobiliarias - Angulo Sin Pauta»",
-  "src": "auto"
- },
- {
-  "date": "2026-10-06",
-  "cat": "creativo",
-  "text": "Se pausó «IG Post 25/9 - Convocatoria Angulo Pauta sin Datos»",
   "src": "auto"
  }
 ]

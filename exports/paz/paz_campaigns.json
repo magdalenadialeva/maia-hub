@@ -3,9 +3,9 @@
   "name": "Nueva campaña de Clientes potenciales V.2",
   "objective": "OUTCOME_LEADS",
   "status": "ACTIVE",
-  "spend": 773420.99,
+  "spend": 783875.53,
   "first": "2026-07-31",
-  "last": "2026-10-20",
+  "last": "2026-10-21",
   "purch": 0.0,
   "msg": 83.0,
   "ads": [
@@ -40,13 +40,13 @@
    "IG Img 17/10 - Convocatoria Mayoristas (+USD 5K)",
    "IG Img 20/10 - Convocatoria Inmobiliarias (Buscamos inmobiliarias que quieran crecer)"
   ],
-  "impr": 163217.0,
-  "lc": 2131.0,
+  "impr": 166513.0,
+  "lc": 2164.0,
   "lpv": 0.0,
   "atc": 0.0,
   "ic": 0.0,
   "pval": 0.0,
-  "leads": 598.0,
+  "leads": 604.0,
   "window_from": "2026-06-30"
  },
  {

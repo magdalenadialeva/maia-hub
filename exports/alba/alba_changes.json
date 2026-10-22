@@ -1,5 +1,29 @@
 [
  {
+  "date": "2026-10-21",
+  "cat": "segmentacion",
+  "text": "Público personalizado actualizado · asa_auto_custom_audience ({\"inclusions\":{\"operator\":\"or\",\"rules\":[{\"event_sources\":[{\"type\":\"page\",\"id\":101972395026488},{\"type\":\"page\",\"id\":102596622032225},{\"type\":\"page\",\"id\":113495175177701},{\"type\":\"page\",\"id\":145312311988221},{\"type\":\"page\",\"id\":2110596422542638}],\"retention_seconds\":15552000,\"filter\":{\"operator\":\"or\",\"filters\":[{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_checkout_page_load_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_checkout_confirmation_page_load_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_checkout_pixel_event\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_purchase_pixel_event\"}]},\"aggregation\":{\"type\":\"count\",\"method\":\"absolute\",\"operator\":\">\",\"value\":0}}]}} → {\"inclusions\":{\"operator\":\"or\",\"rules\":[{\"event_sources\":[{\"type\":\"page\",\"id\":101972395026488},{\"type\":\"page\",\"id\":102596622032225},{\"type\":\"page\",\"id\":113495175177701},{\"type\":\"page\",\"id\":145312311988221},{\"type\":\"page\",\"id\":2110596422542638}],\"retention_seconds\":15552000,\"filter\":{\"operator\":\"or\",\"filters\":[{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_checkout_page_load_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_checkout_confirmation_page_load_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_checkout_pixel_event\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_purchase_pixel_event\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_add_to_cart_pixel_event\"}]},\"aggregation\":{\"type\":\"count\",\"method\":\"absolute\",\"operator\":\">\",\"value\":0}}]}})",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-21",
+  "cat": "segmentacion",
+  "text": "Público personalizado actualizado · asa_auto_custom_audience ({\"inclusions\":{\"operator\":\"or\",\"rules\":[{\"event_sources\":[{\"type\":\"page\",\"id\":101972395026488},{\"type\":\"page\",\"id\":102596622032225},{\"type\":\"page\",\"id\":113495175177701},{\"type\":\"page\",\"id\":145312311988221},{\"type\":\"page\",\"id\":2110596422542638}],\"retention_seconds\":15552000,\"filter\":{\"operator\":\"or\",\"filters\":[{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_footer_autofill_code_apply_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_non_shopify_autofill_code_fill_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_non_shopify_autofill_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_non_shopify_autofill_success_on_expected_page\"}]},\"aggregation\":{\"type\":\"count\",\"method\":\"absolute\",\"operator\":\">\",\"value\":0}}]}} → {\"inclusions\":{\"operator\":\"or\",\"rules\":[{\"event_sources\":[{\"type\":\"page\",\"id\":101972395026488},{\"type\":\"page\",\"id\":102596622032225},{\"type\":\"page\",\"id\":113495175177701},{\"type\":\"page\",\"id\":145312311988221},{\"type\":\"page\",\"id\":2110596422542638}],\"retention_seconds\":15552000,\"filter\":{\"operator\":\"or\",\"filters\":[{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_footer_autofill_code_apply_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_non_shopify_autofill_code_fill_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_non_shopify_autofill_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_non_shopify_autofill_success_on_expected_page\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_footer_claim_offer_apply_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_footer_html_diff_signal_coupon_apply_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_footer_copy_paste_signal_coupon_apply_success\"}]},\"aggregation\":{\"type\":\"count\",\"method\":\"absolute\",\"operator\":\">\",\"value\":0}}]}})",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-21",
+  "cat": "segmentacion",
+  "text": "Público personalizado actualizado · asa_auto_custom_audience ({\"inclusions\":{\"operator\":\"or\",\"rules\":[{\"event_sources\":[{\"type\":\"page\",\"id\":101972395026488},{\"type\":\"page\",\"id\":102596622032225},{\"type\":\"page\",\"id\":113495175177701},{\"type\":\"page\",\"id\":145312311988221},{\"type\":\"page\",\"id\":2110596422542638}],\"retention_seconds\":15552000,\"filter\":{\"operator\":\"or\",\"filters\":[{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_footer_copy_code_click_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_footer_autofill_code_attempt_info\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_email_submission_success\"}]},\"aggregation\":{\"type\":\"count\",\"method\":\"absolute\",\"operator\":\">\",\"value\":0}}]}} → {\"inclusions\":{\"operator\":\"or\",\"rules\":[{\"event_sources\":[{\"type\":\"page\",\"id\":101972395026488},{\"type\":\"page\",\"id\":102596622032225},{\"type\":\"page\",\"id\":113495175177701},{\"type\":\"page\",\"id\":145312311988221},{\"type\":\"page\",\"id\":2110596422542638}],\"retention_seconds\":15552000,\"filter\":{\"operator\":\"or\",\"filters\":[{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_bottom_sheet_copy_click_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_footer_copy_code_click_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_footer_autofill_code_attempt_info\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_email_submission_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_footer_see_offer_button_click_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_footer_click_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_bottom_sheet_see_details_link_click_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_email_footer_sign_up_button_click_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_tc_footer_bottom_sheet_click_success\"}]},\"aggregation\":{\"type\":\"count\",\"method\":\"absolute\",\"operator\":\">\",\"value\":0}}]}})",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-21",
+  "cat": "estado",
+  "text": "Estado de la cuenta actualizado · 498930606964785 (Activa → En período de gracia)",
+  "src": "meta"
+ },
+ {
   "date": "2026-10-19",
   "cat": "estado",
   "text": "Estado del anuncio actualizado · video pedido sofi (Revisión pendiente → Activo)",
@@ -172,6 +196,18 @@
   "cat": "estado",
   "text": "Estado del anuncio actualizado · pedido petra (Activo → Procesamiento pendiente)",
   "src": "meta"
+ },
+ {
+  "date": "2026-10-19",
+  "cat": "creativo",
+  "text": "Se apagó «vestido + sweater»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-10-19",
+  "cat": "creativo",
+  "text": "Se apagó «pedido petra»",
+  "src": "auto"
  },
  {
   "date": "2026-10-17",
@@ -530,13 +566,13 @@
  {
   "date": "2026-10-15",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · PUBLICACION VESTIDO - (Activo → Procesamiento pendiente)",
+  "text": "Estado del anuncio actualizado · regala bordado (Activo → Procesamiento pendiente)",
   "src": "meta"
  },
  {
   "date": "2026-10-15",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · regala bordado (Activo → Procesamiento pendiente)",
+  "text": "Estado del anuncio actualizado · PUBLICACION VESTIDO - (Activo → Procesamiento pendiente)",
   "src": "meta"
  },
  {
@@ -681,42 +717,6 @@
   "date": "2026-10-14",
   "cat": "creativo",
   "text": "Anuncio creado · pedido petra",
-  "src": "meta"
- },
- {
-  "date": "2026-10-14",
-  "cat": "presupuesto",
-  "text": "Se habilitó la programación del presupuesto del conjunto de anuncios · publico retargeting",
-  "src": "meta"
- },
- {
-  "date": "2026-10-14",
-  "cat": "objetivo",
-  "text": "Ad set performance goal updated · publico retargeting",
-  "src": "meta"
- },
- {
-  "date": "2026-10-14",
-  "cat": "presupuesto",
-  "text": "Estrategia de puja del conjunto de anuncios actualizada · publico retargeting",
-  "src": "meta"
- },
- {
-  "date": "2026-10-14",
-  "cat": "creativo",
-  "text": "Conjunto de anuncios creado · publico retargeting",
-  "src": "meta"
- },
- {
-  "date": "2026-10-14",
-  "cat": "estado",
-  "text": "Estado de la campaña actualizado · ALBA-NUEVOS CLIENTES (Procesamiento pendiente → Activa)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-14",
-  "cat": "presupuesto",
-  "text": "Presupuesto de la campaña actualizado · ALBA-NUEVOS CLIENTES (10.000 → 15.000 ARS/día)",
   "src": "meta"
  }
 ]
