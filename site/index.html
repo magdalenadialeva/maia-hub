@@ -601,7 +601,13 @@
 
 <script>/* Carga data.js con cache-bust por hora: garantiza que veas la data fresca de
    cada mañana y no una versión cacheada por el navegador/CDN. */
-document.write('<scr'+'ipt src="data.js?h='+Math.floor(Date.now()/3600000)+'"><\/scr'+'ipt>');</script>
+document.write('<scr'+'ipt src="data.js?h='+Math.floor(Date.now()/3600000)+'"><\/scr'+'ipt>');
+/* Auto-refresco: si la pestaña quedó abierta de otro día, al volver a ella (o cada hora)
+   se recarga sola para traer la data nueva de la mañana. */
+(function(){var d0=new Date().toDateString(),t0=Date.now();
+ function chk(){if(new Date().toDateString()!==d0||Date.now()-t0>6*3600000)location.reload();}
+ document.addEventListener('visibilitychange',function(){if(!document.hidden)chk();});
+ window.addEventListener('focus',chk); setInterval(chk,3600000);})();</script>
 <script>
 const DATA = (window.DATA_EXT || {});
 
@@ -2446,6 +2452,6 @@ const BUILD="v27 · 20 oct 2026 · Identidad MAIA · motor de insights · creati
   const c=document.getElementById('clock'); if(c)c.insertAdjacentHTML('beforeend','<br><span style="color:var(--rose)">Build '+BUILD.split(' · ')[0]+'</span>');})();
 
 </script>
-<script src="app.js?v=27"></script>
+<script src="app.js?v=27.3"></script>
 
 
