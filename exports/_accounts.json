@@ -27,7 +27,7 @@
   "id": "4114075572016005",
   "name": "Chile",
   "currency": "CLP",
-  "spend90d": 593262
+  "spend90d": 593263
  },
  {
   "id": "3152205558296651",
@@ -48,15 +48,15 @@
   "spend90d": 47
  },
  {
-  "id": "10150310649593833",
-  "name": "Maggi Dialeva",
-  "currency": "ARS",
-  "spend90d": 0
- },
- {
   "id": "473122206833501",
   "name": "Australia & world",
   "currency": "AUD",
+  "spend90d": 7
+ },
+ {
+  "id": "10150310649593833",
+  "name": "Maggi Dialeva",
+  "currency": "ARS",
   "spend90d": 0
  }
 ]
