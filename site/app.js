@@ -1,5 +1,5 @@
 /* =====================================================================
-   MAIA · Hub v29 (oct-2026) — 3 pestañas: Hoy · Marcas · Agencia (sin repeticiones)
+   MAIA · Hub v30 (oct-2026) — Hoy · Marcas (General + por marca) · Agencia
    - Motor de insights por marca (un solo motor para Dashboard, Análisis,
      Seguimiento, Reporte y Agencia: todos dicen lo mismo).
    - Tags de arquetipo / ángulo por creativo (config/brands.yaml).
@@ -955,15 +955,66 @@ function renderHoy(){
 }
 
 /* =====================================================================
+   MARCAS · GENERAL (v30) · todas las marcas en una tabla, con el MISMO
+   motor que el resto (antes General usaba el motor viejo y contradecía).
+   ===================================================================== */
+const GEN_OWN=['mossy','paz'];
+function genRow(b){
+  const D=DATA[b]; let x; try{ x=analyze(b,{from:RANGE.from,to:RANGE.to}); }catch(e){ console.error(b,e); return null; }
+  const T=x.T, R=x.R, S=x.S;
+  const f=x.F.find(f=>f.sev==='urgente')||x.F.find(f=>f.sev==='atencion')||x.F.find(f=>f.sev==='bien')||x.F[0];
+  const rank=x.F.some(f=>f.sev==='urgente')?0:(x.F.some(f=>f.sev==='atencion')?1:2);
+  const cmp=x.tr&&x.tr.c!=null?(()=>{ const good=x.tr.main==='roas'?x.tr.c>0:x.tr.c<0; return `<span class="${Math.abs(x.tr.c)<0.1?'muted':(good?'up':'dn')}">${x.tr.c>0?'+':'−'}${pctTxt(Math.abs(x.tr.c))}</span><div class="muted" style="font-size:11px">${x.tr.main==='roas'?'ROAS':'costo c/u'}</div>`; })():'<span class="muted">—</span>';
+  const mv=movesOf(b)[0];
+  const sl=SEMLBL[x.sem];
+  const showS=x.showSales;
+  const tr=`<tr>
+    <td><span class="sem ${sl[1]}" title="${sl[0]}"></span><b>${esc(D.name)}</b><div class="muted" style="font-size:11.5px">${({msg:'WhatsApp',purchase:'Ventas web',lead:'Leads',traffic:'Tráfico'})[R.kind]||''} · ${D.cur}</div></td>
+    <td style="font-size:12.5px">${startTxt(D)}<div class="muted">${tenureTxt(D)}</div></td>
+    <td style="font-size:12.5px">${updBadge(b)}</td>
+    <td class="r">${$m(T.spend)}</td>
+    <td class="r">${R.sales?'—':money(T.res)}<div class="muted" style="font-size:11px">${R.sales?'':R.unit[1]}</div></td>
+    <td class="r">${R.sales?'—':(T.res?$m(T.spend/T.res):'—')}</td>
+    <td class="r">${showS?money(S.compras):'—'}${showS&&S.rep>0.01?`<div class="muted" style="font-size:11px">${money(S.rep)} reportadas</div>`:''}</td>
+    <td class="r">${showS&&S.cpa?$m(S.cpa):'—'}</td>
+    <td class="r">${showS&&S.compras?roasTxt(S)+(S.partial?'*':''):'—'}</td>
+    <td class="r">${cmp}</td>
+    <td style="font-size:12.5px">${mv?fmtDM(mv.date):'—'}</td>
+    <td style="min-width:220px"><a href="#" data-gm="${b}" style="font-size:13px;font-weight:600">${f?esc(shortAct(f)):'Mantener'} →</a>${f&&f.sev!=='bien'?`<div class="muted" style="font-size:12px">${esc(plain(f.t))}</div>`:''}</td></tr>`;
+  return {b,x,tr,rank,spend:T.spend};
+}
+function renderGen(){
+  const el=document.getElementById('body-gen2'); if(!el) return;
+  const rows=CLIENTS.filter(isActiveBrand).map(genRow).filter(Boolean).sort((p,q)=>(p.rank-q.rank)||(q.spend-p.spend));
+  const cli=rows.filter(r=>!GEN_OWN.includes(r.b)), own=rows.filter(r=>GEN_OWN.includes(r.b));
+  const TH=`<tr><th>Marca</th><th>Inicio · con nosotros</th><th>Actualizado</th><th class="r">Inversión</th><th class="r">Resultado</th><th class="r">Costo c/u</th><th class="r">Compras</th><th class="r">CPA</th><th class="r">ROAS</th><th class="r" title="Contra el período anterior de igual duración">vs anterior</th><th>Últ. cambio</th><th>Qué hacer</th></tr>`;
+  const tbl=r=>`<div class="lcard scrollx" style="padding:6px 10px;margin-top:8px"><table class="cl gen">${TH}${r.map(x=>x.tr).join('')}</table></div>`;
+  el.innerHTML=`<div class="v3">
+    <div class="eyebrow" style="margin-top:14px">General · todas las marcas · ${typeof periodLabel==='function'?periodLabel():''}</div>
+    <h2>${cli.length} marcas activas${own.length?` + ${own.length} cuentas propias`:''}</h2>
+    <p class="sub">Ordenadas por urgencia. Mismo diagnóstico que "Qué pasa y qué hacer" de cada marca: tocá la acción para abrirla. Compras incluye las que reporta la marca (* = falta algún monto).</p>
+    ${tbl(cli)}
+    ${own.length?`<h3>Cuentas propias</h3>${tbl(own)}`:''}
+  </div>${typeof lostTable==='function'?lostTable():''}`;
+  el.querySelectorAll('[data-gm]').forEach(a=>a.addEventListener('click',e=>{e.preventDefault(); MB=a.dataset.gm; MV='analisis'; renderMarca();}));
+}
+
+/* =====================================================================
    MARCAS (v29) · una sola marca elegida, cuatro vistas sin repetir:
    Qué pasa y qué hacer (números + hallazgos) · Creativos y campañas ·
    Reporte al cliente · Estrategia (+ Documentos si hay).
    ===================================================================== */
 let MB=null, MV='analisis';
 const MVIEWS=['analisis','dashboard','reporte','estrategia','propuesta'];
+const GEN='__general';
 function hasDocs(b){ return typeof PICK!=='undefined' && PICK.some(x=>x.id===b&&x.prop); }
 function renderMarca(){
   if(!MB) return;
+  const sel0=document.getElementById('sel-marca'); if(sel0&&sel0.value!==MB) sel0.value=MB;
+  const nav=document.getElementById('mnav');
+  if(MB===GEN){ nav.hidden=true; document.querySelectorAll('.mview').forEach(v=>v.classList.toggle('on',v.id==='m-general'));
+    syncRangeBars(); try{ renderGen(); }catch(e){ console.error('general',e); } lsSet('maia29_mb',MB); return; }
+  nav.hidden=false;
   const docs=hasDocs(MB); if(MV==='propuesta'&&!docs) MV='analisis';
   document.querySelectorAll('#mnav [data-mv]').forEach(p=>{ p.setAttribute('aria-pressed',p.dataset.mv===MV); if(p.dataset.mv==='propuesta') p.hidden=!docs; });
   document.querySelectorAll('.mview').forEach(v=>v.classList.toggle('on',v.id==='m-'+MV));
@@ -987,7 +1038,7 @@ goTab=function(tab,cid){
 };
 applyRange=function(){
   if(RANGE.from>RANGE.to){const s=RANGE.from;RANGE.from=RANGE.to;RANGE.to=s;}
-  if(MB) renderDash(MB); syncRangeBars();
+  if(MB===GEN) renderGen(); else if(MB) renderDash(MB); syncRangeBars();
 };
 
 /* =====================================================================
@@ -997,10 +1048,12 @@ applyRange=function(){
   RANGE={from:LAST7_FROM,to:DMAX,preset:'7d'};
   const firstPaying=(()=>{ const ag=(window.AGENCY||{}).clients||[]; const p=ag.find(c=>c.status==='pagando'&&DATA[c.slug]); return p?p.slug:(CLIENTS.find(isActiveBrand)||CLIENTS[0]); })();
   buildRangeBar("range-dash");
+  buildRangeBar("range-gen");
   syncRangeBars();
   const mb0=lsGet('maia29_mb'), mv0=lsGet('maia29_mv');
-  MB=(mb0&&DATA[mb0])?mb0:firstPaying; MV=MVIEWS.includes(mv0)?mv0:'analisis';
+  MB=(mb0&&(DATA[mb0]||mb0===GEN))?mb0:GEN; MV=MVIEWS.includes(mv0)?mv0:'analisis';
   v3Picker("pick-marca", b=>{ MB=b; if(document.getElementById('p-marca').classList.contains('on')) renderMarca(); }, MB);
+  { const sm=document.getElementById('sel-marca'); const o=document.createElement('option'); o.value=GEN; o.textContent='General · todas las marcas'; sm.prepend(o); sm.value=MB; }
   document.querySelectorAll('#mnav [data-mv]').forEach(p=>p.addEventListener('click',()=>{ MV=p.dataset.mv; renderMarca(); }));
   renderSeg();
   renderAgencia();

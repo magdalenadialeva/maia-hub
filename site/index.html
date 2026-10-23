@@ -542,7 +542,7 @@
   .interp.manual{background:var(--rose-t)}
 
 </style>
-<link rel="stylesheet" href="theme.css?v=29">
+<link rel="stylesheet" href="theme.css?v=30">
 
 <div class="wrap">
   <div class="top">
@@ -571,6 +571,7 @@
         <button class="pill" data-mv="estrategia">Estrategia</button>
         <button class="pill" data-mv="propuesta" hidden>Documentos</button>
       </div></div>
+    <div class="mview" id="m-general"><div class="rangebar" id="range-gen"></div><div id="body-gen2"></div></div>
     <div class="mview" id="m-analisis"><div id="body-analisis"></div></div>
     <div class="mview" id="m-dashboard"><div class="rangebar" id="range-dash"></div><div class="barra" id="campbar" hidden></div><div id="body-dash"></div></div>
     <div class="mview" id="m-reporte"><div id="body-reporte"></div></div>
@@ -2432,11 +2433,11 @@ document.addEventListener('mouseleave',()=>{const t=document.getElementById('cha
 /* clock */
 (function(){const el=document.getElementById("clock");const d=new Date(),m=["ene","feb","mar","abr","may","jun","jul","ago","sep","oct","nov","dic"];el.textContent=d.getDate()+" "+m[d.getMonth()]+" "+d.getFullYear();})();
 /* sello de versión visible para confirmar que estás en la última */
-const BUILD="v29 · 23 oct 2026 · 3 pestañas: Hoy · Marcas · Agencia · motor de insights · creativos con arquetipo/ángulo/etapa";
+const BUILD="v30 · 23 oct 2026 · 3 pestañas: Hoy · Marcas (con General) · Agencia · motor de insights · creativos con arquetipo/ángulo/etapa";
 (function(){const f=document.querySelector('.foot-note'); if(f)f.insertAdjacentHTML('beforeend',' · <b>Build '+BUILD+'</b>');
   const c=document.getElementById('clock'); if(c)c.insertAdjacentHTML('beforeend','<br><span style="color:var(--rose)">Build '+BUILD.split(' · ')[0]+'</span>');})();
 
 </script>
-<script src="app.js?v=29"></script>
+<script src="app.js?v=30"></script>
 
 

@@ -194,3 +194,7 @@ h1 .hl, .hl{background:var(--yellow);color:var(--ink0);padding:0 .18em;box-decor
 .mview{display:none}.mview.on{display:block}
 @media (max-width:700px){ .mnav{margin-left:0;width:100%} }
 [hidden]{display:none!important}
+
+/* ---- v30 · General ---- */
+.v3 table.gen td{vertical-align:top;padding-top:10px;padding-bottom:10px}
+.v3 table.gen .up{color:var(--good);font-weight:600} .v3 table.gen .dn{color:var(--bad);font-weight:600}
