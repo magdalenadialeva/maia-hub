@@ -1,5 +1,5 @@
 /* =====================================================================
-   MAIA · Hub v28 (oct-2026) — v28 suma la pestaña Hoy (brief proactivo)
+   MAIA · Hub v29 (oct-2026) — 3 pestañas: Hoy · Marcas · Agencia (sin repeticiones)
    - Motor de insights por marca (un solo motor para Dashboard, Análisis,
      Seguimiento, Reporte y Agencia: todos dicen lo mismo).
    - Tags de arquetipo / ángulo por creativo (config/brands.yaml).
@@ -213,8 +213,19 @@ function analyze(b,opt){
     const solid=evals.filter(enough).sort((x,y)=>(x.a.cpr||1e12)-(y.a.cpr||1e12));
     if(solid.length){
       const e=solid[0]; const ratio=(e.a.cpr&&e.o.cpr)?e.a.cpr/e.o.cpr:null;
-      if(ratio!=null && ratio<=1.1){
-        push({sev:'bien',key:'iter',t:`Desde el ${fmtWd(e.since)}, la iteración «${esc(adLbl(b,e.it.ad))}» rinde igual o mejor que el original`,
+      /* v28.2 · lo acumulado puede esconder una caída: el veredicto tiene que valer HOY (últimos 4 días) */
+      const rF=addDays(to,-3)>e.since?addDays(to,-3):e.since; const rw=sumWin(b,rF,to,R);
+      const ra=stats(rw.per[e.it.i]||{},R), ro=stats(rw.per[top.i]||{},R);
+      const recOk=ra.spend>0 && (ra.res>=3 || (ro.cpr && ra.spend>=1.5*ro.cpr)) && rF>e.since;
+      const rRatio=(recOk&&ro.cpr)?((ra.res?ra.cpr:Infinity)/ro.cpr):null;
+      if(ratio!=null && ratio<=1.1 && rRatio!=null && rRatio>=1.2){
+        push({sev:'atencion',key:'iter',t:`La iteración «${esc(adLbl(b,e.it.ad))}» arrancó mejor que el original, pero en los últimos días se cayó`,
+          d:`Del ${fmtDM(rF)} al ${fmtDM(to)}: ${ra.res?$m(ra.cpr):'sin '+U[1]} por ${U[0]} contra ${$m(ro.cpr)} del original (${resTxt(ra.res,R)} con ${$m(ra.spend)}). Sumando desde el ${fmtDM(e.since)} todavía da ${$m(e.a.cpr)} vs ${$m(e.o.cpr)}, pero ese promedio lo sostienen los primeros días.`,
+          a:'No pasarle más presupuesto. Preparar la próxima iteración (otro objeto u otro arranque) y un concepto nuevo.',
+          ev:`${fmtDM(rF)}–${fmtDM(to)} vs ${fmtDM(e.since)}–${fmtDM(addDays(rF,-1))}`,
+          rep:{aprendimos:'La nueva versión del anuncio ganador arrancó muy bien pero se cansó rápido: el concepto necesita variaciones más distintas.',hacemos:'Preparar una nueva versión del anuncio ganador, más distinta, y una idea nueva.'}});
+      } else if(ratio!=null && ratio<=1.1){
+        push({sev:'bien',key:'iter',t:`La iteración «${esc(adLbl(b,e.it.ad))}» rinde igual o mejor que el original${recOk?' y se sostiene en los últimos días':''}`,
           d:`${$m(e.a.cpr)} vs ${$m(e.o.cpr)} por ${U[0]} (${resTxt(e.a.res,R)} vs ${resTxt(e.o.res,R)} en los mismos días).${solid.length>1?` Hay ${solid.length} iteraciones con datos.`:''}`,
           a:`Seguir por ese camino: 2–3 piezas más con la misma idea${e.it.tag&&e.it.tag.angulo?` («${esc(e.it.tag.angulo)}»)`:''} y otro objeto u otro arranque, y pasarles presupuesto de a poco.`,
           ev:`${fmtDM(e.since)}–${fmtDM(to)} · mismo período para los dos`,
@@ -422,11 +433,7 @@ function v3Picker(hostId,onPick,def){
   </select>`;
   const sel=box.querySelector('select'); sel.addEventListener('change',()=>onPick(sel.value)); onPick(def);
 }
-function goTo(tab,b){
-  goTab(tab);
-  const map={analisis:['sel-ana',renderAnalisis],reporte:['sel-rep',renderReporte],dashboard:['sel-dash',renderDash]};
-  const m=map[tab]; if(m&&b){ const s=document.getElementById(m[0]); if(s) s.value=b; m[1](b); }
-}
+function goTo(tab,b){ goTab(tab,b); }
 function shortAct(f){
   const S={conc:'Iterar el ganador y sumar 2 conceptos nuevos',funnel:'Revisar la web: '+(f.t.match(/«(.+)»/)||[,''])[1],waste:'Pausar lo que gasta sin resultado',
     fatiga:'Preparar recambio del anuncio principal',stale:'Renovar creativos: 2 piezas nuevas por semana',trend:f.sev==='bien'?'Mantener, no tocar':String(f.a).split(/[:.]/)[0],manualmiss:'Pedir las ventas de la semana',iter:'Más iteraciones del ganador',nospend:f.sev==='info'?'En pausa a propósito':'Confirmar por qué no gasta'};
@@ -535,14 +542,12 @@ renderDash=function(id){
   body.querySelectorAll('.sec-h').forEach(h=>{ if(/Señales por creativo/.test(h.textContent)){ h.textContent='Creativos · de mejor a peor'; const s=h.nextElementSibling; if(s&&s.classList.contains('sec-s')) s.textContent=`${periodPhrase()}. Con arquetipo, ángulo y la etapa del embudo que cumple cada uno según sus señales.`; } });
   const ci=(DASHCAMP[id]!=null)?DASHCAMP[id]:undefined;
   let x; try{ x=analyze(id,{from:RANGE.from,to:RANGE.to,ci}); }catch(e){ console.error(e); return; }
-  const top=x.F.filter(f=>f.sev!=='info').slice(0,3);
-  const box=document.createElement('div'); box.className='v3'; box.style.margin='14px 0 6px';
-  box.innerHTML=`<div class="darkband"><div class="eyebrow">Lo que dicen los números · ${x.per.short} vs ${x.per.prevShort}</div>
-    ${top.length?top.map(f=>`<div style="margin:8px 0 0"><span class="sem ${SEVLBL[f.sev][1]}"></span><b>${f.t}.</b> <span style="color:var(--muteD)">👉 ${f.a}</span></div>`).join(''):'<div style="margin-top:6px">Sin novedades fuertes en este período.</div>'}
-    <div style="margin-top:12px"><a href="#" data-goana style="color:var(--yellow);text-decoration:none">Ver el análisis completo →</a></div></div>`;
+  /* v29: los números de la semana y "qué hacer" viven en una sola vista ("Qué pasa y qué hacer").
+     Acá quedan sólo los creativos, las campañas y la evolución, con el período que elijas. */
+  body.querySelectorAll('.interp,.legend,.tiles').forEach(n=>n.remove());
+  const box=document.createElement('div'); box.className='v3'; box.style.margin='10px 0 4px';
+  const T=x.T; box.innerHTML=`<div class="muted" style="font-size:13px">En el período: <b>${$m(T.spend)}</b> invertidos · <b>${resTxt(T.res,x.R)}</b>. Los números de la semana y qué hacer están en <a href="#" data-goana>Qué pasa y qué hacer</a>.</div>`;
   const head=body.querySelector('.dhead'); if(head) head.after(box); else body.prepend(box);
-  body.querySelectorAll('.interp,.legend').forEach(n=>n.remove());  // los avisos viejos contradecían a los KPIs nuevos
-  const oldTiles=body.querySelector('.tiles'); if(oldTiles){ const g=document.createElement('div'); g.className='v3'; g.innerHTML=`<div class="grid g3" style="margin:12px 0">${weekKpis(x)}</div>`; oldTiles.replaceWith(g); }
   box.querySelector('[data-goana]').addEventListener('click',e=>{e.preventDefault();goTo('analisis',id);});
 };
 
@@ -667,16 +672,14 @@ function renderSeg(){
   const xs=CLIENTS.filter(b=>isActiveBrand(b)&&!SEG_SKIP.includes(b)).map(segRow).filter(Boolean).sort((p,q)=>p.rank-q.rank);
   const urg=[]; xs.forEach(r=>r.x.F.filter(f=>f.sev==='urgente').forEach(f=>urg.push({r,f})));
   el.innerHTML=`<div class="v3">
-    <div class="eyebrow" style="margin-top:18px">Seguimiento · semana que terminó el ${CLOSED?fmtWd(CLOSED):'—'}</div>
-    <h2>${urg.length?`Hoy hay <span class="hl">${urg.length} ${urg.length===1?'cosa urgente':'cosas urgentes'}</span>`:'Hoy no hay nada <span class="hl">urgente</span>'}</h2>
-    <p class="sub">Una fila por marca: cómo vino la última semana contra la anterior, y lo primero que hay que hacer. Regla: después de un cambio, 3 días sin tocar.</p>
-    ${urg.length?`<div class="darkband" style="margin-bottom:16px">${urg.map(u=>`<div style="margin:4px 0"><span class="sem bad"></span><b>${esc(u.r.D.name)}:</b> ${u.f.t}. <span style="color:var(--muteD)">👉 ${u.f.a}</span></div>`).join('')}</div>`:''}
+    <h3>Todas las marcas · semana que terminó el ${CLOSED?fmtWd(CLOSED):'—'}</h3>
+    <p class="sub" style="margin-top:4px">Una fila por marca: cómo vino la semana contra la anterior y lo primero a hacer. Después de un cambio, 3 días sin tocar.</p>
     <div class="seg">${xs.map(r=>{ const sl=SEMLBL[r.x.sem];
       const nx=r.wait?`⏳ No tocar hasta el ${fmtWd(addDays(r.mv.date,REVIEW_DAYS))}<small>Hubo cambios el ${fmtWd(r.mv.date)}</small>`
         :(r.firstAct?`👉 ${shortAct(r.firstAct)}`:'Mantener; sin novedades.');
       return `<div class="segrow"><div><div class="nm"><span class="sem ${sl[1]}" title="${sl[0]}"></span>${esc(r.D.name)}</div><div class="ob">${{msg:'WhatsApp',purchase:'Ventas web',lead:'Leads',traffic:'Tráfico'}[r.x.R.kind]||''} · ${r.x.per.short}</div></div>
         <div class="msg">${r.line}${!r.x.T.spend?'':r.firstAct&&r.firstAct.sev!=='bien'?`<div class="muted" style="font-size:13px;margin-top:2px">${r.firstAct.t}.</div>`:(r.firstAct?`<div style="font-size:13px;margin-top:2px;color:var(--good)">${r.firstAct.t}.</div>`:'')}</div>
-        <div class="nx">${nx}<div style="margin-top:6px"><a href="#" data-ana="${r.b}" style="font-size:12.5px">Ver análisis →</a></div></div></div>`; }).join('')}</div>
+        <div class="nx">${nx}<div style="margin-top:6px"><a href="#" data-ana="${r.b}" style="font-size:12.5px">Ver la marca →</a></div></div></div>`; }).join('')}</div>
   </div>`;
   el.querySelectorAll('[data-ana]').forEach(a=>a.addEventListener('click',e=>{e.preventDefault();goTo('analisis',a.dataset.ana);}));
 }
@@ -718,8 +721,7 @@ function renderAgencia(){
       ${kpiBox('Gratis → pago',convR!=null?`${X.converted.length} de ${X.decided.length}`:'—',`${convR!=null?Math.round(convR*100)+'% · ':''}meta: ${Math.round((X.T.conversion_free_to_paid||.5)*100)}%`,convR==null?'':(convR>=(X.T.conversion_free_to_paid||.5)?'good':'bad'))}
       ${kpiBox('Resultado acumulado',M(X.net),`facturado ${M(X.rev)} − seteos, captación y diseñadoras`,X.net>=0?'good':'bad')}
     </div>
-    <h3>Qué hacer esta semana</h3>
-    <div class="acts" style="margin-top:8px">${A.length?A.map(a=>`<div class="act"><div class="when">${a.cls?`<span class="sem ${a.cls}"></span>`:''}${a.when}</div><div><div class="at">${a.t}</div><div class="ad">${a.d}</div></div></div>`).join(''):'<div class="lcard">Nada pendiente esta semana.</div>'}</div>
+    ${A.length?`<div class="lcard" style="margin-bottom:6px;font-size:14px">${A.length} ${A.length===1?'cosa pendiente':'cosas pendientes'} del negocio y las cuentas: están en <a href="#" data-gohoy>Hoy</a>, con el mensaje listo.</div>`:''}
     <h3>Clientes</h3>
     <div class="lcard scrollx" style="margin-top:8px;padding:6px 10px"><table class="cl"><tr><th>Cliente</th><th>Estado</th><th class="r">Nos pagó</th><th>Servicios</th><th>Pauta · última semana</th></tr>${rowsC}</table></div>
     ${captacionHTML(X)}
@@ -733,6 +735,7 @@ function renderAgencia(){
       ${agencyDetail()}
     </details>
   </div>`;
+  const gh=el.querySelector('[data-gohoy]'); if(gh) gh.addEventListener('click',e=>{e.preventDefault();goTab('hoy');});
 }
 
 
@@ -922,7 +925,7 @@ function renderHoy(){
         ${it.draft?`<button class="btn" data-act="ok">Aprobar y copiar</button><button class="btn ghost" data-act="wa">Abrir en WhatsApp</button>`:`<button class="btn" data-act="ok">Hecho</button>`}
         <button class="btn ghost" data-act="snooze">Mañana</button>
         <button class="btn ghost" data-act="skip">Descartar</button>
-        ${DATA[it.b]?`<a href="#" data-ana="${esc(it.b)}" style="font-size:12.5px;margin-left:auto">Ver análisis →</a>`:''}
+        ${DATA[it.b]?`<a href="#" data-ana="${esc(it.b)}" style="font-size:12.5px;margin-left:auto">Ver la marca →</a>`:''}
       </div></div>`;
   el.innerHTML=`<div class="v3">
     <div class="eyebrow" style="margin-top:18px">Brief de la mañana · ${fmtWd(NOW)}</div>
@@ -952,28 +955,59 @@ function renderHoy(){
 }
 
 /* =====================================================================
+   MARCAS (v29) · una sola marca elegida, cuatro vistas sin repetir:
+   Qué pasa y qué hacer (números + hallazgos) · Creativos y campañas ·
+   Reporte al cliente · Estrategia (+ Documentos si hay).
+   ===================================================================== */
+let MB=null, MV='analisis';
+const MVIEWS=['analisis','dashboard','reporte','estrategia','propuesta'];
+function hasDocs(b){ return typeof PICK!=='undefined' && PICK.some(x=>x.id===b&&x.prop); }
+function renderMarca(){
+  if(!MB) return;
+  const docs=hasDocs(MB); if(MV==='propuesta'&&!docs) MV='analisis';
+  document.querySelectorAll('#mnav [data-mv]').forEach(p=>{ p.setAttribute('aria-pressed',p.dataset.mv===MV); if(p.dataset.mv==='propuesta') p.hidden=!docs; });
+  document.querySelectorAll('.mview').forEach(v=>v.classList.toggle('on',v.id==='m-'+MV));
+  const sel=document.getElementById('sel-marca'); if(sel&&sel.value!==MB) sel.value=MB;
+  try{
+    if(MV==='analisis') renderAnalisis(MB);
+    else if(MV==='dashboard'){ syncRangeBars(); renderDash(MB); }
+    else if(MV==='reporte') renderReporte(MB);
+    else if(MV==='estrategia') renderEst(MB);
+    else if(MV==='propuesta') renderProp(MB);
+  }catch(e){ console.error('marca',MV,e); }
+  lsSet('maia29_mb',MB); lsSet('maia29_mv',MV);
+}
+goTab=function(tab,cid){
+  let t=tab; if(MVIEWS.includes(tab)){ MV=tab; t='marca'; }
+  if(cid&&DATA[cid]) MB=cid;
+  document.querySelectorAll('.tab').forEach(x=>x.setAttribute('aria-selected',x.dataset.tab===t?'true':'false'));
+  document.querySelectorAll('.panel').forEach(x=>x.classList.toggle('on',x.id==='p-'+t));
+  if(t==='marca') renderMarca();
+  try{window.scrollTo(0,0);}catch(e){}
+};
+applyRange=function(){
+  if(RANGE.from>RANGE.to){const s=RANGE.from;RANGE.from=RANGE.to;RANGE.to=s;}
+  if(MB) renderDash(MB); syncRangeBars();
+};
+
+/* =====================================================================
    INIT (reemplaza el init del script principal)
    ===================================================================== */
 (function init(){
   RANGE={from:LAST7_FROM,to:DMAX,preset:'7d'};
   const firstPaying=(()=>{ const ag=(window.AGENCY||{}).clients||[]; const p=ag.find(c=>c.status==='pagando'&&DATA[c.slug]); return p?p.slug:(CLIENTS.find(isActiveBrand)||CLIENTS[0]); })();
-  buildRangeBar("range-gen");
   buildRangeBar("range-dash");
-  v3Picker("pick-dash", renderDash, firstPaying);
-  v3Picker("pick-ana", renderAnalisis, firstPaying);
-  v3Picker("pick-rep", renderReporte, firstPaying);
-  buildPicker("pick-prop", renderProp, "piera");
-  estPicker();
-  renderGeneral();
   syncRangeBars();
+  const mb0=lsGet('maia29_mb'), mv0=lsGet('maia29_mv');
+  MB=(mb0&&DATA[mb0])?mb0:firstPaying; MV=MVIEWS.includes(mv0)?mv0:'analisis';
+  v3Picker("pick-marca", b=>{ MB=b; if(document.getElementById('p-marca').classList.contains('on')) renderMarca(); }, MB);
+  document.querySelectorAll('#mnav [data-mv]').forEach(p=>p.addEventListener('click',()=>{ MV=p.dataset.mv; renderMarca(); }));
   renderSeg();
   renderAgencia();
   renderHoy();
   window.COMMENTS=window.COMMENTS||{};
   document.querySelectorAll(".tab").forEach(t=>t.addEventListener("click",()=>{
-    document.querySelectorAll(".tab").forEach(x=>x.setAttribute("aria-selected","false"));
-    document.querySelectorAll(".panel").forEach(x=>x.classList.remove("on"));
-    t.setAttribute("aria-selected","true"); document.getElementById("p-"+t.dataset.tab).classList.add("on");
+    goTab(t.dataset.tab);
     document.querySelectorAll("#p-"+t.dataset.tab+" iframe").forEach(fit);
   }));
   const h=document.querySelector('.brandtxt h1'); if(h) h.innerHTML='Centro de <span class="hl">Operaciones</span>';

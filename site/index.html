@@ -542,7 +542,7 @@
   .interp.manual{background:var(--rose-t)}
 
 </style>
-<link rel="stylesheet" href="theme.css?v=28.1">
+<link rel="stylesheet" href="theme.css?v=29">
 
 <div class="wrap">
   <div class="top">
@@ -554,50 +554,31 @@
   </div>
   <div class="tabs" role="tablist">
     <button class="tab" role="tab" aria-selected="true" data-tab="hoy"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg><span>Hoy</span></button>
+    <button class="tab" role="tab" aria-selected="false" data-tab="marca"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="20" x2="4" y2="12"/><line x1="10" y1="20" x2="10" y2="5"/><line x1="16" y1="20" x2="16" y2="9"/><line x1="21" y1="20" x2="3" y2="20"/></svg><span>Marcas</span></button>
     <button class="tab" role="tab" aria-selected="false" data-tab="agencia"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M5 21V9l7-5 7 5v12"/><path d="M10 21v-6h4v6"/></svg><span>Agencia</span></button>
-    <button class="tab" role="tab" aria-selected="false" data-tab="seguimiento"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3 8-8"/><path d="M20 12v7a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h9"/></svg><span>Seguimiento</span></button>
-    <button class="tab" role="tab" aria-selected="false" data-tab="general"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg><span>General</span></button>
-    <button class="tab" role="tab" aria-selected="false" data-tab="dashboard"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="20" x2="4" y2="12"/><line x1="10" y1="20" x2="10" y2="5"/><line x1="16" y1="20" x2="16" y2="9"/><line x1="21" y1="20" x2="3" y2="20"/></svg><span>Dashboard</span></button>
-    <button class="tab" role="tab" aria-selected="false" data-tab="analisis"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.5" y2="16.5"/></svg><span>Análisis de pauta</span></button>
-    <button class="tab" role="tab" aria-selected="false" data-tab="reporte"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5"/><line x1="9" y1="13" x2="15" y2="13"/><line x1="9" y1="17" x2="13" y2="17"/></svg><span>Reporte al cliente</span></button>
-    <button class="tab" role="tab" aria-selected="false" data-tab="propuesta"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l15-6v14L3 13z"/><path d="M3 11v2a2 2 0 0 0 2 2h1"/><path d="M8 15v3a2 2 0 0 0 2 2"/></svg><span>Propuesta de pauta</span></button>
-    <button class="tab" role="tab" aria-selected="false" data-tab="estrategia"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l2.1 4.9L19 10l-4.9 2.1L12 17l-2.1-4.9L5 10l4.9-2.1z"/><circle cx="18" cy="18" r="2.4"/></svg><span>Estrategia de contenido</span></button>
   </div>
 
-  <section class="panel" id="p-seguimiento" role="tabpanel">
-    <div id="body-seg"></div>
-  </section>
-  <section class="panel" id="p-general" role="tabpanel">
-    <div class="rangebar" id="range-gen"></div>
-    <div id="body-general"></div>
-  </section>
   <section class="panel on" id="p-hoy" role="tabpanel">
     <div id="body-hoy"></div>
+    <div id="body-seg"></div>
+  </section>
+  <section class="panel" id="p-marca" role="tabpanel">
+    <div class="barra marcabar"><span class="lab">Marca</span><div class="picker" id="pick-marca"></div>
+      <div class="mnav" id="mnav">
+        <button class="pill" data-mv="analisis">Qué pasa y qué hacer</button>
+        <button class="pill" data-mv="dashboard">Creativos y campañas</button>
+        <button class="pill" data-mv="reporte">Reporte al cliente</button>
+        <button class="pill" data-mv="estrategia">Estrategia</button>
+        <button class="pill" data-mv="propuesta" hidden>Documentos</button>
+      </div></div>
+    <div class="mview" id="m-analisis"><div id="body-analisis"></div></div>
+    <div class="mview" id="m-dashboard"><div class="rangebar" id="range-dash"></div><div class="barra" id="campbar" hidden></div><div id="body-dash"></div></div>
+    <div class="mview" id="m-reporte"><div id="body-reporte"></div></div>
+    <div class="mview" id="m-estrategia"><div id="body-est"></div></div>
+    <div class="mview" id="m-propuesta"><div id="body-prop"></div></div>
   </section>
   <section class="panel" id="p-agencia" role="tabpanel">
     <div id="body-agencia"></div>
-  </section>
-  <section class="panel" id="p-dashboard" role="tabpanel">
-    <div class="barra"><span class="lab">Cliente</span><div class="picker" id="pick-dash"></div></div>
-    <div class="rangebar" id="range-dash"></div>
-    <div class="barra" id="campbar" hidden></div>
-    <div id="body-dash"></div>
-  </section>
-  <section class="panel" id="p-analisis" role="tabpanel">
-    <div class="barra"><span class="lab">Cliente</span><div class="picker" id="pick-ana"></div></div>
-    <div id="body-analisis"></div>
-  </section>
-  <section class="panel" id="p-reporte" role="tabpanel">
-    <div class="barra"><span class="lab">Cliente</span><div class="picker" id="pick-rep"></div></div>
-    <div id="body-reporte"></div>
-  </section>
-  <section class="panel" id="p-propuesta" role="tabpanel">
-    <div class="barra"><span class="lab">Cliente</span><div class="picker" id="pick-prop"></div></div>
-    <div id="body-prop"></div>
-  </section>
-  <section class="panel" id="p-estrategia" role="tabpanel">
-    <div class="barra"><span class="lab">Marca</span><div class="picker" id="pick-est"></div></div>
-    <div id="body-est"></div>
   </section>
 
   <div class="foot-note">Centro de Operaciones MAIA &middot; vista viva. Tablero y dashboards con datos reales de los exports de Meta. Piera en CLP, el resto en ARS &mdash; no se comparan entre sí.</div>
@@ -2451,11 +2432,11 @@ document.addEventListener('mouseleave',()=>{const t=document.getElementById('cha
 /* clock */
 (function(){const el=document.getElementById("clock");const d=new Date(),m=["ene","feb","mar","abr","may","jun","jul","ago","sep","oct","nov","dic"];el.textContent=d.getDate()+" "+m[d.getMonth()]+" "+d.getFullYear();})();
 /* sello de versión visible para confirmar que estás en la última */
-const BUILD="v28 · 23 oct 2026 · pestaña Hoy (brief proactivo) · motor de insights · creativos con arquetipo/ángulo/etapa";
+const BUILD="v29 · 23 oct 2026 · 3 pestañas: Hoy · Marcas · Agencia · motor de insights · creativos con arquetipo/ángulo/etapa";
 (function(){const f=document.querySelector('.foot-note'); if(f)f.insertAdjacentHTML('beforeend',' · <b>Build '+BUILD+'</b>');
   const c=document.getElementById('clock'); if(c)c.insertAdjacentHTML('beforeend','<br><span style="color:var(--rose)">Build '+BUILD.split(' · ')[0]+'</span>');})();
 
 </script>
-<script src="app.js?v=28.1"></script>
+<script src="app.js?v=29"></script>
 
 

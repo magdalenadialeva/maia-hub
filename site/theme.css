@@ -187,3 +187,10 @@ h1 .hl, .hl{background:var(--yellow);color:var(--ink0);padding:0 .18em;box-decor
 .v3 .hoyl li:last-child{border-bottom:0}
 .hoyn{display:inline-block;background:var(--yellow);color:var(--ink0);border-radius:999px;font-size:11px;padding:0 6px;margin-left:4px;line-height:16px}
 @media (max-width:520px){ .v3 .hoyg{grid-template-columns:1fr} }
+
+/* ---- v29 · Marcas: selector + vistas ---- */
+.marcabar{flex-wrap:wrap;gap:10px}
+.mnav{display:flex;flex-wrap:wrap;gap:6px;margin-left:auto}
+.mview{display:none}.mview.on{display:block}
+@media (max-width:700px){ .mnav{margin-left:0;width:100%} }
+[hidden]{display:none!important}
