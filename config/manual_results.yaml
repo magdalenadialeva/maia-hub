@@ -60,6 +60,14 @@ pulpa:
     sales: 1
     amount: 96000
     note: "Pedido grande por WhatsApp: 3 jabones líquidos 1 L, 3 enjuagues 1 L, 10 blanqueadores, 3 multiusos 1 L. Vino de Ad_6 - Copia 4."
+  - reported: "2026-10-23"
+    from: "2026-10-21"
+    to: "2026-10-21"
+    channel: whatsapp
+    campaign: "Pulpa Verde_Conversiones_Org_Mensajes_2026_Adv+"
+    sales: 2
+    amount: 89970
+    note: "2 ventas de blanqueador el miércoles 21/10, 3 kg en total. Monto ESTIMADO a precio de lista web ($29.990/kg); confirmar con lo cobrado. Anuncio de origen sin confirmar."
 
 saritina-ceramica:
   - reported: "2026-10-20"
