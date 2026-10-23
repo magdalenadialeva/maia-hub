@@ -1,5 +1,5 @@
 /* =====================================================================
-   MAIA · Hub v27 (oct-2026)
+   MAIA · Hub v28 (oct-2026) — v28 suma la pestaña Hoy (brief proactivo)
    - Motor de insights por marca (un solo motor para Dashboard, Análisis,
      Seguimiento, Reporte y Agencia: todos dicen lo mismo).
    - Tags de arquetipo / ángulo por creativo (config/brands.yaml).
@@ -283,7 +283,7 @@ function analyze(b,opt){
     if(M30.any) push({sev:'info',key:'manual',t:`Ventas que nos pasó la marca: ${money(M30.sales)} en los últimos 30 días`,
       d:`${$m(M30.amount)} vendidos con ${$m(sp30)} invertidos → por cada $1 volvieron $${dec(sp30?M30.amount/sp30:0)}.`,
       a:'Usar este número (no el de Meta) para decidir si escalar.',ev:`Último reporte: ${M30.last?fmtDM(M30.last):'—'}`});
-    if(lastTo<to) push({sev:'atencion',key:'manualmiss',t:lastTo<from?'Falta el reporte de ventas de esta semana':`Faltan las ventas del ${fmtDM(addDays(lastTo,1))} al ${fmtDM(to)}`,
+    if(lastTo<to) push({sev:'atencion',key:'manualmiss',t:lastTo<from?'Falta el reporte de ventas de esta semana':(addDays(lastTo,1)===to?`Faltan las ventas del ${fmtDM(to)}`:`Faltan las ventas del ${fmtDM(addDays(lastTo,1))} al ${fmtDM(to)}`),
       d:`El último dato de ventas que nos pasó la marca llega hasta el ${fmtDM(lastTo)}.${Mw.any?' Las compras, el CPA y el ROAS de la semana están estimados repartiendo ese reporte por día.':''} Sin el dato completo no sabemos cuánto cuesta cada venta real.`,
       a:'Pedirle a la marca las ventas de la semana (cantidad y monto).',ev:'',rep:{necesitamos:'Las ventas de la semana que entraron por WhatsApp (cantidad y monto).'}});
   }
@@ -818,6 +818,140 @@ function captacionHTML(X){
 }
 
 /* =====================================================================
+   HOY · brief de la mañana (v28, modelo "agente proactivo")
+   Norte: el hub viene a vos con lo que te necesita, ya trae la acción
+   preparada y espera tu OK. Si no hay nada, lo dice y no molesta.
+   - Necesita tu OK: máx. 5 tarjetas, una por cliente/tema, con el mensaje
+     YA REDACTADO (anti-pánico, pedido de creativos, pedido de ventas,
+     seguimiento de propuesta) → Aprobar y copiar / WhatsApp / Mañana / Descartar.
+   - Lo que hice solo: datos traídos a las 8, cuentas que fallaron, y qué
+     está esperando sus 3 días sin tocar. Transparencia de lo automático.
+   Lo que aprobás/posponés se guarda en este navegador (por persona).
+   ===================================================================== */
+const HOY_K='maia28_hoy_';
+function hoyState(id){ try{ return JSON.parse(lsGet(HOY_K+id)||'null'); }catch(e){ return null; } }
+function hoySet(id,v){ lsSet(HOY_K+id, v?JSON.stringify(v):''); }
+function hoyLog(){ try{ return JSON.parse(lsGet(HOY_K+'log')||'[]'); }catch(e){ return []; } }
+function hoyPush(e){ const L=hoyLog(); L.unshift(e); lsSet(HOY_K+'log',JSON.stringify(L.slice(0,40))); }
+function firstName(n){ return String(n||'').split(/\s+/)[0]; }
+
+/* Gatillos objetivos del aviso anti-pánico (doc "Comunicación y Procesos Simples" §3) */
+function panicTrigger(b,x){
+  const R=x.R, T=x.T, tr=x.tr||{};
+  if(tr.c!=null && tr.main==='roas' && tr.c<=-0.25) return `el ROAS bajó ${pctTxt(-tr.c)} (${dec(tr.prev)}x → ${dec(tr.cur)}x)`;
+  if(tr.c!=null && tr.main==='cpr' && tr.c>=0.30) return `cada ${R.unit[0]} salió ${pctTxt(tr.c)} más cara (${$m(tr.prev)} → ${$m(tr.cur)})`;
+  if(R.sales && T.spend>0){
+    const to=x.per.to; const w3=sumWin(b,addDays(to,-2),to,R).T; const daily=T.spend/x.per.len;
+    if(w3.spend>=daily*3*0.6 && !(w3.purch>0)) return `no entraron ventas en los últimos 3 días con ${$m(w3.spend)} invertidos`;
+  }
+  return null;
+}
+function draftPanic(D,x,why){
+  const top=x.F.find(f=>f.sev==='urgente'||f.sev==='atencion')||x.F[0]||{};
+  const porque=plain(top.d||'').split('. ')[0];
+  const hace=plain((top.rep&&top.rep.hacemos)||top.a||'Estamos revisando la cuenta.');
+  return `Hola! Te escribo antes de que lo veas en los números: esta semana ${why}.\n\n`+
+    `*Por qué:* ${porque}.\n*Qué ya estamos haciendo:* ${hace}\n*Qué esperamos:* volver a mirar el ${fmtWd(addDays(NOW,3))} y te cuento cómo vino.\n\nLa base está, es parte del proceso de iterar. Cualquier cosa me escribís.`;
+}
+function draftAsk(D,x,asks){
+  return `Hola! Te paso lo que necesitamos de tu lado esta semana para que la pauta no se caiga:\n\n`+
+    asks.map((a,i)=>`${i+1}. ${a}`).join('\n')+`\n\n¿Me confirmás para cuándo lo tendrías? Gracias!`;
+}
+
+function hoyItems(){
+  const items=[];
+  /* 1 · Por marca activa: una sola tarjeta, con lo más importante */
+  CLIENTS.filter(b=>isActiveBrand(b)&&!SEG_SKIP.includes(b)).forEach(b=>{
+    let x; try{ x=analyze(b); }catch(e){ console.error(b,e); return; }
+    const D=DATA[b]; const B=brand(b);
+    const urg=x.F.filter(f=>f.sev==='urgente'), att=x.F.filter(f=>f.sev==='atencion');
+    const mv=movesOf(b)[0]; const waiting=mv && daysBetween(mv.date,NOW)<REVIEW_DAYS;
+    const why=panicTrigger(b,x);
+    const asks=uniq([...x.F.filter(f=>f.sev!=='bien').map(f=>f.rep&&f.rep.necesitamos)].map(plain)).slice(0,3);
+    const main=urg[0]||att[0];
+    if(!why && !main) return;                               // sin novedades: no molesta
+    if(!why && !urg.length && waiting) return;              // está en sus 3 días sin tocar: vigilar, no actuar
+    const own=b===(window.AGENCY||{}).acquisition_account;   // cuenta propia (captación): no hay cliente a quien escribirle
+    const kind=own?'interno':(why?'aviso':(asks.length?'pedido':'interno'));
+    const draft=kind==='aviso'?draftPanic(D,x,why):(kind==='pedido'?draftAsk(D,x,asks):null);
+    items.push({id:b+'_'+x.per.to+'_'+kind, b, cli:D.name, rank:why?0:(urg.length?1:2),
+      sev:why||urg.length?'bad':'warn',
+      when:own?'Cuenta propia':(why?'Avisar hoy':(urg.length?'Urgente':'Esta semana')),
+      t:why?`${D.name}: ${why}`:`${D.name}: ${main.t.charAt(0).toLowerCase()+main.t.slice(1)}`,
+      d:(why&&!own)?'Cruzó el gatillo de aviso proactivo: el cliente se entera por nosotras, con el plan al lado.':plain((main||{}).d||'').split('. ').slice(0,2).join('. ').replace(/\.+$/,'')+'.',
+      todo:main?plain(main.a):'',
+      draftLbl:kind==='aviso'?'Mensaje anti-pánico para el cliente':(kind==='pedido'?'Pedido al cliente':null), draft, own,
+      extra:[...urg,...att].filter(f=>f!==main).slice(0,3).map(f=>f.t)});
+  });
+  /* 2 · Agencia: propuestas a confirmar y meses gratis por vencer */
+  try{ const X=agencyCalc();
+    X.cl.filter(c=>c.active).forEach(c=>{
+      if(c.status==='a_confirmar') items.push({id:'ag_'+c.slug+'_conf_'+NOW.slice(0,7),b:c.slug,cli:c.name,rank:1,sev:'warn',when:'Negocio',
+        t:`${c.name}: falta la respuesta a la propuesta`,d:c.note?String(c.note):'Está a confirmar. Cada semana sin respuesta es trabajo sin cobrar.',
+        todo:'Pedir una fecha de decisión por escrito.',draftLbl:'Seguimiento de la propuesta',
+        draft:`Hola! ¿Cómo va? Quería saber si pudieron ver la propuesta que les mandamos. Para organizar el arranque del mes, ¿te parece que lo definamos antes del ${fmtWd(addDays(NOW,4))}? Si querés lo charlamos 15 min y te despejo cualquier duda.`});
+      if(c.status==='gratis'&&c.freeEnd){ const d=daysBetween(NOW,c.freeEnd); if(d<=10) items.push({id:'ag_'+c.slug+'_free',b:c.slug,cli:c.name,rank:d<0?0:1,sev:d<0?'bad':'warn',when:d<0?'Vencido':`En ${d} días`,
+        t:d<0?`${c.name}: el mes gratis terminó el ${fmtDM(c.freeEnd)}`:`${c.name} decide el ${fmtWd(c.freeEnd)}`,d:'Reunión de resultados con la propuesta de continuidad.',todo:'Agendar la reunión de resultados.',
+        draftLbl:'Invitación a la reunión de resultados',draft:`Hola! Se viene el cierre del primer mes y quiero mostrarte resultados, qué aprendimos y cómo seguimos. ¿Te queda bien una call de 20 min esta semana?`}); }
+    }); }catch(e){ console.error('agencia',e); }
+  /* filtra lo descartado / pospuesto / ya aprobado */
+  return items.filter(it=>{ const st=hoyState(it.id); if(!st) return true;
+    if(st.s==='snooze') return st.until<=NOW; return false; }).sort((p,q)=>p.rank-q.rank);
+}
+
+function hoyDone(){ // lo que hizo el sistema solo
+  const act=CLIENTS.filter(b=>isActiveBrand(b));
+  const fresh=act.filter(b=>DATA[b].ok!==false && DATA[b].upd===TODAY), stale=act.filter(b=>!(DATA[b].ok!==false && DATA[b].upd===TODAY));
+  const wait=act.map(b=>{ const mv=movesOf(b)[0]; return (mv&&daysBetween(mv.date,NOW)<REVIEW_DAYS)?{b,mv}:null; }).filter(Boolean);
+  return {fresh,stale,wait};
+}
+
+function renderHoy(){
+  const el=document.getElementById('body-hoy'); if(!el) return;
+  const all=hoyItems(); const show=all.slice(0,5), more=all.slice(5);
+  const S=hoyDone(); const log=hoyLog().filter(e=>e.day===NOW);
+  const h=new Date().getHours(); const hi=h<13?'Buen día':(h<20?'Buenas tardes':'Buenas noches');
+  const card=(it,i)=>`<div class="hoyc ${it.sev}" data-id="${esc(it.id)}">
+      <div class="hoyh"><span class="tag ${it.sev==='bad'?'bad':'warn'}">${esc(it.when)}</span><span class="muted" style="font-size:12px">${esc(it.cli)}</span></div>
+      <div class="hoyt">${esc(plain(it.t))}</div>
+      <div class="hoyd">${esc(it.d)}</div>
+      ${it.todo?`<div class="hoyd"><b>Qué hacer:</b> ${esc(it.todo)}</div>`:''}
+      ${it.extra&&it.extra.length?`<div class="muted" style="font-size:12.5px;margin-top:4px">También: ${it.extra.map(t=>esc(plain(t))).join(' · ')}</div>`:''}
+      ${it.draft?`<div class="hoydraft"><div class="eyebrow">Ya lo preparé · ${esc(it.draftLbl)}</div><textarea data-draft rows="7">${esc(lsGet(HOY_K+'txt_'+it.id)||it.draft)}</textarea></div>`:''}
+      <div class="hoyb">
+        ${it.draft?`<button class="btn" data-act="ok">Aprobar y copiar</button><button class="btn ghost" data-act="wa">Abrir en WhatsApp</button>`:`<button class="btn" data-act="ok">Hecho</button>`}
+        <button class="btn ghost" data-act="snooze">Mañana</button>
+        <button class="btn ghost" data-act="skip">Descartar</button>
+        ${DATA[it.b]?`<a href="#" data-ana="${esc(it.b)}" style="font-size:12.5px;margin-left:auto">Ver análisis →</a>`:''}
+      </div></div>`;
+  el.innerHTML=`<div class="v3">
+    <div class="eyebrow" style="margin-top:18px">Brief de la mañana · ${fmtWd(NOW)}</div>
+    <h2>${hi}. ${all.length?`Hoy <span class="hl">${all.length===1?'una cosa te necesita':all.length+' cosas te necesitan'}</span>.`:`Hoy <span class="hl">nada te necesita</span>.`}</h2>
+    <p class="sub">${all.length?'Cada tarjeta trae la acción ya preparada. Nada sale sin tu OK: revisá el texto, aprobalo y se copia para mandarlo.':'Las cuentas están dentro de lo esperado. El hub sigue mirando y te avisa acá si algo cruza un gatillo.'}</p>
+    ${show.length?`<h3>Necesita tu OK</h3><div class="hoyg">${show.map(card).join('')}</div>`:''}
+    ${more.length?`<details style="margin-top:10px"><summary>${more.length} más, menos urgentes</summary><div class="hoyg" style="margin-top:8px">${more.map(card).join('')}</div></details>`:''}
+    <h3>Lo que hice solo</h3>
+    <div class="lcard" style="margin-top:8px"><ul class="hoyl">
+      <li><span class="sem good"></span>Traje los datos de Meta a las 8:00 de <b>${S.fresh.length} cuenta${S.fresh.length===1?'':'s'}</b> (hasta el ${CLOSED?fmtWd(CLOSED):'—'}) y regeneré análisis, seguimiento y reportes.</li>
+      ${S.stale.map(b=>`<li><span class="sem warn"></span><b>${esc(DATA[b].name)}</b>: no pude actualizar hoy (último dato ${DATA[b].upd?fmtDM(DATA[b].upd):'—'}). Revisar el acceso a la cuenta.</li>`).join('')}
+      ${S.wait.map(w=>`<li><span class="sem"></span><b>${esc(DATA[w.b].name)}</b>: hubo cambios el ${fmtWd(w.mv.date)}. Los vigilo sin tocar hasta el ${fmtWd(addDays(w.mv.date,REVIEW_DAYS))}.</li>`).join('')}
+      ${log.map(e=>`<li><span class="sem good"></span>${e.a==='ok'?'Aprobaste':e.a==='snooze'?'Pospusiste para mañana':'Descartaste'}: ${esc(e.t)}</li>`).join('')}
+    </ul></div>
+    <p class="muted" style="font-size:12px;margin-top:10px">Gatillos de aviso: ROAS −25% · costo por resultado +30% · 3 días sin ventas con gasto normal · propuestas sin respuesta · mes gratis por vencer. Lo que aprobás o posponés queda guardado en este navegador.</p>
+  </div>`;
+  el.querySelectorAll('.hoyc').forEach(c=>{ const id=c.dataset.id; const it=all.find(i=>i.id===id); const ta=c.querySelector('[data-draft]');
+    if(ta) ta.addEventListener('input',()=>lsSet(HOY_K+'txt_'+id,ta.value));
+    c.querySelectorAll('[data-act]').forEach(bt=>bt.addEventListener('click',()=>{ const a=bt.dataset.act; const txt=ta?ta.value:'';
+      if(a==='wa'){ window.open('https://wa.me/?text='+encodeURIComponent(txt),'_blank','noopener'); return; }
+      if(a==='ok' && txt){ (navigator.clipboard?navigator.clipboard.writeText(txt):Promise.reject()).then(()=>toast('Copiado: pegalo en el chat del cliente')).catch(()=>prompt('Copiá el texto:',txt)); }
+      hoySet(id, a==='snooze'?{s:'snooze',until:addDays(NOW,1)}:{s:a,day:NOW});
+      hoyPush({day:NOW,a,t:plain(it.t)}); renderHoy(); })); });
+  el.querySelectorAll('[data-ana]').forEach(a=>a.addEventListener('click',e=>{e.preventDefault();goTo('analisis',a.dataset.ana);}));
+  // contador en la pestaña
+  const tb=document.querySelector('.tab[data-tab="hoy"] span'); if(tb) tb.innerHTML='Hoy'+(all.length?` <b class="hoyn">${all.length}</b>`:'');
+}
+
+/* =====================================================================
    INIT (reemplaza el init del script principal)
    ===================================================================== */
 (function init(){
@@ -834,6 +968,7 @@ function captacionHTML(X){
   syncRangeBars();
   renderSeg();
   renderAgencia();
+  renderHoy();
   window.COMMENTS=window.COMMENTS||{};
   document.querySelectorAll(".tab").forEach(t=>t.addEventListener("click",()=>{
     document.querySelectorAll(".tab").forEach(x=>x.setAttribute("aria-selected","false"));
