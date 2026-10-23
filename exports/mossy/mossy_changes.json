@@ -1,5 +1,377 @@
 [
  {
+  "date": "2026-10-22",
+  "cat": "estado",
+  "text": "Estado de la campaña actualizado · Mossy_AlwaysOn_Conversiones_Dinámicos (Procesamiento pendiente → Activa)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-22",
+  "cat": "presupuesto",
+  "text": "Presupuesto de la campaña actualizado · Mossy_AlwaysOn_Conversiones_Dinámicos (60.000 → 50.000 ARS/día)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-22",
+  "cat": "estado",
+  "text": "Estado de la campaña actualizado · Mossy_AlwaysOn_Conversiones_Dinámicos (Activa → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-22",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Stack - Brava Mix&Match 04 - Copia (Revisión pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-22",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Stack - Brava Catalogo Moldería Cuerpos 09 - Copia (Revisión pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-22",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Stack - Brava Catalogo Moldería Cuerpos 09 - Copia (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-22",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado cuando se completa su revisión · Stack - Brava Catalogo Moldería Cuerpos 09 - Copia (Inactivo → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-22",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Stack - Brava Catalogo Moldería Cuerpos 09 - Copia (Revisión pendiente → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-22",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Stack - Brava Mix&Match 04 - Copia (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-22",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Stack - Brava Lifestyle 05 - Copia (Revisión pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-22",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Stack - Brava Detalle 07 - Copia (Revisión pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-22",
+  "cat": "creativo",
+  "text": "Anuncio creado · Stack - Brava Catalogo Moldería Cuerpos 09 - Copia",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-22",
+  "cat": "creativo",
+  "text": "Anuncio creado · Stack - Brava Mix&Match 04 - Copia",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-22",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Stack - Brava UGC 06 - Copia (Revisión pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-22",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Stack - Brava UGC 06 - Copia (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-22",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Stack - Brava Detalle 07 - Copia (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-22",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Stack - Brava Lifestyle 05 - Copia (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-22",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Ad6 - Secuencia - Nueva coleccion 2026 - Copia 2 (Revisión pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-22",
+  "cat": "creativo",
+  "text": "Anuncio creado · Stack - Brava Detalle 07 - Copia",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-22",
+  "cat": "creativo",
+  "text": "Anuncio creado · Stack - Brava UGC 06 - Copia",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-22",
+  "cat": "creativo",
+  "text": "Anuncio creado · Stack - Brava Lifestyle 05 - Copia",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-22",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Ad6 - Secuencia - Nueva coleccion 2026 - Copia 2 (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-22",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Ad6 - Secuencia - Nueva coleccion 2026 - Copia 2 (Activo → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-22",
+  "cat": "creativo",
+  "text": "Anuncio actualizado · Ad6 - Secuencia - Nueva coleccion 2026 - Copia 2",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-22",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado cuando se completa su revisión · Ad6 - Secuencia - Nueva coleccion 2026 - Copia 2 (Inactivo → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-22",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Ad6 - Secuencia - Nueva coleccion 2026 - Copia 2 (Actualización necesaria → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-22",
+  "cat": "estado",
+  "text": "Estado de la cuenta actualizado · Mossy - cuenta publicitaria (En período de gracia → Activa)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-22",
+  "cat": "estado",
+  "text": "Estado de la cuenta actualizado · Mossy - cuenta publicitaria (Activa → En período de gracia)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-22",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Ad10 - Catalogo AlwaysOn - Brava Mix&Match - Copia (Revisión pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-22",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Stack - Brava Catalogo Menos Unidades 08 (Procesamiento pendiente → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-22",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Stack - Brava Catalogo Moldería Cuerpos 09 (Procesamiento pendiente → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-22",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado cuando se completa su revisión · Stack - Brava Catalogo Menos Unidades 08 (Activo → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-22",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado cuando se completa su revisión · Stack - Brava Catalogo Moldería Cuerpos 09 (Activo → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-22",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Stack - Brava Catalogo Menos Unidades 08 (Activo → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-22",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Stack - Brava Catalogo Moldería Cuerpos 09 (Activo → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-22",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Ad10 - Catalogo AlwaysOn - Brava Mix&Match - Copia (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-22",
+  "cat": "estado",
+  "text": "Estado de la campaña actualizado · Mar26 - Ventas - A+ - Retargeting (Inactiva → Activa)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-22",
+  "cat": "creativo",
+  "text": "Anuncio creado · Ad10 - Catalogo AlwaysOn - Brava Mix&Match - Copia",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-22",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Ad6 - Secuencia - Nueva coleccion 2026 - Copia 2 (Procesamiento pendiente → Actualización necesaria)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-22",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Ad6 - Secuencia - Nueva coleccion 2026 - Copia 3 (Procesamiento pendiente → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-22",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Ad6 - Secuencia - Nueva coleccion 2026 - Copia 4 (Procesamiento pendiente → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-22",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Ad6 - Secuencia - Nueva coleccion 202666 - Copia 3 (Procesamiento pendiente → Actualización necesaria)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-22",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Ad6 - Video - Sale - Copia 2 (Procesamiento pendiente → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-22",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado cuando se completa su revisión · Ad6 - Secuencia - Nueva coleccion 2026 - Copia 2 (Activo → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-22",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado cuando se completa su revisión · Ad6 - Secuencia - Nueva coleccion 2026 - Copia 3 (Activo → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-22",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado cuando se completa su revisión · Ad6 - Video - Sale - Copia 2 (Activo → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-22",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado cuando se completa su revisión · Ad6 - Secuencia - Nueva coleccion 2026 - Copia 4 (Activo → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-22",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado cuando se completa su revisión · Ad6 - Secuencia - Nueva coleccion 202666 - Copia 3 (Activo → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-22",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Ad6 - Video - Sale - Copia 2 (Activo → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-22",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Ad6 - Secuencia - Nueva coleccion 2026 - Copia 3 (Activo → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-22",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Ad6 - Secuencia - Nueva coleccion 2026 - Copia 4 (Activo → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-22",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Ad6 - Secuencia - Nueva coleccion 202666 - Copia 3 (Activo → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-22",
+  "cat": "creativo",
+  "text": "Se reactivó «Ad6 - Secuencia - Nueva coleccion 2026 - Copia 2»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-10-22",
+  "cat": "creativo",
+  "text": "Se encendió/lanzó «Ad10 - Catalogo AlwaysOn - Brava Mix&Match - Copia»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-10-22",
+  "cat": "creativo",
+  "text": "Se encendió/lanzó «Stack - Brava Detalle 07 - Copia»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-10-22",
+  "cat": "creativo",
+  "text": "Se encendió/lanzó «Stack - Brava UGC 06 - Copia»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-10-22",
+  "cat": "creativo",
+  "text": "Se encendió/lanzó «Stack - Brava Lifestyle 05 - Copia»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-10-22",
+  "cat": "creativo",
+  "text": "Se encendió/lanzó «Stack - Brava Catalogo Moldería Cuerpos 09 - Copia»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-10-22",
+  "cat": "creativo",
+  "text": "Se encendió/lanzó «Stack - Brava Mix&Match 04 - Copia»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-10-21",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Stack - Brava Catalogo Moldería Cuerpos 09 (Revisión pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-21",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Stack - Brava Catalogo Menos Unidades 08 (Revisión pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-21",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Ad10 - Catalogo AlwaysOn - Brava Mix&Match (Revisión pendiente → Activo)",
+  "src": "meta"
+ },
+ {
   "date": "2026-10-20",
   "cat": "estado",
   "text": "Estado del anuncio actualizado · Stack - Brava Catalogo Moldería Cuerpos 09 (Revisión pendiente → Activo)",
@@ -346,377 +718,5 @@
   "cat": "estado",
   "text": "Estado del anuncio actualizado · Dia de la Madre - Super Sale - Summer Feeling - AlwaysOn (Procesamiento pendiente → Inactivo)",
   "src": "meta"
- },
- {
-  "date": "2026-10-20",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · Dia de la Madre - Super Sale - Todo para Mama - AlwaysOn (Activo → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-20",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Dia de la Madre - Super Sale - Todo para Mama - AlwaysOn (Activo → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-20",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Dia de la Madre - Super Sale - Summer Feeling - AlwaysOn Stack (Procesamiento pendiente → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-20",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · Dia de la Madre - Super Sale - Summer Feeling - AlwaysOn (Activo → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-20",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Dia de la Madre - Super Sale - Summer Feeling - AlwaysOn (Activo → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-20",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · Dia de la Madre - Super Sale - Summer Feeling - AlwaysOn Stack (Activo → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-20",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Dia de la Madre - Super Sale - Summer Feeling - AlwaysOn Stack (Activo → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-20",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Dia de la Madre - Super Sale - Summer Feeling (Procesamiento pendiente → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-20",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Dia de la Madre - Super Sale - Todo para Mama (Procesamiento pendiente → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-20",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · Dia de la Madre - Super Sale - Summer Feeling (Activo → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-20",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Dia de la Madre - Super Sale - Summer Feeling (Activo → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-20",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Dia de la Madre - Super Sale - Todo para Mama - AlwaysOn Stack (Procesamiento pendiente → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-20",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · Dia de la Madre - Super Sale - Todo para Mama (Activo → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-20",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Dia de la Madre - Super Sale - Todo para Mama (Activo → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-20",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · Dia de la Madre - Super Sale - Todo para Mama - AlwaysOn Stack (Activo → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-20",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Dia de la Madre - Super Sale - Todo para Mama - AlwaysOn Stack (Activo → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-20",
-  "cat": "estado",
-  "text": "Estado de la cuenta actualizado · Mossy - cuenta publicitaria (Activa → En período de gracia)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-20",
-  "cat": "creativo",
-  "text": "Se reactivó «Secuencia imagenes 1 - Minimal SS25»",
-  "src": "auto"
- },
- {
-  "date": "2026-10-20",
-  "cat": "creativo",
-  "text": "Se encendió/lanzó «Stack - Brava Mix&Match 04»",
-  "src": "auto"
- },
- {
-  "date": "2026-10-20",
-  "cat": "creativo",
-  "text": "Se encendió/lanzó «Stack - Brava Lifestyle 05»",
-  "src": "auto"
- },
- {
-  "date": "2026-10-20",
-  "cat": "creativo",
-  "text": "Se encendió/lanzó «Stack - Brava UGC 06»",
-  "src": "auto"
- },
- {
-  "date": "2026-10-20",
-  "cat": "creativo",
-  "text": "Se encendió/lanzó «Stack - Brava Detalle 07»",
-  "src": "auto"
- },
- {
-  "date": "2026-10-20",
-  "cat": "creativo",
-  "text": "Se encendió/lanzó «Ad10 - Catalogo AlwaysOn - temp anteriores»",
-  "src": "auto"
- },
- {
-  "date": "2026-10-20",
-  "cat": "creativo",
-  "text": "Se encendió/lanzó «Stack - Brava Catalogo Menos Unidades 08»",
-  "src": "auto"
- },
- {
-  "date": "2026-10-20",
-  "cat": "creativo",
-  "text": "Se encendió/lanzó «Stack - Brava Catalogo Moldería Cuerpos 09»",
-  "src": "auto"
- },
- {
-  "date": "2026-10-19",
-  "cat": "creativo",
-  "text": "Se apagó «Ad6 - Secuencia - Nueva coleccion 202666 - Copia 2»",
-  "src": "auto"
- },
- {
-  "date": "2026-10-18",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Dia de la Madre - Super Sale - Summer Feeling - AlwaysOn (Procesamiento pendiente → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-18",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Dia de la Madre - Super Sale - Todo para Mama - AlwaysOn (Procesamiento pendiente → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-18",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · Dia de la Madre - Super Sale - Summer Feeling - AlwaysOn (Inactivo → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-18",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Dia de la Madre - Super Sale - Summer Feeling - AlwaysOn (Inactivo → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-18",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · Dia de la Madre - Super Sale - Todo para Mama - AlwaysOn (Inactivo → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-18",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Dia de la Madre - Super Sale - Todo para Mama - AlwaysOn (Inactivo → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-18",
-  "cat": "estado",
-  "text": "Estado del conjunto de anuncios actualizado · Sin intereses (Inactivo → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-18",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Stack - Nuevo 2026 03 (Revisión pendiente → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-18",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Stack - Nuevo 2026 03 (Procesamiento pendiente → Revisión pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-18",
-  "cat": "creativo",
-  "text": "Anuncio creado · Stack - Nuevo 2026 03",
-  "src": "meta"
- },
- {
-  "date": "2026-10-18",
-  "cat": "creativo",
-  "text": "Se pausó «Secuencia imagenes 1 - Minimal SS25»",
-  "src": "auto"
- },
- {
-  "date": "2026-10-18",
-  "cat": "creativo",
-  "text": "Se encendió/lanzó «Dia de la Madre - Super Sale - Todo para Mama - AlwaysOn»",
-  "src": "auto"
- },
- {
-  "date": "2026-10-18",
-  "cat": "creativo",
-  "text": "Se encendió/lanzó «Dia de la Madre - Super Sale - Summer Feeling - AlwaysOn»",
-  "src": "auto"
- },
- {
-  "date": "2026-10-18",
-  "cat": "creativo",
-  "text": "Se encendió/lanzó «Stack - Nuevo 2026 03»",
-  "src": "auto"
- },
- {
-  "date": "2026-10-17",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Stack - Nuevo 2026 02 (Revisión pendiente → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-17",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Stack - Nuevo 2026 01 (Revisión pendiente → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-17",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Stack - Nuevo 2026 02 (Procesamiento pendiente → Revisión pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-17",
-  "cat": "creativo",
-  "text": "Anuncio creado · Stack - Nuevo 2026 02",
-  "src": "meta"
- },
- {
-  "date": "2026-10-17",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Stack - Nuevo 2026 01 (Procesamiento pendiente → Revisión pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-17",
-  "cat": "creativo",
-  "text": "Anuncio creado · Stack - Nuevo 2026 01",
-  "src": "meta"
- },
- {
-  "date": "2026-10-17",
-  "cat": "estado",
-  "text": "Estado de la campaña actualizado · Mar26 - Ventas - A+ - Catalogo - Frio (Activa → Inactiva)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-17",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Dia de la Madre - Super Sale - Todo para Mama - AlwaysOn Stack (Revisión pendiente → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-17",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Dia de la Madre - Super Sale - Summer Feeling - AlwaysOn Stack (Revisión pendiente → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-17",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Dia de la Madre - Super Sale - Summer Feeling - AlwaysOn (Procesamiento pendiente → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-17",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Dia de la Madre - Super Sale - Todo para Mama - AlwaysOn (Procesamiento pendiente → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-17",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Dia de la Madre - Super Sale - Summer Feeling - AlwaysOn Stack (Procesamiento pendiente → Revisión pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-17",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Dia de la Madre - Super Sale - Todo para Mama - AlwaysOn Stack (Procesamiento pendiente → Revisión pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-17",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · Dia de la Madre - Super Sale - Summer Feeling - AlwaysOn (Activo → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-17",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Dia de la Madre - Super Sale - Summer Feeling - AlwaysOn (Activo → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-17",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · Dia de la Madre - Super Sale - Todo para Mama - AlwaysOn (Activo → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-17",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Dia de la Madre - Super Sale - Todo para Mama - AlwaysOn (Activo → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-17",
-  "cat": "creativo",
-  "text": "Anuncio creado · Dia de la Madre - Super Sale - Todo para Mama - AlwaysOn Stack",
-  "src": "meta"
- },
- {
-  "date": "2026-10-17",
-  "cat": "creativo",
-  "text": "Anuncio creado · Dia de la Madre - Super Sale - Summer Feeling - AlwaysOn Stack",
-  "src": "meta"
- },
- {
-  "date": "2026-10-17",
-  "cat": "creativo",
-  "text": "Se apagó «Ad6 - Secuencia - Nueva coleccion 202666 - Copia 6»",
-  "src": "auto"
- },
- {
-  "date": "2026-10-17",
-  "cat": "creativo",
-  "text": "Se reactivó «Ad6 - Secuencia - Nueva coleccion 2026 - Copia»",
-  "src": "auto"
- },
- {
-  "date": "2026-10-17",
-  "cat": "creativo",
-  "text": "Se apagó «Dia de la Madre - Super Sale - Summer Feeling»",
-  "src": "auto"
  }
 ]

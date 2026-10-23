@@ -1,5 +1,11 @@
 [
  {
+  "date": "2026-10-22",
+  "cat": "segmentacion",
+  "text": "Público personalizado creado · asa_auto_custom_audience",
+  "src": "meta"
+ },
+ {
   "date": "2026-10-20",
   "cat": "estado",
   "text": "Estado del anuncio actualizado · Ad_Video_1 (Revisión pendiente → Activo)",
@@ -32,7 +38,7 @@
  {
   "date": "2026-10-20",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · Ad_Video_2 (Procesamiento pendiente → Revisión pendiente)",
+  "text": "Estado del anuncio actualizado · Ad_Video_3 (Procesamiento pendiente → Revisión pendiente)",
   "src": "meta"
  },
  {
@@ -44,7 +50,7 @@
  {
   "date": "2026-10-20",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · Ad_Video_3 (Procesamiento pendiente → Revisión pendiente)",
+  "text": "Estado del anuncio actualizado · Ad_Video_2 (Procesamiento pendiente → Revisión pendiente)",
   "src": "meta"
  },
  {

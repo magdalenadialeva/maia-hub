@@ -1,5 +1,23 @@
 [
  {
+  "date": "2026-10-22",
+  "cat": "segmentacion",
+  "text": "Público personalizado creado · asa_auto_custom_audience",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-22",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Conjunto Toulouse (Revisión pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-22",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Conjunto Lugano - Copy (Revisión pendiente → Inactivo)",
+  "src": "meta"
+ },
+ {
   "date": "2026-10-21",
   "cat": "estado",
   "text": "Estado del anuncio actualizado · 10% Off Toulouse (Revisión pendiente → Inactivo)",
@@ -74,13 +92,13 @@
  {
   "date": "2026-10-21",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · Conjunto Toulouse (Procesamiento pendiente → Revisión pendiente)",
+  "text": "Estado del anuncio actualizado · ¿Conjunto o vestido? (Procesamiento pendiente → Revisión pendiente)",
   "src": "meta"
  },
  {
   "date": "2026-10-21",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · ¿Conjunto o vestido? (Procesamiento pendiente → Revisión pendiente)",
+  "text": "Estado del anuncio actualizado · Conjunto Toulouse (Procesamiento pendiente → Revisión pendiente)",
   "src": "meta"
  },
  {
@@ -602,7 +620,7 @@
  {
   "date": "2026-10-13",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · 10% Off Lugano (Procesamiento pendiente → Revisión pendiente)",
+  "text": "Estado del anuncio actualizado · Conjunto Toulouse (Procesamiento pendiente → Revisión pendiente)",
   "src": "meta"
  },
  {
@@ -614,25 +632,13 @@
  {
   "date": "2026-10-13",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · Conjunto Toulouse (Procesamiento pendiente → Revisión pendiente)",
+  "text": "Estado del anuncio actualizado · 10% Off Lugano (Procesamiento pendiente → Revisión pendiente)",
   "src": "meta"
  },
  {
   "date": "2026-10-13",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · Conjunto Lugano (Procesamiento pendiente → Revisión pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-13",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · PRE-SALE · 20.08 (Procesamiento pendiente → Revisión pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-13",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Conjunto Lugano - Copy (Procesamiento pendiente → Revisión pendiente)",
+  "text": "Estado del anuncio actualizado · ¿Conjunto o vestido? (Procesamiento pendiente → Revisión pendiente)",
   "src": "meta"
  },
  {
@@ -644,7 +650,19 @@
  {
   "date": "2026-10-13",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · ¿Conjunto o vestido? (Procesamiento pendiente → Revisión pendiente)",
+  "text": "Estado del anuncio actualizado · Conjunto Lugano - Copy (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-13",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · PRE-SALE · 20.08 (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-13",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Conjunto Lugano (Procesamiento pendiente → Revisión pendiente)",
   "src": "meta"
  },
  {
@@ -699,24 +717,6 @@
   "date": "2026-10-11",
   "cat": "presupuesto",
   "text": "Presupuesto del conjunto de anuncios actualizado · Basyco Jerez_Conversiones_Purchase_SEP2026_Interese+Adv+ (20.000 → 25.000 ARS/día)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-11",
-  "cat": "creativo",
-  "text": "Se reactivó «¿Conjunto o vestido?»",
-  "src": "auto"
- },
- {
-  "date": "2026-10-09",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · 10% Off Toulouse (Revisión pendiente → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-09",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · 10% Off Toulouse (Procesamiento pendiente → Revisión pendiente)",
   "src": "meta"
  }
 ]
