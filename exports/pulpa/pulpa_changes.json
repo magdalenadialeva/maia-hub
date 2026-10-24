@@ -1,5 +1,95 @@
 [
  {
+  "date": "2026-10-23",
+  "cat": "estado",
+  "text": "Estado de la cuenta actualizado · Pulpa Cuenta publicitaria (Activa → Pago necesario)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-23",
+  "cat": "estado",
+  "text": "Estado de la campaña actualizado · Post: \"Step into comfort and support with our Wireless...\" (Procesamiento pendiente → Activa)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-23",
+  "cat": "presupuesto",
+  "text": "Presupuesto de la campaña actualizado · Post: \"Step into comfort and support with our Wireless...\" (1.600 → 4.000.000 ARS/día)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-23",
+  "cat": "estado",
+  "text": "Estado de la campaña actualizado · Post: \"Step into comfort and support with our Wireless...\" (Activa → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-23",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Post: \"Step into comfort and support with our Wireless...\" (Revisión pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-23",
+  "cat": "segmentacion",
+  "text": "Público personalizado creado · Pixel Audience: Purchase Event  30 Days - 1637862274025579 - System Generated",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-23",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Post: \"Step into comfort and support with our Wireless...\" (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-23",
+  "cat": "estado",
+  "text": "Estado del conjunto de anuncios actualizado · Post: \"Step into comfort and support with our Wireless...\" (Procesamiento pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-23",
+  "cat": "creativo",
+  "text": "Anuncio creado · Post: \"Step into comfort and support with our Wireless...\"",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-23",
+  "cat": "otros",
+  "text": "Segmentación del conjunto de anuncios actualizada · Post: \"Step into comfort and support with our Wireless...\"",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-23",
+  "cat": "objetivo",
+  "text": "Ad set performance goal updated · Post: \"Step into comfort and support with our Wireless...\"",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-23",
+  "cat": "presupuesto",
+  "text": "Estrategia de puja del conjunto de anuncios actualizada · Post: \"Step into comfort and support with our Wireless...\"",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-23",
+  "cat": "creativo",
+  "text": "Conjunto de anuncios creado · Post: \"Step into comfort and support with our Wireless...\"",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-23",
+  "cat": "creativo",
+  "text": "Se encendió/lanzó «Post: \"Step into comfort and support with our Wireless...\"»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-10-21",
+  "cat": "creativo",
+  "text": "Se apagó «Ad_6 - Copia»",
+  "src": "auto"
+ },
+ {
   "date": "2026-10-20",
   "cat": "estado",
   "text": "Estado del anuncio actualizado · Ad_6 - Copia (Revisión pendiente → Activo)",
@@ -553,14 +643,14 @@
  },
  {
   "date": "2026-09-13",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Ad_3 (Revisión pendiente → Activo)",
+  "cat": "creativo",
+  "text": "Anuncio creado · Ad_5",
   "src": "meta"
  },
  {
   "date": "2026-09-13",
-  "cat": "creativo",
-  "text": "Anuncio creado · Ad_5",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Ad_3 (Revisión pendiente → Activo)",
   "src": "meta"
  },
  {
@@ -628,95 +718,5 @@
   "cat": "estado",
   "text": "Estado del conjunto de anuncios actualizado · Pulpa Verde_Conversiones_Org_Mensajes_2026_Adv+ (Procesamiento pendiente → Activo)",
   "src": "meta"
- },
- {
-  "date": "2026-09-13",
-  "cat": "creativo",
-  "text": "Anuncio creado · Ad_1",
-  "src": "meta"
- },
- {
-  "date": "2026-09-13",
-  "cat": "otros",
-  "text": "Segmentación del conjunto de anuncios actualizada · Pulpa Verde_Conversiones_Org_Mensajes_2026_Adv+",
-  "src": "meta"
- },
- {
-  "date": "2026-09-13",
-  "cat": "objetivo",
-  "text": "Ad set performance goal updated · Pulpa Verde_Conversiones_Org_Mensajes_2026_Adv+",
-  "src": "meta"
- },
- {
-  "date": "2026-09-13",
-  "cat": "presupuesto",
-  "text": "Estrategia de puja del conjunto de anuncios actualizada · Pulpa Verde_Conversiones_Org_Mensajes_2026_Adv+",
-  "src": "meta"
- },
- {
-  "date": "2026-09-13",
-  "cat": "creativo",
-  "text": "Conjunto de anuncios creado · Pulpa Verde_Conversiones_Org_Mensajes_2026_Adv+",
-  "src": "meta"
- },
- {
-  "date": "2026-09-13",
-  "cat": "creativo",
-  "text": "Se encendió/lanzó «Ad_1»",
-  "src": "auto"
- },
- {
-  "date": "2026-09-13",
-  "cat": "creativo",
-  "text": "Se encendió/lanzó «Ad_2»",
-  "src": "auto"
- },
- {
-  "date": "2026-09-13",
-  "cat": "creativo",
-  "text": "Se encendió/lanzó «Ad_3»",
-  "src": "auto"
- },
- {
-  "date": "2026-09-13",
-  "cat": "creativo",
-  "text": "Se encendió/lanzó «Ad_4»",
-  "src": "auto"
- },
- {
-  "date": "2026-09-13",
-  "cat": "creativo",
-  "text": "Se encendió/lanzó «Ad_5»",
-  "src": "auto"
- },
- {
-  "date": "2026-09-13",
-  "cat": "creativo",
-  "text": "Se encendió/lanzó «Ad_6»",
-  "src": "auto"
- },
- {
-  "date": "2026-09-12",
-  "cat": "estado",
-  "text": "Estado de la campaña actualizado · Pulpa Verde_Conversiones_Purchase_2026_Adv+ (Activa → Inactiva)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-12",
-  "cat": "creativo",
-  "text": "Se apagó «Ad_Manchas»",
-  "src": "auto"
- },
- {
-  "date": "2026-09-12",
-  "cat": "creativo",
-  "text": "Se apagó «Ad_Toallas»",
-  "src": "auto"
- },
- {
-  "date": "2026-09-12",
-  "cat": "creativo",
-  "text": "Se apagó «Ad_Converse»",
-  "src": "auto"
  }
 ]

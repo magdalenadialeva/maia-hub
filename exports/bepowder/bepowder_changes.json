@@ -1,5 +1,575 @@
 [
  {
+  "date": "2026-10-23",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Publicación de Instagram: ¿Y si el color de lo... (Revisión pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-23",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Publicación de Instagram: ¿Y si el color de lo... (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-23",
+  "cat": "estado",
+  "text": "Estado del conjunto de anuncios actualizado · Publicación de Instagram: ¿Y si el color de lo... (Procesamiento pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-23",
+  "cat": "creativo",
+  "text": "Anuncio creado · Publicación de Instagram: ¿Y si el color de lo...",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-23",
+  "cat": "otros",
+  "text": "Segmentación del conjunto de anuncios actualizada · Publicación de Instagram: ¿Y si el color de lo...",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-23",
+  "cat": "objetivo",
+  "text": "Ad set performance goal updated · Publicación de Instagram: ¿Y si el color de lo...",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-23",
+  "cat": "presupuesto",
+  "text": "Estrategia de puja del conjunto de anuncios actualizada · Publicación de Instagram: ¿Y si el color de lo...",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-23",
+  "cat": "creativo",
+  "text": "Conjunto de anuncios creado · Publicación de Instagram: ¿Y si el color de lo...",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-23",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Publicación: \"😮‍💨😮‍💨😮‍💨😮‍💨😍lo que va a ser noviembre!\" (Revisión pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-23",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Publicación: \"😮‍💨😮‍💨😮‍💨😮‍💨😍lo que va a ser noviembre!\" (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-23",
+  "cat": "estado",
+  "text": "Estado del conjunto de anuncios actualizado · Publicación: \"😮‍💨😮‍💨😮‍💨😮‍💨😍lo que va a ser noviembre!\" (Procesamiento pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-23",
+  "cat": "creativo",
+  "text": "Anuncio creado · Publicación: \"😮‍💨😮‍💨😮‍💨😮‍💨😍lo que va a ser noviembre!\"",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-23",
+  "cat": "otros",
+  "text": "Segmentación del conjunto de anuncios actualizada · Publicación: \"😮‍💨😮‍💨😮‍💨😮‍💨😍lo que va a ser noviembre!\"",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-23",
+  "cat": "objetivo",
+  "text": "Ad set performance goal updated · Publicación: \"😮‍💨😮‍💨😮‍💨😮‍💨😍lo que va a ser noviembre!\"",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-23",
+  "cat": "presupuesto",
+  "text": "Estrategia de puja del conjunto de anuncios actualizada · Publicación: \"😮‍💨😮‍💨😮‍💨😮‍💨😍lo que va a ser noviembre!\"",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-23",
+  "cat": "creativo",
+  "text": "Conjunto de anuncios creado · Publicación: \"😮‍💨😮‍💨😮‍💨😮‍💨😍lo que va a ser noviembre!\"",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-23",
+  "cat": "segmentacion",
+  "text": "Audience segment updated · BE POWDER Cuenta publicitaria",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-23",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · 02-TOFU-AO1-Gif (Revisión pendiente → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-23",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · videos novos 1 (22-10-2025) (Procesamiento pendiente → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-23",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · 04-TOFU-AO2-Video - Copia (Procesamiento pendiente → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-23",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · 06-TOFU-AO2-Carru (Procesamiento pendiente → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-23",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · carrosel novo (20/02/2026) — Cópia — Cópia (Procesamiento pendiente → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-23",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · post novo combo 1 (10/03/2026) (Procesamiento pendiente → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-23",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · videos novos 2 (26-11-2025) (Procesamiento pendiente → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-23",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Mofu - Ventas - Adaptogeno - Img_Extractos — Cópia — Cópia (Procesamiento pendiente → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-23",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado cuando se completa su revisión · 04-TOFU-AO2-Video - Copia (Activo → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-23",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · 02-TOFU-AO1-Gif (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-23",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · 04-TOFU-AO2-Video - Copia (Activo → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-23",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Mofu - Ventas - Antioxidante (Procesamiento pendiente → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-23",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado cuando se completa su revisión · 06-TOFU-AO2-Carru (Activo → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-23",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · 06-TOFU-AO2-Carru (Activo → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-23",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado cuando se completa su revisión · carrosel novo (20/02/2026) — Cópia — Cópia (Activo → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-23",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · carrosel novo (20/02/2026) — Cópia — Cópia (Activo → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-23",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · 04-TOFU-AO2-Video (Procesamiento pendiente → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-23",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · 10-TOFU-AO4-Video (Procesamiento pendiente → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-23",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado cuando se completa su revisión · videos novos 1 (22-10-2025) (Activo → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-23",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado cuando se completa su revisión · post novo combo 1 (10/03/2026) (Activo → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-23",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado cuando se completa su revisión · videos novos 2 (26-11-2025) (Activo → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-23",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · videos novos 1 (22-10-2025) (Activo → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-23",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · post novo combo 1 (10/03/2026) (Activo → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-23",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · videos novos 2 (26-11-2025) (Activo → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-23",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · 01-TOFU-AO1-Video (Procesamiento pendiente → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-23",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado cuando se completa su revisión · Mofu - Ventas - Adaptogeno - Img_Extractos — Cópia — Cópia (Activo → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-23",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Mofu - Ventas - Adaptogeno - Img_Extractos — Cópia — Cópia (Activo → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-23",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · 11-TOFU-AO4-Gif (Procesamiento pendiente → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-23",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · 12-TOFU-AO4-Carru - Copia (Procesamiento pendiente → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-23",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado cuando se completa su revisión · 02-TOFU-AO1-Gif (Activo → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-23",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · 09-TOFU-AO3-Carrusel (Procesamiento pendiente → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-23",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · 02-TOFU-AO1-Gif (Activo → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-23",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado cuando se completa su revisión · Mofu - Ventas - Antioxidante (Activo → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-23",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Mofu - Ventas - Antioxidante (Activo → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-23",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · 08-TOFU-AO3-Gif (Procesamiento pendiente → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-23",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · 07-TOFU-AO3-Video (Procesamiento pendiente → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-23",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · 13-TOFU-AO5-Carru (Procesamiento pendiente → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-23",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado cuando se completa su revisión · 04-TOFU-AO2-Video (Activo → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-23",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · 12-TOFU-AO4-Carru (Procesamiento pendiente → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-23",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · 04-TOFU-AO2-Video (Activo → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-23",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado cuando se completa su revisión · 10-TOFU-AO4-Video (Activo → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-23",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · 10-TOFU-AO4-Video (Activo → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-23",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · 03-TOFU-AO1-Carru (Procesamiento pendiente → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-23",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · 07-TOFU-AO3-Video - Copia (Procesamiento pendiente → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-23",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado cuando se completa su revisión · 01-TOFU-AO1-Video (Activo → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-23",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · 01-TOFU-AO1-Video (Activo → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-23",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado cuando se completa su revisión · 11-TOFU-AO4-Gif (Activo → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-23",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · 05-TOFU-AO2-GIF (Procesamiento pendiente → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-23",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · 11-TOFU-AO4-Gif (Activo → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-23",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado cuando se completa su revisión · 12-TOFU-AO4-Carru - Copia (Activo → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-23",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · 12-TOFU-AO4-Carru - Copia (Activo → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-23",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · 10-TOFU-AO4-Video - Copia (Procesamiento pendiente → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-23",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · 13-TOFU-AO5-Carru - Copia (Procesamiento pendiente → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-23",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado cuando se completa su revisión · 09-TOFU-AO3-Carrusel (Activo → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-23",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · 09-TOFU-AO3-Carrusel (Activo → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-23",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado cuando se completa su revisión · 08-TOFU-AO3-Gif (Activo → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-23",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado cuando se completa su revisión · 07-TOFU-AO3-Video (Activo → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-23",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · 11-TOFU-AO4-Gif - Copia (Procesamiento pendiente → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-23",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · 08-TOFU-AO3-Gif (Activo → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-23",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · 07-TOFU-AO3-Video (Activo → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-23",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado cuando se completa su revisión · 13-TOFU-AO5-Carru (Activo → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-23",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · 13-TOFU-AO5-Carru (Activo → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-23",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado cuando se completa su revisión · 12-TOFU-AO4-Carru (Activo → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-23",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · 12-TOFU-AO4-Carru (Activo → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-23",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado cuando se completa su revisión · 07-TOFU-AO3-Video - Copia (Activo → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-23",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · 07-TOFU-AO3-Video - Copia (Activo → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-23",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado cuando se completa su revisión · 03-TOFU-AO1-Carru (Activo → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-23",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · 03-TOFU-AO1-Carru (Activo → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-23",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado cuando se completa su revisión · 05-TOFU-AO2-GIF (Activo → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-23",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · 05-TOFU-AO2-GIF (Activo → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-23",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado cuando se completa su revisión · 10-TOFU-AO4-Video - Copia (Activo → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-23",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · 10-TOFU-AO4-Video - Copia (Activo → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-23",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado cuando se completa su revisión · 13-TOFU-AO5-Carru - Copia (Activo → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-23",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · 13-TOFU-AO5-Carru - Copia (Activo → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-23",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado cuando se completa su revisión · 11-TOFU-AO4-Gif - Copia (Activo → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-23",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · 11-TOFU-AO4-Gif - Copia (Activo → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-23",
+  "cat": "creativo",
+  "text": "Se encendió/lanzó «Publicación: \"😮‍💨😮‍💨😮‍💨😮‍💨😍lo que va a ser noviembre!\"»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-10-23",
+  "cat": "creativo",
+  "text": "Se encendió/lanzó «Publicación de Instagram: ¿Y si el color de lo...»",
+  "src": "auto"
+ },
+ {
   "date": "2026-10-21",
   "cat": "segmentacion",
   "text": "Público personalizado actualizado · asa_auto_custom_audience ({\"inclusions\":{\"operator\":\"or\",\"rules\":[{\"event_sources\":[{\"type\":\"page\",\"id\":270295003856920},{\"type\":\"page\",\"id\":603554302850624}],\"retention_seconds\":15552000,\"filter\":{\"operator\":\"or\",\"filters\":[{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_bottom_sheet_copy_click_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_footer_copy_code_click_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_footer_autofill_code_attempt_info\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_email_submission_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_footer_see_offer_button_click_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_footer_click_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_bottom_sheet_see_details_link_click_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_email_footer_sign_up_button_click_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_tc_footer_bottom_sheet_click_success\"}]},\"aggregation\":{\"type\":\"count\",\"method\":\"absolute\",\"operator\":\">\",\"value\":0}}]}} → {\"inclusions\":{\"operator\":\"or\",\"rules\":[{\"event_sources\":[{\"type\":\"page\",\"id\":270295003856920},{\"type\":\"page\",\"id\":603554302850624}],\"retention_seconds\":15552000,\"filter\":{\"operator\":\"or\",\"filters\":[{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_bottom_sheet_copy_click_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_footer_copy_code_click_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_footer_autofill_code_attempt_info\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_email_submission_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_footer_see_offer_button_click_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_footer_click_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_bottom_sheet_see_details_link_click_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_email_footer_sign_up_button_click_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_tc_footer_bottom_sheet_click_success\"}]},\"aggregation\":{\"type\":\"count\",\"method\":\"absolute\",\"operator\":\">\",\"value\":0}},{\"event_sources\":[{\"type\":\"ig_business\",\"id\":17841400308766850},{\"type\":\"ig_business\",\"id\":17841467472200443}],\"retention_seconds\":15552000,\"filter\":{\"operator\":\"or\",\"filters\":[{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"bloks_bottom_sheet_copy_click\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"bloks_footer_copy_click\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"autofill_code_attempt_info\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"email_capture_sign_up_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"bloks_email_sign_up_click\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"bloks_footer_click\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"bloks_see_details_click\"}]},\"aggregation\":{\"type\":\"count\",\"method\":\"absolute\",\"operator\":\">\",\"value\":0}}]}})",
@@ -26,7 +596,7 @@
  {
   "date": "2026-10-21",
   "cat": "segmentacion",
-  "text": "Público personalizado actualizado · asa_auto_custom_audience ({\"inclusions\":{\"operator\":\"or\",\"rules\":[{\"event_sources\":[{\"type\":\"page\",\"id\":270295003856920},{\"type\":\"page\",\"id\":603554302850624}],\"retention_seconds\":15552000,\"filter\":{\"operator\":\"or\",\"filters\":[{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_footer_copy_code_click_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_footer_autofill_code_attempt_info\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_email_submission_success\"}]},\"aggregation\":{\"type\":\"count\",\"method\":\"absolute\",\"operator\":\">\",\"value\":0}}]}} → {\"inclusions\":{\"operator\":\"or\",\"rules\":[{\"event_sources\":[{\"type\":\"page\",\"id\":270295003856920},{\"type\":\"page\",\"id\":603554302850624}],\"retention_seconds\":15552000,\"filter\":{\"operator\":\"or\",\"filters\":[{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_bottom_sheet_copy_click_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_footer_copy_code_click_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_footer_autofill_code_attempt_info\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_email_submission_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_footer_see_offer_button_click_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_footer_click_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_bottom_sheet_see_details_link_click_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_email_footer_sign_up_button_click_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_tc_footer_bottom_sheet_click_success\"}]},\"aggregation\":{\"type\":\"count\",\"method\":\"absolute\",\"operator\":\">\",\"value\":0}}]}})",
+  "text": "Público personalizado actualizado · asa_auto_custom_audience ({\"inclusions\":{\"operator\":\"or\",\"rules\":[{\"event_sources\":[{\"type\":\"page\",\"id\":270295003856920},{\"type\":\"page\",\"id\":603554302850624}],\"retention_seconds\":15552000,\"filter\":{\"operator\":\"or\",\"filters\":[{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_checkout_page_load_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_checkout_confirmation_page_load_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_checkout_pixel_event\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_purchase_pixel_event\"}]},\"aggregation\":{\"type\":\"count\",\"method\":\"absolute\",\"operator\":\">\",\"value\":0}}]}} → {\"inclusions\":{\"operator\":\"or\",\"rules\":[{\"event_sources\":[{\"type\":\"page\",\"id\":270295003856920},{\"type\":\"page\",\"id\":603554302850624}],\"retention_seconds\":15552000,\"filter\":{\"operator\":\"or\",\"filters\":[{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_checkout_page_load_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_checkout_confirmation_page_load_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_checkout_pixel_event\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_purchase_pixel_event\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_add_to_cart_pixel_event\"}]},\"aggregation\":{\"type\":\"count\",\"method\":\"absolute\",\"operator\":\">\",\"value\":0}}]}})",
   "src": "meta"
  },
  {
@@ -38,7 +608,7 @@
  {
   "date": "2026-10-21",
   "cat": "segmentacion",
-  "text": "Público personalizado actualizado · asa_auto_custom_audience ({\"inclusions\":{\"operator\":\"or\",\"rules\":[{\"event_sources\":[{\"type\":\"page\",\"id\":270295003856920},{\"type\":\"page\",\"id\":603554302850624}],\"retention_seconds\":15552000,\"filter\":{\"operator\":\"or\",\"filters\":[{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_checkout_page_load_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_checkout_confirmation_page_load_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_checkout_pixel_event\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_purchase_pixel_event\"}]},\"aggregation\":{\"type\":\"count\",\"method\":\"absolute\",\"operator\":\">\",\"value\":0}}]}} → {\"inclusions\":{\"operator\":\"or\",\"rules\":[{\"event_sources\":[{\"type\":\"page\",\"id\":270295003856920},{\"type\":\"page\",\"id\":603554302850624}],\"retention_seconds\":15552000,\"filter\":{\"operator\":\"or\",\"filters\":[{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_checkout_page_load_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_checkout_confirmation_page_load_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_checkout_pixel_event\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_purchase_pixel_event\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_add_to_cart_pixel_event\"}]},\"aggregation\":{\"type\":\"count\",\"method\":\"absolute\",\"operator\":\">\",\"value\":0}}]}})",
+  "text": "Público personalizado actualizado · asa_auto_custom_audience ({\"inclusions\":{\"operator\":\"or\",\"rules\":[{\"event_sources\":[{\"type\":\"page\",\"id\":270295003856920},{\"type\":\"page\",\"id\":603554302850624}],\"retention_seconds\":15552000,\"filter\":{\"operator\":\"or\",\"filters\":[{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_footer_copy_code_click_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_footer_autofill_code_attempt_info\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_email_submission_success\"}]},\"aggregation\":{\"type\":\"count\",\"method\":\"absolute\",\"operator\":\">\",\"value\":0}}]}} → {\"inclusions\":{\"operator\":\"or\",\"rules\":[{\"event_sources\":[{\"type\":\"page\",\"id\":270295003856920},{\"type\":\"page\",\"id\":603554302850624}],\"retention_seconds\":15552000,\"filter\":{\"operator\":\"or\",\"filters\":[{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_bottom_sheet_copy_click_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_footer_copy_code_click_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_footer_autofill_code_attempt_info\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_email_submission_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_footer_see_offer_button_click_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_footer_click_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_bottom_sheet_see_details_link_click_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_email_footer_sign_up_button_click_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_tc_footer_bottom_sheet_click_success\"}]},\"aggregation\":{\"type\":\"count\",\"method\":\"absolute\",\"operator\":\">\",\"value\":0}}]}})",
   "src": "meta"
  },
  {
@@ -147,576 +717,6 @@
   "date": "2026-10-08",
   "cat": "segmentacion",
   "text": "Público personalizado creado · ret 90 dias",
-  "src": "meta"
- },
- {
-  "date": "2026-10-08",
-  "cat": "segmentacion",
-  "text": "Público personalizado creado · retargeting 90 dias",
-  "src": "meta"
- },
- {
-  "date": "2026-10-08",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Anuncio Vaso de Leche Cacao Video (Activo → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-08",
-  "cat": "creativo",
-  "text": "Anuncio actualizado · Anuncio Vaso de Leche Cacao Video",
-  "src": "meta"
- },
- {
-  "date": "2026-10-08",
-  "cat": "creativo",
-  "text": "Anuncio creado · Carrusel productos",
-  "src": "meta"
- },
- {
-  "date": "2026-10-08",
-  "cat": "creativo",
-  "text": "Anuncio creado · Anuncio Vaso de Leche Cacao Video",
-  "src": "meta"
- },
- {
-  "date": "2026-10-08",
-  "cat": "creativo",
-  "text": "Se encendió/lanzó «Carrusel productos»",
-  "src": "auto"
- },
- {
-  "date": "2026-10-07",
-  "cat": "segmentacion",
-  "text": "Público personalizado creado · asa_auto_custom_audience",
-  "src": "meta"
- },
- {
-  "date": "2026-10-07",
-  "cat": "estado",
-  "text": "Estado de la campaña actualizado · BePowder_Sep-2026_Conversiones (Inactiva → Activa)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-07",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Anuncio dios de la semana (Revisión pendiente → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-07",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Anuncio dios de la semana (Procesamiento pendiente → Revisión pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-07",
-  "cat": "otros",
-  "text": "Nombre del anuncio actualizado · Anuncio dios de la semana (Test_1 → Anuncio dios de la semana)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-07",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · Anuncio dios de la semana (Inactivo → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-07",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Anuncio dios de la semana (Inactivo → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-07",
-  "cat": "creativo",
-  "text": "Anuncio actualizado · Anuncio dios de la semana",
-  "src": "meta"
- },
- {
-  "date": "2026-10-07",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Anuncio Video pudin + mate día con be powder (Revisión pendiente → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-07",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Anuncio Video pudin + mate día con be powder (Procesamiento pendiente → Revisión pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-07",
-  "cat": "otros",
-  "text": "Nombre del anuncio actualizado · Anuncio Video pudin + mate día con be powder (bePowder cómo nació → Anuncio Video pudin + mate día con be powder)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-07",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Anuncio Video pudin + mate día con be powder (Activo → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-07",
-  "cat": "creativo",
-  "text": "Anuncio actualizado · Anuncio Video pudin + mate día con be powder",
-  "src": "meta"
- },
- {
-  "date": "2026-10-07",
-  "cat": "creativo",
-  "text": "Se reactivó «Anuncio dios de la semana»",
-  "src": "auto"
- },
- {
-  "date": "2026-10-07",
-  "cat": "creativo",
-  "text": "Se encendió/lanzó «Anuncio Vaso de Leche Cacao Video»",
-  "src": "auto"
- },
- {
-  "date": "2026-10-01",
-  "cat": "segmentacion",
-  "text": "Público personalizado creado · asa_auto_custom_audience",
-  "src": "meta"
- },
- {
-  "date": "2026-09-29",
-  "cat": "segmentacion",
-  "text": "Público personalizado creado · asa_auto_custom_audience",
-  "src": "meta"
- },
- {
-  "date": "2026-09-28",
-  "cat": "estado",
-  "text": "Estado de la campaña actualizado · BePowder_Sep-2026_Conversiones (Activa → Inactiva)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-26",
-  "cat": "creativo",
-  "text": "Se pausó «Anuncio dios de la semana»",
-  "src": "auto"
- },
- {
-  "date": "2026-09-25",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Anuncio dios de la semana (Procesamiento pendiente → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-25",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · Anuncio dios de la semana (Activo → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-25",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Anuncio dios de la semana (Activo → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-25",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Anuncio Video pudin + mate día con be powder (Revisión pendiente → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-25",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Anuncio Video pudin + mate día con be powder (Procesamiento pendiente → Revisión pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-25",
-  "cat": "creativo",
-  "text": "Anuncio creado · Anuncio Video pudin + mate día con be powder",
-  "src": "meta"
- },
- {
-  "date": "2026-09-25",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Anuncio dios de la semana (Revisión pendiente → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-25",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Anuncio dios de la semana (Procesamiento pendiente → Revisión pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-25",
-  "cat": "estado",
-  "text": "Estado del conjunto de anuncios actualizado · BePowder_Sep-2026_Conversiones_Adv+Intereses (Procesamiento pendiente → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-25",
-  "cat": "creativo",
-  "text": "Anuncio creado · Anuncio dios de la semana",
-  "src": "meta"
- },
- {
-  "date": "2026-09-25",
-  "cat": "otros",
-  "text": "Segmentación del conjunto de anuncios actualizada · BePowder_Sep-2026_Conversiones_Adv+Intereses",
-  "src": "meta"
- },
- {
-  "date": "2026-09-25",
-  "cat": "objetivo",
-  "text": "Ad set performance goal updated · BePowder_Sep-2026_Conversiones_Adv+Intereses",
-  "src": "meta"
- },
- {
-  "date": "2026-09-25",
-  "cat": "presupuesto",
-  "text": "Estrategia de puja del conjunto de anuncios actualizada · BePowder_Sep-2026_Conversiones_Adv+Intereses",
-  "src": "meta"
- },
- {
-  "date": "2026-09-25",
-  "cat": "creativo",
-  "text": "Conjunto de anuncios creado · BePowder_Sep-2026_Conversiones_Adv+Intereses",
-  "src": "meta"
- },
- {
-  "date": "2026-09-25",
-  "cat": "estado",
-  "text": "Estado de la campaña actualizado · TAP (Activa → Inactiva)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-25",
-  "cat": "estado",
-  "text": "Estado de la campaña actualizado · TOFU - VENTA (N - AB) (Activa → Inactiva)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-05",
-  "cat": "segmentacion",
-  "text": "Público personalizado actualizado · asa_auto_custom_audience ({\"inclusions\":{\"operator\":\"or\",\"rules\":[{\"event_sources\":[{\"type\":\"pixel\",\"id\":1217061329555554}],\"retention_seconds\":15552000,\"filter\":{\"operator\":\"and\",\"filters\":[{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"Purchase\"}]}}]}} → {\"inclusions\":{\"operator\":\"or\",\"rules\":[{\"event_sources\":[{\"type\":\"pixel\",\"id\":1149879373665723},{\"type\":\"pixel\",\"id\":1217061329555554}],\"retention_seconds\":15552000,\"filter\":{\"operator\":\"and\",\"filters\":[{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"Purchase\"}]}}]}})",
-  "src": "meta"
- },
- {
-  "date": "2026-09-05",
-  "cat": "segmentacion",
-  "text": "Público personalizado actualizado · asa_auto_custom_audience ({\"inclusions\":{\"operator\":\"or\",\"rules\":[{\"event_sources\":[{\"type\":\"pixel\",\"id\":1217061329555554}],\"retention_seconds\":15552000,\"filter\":{\"operator\":\"and\",\"filters\":[{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"InitiateCheckout\"}]}},{\"event_sources\":[{\"type\":\"pixel\",\"id\":1217061329555554}],\"retention_seconds\":15552000,\"filter\":{\"operator\":\"and\",\"filters\":[{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"AddToCart\"}]}},{\"event_sources\":[{\"type\":\"pixel\",\"id\":1217061329555554}],\"retention_seconds\":15552000,\"filter\":{\"operator\":\"and\",\"filters\":[{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"ViewContent\"}]}}]}} → {\"inclusions\":{\"operator\":\"or\",\"rules\":[{\"event_sources\":[{\"type\":\"pixel\",\"id\":1149879373665723},{\"type\":\"pixel\",\"id\":1217061329555554}],\"retention_seconds\":15552000,\"filter\":{\"operator\":\"and\",\"filters\":[{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"InitiateCheckout\"}]}},{\"event_sources\":[{\"type\":\"pixel\",\"id\":1149879373665723},{\"type\":\"pixel\",\"id\":1217061329555554}],\"retention_seconds\":15552000,\"filter\":{\"operator\":\"and\",\"filters\":[{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"AddToCart\"}]}},{\"event_sources\":[{\"type\":\"pixel\",\"id\":1149879373665723},{\"type\":\"pixel\",\"id\":1217061329555554}],\"retention_seconds\":15552000,\"filter\":{\"operator\":\"and\",\"filters\":[{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"ViewContent\"}]}}]}})",
-  "src": "meta"
- },
- {
-  "date": "2026-09-03",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · 02-tofu-nuevo-sept (Revisión pendiente → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-03",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · 01-tofu-nuevo-sept (Revisión pendiente → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-03",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · 01-tofu-nuevo-sept (Procesamiento pendiente → Revisión pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-03",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · 02-tofu-nuevo-sept (Procesamiento pendiente → Revisión pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-03",
-  "cat": "creativo",
-  "text": "Anuncio creado · 01-tofu-nuevo-sept",
-  "src": "meta"
- },
- {
-  "date": "2026-09-03",
-  "cat": "creativo",
-  "text": "Anuncio creado · 02-tofu-nuevo-sept",
-  "src": "meta"
- },
- {
-  "date": "2026-09-03",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · video novo 2 (22-10-2025) — Cópia - Copia (Revisión pendiente → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-03",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · 03-TOFU-AO1-Carru (Revisión pendiente → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-03",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Forever Bliss - Video Mixer - Copia (Revisión pendiente → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-03",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · 05-TOFU-AO2-GIF (Revisión pendiente → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-03",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · 07-TOFU-AO3-Video (Revisión pendiente → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-03",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · 01-TOFU-AO1-Video (Revisión pendiente → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-03",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · 02-TOFU-AO1-Gif (Revisión pendiente → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-03",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · 02-TOFU-AO1-Gif (Procesamiento pendiente → Revisión pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-03",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · 01-TOFU-AO1-Video (Procesamiento pendiente → Revisión pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-03",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · 06-TOFU-AO2-Carru (Procesamiento pendiente → Revisión pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-03",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · 01-TOFU-AO1-Video (Activo → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-03",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · 02-TOFU-AO1-Gif (Activo → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-03",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · 01-TOFU-AO1-Video (Revisión pendiente → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-03",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · 02-TOFU-AO1-Gif (Revisión pendiente → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-03",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · 06-TOFU-AO2-Carru (Activo → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-03",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · 06-TOFU-AO2-Carru (Revisión pendiente → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-03",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · video novo 2 (22-10-2025) — Cópia - Copia (Procesamiento pendiente → Revisión pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-03",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Forever Bliss - Video Mixer - Copia (Procesamiento pendiente → Revisión pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-03",
-  "cat": "presupuesto",
-  "text": "Presupuesto del conjunto de anuncios actualizado · LAL SUG + ABIERTO - OPT (15.000 → 20.000 ARS/día)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-03",
-  "cat": "estado",
-  "text": "Estado del conjunto de anuncios actualizado · LAL SUG + ABIERTO - OPT (Inactivo → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-03",
-  "cat": "estado",
-  "text": "Estado del conjunto de anuncios actualizado · LAL SUG + ABIERTO - OPT (Activo → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-03",
-  "cat": "estado",
-  "text": "Estado del conjunto de anuncios actualizado · LAL SUG + ABIERTO (Activo → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-03",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · 05-TOFU-AO2-GIF (Procesamiento pendiente → Revisión pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-03",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · 03-TOFU-AO1-Carru (Procesamiento pendiente → Revisión pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-03",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · 07-TOFU-AO3-Video (Procesamiento pendiente → Revisión pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-03",
-  "cat": "estado",
-  "text": "Estado del conjunto de anuncios actualizado · LAL SUG + ABIERTO - OPT (Procesamiento pendiente → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-03",
-  "cat": "otros",
-  "text": "Segmentación del conjunto de anuncios actualizada · LAL SUG + ABIERTO - OPT",
-  "src": "meta"
- },
- {
-  "date": "2026-09-03",
-  "cat": "estado",
-  "text": "Estado del conjunto de anuncios actualizado · LAL SUG + ABIERTO - OPT (Activo → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-31",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · 05-TOFU-AO2-GIF (Procesamiento pendiente → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-31",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · 07-TOFU-AO3-Video (Procesamiento pendiente → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-31",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · 05-TOFU-AO2-GIF (Activo → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-31",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · 05-TOFU-AO2-GIF (Activo → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-31",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · 07-TOFU-AO3-Video (Activo → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-31",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · 07-TOFU-AO3-Video (Activo → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-31",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Forever Bliss - Video Mixer - Copia (Revisión pendiente → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-31",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · video novo 2 (22-10-2025) — Cópia - Copia (Revisión pendiente → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-31",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Forever Bliss - Video Mixer - Copia (Procesamiento pendiente → Revisión pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-31",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · video novo 2 (22-10-2025) — Cópia - Copia (Procesamiento pendiente → Revisión pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-31",
-  "cat": "creativo",
-  "text": "Anuncio creado · Forever Bliss - Video Mixer - Copia",
-  "src": "meta"
- },
- {
-  "date": "2026-08-31",
-  "cat": "creativo",
-  "text": "Anuncio creado · video novo 2 (22-10-2025) — Cópia - Copia",
-  "src": "meta"
- },
- {
-  "date": "2026-08-30",
-  "cat": "estado",
-  "text": "Estado de la cuenta actualizado · BE POWDER Cuenta publicitaria (Pago necesario → Activa)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-30",
-  "cat": "estado",
-  "text": "Estado de la cuenta actualizado · BE POWDER Cuenta publicitaria (Activa → En período de gracia)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-27",
-  "cat": "estado",
-  "text": "Estado de la cuenta actualizado · BE POWDER Cuenta publicitaria (Pago necesario → Activa)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-26",
-  "cat": "estado",
-  "text": "Estado de la cuenta actualizado · BE POWDER Cuenta publicitaria (Activa → Pago necesario)",
-  "src": "meta"
- },
- {
-  "date": "2026-08-26",
-  "cat": "segmentacion",
-  "text": "Público personalizado creado · asa_auto_custom_audience",
-  "src": "meta"
- },
- {
-  "date": "2026-08-20",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · 02-TOFU-AO1-Gif (Revisión pendiente → Activo)",
   "src": "meta"
  }
 ]

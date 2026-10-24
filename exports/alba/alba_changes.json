@@ -1,5 +1,11 @@
 [
  {
+  "date": "2026-10-23",
+  "cat": "estado",
+  "text": "Estado del conjunto de anuncios actualizado · publico retargeting (Inactivo → Activo)",
+  "src": "meta"
+ },
+ {
   "date": "2026-10-22",
   "cat": "estado",
   "text": "Estado del anuncio actualizado · conjuntos en ofecta (Procesamiento pendiente → Inactivo)",
@@ -711,12 +717,6 @@
   "date": "2026-10-16",
   "cat": "creativo",
   "text": "Anuncio actualizado · PUBLICACION VESTIDO -",
-  "src": "meta"
- },
- {
-  "date": "2026-10-15",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · pedido mas personalizado (Revisión pendiente → Activo)",
   "src": "meta"
  }
 ]
