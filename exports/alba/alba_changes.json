@@ -1,5 +1,35 @@
 [
  {
+  "date": "2026-10-24",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · video pedido sofi (Procesamiento pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-24",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · pedido petra (Procesamiento pendiente → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-24",
+  "cat": "estado",
+  "text": "Estado del conjunto de anuncios actualizado · publico retargeting (Procesamiento pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-24",
+  "cat": "otros",
+  "text": "Segmentación del conjunto de anuncios actualizada · publico retargeting",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-24",
+  "cat": "estado",
+  "text": "Estado del conjunto de anuncios actualizado · publico retargeting (Activo → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
   "date": "2026-10-23",
   "cat": "estado",
   "text": "Estado del conjunto de anuncios actualizado · publico retargeting (Inactivo → Activo)",
@@ -170,7 +200,7 @@
  {
   "date": "2026-10-22",
   "cat": "segmentacion",
-  "text": "Público personalizado actualizado · asa_auto_custom_audience ({\"inclusions\":{\"operator\":\"or\",\"rules\":[{\"event_sources\":[{\"type\":\"page\",\"id\":101972395026488},{\"type\":\"page\",\"id\":102596622032225},{\"type\":\"page\",\"id\":113495175177701},{\"type\":\"page\",\"id\":145312311988221},{\"type\":\"page\",\"id\":2110596422542638}],\"retention_seconds\":15552000,\"filter\":{\"operator\":\"or\",\"filters\":[{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_footer_autofill_code_apply_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_non_shopify_autofill_code_fill_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_non_shopify_autofill_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_non_shopify_autofill_success_on_expected_page\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_footer_claim_offer_apply_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_footer_html_diff_signal_coupon_apply_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_footer_copy_paste_signal_coupon_apply_success\"}]},\"aggregation\":{\"type\":\"count\",\"method\":\"absolute\",\"operator\":\">\",\"value\":0}}]}} → {\"inclusions\":{\"operator\":\"or\",\"rules\":[{\"event_sources\":[{\"type\":\"page\",\"id\":101972395026488},{\"type\":\"page\",\"id\":102596622032225},{\"type\":\"page\",\"id\":113495175177701},{\"type\":\"page\",\"id\":145312311988221},{\"type\":\"page\",\"id\":2110596422542638}],\"retention_seconds\":15552000,\"filter\":{\"operator\":\"or\",\"filters\":[{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_footer_autofill_code_apply_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_non_shopify_autofill_code_fill_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_non_shopify_autofill_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_non_shopify_autofill_success_on_expected_page\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_footer_claim_offer_apply_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_footer_html_diff_signal_coupon_apply_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_footer_copy_paste_signal_coupon_apply_success\"}]},\"aggregation\":{\"type\":\"count\",\"method\":\"absolute\",\"operator\":\">\",\"value\":0}},{\"event_sources\":[{\"type\":\"ig_business\",\"id\":17841405958905480},{\"type\":\"ig_business\",\"id\":17841408284766715},{\"type\":\"ig_business\",\"id\":17841461806442686}],\"retention_seconds\":15552000,\"filter\":{\"operator\":\"or\",\"filters\":[{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"autofill_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"autofill_success_v2\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"xconnect_html_diff_signal_coupon_apply_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"copy_paste_apply_success\"}]},\"aggregation\":{\"type\":\"count\",\"method\":\"absolute\",\"operator\":\">\",\"value\":0}}]}})",
+  "text": "Público personalizado actualizado · asa_auto_custom_audience ({\"inclusions\":{\"operator\":\"or\",\"rules\":[{\"event_sources\":[{\"type\":\"page\",\"id\":101972395026488},{\"type\":\"page\",\"id\":102596622032225},{\"type\":\"page\",\"id\":113495175177701},{\"type\":\"page\",\"id\":145312311988221},{\"type\":\"page\",\"id\":2110596422542638}],\"retention_seconds\":15552000,\"filter\":{\"operator\":\"or\",\"filters\":[{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_bottom_sheet_copy_click_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_footer_copy_code_click_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_footer_autofill_code_attempt_info\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_email_submission_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_footer_see_offer_button_click_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_footer_click_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_bottom_sheet_see_details_link_click_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_email_footer_sign_up_button_click_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_tc_footer_bottom_sheet_click_success\"}]},\"aggregation\":{\"type\":\"count\",\"method\":\"absolute\",\"operator\":\">\",\"value\":0}}]}} → {\"inclusions\":{\"operator\":\"or\",\"rules\":[{\"event_sources\":[{\"type\":\"page\",\"id\":101972395026488},{\"type\":\"page\",\"id\":102596622032225},{\"type\":\"page\",\"id\":113495175177701},{\"type\":\"page\",\"id\":145312311988221},{\"type\":\"page\",\"id\":2110596422542638}],\"retention_seconds\":15552000,\"filter\":{\"operator\":\"or\",\"filters\":[{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_bottom_sheet_copy_click_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_footer_copy_code_click_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_footer_autofill_code_attempt_info\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_email_submission_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_footer_see_offer_button_click_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_footer_click_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_bottom_sheet_see_details_link_click_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_email_footer_sign_up_button_click_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_tc_footer_bottom_sheet_click_success\"}]},\"aggregation\":{\"type\":\"count\",\"method\":\"absolute\",\"operator\":\">\",\"value\":0}},{\"event_sources\":[{\"type\":\"ig_business\",\"id\":17841405958905480},{\"type\":\"ig_business\",\"id\":17841408284766715},{\"type\":\"ig_business\",\"id\":17841461806442686}],\"retention_seconds\":15552000,\"filter\":{\"operator\":\"or\",\"filters\":[{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"bloks_bottom_sheet_copy_click\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"bloks_footer_copy_click\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"autofill_code_attempt_info\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"email_capture_sign_up_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"bloks_email_sign_up_click\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"bloks_footer_click\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"bloks_see_details_click\"}]},\"aggregation\":{\"type\":\"count\",\"method\":\"absolute\",\"operator\":\">\",\"value\":0}}]}})",
   "src": "meta"
  },
  {
@@ -188,7 +218,7 @@
  {
   "date": "2026-10-22",
   "cat": "segmentacion",
-  "text": "Público personalizado actualizado · asa_auto_custom_audience ({\"inclusions\":{\"operator\":\"or\",\"rules\":[{\"event_sources\":[{\"type\":\"page\",\"id\":101972395026488},{\"type\":\"page\",\"id\":102596622032225},{\"type\":\"page\",\"id\":113495175177701},{\"type\":\"page\",\"id\":145312311988221},{\"type\":\"page\",\"id\":2110596422542638}],\"retention_seconds\":15552000,\"filter\":{\"operator\":\"or\",\"filters\":[{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_bottom_sheet_copy_click_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_footer_copy_code_click_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_footer_autofill_code_attempt_info\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_email_submission_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_footer_see_offer_button_click_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_footer_click_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_bottom_sheet_see_details_link_click_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_email_footer_sign_up_button_click_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_tc_footer_bottom_sheet_click_success\"}]},\"aggregation\":{\"type\":\"count\",\"method\":\"absolute\",\"operator\":\">\",\"value\":0}}]}} → {\"inclusions\":{\"operator\":\"or\",\"rules\":[{\"event_sources\":[{\"type\":\"page\",\"id\":101972395026488},{\"type\":\"page\",\"id\":102596622032225},{\"type\":\"page\",\"id\":113495175177701},{\"type\":\"page\",\"id\":145312311988221},{\"type\":\"page\",\"id\":2110596422542638}],\"retention_seconds\":15552000,\"filter\":{\"operator\":\"or\",\"filters\":[{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_bottom_sheet_copy_click_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_footer_copy_code_click_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_footer_autofill_code_attempt_info\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_email_submission_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_footer_see_offer_button_click_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_footer_click_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_bottom_sheet_see_details_link_click_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_email_footer_sign_up_button_click_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_tc_footer_bottom_sheet_click_success\"}]},\"aggregation\":{\"type\":\"count\",\"method\":\"absolute\",\"operator\":\">\",\"value\":0}},{\"event_sources\":[{\"type\":\"ig_business\",\"id\":17841405958905480},{\"type\":\"ig_business\",\"id\":17841408284766715},{\"type\":\"ig_business\",\"id\":17841461806442686}],\"retention_seconds\":15552000,\"filter\":{\"operator\":\"or\",\"filters\":[{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"bloks_bottom_sheet_copy_click\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"bloks_footer_copy_click\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"autofill_code_attempt_info\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"email_capture_sign_up_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"bloks_email_sign_up_click\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"bloks_footer_click\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"bloks_see_details_click\"}]},\"aggregation\":{\"type\":\"count\",\"method\":\"absolute\",\"operator\":\">\",\"value\":0}}]}})",
+  "text": "Público personalizado actualizado · asa_auto_custom_audience ({\"inclusions\":{\"operator\":\"or\",\"rules\":[{\"event_sources\":[{\"type\":\"page\",\"id\":101972395026488},{\"type\":\"page\",\"id\":102596622032225},{\"type\":\"page\",\"id\":113495175177701},{\"type\":\"page\",\"id\":145312311988221},{\"type\":\"page\",\"id\":2110596422542638}],\"retention_seconds\":15552000,\"filter\":{\"operator\":\"or\",\"filters\":[{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_footer_autofill_code_apply_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_non_shopify_autofill_code_fill_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_non_shopify_autofill_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_non_shopify_autofill_success_on_expected_page\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_footer_claim_offer_apply_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_footer_html_diff_signal_coupon_apply_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_footer_copy_paste_signal_coupon_apply_success\"}]},\"aggregation\":{\"type\":\"count\",\"method\":\"absolute\",\"operator\":\">\",\"value\":0}}]}} → {\"inclusions\":{\"operator\":\"or\",\"rules\":[{\"event_sources\":[{\"type\":\"page\",\"id\":101972395026488},{\"type\":\"page\",\"id\":102596622032225},{\"type\":\"page\",\"id\":113495175177701},{\"type\":\"page\",\"id\":145312311988221},{\"type\":\"page\",\"id\":2110596422542638}],\"retention_seconds\":15552000,\"filter\":{\"operator\":\"or\",\"filters\":[{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_footer_autofill_code_apply_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_non_shopify_autofill_code_fill_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_non_shopify_autofill_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_non_shopify_autofill_success_on_expected_page\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_footer_claim_offer_apply_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_footer_html_diff_signal_coupon_apply_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_footer_copy_paste_signal_coupon_apply_success\"}]},\"aggregation\":{\"type\":\"count\",\"method\":\"absolute\",\"operator\":\">\",\"value\":0}},{\"event_sources\":[{\"type\":\"ig_business\",\"id\":17841405958905480},{\"type\":\"ig_business\",\"id\":17841408284766715},{\"type\":\"ig_business\",\"id\":17841461806442686}],\"retention_seconds\":15552000,\"filter\":{\"operator\":\"or\",\"filters\":[{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"autofill_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"autofill_success_v2\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"xconnect_html_diff_signal_coupon_apply_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"copy_paste_apply_success\"}]},\"aggregation\":{\"type\":\"count\",\"method\":\"absolute\",\"operator\":\">\",\"value\":0}}]}})",
   "src": "meta"
  },
  {
@@ -201,6 +231,12 @@
   "date": "2026-10-22",
   "cat": "creativo",
   "text": "Se reactivó «conjuntos en ofecta»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-10-22",
+  "cat": "creativo",
+  "text": "Se apagó «conjuntos en ofecta»",
   "src": "auto"
  },
  {
@@ -681,42 +717,6 @@
   "date": "2026-10-16",
   "cat": "estado",
   "text": "Estado del anuncio actualizado · conjuntos en ofecta (Activo → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-16",
-  "cat": "creativo",
-  "text": "Anuncio actualizado · conjuntos en ofecta",
-  "src": "meta"
- },
- {
-  "date": "2026-10-16",
-  "cat": "creativo",
-  "text": "Anuncio creado · video pedido sofi",
-  "src": "meta"
- },
- {
-  "date": "2026-10-16",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · PUBLICACION VESTIDO - (Revisión pendiente → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-16",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · PUBLICACION VESTIDO - (Procesamiento pendiente → Revisión pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-16",
-  "cat": "otros",
-  "text": "Nombre del anuncio actualizado · PUBLICACION VESTIDO - (PUBLICACION VESTIDO - RETARGETING → PUBLICACION VESTIDO -)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-16",
-  "cat": "creativo",
-  "text": "Anuncio actualizado · PUBLICACION VESTIDO -",
   "src": "meta"
  }
 ]

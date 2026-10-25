@@ -644,7 +644,37 @@
  {
   "date": "2026-10-09",
   "cat": "creativo",
+  "text": "Se apagó «Anuncio dios de la semana»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-10-09",
+  "cat": "creativo",
+  "text": "Se apagó «Anuncio Video pudin + mate día con be powder»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-10-09",
+  "cat": "creativo",
+  "text": "Se apagó «Anuncio Vaso de Leche Cacao Video»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-10-09",
+  "cat": "creativo",
+  "text": "Se apagó «Carrusel productos»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-10-09",
+  "cat": "creativo",
   "text": "Se encendió/lanzó «Anuncio Dia de la madre»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-10-09",
+  "cat": "creativo",
+  "text": "Se apagó «Anuncio Dia de la madre»",
   "src": "auto"
  },
  {
@@ -687,36 +717,6 @@
   "date": "2026-10-08",
   "cat": "estado",
   "text": "Estado del anuncio actualizado · Anuncio Video pudin + mate día con be powder (Procesamiento pendiente → Revisión pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-08",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Anuncio Vaso de Leche Cacao Video (Procesamiento pendiente → Revisión pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-08",
-  "cat": "estado",
-  "text": "Estado del conjunto de anuncios actualizado · BePowder_Sep-2026_Conversiones_Adv+Intereses (Procesamiento pendiente → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-08",
-  "cat": "otros",
-  "text": "Segmentación del conjunto de anuncios actualizada · BePowder_Sep-2026_Conversiones_Adv+Intereses",
-  "src": "meta"
- },
- {
-  "date": "2026-10-08",
-  "cat": "estado",
-  "text": "Estado del conjunto de anuncios actualizado · BePowder_Sep-2026_Conversiones_Adv+Intereses (Activo → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-08",
-  "cat": "segmentacion",
-  "text": "Público personalizado creado · ret 90 dias",
   "src": "meta"
  }
 ]

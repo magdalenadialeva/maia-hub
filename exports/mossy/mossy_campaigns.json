@@ -3,14 +3,13 @@
   "name": "Mar26 - Ventas - A+ - Catalogo - Frio",
   "objective": "OUTCOME_SALES",
   "status": "PAUSED",
-  "spend": 1950649.82,
-  "first": "2026-09-18",
+  "spend": 1871836.3,
+  "first": "2026-09-19",
   "last": "2026-10-17",
   "purch": 38.0,
   "msg": 31.0,
   "ads": [
    "Ad6 - Secuencia - Nueva coleccion 2026 - Copia 3",
-   "Ad6 - Secuencia - Nueva coleccion 2026 - Copia 4",
    "Ad6 - Secuencia - Nueva coleccion 202666 - Copia 8",
    "Ad6 - Secuencia - Nueva coleccion 202666 - Copia 9",
    "Ad6 - Secuencia - Nueva coleccion 202666 - Copia 10",
@@ -18,6 +17,7 @@
    "Ad6 - Secuencia - Nueva coleccion 202666 - Copia 7",
    "Ad6 - Secuencia - Nueva coleccion 202666 - Copia 11",
    "Ad6 - Secuencia - Nueva coleccion 202666 - Copia 12",
+   "Ad6 - Secuencia - Nueva coleccion 2026 - Copia 4",
    "Ad6 - Video - Sale - Copia",
    "Ad7 - Secuencia - Mega Sale - Tu top tu bombacha tus reglas",
    "Ad11 - Secuencia - Mega Sale - No hay una sola forma de usar Mossy",
@@ -27,24 +27,24 @@
    "Ad15 - UGC - Mix and Match",
    "Ad16 - Testimonios - WhatsApp calce"
   ],
-  "impr": 281676.0,
-  "lc": 7178.0,
-  "lpv": 6302.0,
-  "atc": 701.0,
-  "ic": 94.0,
+  "impr": 268947.0,
+  "lc": 6893.0,
+  "lpv": 6073.0,
+  "atc": 669.0,
+  "ic": 92.0,
   "pval": 3709285.3,
   "leads": 0.0,
-  "window_from": "2026-09-18"
+  "window_from": "2026-09-19"
  },
  {
   "name": "Mossy_AlwaysOn_Conversiones_Dinámicos",
   "objective": "OUTCOME_SALES",
   "status": "ACTIVE",
-  "spend": 641091.73,
+  "spend": 692376.77,
   "first": "2026-09-30",
-  "last": "2026-10-23",
-  "purch": 22.0,
-  "msg": 8.0,
+  "last": "2026-10-24",
+  "purch": 24.0,
+  "msg": 9.0,
   "ads": [
    "B agosto -  Catálogo contenido advantage + todos los productos - Copia 4",
    "Ad10 - Catalogo AlwaysOn - Brava Mix&Match",
@@ -71,21 +71,21 @@
    "Ad6 - Secuencia - Nueva coleccion 2026 - Copia 3",
    "Stack - Brava Mix&Match 04 - Copia 2"
   ],
-  "impr": 111445.0,
-  "lc": 3162.0,
-  "lpv": 3047.0,
-  "atc": 261.0,
-  "ic": 46.0,
-  "pval": 1960112.97,
+  "impr": 120130.0,
+  "lc": 3447.0,
+  "lpv": 3328.0,
+  "atc": 303.0,
+  "ic": 55.0,
+  "pval": 2031172.37,
   "leads": 0.0,
-  "window_from": "2026-09-18"
+  "window_from": "2026-09-19"
  },
  {
   "name": "Ago26 - Ventas - CBO - Prospecting - Angulos Nuevos",
   "objective": "OUTCOME_SALES",
   "status": "PAUSED",
-  "spend": 302762.78,
-  "first": "2026-09-18",
+  "spend": 267636.36,
+  "first": "2026-09-19",
   "last": "2026-10-12",
   "purch": 6.0,
   "msg": 2.0,
@@ -97,14 +97,14 @@
    "Ad8 - Video - Anticipo Temporada - Mega Sale",
    "Ad9 - Producto Fit - Mega Sale - Tu top tu bombacha tu talle"
   ],
-  "impr": 26592.0,
-  "lc": 834.0,
-  "lpv": 861.0,
-  "atc": 103.0,
+  "impr": 23773.0,
+  "lc": 743.0,
+  "lpv": 773.0,
+  "atc": 95.0,
   "ic": 9.0,
   "pval": 425766.55,
   "leads": 0.0,
-  "window_from": "2026-09-18"
+  "window_from": "2026-09-19"
  },
  {
   "name": "Conversiones_Campaña_Advantage+",
@@ -131,7 +131,7 @@
   "ic": 3.0,
   "pval": 206100.56,
   "leads": 0.0,
-  "window_from": "2026-09-18"
+  "window_from": "2026-09-19"
  },
  {
   "name": "Mar26 - Ventas - A+ - Retargeting",
@@ -158,6 +158,6 @@
   "ic": 0.0,
   "pval": 0.0,
   "leads": 0.0,
-  "window_from": "2026-09-18"
+  "window_from": "2026-09-19"
  }
 ]

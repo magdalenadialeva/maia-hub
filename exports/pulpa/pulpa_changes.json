@@ -1,5 +1,11 @@
 [
  {
+  "date": "2026-10-24",
+  "cat": "segmentacion",
+  "text": "Público personalizado creado · asa_auto_custom_audience",
+  "src": "meta"
+ },
+ {
   "date": "2026-10-23",
   "cat": "estado",
   "text": "Estado de la cuenta actualizado · Pulpa Cuenta publicitaria (Activa → Pago necesario)",
@@ -643,14 +649,14 @@
  },
  {
   "date": "2026-09-13",
-  "cat": "creativo",
-  "text": "Anuncio creado · Ad_5",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Ad_3 (Revisión pendiente → Activo)",
   "src": "meta"
  },
  {
   "date": "2026-09-13",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Ad_3 (Revisión pendiente → Activo)",
+  "cat": "creativo",
+  "text": "Anuncio creado · Ad_5",
   "src": "meta"
  },
  {
@@ -711,12 +717,6 @@
   "date": "2026-09-13",
   "cat": "estado",
   "text": "Estado del anuncio actualizado · Ad_1 (Procesamiento pendiente → Revisión pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-13",
-  "cat": "estado",
-  "text": "Estado del conjunto de anuncios actualizado · Pulpa Verde_Conversiones_Org_Mensajes_2026_Adv+ (Procesamiento pendiente → Activo)",
   "src": "meta"
  }
 ]
