@@ -22,48 +22,48 @@
   "ic": 2.0,
   "pval": 0.0,
   "leads": 0.0,
-  "window_from": "2026-09-19"
+  "window_from": "2026-09-20"
  },
  {
   "name": "Publicación: \"😮‍💨😮‍💨😮‍💨😮‍💨😍lo que va a ser noviembre!\"",
   "objective": "OUTCOME_SALES",
-  "status": "ACTIVE",
-  "spend": 8434.06,
+  "status": "PAUSED",
+  "spend": 14749.89,
   "first": "2026-10-23",
-  "last": "2026-10-24",
+  "last": "2026-10-25",
   "purch": 2.0,
   "msg": 0.0,
   "ads": [
    "Publicación: \"😮‍💨😮‍💨😮‍💨😮‍💨😍lo que va a ser noviembre!\""
   ],
-  "impr": 1163.0,
-  "lc": 29.0,
+  "impr": 1922.0,
+  "lc": 51.0,
   "lpv": 0.0,
   "atc": 2.0,
   "ic": 1.0,
   "pval": 77800.0,
   "leads": 0.0,
-  "window_from": "2026-09-19"
+  "window_from": "2026-09-20"
  },
  {
   "name": "Publicación de Instagram: ¿Y si el color de lo...",
   "objective": "LINK_CLICKS",
   "status": "ACTIVE",
-  "spend": 6273.83,
+  "spend": 10934.54,
   "first": "2026-10-23",
-  "last": "2026-10-24",
+  "last": "2026-10-25",
   "purch": 0.0,
   "msg": 0.0,
   "ads": [
    "Publicación de Instagram: ¿Y si el color de lo..."
   ],
-  "impr": 802.0,
-  "lc": 25.0,
+  "impr": 1337.0,
+  "lc": 36.0,
   "lpv": 1.0,
   "atc": 0.0,
   "ic": 0.0,
   "pval": 0.0,
   "leads": 0.0,
-  "window_from": "2026-09-19"
+  "window_from": "2026-09-20"
  }
 ]

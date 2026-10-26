@@ -3,21 +3,21 @@
   "name": "Mar26 - Ventas - A+ - Catalogo - Frio",
   "objective": "OUTCOME_SALES",
   "status": "PAUSED",
-  "spend": 1871836.3,
-  "first": "2026-09-19",
+  "spend": 1776840.54,
+  "first": "2026-09-20",
   "last": "2026-10-17",
   "purch": 38.0,
   "msg": 31.0,
   "ads": [
-   "Ad6 - Secuencia - Nueva coleccion 2026 - Copia 3",
+   "Ad6 - Secuencia - Nueva coleccion 2026 - Copia 4",
    "Ad6 - Secuencia - Nueva coleccion 202666 - Copia 8",
-   "Ad6 - Secuencia - Nueva coleccion 202666 - Copia 9",
    "Ad6 - Secuencia - Nueva coleccion 202666 - Copia 10",
+   "Ad6 - Secuencia - Nueva coleccion 202666 - Copia 9",
    "Ad6 - Secuencia - Nueva coleccion 202666 - Copia 6",
    "Ad6 - Secuencia - Nueva coleccion 202666 - Copia 7",
    "Ad6 - Secuencia - Nueva coleccion 202666 - Copia 11",
    "Ad6 - Secuencia - Nueva coleccion 202666 - Copia 12",
-   "Ad6 - Secuencia - Nueva coleccion 2026 - Copia 4",
+   "Ad6 - Secuencia - Nueva coleccion 2026 - Copia 3",
    "Ad6 - Video - Sale - Copia",
    "Ad7 - Secuencia - Mega Sale - Tu top tu bombacha tus reglas",
    "Ad11 - Secuencia - Mega Sale - No hay una sola forma de usar Mossy",
@@ -27,22 +27,22 @@
    "Ad15 - UGC - Mix and Match",
    "Ad16 - Testimonios - WhatsApp calce"
   ],
-  "impr": 268947.0,
-  "lc": 6893.0,
-  "lpv": 6073.0,
-  "atc": 669.0,
-  "ic": 92.0,
+  "impr": 252527.0,
+  "lc": 6536.0,
+  "lpv": 5762.0,
+  "atc": 645.0,
+  "ic": 91.0,
   "pval": 3709285.3,
   "leads": 0.0,
-  "window_from": "2026-09-19"
+  "window_from": "2026-09-20"
  },
  {
   "name": "Mossy_AlwaysOn_Conversiones_Dinámicos",
   "objective": "OUTCOME_SALES",
   "status": "ACTIVE",
-  "spend": 692376.77,
+  "spend": 728123.14,
   "first": "2026-09-30",
-  "last": "2026-10-24",
+  "last": "2026-10-25",
   "purch": 24.0,
   "msg": 9.0,
   "ads": [
@@ -69,42 +69,44 @@
    "Stack - Brava UGC 06 - Copia 2",
    "Stack - Brava Detalle 07 - Copia 2",
    "Ad6 - Secuencia - Nueva coleccion 2026 - Copia 3",
-   "Stack - Brava Mix&Match 04 - Copia 2"
+   "Stack - Brava Mix&Match 04 - Copia 2",
+   "Stack - Brava Detalle 07 - Copia 3",
+   "Stack - Brava UGC 06 - Copia 3"
   ],
-  "impr": 120130.0,
-  "lc": 3447.0,
-  "lpv": 3328.0,
-  "atc": 303.0,
+  "impr": 126429.0,
+  "lc": 3668.0,
+  "lpv": 3552.0,
+  "atc": 319.0,
   "ic": 55.0,
   "pval": 2031172.37,
   "leads": 0.0,
-  "window_from": "2026-09-19"
+  "window_from": "2026-09-20"
  },
  {
   "name": "Ago26 - Ventas - CBO - Prospecting - Angulos Nuevos",
   "objective": "OUTCOME_SALES",
   "status": "PAUSED",
-  "spend": 267636.36,
-  "first": "2026-09-19",
+  "spend": 231016.29,
+  "first": "2026-09-20",
   "last": "2026-10-12",
-  "purch": 6.0,
+  "purch": 5.0,
   "msg": 2.0,
   "ads": [
-   "Ad1 - Angulo Anticipo Temporada",
    "Ad3 - Angulo Producto Fit",
+   "Ad1 - Angulo Anticipo Temporada",
    "Ad1 - Angulo Anticipo Temporada - Copia",
    "Ad3 - Angulo Producto Fit - Copia",
    "Ad8 - Video - Anticipo Temporada - Mega Sale",
    "Ad9 - Producto Fit - Mega Sale - Tu top tu bombacha tu talle"
   ],
-  "impr": 23773.0,
-  "lc": 743.0,
-  "lpv": 773.0,
-  "atc": 95.0,
-  "ic": 9.0,
-  "pval": 425766.55,
+  "impr": 20478.0,
+  "lc": 639.0,
+  "lpv": 596.0,
+  "atc": 82.0,
+  "ic": 7.0,
+  "pval": 335607.28,
   "leads": 0.0,
-  "window_from": "2026-09-19"
+  "window_from": "2026-09-20"
  },
  {
   "name": "Conversiones_Campaña_Advantage+",
@@ -131,7 +133,7 @@
   "ic": 3.0,
   "pval": 206100.56,
   "leads": 0.0,
-  "window_from": "2026-09-19"
+  "window_from": "2026-09-20"
  },
  {
   "name": "Mar26 - Ventas - A+ - Retargeting",
@@ -158,6 +160,28 @@
   "ic": 0.0,
   "pval": 0.0,
   "leads": 0.0,
-  "window_from": "2026-09-19"
+  "window_from": "2026-09-20"
+ },
+ {
+  "name": "Mossy_Test_Creativos_Brava",
+  "objective": "OUTCOME_SALES",
+  "status": "ACTIVE",
+  "spend": 10879.35,
+  "first": "2026-10-25",
+  "last": "2026-10-25",
+  "purch": 0.0,
+  "msg": 0.0,
+  "ads": [
+   "Stack - Brava Detalle 07 - Copia 4",
+   "Stack - Brava UGC 06 - Copia 4"
+  ],
+  "impr": 1219.0,
+  "lc": 32.0,
+  "lpv": 30.0,
+  "atc": 0.0,
+  "ic": 0.0,
+  "pval": 0.0,
+  "leads": 0.0,
+  "window_from": "2026-09-20"
  }
 ]

@@ -30,6 +30,12 @@
   "src": "auto"
  },
  {
+  "date": "2026-10-23",
+  "cat": "creativo",
+  "text": "Se apagó «Modelo nuevo»",
+  "src": "auto"
+ },
+ {
   "date": "2026-10-22",
   "cat": "segmentacion",
   "text": "Público personalizado creado · asa_auto_custom_audience",
@@ -386,6 +392,12 @@
  {
   "date": "2026-09-29",
   "cat": "estado",
+  "text": "Estado del anuncio actualizado · AYMARA - LINK AD - V1 (Activo → Eliminado)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-29",
+  "cat": "estado",
   "text": "Estado del anuncio actualizado · AYMARA - LINK AD - V4 (Inactivo → Eliminado)",
   "src": "meta"
  },
@@ -398,7 +410,7 @@
  {
   "date": "2026-09-29",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · AYMARA - LINK AD - V1 (Activo → Eliminado)",
+  "text": "Estado del anuncio actualizado · AYMARA - LINK AD - V2 (Inactivo → Eliminado)",
   "src": "meta"
  },
  {
@@ -411,12 +423,6 @@
   "date": "2026-09-29",
   "cat": "estado",
   "text": "Estado del anuncio actualizado · AYMARA - LINK AD - V3 (Activo → Eliminado)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-29",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · AYMARA - LINK AD - V2 (Inactivo → Eliminado)",
   "src": "meta"
  },
  {
@@ -524,13 +530,31 @@
  {
   "date": "2026-09-29",
   "cat": "segmentacion",
-  "text": "Público personalizado creado · Público similar (CL, 1%) - Visitantes sitio web 60 dias - Cyber 2026",
+  "text": "Público personalizado creado · Público similar (CL) - Visitantes sitio web 60 dias - Cyber 2026",
   "src": "meta"
  },
  {
   "date": "2026-09-29",
   "cat": "segmentacion",
-  "text": "Público personalizado creado · Público similar (CL) - Visitantes sitio web 60 dias - Cyber 2026",
+  "text": "Público personalizado creado · Público similar (CL, 1%) - Visitantes sitio web 60 dias - Cyber 2026",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-29",
+  "cat": "creativo",
+  "text": "Anuncio creado · AYMARA - LINK AD - V2",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-29",
+  "cat": "creativo",
+  "text": "Anuncio creado · AYMARA - LINK AD- V5",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-29",
+  "cat": "creativo",
+  "text": "Anuncio creado · AYMARA - LINK AD - V4",
   "src": "meta"
  },
  {
@@ -543,24 +567,6 @@
   "date": "2026-09-29",
   "cat": "creativo",
   "text": "Anuncio creado · AYMARA - LINK AD - V3",
-  "src": "meta"
- },
- {
-  "date": "2026-09-29",
-  "cat": "creativo",
-  "text": "Anuncio creado · AYMARA - LINK AD - V2",
-  "src": "meta"
- },
- {
-  "date": "2026-09-29",
-  "cat": "creativo",
-  "text": "Anuncio creado · AYMARA - LINK AD - V4",
-  "src": "meta"
- },
- {
-  "date": "2026-09-29",
-  "cat": "creativo",
-  "text": "Anuncio creado · AYMARA - LINK AD- V5",
   "src": "meta"
  },
  {
@@ -712,11 +718,5 @@
   "cat": "creativo",
   "text": "Se apagó «Carrusel Catalogo - Video Nuevo 1»",
   "src": "auto"
- },
- {
-  "date": "2026-09-03",
-  "cat": "estado",
-  "text": "Estado del conjunto de anuncios actualizado · PieraCeresa_2026_Conversiones - V.3 (Inactivo → Activo)",
-  "src": "meta"
  }
 ]

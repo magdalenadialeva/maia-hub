@@ -1,5 +1,59 @@
 [
  {
+  "date": "2026-10-25",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Publicación: \"Cómo empezó Be powder? 🩷\" (Revisión pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-25",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Publicación: \"Cómo empezó Be powder? 🩷\" (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-25",
+  "cat": "estado",
+  "text": "Estado del conjunto de anuncios actualizado · Publicación: \"Cómo empezó Be powder? 🩷\" (Procesamiento pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-25",
+  "cat": "creativo",
+  "text": "Anuncio creado · Publicación: \"Cómo empezó Be powder? 🩷\"",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-25",
+  "cat": "otros",
+  "text": "Segmentación del conjunto de anuncios actualizada · Publicación: \"Cómo empezó Be powder? 🩷\"",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-25",
+  "cat": "objetivo",
+  "text": "Ad set performance goal updated · Publicación: \"Cómo empezó Be powder? 🩷\"",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-25",
+  "cat": "presupuesto",
+  "text": "Estrategia de puja del conjunto de anuncios actualizada · Publicación: \"Cómo empezó Be powder? 🩷\"",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-25",
+  "cat": "creativo",
+  "text": "Conjunto de anuncios creado · Publicación: \"Cómo empezó Be powder? 🩷\"",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-25",
+  "cat": "estado",
+  "text": "Estado de la campaña actualizado · Publicación: \"😮‍💨😮‍💨😮‍💨😮‍💨😍lo que va a ser noviembre!\" (Activa → Inactiva)",
+  "src": "meta"
+ },
+ {
   "date": "2026-10-23",
   "cat": "estado",
   "text": "Estado del anuncio actualizado · Publicación de Instagram: ¿Y si el color de lo... (Revisión pendiente → Activo)",
@@ -212,13 +266,13 @@
  {
   "date": "2026-10-23",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · videos novos 1 (22-10-2025) (Activo → Inactivo)",
+  "text": "Estado del anuncio actualizado cuando se completa su revisión · post novo combo 1 (10/03/2026) (Activo → Inactivo)",
   "src": "meta"
  },
  {
   "date": "2026-10-23",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · post novo combo 1 (10/03/2026) (Activo → Inactivo)",
+  "text": "Estado del anuncio actualizado cuando se completa su revisión · videos novos 1 (22-10-2025) (Activo → Inactivo)",
   "src": "meta"
  },
  {
@@ -236,13 +290,13 @@
  {
   "date": "2026-10-23",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · post novo combo 1 (10/03/2026) (Activo → Procesamiento pendiente)",
+  "text": "Estado del anuncio actualizado · videos novos 2 (26-11-2025) (Activo → Procesamiento pendiente)",
   "src": "meta"
  },
  {
   "date": "2026-10-23",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · videos novos 2 (26-11-2025) (Activo → Procesamiento pendiente)",
+  "text": "Estado del anuncio actualizado · post novo combo 1 (10/03/2026) (Activo → Procesamiento pendiente)",
   "src": "meta"
  },
  {
@@ -284,13 +338,13 @@
  {
   "date": "2026-10-23",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · 09-TOFU-AO3-Carrusel (Procesamiento pendiente → Inactivo)",
+  "text": "Estado del anuncio actualizado · 02-TOFU-AO1-Gif (Activo → Procesamiento pendiente)",
   "src": "meta"
  },
  {
   "date": "2026-10-23",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · 02-TOFU-AO1-Gif (Activo → Procesamiento pendiente)",
+  "text": "Estado del anuncio actualizado · 09-TOFU-AO3-Carrusel (Procesamiento pendiente → Inactivo)",
   "src": "meta"
  },
  {
@@ -332,13 +386,13 @@
  {
   "date": "2026-10-23",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · 12-TOFU-AO4-Carru (Procesamiento pendiente → Inactivo)",
+  "text": "Estado del anuncio actualizado · 04-TOFU-AO2-Video (Activo → Procesamiento pendiente)",
   "src": "meta"
  },
  {
   "date": "2026-10-23",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · 04-TOFU-AO2-Video (Activo → Procesamiento pendiente)",
+  "text": "Estado del anuncio actualizado · 12-TOFU-AO4-Carru (Procesamiento pendiente → Inactivo)",
   "src": "meta"
  },
  {
@@ -596,7 +650,7 @@
  {
   "date": "2026-10-21",
   "cat": "segmentacion",
-  "text": "Público personalizado actualizado · asa_auto_custom_audience ({\"inclusions\":{\"operator\":\"or\",\"rules\":[{\"event_sources\":[{\"type\":\"page\",\"id\":270295003856920},{\"type\":\"page\",\"id\":603554302850624}],\"retention_seconds\":15552000,\"filter\":{\"operator\":\"or\",\"filters\":[{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_checkout_page_load_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_checkout_confirmation_page_load_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_checkout_pixel_event\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_purchase_pixel_event\"}]},\"aggregation\":{\"type\":\"count\",\"method\":\"absolute\",\"operator\":\">\",\"value\":0}}]}} → {\"inclusions\":{\"operator\":\"or\",\"rules\":[{\"event_sources\":[{\"type\":\"page\",\"id\":270295003856920},{\"type\":\"page\",\"id\":603554302850624}],\"retention_seconds\":15552000,\"filter\":{\"operator\":\"or\",\"filters\":[{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_checkout_page_load_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_checkout_confirmation_page_load_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_checkout_pixel_event\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_purchase_pixel_event\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_add_to_cart_pixel_event\"}]},\"aggregation\":{\"type\":\"count\",\"method\":\"absolute\",\"operator\":\">\",\"value\":0}}]}})",
+  "text": "Público personalizado actualizado · asa_auto_custom_audience ({\"inclusions\":{\"operator\":\"or\",\"rules\":[{\"event_sources\":[{\"type\":\"page\",\"id\":270295003856920},{\"type\":\"page\",\"id\":603554302850624}],\"retention_seconds\":15552000,\"filter\":{\"operator\":\"or\",\"filters\":[{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_footer_copy_code_click_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_footer_autofill_code_attempt_info\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_email_submission_success\"}]},\"aggregation\":{\"type\":\"count\",\"method\":\"absolute\",\"operator\":\">\",\"value\":0}}]}} → {\"inclusions\":{\"operator\":\"or\",\"rules\":[{\"event_sources\":[{\"type\":\"page\",\"id\":270295003856920},{\"type\":\"page\",\"id\":603554302850624}],\"retention_seconds\":15552000,\"filter\":{\"operator\":\"or\",\"filters\":[{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_bottom_sheet_copy_click_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_footer_copy_code_click_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_footer_autofill_code_attempt_info\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_email_submission_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_footer_see_offer_button_click_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_footer_click_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_bottom_sheet_see_details_link_click_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_email_footer_sign_up_button_click_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_tc_footer_bottom_sheet_click_success\"}]},\"aggregation\":{\"type\":\"count\",\"method\":\"absolute\",\"operator\":\">\",\"value\":0}}]}})",
   "src": "meta"
  },
  {
@@ -608,7 +662,7 @@
  {
   "date": "2026-10-21",
   "cat": "segmentacion",
-  "text": "Público personalizado actualizado · asa_auto_custom_audience ({\"inclusions\":{\"operator\":\"or\",\"rules\":[{\"event_sources\":[{\"type\":\"page\",\"id\":270295003856920},{\"type\":\"page\",\"id\":603554302850624}],\"retention_seconds\":15552000,\"filter\":{\"operator\":\"or\",\"filters\":[{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_footer_copy_code_click_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_footer_autofill_code_attempt_info\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_email_submission_success\"}]},\"aggregation\":{\"type\":\"count\",\"method\":\"absolute\",\"operator\":\">\",\"value\":0}}]}} → {\"inclusions\":{\"operator\":\"or\",\"rules\":[{\"event_sources\":[{\"type\":\"page\",\"id\":270295003856920},{\"type\":\"page\",\"id\":603554302850624}],\"retention_seconds\":15552000,\"filter\":{\"operator\":\"or\",\"filters\":[{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_bottom_sheet_copy_click_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_footer_copy_code_click_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_footer_autofill_code_attempt_info\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_email_submission_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_footer_see_offer_button_click_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_footer_click_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_bottom_sheet_see_details_link_click_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_email_footer_sign_up_button_click_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_tc_footer_bottom_sheet_click_success\"}]},\"aggregation\":{\"type\":\"count\",\"method\":\"absolute\",\"operator\":\">\",\"value\":0}}]}})",
+  "text": "Público personalizado actualizado · asa_auto_custom_audience ({\"inclusions\":{\"operator\":\"or\",\"rules\":[{\"event_sources\":[{\"type\":\"page\",\"id\":270295003856920},{\"type\":\"page\",\"id\":603554302850624}],\"retention_seconds\":15552000,\"filter\":{\"operator\":\"or\",\"filters\":[{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_checkout_page_load_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_checkout_confirmation_page_load_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_checkout_pixel_event\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_purchase_pixel_event\"}]},\"aggregation\":{\"type\":\"count\",\"method\":\"absolute\",\"operator\":\">\",\"value\":0}}]}} → {\"inclusions\":{\"operator\":\"or\",\"rules\":[{\"event_sources\":[{\"type\":\"page\",\"id\":270295003856920},{\"type\":\"page\",\"id\":603554302850624}],\"retention_seconds\":15552000,\"filter\":{\"operator\":\"or\",\"filters\":[{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_checkout_page_load_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_checkout_confirmation_page_load_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_checkout_pixel_event\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_purchase_pixel_event\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_add_to_cart_pixel_event\"}]},\"aggregation\":{\"type\":\"count\",\"method\":\"absolute\",\"operator\":\">\",\"value\":0}}]}})",
   "src": "meta"
  },
  {
@@ -664,59 +718,5 @@
   "cat": "creativo",
   "text": "Se apagó «Carrusel productos»",
   "src": "auto"
- },
- {
-  "date": "2026-10-09",
-  "cat": "creativo",
-  "text": "Se encendió/lanzó «Anuncio Dia de la madre»",
-  "src": "auto"
- },
- {
-  "date": "2026-10-09",
-  "cat": "creativo",
-  "text": "Se apagó «Anuncio Dia de la madre»",
-  "src": "auto"
- },
- {
-  "date": "2026-10-08",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Anuncio Video pudin + mate día con be powder (Revisión pendiente → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-08",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Anuncio dios de la semana (Revisión pendiente → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-08",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Anuncio Vaso de Leche Cacao Video (Revisión pendiente → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-08",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Carrusel productos (Revisión pendiente → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-08",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Carrusel productos (Procesamiento pendiente → Revisión pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-08",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Anuncio dios de la semana (Procesamiento pendiente → Revisión pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-08",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Anuncio Video pudin + mate día con be powder (Procesamiento pendiente → Revisión pendiente)",
-  "src": "meta"
  }
 ]
