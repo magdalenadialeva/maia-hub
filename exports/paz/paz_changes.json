@@ -1,5 +1,77 @@
 [
  {
+  "date": "2026-10-26",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · IG Img 13/10 B - Convocatoria Ya invierte (+USD 5K) - Copia - TEST filtro pauta (Revisión pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-26",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · IG Img 13/10 B - Convocatoria Ya invierte (+USD 5K) - Copia - TEST filtro pauta (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-26",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · IG Img 13/10 B - Convocatoria Ya invierte (+USD 5K) - Copia - TEST filtro pauta (Activo → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-26",
+  "cat": "creativo",
+  "text": "Anuncio actualizado · IG Img 13/10 B - Convocatoria Ya invierte (+USD 5K) - Copia - TEST filtro pauta",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-26",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · IG Img 13/10 A - Convocatoria Escalar (+USD 5K) v2 - Copia - TEST filtro pauta (Revisión pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-26",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · 2 - Nueva - Copia (Revisión pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-26",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · IG Img 13/10 A - Convocatoria Escalar (+USD 5K) v2 - Copia - TEST filtro pauta (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-26",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · 2 - Nueva - Copia (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-26",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · IG Img 13/10 A - Convocatoria Escalar (+USD 5K) v2 - Copia - TEST filtro pauta (Activo → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-26",
+  "cat": "creativo",
+  "text": "Anuncio actualizado · IG Img 13/10 A - Convocatoria Escalar (+USD 5K) v2 - Copia - TEST filtro pauta",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-26",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · 2 - Nueva - Copia (Activo → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-26",
+  "cat": "creativo",
+  "text": "Anuncio actualizado · 2 - Nueva - Copia",
+  "src": "meta"
+ },
+ {
   "date": "2026-10-25",
   "cat": "estado",
   "text": "Estado del anuncio actualizado · 2 - Nueva - Copia (Revisión pendiente → Activo)",
@@ -158,13 +230,7 @@
  {
   "date": "2026-10-24",
   "cat": "creativo",
-  "text": "Anuncio creado · IG Img 20/10 - Convocatoria Inmobiliarias (Buscamos inmobiliarias que quieran crecer) - Copia - TEST filtro pauta",
-  "src": "meta"
- },
- {
-  "date": "2026-10-24",
-  "cat": "creativo",
-  "text": "Anuncio creado · IG Video 16/10 B - Convocatoria Inmobiliarias (Muchas consultas, pocas visitas) - Copia - TEST filtro pauta",
+  "text": "Anuncio creado · IG Img 13/10 B - Convocatoria Ya invierte (+USD 5K) - Copia - TEST filtro pauta",
   "src": "meta"
  },
  {
@@ -176,7 +242,13 @@
  {
   "date": "2026-10-24",
   "cat": "creativo",
-  "text": "Anuncio creado · IG Img 13/10 B - Convocatoria Ya invierte (+USD 5K) - Copia - TEST filtro pauta",
+  "text": "Anuncio creado · IG Video 16/10 B - Convocatoria Inmobiliarias (Muchas consultas, pocas visitas) - Copia - TEST filtro pauta",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-24",
+  "cat": "creativo",
+  "text": "Anuncio creado · IG Img 20/10 - Convocatoria Inmobiliarias (Buscamos inmobiliarias que quieran crecer) - Copia - TEST filtro pauta",
   "src": "meta"
  },
  {
@@ -212,6 +284,12 @@
  {
   "date": "2026-10-24",
   "cat": "creativo",
+  "text": "Se apagó «IG Img 13/10 B - Convocatoria Ya invierte (+USD 5K)»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-10-24",
+  "cat": "creativo",
   "text": "Se reactivó «IG Img 16/10 A - Convocatoria Marcas por Lanzar»",
   "src": "auto"
  },
@@ -219,6 +297,12 @@
   "date": "2026-10-24",
   "cat": "creativo",
   "text": "Se encendió/lanzó «IG Video 16/10 B - Convocatoria Inmobiliarias (Muchas consultas, pocas visitas) - Copia - TEST filtro pauta»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-10-24",
+  "cat": "creativo",
+  "text": "Se apagó «IG Video 16/10 B - Convocatoria Inmobiliarias (Muchas consultas, pocas visitas) - Copia - TEST filtro pauta»",
   "src": "auto"
  },
  {
@@ -633,90 +717,6 @@
   "date": "2026-10-12",
   "cat": "estado",
   "text": "Estado del anuncio actualizado · 2 - Nueva - Copia 2 (Inactivo → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-12",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · IG Post 10/9 - Convocatoria (DdFq8b0tHL3) (Inactivo → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-12",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · IG Post 10/9 - Convocatoria (DdFq8b0tHL3) (Inactivo → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-12",
-  "cat": "creativo",
-  "text": "Se apagó «IG Post 25/9 - Convocatoria Angulo Pauta sin Datos»",
-  "src": "auto"
- },
- {
-  "date": "2026-10-11",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · IG Post 10/9 - Convocatoria (DdFq8b0tHL3) (Procesamiento pendiente → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-11",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · IG Post 10/9 - Convocatoria (DdFq8b0tHL3) (Activo → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-11",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · IG Post 10/9 - Convocatoria (DdFq8b0tHL3) (Activo → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-11",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · IG Post 10/9 - Convocatoria (DdFq8b0tHL3) (Procesamiento pendiente → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-11",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · IG Post 10/9 - Convocatoria (DdFq8b0tHL3) (Inactivo → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-11",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · IG Post 10/9 - Convocatoria (DdFq8b0tHL3) (Inactivo → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-11",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · IG Post 4/9 C - Convocatoria (Dc1FCLwszOO) (Procesamiento pendiente → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-11",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · IG Post 4/9 C - Convocatoria (Dc1FCLwszOO) (Inactivo → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-11",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · IG Post 4/9 C - Convocatoria (Dc1FCLwszOO) (Inactivo → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-11",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · 2 - Nueva - Copia 2 (Procesamiento pendiente → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-11",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · 2 - Nueva - Copia 2 (Activo → Inactivo)",
   "src": "meta"
  }
 ]

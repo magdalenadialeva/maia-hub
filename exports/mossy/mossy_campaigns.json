@@ -3,10 +3,10 @@
   "name": "Mar26 - Ventas - A+ - Catalogo - Frio",
   "objective": "OUTCOME_SALES",
   "status": "PAUSED",
-  "spend": 1776840.54,
-  "first": "2026-09-20",
+  "spend": 1672949.2,
+  "first": "2026-09-21",
   "last": "2026-10-17",
-  "purch": 38.0,
+  "purch": 34.0,
   "msg": 31.0,
   "ads": [
    "Ad6 - Secuencia - Nueva coleccion 2026 - Copia 4",
@@ -27,24 +27,24 @@
    "Ad15 - UGC - Mix and Match",
    "Ad16 - Testimonios - WhatsApp calce"
   ],
-  "impr": 252527.0,
-  "lc": 6536.0,
-  "lpv": 5762.0,
-  "atc": 645.0,
-  "ic": 91.0,
-  "pval": 3709285.3,
+  "impr": 234040.0,
+  "lc": 6089.0,
+  "lpv": 5364.0,
+  "atc": 619.0,
+  "ic": 83.0,
+  "pval": 3329899.05,
   "leads": 0.0,
-  "window_from": "2026-09-20"
+  "window_from": "2026-09-21"
  },
  {
   "name": "Mossy_AlwaysOn_Conversiones_Dinámicos",
   "objective": "OUTCOME_SALES",
   "status": "ACTIVE",
-  "spend": 728123.14,
+  "spend": 749033.08,
   "first": "2026-09-30",
-  "last": "2026-10-25",
-  "purch": 24.0,
-  "msg": 9.0,
+  "last": "2026-10-26",
+  "purch": 26.0,
+  "msg": 10.0,
   "ads": [
    "B agosto -  Catálogo contenido advantage + todos los productos - Copia 4",
    "Ad10 - Catalogo AlwaysOn - Brava Mix&Match",
@@ -73,21 +73,21 @@
    "Stack - Brava Detalle 07 - Copia 3",
    "Stack - Brava UGC 06 - Copia 3"
   ],
-  "impr": 126429.0,
-  "lc": 3668.0,
-  "lpv": 3552.0,
-  "atc": 319.0,
-  "ic": 55.0,
-  "pval": 2031172.37,
+  "impr": 130655.0,
+  "lc": 3802.0,
+  "lpv": 3682.0,
+  "atc": 330.0,
+  "ic": 58.0,
+  "pval": 2195593.38,
   "leads": 0.0,
-  "window_from": "2026-09-20"
+  "window_from": "2026-09-21"
  },
  {
   "name": "Ago26 - Ventas - CBO - Prospecting - Angulos Nuevos",
   "objective": "OUTCOME_SALES",
   "status": "PAUSED",
-  "spend": 231016.29,
-  "first": "2026-09-20",
+  "spend": 197943.07,
+  "first": "2026-09-21",
   "last": "2026-10-12",
   "purch": 5.0,
   "msg": 2.0,
@@ -99,14 +99,14 @@
    "Ad8 - Video - Anticipo Temporada - Mega Sale",
    "Ad9 - Producto Fit - Mega Sale - Tu top tu bombacha tu talle"
   ],
-  "impr": 20478.0,
-  "lc": 639.0,
-  "lpv": 596.0,
-  "atc": 82.0,
-  "ic": 7.0,
+  "impr": 17446.0,
+  "lc": 519.0,
+  "lpv": 494.0,
+  "atc": 61.0,
+  "ic": 6.0,
   "pval": 335607.28,
   "leads": 0.0,
-  "window_from": "2026-09-20"
+  "window_from": "2026-09-21"
  },
  {
   "name": "Conversiones_Campaña_Advantage+",
@@ -133,7 +133,7 @@
   "ic": 3.0,
   "pval": 206100.56,
   "leads": 0.0,
-  "window_from": "2026-09-20"
+  "window_from": "2026-09-21"
  },
  {
   "name": "Mar26 - Ventas - A+ - Retargeting",
@@ -160,28 +160,79 @@
   "ic": 0.0,
   "pval": 0.0,
   "leads": 0.0,
-  "window_from": "2026-09-20"
+  "window_from": "2026-09-21"
  },
  {
   "name": "Mossy_Test_Creativos_Brava",
   "objective": "OUTCOME_SALES",
   "status": "ACTIVE",
-  "spend": 10879.35,
+  "spend": 26087.68,
   "first": "2026-10-25",
-  "last": "2026-10-25",
+  "last": "2026-10-26",
   "purch": 0.0,
   "msg": 0.0,
   "ads": [
    "Stack - Brava Detalle 07 - Copia 4",
-   "Stack - Brava UGC 06 - Copia 4"
+   "Stack - Brava UGC 06 - Copia 4",
+   "Ad3 - Angulo Producto Fit - Test ATC",
+   "Ad2 - Angulo Viaje - Test ATC",
+   "Ad1 - Angulo Anticipo Temporada - Test ATC"
   ],
-  "impr": 1219.0,
-  "lc": 32.0,
-  "lpv": 30.0,
+  "impr": 3556.0,
+  "lc": 91.0,
+  "lpv": 86.0,
+  "atc": 8.0,
+  "ic": 0.0,
+  "pval": 0.0,
+  "leads": 0.0,
+  "window_from": "2026-09-21"
+ },
+ {
+  "name": "Mossy_LAL_Compradores_Brava",
+  "objective": "OUTCOME_SALES",
+  "status": "ACTIVE",
+  "spend": 7124.36,
+  "first": "2026-10-26",
+  "last": "2026-10-26",
+  "purch": 0.0,
+  "msg": 0.0,
+  "ads": [
+   "Stack - Brava Detalle 07 - Copia 5",
+   "Stack - Brava UGC 06 - Copia 5"
+  ],
+  "impr": 1004.0,
+  "lc": 12.0,
+  "lpv": 12.0,
+  "atc": 5.0,
+  "ic": 0.0,
+  "pval": 0.0,
+  "leads": 0.0,
+  "window_from": "2026-09-21"
+ },
+ {
+  "name": "Mossy_RMKT_Carrito_Brava_v2",
+  "objective": "OUTCOME_SALES",
+  "status": "ACTIVE",
+  "spend": 3056.59,
+  "first": "2026-10-26",
+  "last": "2026-10-26",
+  "purch": 0.0,
+  "msg": 0.0,
+  "ads": [
+   "Ad10 - Catalogo AlwaysOn - Brava Mix&Match - Copia 3",
+   "Stack - Brava Catalogo Moldería Cuerpos 09 - Copia 3",
+   "Stack - Brava UGC 06 - Copia 2",
+   "Stack - Brava Detalle 07 - Copia 2",
+   "Ad6 - Secuencia - Nueva coleccion 2026 - Copia 3",
+   "Stack - Brava Mix&Match 04 - Copia 2"
+  ],
+  "impr": 407.0,
+  "lc": 8.0,
+  "lpv": 8.0,
   "atc": 0.0,
   "ic": 0.0,
   "pval": 0.0,
   "leads": 0.0,
-  "window_from": "2026-09-20"
+  "window_from": "2026-09-21"
  }
 ]

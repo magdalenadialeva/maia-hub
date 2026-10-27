@@ -1,5 +1,83 @@
 [
  {
+  "date": "2026-10-26",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Post: \"Cómo empezó Be powder? 🩷\" (Revisión pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-26",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Post: \"Cómo empezó Be powder? 🩷\" (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-26",
+  "cat": "segmentacion",
+  "text": "Público personalizado creado · Pixel Audience: Purchase Event  30 Days - 1149879373665723 - System Generated",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-26",
+  "cat": "estado",
+  "text": "Estado del conjunto de anuncios actualizado · Post: \"Cómo empezó Be powder? 🩷\" (Procesamiento pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-26",
+  "cat": "creativo",
+  "text": "Anuncio creado · Post: \"Cómo empezó Be powder? 🩷\"",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-26",
+  "cat": "otros",
+  "text": "Segmentación del conjunto de anuncios actualizada · Post: \"Cómo empezó Be powder? 🩷\"",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-26",
+  "cat": "objetivo",
+  "text": "Ad set performance goal updated · Post: \"Cómo empezó Be powder? 🩷\"",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-26",
+  "cat": "presupuesto",
+  "text": "Estrategia de puja del conjunto de anuncios actualizada · Post: \"Cómo empezó Be powder? 🩷\"",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-26",
+  "cat": "creativo",
+  "text": "Conjunto de anuncios creado · Post: \"Cómo empezó Be powder? 🩷\"",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-26",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Publicación: \"Cómo empezó Be powder? 🩷\" (Procesamiento pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-26",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Publicación: \"Cómo empezó Be powder? 🩷\" (Activo → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-26",
+  "cat": "estado",
+  "text": "Estado de la campaña actualizado · Publicación: \"Cómo empezó Be powder? 🩷\" (Activa → Inactiva)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-26",
+  "cat": "creativo",
+  "text": "Se encendió/lanzó «Post: \"Cómo empezó Be powder? 🩷\"»",
+  "src": "auto"
+ },
+ {
   "date": "2026-10-25",
   "cat": "estado",
   "text": "Estado del anuncio actualizado · Publicación: \"Cómo empezó Be powder? 🩷\" (Revisión pendiente → Activo)",
@@ -266,13 +344,13 @@
  {
   "date": "2026-10-23",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · post novo combo 1 (10/03/2026) (Activo → Inactivo)",
+  "text": "Estado del anuncio actualizado cuando se completa su revisión · videos novos 1 (22-10-2025) (Activo → Inactivo)",
   "src": "meta"
  },
  {
   "date": "2026-10-23",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · videos novos 1 (22-10-2025) (Activo → Inactivo)",
+  "text": "Estado del anuncio actualizado cuando se completa su revisión · post novo combo 1 (10/03/2026) (Activo → Inactivo)",
   "src": "meta"
  },
  {
@@ -290,13 +368,13 @@
  {
   "date": "2026-10-23",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · videos novos 2 (26-11-2025) (Activo → Procesamiento pendiente)",
+  "text": "Estado del anuncio actualizado · post novo combo 1 (10/03/2026) (Activo → Procesamiento pendiente)",
   "src": "meta"
  },
  {
   "date": "2026-10-23",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · post novo combo 1 (10/03/2026) (Activo → Procesamiento pendiente)",
+  "text": "Estado del anuncio actualizado · videos novos 2 (26-11-2025) (Activo → Procesamiento pendiente)",
   "src": "meta"
  },
  {
@@ -338,13 +416,13 @@
  {
   "date": "2026-10-23",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · 02-TOFU-AO1-Gif (Activo → Procesamiento pendiente)",
+  "text": "Estado del anuncio actualizado · 09-TOFU-AO3-Carrusel (Procesamiento pendiente → Inactivo)",
   "src": "meta"
  },
  {
   "date": "2026-10-23",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · 09-TOFU-AO3-Carrusel (Procesamiento pendiente → Inactivo)",
+  "text": "Estado del anuncio actualizado · 02-TOFU-AO1-Gif (Activo → Procesamiento pendiente)",
   "src": "meta"
  },
  {
@@ -640,83 +718,5 @@
   "cat": "segmentacion",
   "text": "Público personalizado actualizado · asa_auto_custom_audience ({\"inclusions\":{\"operator\":\"or\",\"rules\":[{\"event_sources\":[{\"type\":\"page\",\"id\":270295003856920},{\"type\":\"page\",\"id\":603554302850624}],\"retention_seconds\":15552000,\"filter\":{\"operator\":\"or\",\"filters\":[{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_footer_autofill_code_apply_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_non_shopify_autofill_code_fill_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_non_shopify_autofill_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_non_shopify_autofill_success_on_expected_page\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_footer_claim_offer_apply_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_footer_html_diff_signal_coupon_apply_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_footer_copy_paste_signal_coupon_apply_success\"}]},\"aggregation\":{\"type\":\"count\",\"method\":\"absolute\",\"operator\":\">\",\"value\":0}}]}} → {\"inclusions\":{\"operator\":\"or\",\"rules\":[{\"event_sources\":[{\"type\":\"page\",\"id\":270295003856920},{\"type\":\"page\",\"id\":603554302850624}],\"retention_seconds\":15552000,\"filter\":{\"operator\":\"or\",\"filters\":[{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_footer_autofill_code_apply_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_non_shopify_autofill_code_fill_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_non_shopify_autofill_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_non_shopify_autofill_success_on_expected_page\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_footer_claim_offer_apply_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_footer_html_diff_signal_coupon_apply_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_footer_copy_paste_signal_coupon_apply_success\"}]},\"aggregation\":{\"type\":\"count\",\"method\":\"absolute\",\"operator\":\">\",\"value\":0}},{\"event_sources\":[{\"type\":\"ig_business\",\"id\":17841400308766850},{\"type\":\"ig_business\",\"id\":17841467472200443}],\"retention_seconds\":15552000,\"filter\":{\"operator\":\"or\",\"filters\":[{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"autofill_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"autofill_success_v2\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"xconnect_html_diff_signal_coupon_apply_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"copy_paste_apply_success\"}]},\"aggregation\":{\"type\":\"count\",\"method\":\"absolute\",\"operator\":\">\",\"value\":0}}]}})",
   "src": "meta"
- },
- {
-  "date": "2026-10-21",
-  "cat": "segmentacion",
-  "text": "Público personalizado actualizado · asa_auto_custom_audience ({\"inclusions\":{\"operator\":\"or\",\"rules\":[{\"event_sources\":[{\"type\":\"page\",\"id\":270295003856920},{\"type\":\"page\",\"id\":603554302850624}],\"retention_seconds\":15552000,\"filter\":{\"operator\":\"or\",\"filters\":[{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_footer_copy_paste_signal_observe_paste_info\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_footer_copy_paste_signal_coupon_input_info\"}]},\"aggregation\":{\"type\":\"count\",\"method\":\"absolute\",\"operator\":\">\",\"value\":0}}]}} → {\"inclusions\":{\"operator\":\"or\",\"rules\":[{\"event_sources\":[{\"type\":\"page\",\"id\":270295003856920},{\"type\":\"page\",\"id\":603554302850624}],\"retention_seconds\":15552000,\"filter\":{\"operator\":\"or\",\"filters\":[{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_footer_copy_paste_signal_observe_paste_info\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_footer_copy_paste_signal_coupon_input_info\"}]},\"aggregation\":{\"type\":\"count\",\"method\":\"absolute\",\"operator\":\">\",\"value\":0}},{\"event_sources\":[{\"type\":\"ig_business\",\"id\":17841400308766850},{\"type\":\"ig_business\",\"id\":17841467472200443}],\"retention_seconds\":15552000,\"filter\":{\"operator\":\"or\",\"filters\":[{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"copy_paste_signal_observe_paste_info\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"copy_paste_signal_coupon_input_info\"}]},\"aggregation\":{\"type\":\"count\",\"method\":\"absolute\",\"operator\":\">\",\"value\":0}}]}})",
-  "src": "meta"
- },
- {
-  "date": "2026-10-21",
-  "cat": "segmentacion",
-  "text": "Público personalizado actualizado · asa_auto_custom_audience ({\"inclusions\":{\"operator\":\"or\",\"rules\":[{\"event_sources\":[{\"type\":\"page\",\"id\":270295003856920},{\"type\":\"page\",\"id\":603554302850624}],\"retention_seconds\":15552000,\"filter\":{\"operator\":\"or\",\"filters\":[{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_footer_copy_code_click_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_footer_autofill_code_attempt_info\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_email_submission_success\"}]},\"aggregation\":{\"type\":\"count\",\"method\":\"absolute\",\"operator\":\">\",\"value\":0}}]}} → {\"inclusions\":{\"operator\":\"or\",\"rules\":[{\"event_sources\":[{\"type\":\"page\",\"id\":270295003856920},{\"type\":\"page\",\"id\":603554302850624}],\"retention_seconds\":15552000,\"filter\":{\"operator\":\"or\",\"filters\":[{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_bottom_sheet_copy_click_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_footer_copy_code_click_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_footer_autofill_code_attempt_info\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_email_submission_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_footer_see_offer_button_click_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_footer_click_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_bottom_sheet_see_details_link_click_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_email_footer_sign_up_button_click_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_tc_footer_bottom_sheet_click_success\"}]},\"aggregation\":{\"type\":\"count\",\"method\":\"absolute\",\"operator\":\">\",\"value\":0}}]}})",
-  "src": "meta"
- },
- {
-  "date": "2026-10-21",
-  "cat": "segmentacion",
-  "text": "Público personalizado actualizado · asa_auto_custom_audience ({\"inclusions\":{\"operator\":\"or\",\"rules\":[{\"event_sources\":[{\"type\":\"page\",\"id\":270295003856920},{\"type\":\"page\",\"id\":603554302850624}],\"retention_seconds\":15552000,\"filter\":{\"operator\":\"or\",\"filters\":[{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_footer_autofill_code_apply_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_non_shopify_autofill_code_fill_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_non_shopify_autofill_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_non_shopify_autofill_success_on_expected_page\"}]},\"aggregation\":{\"type\":\"count\",\"method\":\"absolute\",\"operator\":\">\",\"value\":0}}]}} → {\"inclusions\":{\"operator\":\"or\",\"rules\":[{\"event_sources\":[{\"type\":\"page\",\"id\":270295003856920},{\"type\":\"page\",\"id\":603554302850624}],\"retention_seconds\":15552000,\"filter\":{\"operator\":\"or\",\"filters\":[{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_footer_autofill_code_apply_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_non_shopify_autofill_code_fill_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_non_shopify_autofill_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_non_shopify_autofill_success_on_expected_page\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_footer_claim_offer_apply_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_footer_html_diff_signal_coupon_apply_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_footer_copy_paste_signal_coupon_apply_success\"}]},\"aggregation\":{\"type\":\"count\",\"method\":\"absolute\",\"operator\":\">\",\"value\":0}}]}})",
-  "src": "meta"
- },
- {
-  "date": "2026-10-21",
-  "cat": "segmentacion",
-  "text": "Público personalizado actualizado · asa_auto_custom_audience ({\"inclusions\":{\"operator\":\"or\",\"rules\":[{\"event_sources\":[{\"type\":\"page\",\"id\":270295003856920},{\"type\":\"page\",\"id\":603554302850624}],\"retention_seconds\":15552000,\"filter\":{\"operator\":\"or\",\"filters\":[{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_checkout_page_load_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_checkout_confirmation_page_load_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_checkout_pixel_event\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_purchase_pixel_event\"}]},\"aggregation\":{\"type\":\"count\",\"method\":\"absolute\",\"operator\":\">\",\"value\":0}}]}} → {\"inclusions\":{\"operator\":\"or\",\"rules\":[{\"event_sources\":[{\"type\":\"page\",\"id\":270295003856920},{\"type\":\"page\",\"id\":603554302850624}],\"retention_seconds\":15552000,\"filter\":{\"operator\":\"or\",\"filters\":[{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_checkout_page_load_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_checkout_confirmation_page_load_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_checkout_pixel_event\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_purchase_pixel_event\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_add_to_cart_pixel_event\"}]},\"aggregation\":{\"type\":\"count\",\"method\":\"absolute\",\"operator\":\">\",\"value\":0}}]}})",
-  "src": "meta"
- },
- {
-  "date": "2026-10-16",
-  "cat": "segmentacion",
-  "text": "Público personalizado creado · asa_auto_custom_audience",
-  "src": "meta"
- },
- {
-  "date": "2026-10-09",
-  "cat": "estado",
-  "text": "Estado de la campaña actualizado · BePowder_Sep-2026_Conversiones (Activa → Inactiva)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-09",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Anuncio Dia de la madre (Revisión pendiente → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-09",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Anuncio Dia de la madre (Procesamiento pendiente → Revisión pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-09",
-  "cat": "creativo",
-  "text": "Anuncio creado · Anuncio Dia de la madre",
-  "src": "meta"
- },
- {
-  "date": "2026-10-09",
-  "cat": "creativo",
-  "text": "Se apagó «Anuncio dios de la semana»",
-  "src": "auto"
- },
- {
-  "date": "2026-10-09",
-  "cat": "creativo",
-  "text": "Se apagó «Anuncio Video pudin + mate día con be powder»",
-  "src": "auto"
- },
- {
-  "date": "2026-10-09",
-  "cat": "creativo",
-  "text": "Se apagó «Anuncio Vaso de Leche Cacao Video»",
-  "src": "auto"
- },
- {
-  "date": "2026-10-09",
-  "cat": "creativo",
-  "text": "Se apagó «Carrusel productos»",
-  "src": "auto"
  }
 ]

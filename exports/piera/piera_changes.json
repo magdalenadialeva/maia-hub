@@ -362,13 +362,13 @@
  {
   "date": "2026-09-29",
   "cat": "segmentacion",
-  "text": "Público personalizado creado · Público similar (CL, 1%) - Agregaron al carrito 180 días",
+  "text": "Público personalizado creado · Público similar (CL) - Agregaron al carrito 180 días",
   "src": "meta"
  },
  {
   "date": "2026-09-29",
   "cat": "segmentacion",
-  "text": "Público personalizado creado · Público similar (CL) - Agregaron al carrito 180 días",
+  "text": "Público personalizado creado · Público similar (CL, 1%) - Agregaron al carrito 180 días",
   "src": "meta"
  },
  {
@@ -398,19 +398,13 @@
  {
   "date": "2026-09-29",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · AYMARA - LINK AD - V4 (Inactivo → Eliminado)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-29",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · AYMARA - LINK AD- V6 (Inactivo → Eliminado)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-29",
-  "cat": "estado",
   "text": "Estado del anuncio actualizado · AYMARA - LINK AD - V2 (Inactivo → Eliminado)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-29",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · AYMARA - LINK AD - V3 (Activo → Eliminado)",
   "src": "meta"
  },
  {
@@ -422,7 +416,13 @@
  {
   "date": "2026-09-29",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · AYMARA - LINK AD - V3 (Activo → Eliminado)",
+  "text": "Estado del anuncio actualizado · AYMARA - LINK AD - V4 (Inactivo → Eliminado)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-29",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · AYMARA - LINK AD- V6 (Inactivo → Eliminado)",
   "src": "meta"
  },
  {
@@ -530,13 +530,19 @@
  {
   "date": "2026-09-29",
   "cat": "segmentacion",
-  "text": "Público personalizado creado · Público similar (CL) - Visitantes sitio web 60 dias - Cyber 2026",
+  "text": "Público personalizado creado · Público similar (CL, 1%) - Visitantes sitio web 60 dias - Cyber 2026",
   "src": "meta"
  },
  {
   "date": "2026-09-29",
   "cat": "segmentacion",
-  "text": "Público personalizado creado · Público similar (CL, 1%) - Visitantes sitio web 60 dias - Cyber 2026",
+  "text": "Público personalizado creado · Público similar (CL) - Visitantes sitio web 60 dias - Cyber 2026",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-29",
+  "cat": "creativo",
+  "text": "Anuncio creado · AYMARA - LINK AD- V6",
   "src": "meta"
  },
  {
@@ -567,12 +573,6 @@
   "date": "2026-09-29",
   "cat": "creativo",
   "text": "Anuncio creado · AYMARA - LINK AD - V3",
-  "src": "meta"
- },
- {
-  "date": "2026-09-29",
-  "cat": "creativo",
-  "text": "Anuncio creado · AYMARA - LINK AD- V6",
   "src": "meta"
  },
  {

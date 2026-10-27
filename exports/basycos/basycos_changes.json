@@ -1,5 +1,11 @@
 [
  {
+  "date": "2026-10-24",
+  "cat": "creativo",
+  "text": "Se apagó «Conjunto Lugano»",
+  "src": "auto"
+ },
+ {
   "date": "2026-10-23",
   "cat": "estado",
   "text": "Estado del anuncio actualizado · Conjunto Lugano - Copy (Revisión pendiente → Inactivo)",
@@ -711,12 +717,6 @@
   "date": "2026-10-13",
   "cat": "estado",
   "text": "Estado del anuncio actualizado · 10% Off Toscana (Procesamiento pendiente → Revisión pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-13",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · PRE-SALE · 20.08 (Procesamiento pendiente → Inactivo)",
   "src": "meta"
  }
 ]
