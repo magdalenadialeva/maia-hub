@@ -1,5 +1,11 @@
 [
  {
+  "date": "2026-10-27",
+  "cat": "creativo",
+  "text": "Se encendió/lanzó «Ad4 - Angulo Resenas Calce - Test ATC»",
+  "src": "auto"
+ },
+ {
   "date": "2026-10-26",
   "cat": "estado",
   "text": "Estado del anuncio actualizado · Ad1 - Angulo Anticipo Temporada - Test ATC (Revisión pendiente → Activo)",
@@ -679,6 +685,30 @@
  },
  {
   "date": "2026-10-25",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Ad11 - Catalogo AlwaysOn - Brava Talle Real (Revisión pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-25",
+  "cat": "creativo",
+  "text": "Anuncio creado · Ad12 - Catalogo AlwaysOn - Brava Sin Set Cerrado",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-25",
+  "cat": "creativo",
+  "text": "Se apagó «Stack - Nuevo 2026 01»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-10-25",
+  "cat": "creativo",
+  "text": "Se apagó «Ad10 - Catalogo AlwaysOn - temp anteriores»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-10-25",
   "cat": "creativo",
   "text": "Se encendió/lanzó «Stack - Brava Detalle 07 - Copia 3»",
   "src": "auto"
@@ -688,35 +718,5 @@
   "cat": "creativo",
   "text": "Se encendió/lanzó «Stack - Brava UGC 06 - Copia 3»",
   "src": "auto"
- },
- {
-  "date": "2026-10-25",
-  "cat": "creativo",
-  "text": "Se encendió/lanzó «Stack - Brava Detalle 07 - Copia 4»",
-  "src": "auto"
- },
- {
-  "date": "2026-10-25",
-  "cat": "creativo",
-  "text": "Se encendió/lanzó «Stack - Brava UGC 06 - Copia 4»",
-  "src": "auto"
- },
- {
-  "date": "2026-10-24",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Stack - Brava Catalogo Moldería Cuerpos 09 - Copia 3 (Revisión pendiente → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-24",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Stack - Brava Mix&Match 04 - Copia 2 (Revisión pendiente → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-24",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Stack - Brava Lifestyle 05 - Copia 2 (Revisión pendiente → Activo)",
-  "src": "meta"
  }
 ]

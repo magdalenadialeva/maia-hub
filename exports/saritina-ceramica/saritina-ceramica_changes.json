@@ -1,5 +1,95 @@
 [
  {
+  "date": "2026-10-27",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Ad_Video_2 - Copia (Revisión pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-27",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Ad_Video_2 - Copia 3 (Revisión pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-27",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Ad_Video_2 - Copia 2 (Revisión pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-27",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Ad_Video_2 - Copia 3 (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-27",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Ad_Video_2 - Copia (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-27",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Ad_Video_2 - Copia 2 (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-27",
+  "cat": "creativo",
+  "text": "Anuncio creado · Ad_Video_2 - Copia 3",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-27",
+  "cat": "creativo",
+  "text": "Anuncio creado · Ad_Video_2 - Copia 2",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-27",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Ad_Video_2 - Copia (Revisión pendiente → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-27",
+  "cat": "creativo",
+  "text": "Anuncio actualizado · Ad_Video_2 - Copia",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-27",
+  "cat": "creativo",
+  "text": "Anuncio creado · Ad_Video_2 - Copia",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-27",
+  "cat": "creativo",
+  "text": "Se encendió/lanzó «Ad_Video_2 - Copia»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-10-27",
+  "cat": "creativo",
+  "text": "Se encendió/lanzó «Ad_Video_2 - Copia 2»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-10-27",
+  "cat": "creativo",
+  "text": "Se encendió/lanzó «Ad_Video_2 - Copia 3»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-10-25",
+  "cat": "creativo",
+  "text": "Se apagó «Ad_Video_3»",
+  "src": "auto"
+ },
+ {
   "date": "2026-10-25",
   "cat": "creativo",
   "text": "Se reactivó «Ad_Video_4»",
@@ -50,12 +140,6 @@
  {
   "date": "2026-10-20",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · Ad_Video_3 (Procesamiento pendiente → Revisión pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-20",
-  "cat": "estado",
   "text": "Estado del anuncio actualizado · Ad_Video_2 (Procesamiento pendiente → Revisión pendiente)",
   "src": "meta"
  },
@@ -63,6 +147,12 @@
   "date": "2026-10-20",
   "cat": "estado",
   "text": "Estado del anuncio actualizado · Ad_Video_4 (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-20",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Ad_Video_3 (Procesamiento pendiente → Revisión pendiente)",
   "src": "meta"
  },
  {
