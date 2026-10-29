@@ -1,5 +1,29 @@
 [
  {
+  "date": "2026-10-28",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Publicación: \"Cómo empezó Be powder? 🩷\" (Procesamiento pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-28",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Publicación: \"Cómo empezó Be powder? 🩷\" (Activo → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-28",
+  "cat": "estado",
+  "text": "Estado de la campaña actualizado · Publicación: \"Cómo empezó Be powder? 🩷\" (Activa → Inactiva)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-28",
+  "cat": "estado",
+  "text": "Estado de la campaña actualizado · Publicación: \"Cómo empezó Be powder? 🩷\" (Inactiva → Activa)",
+  "src": "meta"
+ },
+ {
   "date": "2026-10-26",
   "cat": "estado",
   "text": "Estado del anuncio actualizado · Post: \"Cómo empezó Be powder? 🩷\" (Revisión pendiente → Activo)",
@@ -350,12 +374,6 @@
  {
   "date": "2026-10-23",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · videos novos 1 (22-10-2025) (Activo → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-23",
-  "cat": "estado",
   "text": "Estado del anuncio actualizado cuando se completa su revisión · post novo combo 1 (10/03/2026) (Activo → Inactivo)",
   "src": "meta"
  },
@@ -368,7 +386,7 @@
  {
   "date": "2026-10-23",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · videos novos 1 (22-10-2025) (Activo → Procesamiento pendiente)",
+  "text": "Estado del anuncio actualizado cuando se completa su revisión · videos novos 1 (22-10-2025) (Activo → Inactivo)",
   "src": "meta"
  },
  {
@@ -381,6 +399,12 @@
   "date": "2026-10-23",
   "cat": "estado",
   "text": "Estado del anuncio actualizado · videos novos 2 (26-11-2025) (Activo → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-23",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · videos novos 1 (22-10-2025) (Activo → Procesamiento pendiente)",
   "src": "meta"
  },
  {
@@ -494,13 +518,13 @@
  {
   "date": "2026-10-23",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · 03-TOFU-AO1-Carru (Procesamiento pendiente → Inactivo)",
+  "text": "Estado del anuncio actualizado · 07-TOFU-AO3-Video - Copia (Procesamiento pendiente → Inactivo)",
   "src": "meta"
  },
  {
   "date": "2026-10-23",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · 07-TOFU-AO3-Video - Copia (Procesamiento pendiente → Inactivo)",
+  "text": "Estado del anuncio actualizado · 03-TOFU-AO1-Carru (Procesamiento pendiente → Inactivo)",
   "src": "meta"
  },
  {
@@ -584,12 +608,6 @@
  {
   "date": "2026-10-23",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · 11-TOFU-AO4-Gif - Copia (Procesamiento pendiente → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-23",
-  "cat": "estado",
   "text": "Estado del anuncio actualizado · 08-TOFU-AO3-Gif (Activo → Procesamiento pendiente)",
   "src": "meta"
  },
@@ -597,6 +615,12 @@
   "date": "2026-10-23",
   "cat": "estado",
   "text": "Estado del anuncio actualizado · 07-TOFU-AO3-Video (Activo → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-23",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · 11-TOFU-AO4-Gif - Copia (Procesamiento pendiente → Inactivo)",
   "src": "meta"
  },
  {
@@ -693,30 +717,6 @@
   "date": "2026-10-23",
   "cat": "estado",
   "text": "Estado del anuncio actualizado · 11-TOFU-AO4-Gif - Copia (Activo → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-23",
-  "cat": "creativo",
-  "text": "Se encendió/lanzó «Publicación: \"😮‍💨😮‍💨😮‍💨😮‍💨😍lo que va a ser noviembre!\"»",
-  "src": "auto"
- },
- {
-  "date": "2026-10-23",
-  "cat": "creativo",
-  "text": "Se encendió/lanzó «Publicación de Instagram: ¿Y si el color de lo...»",
-  "src": "auto"
- },
- {
-  "date": "2026-10-21",
-  "cat": "segmentacion",
-  "text": "Público personalizado actualizado · asa_auto_custom_audience ({\"inclusions\":{\"operator\":\"or\",\"rules\":[{\"event_sources\":[{\"type\":\"page\",\"id\":270295003856920},{\"type\":\"page\",\"id\":603554302850624}],\"retention_seconds\":15552000,\"filter\":{\"operator\":\"or\",\"filters\":[{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_bottom_sheet_copy_click_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_footer_copy_code_click_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_footer_autofill_code_attempt_info\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_email_submission_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_footer_see_offer_button_click_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_footer_click_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_bottom_sheet_see_details_link_click_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_email_footer_sign_up_button_click_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_tc_footer_bottom_sheet_click_success\"}]},\"aggregation\":{\"type\":\"count\",\"method\":\"absolute\",\"operator\":\">\",\"value\":0}}]}} → {\"inclusions\":{\"operator\":\"or\",\"rules\":[{\"event_sources\":[{\"type\":\"page\",\"id\":270295003856920},{\"type\":\"page\",\"id\":603554302850624}],\"retention_seconds\":15552000,\"filter\":{\"operator\":\"or\",\"filters\":[{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_bottom_sheet_copy_click_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_footer_copy_code_click_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_footer_autofill_code_attempt_info\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_email_submission_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_footer_see_offer_button_click_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_footer_click_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_bottom_sheet_see_details_link_click_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_email_footer_sign_up_button_click_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_tc_footer_bottom_sheet_click_success\"}]},\"aggregation\":{\"type\":\"count\",\"method\":\"absolute\",\"operator\":\">\",\"value\":0}},{\"event_sources\":[{\"type\":\"ig_business\",\"id\":17841400308766850},{\"type\":\"ig_business\",\"id\":17841467472200443}],\"retention_seconds\":15552000,\"filter\":{\"operator\":\"or\",\"filters\":[{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"bloks_bottom_sheet_copy_click\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"bloks_footer_copy_click\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"autofill_code_attempt_info\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"email_capture_sign_up_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"bloks_email_sign_up_click\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"bloks_footer_click\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"bloks_see_details_click\"}]},\"aggregation\":{\"type\":\"count\",\"method\":\"absolute\",\"operator\":\">\",\"value\":0}}]}})",
-  "src": "meta"
- },
- {
-  "date": "2026-10-21",
-  "cat": "segmentacion",
-  "text": "Público personalizado actualizado · asa_auto_custom_audience ({\"inclusions\":{\"operator\":\"or\",\"rules\":[{\"event_sources\":[{\"type\":\"page\",\"id\":270295003856920},{\"type\":\"page\",\"id\":603554302850624}],\"retention_seconds\":15552000,\"filter\":{\"operator\":\"or\",\"filters\":[{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_checkout_page_load_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_checkout_confirmation_page_load_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_checkout_pixel_event\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_purchase_pixel_event\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_add_to_cart_pixel_event\"}]},\"aggregation\":{\"type\":\"count\",\"method\":\"absolute\",\"operator\":\">\",\"value\":0}}]}} → {\"inclusions\":{\"operator\":\"or\",\"rules\":[{\"event_sources\":[{\"type\":\"page\",\"id\":270295003856920},{\"type\":\"page\",\"id\":603554302850624}],\"retention_seconds\":15552000,\"filter\":{\"operator\":\"or\",\"filters\":[{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_checkout_page_load_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_checkout_confirmation_page_load_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_checkout_pixel_event\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_purchase_pixel_event\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_add_to_cart_pixel_event\"}]},\"aggregation\":{\"type\":\"count\",\"method\":\"absolute\",\"operator\":\">\",\"value\":0}},{\"event_sources\":[{\"type\":\"ig_business\",\"id\":17841400308766850},{\"type\":\"ig_business\",\"id\":17841467472200443}],\"retention_seconds\":15552000,\"filter\":{\"operator\":\"or\",\"filters\":[{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"checkout_page\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"checkout_confirmation_page\"}]},\"aggregation\":{\"type\":\"count\",\"method\":\"absolute\",\"operator\":\">\",\"value\":0}}]}})",
   "src": "meta"
  }
 ]

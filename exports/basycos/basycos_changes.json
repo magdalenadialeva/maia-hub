@@ -1,8 +1,278 @@
 [
  {
-  "date": "2026-10-24",
+  "date": "2026-10-28",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Conjunto Lugano (Revisión pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-28",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Conjunto Lugano (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-28",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado cuando se completa su revisión · Conjunto Lugano (Inactivo → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-28",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Conjunto Lugano (Inactivo → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-28",
   "cat": "creativo",
-  "text": "Se apagó «Conjunto Lugano»",
+  "text": "Anuncio actualizado · Conjunto Lugano",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-28",
+  "cat": "estado",
+  "text": "Estado de la campaña actualizado · Traffic con conjunto Lugano (Activa → Inactiva)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-28",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Vestido Orleans (Revisión pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-28",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Conjunto Loira (Revisión pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-28",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Conjutno o vestido? Provenza (Revisión pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-28",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Varios - Copia (Revisión pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-28",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Conjutno o vestido? Provenza (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-28",
+  "cat": "otros",
+  "text": "Nombre del anuncio actualizado · Conjutno o vestido? Provenza (Conjutno o vestido? → Conjutno o vestido? Provenza)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-28",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Conjutno o vestido? Provenza (Revisión pendiente → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-28",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Conjunto Loira (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-28",
+  "cat": "creativo",
+  "text": "Anuncio creado · Conjunto Loira",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-28",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Varios - Copia 2 (Revisión pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-28",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Vestido Provenza (Revisión pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-28",
+  "cat": "creativo",
+  "text": "Anuncio creado · Conjutno o vestido? Provenza",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-28",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Varios (Revisión pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-28",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Varios - Copia 2 (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-28",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Pantalon Verona (Revisión pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-28",
+  "cat": "creativo",
+  "text": "Anuncio creado · Varios - Copia 2",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-28",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Varios - Copia (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-28",
+  "cat": "creativo",
+  "text": "Anuncio creado · Varios - Copia",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-28",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Varios (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-28",
+  "cat": "creativo",
+  "text": "Anuncio creado · Varios",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-28",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Vestido Orleans (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-28",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Vestido Provenza (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-28",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Vestido Orleans (Activo → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-28",
+  "cat": "creativo",
+  "text": "Anuncio actualizado · Vestido Orleans",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-28",
+  "cat": "creativo",
+  "text": "Anuncio creado · Vestido Provenza",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-28",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Pantalon Verona (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-28",
+  "cat": "otros",
+  "text": "Nombre del anuncio actualizado · Pantalon Verona (Vestido Orleans - Copia → Pantalon Verona)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-28",
+  "cat": "creativo",
+  "text": "Anuncio creado · Pantalon Verona",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-28",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Conjunto Lugano (Procesamiento pendiente → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-28",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado cuando se completa su revisión · Conjunto Lugano (Activo → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-28",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Conjunto Lugano (Activo → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-28",
+  "cat": "creativo",
+  "text": "Se reactivó «Conjunto Lugano»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-10-28",
+  "cat": "creativo",
+  "text": "Se encendió/lanzó «Pantalon Verona»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-10-28",
+  "cat": "creativo",
+  "text": "Se encendió/lanzó «Varios»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-10-28",
+  "cat": "creativo",
+  "text": "Se encendió/lanzó «Vestido Provenza»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-10-28",
+  "cat": "creativo",
+  "text": "Se encendió/lanzó «Varios - Copia»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-10-28",
+  "cat": "creativo",
+  "text": "Se encendió/lanzó «Varios - Copia 2»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-10-28",
+  "cat": "creativo",
+  "text": "Se encendió/lanzó «Conjutno o vestido? Provenza»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-10-28",
+  "cat": "creativo",
+  "text": "Se encendió/lanzó «Conjunto Loira»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-10-25",
+  "cat": "creativo",
+  "text": "Se pausó «Conjunto Lugano»",
   "src": "auto"
  },
  {
@@ -116,7 +386,7 @@
  {
   "date": "2026-10-23",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · Conjunto Lugano - Copy (Procesamiento pendiente → Revisión pendiente)",
+  "text": "Estado del anuncio actualizado · 10% Off Lugano (Procesamiento pendiente → Revisión pendiente)",
   "src": "meta"
  },
  {
@@ -128,13 +398,7 @@
  {
   "date": "2026-10-23",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · 10% Off Lugano (Procesamiento pendiente → Revisión pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-23",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Vestido Orleans (Procesamiento pendiente → Revisión pendiente)",
+  "text": "Estado del anuncio actualizado · Conjunto Lugano - Copy (Procesamiento pendiente → Revisión pendiente)",
   "src": "meta"
  },
  {
@@ -146,13 +410,19 @@
  {
   "date": "2026-10-23",
   "cat": "estado",
+  "text": "Estado del anuncio actualizado · Total Look Loira (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-23",
+  "cat": "estado",
   "text": "Estado del anuncio actualizado · ¿Conjunto o vestido? (Procesamiento pendiente → Revisión pendiente)",
   "src": "meta"
  },
  {
   "date": "2026-10-23",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · Total Look Loira (Procesamiento pendiente → Revisión pendiente)",
+  "text": "Estado del anuncio actualizado · Vestido Orleans (Procesamiento pendiente → Revisión pendiente)",
   "src": "meta"
  },
  {
@@ -296,19 +566,7 @@
  {
   "date": "2026-10-21",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · Total Look Loira (Procesamiento pendiente → Revisión pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-21",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Conjunto Lugano - Copy (Procesamiento pendiente → Revisión pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-21",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · ¿Conjunto o vestido? (Procesamiento pendiente → Revisión pendiente)",
+  "text": "Estado del anuncio actualizado · Conjunto Toulouse (Procesamiento pendiente → Revisión pendiente)",
   "src": "meta"
  },
  {
@@ -320,7 +578,19 @@
  {
   "date": "2026-10-21",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · Conjunto Toulouse (Procesamiento pendiente → Revisión pendiente)",
+  "text": "Estado del anuncio actualizado · ¿Conjunto o vestido? (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-21",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Conjunto Lugano - Copy (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-21",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Total Look Loira (Procesamiento pendiente → Revisión pendiente)",
   "src": "meta"
  },
  {
@@ -447,276 +717,6 @@
   "date": "2026-10-21",
   "cat": "objetivo",
   "text": "Ad set performance goal updated · Basyco Jerez_Conversiones_Purchase_SEP2026_Interese+Adv+ - Copy",
-  "src": "meta"
- },
- {
-  "date": "2026-10-21",
-  "cat": "presupuesto",
-  "text": "Estrategia de puja del conjunto de anuncios actualizada · Basyco Jerez_Conversiones_Purchase_SEP2026_Interese+Adv+ - Copy",
-  "src": "meta"
- },
- {
-  "date": "2026-10-21",
-  "cat": "creativo",
-  "text": "Conjunto de anuncios creado · Basyco Jerez_Conversiones_Purchase_SEP2026_Interese+Adv+ - Copy",
-  "src": "meta"
- },
- {
-  "date": "2026-10-21",
-  "cat": "segmentacion",
-  "text": "Público personalizado creado · Basyco - ViewContent 30d",
-  "src": "meta"
- },
- {
-  "date": "2026-10-21",
-  "cat": "creativo",
-  "text": "Se apagó «PRE-SALE · 20.08»",
-  "src": "auto"
- },
- {
-  "date": "2026-10-20",
-  "cat": "creativo",
-  "text": "Se pausó «Conjunto Lugano»",
-  "src": "auto"
- },
- {
-  "date": "2026-10-20",
-  "cat": "creativo",
-  "text": "Se reactivó «Conjunto Toulouse 29/09»",
-  "src": "auto"
- },
- {
-  "date": "2026-10-19",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · ¿Conjunto o vestido? (Procesamiento pendiente → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-19",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Conjunto Lugano (Procesamiento pendiente → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-19",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · ¿Conjunto o vestido? (Activo → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-19",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · ¿Conjunto o vestido? (Activo → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-19",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · Conjunto Lugano (Activo → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-19",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Conjunto Lugano (Activo → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-18",
-  "cat": "creativo",
-  "text": "Se apagó «¿Conjunto o vestido?»",
-  "src": "auto"
- },
- {
-  "date": "2026-10-17",
-  "cat": "creativo",
-  "text": "Se pausó «Conjunto Toulouse 29/09»",
-  "src": "auto"
- },
- {
-  "date": "2026-10-16",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · 10% Off Toscana (Procesamiento pendiente → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-16",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · 10% Off Toscana (Activo → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-16",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · 10% Off Toulouse (Procesamiento pendiente → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-16",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · 10% Off Toscana (Activo → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-16",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · 10% Off Lugano (Procesamiento pendiente → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-16",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · 10% Off Toulouse (Activo → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-16",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · 10% Off Toulouse (Activo → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-16",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · 10% Off Lugano (Activo → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-16",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · 10% Off Lugano (Activo → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-16",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Vestido Orleans (Revisión pendiente → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-16",
-  "cat": "presupuesto",
-  "text": "Presupuesto del conjunto de anuncios actualizado · Basyco Jerez_Conversiones_Purchase_SEP2026_Interese+Adv+ (25.000 → 30.000 ARS/día)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-16",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Vestido Orleans (Procesamiento pendiente → Revisión pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-16",
-  "cat": "creativo",
-  "text": "Anuncio creado · Vestido Orleans",
-  "src": "meta"
- },
- {
-  "date": "2026-10-16",
-  "cat": "segmentacion",
-  "text": "Público personalizado creado · asa_auto_custom_audience",
-  "src": "meta"
- },
- {
-  "date": "2026-10-16",
-  "cat": "creativo",
-  "text": "Se apagó «10% Off Toscana»",
-  "src": "auto"
- },
- {
-  "date": "2026-10-16",
-  "cat": "creativo",
-  "text": "Se apagó «10% Off Toulouse»",
-  "src": "auto"
- },
- {
-  "date": "2026-10-16",
-  "cat": "creativo",
-  "text": "Se encendió/lanzó «Vestido Orleans»",
-  "src": "auto"
- },
- {
-  "date": "2026-10-15",
-  "cat": "creativo",
-  "text": "Se apagó «10% Off Lugano»",
-  "src": "auto"
- },
- {
-  "date": "2026-10-14",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · PRE-SALE · 20.08 (Procesamiento pendiente → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-14",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · PRE-SALE · 20.08 (Inactivo → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-14",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · PRE-SALE · 20.08 (Inactivo → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-14",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · New Traffic Ad with recommended settings (Procesamiento pendiente → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-14",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · New Traffic Ad with recommended settings (Activo → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-14",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · New Traffic Ad with recommended settings (Activo → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-13",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · 10% Off Lugano (Procesamiento pendiente → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-13",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · 10% Off Toulouse (Procesamiento pendiente → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-13",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · 10% Off Lugano (Activo → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-13",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · 10% Off Toulouse (Activo → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-13",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · 10% Off Toscana (Revisión pendiente → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-13",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · 10% Off Toulouse (Revisión pendiente → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-13",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · 10% Off Toscana (Procesamiento pendiente → Revisión pendiente)",
   "src": "meta"
  }
 ]
