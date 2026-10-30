@@ -1,2 +1,2 @@
 ﻿slug,cliente,periodo,moneda,gasto,resultado,roas,cpa,cpl,cuello_embudo,diagnostico,veredictos
-mossy,Mossy,2026-09-23..2026-10-28,ARS,2661040.6,64,2.11,41579,,Agregaron al carrito,El cuello está en Agregaron al carrito → Iniciaron el pago: 13.9% vs ~45.0% sano.,escalar:5 iterar:1 matar:0 pocaData:63
+mossy,Mossy,2026-09-24..2026-10-29,ARS,2583627.13,62,2.09,41671,,Agregaron al carrito,El cuello está en Agregaron al carrito → Iniciaron el pago: 13.4% vs ~45.0% sano.,escalar:4 iterar:0 matar:1 pocaData:64

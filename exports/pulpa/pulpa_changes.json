@@ -1,5 +1,35 @@
 [
  {
+  "date": "2026-10-29",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Post: \"Step into comfort and support with our Wireless...\" (Activo → Eliminado)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-29",
+  "cat": "estado",
+  "text": "Estado del conjunto de anuncios actualizado · Post: \"Step into comfort and support with our Wireless...\" (Activo → Eliminado)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-29",
+  "cat": "estado",
+  "text": "Estado de la campaña actualizado · Post: \"Step into comfort and support with our Wireless...\" (Activa → Eliminada)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-29",
+  "cat": "estado",
+  "text": "Estado de la cuenta actualizado · Pulpa Cuenta publicitaria (Pago necesario → Activa)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-29",
+  "cat": "creativo",
+  "text": "Se reactivó «Ad_6 - Copia»",
+  "src": "auto"
+ },
+ {
   "date": "2026-10-24",
   "cat": "segmentacion",
   "text": "Público personalizado creado · asa_auto_custom_audience",
@@ -90,9 +120,9 @@
   "src": "auto"
  },
  {
-  "date": "2026-10-21",
+  "date": "2026-10-22",
   "cat": "creativo",
-  "text": "Se apagó «Ad_6 - Copia»",
+  "text": "Se pausó «Ad_6 - Copia»",
   "src": "auto"
  },
  {
@@ -687,36 +717,6 @@
   "date": "2026-09-13",
   "cat": "creativo",
   "text": "Anuncio creado · Ad_3",
-  "src": "meta"
- },
- {
-  "date": "2026-09-13",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Ad_2 (Revisión pendiente → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-13",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Ad_2 (Procesamiento pendiente → Revisión pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-13",
-  "cat": "creativo",
-  "text": "Anuncio actualizado · Ad_2",
-  "src": "meta"
- },
- {
-  "date": "2026-09-13",
-  "cat": "creativo",
-  "text": "Anuncio creado · Ad_2",
-  "src": "meta"
- },
- {
-  "date": "2026-09-13",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Ad_1 (Procesamiento pendiente → Revisión pendiente)",
   "src": "meta"
  }
 ]

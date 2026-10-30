@@ -1,5 +1,11 @@
 [
  {
+  "date": "2026-10-29",
+  "cat": "creativo",
+  "text": "Se reactivó «Stack - Brava Mix&Match 04»",
+  "src": "auto"
+ },
+ {
   "date": "2026-10-28",
   "cat": "creativo",
   "text": "Se reactivó «Ad10 - Catalogo AlwaysOn - temp anteriores»",
@@ -9,6 +15,36 @@
   "date": "2026-10-28",
   "cat": "creativo",
   "text": "Se encendió/lanzó «Ad5 - Angulo Envio Gratis - Test ATC»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-10-27",
+  "cat": "creativo",
+  "text": "Se pausó «Stack - Brava Mix&Match 04»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-10-27",
+  "cat": "creativo",
+  "text": "Se apagó «Stack - Brava UGC 06 - Copia 2»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-10-27",
+  "cat": "creativo",
+  "text": "Se apagó «Stack - Brava Detalle 07 - Copia 2»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-10-27",
+  "cat": "creativo",
+  "text": "Se apagó «Stack - Brava Mix&Match 04 - Copia 2»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-10-27",
+  "cat": "creativo",
+  "text": "Se apagó «Stack - Brava UGC 06 - Copia 4»",
   "src": "auto"
  },
  {
@@ -452,12 +488,6 @@
  {
   "date": "2026-10-26",
   "cat": "creativo",
-  "text": "Se apagó «Stack - Brava Mix&Match 04»",
-  "src": "auto"
- },
- {
-  "date": "2026-10-26",
-  "cat": "creativo",
   "text": "Se pausó «Ad10 - Catalogo AlwaysOn - temp anteriores»",
   "src": "auto"
  },
@@ -687,36 +717,6 @@
   "date": "2026-10-25",
   "cat": "estado",
   "text": "Estado del anuncio actualizado · Ad12 - Catalogo AlwaysOn - Brava Sin Set Cerrado (Activo → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-25",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Ad11 - Catalogo AlwaysOn - Brava Talle Real (Procesamiento pendiente → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-25",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · Ad11 - Catalogo AlwaysOn - Brava Talle Real (Activo → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-25",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Ad11 - Catalogo AlwaysOn - Brava Talle Real (Activo → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-25",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Ad12 - Catalogo AlwaysOn - Brava Sin Set Cerrado (Revisión pendiente → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-25",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Ad12 - Catalogo AlwaysOn - Brava Sin Set Cerrado (Procesamiento pendiente → Revisión pendiente)",
   "src": "meta"
  }
 ]

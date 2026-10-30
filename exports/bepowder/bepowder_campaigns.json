@@ -22,28 +22,49 @@
   "ic": 2.0,
   "pval": 0.0,
   "leads": 0.0,
-  "window_from": "2026-09-23"
+  "window_from": "2026-09-24"
  },
  {
   "name": "Publicación de Instagram: ¿Y si el color de lo...",
   "objective": "LINK_CLICKS",
   "status": "ACTIVE",
-  "spend": 24340.04,
+  "spend": 27515.45,
   "first": "2026-10-23",
-  "last": "2026-10-28",
+  "last": "2026-10-29",
   "purch": 0.0,
   "msg": 0.0,
   "ads": [
    "Publicación de Instagram: ¿Y si el color de lo..."
   ],
-  "impr": 2861.0,
-  "lc": 71.0,
+  "impr": 3259.0,
+  "lc": 76.0,
   "lpv": 2.0,
   "atc": 0.0,
   "ic": 0.0,
   "pval": 0.0,
   "leads": 0.0,
-  "window_from": "2026-09-23"
+  "window_from": "2026-09-24"
+ },
+ {
+  "name": "Post: \"Cómo empezó Be powder? 🩷\"",
+  "objective": "OUTCOME_SALES",
+  "status": "ACTIVE",
+  "spend": 16248.94,
+  "first": "2026-10-26",
+  "last": "2026-10-29",
+  "purch": 0.0,
+  "msg": 0.0,
+  "ads": [
+   "Post: \"Cómo empezó Be powder? 🩷\""
+  ],
+  "impr": 4507.0,
+  "lc": 62.0,
+  "lpv": 32.0,
+  "atc": 0.0,
+  "ic": 0.0,
+  "pval": 0.0,
+  "leads": 0.0,
+  "window_from": "2026-09-24"
  },
  {
   "name": "Publicación: \"😮‍💨😮‍💨😮‍💨😮‍💨😍lo que va a ser noviembre!\"",
@@ -64,27 +85,6 @@
   "ic": 1.0,
   "pval": 77800.0,
   "leads": 0.0,
-  "window_from": "2026-09-23"
- },
- {
-  "name": "Post: \"Cómo empezó Be powder? 🩷\"",
-  "objective": "OUTCOME_SALES",
-  "status": "ACTIVE",
-  "spend": 10828.79,
-  "first": "2026-10-26",
-  "last": "2026-10-28",
-  "purch": 0.0,
-  "msg": 0.0,
-  "ads": [
-   "Post: \"Cómo empezó Be powder? 🩷\""
-  ],
-  "impr": 3190.0,
-  "lc": 44.0,
-  "lpv": 21.0,
-  "atc": 0.0,
-  "ic": 0.0,
-  "pval": 0.0,
-  "leads": 0.0,
-  "window_from": "2026-09-23"
+  "window_from": "2026-09-24"
  }
 ]

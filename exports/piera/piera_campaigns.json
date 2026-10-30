@@ -88,6 +88,27 @@
   "window_from": "2026-07-27"
  },
  {
+  "name": "Trafico constante",
+  "objective": "LINK_CLICKS",
+  "status": "ACTIVE",
+  "spend": 45110.0,
+  "first": "2026-09-15",
+  "last": "2026-10-29",
+  "purch": 0.0,
+  "msg": 1.0,
+  "ads": [
+   "Nuevo anuncio de Tráfico"
+  ],
+  "impr": 47597.0,
+  "lc": 3603.0,
+  "lpv": 2665.0,
+  "atc": 0.0,
+  "ic": 0.0,
+  "pval": 0.0,
+  "leads": 0.0,
+  "window_from": "2026-07-27"
+ },
+ {
   "name": "PieraCeresa_2026_Conversiones - Purchase V.2",
   "objective": "OUTCOME_SALES",
   "status": "PAUSED",
@@ -107,27 +128,6 @@
   "lc": 222.0,
   "lpv": 210.0,
   "atc": 2.0,
-  "ic": 0.0,
-  "pval": 0.0,
-  "leads": 0.0,
-  "window_from": "2026-07-27"
- },
- {
-  "name": "Trafico constante",
-  "objective": "LINK_CLICKS",
-  "status": "ACTIVE",
-  "spend": 43154.0,
-  "first": "2026-09-15",
-  "last": "2026-10-28",
-  "purch": 0.0,
-  "msg": 1.0,
-  "ads": [
-   "Nuevo anuncio de Tráfico"
-  ],
-  "impr": 45615.0,
-  "lc": 3477.0,
-  "lpv": 2569.0,
-  "atc": 0.0,
   "ic": 0.0,
   "pval": 0.0,
   "leads": 0.0,

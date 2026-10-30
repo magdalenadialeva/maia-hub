@@ -252,6 +252,12 @@
   "src": "auto"
  },
  {
+  "date": "2026-10-27",
+  "cat": "creativo",
+  "text": "Se apagó «video pedido sofi»",
+  "src": "auto"
+ },
+ {
   "date": "2026-10-26",
   "cat": "estado",
   "text": "Estado de la campaña actualizado · ALBA-NUEVOS CLIENTES (Procesamiento pendiente → Activa)",
@@ -711,12 +717,6 @@
   "date": "2026-10-19",
   "cat": "estado",
   "text": "Estado del anuncio actualizado · pedido petra (Procesamiento pendiente → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-19",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · pedido petra (Activo → Inactivo)",
   "src": "meta"
  }
 ]
