@@ -3,8 +3,8 @@
   "name": "Mar26 - Ventas - A+ - Catalogo - Frio",
   "objective": "OUTCOME_SALES",
   "status": "PAUSED",
-  "spend": 1397876.73,
-  "first": "2026-09-24",
+  "spend": 1312436.0,
+  "first": "2026-09-25",
   "last": "2026-10-17",
   "purch": 27.0,
   "msg": 22.0,
@@ -12,8 +12,8 @@
    "Ad6 - Secuencia - Nueva coleccion 2026 - Copia 3",
    "Ad6 - Secuencia - Nueva coleccion 2026 - Copia 4",
    "Ad6 - Secuencia - Nueva coleccion 202666 - Copia 8",
-   "Ad6 - Secuencia - Nueva coleccion 202666 - Copia 9",
    "Ad6 - Secuencia - Nueva coleccion 202666 - Copia 10",
+   "Ad6 - Secuencia - Nueva coleccion 202666 - Copia 9",
    "Ad6 - Secuencia - Nueva coleccion 202666 - Copia 6",
    "Ad6 - Secuencia - Nueva coleccion 202666 - Copia 7",
    "Ad6 - Secuencia - Nueva coleccion 202666 - Copia 11",
@@ -27,22 +27,22 @@
    "Ad15 - UGC - Mix and Match",
    "Ad16 - Testimonios - WhatsApp calce"
   ],
-  "impr": 192310.0,
-  "lc": 5117.0,
-  "lpv": 4524.0,
-  "atc": 547.0,
+  "impr": 179537.0,
+  "lc": 4833.0,
+  "lpv": 4264.0,
+  "atc": 527.0,
   "ic": 71.0,
   "pval": 2377619.3,
   "leads": 0.0,
-  "window_from": "2026-09-24"
+  "window_from": "2026-09-25"
  },
  {
   "name": "Mossy_AlwaysOn_Conversiones_Dinámicos",
   "objective": "OUTCOME_SALES",
   "status": "ACTIVE",
-  "spend": 801236.75,
+  "spend": 830277.63,
   "first": "2026-09-30",
-  "last": "2026-10-29",
+  "last": "2026-10-30",
   "purch": 30.0,
   "msg": 11.0,
   "ads": [
@@ -73,21 +73,21 @@
    "Stack - Brava Detalle 07 - Copia 3",
    "Stack - Brava UGC 06 - Copia 3"
   ],
-  "impr": 140058.0,
-  "lc": 4109.0,
-  "lpv": 3972.0,
-  "atc": 371.0,
+  "impr": 144386.0,
+  "lc": 4237.0,
+  "lpv": 4089.0,
+  "atc": 388.0,
   "ic": 62.0,
   "pval": 2551739.16,
   "leads": 0.0,
-  "window_from": "2026-09-24"
+  "window_from": "2026-09-25"
  },
  {
   "name": "Ago26 - Ventas - CBO - Prospecting - Angulos Nuevos",
   "objective": "OUTCOME_SALES",
   "status": "PAUSED",
-  "spend": 156770.33,
-  "first": "2026-09-24",
+  "spend": 153639.53,
+  "first": "2026-09-25",
   "last": "2026-10-12",
   "purch": 4.0,
   "msg": 0.0,
@@ -99,14 +99,14 @@
    "Ad8 - Video - Anticipo Temporada - Mega Sale",
    "Ad9 - Producto Fit - Mega Sale - Tu top tu bombacha tu talle"
   ],
-  "impr": 14232.0,
-  "lc": 427.0,
-  "lpv": 401.0,
-  "atc": 43.0,
+  "impr": 13980.0,
+  "lc": 418.0,
+  "lpv": 391.0,
+  "atc": 38.0,
   "ic": 5.0,
   "pval": 266305.07,
   "leads": 0.0,
-  "window_from": "2026-09-24"
+  "window_from": "2026-09-25"
  },
  {
   "name": "Conversiones_Campaña_Advantage+",
@@ -133,15 +133,15 @@
   "ic": 3.0,
   "pval": 206100.56,
   "leads": 0.0,
-  "window_from": "2026-09-24"
+  "window_from": "2026-09-25"
  },
  {
   "name": "Mossy_Test_Creativos_Brava",
   "objective": "OUTCOME_SALES",
   "status": "ACTIVE",
-  "spend": 55739.21,
+  "spend": 63348.52,
   "first": "2026-10-25",
-  "last": "2026-10-29",
+  "last": "2026-10-30",
   "purch": 0.0,
   "msg": 0.0,
   "ads": [
@@ -153,14 +153,14 @@
    "Ad4 - Angulo Resenas Calce - Test ATC",
    "Ad5 - Angulo Envio Gratis - Test ATC"
   ],
-  "impr": 8513.0,
-  "lc": 274.0,
-  "lpv": 271.0,
-  "atc": 49.0,
-  "ic": 1.0,
+  "impr": 10133.0,
+  "lc": 358.0,
+  "lpv": 372.0,
+  "atc": 62.0,
+  "ic": 2.0,
   "pval": 0.0,
   "leads": 0.0,
-  "window_from": "2026-09-24"
+  "window_from": "2026-09-25"
  },
  {
   "name": "Mar26 - Ventas - A+ - Retargeting",
@@ -187,7 +187,7 @@
   "ic": 0.0,
   "pval": 0.0,
   "leads": 0.0,
-  "window_from": "2026-09-24"
+  "window_from": "2026-09-25"
  },
  {
   "name": "Mossy_LAL_Compradores_Brava",
@@ -209,7 +209,7 @@
   "ic": 1.0,
   "pval": 0.0,
   "leads": 0.0,
-  "window_from": "2026-09-24"
+  "window_from": "2026-09-25"
  },
  {
   "name": "Mossy_RMKT_Carrito_Brava_v2",
@@ -235,6 +235,6 @@
   "ic": 0.0,
   "pval": 0.0,
   "leads": 0.0,
-  "window_from": "2026-09-24"
+  "window_from": "2026-09-25"
  }
 ]

@@ -66,6 +66,27 @@
   "window_from": "2026-07-27"
  },
  {
+  "name": "Trafico constante",
+  "objective": "LINK_CLICKS",
+  "status": "ACTIVE",
+  "spend": 47311.0,
+  "first": "2026-09-15",
+  "last": "2026-10-30",
+  "purch": 0.0,
+  "msg": 1.0,
+  "ads": [
+   "Nuevo anuncio de Tráfico"
+  ],
+  "impr": 49633.0,
+  "lc": 3767.0,
+  "lpv": 2778.0,
+  "atc": 0.0,
+  "ic": 0.0,
+  "pval": 0.0,
+  "leads": 0.0,
+  "window_from": "2026-07-27"
+ },
+ {
   "name": "Trafico constante - temporada de fiestas",
   "objective": "LINK_CLICKS",
   "status": "PAUSED",
@@ -81,27 +102,6 @@
   "impr": 53603.0,
   "lc": 3089.0,
   "lpv": 2293.0,
-  "atc": 0.0,
-  "ic": 0.0,
-  "pval": 0.0,
-  "leads": 0.0,
-  "window_from": "2026-07-27"
- },
- {
-  "name": "Trafico constante",
-  "objective": "LINK_CLICKS",
-  "status": "ACTIVE",
-  "spend": 45110.0,
-  "first": "2026-09-15",
-  "last": "2026-10-29",
-  "purch": 0.0,
-  "msg": 1.0,
-  "ads": [
-   "Nuevo anuncio de Tráfico"
-  ],
-  "impr": 47597.0,
-  "lc": 3603.0,
-  "lpv": 2665.0,
   "atc": 0.0,
   "ic": 0.0,
   "pval": 0.0,
