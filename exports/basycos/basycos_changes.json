@@ -1,5 +1,35 @@
 [
  {
+  "date": "2026-10-29",
+  "cat": "creativo",
+  "text": "Se apagó «Conjunto Lugano»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-10-29",
+  "cat": "creativo",
+  "text": "Se apagó «Varios»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-10-29",
+  "cat": "creativo",
+  "text": "Se apagó «Varios - Copia 2»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-10-29",
+  "cat": "creativo",
+  "text": "Se apagó «Conjutno o vestido? Provenza»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-10-29",
+  "cat": "creativo",
+  "text": "Se apagó «Conjunto Loira»",
+  "src": "auto"
+ },
+ {
   "date": "2026-10-28",
   "cat": "estado",
   "text": "Estado del anuncio actualizado · Vestido Orleans (Revisión pendiente → Activo)",
@@ -688,35 +718,5 @@
   "cat": "presupuesto",
   "text": "Estrategia de puja del conjunto de anuncios actualizada · Basyco Jerez_Conversiones_Purchase_SEP2026_Interese+Adv+ - Copy",
   "src": "meta"
- },
- {
-  "date": "2026-10-21",
-  "cat": "creativo",
-  "text": "Conjunto de anuncios creado · Basyco Jerez_Conversiones_Purchase_SEP2026_Interese+Adv+ - Copy",
-  "src": "meta"
- },
- {
-  "date": "2026-10-21",
-  "cat": "segmentacion",
-  "text": "Público personalizado creado · Basyco - ViewContent 30d",
-  "src": "meta"
- },
- {
-  "date": "2026-10-21",
-  "cat": "creativo",
-  "text": "Se apagó «PRE-SALE · 20.08»",
-  "src": "auto"
- },
- {
-  "date": "2026-10-20",
-  "cat": "creativo",
-  "text": "Se pausó «Conjunto Lugano»",
-  "src": "auto"
- },
- {
-  "date": "2026-10-20",
-  "cat": "creativo",
-  "text": "Se reactivó «Conjunto Toulouse 29/09»",
-  "src": "auto"
  }
 ]

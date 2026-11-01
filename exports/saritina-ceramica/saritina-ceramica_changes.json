@@ -1,5 +1,11 @@
 [
  {
+  "date": "2026-10-31",
+  "cat": "creativo",
+  "text": "Se reactivó «Ad_Video_3»",
+  "src": "auto"
+ },
+ {
   "date": "2026-10-30",
   "cat": "presupuesto",
   "text": "Presupuesto del conjunto de anuncios actualizado · Saritina_Trafico_Mensajes_Wsp_Sep (11.000 → 9.000 ARS/día)",
@@ -12,15 +18,21 @@
   "src": "auto"
  },
  {
-  "date": "2026-10-28",
+  "date": "2026-10-29",
   "cat": "creativo",
-  "text": "Se reactivó «Ad_Video_3»",
+  "text": "Se apagó «Ad_Video_2»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-10-29",
+  "cat": "creativo",
+  "text": "Se pausó «Ad_Video_3»",
   "src": "auto"
  },
  {
   "date": "2026-10-28",
   "cat": "creativo",
-  "text": "Se apagó «Ad_Video_3»",
+  "text": "Se reactivó «Ad_Video_3»",
   "src": "auto"
  },
  {

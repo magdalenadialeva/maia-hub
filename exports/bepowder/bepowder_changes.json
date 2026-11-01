@@ -518,13 +518,13 @@
  {
   "date": "2026-10-23",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · 07-TOFU-AO3-Video - Copia (Procesamiento pendiente → Inactivo)",
+  "text": "Estado del anuncio actualizado · 03-TOFU-AO1-Carru (Procesamiento pendiente → Inactivo)",
   "src": "meta"
  },
  {
   "date": "2026-10-23",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · 03-TOFU-AO1-Carru (Procesamiento pendiente → Inactivo)",
+  "text": "Estado del anuncio actualizado · 07-TOFU-AO3-Video - Copia (Procesamiento pendiente → Inactivo)",
   "src": "meta"
  },
  {
@@ -608,6 +608,12 @@
  {
   "date": "2026-10-23",
   "cat": "estado",
+  "text": "Estado del anuncio actualizado · 11-TOFU-AO4-Gif - Copia (Procesamiento pendiente → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-23",
+  "cat": "estado",
   "text": "Estado del anuncio actualizado · 08-TOFU-AO3-Gif (Activo → Procesamiento pendiente)",
   "src": "meta"
  },
@@ -615,12 +621,6 @@
   "date": "2026-10-23",
   "cat": "estado",
   "text": "Estado del anuncio actualizado · 07-TOFU-AO3-Video (Activo → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-23",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · 11-TOFU-AO4-Gif - Copia (Procesamiento pendiente → Inactivo)",
   "src": "meta"
  },
  {

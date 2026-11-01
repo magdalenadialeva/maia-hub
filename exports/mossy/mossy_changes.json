@@ -1,5 +1,23 @@
 [
  {
+  "date": "2026-10-31",
+  "cat": "estado",
+  "text": "Estado de la campaña actualizado · Mossy_AlwaysOn_Conversiones_Dinámicos (Procesamiento pendiente → Activa)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-31",
+  "cat": "presupuesto",
+  "text": "Presupuesto de la campaña actualizado · Mossy_AlwaysOn_Conversiones_Dinámicos (24.000 → 28.800 ARS/día)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-31",
+  "cat": "estado",
+  "text": "Estado de la campaña actualizado · Mossy_AlwaysOn_Conversiones_Dinámicos (Activa → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
   "date": "2026-10-30",
   "cat": "estado",
   "text": "Estado de la campaña actualizado · Mossy_Test_Creativos_Brava (Procesamiento pendiente → Activa)",
@@ -102,6 +120,24 @@
   "src": "auto"
  },
  {
+  "date": "2026-10-29",
+  "cat": "creativo",
+  "text": "Se apagó «Ad10 - Catalogo AlwaysOn - temp anteriores»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-10-29",
+  "cat": "creativo",
+  "text": "Se apagó «Stack - Brava Detalle 07 - Copia 5»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-10-29",
+  "cat": "creativo",
+  "text": "Se apagó «Stack - Brava UGC 06 - Copia 5»",
+  "src": "auto"
+ },
+ {
   "date": "2026-10-28",
   "cat": "estado",
   "text": "Estado de la cuenta actualizado · Mossy - cuenta publicitaria (Activa → En período de gracia)",
@@ -195,18 +231,6 @@
   "date": "2026-10-27",
   "cat": "estado",
   "text": "Estado del anuncio actualizado · Ad4 - Angulo Resenas Calce - Test ATC (Revisión pendiente → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-27",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Ad4 - Angulo Resenas Calce - Test ATC (Procesamiento pendiente → Revisión pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-27",
-  "cat": "creativo",
-  "text": "Anuncio creado · Ad4 - Angulo Resenas Calce - Test ATC",
   "src": "meta"
  },
  {
@@ -410,31 +434,13 @@
  {
   "date": "2026-10-26",
   "cat": "creativo",
-  "text": "Anuncio creado · Stack - Brava Detalle 07 - Copia 2",
-  "src": "meta"
- },
- {
-  "date": "2026-10-26",
-  "cat": "creativo",
-  "text": "Anuncio creado · Ad10 - Catalogo AlwaysOn - Brava Mix&Match - Copia 3",
-  "src": "meta"
- },
- {
-  "date": "2026-10-26",
-  "cat": "creativo",
-  "text": "Anuncio creado · Stack - Brava UGC 06 - Copia 2",
-  "src": "meta"
- },
- {
-  "date": "2026-10-26",
-  "cat": "creativo",
   "text": "Anuncio creado · Stack - Brava Mix&Match 04 - Copia 2",
   "src": "meta"
  },
  {
   "date": "2026-10-26",
   "cat": "creativo",
-  "text": "Anuncio creado · Stack - Brava Catalogo Moldería Cuerpos 09 - Copia 3",
+  "text": "Anuncio creado · Stack - Brava Lifestyle 05 - Copia 2",
   "src": "meta"
  },
  {
@@ -446,7 +452,25 @@
  {
   "date": "2026-10-26",
   "cat": "creativo",
-  "text": "Anuncio creado · Stack - Brava Lifestyle 05 - Copia 2",
+  "text": "Anuncio creado · Stack - Brava Catalogo Moldería Cuerpos 09 - Copia 3",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-26",
+  "cat": "creativo",
+  "text": "Anuncio creado · Stack - Brava Detalle 07 - Copia 2",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-26",
+  "cat": "creativo",
+  "text": "Anuncio creado · Stack - Brava UGC 06 - Copia 2",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-26",
+  "cat": "creativo",
+  "text": "Anuncio creado · Ad10 - Catalogo AlwaysOn - Brava Mix&Match - Copia 3",
   "src": "meta"
  },
  {
@@ -693,30 +717,6 @@
   "date": "2026-10-26",
   "cat": "creativo",
   "text": "Se encendió/lanzó «Stack - Brava Detalle 07 - Copia 5»",
-  "src": "auto"
- },
- {
-  "date": "2026-10-26",
-  "cat": "creativo",
-  "text": "Se encendió/lanzó «Stack - Brava UGC 06 - Copia 5»",
-  "src": "auto"
- },
- {
-  "date": "2026-10-26",
-  "cat": "creativo",
-  "text": "Se encendió/lanzó «Ad3 - Angulo Producto Fit - Test ATC»",
-  "src": "auto"
- },
- {
-  "date": "2026-10-26",
-  "cat": "creativo",
-  "text": "Se encendió/lanzó «Ad2 - Angulo Viaje - Test ATC»",
-  "src": "auto"
- },
- {
-  "date": "2026-10-26",
-  "cat": "creativo",
-  "text": "Se encendió/lanzó «Ad1 - Angulo Anticipo Temporada - Test ATC»",
   "src": "auto"
  }
 ]
