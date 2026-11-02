@@ -1,11 +1,12 @@
 ﻿slug,cliente,periodo,moneda,gasto,resultado,roas,cpa,cpl,cuello_embudo,diagnostico,veredictos
-piera,Piera Ceresa,2026-07-28..2026-10-31,CLP,614096.0,8,1.11,76762,,Vieron la landing (LPV),El cuello está en Vieron la landing (LPV) → Agregaron al carrito: 1.1% vs ~13.0% sano.,escalar:0 iterar:0 matar:0 pocaData:24
-mossy,Mossy,2026-09-26..2026-10-31,ARS,2475480.52,64,2.27,38679,,Agregaron al carrito,El cuello está en Agregaron al carrito → Iniciaron el pago: 13.6% vs ~45.0% sano.,escalar:4 iterar:1 matar:0 pocaData:64
+piera,Piera Ceresa,2026-07-28..2026-11-01,CLP,616432.0,8,1.1,77054,,Vieron la landing (LPV),El cuello está en Vieron la landing (LPV) → Agregaron al carrito: 1.1% vs ~13.0% sano.,escalar:0 iterar:0 matar:0 pocaData:24
+mossy,Mossy,2026-09-27..2026-11-01,ARS,2432728.29,62,2.25,39238,,Agregaron al carrito,El cuello está en Agregaron al carrito → Iniciaron el pago: 13.5% vs ~45.0% sano.,escalar:4 iterar:1 matar:0 pocaData:64
 vresia,Vresia,2026-08-13..2026-09-17,ARS,476059.52,16,2.09,29754,,Agregaron al carrito,El cuello está en Agregaron al carrito → Iniciaron el pago: 13.6% vs ~45.0% sano.,escalar:2 iterar:0 matar:0 pocaData:18
-alba,Alba & Co,2026-08-20..2026-10-31,ARS,967718.89,44,2.95,21994,322573,Agregaron al carrito,El cuello está en Agregaron al carrito → Iniciaron el pago: 8.6% vs ~45.0% sano.,escalar:4 iterar:0 matar:0 pocaData:11
-paz,Maia,2026-06-30..2026-10-31,ARS,1026440.87,756,,,1358,Clics en el enlace,El cuello está en Clics en el enlace → Leads: 26.2% vs ~20.0% sano.,escalar:8 iterar:2 matar:0 pocaData:30
-pulpa,Pulpa Verde,2026-09-01..2026-10-30,ARS,590527.0,3,0.16,196842,,Iniciaron el pago,El cuello está en Iniciaron el pago → Compraron: 8.1% vs ~45.0% sano.,escalar:0 iterar:0 matar:0 pocaData:22
-saritina-ceramica,SARITINA CERAMICA,2026-09-01..2026-10-31,ARS,514863.99,49,,10507,9901,Vieron la landing (LPV),El cuello está en Vieron la landing (LPV) → Agregaron al carrito: 0.0% vs ~13.0% sano.,escalar:0 iterar:4 matar:0 pocaData:3
-basycos,Basycos,2026-09-11..2026-10-31,ARS,1422409.58,38,4.91,37432,474137,Vieron la landing (LPV),El cuello está en Vieron la landing (LPV) → Agregaron al carrito: 3.0% vs ~13.0% sano.,escalar:3 iterar:0 matar:0 pocaData:15
+alba,Alba & Co,2026-08-20..2026-11-01,ARS,981000.47,44,2.91,22295,327000,Agregaron al carrito,El cuello está en Agregaron al carrito → Iniciaron el pago: 8.5% vs ~45.0% sano.,escalar:4 iterar:0 matar:0 pocaData:11
+paz,Maia,2026-06-30..2026-11-01,ARS,1036527.07,759,,,1366,Clics en el enlace,El cuello está en Clics en el enlace → Leads: 26.1% vs ~20.0% sano.,escalar:8 iterar:2 matar:0 pocaData:30
+pulpa,Pulpa Verde,2026-09-01..2026-11-01,ARS,600516.51,3,0.16,200172,,Iniciaron el pago,El cuello está en Iniciaron el pago → Compraron: 8.1% vs ~45.0% sano.,escalar:0 iterar:0 matar:0 pocaData:22
+saritina-ceramica,SARITINA CERAMICA,2026-09-01..2026-11-01,ARS,528720.24,50,,10574,9976,Vieron la landing (LPV),El cuello está en Vieron la landing (LPV) → Agregaron al carrito: 0.0% vs ~13.0% sano.,escalar:0 iterar:4 matar:0 pocaData:5
+basycos,Basycos,2026-09-11..2026-11-01,ARS,1464521.16,38,4.77,38540,488174,Vieron la landing (LPV),El cuello está en Vieron la landing (LPV) → Agregaron al carrito: 3.0% vs ~13.0% sano.,escalar:3 iterar:0 matar:0 pocaData:15
 cloe,Cloe,2026-09-17..2026-10-01,USD,90.39,0,,,,Iniciaron el pago,El cuello está en Iniciaron el pago → Compraron: 0.0% vs ~45.0% sano.,escalar:0 iterar:0 matar:0 pocaData:6
-bepowder,Bepowder,2026-09-25..2026-10-31,ARS,186254.47,2,0.42,93127,,Clics en el enlace,El cuello está en Clics en el enlace → Vieron la landing (LPV): 39.3% vs ~80.0% sano.,escalar:0 iterar:0 matar:0 pocaData:8
+bepowder,Bepowder,2026-09-25..2026-11-01,ARS,198840.68,2,0.39,99420,,Vieron la landing (LPV),El cuello está en Vieron la landing (LPV) → Agregaron al carrito: 5.9% vs ~13.0% sano.,escalar:0 iterar:0 matar:0 pocaData:8
+noselodigas,NoSeLoDigas,2026-09-27..2026-11-01,UYU,40553.44,45,2.08,901,,Vieron la landing (LPV),El cuello está en Vieron la landing (LPV) → Agregaron al carrito: 1.7% vs ~13.0% sano.,escalar:1 iterar:0 matar:0 pocaData:10

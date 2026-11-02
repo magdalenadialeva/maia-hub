@@ -23,6 +23,59 @@
   "ic": 73.0,
   "pval": 1511386.9,
   "leads": 2.0,
+  "window_from": "2026-08-20",
+  "archived": true
+ },
+ {
+  "name": "Alba&Co  RETARGETING",
+  "objective": "OUTCOME_SALES",
+  "status": "PAUSED",
+  "spend": 510343.76,
+  "first": "2026-08-20",
+  "last": "2026-09-27",
+  "purch": 27.0,
+  "msg": 47.0,
+  "ads": [
+   "Catalogo sin portada",
+   "Catalogo_2",
+   "Catalogo_3",
+   "Catalogo_4 ¿Es un varón?",
+   "Catalogo_Karla",
+   "Catalogo_5"
+  ],
+  "impr": 110106.0,
+  "lc": 2655.0,
+  "lpv": 2549.0,
+  "atc": 410.0,
+  "ic": 73.0,
+  "pval": 1511386.9,
+  "leads": 2.0,
+  "window_from": "2026-08-20"
+ },
+ {
+  "name": "VENTAS-NUEVOS CLIENTES",
+  "objective": "OUTCOME_SALES",
+  "status": "ACTIVE",
+  "spend": 467471.24,
+  "first": "2026-09-27",
+  "last": "2026-11-01",
+  "purch": 17.0,
+  "msg": 34.0,
+  "ads": [
+   "PUBLICACION VESTIDO -",
+   "AN3 REGALA PERSONALIZADO",
+   "AN1 BASICOS",
+   "AN2 PEDIDO ARI",
+   "pedido petra",
+   "video pedido sofi"
+  ],
+  "impr": 178968.0,
+  "lc": 3238.0,
+  "lpv": 3055.0,
+  "atc": 1105.0,
+  "ic": 56.0,
+  "pval": 1343396.72,
+  "leads": 1.0,
   "window_from": "2026-08-20"
  },
  {
@@ -49,7 +102,8 @@
   "ic": 55.0,
   "pval": 1343396.72,
   "leads": 1.0,
-  "window_from": "2026-08-20"
+  "window_from": "2026-08-20",
+  "archived": true
  },
  {
   "name": "Alba&Co_2026_Trafico",

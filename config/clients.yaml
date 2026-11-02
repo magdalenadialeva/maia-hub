@@ -178,3 +178,13 @@ clients:
     # Las campañas previas a MAIA ("TOFU - VENTA (N - AB)" y "TAP", 2–25 sep) no se cuentan.
     campaign_exclude: ["tofu - venta", "=tap"]
     notes: "25/09: prendimos campaña con contenido que ya tenían -> no vendía, se pausó. Lunes 6/10: campaña nueva con materiales nuevos."
+
+  - slug: "noselodigas"
+    name: "NoSeLoDigas"
+    objective: ventas
+    obj_code: purchase
+    currency: UYU
+    ad_account_id: "3500176693343732"
+    start_label: "auto"
+    margin: 0.5
+    notes: "Auto-agregado desde Meta (2026-11-02)."

@@ -1,5 +1,17 @@
 [
  {
+  "date": "2026-10-30",
+  "cat": "creativo",
+  "text": "Se apagó «Vestido Provenza»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-10-30",
+  "cat": "creativo",
+  "text": "Se apagó «Varios - Copia»",
+  "src": "auto"
+ },
+ {
   "date": "2026-10-29",
   "cat": "creativo",
   "text": "Se apagó «Conjunto Lugano»",
@@ -705,18 +717,6 @@
   "date": "2026-10-21",
   "cat": "presupuesto",
   "text": "Se habilitó la programación del presupuesto del conjunto de anuncios · Basyco Jerez_Conversiones_Purchase_SEP2026_Interese+Adv+ - Copy",
-  "src": "meta"
- },
- {
-  "date": "2026-10-21",
-  "cat": "objetivo",
-  "text": "Ad set performance goal updated · Basyco Jerez_Conversiones_Purchase_SEP2026_Interese+Adv+ - Copy",
-  "src": "meta"
- },
- {
-  "date": "2026-10-21",
-  "cat": "presupuesto",
-  "text": "Estrategia de puja del conjunto de anuncios actualizada · Basyco Jerez_Conversiones_Purchase_SEP2026_Interese+Adv+ - Copy",
   "src": "meta"
  }
 ]

@@ -1,38 +1,104 @@
 [
  {
-  "date": "2026-10-31",
+  "date": "2026-11-01",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · pedido ARI (Procesamiento pendiente → Activo)",
+  "text": "Estado del anuncio actualizado · AN2 PEDIDO ARI (Procesamiento pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-01",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · AN1 BASICOS (Procesamiento pendiente → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-01",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado cuando se completa su revisión · AN2 PEDIDO ARI (Inactivo → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-01",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · AN2 PEDIDO ARI (Inactivo → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-01",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado cuando se completa su revisión · AN1 BASICOS (Activo → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-01",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · AN1 BASICOS (Activo → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-01",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · AN2 PEDIDO ARI (Procesamiento pendiente → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-01",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado cuando se completa su revisión · AN2 PEDIDO ARI (Activo → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-01",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · AN2 PEDIDO ARI (Activo → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-01",
+  "cat": "estado",
+  "text": "Estado de la cuenta actualizado · 498930606964785 (En período de gracia → Activa)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-01",
+  "cat": "estado",
+  "text": "Estado de la cuenta actualizado · 498930606964785 (Activa → En período de gracia)",
   "src": "meta"
  },
  {
   "date": "2026-10-31",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · pedido ARI (Inactivo → Activo)",
+  "text": "Estado del anuncio actualizado · AN2 PEDIDO ARI (Procesamiento pendiente → Activo)",
   "src": "meta"
  },
  {
   "date": "2026-10-31",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · pedido ARI (Inactivo → Procesamiento pendiente)",
+  "text": "Estado del anuncio actualizado cuando se completa su revisión · AN2 PEDIDO ARI (Inactivo → Activo)",
   "src": "meta"
  },
  {
   "date": "2026-10-31",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · pedido ARI (Procesamiento pendiente → Inactivo)",
+  "text": "Estado del anuncio actualizado · AN2 PEDIDO ARI (Inactivo → Procesamiento pendiente)",
   "src": "meta"
  },
  {
   "date": "2026-10-31",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · pedido ARI (Activo → Inactivo)",
+  "text": "Estado del anuncio actualizado · AN2 PEDIDO ARI (Procesamiento pendiente → Inactivo)",
   "src": "meta"
  },
  {
   "date": "2026-10-31",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · pedido ARI (Activo → Procesamiento pendiente)",
+  "text": "Estado del anuncio actualizado cuando se completa su revisión · AN2 PEDIDO ARI (Activo → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-31",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · AN2 PEDIDO ARI (Activo → Procesamiento pendiente)",
   "src": "meta"
  },
  {
@@ -62,181 +128,181 @@
  {
   "date": "2026-10-28",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · pedido ARI (Procesamiento pendiente → Activo)",
+  "text": "Estado del anuncio actualizado · AN2 PEDIDO ARI (Procesamiento pendiente → Activo)",
   "src": "meta"
  },
  {
   "date": "2026-10-28",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · pedido ARI (Inactivo → Activo)",
+  "text": "Estado del anuncio actualizado cuando se completa su revisión · AN2 PEDIDO ARI (Inactivo → Activo)",
   "src": "meta"
  },
  {
   "date": "2026-10-28",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · pedido ARI (Inactivo → Procesamiento pendiente)",
+  "text": "Estado del anuncio actualizado · AN2 PEDIDO ARI (Inactivo → Procesamiento pendiente)",
   "src": "meta"
  },
  {
   "date": "2026-10-28",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · pedido ARI (Procesamiento pendiente → Inactivo)",
+  "text": "Estado del anuncio actualizado · AN2 PEDIDO ARI (Procesamiento pendiente → Inactivo)",
   "src": "meta"
  },
  {
   "date": "2026-10-28",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · pedido ARI (Activo → Inactivo)",
+  "text": "Estado del anuncio actualizado cuando se completa su revisión · AN2 PEDIDO ARI (Activo → Inactivo)",
   "src": "meta"
  },
  {
   "date": "2026-10-28",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · pedido ARI (Activo → Procesamiento pendiente)",
+  "text": "Estado del anuncio actualizado · AN2 PEDIDO ARI (Activo → Procesamiento pendiente)",
   "src": "meta"
  },
  {
   "date": "2026-10-28",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · regala bordado (Revisión pendiente → Activo)",
+  "text": "Estado del anuncio actualizado · AN1 BASICOS (Revisión pendiente → Activo)",
   "src": "meta"
  },
  {
   "date": "2026-10-28",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · regala bordado (Procesamiento pendiente → Revisión pendiente)",
+  "text": "Estado del anuncio actualizado · AN1 BASICOS (Procesamiento pendiente → Revisión pendiente)",
   "src": "meta"
  },
  {
   "date": "2026-10-28",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · regala bordado (Activo → Procesamiento pendiente)",
+  "text": "Estado del anuncio actualizado · AN1 BASICOS (Activo → Procesamiento pendiente)",
   "src": "meta"
  },
  {
   "date": "2026-10-28",
   "cat": "creativo",
-  "text": "Anuncio actualizado · regala bordado",
+  "text": "Anuncio actualizado · AN1 BASICOS",
   "src": "meta"
  },
  {
   "date": "2026-10-27",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · regala bordado (Revisión pendiente → Activo)",
+  "text": "Estado del anuncio actualizado · AN1 BASICOS (Revisión pendiente → Activo)",
   "src": "meta"
  },
  {
   "date": "2026-10-27",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · personalizados (Procesamiento pendiente → Activo)",
+  "text": "Estado del anuncio actualizado · AN3 REGALA PERSONALIZADO (Procesamiento pendiente → Activo)",
   "src": "meta"
  },
  {
   "date": "2026-10-27",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · regala bordado (Procesamiento pendiente → Revisión pendiente)",
+  "text": "Estado del anuncio actualizado · AN1 BASICOS (Procesamiento pendiente → Revisión pendiente)",
   "src": "meta"
  },
  {
   "date": "2026-10-27",
   "cat": "otros",
-  "text": "Nombre del anuncio actualizado · personalizados (pedido mas personalizado → personalizados)",
+  "text": "Nombre del anuncio actualizado · AN3 REGALA PERSONALIZADO (pedido mas personalizado → personalizados)",
   "src": "meta"
  },
  {
   "date": "2026-10-27",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · personalizados (Activo → Procesamiento pendiente)",
+  "text": "Estado del anuncio actualizado · AN3 REGALA PERSONALIZADO (Activo → Procesamiento pendiente)",
   "src": "meta"
  },
  {
   "date": "2026-10-27",
   "cat": "otros",
-  "text": "Segmentación del anuncio actualizada · regala bordado",
+  "text": "Segmentación del anuncio actualizada · AN1 BASICOS",
   "src": "meta"
  },
  {
   "date": "2026-10-27",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · regala bordado (Activo → Procesamiento pendiente)",
+  "text": "Estado del anuncio actualizado · AN1 BASICOS (Activo → Procesamiento pendiente)",
   "src": "meta"
  },
  {
   "date": "2026-10-27",
   "cat": "creativo",
-  "text": "Anuncio actualizado · regala bordado",
+  "text": "Anuncio actualizado · AN1 BASICOS",
   "src": "meta"
  },
  {
   "date": "2026-10-27",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · personalizados (Revisión pendiente → Activo)",
+  "text": "Estado del anuncio actualizado · AN3 REGALA PERSONALIZADO (Revisión pendiente → Activo)",
   "src": "meta"
  },
  {
   "date": "2026-10-27",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · personalizados (Procesamiento pendiente → Revisión pendiente)",
+  "text": "Estado del anuncio actualizado · AN3 REGALA PERSONALIZADO (Procesamiento pendiente → Revisión pendiente)",
   "src": "meta"
  },
  {
   "date": "2026-10-27",
   "cat": "otros",
-  "text": "Segmentación del anuncio actualizada · personalizados",
+  "text": "Segmentación del anuncio actualizada · AN3 REGALA PERSONALIZADO",
   "src": "meta"
  },
  {
   "date": "2026-10-27",
   "cat": "creativo",
-  "text": "Anuncio actualizado · personalizados",
+  "text": "Anuncio actualizado · AN3 REGALA PERSONALIZADO",
   "src": "meta"
  },
  {
   "date": "2026-10-27",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · pedido ARI (Procesamiento pendiente → Activo)",
+  "text": "Estado del anuncio actualizado · AN2 PEDIDO ARI (Procesamiento pendiente → Activo)",
   "src": "meta"
  },
  {
   "date": "2026-10-27",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · pedido ARI (Inactivo → Activo)",
+  "text": "Estado del anuncio actualizado cuando se completa su revisión · AN2 PEDIDO ARI (Inactivo → Activo)",
   "src": "meta"
  },
  {
   "date": "2026-10-27",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · pedido ARI (Inactivo → Procesamiento pendiente)",
+  "text": "Estado del anuncio actualizado · AN2 PEDIDO ARI (Inactivo → Procesamiento pendiente)",
   "src": "meta"
  },
  {
   "date": "2026-10-27",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · pedido ARI (Revisión pendiente → Inactivo)",
+  "text": "Estado del anuncio actualizado · AN2 PEDIDO ARI (Revisión pendiente → Inactivo)",
   "src": "meta"
  },
  {
   "date": "2026-10-27",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · pedido ARI (Procesamiento pendiente → Revisión pendiente)",
+  "text": "Estado del anuncio actualizado · AN2 PEDIDO ARI (Procesamiento pendiente → Revisión pendiente)",
   "src": "meta"
  },
  {
   "date": "2026-10-27",
   "cat": "otros",
-  "text": "Segmentación del anuncio actualizada · pedido ARI",
+  "text": "Segmentación del anuncio actualizada · AN2 PEDIDO ARI",
   "src": "meta"
  },
  {
   "date": "2026-10-27",
   "cat": "otros",
-  "text": "Nombre del anuncio actualizado · pedido ARI (conjuntos en ofecta → pedido ARI)",
+  "text": "Nombre del anuncio actualizado · AN2 PEDIDO ARI (conjuntos en ofecta → pedido ARI)",
   "src": "meta"
  },
  {
   "date": "2026-10-27",
   "cat": "creativo",
-  "text": "Anuncio actualizado · pedido ARI",
+  "text": "Anuncio actualizado · AN2 PEDIDO ARI",
   "src": "meta"
  },
  {
@@ -284,7 +350,7 @@
  {
   "date": "2026-10-27",
   "cat": "creativo",
-  "text": "Se reactivó «pedido ARI»",
+  "text": "Se reactivó «AN2 PEDIDO ARI»",
   "src": "auto"
  },
  {
@@ -296,25 +362,25 @@
  {
   "date": "2026-10-26",
   "cat": "estado",
-  "text": "Estado de la campaña actualizado · ALBA-NUEVOS CLIENTES (Procesamiento pendiente → Activa)",
+  "text": "Estado de la campaña actualizado · VENTAS-NUEVOS CLIENTES (Procesamiento pendiente → Activa)",
   "src": "meta"
  },
  {
   "date": "2026-10-26",
   "cat": "presupuesto",
-  "text": "Presupuesto de la campaña actualizado · ALBA-NUEVOS CLIENTES",
+  "text": "Presupuesto de la campaña actualizado · VENTAS-NUEVOS CLIENTES",
   "src": "meta"
  },
  {
   "date": "2026-10-26",
   "cat": "estado",
-  "text": "Estado de la campaña actualizado · ALBA-NUEVOS CLIENTES (Activa → Procesamiento pendiente)",
+  "text": "Estado de la campaña actualizado · VENTAS-NUEVOS CLIENTES (Activa → Procesamiento pendiente)",
   "src": "meta"
  },
  {
   "date": "2026-10-26",
   "cat": "presupuesto",
-  "text": "Presupuesto de la campaña actualizado · ALBA-NUEVOS CLIENTES (18.000 → 13.000 ARS/día)",
+  "text": "Presupuesto de la campaña actualizado · VENTAS-NUEVOS CLIENTES (18.000 → 13.000 ARS/día)",
   "src": "meta"
  },
  {
@@ -362,121 +428,121 @@
  {
   "date": "2026-10-23",
   "cat": "creativo",
-  "text": "Se pausó «pedido ARI»",
+  "text": "Se pausó «AN2 PEDIDO ARI»",
   "src": "auto"
  },
  {
   "date": "2026-10-22",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · pedido ARI (Procesamiento pendiente → Inactivo)",
+  "text": "Estado del anuncio actualizado · AN2 PEDIDO ARI (Procesamiento pendiente → Inactivo)",
   "src": "meta"
  },
  {
   "date": "2026-10-22",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · pedido ARI (Activo → Inactivo)",
+  "text": "Estado del anuncio actualizado cuando se completa su revisión · AN2 PEDIDO ARI (Activo → Inactivo)",
   "src": "meta"
  },
  {
   "date": "2026-10-22",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · pedido ARI (Activo → Procesamiento pendiente)",
+  "text": "Estado del anuncio actualizado · AN2 PEDIDO ARI (Activo → Procesamiento pendiente)",
   "src": "meta"
  },
  {
   "date": "2026-10-22",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · regala bordado (Revisión pendiente → Activo)",
+  "text": "Estado del anuncio actualizado · AN1 BASICOS (Revisión pendiente → Activo)",
   "src": "meta"
  },
  {
   "date": "2026-10-22",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · pedido ARI (Revisión pendiente → Activo)",
+  "text": "Estado del anuncio actualizado · AN2 PEDIDO ARI (Revisión pendiente → Activo)",
   "src": "meta"
  },
  {
   "date": "2026-10-22",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · personalizados (Revisión pendiente → Activo)",
+  "text": "Estado del anuncio actualizado · AN3 REGALA PERSONALIZADO (Revisión pendiente → Activo)",
   "src": "meta"
  },
  {
   "date": "2026-10-22",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · regala bordado (Procesamiento pendiente → Revisión pendiente)",
+  "text": "Estado del anuncio actualizado · AN1 BASICOS (Procesamiento pendiente → Revisión pendiente)",
   "src": "meta"
  },
  {
   "date": "2026-10-22",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · regala bordado (Activo → Procesamiento pendiente)",
+  "text": "Estado del anuncio actualizado · AN1 BASICOS (Activo → Procesamiento pendiente)",
   "src": "meta"
  },
  {
   "date": "2026-10-22",
   "cat": "creativo",
-  "text": "Anuncio actualizado · regala bordado",
+  "text": "Anuncio actualizado · AN1 BASICOS",
   "src": "meta"
  },
  {
   "date": "2026-10-22",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · pedido ARI (Procesamiento pendiente → Revisión pendiente)",
+  "text": "Estado del anuncio actualizado · AN2 PEDIDO ARI (Procesamiento pendiente → Revisión pendiente)",
   "src": "meta"
  },
  {
   "date": "2026-10-22",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · personalizados (Procesamiento pendiente → Revisión pendiente)",
+  "text": "Estado del anuncio actualizado · AN3 REGALA PERSONALIZADO (Procesamiento pendiente → Revisión pendiente)",
   "src": "meta"
  },
  {
   "date": "2026-10-22",
   "cat": "creativo",
-  "text": "Anuncio actualizado · pedido ARI",
+  "text": "Anuncio actualizado · AN2 PEDIDO ARI",
   "src": "meta"
  },
  {
   "date": "2026-10-22",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · personalizados (Activo → Procesamiento pendiente)",
+  "text": "Estado del anuncio actualizado · AN3 REGALA PERSONALIZADO (Activo → Procesamiento pendiente)",
   "src": "meta"
  },
  {
   "date": "2026-10-22",
   "cat": "creativo",
-  "text": "Anuncio actualizado · personalizados",
+  "text": "Anuncio actualizado · AN3 REGALA PERSONALIZADO",
   "src": "meta"
  },
  {
   "date": "2026-10-22",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · personalizados (Procesamiento pendiente → Activo)",
+  "text": "Estado del anuncio actualizado · AN3 REGALA PERSONALIZADO (Procesamiento pendiente → Activo)",
   "src": "meta"
  },
  {
   "date": "2026-10-22",
   "cat": "otros",
-  "text": "Nombre del anuncio actualizado · personalizados (sw MAMA → pedido mas personalizado)",
+  "text": "Nombre del anuncio actualizado · AN3 REGALA PERSONALIZADO (sw MAMA → pedido mas personalizado)",
   "src": "meta"
  },
  {
   "date": "2026-10-22",
   "cat": "otros",
-  "text": "Segmentación del anuncio actualizada · personalizados",
+  "text": "Segmentación del anuncio actualizada · AN3 REGALA PERSONALIZADO",
   "src": "meta"
  },
  {
   "date": "2026-10-22",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · personalizados (Inactivo → Activo)",
+  "text": "Estado del anuncio actualizado cuando se completa su revisión · AN3 REGALA PERSONALIZADO (Inactivo → Activo)",
   "src": "meta"
  },
  {
   "date": "2026-10-22",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · personalizados (Inactivo → Procesamiento pendiente)",
+  "text": "Estado del anuncio actualizado · AN3 REGALA PERSONALIZADO (Inactivo → Procesamiento pendiente)",
   "src": "meta"
  },
  {
@@ -488,31 +554,31 @@
  {
   "date": "2026-10-22",
   "cat": "otros",
-  "text": "Segmentación del anuncio actualizada · pedido ARI",
+  "text": "Segmentación del anuncio actualizada · AN2 PEDIDO ARI",
   "src": "meta"
  },
  {
   "date": "2026-10-22",
   "cat": "otros",
-  "text": "Nombre del anuncio actualizado · pedido ARI (vestido + sweater → conjuntos en ofecta)",
+  "text": "Nombre del anuncio actualizado · AN2 PEDIDO ARI (vestido + sweater → conjuntos en ofecta)",
   "src": "meta"
  },
  {
   "date": "2026-10-22",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · pedido ARI (Inactivo → Activo)",
+  "text": "Estado del anuncio actualizado cuando se completa su revisión · AN2 PEDIDO ARI (Inactivo → Activo)",
   "src": "meta"
  },
  {
   "date": "2026-10-22",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · pedido ARI (Inactivo → Procesamiento pendiente)",
+  "text": "Estado del anuncio actualizado · AN2 PEDIDO ARI (Inactivo → Procesamiento pendiente)",
   "src": "meta"
  },
  {
   "date": "2026-10-22",
   "cat": "estado",
-  "text": "Estado de la campaña actualizado · ALBA-NUEVOS CLIENTES (Inactiva → Activa)",
+  "text": "Estado de la campaña actualizado · VENTAS-NUEVOS CLIENTES (Inactiva → Activa)",
   "src": "meta"
  },
  {
@@ -524,7 +590,7 @@
  {
   "date": "2026-10-22",
   "cat": "estado",
-  "text": "Estado de la campaña actualizado · ALBA-NUEVOS CLIENTES (Activa → Inactiva)",
+  "text": "Estado de la campaña actualizado · VENTAS-NUEVOS CLIENTES (Activa → Inactiva)",
   "src": "meta"
  },
  {
@@ -554,13 +620,13 @@
  {
   "date": "2026-10-22",
   "cat": "creativo",
-  "text": "Se reactivó «personalizados»",
+  "text": "Se reactivó «AN3 REGALA PERSONALIZADO»",
   "src": "auto"
  },
  {
   "date": "2026-10-22",
   "cat": "creativo",
-  "text": "Se reactivó «pedido ARI»",
+  "text": "Se reactivó «AN2 PEDIDO ARI»",
   "src": "auto"
  },
  {
@@ -590,7 +656,7 @@
  {
   "date": "2026-10-20",
   "cat": "creativo",
-  "text": "Se pausó «pedido ARI»",
+  "text": "Se pausó «AN2 PEDIDO ARI»",
   "src": "auto"
  },
  {
@@ -638,85 +704,19 @@
  {
   "date": "2026-10-19",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · pedido ARI (Revisión pendiente → Inactivo)",
+  "text": "Estado del anuncio actualizado · AN2 PEDIDO ARI (Revisión pendiente → Inactivo)",
   "src": "meta"
  },
  {
   "date": "2026-10-19",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · personalizados (Procesamiento pendiente → Revisión pendiente)",
+  "text": "Estado del anuncio actualizado · AN3 REGALA PERSONALIZADO (Procesamiento pendiente → Revisión pendiente)",
   "src": "meta"
  },
  {
   "date": "2026-10-19",
   "cat": "otros",
-  "text": "Segmentación del anuncio actualizada · personalizados",
-  "src": "meta"
- },
- {
-  "date": "2026-10-19",
-  "cat": "otros",
-  "text": "Nombre del anuncio actualizado · personalizados (sweater dibujo mama → sw MAMA)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-19",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · personalizados (Inactivo → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-19",
-  "cat": "creativo",
-  "text": "Anuncio actualizado · personalizados",
-  "src": "meta"
- },
- {
-  "date": "2026-10-19",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · pedido ARI (Procesamiento pendiente → Revisión pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-19",
-  "cat": "otros",
-  "text": "Nombre del anuncio actualizado · pedido ARI (pedido vestido + sweater → vestido + sweater)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-19",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · pedido ARI (Activo → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-19",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · pedido ARI (Activo → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-19",
-  "cat": "creativo",
-  "text": "Anuncio actualizado · pedido ARI",
-  "src": "meta"
- },
- {
-  "date": "2026-10-19",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · regala bordado (Revisión pendiente → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-19",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · regala bordado (Procesamiento pendiente → Revisión pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-19",
-  "cat": "otros",
-  "text": "Segmentación del anuncio actualizada · regala bordado",
+  "text": "Segmentación del anuncio actualizada · AN3 REGALA PERSONALIZADO",
   "src": "meta"
  }
 ]

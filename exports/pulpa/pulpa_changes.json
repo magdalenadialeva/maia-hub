@@ -1,5 +1,17 @@
 [
  {
+  "date": "2026-11-01",
+  "cat": "creativo",
+  "text": "Se reactivó «Ad_6 - Copia 2»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-11-01",
+  "cat": "creativo",
+  "text": "Se reactivó «Ad_6 - Copia 4»",
+  "src": "auto"
+ },
+ {
   "date": "2026-10-29",
   "cat": "estado",
   "text": "Estado del anuncio actualizado · Post: \"Step into comfort and support with our Wireless...\" (Activo → Eliminado)",
@@ -27,6 +39,18 @@
   "date": "2026-10-29",
   "cat": "creativo",
   "text": "Se reactivó «Ad_6 - Copia»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-10-27",
+  "cat": "creativo",
+  "text": "Se pausó «Ad_6 - Copia 2»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-10-27",
+  "cat": "creativo",
+  "text": "Se pausó «Ad_6 - Copia 4»",
   "src": "auto"
  },
  {
@@ -117,6 +141,12 @@
   "date": "2026-10-23",
   "cat": "creativo",
   "text": "Se encendió/lanzó «Post: \"Step into comfort and support with our Wireless...\"»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-10-23",
+  "cat": "creativo",
+  "text": "Se apagó «Post: \"Step into comfort and support with our Wireless...\"»",
   "src": "auto"
  },
  {
@@ -687,36 +717,6 @@
   "date": "2026-09-13",
   "cat": "creativo",
   "text": "Anuncio creado · Ad_5",
-  "src": "meta"
- },
- {
-  "date": "2026-09-13",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Ad_4 (Procesamiento pendiente → Revisión pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-13",
-  "cat": "creativo",
-  "text": "Anuncio creado · Ad_4",
-  "src": "meta"
- },
- {
-  "date": "2026-09-13",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Ad_1 (Revisión pendiente → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-13",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Ad_3 (Procesamiento pendiente → Revisión pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-13",
-  "cat": "creativo",
-  "text": "Anuncio creado · Ad_3",
   "src": "meta"
  }
 ]

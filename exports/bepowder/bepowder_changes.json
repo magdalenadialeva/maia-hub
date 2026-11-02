@@ -374,6 +374,12 @@
  {
   "date": "2026-10-23",
   "cat": "estado",
+  "text": "Estado del anuncio actualizado cuando se completa su revisión · videos novos 1 (22-10-2025) (Activo → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-23",
+  "cat": "estado",
   "text": "Estado del anuncio actualizado cuando se completa su revisión · post novo combo 1 (10/03/2026) (Activo → Inactivo)",
   "src": "meta"
  },
@@ -386,7 +392,7 @@
  {
   "date": "2026-10-23",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · videos novos 1 (22-10-2025) (Activo → Inactivo)",
+  "text": "Estado del anuncio actualizado · videos novos 1 (22-10-2025) (Activo → Procesamiento pendiente)",
   "src": "meta"
  },
  {
@@ -399,12 +405,6 @@
   "date": "2026-10-23",
   "cat": "estado",
   "text": "Estado del anuncio actualizado · videos novos 2 (26-11-2025) (Activo → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-23",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · videos novos 1 (22-10-2025) (Activo → Procesamiento pendiente)",
   "src": "meta"
  },
  {
@@ -446,13 +446,13 @@
  {
   "date": "2026-10-23",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · 09-TOFU-AO3-Carrusel (Procesamiento pendiente → Inactivo)",
+  "text": "Estado del anuncio actualizado · 02-TOFU-AO1-Gif (Activo → Procesamiento pendiente)",
   "src": "meta"
  },
  {
   "date": "2026-10-23",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · 02-TOFU-AO1-Gif (Activo → Procesamiento pendiente)",
+  "text": "Estado del anuncio actualizado · 09-TOFU-AO3-Carrusel (Procesamiento pendiente → Inactivo)",
   "src": "meta"
  },
  {

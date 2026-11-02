@@ -1,2 +1,2 @@
 ﻿slug,cliente,periodo,moneda,gasto,resultado,roas,cpa,cpl,cuello_embudo,diagnostico,veredictos
-bepowder,Bepowder,2026-09-25..2026-10-31,ARS,186254.47,2,0.42,93127,,Clics en el enlace,El cuello está en Clics en el enlace → Vieron la landing (LPV): 39.3% vs ~80.0% sano.,escalar:0 iterar:0 matar:0 pocaData:8
+bepowder,Bepowder,2026-09-25..2026-11-01,ARS,198840.68,2,0.39,99420,,Vieron la landing (LPV),El cuello está en Vieron la landing (LPV) → Agregaron al carrito: 5.9% vs ~13.0% sano.,escalar:0 iterar:0 matar:0 pocaData:8

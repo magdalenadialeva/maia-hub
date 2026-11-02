@@ -1,0 +1,722 @@
+[
+ {
+  "date": "2026-10-24",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · desde ig - nueva colecicón (Revisión pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-24",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · desde ig - nueva colecicón (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-24",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · desde ig - video (Revisión pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-24",
+  "cat": "segmentacion",
+  "text": "Público personalizado actualizado · asa_auto_custom_audience ({\"inclusions\":{\"operator\":\"or\",\"rules\":[{\"event_sources\":[{\"type\":\"page\",\"id\":1433538573551086}],\"retention_seconds\":15552000,\"filter\":{\"operator\":\"or\",\"filters\":[{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_checkout_page_load_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_checkout_confirmation_page_load_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_checkout_pixel_event\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_purchase_pixel_event\"}]},\"aggregation\":{\"type\":\"count\",\"method\":\"absolute\",\"operator\":\">\",\"value\":0}}]}} → {\"inclusions\":{\"operator\":\"or\",\"rules\":[{\"event_sources\":[{\"type\":\"page\",\"id\":1433538573551086}],\"retention_seconds\":15552000,\"filter\":{\"operator\":\"or\",\"filters\":[{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_checkout_page_load_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_checkout_confirmation_page_load_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_checkout_pixel_event\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_purchase_pixel_event\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_add_to_cart_pixel_event\"}]},\"aggregation\":{\"type\":\"count\",\"method\":\"absolute\",\"operator\":\">\",\"value\":0}},{\"event_sources\":[{\"type\":\"ig_business\",\"id\":17841401374635457}],\"retention_seconds\":15552000,\"filter\":{\"operator\":\"or\",\"filters\":[{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"checkout_page\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"checkout_confirmation_page\"}]},\"aggregation\":{\"type\":\"count\",\"method\":\"absolute\",\"operator\":\">\",\"value\":0}}]}})",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-24",
+  "cat": "segmentacion",
+  "text": "Público personalizado actualizado · asa_auto_custom_audience ({\"inclusions\":{\"operator\":\"or\",\"rules\":[{\"event_sources\":[{\"type\":\"page\",\"id\":1433538573551086}],\"retention_seconds\":15552000,\"filter\":{\"operator\":\"or\",\"filters\":[{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_footer_copy_code_click_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_footer_autofill_code_attempt_info\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_email_submission_success\"}]},\"aggregation\":{\"type\":\"count\",\"method\":\"absolute\",\"operator\":\">\",\"value\":0}}]}} → {\"inclusions\":{\"operator\":\"or\",\"rules\":[{\"event_sources\":[{\"type\":\"page\",\"id\":1433538573551086}],\"retention_seconds\":15552000,\"filter\":{\"operator\":\"or\",\"filters\":[{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_bottom_sheet_copy_click_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_footer_copy_code_click_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_footer_autofill_code_attempt_info\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_email_submission_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_footer_see_offer_button_click_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_footer_click_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_bottom_sheet_see_details_link_click_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_email_footer_sign_up_button_click_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_tc_footer_bottom_sheet_click_success\"}]},\"aggregation\":{\"type\":\"count\",\"method\":\"absolute\",\"operator\":\">\",\"value\":0}},{\"event_sources\":[{\"type\":\"ig_business\",\"id\":17841401374635457}],\"retention_seconds\":15552000,\"filter\":{\"operator\":\"or\",\"filters\":[{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"bloks_bottom_sheet_copy_click\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"bloks_footer_copy_click\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"autofill_code_attempt_info\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"email_capture_sign_up_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"bloks_email_sign_up_click\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"bloks_footer_click\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"bloks_see_details_click\"}]},\"aggregation\":{\"type\":\"count\",\"method\":\"absolute\",\"operator\":\">\",\"value\":0}}]}})",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-24",
+  "cat": "segmentacion",
+  "text": "Público personalizado actualizado · asa_auto_custom_audience ({\"inclusions\":{\"operator\":\"or\",\"rules\":[{\"event_sources\":[{\"type\":\"page\",\"id\":1433538573551086}],\"retention_seconds\":15552000,\"filter\":{\"operator\":\"or\",\"filters\":[{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_footer_copy_paste_signal_observe_paste_info\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_footer_copy_paste_signal_coupon_input_info\"}]},\"aggregation\":{\"type\":\"count\",\"method\":\"absolute\",\"operator\":\">\",\"value\":0}}]}} → {\"inclusions\":{\"operator\":\"or\",\"rules\":[{\"event_sources\":[{\"type\":\"page\",\"id\":1433538573551086}],\"retention_seconds\":15552000,\"filter\":{\"operator\":\"or\",\"filters\":[{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_footer_copy_paste_signal_observe_paste_info\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_footer_copy_paste_signal_coupon_input_info\"}]},\"aggregation\":{\"type\":\"count\",\"method\":\"absolute\",\"operator\":\">\",\"value\":0}},{\"event_sources\":[{\"type\":\"ig_business\",\"id\":17841401374635457}],\"retention_seconds\":15552000,\"filter\":{\"operator\":\"or\",\"filters\":[{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"copy_paste_signal_observe_paste_info\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"copy_paste_signal_coupon_input_info\"}]},\"aggregation\":{\"type\":\"count\",\"method\":\"absolute\",\"operator\":\">\",\"value\":0}}]}})",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-24",
+  "cat": "segmentacion",
+  "text": "Público personalizado actualizado · asa_auto_custom_audience ({\"inclusions\":{\"operator\":\"or\",\"rules\":[{\"event_sources\":[{\"type\":\"page\",\"id\":1433538573551086}],\"retention_seconds\":15552000,\"filter\":{\"operator\":\"or\",\"filters\":[{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_footer_autofill_code_apply_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_non_shopify_autofill_code_fill_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_non_shopify_autofill_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_non_shopify_autofill_success_on_expected_page\"}]},\"aggregation\":{\"type\":\"count\",\"method\":\"absolute\",\"operator\":\">\",\"value\":0}}]}} → {\"inclusions\":{\"operator\":\"or\",\"rules\":[{\"event_sources\":[{\"type\":\"page\",\"id\":1433538573551086}],\"retention_seconds\":15552000,\"filter\":{\"operator\":\"or\",\"filters\":[{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_footer_autofill_code_apply_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_non_shopify_autofill_code_fill_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_non_shopify_autofill_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_non_shopify_autofill_success_on_expected_page\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_footer_claim_offer_apply_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_footer_html_diff_signal_coupon_apply_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_footer_copy_paste_signal_coupon_apply_success\"}]},\"aggregation\":{\"type\":\"count\",\"method\":\"absolute\",\"operator\":\">\",\"value\":0}},{\"event_sources\":[{\"type\":\"ig_business\",\"id\":17841401374635457}],\"retention_seconds\":15552000,\"filter\":{\"operator\":\"or\",\"filters\":[{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"autofill_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"autofill_success_v2\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"xconnect_html_diff_signal_coupon_apply_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"copy_paste_apply_success\"}]},\"aggregation\":{\"type\":\"count\",\"method\":\"absolute\",\"operator\":\">\",\"value\":0}}]}})",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-24",
+  "cat": "creativo",
+  "text": "Anuncio creado · desde ig - nueva colecicón",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-24",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · desde ig - video (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-24",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · desde ig - video (Revisión pendiente → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-24",
+  "cat": "creativo",
+  "text": "Anuncio actualizado · desde ig - video",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-24",
+  "cat": "creativo",
+  "text": "Anuncio creado · desde ig - video",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-24",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Catálogo 2025 (Revisión pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-24",
+  "cat": "estado",
+  "text": "Estado de la campaña actualizado · 15 % Santander todos los días (Procesamiento pendiente → Activa)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-24",
+  "cat": "presupuesto",
+  "text": "Presupuesto de la campaña actualizado · 15 % Santander todos los días (950 → 1.150 UYU/día)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-24",
+  "cat": "estado",
+  "text": "Estado de la campaña actualizado · 15 % Santander todos los días (Activa → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-24",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Catálogo 2025 (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-24",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Catálogo 2025 (Activo → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-24",
+  "cat": "creativo",
+  "text": "Anuncio actualizado · Catálogo 2025",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-24",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Nuevo video Maru local 15% (Revisión pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-24",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Nuevo video Maru local 15% (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-24",
+  "cat": "otros",
+  "text": "Nombre del anuncio actualizado · Nuevo video Maru local 15% (nuevo anuncio 15% todos los días - Copia 2 → Nuevo video Maru local 15%)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-24",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Nuevo video Maru local 15% (Activo → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-24",
+  "cat": "creativo",
+  "text": "Anuncio actualizado · Nuevo video Maru local 15%",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-23",
+  "cat": "creativo",
+  "text": "Se apagó «Live shopping»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-10-23",
+  "cat": "creativo",
+  "text": "Se encendió/lanzó «desde ig - nueva colecicón»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-10-23",
+  "cat": "creativo",
+  "text": "Se encendió/lanzó «desde ig - video»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-10-22",
+  "cat": "creativo",
+  "text": "Se reactivó «Video Maru nuevo»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-10-22",
+  "cat": "creativo",
+  "text": "Se reactivó «nuevo anuncio 15% todos los días - Copia»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-10-20",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Live shopping (Revisión pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-20",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Live shopping (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-20",
+  "cat": "estado",
+  "text": "Estado del conjunto de anuncios actualizado · Nuevo conjunto de anuncios de Ventas (Procesamiento pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-20",
+  "cat": "creativo",
+  "text": "Anuncio creado · Live shopping",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-20",
+  "cat": "otros",
+  "text": "Segmentación del conjunto de anuncios actualizada · Nuevo conjunto de anuncios de Ventas",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-20",
+  "cat": "objetivo",
+  "text": "Ad set performance goal updated · Nuevo conjunto de anuncios de Ventas",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-20",
+  "cat": "presupuesto",
+  "text": "Estrategia de puja del conjunto de anuncios actualizada · Nuevo conjunto de anuncios de Ventas",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-20",
+  "cat": "creativo",
+  "text": "Conjunto de anuncios creado · Nuevo conjunto de anuncios de Ventas",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-20",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Catálogo 2025 (Revisión pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-20",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Catálogo 2025 (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-20",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Catálogo 2025 (Activo → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-20",
+  "cat": "creativo",
+  "text": "Anuncio actualizado · Catálogo 2025",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-20",
+  "cat": "creativo",
+  "text": "Se pausó «nuevo anuncio 15% todos los días - Copia»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-10-20",
+  "cat": "creativo",
+  "text": "Se encendió/lanzó «Live shopping»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-10-18",
+  "cat": "creativo",
+  "text": "Se pausó «Video Maru nuevo»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-10-18",
+  "cat": "creativo",
+  "text": "Se reactivó «Video look con zoom»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-10-16",
+  "cat": "segmentacion",
+  "text": "Público personalizado creado · asa_auto_custom_audience",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-16",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Catálogo 2025 (No aprobado → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-16",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Catálogo 2025 (Activo → No aprobado)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-16",
+  "cat": "creativo",
+  "text": "Se pausó «Video look con zoom»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-10-08",
+  "cat": "creativo",
+  "text": "Se reactivó «Video look con zoom»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-10-06",
+  "cat": "segmentacion",
+  "text": "Público personalizado creado · asa_auto_custom_audience",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-06",
+  "cat": "creativo",
+  "text": "Se pausó «Video look con zoom»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-10-01",
+  "cat": "segmentacion",
+  "text": "Público personalizado creado · asa_auto_custom_audience",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-30",
+  "cat": "segmentacion",
+  "text": "Público personalizado creado · asa_auto_custom_audience",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-25",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Nuevo video Maru local 15% (Revisión pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-25",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Nuevo video Maru local 15% (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-25",
+  "cat": "creativo",
+  "text": "Anuncio creado · Nuevo video Maru local 15%",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-23",
+  "cat": "estado",
+  "text": "Estado de la campaña actualizado · 25% Off Santander 17 al 20 (Activa → Inactiva)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-17",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Horizontal (Revisión pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-17",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Vertical (Revisión pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-17",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Vertical (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-17",
+  "cat": "creativo",
+  "text": "Anuncio creado · Vertical",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-17",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Horizontal (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-17",
+  "cat": "estado",
+  "text": "Estado del conjunto de anuncios actualizado · santander del 17 al 20 (Procesamiento pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-17",
+  "cat": "creativo",
+  "text": "Anuncio creado · Horizontal",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-17",
+  "cat": "otros",
+  "text": "Segmentación del conjunto de anuncios actualizada · santander del 17 al 20",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-17",
+  "cat": "objetivo",
+  "text": "Ad set performance goal updated · santander del 17 al 20",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-17",
+  "cat": "presupuesto",
+  "text": "Estrategia de puja del conjunto de anuncios actualizada · santander del 17 al 20",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-17",
+  "cat": "creativo",
+  "text": "Conjunto de anuncios creado · santander del 17 al 20",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-11",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · nuevo anuncio 15% todos los días - Copia (Revisión pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-11",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Nueva colección 2026 (Revisión pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-10",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · nuevo anuncio 15% todos los días - Copia (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-10",
+  "cat": "creativo",
+  "text": "Anuncio creado · nuevo anuncio 15% todos los días - Copia",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-10",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · nuevo anuncio 15% todos los días (Revisión pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-10",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Nueva colección 2026 (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-10",
+  "cat": "creativo",
+  "text": "Anuncio creado · Nueva colección 2026",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-10",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · nuevo anuncio 15% todos los días (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-10",
+  "cat": "creativo",
+  "text": "Anuncio creado · nuevo anuncio 15% todos los días",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-10",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Catálogo 2025 - Copia (Procesamiento pendiente → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-10",
+  "cat": "estado",
+  "text": "Estado del conjunto de anuncios actualizado · Copia de catalogo (Activo → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-10",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado cuando se completa su revisión · Catálogo 2025 - Copia (Activo → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-10",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Catálogo 2025 - Copia (Activo → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-04",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Catálogo 2025 - Copia (Revisión pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-04",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Catálogo 2025 - Copia (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-04",
+  "cat": "estado",
+  "text": "Estado del conjunto de anuncios actualizado · Copia de catalogo (Procesamiento pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-04",
+  "cat": "creativo",
+  "text": "Anuncio creado · Catálogo 2025 - Copia",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-04",
+  "cat": "presupuesto",
+  "text": "Se habilitó la programación del presupuesto del conjunto de anuncios · Copia de catalogo",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-04",
+  "cat": "otros",
+  "text": "Segmentación del conjunto de anuncios actualizada · Copia de catalogo",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-04",
+  "cat": "objetivo",
+  "text": "Ad set performance goal updated · Copia de catalogo",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-04",
+  "cat": "presupuesto",
+  "text": "Estrategia de puja del conjunto de anuncios actualizada · Copia de catalogo",
+  "src": "meta"
+ },
+ {
+  "date": "2026-09-04",
+  "cat": "creativo",
+  "text": "Conjunto de anuncios creado · Copia de catalogo",
+  "src": "meta"
+ },
+ {
+  "date": "2026-08-30",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · 50% off agosto (Procesamiento pendiente → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-08-30",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado cuando se completa su revisión · 50% off agosto (Activo → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-08-30",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · 50% off agosto (Activo → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-08-28",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · 50% off agosto - Copia (Revisión pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-08-28",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · 50% off agosto - Copia (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-08-28",
+  "cat": "creativo",
+  "text": "Anuncio creado · 50% off agosto - Copia",
+  "src": "meta"
+ },
+ {
+  "date": "2026-08-26",
+  "cat": "segmentacion",
+  "text": "Público personalizado creado · asa_auto_custom_audience",
+  "src": "meta"
+ },
+ {
+  "date": "2026-08-26",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Jeans 15% (Inactivo → Eliminado)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-08-26",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Video tipo gif (Inactivo → Eliminado)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-08-26",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Catálogo 2025 (Inactivo → Eliminado)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-08-26",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Video Maru hablando 2.0 (Activo → Eliminado)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-08-26",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Video Café 15% Off (Inactivo → Eliminado)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-08-26",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · alma de mar placa - Copia (Inactivo → Eliminado)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-08-26",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · alma de mar video (Inactivo → Eliminado)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-08-26",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · alma de mar placa (Inactivo → Eliminado)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-08-26",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Video Maru nuevo (Inactivo → Eliminado)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-08-26",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Video maru 15% (Inactivo → Eliminado)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-08-26",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Video Maru hablando nuevo (Inactivo → Eliminado)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-08-26",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Video look con zoom (Inactivo → Eliminado)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-08-26",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Video Maru hablando 2.0 (Inactivo → Eliminado)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-08-26",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Todo a 990 y 1490 (marzo) (Procesamiento pendiente → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-08-26",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Video 25% 1 (Procesamiento pendiente → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-08-26",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Joyitas a 990 y 1490 (Procesamiento pendiente → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-08-26",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Todo a 990 y 1490 (marzo) 2.0 (Procesamiento pendiente → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-08-26",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Bikinis 50% (Procesamiento pendiente → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-08-26",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Video look con zoom (Procesamiento pendiente → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-08-26",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Video tipo gif (Procesamiento pendiente → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-08-26",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · New In Video (Procesamiento pendiente → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-08-26",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Video Maru nuevo (Procesamiento pendiente → Inactivo)",
+  "src": "meta"
+ }
+]
