@@ -1,5 +1,41 @@
 [
  {
+  "date": "2026-11-02",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Publicación de Instagram: ¿Y si el color de lo... (Procesamiento pendiente → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-02",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Post: \"Cómo empezó Be powder? 🩷\" (Procesamiento pendiente → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-02",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado cuando se completa su revisión · Publicación de Instagram: ¿Y si el color de lo... (Activo → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-02",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Publicación de Instagram: ¿Y si el color de lo... (Activo → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-02",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado cuando se completa su revisión · Post: \"Cómo empezó Be powder? 🩷\" (Activo → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-02",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Post: \"Cómo empezó Be powder? 🩷\" (Activo → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
   "date": "2026-10-28",
   "cat": "estado",
   "text": "Estado del anuncio actualizado · Publicación: \"Cómo empezó Be powder? 🩷\" (Procesamiento pendiente → Activo)",
@@ -446,13 +482,13 @@
  {
   "date": "2026-10-23",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · 02-TOFU-AO1-Gif (Activo → Procesamiento pendiente)",
+  "text": "Estado del anuncio actualizado · 09-TOFU-AO3-Carrusel (Procesamiento pendiente → Inactivo)",
   "src": "meta"
  },
  {
   "date": "2026-10-23",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · 09-TOFU-AO3-Carrusel (Procesamiento pendiente → Inactivo)",
+  "text": "Estado del anuncio actualizado · 02-TOFU-AO1-Gif (Activo → Procesamiento pendiente)",
   "src": "meta"
  },
  {
@@ -608,12 +644,6 @@
  {
   "date": "2026-10-23",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · 11-TOFU-AO4-Gif - Copia (Procesamiento pendiente → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-23",
-  "cat": "estado",
   "text": "Estado del anuncio actualizado · 08-TOFU-AO3-Gif (Activo → Procesamiento pendiente)",
   "src": "meta"
  },
@@ -621,6 +651,12 @@
   "date": "2026-10-23",
   "cat": "estado",
   "text": "Estado del anuncio actualizado · 07-TOFU-AO3-Video (Activo → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-23",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · 11-TOFU-AO4-Gif - Copia (Procesamiento pendiente → Inactivo)",
   "src": "meta"
  },
  {
@@ -681,42 +717,6 @@
   "date": "2026-10-23",
   "cat": "estado",
   "text": "Estado del anuncio actualizado · 05-TOFU-AO2-GIF (Activo → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-23",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · 10-TOFU-AO4-Video - Copia (Activo → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-23",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · 10-TOFU-AO4-Video - Copia (Activo → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-23",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · 13-TOFU-AO5-Carru - Copia (Activo → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-23",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · 13-TOFU-AO5-Carru - Copia (Activo → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-23",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · 11-TOFU-AO4-Gif - Copia (Activo → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-23",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · 11-TOFU-AO4-Gif - Copia (Activo → Procesamiento pendiente)",
   "src": "meta"
  }
 ]

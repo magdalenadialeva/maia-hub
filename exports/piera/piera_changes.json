@@ -1,5 +1,11 @@
 [
  {
+  "date": "2026-11-02",
+  "cat": "estado",
+  "text": "Estado de la campaña actualizado · Trafico constante (Activa → Inactiva)",
+  "src": "meta"
+ },
+ {
   "date": "2026-10-23",
   "cat": "estado",
   "text": "Estado del anuncio actualizado · Nuevo anuncio de Tráfico (Procesamiento pendiente → Activo)",
@@ -512,7 +518,7 @@
  {
   "date": "2026-09-29",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · AYMARA - LINK AD - V1 (Procesamiento pendiente → Revisión pendiente)",
+  "text": "Estado del anuncio actualizado · AYMARA - LINK AD- V5 (Procesamiento pendiente → Revisión pendiente)",
   "src": "meta"
  },
  {
@@ -524,7 +530,7 @@
  {
   "date": "2026-09-29",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · AYMARA - LINK AD- V5 (Procesamiento pendiente → Revisión pendiente)",
+  "text": "Estado del anuncio actualizado · AYMARA - LINK AD - V1 (Procesamiento pendiente → Revisión pendiente)",
   "src": "meta"
  },
  {
@@ -711,12 +717,6 @@
   "date": "2026-09-04",
   "cat": "creativo",
   "text": "Se apagó «Carrusel Catalogo»",
-  "src": "auto"
- },
- {
-  "date": "2026-09-04",
-  "cat": "creativo",
-  "text": "Se apagó «Carrusel Catalogo - Video Nuevo 1»",
   "src": "auto"
  }
 ]

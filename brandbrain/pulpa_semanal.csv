@@ -1,2 +1,2 @@
 ﻿slug,cliente,periodo,moneda,gasto,resultado,roas,cpa,cpl,cuello_embudo,diagnostico,veredictos
-pulpa,Pulpa Verde,2026-09-01..2026-11-01,ARS,600516.51,3,0.16,200172,,Iniciaron el pago,El cuello está en Iniciaron el pago → Compraron: 8.1% vs ~45.0% sano.,escalar:0 iterar:0 matar:0 pocaData:22
+pulpa,Pulpa Verde,2026-09-01..2026-11-02,ARS,613261.86,3,0.15,204421,,Iniciaron el pago,El cuello está en Iniciaron el pago → Compraron: 8.1% vs ~45.0% sano.,escalar:0 iterar:0 matar:0 pocaData:22

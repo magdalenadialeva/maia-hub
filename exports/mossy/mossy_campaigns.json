@@ -3,11 +3,11 @@
   "name": "Mar26 - Ventas - A+ - Catalogo - Frio",
   "objective": "OUTCOME_SALES",
   "status": "PAUSED",
-  "spend": 1146890.84,
-  "first": "2026-09-27",
+  "spend": 1043490.62,
+  "first": "2026-09-28",
   "last": "2026-10-17",
-  "purch": 25.0,
-  "msg": 19.0,
+  "purch": 23.0,
+  "msg": 18.0,
   "ads": [
    "Ad6 - Secuencia - Nueva coleccion 2026 - Copia 3",
    "Ad6 - Secuencia - Nueva coleccion 2026 - Copia 4",
@@ -27,23 +27,23 @@
    "Ad15 - UGC - Mix and Match",
    "Ad16 - Testimonios - WhatsApp calce"
   ],
-  "impr": 154182.0,
-  "lc": 4190.0,
-  "lpv": 3691.0,
-  "atc": 473.0,
-  "ic": 67.0,
-  "pval": 2219669.82,
+  "impr": 140749.0,
+  "lc": 3813.0,
+  "lpv": 3372.0,
+  "atc": 430.0,
+  "ic": 64.0,
+  "pval": 2037897.16,
   "leads": 0.0,
-  "window_from": "2026-09-27"
+  "window_from": "2026-09-28"
  },
  {
   "name": "Mossy_AlwaysOn_Conversiones_Dinámicos",
   "objective": "OUTCOME_SALES",
   "status": "ACTIVE",
-  "spend": 888902.44,
+  "spend": 926874.63,
   "first": "2026-09-30",
-  "last": "2026-11-01",
-  "purch": 32.0,
+  "last": "2026-11-02",
+  "purch": 37.0,
   "msg": 12.0,
   "ads": [
    "B agosto -  Catálogo contenido advantage + todos los productos - Copia 4",
@@ -71,42 +71,43 @@
    "Ad6 - Secuencia - Nueva coleccion 2026 - Copia 3",
    "Stack - Brava Mix&Match 04 - Copia 2",
    "Stack - Brava Detalle 07 - Copia 3",
-   "Stack - Brava UGC 06 - Copia 3"
+   "Stack - Brava UGC 06 - Copia 3",
+   "Stack - Brava Reseñas Calce"
   ],
-  "impr": 154933.0,
-  "lc": 4574.0,
-  "lpv": 4400.0,
-  "atc": 412.0,
-  "ic": 65.0,
-  "pval": 2771699.16,
+  "impr": 159200.0,
+  "lc": 4699.0,
+  "lpv": 4514.0,
+  "atc": 470.0,
+  "ic": 72.0,
+  "pval": 3235060.86,
   "leads": 0.0,
-  "window_from": "2026-09-27"
+  "window_from": "2026-09-28"
  },
  {
   "name": "Ago26 - Ventas - CBO - Prospecting - Angulos Nuevos",
   "objective": "OUTCOME_SALES",
   "status": "PAUSED",
-  "spend": 149299.45,
-  "first": "2026-09-27",
+  "spend": 145972.31,
+  "first": "2026-09-28",
   "last": "2026-10-12",
-  "purch": 4.0,
+  "purch": 3.0,
   "msg": 0.0,
   "ads": [
-   "Ad3 - Angulo Producto Fit",
    "Ad1 - Angulo Anticipo Temporada",
+   "Ad3 - Angulo Producto Fit",
    "Ad1 - Angulo Anticipo Temporada - Copia",
    "Ad3 - Angulo Producto Fit - Copia",
    "Ad8 - Video - Anticipo Temporada - Mega Sale",
    "Ad9 - Producto Fit - Mega Sale - Tu top tu bombacha tu talle"
   ],
-  "impr": 13497.0,
-  "lc": 401.0,
-  "lpv": 375.0,
-  "atc": 37.0,
-  "ic": 5.0,
-  "pval": 266305.07,
+  "impr": 13086.0,
+  "lc": 389.0,
+  "lpv": 364.0,
+  "atc": 35.0,
+  "ic": 4.0,
+  "pval": 177472.9,
   "leads": 0.0,
-  "window_from": "2026-09-27"
+  "window_from": "2026-09-28"
  },
  {
   "name": "Conversiones_Campaña_Advantage+",
@@ -133,15 +134,15 @@
   "ic": 3.0,
   "pval": 206100.56,
   "leads": 0.0,
-  "window_from": "2026-09-27"
+  "window_from": "2026-09-28"
  },
  {
   "name": "Mossy_Test_Creativos_Brava",
   "objective": "OUTCOME_SALES",
   "status": "PAUSED",
-  "spend": 75631.45,
+  "spend": 76824.08,
   "first": "2026-10-25",
-  "last": "2026-11-01",
+  "last": "2026-11-02",
   "purch": 0.0,
   "msg": 0.0,
   "ads": [
@@ -153,14 +154,14 @@
    "Ad4 - Angulo Resenas Calce - Test ATC",
    "Ad5 - Angulo Envio Gratis - Test ATC"
   ],
-  "impr": 13090.0,
-  "lc": 472.0,
-  "lpv": 494.0,
-  "atc": 85.0,
+  "impr": 13341.0,
+  "lc": 478.0,
+  "lpv": 499.0,
+  "atc": 88.0,
   "ic": 2.0,
   "pval": 0.0,
   "leads": 0.0,
-  "window_from": "2026-09-27"
+  "window_from": "2026-09-28"
  },
  {
   "name": "Mar26 - Ventas - A+ - Retargeting",
@@ -187,7 +188,7 @@
   "ic": 0.0,
   "pval": 0.0,
   "leads": 0.0,
-  "window_from": "2026-09-27"
+  "window_from": "2026-09-28"
  },
  {
   "name": "Mossy_LAL_Compradores_Brava",
@@ -209,7 +210,7 @@
   "ic": 1.0,
   "pval": 0.0,
   "leads": 0.0,
-  "window_from": "2026-09-27"
+  "window_from": "2026-09-28"
  },
  {
   "name": "Mossy_RMKT_Carrito_Brava_v2",
@@ -235,6 +236,6 @@
   "ic": 0.0,
   "pval": 0.0,
   "leads": 0.0,
-  "window_from": "2026-09-27"
+  "window_from": "2026-09-28"
  }
 ]
