@@ -1,5 +1,113 @@
 [
  {
+  "date": "2026-11-03",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Post: \"💘déjanos tus datos para todo lo que se viene!!\" (Revisión pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-03",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Post: \"Déjanos tus datos!!\" (Revisión pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-03",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Post: \"💘déjanos tus datos para todo lo que se viene!!\" (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-03",
+  "cat": "estado",
+  "text": "Estado del conjunto de anuncios actualizado · Post: \"💘déjanos tus datos para todo lo que se viene!!\" (Procesamiento pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-03",
+  "cat": "creativo",
+  "text": "Anuncio creado · Post: \"💘déjanos tus datos para todo lo que se viene!!\"",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-03",
+  "cat": "otros",
+  "text": "Segmentación del conjunto de anuncios actualizada · Post: \"💘déjanos tus datos para todo lo que se viene!!\"",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-03",
+  "cat": "objetivo",
+  "text": "Ad set performance goal updated · Post: \"💘déjanos tus datos para todo lo que se viene!!\"",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-03",
+  "cat": "presupuesto",
+  "text": "Estrategia de puja del conjunto de anuncios actualizada · Post: \"💘déjanos tus datos para todo lo que se viene!!\"",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-03",
+  "cat": "creativo",
+  "text": "Conjunto de anuncios creado · Post: \"💘déjanos tus datos para todo lo que se viene!!\"",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-03",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Post: \"Déjanos tus datos!!\" (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-03",
+  "cat": "estado",
+  "text": "Estado del conjunto de anuncios actualizado · Post: \"Déjanos tus datos!!\" (Procesamiento pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-03",
+  "cat": "creativo",
+  "text": "Anuncio creado · Post: \"Déjanos tus datos!!\"",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-03",
+  "cat": "otros",
+  "text": "Segmentación del conjunto de anuncios actualizada · Post: \"Déjanos tus datos!!\"",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-03",
+  "cat": "objetivo",
+  "text": "Ad set performance goal updated · Post: \"Déjanos tus datos!!\"",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-03",
+  "cat": "presupuesto",
+  "text": "Estrategia de puja del conjunto de anuncios actualizada · Post: \"Déjanos tus datos!!\"",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-03",
+  "cat": "creativo",
+  "text": "Conjunto de anuncios creado · Post: \"Déjanos tus datos!!\"",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-03",
+  "cat": "creativo",
+  "text": "Se encendió/lanzó «Post: \"Déjanos tus datos!!\"»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-11-03",
+  "cat": "creativo",
+  "text": "Se encendió/lanzó «Post: \"💘déjanos tus datos para todo lo que se viene!!\"»",
+  "src": "auto"
+ },
+ {
   "date": "2026-11-02",
   "cat": "estado",
   "text": "Estado del anuncio actualizado · Publicación de Instagram: ¿Y si el color de lo... (Procesamiento pendiente → Inactivo)",
@@ -434,13 +542,13 @@
  {
   "date": "2026-10-23",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · post novo combo 1 (10/03/2026) (Activo → Procesamiento pendiente)",
+  "text": "Estado del anuncio actualizado · videos novos 2 (26-11-2025) (Activo → Procesamiento pendiente)",
   "src": "meta"
  },
  {
   "date": "2026-10-23",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · videos novos 2 (26-11-2025) (Activo → Procesamiento pendiente)",
+  "text": "Estado del anuncio actualizado · post novo combo 1 (10/03/2026) (Activo → Procesamiento pendiente)",
   "src": "meta"
  },
  {
@@ -482,13 +590,13 @@
  {
   "date": "2026-10-23",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · 09-TOFU-AO3-Carrusel (Procesamiento pendiente → Inactivo)",
+  "text": "Estado del anuncio actualizado · 02-TOFU-AO1-Gif (Activo → Procesamiento pendiente)",
   "src": "meta"
  },
  {
   "date": "2026-10-23",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · 02-TOFU-AO1-Gif (Activo → Procesamiento pendiente)",
+  "text": "Estado del anuncio actualizado · 09-TOFU-AO3-Carrusel (Procesamiento pendiente → Inactivo)",
   "src": "meta"
  },
  {
@@ -609,114 +717,6 @@
   "date": "2026-10-23",
   "cat": "estado",
   "text": "Estado del anuncio actualizado · 10-TOFU-AO4-Video - Copia (Procesamiento pendiente → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-23",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · 13-TOFU-AO5-Carru - Copia (Procesamiento pendiente → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-23",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · 09-TOFU-AO3-Carrusel (Activo → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-23",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · 09-TOFU-AO3-Carrusel (Activo → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-23",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · 08-TOFU-AO3-Gif (Activo → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-23",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · 07-TOFU-AO3-Video (Activo → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-23",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · 08-TOFU-AO3-Gif (Activo → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-23",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · 07-TOFU-AO3-Video (Activo → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-23",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · 11-TOFU-AO4-Gif - Copia (Procesamiento pendiente → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-23",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · 13-TOFU-AO5-Carru (Activo → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-23",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · 13-TOFU-AO5-Carru (Activo → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-23",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · 12-TOFU-AO4-Carru (Activo → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-23",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · 12-TOFU-AO4-Carru (Activo → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-23",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · 07-TOFU-AO3-Video - Copia (Activo → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-23",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · 07-TOFU-AO3-Video - Copia (Activo → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-23",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · 03-TOFU-AO1-Carru (Activo → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-23",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · 03-TOFU-AO1-Carru (Activo → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-23",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · 05-TOFU-AO2-GIF (Activo → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-23",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · 05-TOFU-AO2-GIF (Activo → Procesamiento pendiente)",
   "src": "meta"
  }
 ]

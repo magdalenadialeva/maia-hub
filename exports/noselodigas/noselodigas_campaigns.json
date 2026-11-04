@@ -3,31 +3,31 @@
   "name": "15 % Santander todos los días",
   "objective": "OUTCOME_SALES",
   "status": "ACTIVE",
-  "spend": 36659.62,
-  "first": "2026-09-28",
-  "last": "2026-11-02",
-  "purch": 48.0,
+  "spend": 37659.71,
+  "first": "2026-09-29",
+  "last": "2026-11-03",
+  "purch": 51.0,
   "msg": 65.0,
   "ads": [
    "Catálogo 2025",
-   "Video look con zoom",
+   "Video Maru nuevo",
+   "nuevo anuncio 15% todos los días",
    "nuevo anuncio 15% todos los días - Copia",
    "Nueva colección 2026",
    "Nuevo video Maru local 15%",
-   "Video Maru nuevo",
-   "nuevo anuncio 15% todos los días",
+   "Video look con zoom",
    "desde ig - nueva colecicón",
    "desde ig - video",
    "Estático Cyber - CAMBIAR IMAGEN"
   ],
-  "impr": 232002.0,
-  "lc": 9975.0,
-  "lpv": 10007.0,
-  "atc": 186.0,
+  "impr": 233000.0,
+  "lc": 10082.0,
+  "lpv": 10104.0,
+  "atc": 194.0,
   "ic": 52.0,
-  "pval": 88282.25,
+  "pval": 95450.02,
   "leads": 0.0,
-  "window_from": "2026-09-28"
+  "window_from": "2026-09-29"
  },
  {
   "name": "Live shopping",
@@ -48,27 +48,6 @@
   "ic": 2.0,
   "pval": 0.0,
   "leads": 0.0,
-  "window_from": "2026-09-28"
- },
- {
-  "name": "25% Off Santander 17 al 20",
-  "objective": "OUTCOME_SALES",
-  "status": "PAUSED",
-  "spend": 0.0,
-  "first": "2026-09-28",
-  "last": "2026-09-28",
-  "purch": 0.0,
-  "msg": 0.0,
-  "ads": [
-   "Horizontal"
-  ],
-  "impr": 0.0,
-  "lc": 0.0,
-  "lpv": 0.0,
-  "atc": 0.0,
-  "ic": 0.0,
-  "pval": 0.0,
-  "leads": 0.0,
-  "window_from": "2026-09-28"
+  "window_from": "2026-09-29"
  }
 ]

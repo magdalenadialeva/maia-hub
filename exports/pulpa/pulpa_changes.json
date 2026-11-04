@@ -1,5 +1,11 @@
 [
  {
+  "date": "2026-11-03",
+  "cat": "segmentacion",
+  "text": "Público personalizado creado · asa_auto_custom_audience",
+  "src": "meta"
+ },
+ {
   "date": "2026-11-01",
   "cat": "creativo",
   "text": "Se reactivó «Ad_6 - Copia 2»",
@@ -711,12 +717,6 @@
   "date": "2026-09-13",
   "cat": "estado",
   "text": "Estado del anuncio actualizado · Ad_3 (Revisión pendiente → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-13",
-  "cat": "creativo",
-  "text": "Anuncio creado · Ad_5",
   "src": "meta"
  }
 ]

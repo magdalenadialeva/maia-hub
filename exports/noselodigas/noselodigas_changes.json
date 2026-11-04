@@ -252,6 +252,12 @@
   "src": "auto"
  },
  {
+  "date": "2026-11-01",
+  "cat": "creativo",
+  "text": "Se apagó «Video look con zoom»",
+  "src": "auto"
+ },
+ {
   "date": "2026-10-24",
   "cat": "estado",
   "text": "Estado del anuncio actualizado · desde ig - nueva colecicón (Revisión pendiente → Activo)",
@@ -416,13 +422,13 @@
  {
   "date": "2026-10-22",
   "cat": "creativo",
-  "text": "Se reactivó «nuevo anuncio 15% todos los días - Copia»",
+  "text": "Se reactivó «Video Maru nuevo»",
   "src": "auto"
  },
  {
   "date": "2026-10-22",
   "cat": "creativo",
-  "text": "Se reactivó «Video Maru nuevo»",
+  "text": "Se reactivó «nuevo anuncio 15% todos los días - Copia»",
   "src": "auto"
  },
  {
@@ -512,13 +518,13 @@
  {
   "date": "2026-10-18",
   "cat": "creativo",
-  "text": "Se reactivó «Video look con zoom»",
+  "text": "Se pausó «Video Maru nuevo»",
   "src": "auto"
  },
  {
   "date": "2026-10-18",
   "cat": "creativo",
-  "text": "Se pausó «Video Maru nuevo»",
+  "text": "Se reactivó «Video look con zoom»",
   "src": "auto"
  },
  {
@@ -576,15 +582,9 @@
   "src": "meta"
  },
  {
-  "date": "2026-09-29",
+  "date": "2026-09-30",
   "cat": "creativo",
-  "text": "Se encendió/lanzó «Video Maru nuevo»",
-  "src": "auto"
- },
- {
-  "date": "2026-09-29",
-  "cat": "creativo",
-  "text": "Se encendió/lanzó «nuevo anuncio 15% todos los días»",
+  "text": "Se encendió/lanzó «Video look con zoom»",
   "src": "auto"
  },
  {

@@ -2,12 +2,12 @@
  {
   "name": "Basyco Jerez_Conversiones_Purchase_SEP2026",
   "objective": "OUTCOME_SALES",
-  "status": "ACTIVE",
-  "spend": 1506416.01,
+  "status": "PAUSED",
+  "spend": 1558785.65,
   "first": "2026-09-11",
-  "last": "2026-11-02",
+  "last": "2026-11-03",
   "purch": 40.0,
-  "msg": 186.0,
+  "msg": 194.0,
   "ads": [
    "Conjunto Lugano",
    "Total Look Loira",
@@ -31,11 +31,11 @@
    "VESTIDO BIELLA",
    "5 looks Cyber"
   ],
-  "impr": 234179.0,
-  "lc": 10843.0,
-  "lpv": 11689.0,
-  "atc": 345.0,
-  "ic": 211.0,
+  "impr": 239639.0,
+  "lc": 11218.0,
+  "lpv": 12067.0,
+  "atc": 353.0,
+  "ic": 215.0,
   "pval": 7296389.1,
   "leads": 3.0,
   "window_from": "2026-09-10"

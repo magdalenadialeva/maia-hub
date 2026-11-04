@@ -228,6 +228,18 @@
   "src": "auto"
  },
  {
+  "date": "2026-11-01",
+  "cat": "creativo",
+  "text": "Se apagó «Ad3 - Angulo Producto Fit - Test ATC»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-11-01",
+  "cat": "creativo",
+  "text": "Se apagó «Ad4 - Angulo Resenas Calce - Test ATC»",
+  "src": "auto"
+ },
+ {
   "date": "2026-10-31",
   "cat": "estado",
   "text": "Estado de la campaña actualizado · Mossy_AlwaysOn_Conversiones_Dinámicos (Procesamiento pendiente → Activa)",
@@ -705,18 +717,6 @@
   "date": "2026-10-26",
   "cat": "estado",
   "text": "Estado de la campaña actualizado · Mossy_AlwaysOn_Conversiones_Dinámicos (Activa → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-26",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Stack - Brava UGC 06 - Copia 4 (Revisión pendiente → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-26",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Stack - Brava Detalle 07 - Copia 4 (Revisión pendiente → Activo)",
   "src": "meta"
  }
 ]

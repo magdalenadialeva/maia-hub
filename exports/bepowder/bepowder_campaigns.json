@@ -86,5 +86,47 @@
   "pval": 77800.0,
   "leads": 0.0,
   "window_from": "2026-09-24"
+ },
+ {
+  "name": "Post: \"Déjanos tus datos!!\"",
+  "objective": "OUTCOME_ENGAGEMENT",
+  "status": "PAUSED",
+  "spend": 6593.4,
+  "first": "2026-11-03",
+  "last": "2026-11-03",
+  "purch": 0.0,
+  "msg": 36.0,
+  "ads": [
+   "Post: \"Déjanos tus datos!!\""
+  ],
+  "impr": 1246.0,
+  "lc": 77.0,
+  "lpv": 1.0,
+  "atc": 0.0,
+  "ic": 0.0,
+  "pval": 0.0,
+  "leads": 0.0,
+  "window_from": "2026-09-24"
+ },
+ {
+  "name": "Post: \"💘déjanos tus datos para todo lo que se viene!!\"",
+  "objective": "OUTCOME_ENGAGEMENT",
+  "status": "PAUSED",
+  "spend": 6277.96,
+  "first": "2026-11-03",
+  "last": "2026-11-03",
+  "purch": 0.0,
+  "msg": 50.0,
+  "ads": [
+   "Post: \"💘déjanos tus datos para todo lo que se viene!!\""
+  ],
+  "impr": 1354.0,
+  "lc": 137.0,
+  "lpv": 2.0,
+  "atc": 0.0,
+  "ic": 0.0,
+  "pval": 0.0,
+  "leads": 0.0,
+  "window_from": "2026-09-24"
  }
 ]

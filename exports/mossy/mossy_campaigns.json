@@ -1,49 +1,12 @@
 [
  {
-  "name": "Mar26 - Ventas - A+ - Catalogo - Frio",
-  "objective": "OUTCOME_SALES",
-  "status": "PAUSED",
-  "spend": 1043490.62,
-  "first": "2026-09-28",
-  "last": "2026-10-17",
-  "purch": 23.0,
-  "msg": 18.0,
-  "ads": [
-   "Ad6 - Secuencia - Nueva coleccion 2026 - Copia 3",
-   "Ad6 - Secuencia - Nueva coleccion 2026 - Copia 4",
-   "Ad6 - Secuencia - Nueva coleccion 202666 - Copia 8",
-   "Ad6 - Secuencia - Nueva coleccion 202666 - Copia 9",
-   "Ad6 - Secuencia - Nueva coleccion 202666 - Copia 10",
-   "Ad6 - Secuencia - Nueva coleccion 202666 - Copia 6",
-   "Ad6 - Secuencia - Nueva coleccion 202666 - Copia 7",
-   "Ad6 - Secuencia - Nueva coleccion 202666 - Copia 11",
-   "Ad6 - Secuencia - Nueva coleccion 202666 - Copia 12",
-   "Ad6 - Video - Sale - Copia",
-   "Ad7 - Secuencia - Mega Sale - Tu top tu bombacha tus reglas",
-   "Ad11 - Secuencia - Mega Sale - No hay una sola forma de usar Mossy",
-   "Ad12 - UGC Creadoras - Try on",
-   "Ad13 - UGC - Shein vs Mossy",
-   "Ad14 - Producto - Estampados flat lay",
-   "Ad15 - UGC - Mix and Match",
-   "Ad16 - Testimonios - WhatsApp calce"
-  ],
-  "impr": 140749.0,
-  "lc": 3813.0,
-  "lpv": 3372.0,
-  "atc": 430.0,
-  "ic": 64.0,
-  "pval": 2037897.16,
-  "leads": 0.0,
-  "window_from": "2026-09-28"
- },
- {
   "name": "Mossy_AlwaysOn_Conversiones_Dinámicos",
   "objective": "OUTCOME_SALES",
   "status": "ACTIVE",
-  "spend": 926874.63,
+  "spend": 974489.48,
   "first": "2026-09-30",
-  "last": "2026-11-02",
-  "purch": 37.0,
+  "last": "2026-11-03",
+  "purch": 39.0,
   "msg": 12.0,
   "ads": [
    "B agosto -  Catálogo contenido advantage + todos los productos - Copia 4",
@@ -74,21 +37,58 @@
    "Stack - Brava UGC 06 - Copia 3",
    "Stack - Brava Reseñas Calce"
   ],
-  "impr": 159200.0,
-  "lc": 4699.0,
-  "lpv": 4514.0,
-  "atc": 470.0,
-  "ic": 72.0,
-  "pval": 3235060.86,
+  "impr": 164383.0,
+  "lc": 4883.0,
+  "lpv": 4704.0,
+  "atc": 499.0,
+  "ic": 74.0,
+  "pval": 3494881.86,
   "leads": 0.0,
-  "window_from": "2026-09-28"
+  "window_from": "2026-09-29"
+ },
+ {
+  "name": "Mar26 - Ventas - A+ - Catalogo - Frio",
+  "objective": "OUTCOME_SALES",
+  "status": "PAUSED",
+  "spend": 971707.77,
+  "first": "2026-09-29",
+  "last": "2026-10-17",
+  "purch": 21.0,
+  "msg": 18.0,
+  "ads": [
+   "Ad6 - Secuencia - Nueva coleccion 2026 - Copia 3",
+   "Ad6 - Secuencia - Nueva coleccion 2026 - Copia 4",
+   "Ad6 - Secuencia - Nueva coleccion 202666 - Copia 8",
+   "Ad6 - Secuencia - Nueva coleccion 202666 - Copia 9",
+   "Ad6 - Secuencia - Nueva coleccion 202666 - Copia 10",
+   "Ad6 - Secuencia - Nueva coleccion 202666 - Copia 6",
+   "Ad6 - Secuencia - Nueva coleccion 202666 - Copia 7",
+   "Ad6 - Secuencia - Nueva coleccion 202666 - Copia 11",
+   "Ad6 - Video - Sale - Copia",
+   "Ad6 - Secuencia - Nueva coleccion 202666 - Copia 12",
+   "Ad7 - Secuencia - Mega Sale - Tu top tu bombacha tus reglas",
+   "Ad11 - Secuencia - Mega Sale - No hay una sola forma de usar Mossy",
+   "Ad12 - UGC Creadoras - Try on",
+   "Ad13 - UGC - Shein vs Mossy",
+   "Ad14 - Producto - Estampados flat lay",
+   "Ad15 - UGC - Mix and Match",
+   "Ad16 - Testimonios - WhatsApp calce"
+  ],
+  "impr": 130014.0,
+  "lc": 3600.0,
+  "lpv": 3164.0,
+  "atc": 408.0,
+  "ic": 61.0,
+  "pval": 1850175.25,
+  "leads": 0.0,
+  "window_from": "2026-09-29"
  },
  {
   "name": "Ago26 - Ventas - CBO - Prospecting - Angulos Nuevos",
   "objective": "OUTCOME_SALES",
   "status": "PAUSED",
-  "spend": 145972.31,
-  "first": "2026-09-28",
+  "spend": 128970.85,
+  "first": "2026-09-29",
   "last": "2026-10-12",
   "purch": 3.0,
   "msg": 0.0,
@@ -100,14 +100,14 @@
    "Ad8 - Video - Anticipo Temporada - Mega Sale",
    "Ad9 - Producto Fit - Mega Sale - Tu top tu bombacha tu talle"
   ],
-  "impr": 13086.0,
-  "lc": 389.0,
-  "lpv": 364.0,
-  "atc": 35.0,
+  "impr": 11443.0,
+  "lc": 336.0,
+  "lpv": 314.0,
+  "atc": 33.0,
   "ic": 4.0,
   "pval": 177472.9,
   "leads": 0.0,
-  "window_from": "2026-09-28"
+  "window_from": "2026-09-29"
  },
  {
   "name": "Conversiones_Campaña_Advantage+",
@@ -134,7 +134,7 @@
   "ic": 3.0,
   "pval": 206100.56,
   "leads": 0.0,
-  "window_from": "2026-09-28"
+  "window_from": "2026-09-29"
  },
  {
   "name": "Mossy_Test_Creativos_Brava",
@@ -157,11 +157,11 @@
   "impr": 13341.0,
   "lc": 478.0,
   "lpv": 499.0,
-  "atc": 88.0,
+  "atc": 97.0,
   "ic": 2.0,
   "pval": 0.0,
   "leads": 0.0,
-  "window_from": "2026-09-28"
+  "window_from": "2026-09-29"
  },
  {
   "name": "Mar26 - Ventas - A+ - Retargeting",
@@ -188,7 +188,7 @@
   "ic": 0.0,
   "pval": 0.0,
   "leads": 0.0,
-  "window_from": "2026-09-28"
+  "window_from": "2026-09-29"
  },
  {
   "name": "Mossy_LAL_Compradores_Brava",
@@ -210,7 +210,7 @@
   "ic": 1.0,
   "pval": 0.0,
   "leads": 0.0,
-  "window_from": "2026-09-28"
+  "window_from": "2026-09-29"
  },
  {
   "name": "Mossy_RMKT_Carrito_Brava_v2",
@@ -236,6 +236,6 @@
   "ic": 0.0,
   "pval": 0.0,
   "leads": 0.0,
-  "window_from": "2026-09-28"
+  "window_from": "2026-09-29"
  }
 ]
