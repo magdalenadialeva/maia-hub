@@ -1,5 +1,371 @@
 [
  {
+  "date": "2026-11-04",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · personalizados cyber monday (Revisión pendiente → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-04",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · 40 off cyber monday - (Revisión pendiente → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-04",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · 40 off basicos (Revisión pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-04",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · 40 off basicos - Copia (Revisión pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-04",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · personalizados cyber monday (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-04",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · 40 off cyber monday - (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-04",
+  "cat": "estado",
+  "text": "Estado del conjunto de anuncios actualizado · cyber moday (Procesamiento pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-04",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · 40 off basicos - Copia (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-04",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · 40 off basicos (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-04",
+  "cat": "creativo",
+  "text": "Anuncio creado · 40 off cyber monday -",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-04",
+  "cat": "creativo",
+  "text": "Anuncio creado · personalizados cyber monday",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-04",
+  "cat": "presupuesto",
+  "text": "Se habilitó la programación del presupuesto del conjunto de anuncios · cyber moday",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-04",
+  "cat": "otros",
+  "text": "Segmentación del conjunto de anuncios actualizada · cyber moday",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-04",
+  "cat": "objetivo",
+  "text": "Ad set performance goal updated · cyber moday",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-04",
+  "cat": "presupuesto",
+  "text": "Estrategia de puja del conjunto de anuncios actualizada · cyber moday",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-04",
+  "cat": "creativo",
+  "text": "Conjunto de anuncios creado · cyber moday",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-04",
+  "cat": "segmentacion",
+  "text": "Público personalizado creado · Público similar (AR, 1%) - 90dias ig",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-04",
+  "cat": "segmentacion",
+  "text": "Público personalizado creado · Público similar (AR, 1%) - 60dias web",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-04",
+  "cat": "segmentacion",
+  "text": "Público personalizado creado · Público similar (AR) - 90dias ig",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-04",
+  "cat": "segmentacion",
+  "text": "Público personalizado creado · Público similar (AR) - 60dias web",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-04",
+  "cat": "otros",
+  "text": "Segmentación del conjunto de anuncios actualizada · remarketing",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-04",
+  "cat": "estado",
+  "text": "Estado del conjunto de anuncios actualizado · remarketing (Procesamiento pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-04",
+  "cat": "creativo",
+  "text": "Anuncio creado · 40 off basicos",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-04",
+  "cat": "creativo",
+  "text": "Anuncio creado · 40 off basicos - Copia",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-04",
+  "cat": "objetivo",
+  "text": "Ad set performance goal updated · remarketing",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-04",
+  "cat": "presupuesto",
+  "text": "Estrategia de puja del conjunto de anuncios actualizada · remarketing",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-04",
+  "cat": "creativo",
+  "text": "Conjunto de anuncios creado · remarketing",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-04",
+  "cat": "segmentacion",
+  "text": "Público personalizado creado · 60dias web",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-04",
+  "cat": "segmentacion",
+  "text": "Público personalizado creado · 90dias ig",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-04",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · 40 off cyber monday - (Activo → Eliminado)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-04",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · personalizados cyber monday (Inactivo → Eliminado)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-04",
+  "cat": "estado",
+  "text": "Estado del conjunto de anuncios actualizado · Nuevo conjunto de anuncios de Ventas (Activo → Eliminado)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-04",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · personalizados cyber monday (Procesamiento pendiente → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-04",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado cuando se completa su revisión · personalizados cyber monday (Activo → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-04",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · personalizados cyber monday (Activo → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-04",
+  "cat": "segmentacion",
+  "text": "Público personalizado creado · interaccion 90 dias",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-04",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · personalizados cyber monday (Revisión pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-04",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · 40 off cyber monday - (Revisión pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-04",
+  "cat": "estado",
+  "text": "Estado del conjunto de anuncios actualizado · Nuevo conjunto de anuncios de Ventas (Procesamiento pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-04",
+  "cat": "otros",
+  "text": "Segmentación del conjunto de anuncios actualizada · Nuevo conjunto de anuncios de Ventas",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-04",
+  "cat": "objetivo",
+  "text": "Ad set performance goal updated · Nuevo conjunto de anuncios de Ventas",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-04",
+  "cat": "presupuesto",
+  "text": "Estrategia de puja del conjunto de anuncios actualizada · Nuevo conjunto de anuncios de Ventas",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-04",
+  "cat": "creativo",
+  "text": "Conjunto de anuncios creado · Nuevo conjunto de anuncios de Ventas",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-04",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · AN4  PERSONALIZAD (Revisión pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-04",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · AN1 BASICOS (Procesamiento pendiente → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-04",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · AN2 PEDIDO ARI (Procesamiento pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-04",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · AN3 PERSONALIZADO GRATIS (Procesamiento pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-04",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · AN5  DIBUJO MANOS (Procesamiento pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-04",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · AN4  PERSONALIZAD (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-04",
+  "cat": "estado",
+  "text": "Estado del conjunto de anuncios actualizado · Conjunto de anuncios de Ventas (Procesamiento pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-04",
+  "cat": "otros",
+  "text": "Segmentación del conjunto de anuncios actualizada · Conjunto de anuncios de Ventas",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-04",
+  "cat": "estado",
+  "text": "Estado del conjunto de anuncios actualizado · Conjunto de anuncios de Ventas (Activo → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-04",
+  "cat": "estado",
+  "text": "Estado de la campaña actualizado · VENTAS-NUEVOS CLIENTES (Activa → Inactiva)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-04",
+  "cat": "estado",
+  "text": "Estado de la campaña actualizado · VENTAS-NUEVOS CLIENTES (Inactiva → Activa)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-04",
+  "cat": "estado",
+  "text": "Estado de la campaña actualizado · VENTAS-NUEVOS CLIENTES (Procesamiento pendiente → Activa)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-04",
+  "cat": "presupuesto",
+  "text": "Presupuesto de la campaña actualizado · VENTAS-NUEVOS CLIENTES (15.000 → 10.000 ARS/día)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-04",
+  "cat": "estado",
+  "text": "Estado de la campaña actualizado · VENTAS-NUEVOS CLIENTES (Activa → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-04",
+  "cat": "creativo",
+  "text": "Se encendió/lanzó «personalizados cyber monday»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-11-04",
+  "cat": "creativo",
+  "text": "Se encendió/lanzó «40 off cyber monday -»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-11-04",
+  "cat": "creativo",
+  "text": "Se encendió/lanzó «40 off basicos»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-11-04",
+  "cat": "creativo",
+  "text": "Se encendió/lanzó «40 off basicos - Copia»",
+  "src": "auto"
+ },
+ {
   "date": "2026-11-03",
   "cat": "estado",
   "text": "Estado de la campaña actualizado · VENTAS-NUEVOS CLIENTES (Inactiva → Activa)",
@@ -134,6 +500,12 @@
  {
   "date": "2026-11-03",
   "cat": "creativo",
+  "text": "Anuncio creado · Publicación de Instagram: Gracias por confiar una...",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-03",
+  "cat": "creativo",
   "text": "Anuncio creado · Instagram Post",
   "src": "meta"
  },
@@ -141,12 +513,6 @@
   "date": "2026-11-03",
   "cat": "creativo",
   "text": "Anuncio creado · Publicación de Instagram: NOTICIAAAAS de las...",
-  "src": "meta"
- },
- {
-  "date": "2026-11-03",
-  "cat": "creativo",
-  "text": "Anuncio creado · Publicación de Instagram: Gracias por confiar una...",
   "src": "meta"
  },
  {
@@ -351,372 +717,6 @@
   "date": "2026-11-02",
   "cat": "otros",
   "text": "Nombre de la campaña actualizado · Alba&Co  RETARGETING (Alba&Co_2026_septiembre → Alba&Co  RETARGETING)",
-  "src": "meta"
- },
- {
-  "date": "2026-11-02",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · AN1 BASICOS (Procesamiento pendiente → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-11-02",
-  "cat": "otros",
-  "text": "Nombre del anuncio actualizado · AN1 BASICOS (regala bordado → AN1 BASICOS)",
-  "src": "meta"
- },
- {
-  "date": "2026-11-02",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · AN1 BASICOS (Inactivo → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-11-02",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · AN1 BASICOS (Inactivo → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-11-02",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · AN5  DIBUJO MANOS (Revisión pendiente → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-11-02",
-  "cat": "otros",
-  "text": "Nombre de la campaña actualizado · VENTAS-NUEVOS CLIENTES (ALBA-NUEVOS CLIENTES → VENTAS-NUEVOS CLIENTES)",
-  "src": "meta"
- },
- {
-  "date": "2026-11-02",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · AN5  DIBUJO MANOS (Procesamiento pendiente → Revisión pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-11-02",
-  "cat": "creativo",
-  "text": "Anuncio creado · AN5  DIBUJO MANOS",
-  "src": "meta"
- },
- {
-  "date": "2026-11-02",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · AN3 PERSONALIZADO GRATIS (Procesamiento pendiente → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-11-02",
-  "cat": "otros",
-  "text": "Nombre del anuncio actualizado · AN3 PERSONALIZADO GRATIS (personalizados → AN3 REGALA PERSONALIZADO)",
-  "src": "meta"
- },
- {
-  "date": "2026-11-02",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · AN3 PERSONALIZADO GRATIS (Activo → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-11-02",
-  "cat": "creativo",
-  "text": "Anuncio creado · AN4  PERSONALIZAD",
-  "src": "meta"
- },
- {
-  "date": "2026-11-02",
-  "cat": "creativo",
-  "text": "Se encendió/lanzó «AN4  PERSONALIZAD»",
-  "src": "auto"
- },
- {
-  "date": "2026-11-02",
-  "cat": "creativo",
-  "text": "Se encendió/lanzó «AN5  DIBUJO MANOS»",
-  "src": "auto"
- },
- {
-  "date": "2026-11-01",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · AN2 PEDIDO ARI (Procesamiento pendiente → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-11-01",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · AN1 BASICOS (Procesamiento pendiente → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-11-01",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · AN2 PEDIDO ARI (Inactivo → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-11-01",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · AN2 PEDIDO ARI (Inactivo → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-11-01",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · AN1 BASICOS (Activo → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-11-01",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · AN1 BASICOS (Activo → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-11-01",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · AN2 PEDIDO ARI (Procesamiento pendiente → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-11-01",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · AN2 PEDIDO ARI (Activo → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-11-01",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · AN2 PEDIDO ARI (Activo → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-11-01",
-  "cat": "estado",
-  "text": "Estado de la cuenta actualizado · 498930606964785 (En período de gracia → Activa)",
-  "src": "meta"
- },
- {
-  "date": "2026-11-01",
-  "cat": "estado",
-  "text": "Estado de la cuenta actualizado · 498930606964785 (Activa → En período de gracia)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-31",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · AN2 PEDIDO ARI (Procesamiento pendiente → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-31",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · AN2 PEDIDO ARI (Inactivo → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-31",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · AN2 PEDIDO ARI (Inactivo → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-31",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · AN2 PEDIDO ARI (Procesamiento pendiente → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-31",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · AN2 PEDIDO ARI (Activo → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-31",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · AN2 PEDIDO ARI (Activo → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-28",
-  "cat": "segmentacion",
-  "text": "Público personalizado creado · RTG COMPRAS 180 DIAS",
-  "src": "meta"
- },
- {
-  "date": "2026-10-28",
-  "cat": "segmentacion",
-  "text": "Público personalizado creado · RTG INSTAGRAM 30 DIAS",
-  "src": "meta"
- },
- {
-  "date": "2026-10-28",
-  "cat": "segmentacion",
-  "text": "Público personalizado actualizado · RTG WEB 30 DIAS ({\"inclusions\":{\"operator\":\"or\",\"rules\":[{\"event_sources\":[{\"type\":\"pixel\",\"id\":767342713085602}],\"retention_seconds\":2592000,\"filter\":{\"operator\":\"and\",\"filters\":[{\"field\":\"url\",\"operator\":\"i_contains\",\"value\":\"\"}]},\"template\":\"ALL_VISITORS\"}]}} → {\"inclusions\":{\"operator\":\"or\",\"rules\":[{\"event_sources\":[{\"type\":\"pixel\",\"id\":767342713085602}],\"retention_seconds\":2592000,\"filter\":{\"operator\":\"and\",\"filters\":[{\"field\":\"url\",\"operator\":\"i_contains\",\"value\":\"\"}]},\"template\":\"ALL_VISITORS\"},{\"event_sources\":[{\"type\":\"shopping_page\",\"id\":2110596422542638}],\"retention_seconds\":2592000,\"filter\":{\"operator\":\"and\",\"filters\":[{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"SHOPS_PAGE_VIEW\"}]}},{\"event_sources\":[{\"type\":\"shopping_page\",\"id\":2110596422542638}],\"retention_seconds\":2592000,\"filter\":{\"operator\":\"and\",\"filters\":[{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"VIEW_CONTENT\"}]}},{\"event_sources\":[{\"type\":\"shopping_page\",\"id\":2110596422542638}],\"retention_seconds\":2592000,\"filter\":{\"operator\":\"and\",\"filters\":[{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"SHOPS_COLLECTION_VIEW\"}]}},{\"event_sources\":[{\"type\":\"shopping_ig\",\"id\":1796046277142100}],\"retention_seconds\":2592000,\"filter\":{\"operator\":\"and\",\"filters\":[{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"SHOPS_PAGE_VIEW\"}]}},{\"event_sources\":[{\"type\":\"shopping_ig\",\"id\":1796046277142100}],\"retention_seconds\":2592000,\"filter\":{\"operator\":\"and\",\"filters\":[{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"VIEW_CONTENT\"}]}},{\"event_sources\":[{\"type\":\"shopping_ig\",\"id\":1796046277142100}],\"retention_seconds\":2592000,\"filter\":{\"operator\":\"and\",\"filters\":[{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"SHOPS_COLLECTION_VIEW\"}]}}]}})",
-  "src": "meta"
- },
- {
-  "date": "2026-10-28",
-  "cat": "segmentacion",
-  "text": "Público personalizado creado · RTG WEB 30 DIAS",
-  "src": "meta"
- },
- {
-  "date": "2026-10-28",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · AN2 PEDIDO ARI (Procesamiento pendiente → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-28",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · AN2 PEDIDO ARI (Inactivo → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-28",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · AN2 PEDIDO ARI (Inactivo → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-28",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · AN2 PEDIDO ARI (Procesamiento pendiente → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-28",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · AN2 PEDIDO ARI (Activo → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-28",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · AN2 PEDIDO ARI (Activo → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-28",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · AN1 BASICOS (Revisión pendiente → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-28",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · AN1 BASICOS (Procesamiento pendiente → Revisión pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-28",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · AN1 BASICOS (Activo → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-28",
-  "cat": "creativo",
-  "text": "Anuncio actualizado · AN1 BASICOS",
-  "src": "meta"
- },
- {
-  "date": "2026-10-27",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · AN1 BASICOS (Revisión pendiente → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-27",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · AN3 PERSONALIZADO GRATIS (Procesamiento pendiente → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-27",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · AN1 BASICOS (Procesamiento pendiente → Revisión pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-27",
-  "cat": "otros",
-  "text": "Nombre del anuncio actualizado · AN3 PERSONALIZADO GRATIS (pedido mas personalizado → personalizados)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-27",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · AN3 PERSONALIZADO GRATIS (Activo → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-27",
-  "cat": "otros",
-  "text": "Segmentación del anuncio actualizada · AN1 BASICOS",
-  "src": "meta"
- },
- {
-  "date": "2026-10-27",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · AN1 BASICOS (Activo → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-27",
-  "cat": "creativo",
-  "text": "Anuncio actualizado · AN1 BASICOS",
-  "src": "meta"
- },
- {
-  "date": "2026-10-27",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · AN3 PERSONALIZADO GRATIS (Revisión pendiente → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-27",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · AN3 PERSONALIZADO GRATIS (Procesamiento pendiente → Revisión pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-27",
-  "cat": "otros",
-  "text": "Segmentación del anuncio actualizada · AN3 PERSONALIZADO GRATIS",
-  "src": "meta"
- },
- {
-  "date": "2026-10-27",
-  "cat": "creativo",
-  "text": "Anuncio actualizado · AN3 PERSONALIZADO GRATIS",
-  "src": "meta"
- },
- {
-  "date": "2026-10-27",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · AN2 PEDIDO ARI (Procesamiento pendiente → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-27",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · AN2 PEDIDO ARI (Inactivo → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-27",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · AN2 PEDIDO ARI (Inactivo → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-27",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · AN2 PEDIDO ARI (Revisión pendiente → Inactivo)",
   "src": "meta"
  }
 ]

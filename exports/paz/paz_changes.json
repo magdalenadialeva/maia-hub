@@ -1,5 +1,59 @@
 [
  {
+  "date": "2026-11-04",
+  "cat": "estado",
+  "text": "Estado del conjunto de anuncios actualizado · Nueva campaña de Clientes potenciales V.2 - Argentina (Activo → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-04",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · IG Img 16/10 A - Convocatoria Marcas por Lanzar - Copia (Revisión pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-04",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · IG Img 17/10 - Convocatoria Mayoristas (+USD 5K) - Copia (Revisión pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-04",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · IG Img 16/10 A - Convocatoria Marcas por Lanzar - Copia (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-04",
+  "cat": "creativo",
+  "text": "Anuncio creado · IG Img 16/10 A - Convocatoria Marcas por Lanzar - Copia",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-04",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · IG Img 17/10 - Convocatoria Mayoristas (+USD 5K) - Copia (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-04",
+  "cat": "creativo",
+  "text": "Anuncio creado · IG Img 17/10 - Convocatoria Mayoristas (+USD 5K) - Copia",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-04",
+  "cat": "creativo",
+  "text": "Se encendió/lanzó «IG Img 16/10 A - Convocatoria Marcas por Lanzar - Copia»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-11-04",
+  "cat": "creativo",
+  "text": "Se encendió/lanzó «IG Img 17/10 - Convocatoria Mayoristas (+USD 5K) - Copia»",
+  "src": "auto"
+ },
+ {
   "date": "2026-11-02",
   "cat": "estado",
   "text": "Estado del anuncio actualizado · IG Img 20/10 - Convocatoria Inmobiliarias (Buscamos inmobiliarias que quieran crecer) - Copia - TEST filtro pauta (Procesamiento pendiente → Inactivo)",
@@ -16,6 +70,12 @@
   "cat": "estado",
   "text": "Estado del anuncio actualizado · IG Img 20/10 - Convocatoria Inmobiliarias (Buscamos inmobiliarias que quieran crecer) - Copia - TEST filtro pauta (Activo → Procesamiento pendiente)",
   "src": "meta"
+ },
+ {
+  "date": "2026-11-02",
+  "cat": "creativo",
+  "text": "Se apagó «IG Img 20/10 - Convocatoria Inmobiliarias (Buscamos inmobiliarias que quieran crecer) - Copia - TEST filtro pauta»",
+  "src": "auto"
  },
  {
   "date": "2026-10-28",
@@ -314,13 +374,13 @@
  {
   "date": "2026-10-24",
   "cat": "creativo",
-  "text": "Anuncio creado · IG Img 13/10 A - Convocatoria Escalar (+USD 5K) v2 - Copia - TEST filtro pauta",
+  "text": "Anuncio creado · IG Video 16/10 B - Convocatoria Inmobiliarias (Muchas consultas, pocas visitas) - Copia - TEST filtro pauta",
   "src": "meta"
  },
  {
   "date": "2026-10-24",
   "cat": "creativo",
-  "text": "Anuncio creado · IG Video 16/10 B - Convocatoria Inmobiliarias (Muchas consultas, pocas visitas) - Copia - TEST filtro pauta",
+  "text": "Anuncio creado · IG Img 13/10 A - Convocatoria Escalar (+USD 5K) v2 - Copia - TEST filtro pauta",
   "src": "meta"
  },
  {
@@ -657,66 +717,6 @@
   "date": "2026-10-13",
   "cat": "estado",
   "text": "Estado del anuncio actualizado · IG Post 10/9 - Convocatoria (DdFq8b0tHL3) (Procesamiento pendiente → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-13",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · IG Post 10/9 - Convocatoria (DdFq8b0tHL3) (Activo → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-13",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · IG Post 10/9 - Convocatoria (DdFq8b0tHL3) (Activo → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-13",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · IG Img 13/10 A - Convocatoria Escalar (+USD 5K) v2 (Procesamiento pendiente → Revisión pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-13",
-  "cat": "creativo",
-  "text": "Anuncio creado · IG Img 13/10 A - Convocatoria Escalar (+USD 5K) v2",
-  "src": "meta"
- },
- {
-  "date": "2026-10-13",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · IG Img 13/10 B - Convocatoria Ya invierte (+USD 5K) (Revisión pendiente → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-13",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · IG Img 13/10 B - Convocatoria Ya invierte (+USD 5K) (Procesamiento pendiente → Revisión pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-13",
-  "cat": "creativo",
-  "text": "Anuncio creado · IG Img 13/10 B - Convocatoria Ya invierte (+USD 5K)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-13",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · IG Post 4/9 C - Convocatoria (Dc1FCLwszOO) (Procesamiento pendiente → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-13",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · IG Post 4/9 C - Convocatoria (Dc1FCLwszOO) (Activo → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-13",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · IG Post 4/9 C - Convocatoria (Dc1FCLwszOO) (Activo → Procesamiento pendiente)",
   "src": "meta"
  }
 ]

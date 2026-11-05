@@ -1,5 +1,41 @@
 [
  {
+  "date": "2026-11-04",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Post: \"Déjanos tus datos!!\" (Procesamiento pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-04",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Post: \"💘déjanos tus datos para todo lo que se viene!!\" (Procesamiento pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-04",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Post: \"Déjanos tus datos!!\" (Activo → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-04",
+  "cat": "estado",
+  "text": "Estado de la campaña actualizado · Post: \"Déjanos tus datos!!\" (Activa → Inactiva)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-04",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Post: \"💘déjanos tus datos para todo lo que se viene!!\" (Activo → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-04",
+  "cat": "estado",
+  "text": "Estado de la campaña actualizado · Post: \"💘déjanos tus datos para todo lo que se viene!!\" (Activa → Inactiva)",
+  "src": "meta"
+ },
+ {
   "date": "2026-11-03",
   "cat": "estado",
   "text": "Estado del anuncio actualizado · Post: \"💘déjanos tus datos para todo lo que se viene!!\" (Revisión pendiente → Activo)",
@@ -142,6 +178,18 @@
   "cat": "estado",
   "text": "Estado del anuncio actualizado · Post: \"Cómo empezó Be powder? 🩷\" (Activo → Procesamiento pendiente)",
   "src": "meta"
+ },
+ {
+  "date": "2026-11-02",
+  "cat": "creativo",
+  "text": "Se apagó «Publicación de Instagram: ¿Y si el color de lo...»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-11-02",
+  "cat": "creativo",
+  "text": "Se apagó «Post: \"Cómo empezó Be powder? 🩷\"»",
+  "src": "auto"
  },
  {
   "date": "2026-10-28",
@@ -542,13 +590,13 @@
  {
   "date": "2026-10-23",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · videos novos 2 (26-11-2025) (Activo → Procesamiento pendiente)",
+  "text": "Estado del anuncio actualizado · post novo combo 1 (10/03/2026) (Activo → Procesamiento pendiente)",
   "src": "meta"
  },
  {
   "date": "2026-10-23",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · post novo combo 1 (10/03/2026) (Activo → Procesamiento pendiente)",
+  "text": "Estado del anuncio actualizado · videos novos 2 (26-11-2025) (Activo → Procesamiento pendiente)",
   "src": "meta"
  },
  {
@@ -590,13 +638,13 @@
  {
   "date": "2026-10-23",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · 02-TOFU-AO1-Gif (Activo → Procesamiento pendiente)",
+  "text": "Estado del anuncio actualizado · 09-TOFU-AO3-Carrusel (Procesamiento pendiente → Inactivo)",
   "src": "meta"
  },
  {
   "date": "2026-10-23",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · 09-TOFU-AO3-Carrusel (Procesamiento pendiente → Inactivo)",
+  "text": "Estado del anuncio actualizado · 02-TOFU-AO1-Gif (Activo → Procesamiento pendiente)",
   "src": "meta"
  },
  {
@@ -669,54 +717,6 @@
   "date": "2026-10-23",
   "cat": "estado",
   "text": "Estado del anuncio actualizado · 07-TOFU-AO3-Video - Copia (Procesamiento pendiente → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-23",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · 01-TOFU-AO1-Video (Activo → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-23",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · 01-TOFU-AO1-Video (Activo → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-23",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · 11-TOFU-AO4-Gif (Activo → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-23",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · 05-TOFU-AO2-GIF (Procesamiento pendiente → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-23",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · 11-TOFU-AO4-Gif (Activo → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-23",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · 12-TOFU-AO4-Carru - Copia (Activo → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-23",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · 12-TOFU-AO4-Carru - Copia (Activo → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-23",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · 10-TOFU-AO4-Video - Copia (Procesamiento pendiente → Inactivo)",
   "src": "meta"
  }
 ]

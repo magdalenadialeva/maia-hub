@@ -1,17 +1,17 @@
 {
   "piera": {
-    "fetched_at": "2026-11-04",
+    "fetched_at": "2026-11-05",
     "ok": true,
     "rows": 255,
     "empty": false,
     "through": "2026-11-02"
   },
   "mossy": {
-    "fetched_at": "2026-11-04",
+    "fetched_at": "2026-11-05",
     "ok": true,
-    "rows": 599,
+    "rows": 596,
     "empty": false,
-    "through": "2026-11-03"
+    "through": "2026-11-04"
   },
   "vresia": {
     "fetched_at": "2026-09-17",
@@ -20,35 +20,35 @@
     "empty": false,
     "through": "2026-09-17",
     "last_error": "HTTP 403: {\"error\":{\"message\":\"(#200) Ad account owner has NOT grant ads_management or ads_read permission, refer to https:\\/\\/developers.facebook.com\\/docs\\/marketing-api\\/get-started\\/authorization\\",
-    "last_attempt": "2026-11-04"
+    "last_attempt": "2026-11-05"
   },
   "alba": {
-    "fetched_at": "2026-11-04",
+    "fetched_at": "2026-11-05",
     "ok": true,
-    "rows": 269,
+    "rows": 277,
     "empty": false,
-    "through": "2026-11-03"
+    "through": "2026-11-04"
   },
   "paz": {
-    "fetched_at": "2026-11-04",
+    "fetched_at": "2026-11-05",
     "ok": true,
-    "rows": 494,
+    "rows": 500,
     "empty": false,
-    "through": "2026-11-03"
+    "through": "2026-11-04"
   },
   "pulpa": {
-    "fetched_at": "2026-11-04",
+    "fetched_at": "2026-11-05",
     "ok": true,
-    "rows": 289,
+    "rows": 294,
     "empty": false,
-    "through": "2026-11-03"
+    "through": "2026-11-04"
   },
   "saritina-ceramica": {
-    "fetched_at": "2026-11-04",
+    "fetched_at": "2026-11-05",
     "ok": true,
-    "rows": 234,
+    "rows": 240,
     "empty": false,
-    "through": "2026-11-03"
+    "through": "2026-11-04"
   },
   "1366858924962966": {
     "ok": false,
@@ -79,11 +79,11 @@
     "through": "2026-09-27"
   },
   "basycos": {
-    "fetched_at": "2026-11-04",
+    "fetched_at": "2026-11-05",
     "ok": true,
-    "rows": 253,
+    "rows": 262,
     "empty": false,
-    "through": "2026-11-03"
+    "through": "2026-11-04"
   },
   "cloe": {
     "fetched_at": "2026-10-04",
@@ -92,20 +92,20 @@
     "empty": false,
     "through": "2026-10-01",
     "last_error": "HTTP 403: {\"error\":{\"message\":\"(#200) Ad account owner has NOT grant ads_management or ads_read permission, refer to https:\\/\\/developers.facebook.com\\/docs\\/marketing-api\\/get-started\\/authorization\\",
-    "last_attempt": "2026-11-04"
+    "last_attempt": "2026-11-05"
   },
   "bepowder": {
-    "fetched_at": "2026-11-04",
+    "fetched_at": "2026-11-05",
     "ok": true,
-    "rows": 42,
+    "rows": 44,
     "empty": false,
-    "through": "2026-11-03"
+    "through": "2026-11-04"
   },
   "noselodigas": {
-    "fetched_at": "2026-11-04",
+    "fetched_at": "2026-11-05",
     "ok": true,
-    "rows": 269,
+    "rows": 270,
     "empty": false,
-    "through": "2026-11-03"
+    "through": "2026-11-04"
   }
 }

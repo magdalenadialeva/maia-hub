@@ -218,6 +218,42 @@
  {
   "date": "2026-11-02",
   "cat": "creativo",
+  "text": "Se apagó «Stack - Nuevo 2026 03»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-11-02",
+  "cat": "creativo",
+  "text": "Se apagó «Stack - Brava Mix&Match 04»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-11-02",
+  "cat": "creativo",
+  "text": "Se apagó «Stack - Brava Detalle 07 - Copia 4»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-11-02",
+  "cat": "creativo",
+  "text": "Se apagó «Ad2 - Angulo Viaje - Test ATC»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-11-02",
+  "cat": "creativo",
+  "text": "Se apagó «Ad1 - Angulo Anticipo Temporada - Test ATC»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-11-02",
+  "cat": "creativo",
+  "text": "Se apagó «Ad5 - Angulo Envio Gratis - Test ATC»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-11-02",
+  "cat": "creativo",
   "text": "Se encendió/lanzó «Stack - Brava Reseñas Calce»",
   "src": "auto"
  },
@@ -681,42 +717,6 @@
   "date": "2026-10-26",
   "cat": "otros",
   "text": "Segmentación del conjunto de anuncios actualizada · LAL 1% Clientes con valores",
-  "src": "meta"
- },
- {
-  "date": "2026-10-26",
-  "cat": "objetivo",
-  "text": "Ad set performance goal updated · LAL 1% Clientes con valores",
-  "src": "meta"
- },
- {
-  "date": "2026-10-26",
-  "cat": "presupuesto",
-  "text": "Estrategia de puja del conjunto de anuncios actualizada · LAL 1% Clientes con valores",
-  "src": "meta"
- },
- {
-  "date": "2026-10-26",
-  "cat": "creativo",
-  "text": "Conjunto de anuncios creado · LAL 1% Clientes con valores",
-  "src": "meta"
- },
- {
-  "date": "2026-10-26",
-  "cat": "estado",
-  "text": "Estado de la campaña actualizado · Mossy_AlwaysOn_Conversiones_Dinámicos (Procesamiento pendiente → Activa)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-26",
-  "cat": "presupuesto",
-  "text": "Presupuesto de la campaña actualizado · Mossy_AlwaysOn_Conversiones_Dinámicos (30.000 → 20.000 ARS/día)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-26",
-  "cat": "estado",
-  "text": "Estado de la campaña actualizado · Mossy_AlwaysOn_Conversiones_Dinámicos (Activa → Procesamiento pendiente)",
   "src": "meta"
  }
 ]
