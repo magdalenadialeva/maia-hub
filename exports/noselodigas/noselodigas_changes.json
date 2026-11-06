@@ -1,5 +1,71 @@
 [
  {
+  "date": "2026-11-05",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Video Maru nuevo (Revisión pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-05",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Catálogo 2025 (Revisión pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-05",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Video Maru nuevo (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-05",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Video Maru nuevo (Activo → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-05",
+  "cat": "creativo",
+  "text": "Anuncio actualizado · Video Maru nuevo",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-05",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Catálogo 2025 (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-05",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Catálogo 2025 (Activo → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-05",
+  "cat": "creativo",
+  "text": "Anuncio actualizado · Catálogo 2025",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-05",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Reel Cyber extendido 6-nov (Revisión pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-05",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Reel Cyber extendido 6-nov (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-05",
+  "cat": "creativo",
+  "text": "Anuncio creado · Reel Cyber extendido 6-nov",
+  "src": "meta"
+ },
+ {
   "date": "2026-11-04",
   "cat": "creativo",
   "text": "Se encendió/lanzó «Reel Cyber extendido 6-nov»",
@@ -9,42 +75,6 @@
   "date": "2026-11-03",
   "cat": "estado",
   "text": "Estado del anuncio actualizado · nuevo anuncio 15% todos los días (Revisión pendiente → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-11-03",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · nuevo anuncio 15% todos los días (Procesamiento pendiente → Revisión pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-11-03",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · nuevo anuncio 15% todos los días (Activo → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-11-03",
-  "cat": "creativo",
-  "text": "Anuncio actualizado · nuevo anuncio 15% todos los días",
-  "src": "meta"
- },
- {
-  "date": "2026-11-03",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · nuevo anuncio 15% todos los días (Procesamiento pendiente → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-11-03",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · nuevo anuncio 15% todos los días (Inactivo → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-11-03",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · nuevo anuncio 15% todos los días (Inactivo → Procesamiento pendiente)",
   "src": "meta"
  },
  {
@@ -296,13 +326,13 @@
  {
   "date": "2026-11-02",
   "cat": "creativo",
-  "text": "Se apagó «nuevo anuncio 15% todos los días - Copia»",
+  "text": "Se apagó «Nueva colección 2026»",
   "src": "auto"
  },
  {
   "date": "2026-11-02",
   "cat": "creativo",
-  "text": "Se apagó «Nueva colección 2026»",
+  "text": "Se apagó «nuevo anuncio 15% todos los días - Copia»",
   "src": "auto"
  },
  {
@@ -350,12 +380,6 @@
  {
   "date": "2026-10-24",
   "cat": "segmentacion",
-  "text": "Público personalizado actualizado · asa_auto_custom_audience ({\"inclusions\":{\"operator\":\"or\",\"rules\":[{\"event_sources\":[{\"type\":\"page\",\"id\":1433538573551086}],\"retention_seconds\":15552000,\"filter\":{\"operator\":\"or\",\"filters\":[{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_footer_autofill_code_apply_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_non_shopify_autofill_code_fill_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_non_shopify_autofill_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_non_shopify_autofill_success_on_expected_page\"}]},\"aggregation\":{\"type\":\"count\",\"method\":\"absolute\",\"operator\":\">\",\"value\":0}}]}} → {\"inclusions\":{\"operator\":\"or\",\"rules\":[{\"event_sources\":[{\"type\":\"page\",\"id\":1433538573551086}],\"retention_seconds\":15552000,\"filter\":{\"operator\":\"or\",\"filters\":[{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_footer_autofill_code_apply_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_non_shopify_autofill_code_fill_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_non_shopify_autofill_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_non_shopify_autofill_success_on_expected_page\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_footer_claim_offer_apply_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_footer_html_diff_signal_coupon_apply_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_footer_copy_paste_signal_coupon_apply_success\"}]},\"aggregation\":{\"type\":\"count\",\"method\":\"absolute\",\"operator\":\">\",\"value\":0}},{\"event_sources\":[{\"type\":\"ig_business\",\"id\":17841401374635457}],\"retention_seconds\":15552000,\"filter\":{\"operator\":\"or\",\"filters\":[{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"autofill_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"autofill_success_v2\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"xconnect_html_diff_signal_coupon_apply_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"copy_paste_apply_success\"}]},\"aggregation\":{\"type\":\"count\",\"method\":\"absolute\",\"operator\":\">\",\"value\":0}}]}})",
-  "src": "meta"
- },
- {
-  "date": "2026-10-24",
-  "cat": "segmentacion",
   "text": "Público personalizado actualizado · asa_auto_custom_audience ({\"inclusions\":{\"operator\":\"or\",\"rules\":[{\"event_sources\":[{\"type\":\"page\",\"id\":1433538573551086}],\"retention_seconds\":15552000,\"filter\":{\"operator\":\"or\",\"filters\":[{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_checkout_page_load_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_checkout_confirmation_page_load_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_checkout_pixel_event\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_purchase_pixel_event\"}]},\"aggregation\":{\"type\":\"count\",\"method\":\"absolute\",\"operator\":\">\",\"value\":0}}]}} → {\"inclusions\":{\"operator\":\"or\",\"rules\":[{\"event_sources\":[{\"type\":\"page\",\"id\":1433538573551086}],\"retention_seconds\":15552000,\"filter\":{\"operator\":\"or\",\"filters\":[{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_checkout_page_load_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_checkout_confirmation_page_load_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_checkout_pixel_event\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_purchase_pixel_event\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_add_to_cart_pixel_event\"}]},\"aggregation\":{\"type\":\"count\",\"method\":\"absolute\",\"operator\":\">\",\"value\":0}},{\"event_sources\":[{\"type\":\"ig_business\",\"id\":17841401374635457}],\"retention_seconds\":15552000,\"filter\":{\"operator\":\"or\",\"filters\":[{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"checkout_page\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"checkout_confirmation_page\"}]},\"aggregation\":{\"type\":\"count\",\"method\":\"absolute\",\"operator\":\">\",\"value\":0}}]}})",
   "src": "meta"
  },
@@ -369,6 +393,12 @@
   "date": "2026-10-24",
   "cat": "segmentacion",
   "text": "Público personalizado actualizado · asa_auto_custom_audience ({\"inclusions\":{\"operator\":\"or\",\"rules\":[{\"event_sources\":[{\"type\":\"page\",\"id\":1433538573551086}],\"retention_seconds\":15552000,\"filter\":{\"operator\":\"or\",\"filters\":[{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_footer_copy_paste_signal_observe_paste_info\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_footer_copy_paste_signal_coupon_input_info\"}]},\"aggregation\":{\"type\":\"count\",\"method\":\"absolute\",\"operator\":\">\",\"value\":0}}]}} → {\"inclusions\":{\"operator\":\"or\",\"rules\":[{\"event_sources\":[{\"type\":\"page\",\"id\":1433538573551086}],\"retention_seconds\":15552000,\"filter\":{\"operator\":\"or\",\"filters\":[{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_footer_copy_paste_signal_observe_paste_info\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_footer_copy_paste_signal_coupon_input_info\"}]},\"aggregation\":{\"type\":\"count\",\"method\":\"absolute\",\"operator\":\">\",\"value\":0}},{\"event_sources\":[{\"type\":\"ig_business\",\"id\":17841401374635457}],\"retention_seconds\":15552000,\"filter\":{\"operator\":\"or\",\"filters\":[{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"copy_paste_signal_observe_paste_info\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"copy_paste_signal_coupon_input_info\"}]},\"aggregation\":{\"type\":\"count\",\"method\":\"absolute\",\"operator\":\">\",\"value\":0}}]}})",
+  "src": "meta"
+ },
+ {
+  "date": "2026-10-24",
+  "cat": "segmentacion",
+  "text": "Público personalizado actualizado · asa_auto_custom_audience ({\"inclusions\":{\"operator\":\"or\",\"rules\":[{\"event_sources\":[{\"type\":\"page\",\"id\":1433538573551086}],\"retention_seconds\":15552000,\"filter\":{\"operator\":\"or\",\"filters\":[{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_footer_autofill_code_apply_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_non_shopify_autofill_code_fill_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_non_shopify_autofill_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_non_shopify_autofill_success_on_expected_page\"}]},\"aggregation\":{\"type\":\"count\",\"method\":\"absolute\",\"operator\":\">\",\"value\":0}}]}} → {\"inclusions\":{\"operator\":\"or\",\"rules\":[{\"event_sources\":[{\"type\":\"page\",\"id\":1433538573551086}],\"retention_seconds\":15552000,\"filter\":{\"operator\":\"or\",\"filters\":[{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_footer_autofill_code_apply_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_non_shopify_autofill_code_fill_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_non_shopify_autofill_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_non_shopify_autofill_success_on_expected_page\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_footer_claim_offer_apply_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_footer_html_diff_signal_coupon_apply_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"iaw_footer_copy_paste_signal_coupon_apply_success\"}]},\"aggregation\":{\"type\":\"count\",\"method\":\"absolute\",\"operator\":\">\",\"value\":0}},{\"event_sources\":[{\"type\":\"ig_business\",\"id\":17841401374635457}],\"retention_seconds\":15552000,\"filter\":{\"operator\":\"or\",\"filters\":[{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"autofill_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"autofill_success_v2\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"xconnect_html_diff_signal_coupon_apply_success\"},{\"field\":\"event\",\"operator\":\"eq\",\"value\":\"copy_paste_apply_success\"}]},\"aggregation\":{\"type\":\"count\",\"method\":\"absolute\",\"operator\":\">\",\"value\":0}}]}})",
   "src": "meta"
  },
  {
@@ -642,16 +672,28 @@
   "src": "auto"
  },
  {
+  "date": "2026-10-02",
+  "cat": "creativo",
+  "text": "Se encendió/lanzó «Video Maru nuevo»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-10-02",
+  "cat": "creativo",
+  "text": "Se encendió/lanzó «Video look con zoom»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-10-02",
+  "cat": "creativo",
+  "text": "Se encendió/lanzó «nuevo anuncio 15% todos los días - Copia»",
+  "src": "auto"
+ },
+ {
   "date": "2026-10-01",
   "cat": "segmentacion",
   "text": "Público personalizado creado · asa_auto_custom_audience",
   "src": "meta"
- },
- {
-  "date": "2026-10-01",
-  "cat": "creativo",
-  "text": "Se encendió/lanzó «Nueva colección 2026»",
-  "src": "auto"
  },
  {
   "date": "2026-09-30",
@@ -675,48 +717,6 @@
   "date": "2026-09-25",
   "cat": "creativo",
   "text": "Anuncio creado · Nuevo video Maru local 15%",
-  "src": "meta"
- },
- {
-  "date": "2026-09-23",
-  "cat": "estado",
-  "text": "Estado de la campaña actualizado · 25% Off Santander 17 al 20 (Activa → Inactiva)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-17",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Horizontal (Revisión pendiente → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-17",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Vertical (Revisión pendiente → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-17",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Vertical (Procesamiento pendiente → Revisión pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-17",
-  "cat": "creativo",
-  "text": "Anuncio creado · Vertical",
-  "src": "meta"
- },
- {
-  "date": "2026-09-17",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Horizontal (Procesamiento pendiente → Revisión pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-09-17",
-  "cat": "estado",
-  "text": "Estado del conjunto de anuncios actualizado · santander del 17 al 20 (Procesamiento pendiente → Activo)",
   "src": "meta"
  }
 ]

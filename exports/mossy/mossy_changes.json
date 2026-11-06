@@ -1,5 +1,203 @@
 [
  {
+  "date": "2026-11-05",
+  "cat": "estado",
+  "text": "Estado de la cuenta actualizado · Mossy - cuenta publicitaria (Activa → En período de gracia)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-05",
+  "cat": "estado",
+  "text": "Estado de la campaña actualizado · Mossy_AlwaysOn_Conversiones_Dinámicos (Procesamiento pendiente → Activa)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-05",
+  "cat": "presupuesto",
+  "text": "Presupuesto de la campaña actualizado · Mossy_AlwaysOn_Conversiones_Dinámicos (49.766 → 54.743 ARS/día)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-05",
+  "cat": "estado",
+  "text": "Estado de la campaña actualizado · Mossy_AlwaysOn_Conversiones_Dinámicos (Activa → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-05",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · B agosto -  Catálogo contenido advantage + todos los productos - Copia 4 (Revisión pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-05",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · B agosto -  Catálogo contenido advantage + todos los productos - Copia 4 (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-05",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · B agosto -  Catálogo contenido advantage + todos los productos - Copia 4 (Activo → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-05",
+  "cat": "creativo",
+  "text": "Anuncio actualizado · B agosto -  Catálogo contenido advantage + todos los productos - Copia 4",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-04",
+  "cat": "segmentacion",
+  "text": "Público personalizado creado · asa_auto_custom_audience",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-04",
+  "cat": "estado",
+  "text": "Estado de la campaña actualizado · Mossy_AlwaysOn_Conversiones_Dinámicos (Procesamiento pendiente → Activa)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-04",
+  "cat": "presupuesto",
+  "text": "Presupuesto de la campaña actualizado · Mossy_AlwaysOn_Conversiones_Dinámicos (41.472 → 49.766 ARS/día)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-04",
+  "cat": "estado",
+  "text": "Estado de la campaña actualizado · Mossy_AlwaysOn_Conversiones_Dinámicos (Activa → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-03",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Stack - Brava UGC 06 - Copia 3 (Procesamiento pendiente → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-03",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Stack - Brava Detalle 07 - Copia 3 (Procesamiento pendiente → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-03",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado cuando se completa su revisión · Stack - Brava UGC 06 - Copia 3 (Activo → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-03",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Stack - Brava UGC 06 - Copia 3 (Activo → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-03",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado cuando se completa su revisión · Stack - Brava Detalle 07 - Copia 3 (Activo → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-03",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Stack - Brava Detalle 07 - Copia 3 (Activo → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-03",
+  "cat": "estado",
+  "text": "Estado de la campaña actualizado · Mossy_AlwaysOn_Conversiones_Dinámicos (Procesamiento pendiente → Activa)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-03",
+  "cat": "presupuesto",
+  "text": "Presupuesto de la campaña actualizado · Mossy_AlwaysOn_Conversiones_Dinámicos (34.560 → 41.472 ARS/día)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-03",
+  "cat": "estado",
+  "text": "Estado de la campaña actualizado · Mossy_AlwaysOn_Conversiones_Dinámicos (Activa → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-03",
+  "cat": "creativo",
+  "text": "Se apagó «Stack - Brava Detalle 07 - Copia 3»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-11-03",
+  "cat": "creativo",
+  "text": "Se apagó «Stack - Brava UGC 06 - Copia 3»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-11-02",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Stack - Brava Reseñas Calce (Revisión pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-02",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Stack - Brava Mix&Match 04 (Procesamiento pendiente → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-02",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado cuando se completa su revisión · Stack - Brava Mix&Match 04 (Activo → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-02",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Stack - Brava Mix&Match 04 (Activo → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-02",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Stack - Nuevo 2026 03 (Procesamiento pendiente → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-02",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado cuando se completa su revisión · Stack - Nuevo 2026 03 (Activo → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-02",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Stack - Nuevo 2026 03 (Activo → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-02",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Stack - Brava Reseñas Calce (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-02",
+  "cat": "creativo",
+  "text": "Anuncio creado · Stack - Brava Reseñas Calce",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-02",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Stack - Nuevo 2026 02 (Revisión pendiente → Activo)",
+  "src": "meta"
+ },
+ {
   "date": "2026-11-02",
   "cat": "estado",
   "text": "Estado de la campaña actualizado · Mossy_AlwaysOn_Conversiones_Dinámicos (Procesamiento pendiente → Activa)",
@@ -62,12 +260,6 @@
  {
   "date": "2026-11-02",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · Stack - Nuevo 2026 02 (Revisión pendiente → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-11-02",
-  "cat": "estado",
   "text": "Estado del anuncio actualizado · Stack - Brava Detalle 07 (Activo → Procesamiento pendiente)",
   "src": "meta"
  },
@@ -81,12 +273,6 @@
   "date": "2026-11-02",
   "cat": "estado",
   "text": "Estado del anuncio actualizado · Stack - Nuevo 2026 03 (Procesamiento pendiente → Revisión pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-11-02",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Stack - Nuevo 2026 03 (Activo → Procesamiento pendiente)",
   "src": "meta"
  },
  {
@@ -123,12 +309,6 @@
   "date": "2026-11-02",
   "cat": "estado",
   "text": "Estado del anuncio actualizado · Stack - Brava Mix&Match 04 (Procesamiento pendiente → Revisión pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-11-02",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Stack - Brava Mix&Match 04 (Activo → Procesamiento pendiente)",
   "src": "meta"
  },
  {
@@ -537,186 +717,6 @@
   "date": "2026-10-26",
   "cat": "estado",
   "text": "Estado del anuncio actualizado · Stack - Brava Mix&Match 04 - Copia 2 (Revisión pendiente → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-26",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Ad6 - Secuencia - Nueva coleccion 2026 - Copia 3 (Revisión pendiente → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-26",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Stack - Brava Catalogo Moldería Cuerpos 09 - Copia 3 (Revisión pendiente → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-26",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Ad10 - Catalogo AlwaysOn - Brava Mix&Match - Copia 3 (Revisión pendiente → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-26",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Stack - Brava UGC 06 - Copia 2 (Procesamiento pendiente → Revisión pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-26",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Stack - Brava Detalle 07 - Copia 2 (Procesamiento pendiente → Revisión pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-26",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Stack - Brava Mix&Match 04 - Copia 2 (Procesamiento pendiente → Revisión pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-26",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Stack - Brava Lifestyle 05 - Copia 2 (Procesamiento pendiente → Revisión pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-26",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Ad10 - Catalogo AlwaysOn - Brava Mix&Match - Copia 3 (Procesamiento pendiente → Revisión pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-26",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Ad6 - Secuencia - Nueva coleccion 2026 - Copia 3 (Procesamiento pendiente → Revisión pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-26",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Stack - Brava Catalogo Moldería Cuerpos 09 - Copia 3 (Procesamiento pendiente → Revisión pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-26",
-  "cat": "estado",
-  "text": "Estado del conjunto de anuncios actualizado · RMKT Real - Brava v2 (Procesamiento pendiente → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-26",
-  "cat": "creativo",
-  "text": "Anuncio creado · Stack - Brava Mix&Match 04 - Copia 2",
-  "src": "meta"
- },
- {
-  "date": "2026-10-26",
-  "cat": "creativo",
-  "text": "Anuncio creado · Stack - Brava Lifestyle 05 - Copia 2",
-  "src": "meta"
- },
- {
-  "date": "2026-10-26",
-  "cat": "creativo",
-  "text": "Anuncio creado · Ad6 - Secuencia - Nueva coleccion 2026 - Copia 3",
-  "src": "meta"
- },
- {
-  "date": "2026-10-26",
-  "cat": "creativo",
-  "text": "Anuncio creado · Stack - Brava Catalogo Moldería Cuerpos 09 - Copia 3",
-  "src": "meta"
- },
- {
-  "date": "2026-10-26",
-  "cat": "creativo",
-  "text": "Anuncio creado · Stack - Brava Detalle 07 - Copia 2",
-  "src": "meta"
- },
- {
-  "date": "2026-10-26",
-  "cat": "creativo",
-  "text": "Anuncio creado · Stack - Brava UGC 06 - Copia 2",
-  "src": "meta"
- },
- {
-  "date": "2026-10-26",
-  "cat": "creativo",
-  "text": "Anuncio creado · Ad10 - Catalogo AlwaysOn - Brava Mix&Match - Copia 3",
-  "src": "meta"
- },
- {
-  "date": "2026-10-26",
-  "cat": "presupuesto",
-  "text": "Se habilitó la programación del presupuesto del conjunto de anuncios · RMKT Real - Brava v2",
-  "src": "meta"
- },
- {
-  "date": "2026-10-26",
-  "cat": "otros",
-  "text": "Segmentación del conjunto de anuncios actualizada · RMKT Real - Brava v2",
-  "src": "meta"
- },
- {
-  "date": "2026-10-26",
-  "cat": "objetivo",
-  "text": "Ad set performance goal updated · RMKT Real - Brava v2",
-  "src": "meta"
- },
- {
-  "date": "2026-10-26",
-  "cat": "presupuesto",
-  "text": "Estrategia de puja del conjunto de anuncios actualizada · RMKT Real - Brava v2",
-  "src": "meta"
- },
- {
-  "date": "2026-10-26",
-  "cat": "creativo",
-  "text": "Conjunto de anuncios creado · RMKT Real - Brava v2",
-  "src": "meta"
- },
- {
-  "date": "2026-10-26",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Stack - Brava Detalle 07 - Copia 5 (Revisión pendiente → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-26",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Stack - Brava Detalle 07 - Copia 5 (Procesamiento pendiente → Revisión pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-26",
-  "cat": "estado",
-  "text": "Estado del conjunto de anuncios actualizado · LAL 1% Clientes con valores (Procesamiento pendiente → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-26",
-  "cat": "creativo",
-  "text": "Anuncio creado · Stack - Brava UGC 06 - Copia 5",
-  "src": "meta"
- },
- {
-  "date": "2026-10-26",
-  "cat": "creativo",
-  "text": "Anuncio creado · Stack - Brava Detalle 07 - Copia 5",
-  "src": "meta"
- },
- {
-  "date": "2026-10-26",
-  "cat": "presupuesto",
-  "text": "Se habilitó la programación del presupuesto del conjunto de anuncios · LAL 1% Clientes con valores",
-  "src": "meta"
- },
- {
-  "date": "2026-10-26",
-  "cat": "otros",
-  "text": "Segmentación del conjunto de anuncios actualizada · LAL 1% Clientes con valores",
   "src": "meta"
  }
 ]

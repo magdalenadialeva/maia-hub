@@ -3,10 +3,10 @@
   "name": "Mossy_AlwaysOn_Conversiones_Dinámicos",
   "objective": "OUTCOME_SALES",
   "status": "ACTIVE",
-  "spend": 1024981.39,
-  "first": "2026-09-30",
-  "last": "2026-11-04",
-  "purch": 42.0,
+  "spend": 1075628.0,
+  "first": "2026-10-01",
+  "last": "2026-11-05",
+  "purch": 48.0,
   "msg": 12.0,
   "ads": [
    "B agosto -  Catálogo contenido advantage + todos los productos - Copia 4",
@@ -37,35 +37,35 @@
    "Stack - Brava UGC 06 - Copia 3",
    "Stack - Brava Reseñas Calce"
   ],
-  "impr": 169976.0,
-  "lc": 5117.0,
-  "lpv": 4917.0,
-  "atc": 533.0,
-  "ic": 82.0,
-  "pval": 3704436.56,
+  "impr": 176571.0,
+  "lc": 5351.0,
+  "lpv": 5134.0,
+  "atc": 583.0,
+  "ic": 89.0,
+  "pval": 4208950.56,
   "leads": 0.0,
-  "window_from": "2026-09-30"
+  "window_from": "2026-10-01"
  },
  {
   "name": "Mar26 - Ventas - A+ - Catalogo - Frio",
   "objective": "OUTCOME_SALES",
   "status": "PAUSED",
-  "spend": 873059.13,
-  "first": "2026-09-30",
+  "spend": 774361.87,
+  "first": "2026-10-01",
   "last": "2026-10-17",
-  "purch": 20.0,
-  "msg": 16.0,
+  "purch": 17.0,
+  "msg": 15.0,
   "ads": [
    "Ad6 - Secuencia - Nueva coleccion 2026 - Copia 3",
    "Ad6 - Secuencia - Nueva coleccion 2026 - Copia 4",
    "Ad6 - Secuencia - Nueva coleccion 202666 - Copia 8",
-   "Ad6 - Secuencia - Nueva coleccion 202666 - Copia 10",
    "Ad6 - Secuencia - Nueva coleccion 202666 - Copia 9",
-   "Ad6 - Secuencia - Nueva coleccion 202666 - Copia 6",
-   "Ad6 - Secuencia - Nueva coleccion 202666 - Copia 11",
-   "Ad6 - Video - Sale - Copia",
+   "Ad6 - Secuencia - Nueva coleccion 202666 - Copia 10",
    "Ad6 - Secuencia - Nueva coleccion 202666 - Copia 7",
+   "Ad6 - Secuencia - Nueva coleccion 202666 - Copia 11",
    "Ad6 - Secuencia - Nueva coleccion 202666 - Copia 12",
+   "Ad6 - Video - Sale - Copia",
+   "Ad6 - Secuencia - Nueva coleccion 202666 - Copia 6",
    "Ad7 - Secuencia - Mega Sale - Tu top tu bombacha tus reglas",
    "Ad11 - Secuencia - Mega Sale - No hay una sola forma de usar Mossy",
    "Ad12 - UGC Creadoras - Try on",
@@ -74,23 +74,23 @@
    "Ad15 - UGC - Mix and Match",
    "Ad16 - Testimonios - WhatsApp calce"
   ],
-  "impr": 114866.0,
-  "lc": 3211.0,
-  "lpv": 2831.0,
-  "atc": 371.0,
-  "ic": 58.0,
-  "pval": 1774235.05,
+  "impr": 100814.0,
+  "lc": 2892.0,
+  "lpv": 2531.0,
+  "atc": 315.0,
+  "ic": 54.0,
+  "pval": 1521519.09,
   "leads": 0.0,
-  "window_from": "2026-09-30"
+  "window_from": "2026-10-01"
  },
  {
   "name": "Ago26 - Ventas - CBO - Prospecting - Angulos Nuevos",
   "objective": "OUTCOME_SALES",
   "status": "PAUSED",
-  "spend": 114536.53,
-  "first": "2026-09-30",
+  "spend": 105217.6,
+  "first": "2026-10-01",
   "last": "2026-10-12",
-  "purch": 3.0,
+  "purch": 1.0,
   "msg": 0.0,
   "ads": [
    "Ad1 - Angulo Anticipo Temporada",
@@ -100,14 +100,14 @@
    "Ad8 - Video - Anticipo Temporada - Mega Sale",
    "Ad9 - Producto Fit - Mega Sale - Tu top tu bombacha tu talle"
   ],
-  "impr": 10177.0,
-  "lc": 296.0,
-  "lpv": 278.0,
-  "atc": 31.0,
-  "ic": 4.0,
-  "pval": 177472.9,
+  "impr": 9302.0,
+  "lc": 270.0,
+  "lpv": 256.0,
+  "atc": 28.0,
+  "ic": 2.0,
+  "pval": 56554.08,
   "leads": 0.0,
-  "window_from": "2026-09-30"
+  "window_from": "2026-10-01"
  },
  {
   "name": "Conversiones_Campaña_Advantage+",
@@ -134,7 +134,7 @@
   "ic": 3.0,
   "pval": 206100.56,
   "leads": 0.0,
-  "window_from": "2026-09-30"
+  "window_from": "2026-10-01"
  },
  {
   "name": "Mossy_Test_Creativos_Brava",
@@ -161,7 +161,7 @@
   "ic": 3.0,
   "pval": 0.0,
   "leads": 0.0,
-  "window_from": "2026-09-30"
+  "window_from": "2026-10-01"
  },
  {
   "name": "Mar26 - Ventas - A+ - Retargeting",
@@ -188,7 +188,7 @@
   "ic": 0.0,
   "pval": 0.0,
   "leads": 0.0,
-  "window_from": "2026-09-30"
+  "window_from": "2026-10-01"
  },
  {
   "name": "Mossy_LAL_Compradores_Brava",
@@ -210,7 +210,7 @@
   "ic": 1.0,
   "pval": 0.0,
   "leads": 0.0,
-  "window_from": "2026-09-30"
+  "window_from": "2026-10-01"
  },
  {
   "name": "Mossy_RMKT_Carrito_Brava_v2",
@@ -236,6 +236,6 @@
   "ic": 0.0,
   "pval": 0.0,
   "leads": 0.0,
-  "window_from": "2026-09-30"
+  "window_from": "2026-10-01"
  }
 ]
