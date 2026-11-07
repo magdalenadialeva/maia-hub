@@ -1,5 +1,65 @@
 [
  {
+  "date": "2026-11-06",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Pantalones Lino (Procesamiento pendiente → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-06",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado cuando se completa su revisión · Pantalones Lino (Activo → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-06",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Pantalones Lino (Activo → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-06",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · grenoble post (Revisión pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-06",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · grenoble post (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-06",
+  "cat": "creativo",
+  "text": "Anuncio creado · grenoble post",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-06",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Pantalon Verona (Procesamiento pendiente → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-06",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado cuando se completa su revisión · Pantalon Verona (Activo → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-06",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Pantalon Verona (Activo → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-06",
+  "cat": "creativo",
+  "text": "Se encendió/lanzó «grenoble post»",
+  "src": "auto"
+ },
+ {
   "date": "2026-11-05",
   "cat": "estado",
   "text": "Estado del anuncio actualizado · 5 looks Cyber ok (Procesamiento pendiente → Inactivo)",
@@ -262,6 +322,12 @@
   "cat": "segmentacion",
   "text": "Público personalizado creado · Engaged with IG",
   "src": "meta"
+ },
+ {
+  "date": "2026-11-04",
+  "cat": "creativo",
+  "text": "Se apagó «5 looks Cyber ok»",
+  "src": "auto"
  },
  {
   "date": "2026-11-04",
@@ -651,72 +717,6 @@
   "date": "2026-11-02",
   "cat": "estado",
   "text": "Estado del anuncio actualizado · 5 looks Cyber ok (Procesamiento pendiente → Revisión pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-11-02",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · Conjunto Toulouse (Inactivo → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-11-02",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Conjunto Toulouse (Inactivo → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-11-02",
-  "cat": "estado",
-  "text": "Estado de la campaña actualizado · Basyco Jerez_Conversiones_Purchase_SEP2026 (Procesamiento pendiente → Activa)",
-  "src": "meta"
- },
- {
-  "date": "2026-11-02",
-  "cat": "presupuesto",
-  "text": "Presupuesto de la campaña actualizado · Basyco Jerez_Conversiones_Purchase_SEP2026 (37.000 → 40.000 ARS/día)",
-  "src": "meta"
- },
- {
-  "date": "2026-11-02",
-  "cat": "estado",
-  "text": "Estado de la campaña actualizado · Basyco Jerez_Conversiones_Purchase_SEP2026 (Activa → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-11-02",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · 5 looks Cyber (Procesamiento pendiente → Revisión pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-11-02",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · 5 looks Cyber ok (Inactivo → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-11-02",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · 5 looks Cyber (Activo → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-11-02",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · 5 looks Cyber (Activo → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-11-02",
-  "cat": "creativo",
-  "text": "Anuncio actualizado · 5 looks Cyber",
-  "src": "meta"
- },
- {
-  "date": "2026-11-02",
-  "cat": "otros",
-  "text": "Nombre del anuncio actualizado · 5 looks Cyber ok (10% Off Toscana → 5 looks Cyber ok)",
   "src": "meta"
  }
 ]

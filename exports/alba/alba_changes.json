@@ -1,5 +1,71 @@
 [
  {
+  "date": "2026-11-06",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · 40 off basicos - Copia (Procesamiento pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-06",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · 40 off basicos (Procesamiento pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-06",
+  "cat": "estado",
+  "text": "Estado de la campaña actualizado · Nueva campaña de Ventas (Activa → Inactiva)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-06",
+  "cat": "estado",
+  "text": "Estado de la campaña actualizado · Remarketing (Activa → Inactiva)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-06",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · 40 off cyber monday - (Procesamiento pendiente → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-06",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado cuando se completa su revisión · 40 off cyber monday - (Activo → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-06",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · 40 off cyber monday - (Activo → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-06",
+  "cat": "estado",
+  "text": "Estado de la campaña actualizado · remarketing (Activa → Inactiva)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-06",
+  "cat": "estado",
+  "text": "Estado del conjunto de anuncios actualizado · remarketing (Inactivo → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-06",
+  "cat": "estado",
+  "text": "Estado de la cuenta actualizado · 498930606964785 (Activa → En período de gracia)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-06",
+  "cat": "creativo",
+  "text": "Se encendió/lanzó «40 off en basicos»",
+  "src": "auto"
+ },
+ {
   "date": "2026-11-05",
   "cat": "estado",
   "text": "Estado del anuncio actualizado · 40 off en basicos (Revisión pendiente → Activo)",
@@ -38,13 +104,7 @@
  {
   "date": "2026-11-05",
   "cat": "segmentacion",
-  "text": "Público personalizado creado · Público similar (AR, 1%) - RM 90DIAS IG",
-  "src": "meta"
- },
- {
-  "date": "2026-11-05",
-  "cat": "segmentacion",
-  "text": "Público personalizado creado · Público similar (AR, 1%) - RM 60 DIAS WEB",
+  "text": "Público personalizado creado · Público similar (AR) - RM 90DIAS IG",
   "src": "meta"
  },
  {
@@ -56,7 +116,13 @@
  {
   "date": "2026-11-05",
   "cat": "segmentacion",
-  "text": "Público personalizado creado · Público similar (AR) - RM 90DIAS IG",
+  "text": "Público personalizado creado · Público similar (AR, 1%) - RM 60 DIAS WEB",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-05",
+  "cat": "segmentacion",
+  "text": "Público personalizado creado · Público similar (AR, 1%) - RM 90DIAS IG",
   "src": "meta"
  },
  {
@@ -314,13 +380,13 @@
  {
   "date": "2026-11-04",
   "cat": "creativo",
-  "text": "Anuncio creado · 40 off basicos",
+  "text": "Anuncio creado · 40 off basicos - Copia",
   "src": "meta"
  },
  {
   "date": "2026-11-04",
   "cat": "creativo",
-  "text": "Anuncio creado · 40 off basicos - Copia",
+  "text": "Anuncio creado · 40 off basicos",
   "src": "meta"
  },
  {
@@ -524,6 +590,24 @@
  {
   "date": "2026-11-04",
   "cat": "creativo",
+  "text": "Se apagó «AN3 PERSONALIZADO GRATIS»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-11-04",
+  "cat": "creativo",
+  "text": "Se apagó «AN2 PEDIDO ARI»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-11-04",
+  "cat": "creativo",
+  "text": "Se apagó «AN5  DIBUJO MANOS»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-11-04",
+  "cat": "creativo",
   "text": "Se encendió/lanzó «personalizados cyber monday»",
   "src": "auto"
  },
@@ -633,90 +717,6 @@
   "date": "2026-11-03",
   "cat": "estado",
   "text": "Estado del anuncio actualizado · Publicación de Instagram: NOTICIAAAAS de las... (Revisión pendiente → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-11-03",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Publicación de Instagram: NOTICIAAAAS de las... (Procesamiento pendiente → Revisión pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-11-03",
-  "cat": "creativo",
-  "text": "Anuncio actualizado · Publicación de Instagram: NOTICIAAAAS de las...",
-  "src": "meta"
- },
- {
-  "date": "2026-11-03",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Instagram Post (Revisión pendiente → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-11-03",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Publicación de Instagram: Gracias por confiar una... (Revisión pendiente → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-11-03",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Publicación de Instagram: Gracias por confiar una... (Procesamiento pendiente → Revisión pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-11-03",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Instagram Post (Procesamiento pendiente → Revisión pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-11-03",
-  "cat": "estado",
-  "text": "Estado del conjunto de anuncios actualizado · Instagram Post (Procesamiento pendiente → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-11-03",
-  "cat": "creativo",
-  "text": "Anuncio creado · Publicación de Instagram: Gracias por confiar una...",
-  "src": "meta"
- },
- {
-  "date": "2026-11-03",
-  "cat": "creativo",
-  "text": "Anuncio creado · Instagram Post",
-  "src": "meta"
- },
- {
-  "date": "2026-11-03",
-  "cat": "creativo",
-  "text": "Anuncio creado · Publicación de Instagram: NOTICIAAAAS de las...",
-  "src": "meta"
- },
- {
-  "date": "2026-11-03",
-  "cat": "otros",
-  "text": "Segmentación del conjunto de anuncios actualizada · Instagram Post",
-  "src": "meta"
- },
- {
-  "date": "2026-11-03",
-  "cat": "objetivo",
-  "text": "Ad set performance goal updated · Instagram Post",
-  "src": "meta"
- },
- {
-  "date": "2026-11-03",
-  "cat": "presupuesto",
-  "text": "Estrategia de puja del conjunto de anuncios actualizada · Instagram Post",
-  "src": "meta"
- },
- {
-  "date": "2026-11-03",
-  "cat": "creativo",
-  "text": "Conjunto de anuncios creado · Instagram Post",
   "src": "meta"
  }
 ]
