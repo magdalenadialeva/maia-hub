@@ -1,5 +1,17 @@
 [
  {
+  "date": "2026-11-07",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · 40 off basicos (Procesamiento pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-07",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · 40 off basicos - Copia (Procesamiento pendiente → Activo)",
+  "src": "meta"
+ },
+ {
   "date": "2026-11-06",
   "cat": "estado",
   "text": "Estado del anuncio actualizado · 40 off basicos - Copia (Procesamiento pendiente → Activo)",
@@ -344,7 +356,13 @@
  {
   "date": "2026-11-04",
   "cat": "segmentacion",
-  "text": "Público personalizado creado · Público similar (AR) - 90dias ig",
+  "text": "Público personalizado creado · Público similar (AR, 1%) - 90dias ig",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-04",
+  "cat": "segmentacion",
+  "text": "Público personalizado creado · Público similar (AR, 1%) - 60dias web",
   "src": "meta"
  },
  {
@@ -356,13 +374,7 @@
  {
   "date": "2026-11-04",
   "cat": "segmentacion",
-  "text": "Público personalizado creado · Público similar (AR, 1%) - 90dias ig",
-  "src": "meta"
- },
- {
-  "date": "2026-11-04",
-  "cat": "segmentacion",
-  "text": "Público personalizado creado · Público similar (AR, 1%) - 60dias web",
+  "text": "Público personalizado creado · Público similar (AR) - 90dias ig",
   "src": "meta"
  },
  {
@@ -380,13 +392,13 @@
  {
   "date": "2026-11-04",
   "cat": "creativo",
-  "text": "Anuncio creado · 40 off basicos - Copia",
+  "text": "Anuncio creado · 40 off basicos",
   "src": "meta"
  },
  {
   "date": "2026-11-04",
   "cat": "creativo",
-  "text": "Anuncio creado · 40 off basicos",
+  "text": "Anuncio creado · 40 off basicos - Copia",
   "src": "meta"
  },
  {
@@ -422,13 +434,13 @@
  {
   "date": "2026-11-04",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · 40 off cyber monday - (Activo → Eliminado)",
+  "text": "Estado del anuncio actualizado · personalizados cyber monday (Inactivo → Eliminado)",
   "src": "meta"
  },
  {
   "date": "2026-11-04",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · personalizados cyber monday (Inactivo → Eliminado)",
+  "text": "Estado del anuncio actualizado · 40 off cyber monday - (Activo → Eliminado)",
   "src": "meta"
  },
  {
@@ -512,7 +524,7 @@
  {
   "date": "2026-11-04",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · AN1 BASICOS (Procesamiento pendiente → Inactivo)",
+  "text": "Estado del anuncio actualizado · AN3 PERSONALIZADO GRATIS (Procesamiento pendiente → Activo)",
   "src": "meta"
  },
  {
@@ -524,7 +536,7 @@
  {
   "date": "2026-11-04",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · AN3 PERSONALIZADO GRATIS (Procesamiento pendiente → Activo)",
+  "text": "Estado del anuncio actualizado · AN1 BASICOS (Procesamiento pendiente → Inactivo)",
   "src": "meta"
  },
  {
@@ -705,18 +717,6 @@
   "date": "2026-11-03",
   "cat": "estado",
   "text": "Estado de la campaña actualizado · VENTAS-NUEVOS CLIENTES (Activa → Inactiva)",
-  "src": "meta"
- },
- {
-  "date": "2026-11-03",
-  "cat": "estado",
-  "text": "Estado de la campaña actualizado · Instagram Post (Activa → Inactiva)",
-  "src": "meta"
- },
- {
-  "date": "2026-11-03",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Publicación de Instagram: NOTICIAAAAS de las... (Revisión pendiente → Activo)",
   "src": "meta"
  }
 ]

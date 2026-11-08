@@ -3,34 +3,37 @@
   "name": "15 % Santander todos los días",
   "objective": "OUTCOME_SALES",
   "status": "ACTIVE",
-  "spend": 39305.59,
-  "first": "2026-10-02",
-  "last": "2026-11-06",
-  "purch": 57.0,
-  "msg": 57.0,
+  "spend": 39464.53,
+  "first": "2026-10-03",
+  "last": "2026-11-07",
+  "purch": 59.0,
+  "msg": 54.0,
   "ads": [
    "Catálogo 2025",
-   "Video Maru nuevo",
    "Video look con zoom",
    "nuevo anuncio 15% todos los días",
    "nuevo anuncio 15% todos los días - Copia",
    "Nueva colección 2026",
    "Nuevo video Maru local 15%",
+   "Video Maru nuevo",
    "desde ig - nueva colecicón",
    "desde ig - video",
    "Estático Cyber - CAMBIAR IMAGEN",
    "Reel Cyber extendido 6-nov",
    "Carrusel Cyber últimos días",
-   "Carrusel Cyber rosa últimos días"
+   "Carrusel Cyber rosa últimos días",
+   "Catálogo 2025 - Copia",
+   "Catálogo 2025 - Copia 2",
+   "Catálogo 2025 - Copia 3"
   ],
-  "impr": 227427.0,
-  "lc": 10254.0,
-  "lpv": 10237.0,
-  "atc": 204.0,
+  "impr": 225918.0,
+  "lc": 10340.0,
+  "lpv": 10304.0,
+  "atc": 207.0,
   "ic": 56.0,
-  "pval": 93152.06,
+  "pval": 97492.06,
   "leads": 0.0,
-  "window_from": "2026-10-02"
+  "window_from": "2026-10-03"
  },
  {
   "name": "Live shopping",
@@ -51,6 +54,6 @@
   "ic": 2.0,
   "pval": 0.0,
   "leads": 0.0,
-  "window_from": "2026-10-02"
+  "window_from": "2026-10-03"
  }
 ]

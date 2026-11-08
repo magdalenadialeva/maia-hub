@@ -1,5 +1,23 @@
 [
  {
+  "date": "2026-11-07",
+  "cat": "estado",
+  "text": "Estado de la campaña actualizado · Mossy_AlwaysOn_Conversiones_Dinámicos (Procesamiento pendiente → Activa)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-07",
+  "cat": "presupuesto",
+  "text": "Presupuesto de la campaña actualizado · Mossy_AlwaysOn_Conversiones_Dinámicos (54.743 → 60.217 ARS/día)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-07",
+  "cat": "estado",
+  "text": "Estado de la campaña actualizado · Mossy_AlwaysOn_Conversiones_Dinámicos (Activa → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
   "date": "2026-11-06",
   "cat": "estado",
   "text": "Estado del anuncio actualizado · Stack - Nuevo 2026 02 (Revisión pendiente → Activo)",
@@ -124,6 +142,12 @@
   "cat": "creativo",
   "text": "Anuncio actualizado · B agosto -  Catálogo contenido advantage + todos los productos - Copia 4",
   "src": "meta"
+ },
+ {
+  "date": "2026-11-05",
+  "cat": "creativo",
+  "text": "Se apagó «Ad10 - Catalogo AlwaysOn - Brava Mix&Match»",
+  "src": "auto"
  },
  {
   "date": "2026-11-04",
@@ -694,29 +718,5 @@
   "cat": "creativo",
   "text": "Se apagó «Stack - Brava UGC 06 - Copia 4»",
   "src": "auto"
- },
- {
-  "date": "2026-10-27",
-  "cat": "creativo",
-  "text": "Se encendió/lanzó «Ad4 - Angulo Resenas Calce - Test ATC»",
-  "src": "auto"
- },
- {
-  "date": "2026-10-26",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Ad1 - Angulo Anticipo Temporada - Test ATC (Revisión pendiente → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-26",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Ad1 - Angulo Anticipo Temporada - Test ATC (Procesamiento pendiente → Revisión pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-26",
-  "cat": "creativo",
-  "text": "Anuncio creado · Ad1 - Angulo Anticipo Temporada - Test ATC",
-  "src": "meta"
  }
 ]

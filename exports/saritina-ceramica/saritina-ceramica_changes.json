@@ -1,5 +1,53 @@
 [
  {
+  "date": "2026-11-07",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Ad_Video_1 - Copia (Revisión pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-07",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Ad_Video_1 (Procesamiento pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-07",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Ad_Video_1 - Copia (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-07",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado cuando se completa su revisión · Ad_Video_1 (Inactivo → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-07",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado cuando se completa su revisión · Ad_Video_1 (Activo → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-07",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Ad_Video_1 (Activo → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-07",
+  "cat": "creativo",
+  "text": "Anuncio creado · Ad_Video_1 - Copia",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-07",
+  "cat": "creativo",
+  "text": "Se encendió/lanzó «Ad_Video_1 - Copia»",
+  "src": "auto"
+ },
+ {
   "date": "2026-11-06",
   "cat": "creativo",
   "text": "Se reactivó «Ad_Video_1»",
@@ -140,7 +188,19 @@
  {
   "date": "2026-11-05",
   "cat": "creativo",
+  "text": "Se apagó «Ad_Video_2»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-11-05",
+  "cat": "creativo",
   "text": "Se reactivó «Ad_Video_2 - Copia»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-11-05",
+  "cat": "creativo",
+  "text": "Se apagó «Ad_Video_2 - Copia»",
   "src": "auto"
  },
  {
@@ -356,25 +416,25 @@
  {
   "date": "2026-11-01",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · Ad_Video_2 - Copia 2 (Activo → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-11-01",
-  "cat": "estado",
   "text": "Estado del anuncio actualizado cuando se completa su revisión · Ad_Video_2 - Copia 3 (Activo → Inactivo)",
   "src": "meta"
  },
  {
   "date": "2026-11-01",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · Ad_Video_2 - Copia 2 (Activo → Procesamiento pendiente)",
+  "text": "Estado del anuncio actualizado cuando se completa su revisión · Ad_Video_2 - Copia 2 (Activo → Inactivo)",
   "src": "meta"
  },
  {
   "date": "2026-11-01",
   "cat": "estado",
   "text": "Estado del anuncio actualizado · Ad_Video_2 - Copia 3 (Activo → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-01",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Ad_Video_2 - Copia 2 (Activo → Procesamiento pendiente)",
   "src": "meta"
  },
  {
@@ -658,65 +718,5 @@
   "cat": "creativo",
   "text": "Se pausó «Ad_Video_1»",
   "src": "auto"
- },
- {
-  "date": "2026-10-17",
-  "cat": "creativo",
-  "text": "Se reactivó «Ad_Video_1»",
-  "src": "auto"
- },
- {
-  "date": "2026-10-17",
-  "cat": "creativo",
-  "text": "Se pausó «Ad_Video_3»",
-  "src": "auto"
- },
- {
-  "date": "2026-10-16",
-  "cat": "segmentacion",
-  "text": "Público personalizado creado · asa_auto_custom_audience",
-  "src": "meta"
- },
- {
-  "date": "2026-10-15",
-  "cat": "creativo",
-  "text": "Se pausó «Ad_Video_1»",
-  "src": "auto"
- },
- {
-  "date": "2026-10-09",
-  "cat": "creativo",
-  "text": "Se reactivó «Ad_Video_2»",
-  "src": "auto"
- },
- {
-  "date": "2026-10-08",
-  "cat": "estado",
-  "text": "Estado de la campaña actualizado · Saritina_Trafico_Mensajes_Wsp_Sep (Inactiva → Activa)",
-  "src": "meta"
- },
- {
-  "date": "2026-10-08",
-  "cat": "creativo",
-  "text": "Se reactivó «Ad_Video_1»",
-  "src": "auto"
- },
- {
-  "date": "2026-10-08",
-  "cat": "creativo",
-  "text": "Se reactivó «Ad_Video_3»",
-  "src": "auto"
- },
- {
-  "date": "2026-10-07",
-  "cat": "creativo",
-  "text": "Se pausó «Ad_Video_2»",
-  "src": "auto"
- },
- {
-  "date": "2026-10-06",
-  "cat": "estado",
-  "text": "Estado de la campaña actualizado · Saritina_Trafico_Mensajes_Wsp_Sep (Activa → Inactiva)",
-  "src": "meta"
  }
 ]
