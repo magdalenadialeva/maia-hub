@@ -3,10 +3,10 @@
   "name": "Mossy_AlwaysOn_Conversiones_Dinámicos",
   "objective": "OUTCOME_SALES",
   "status": "ACTIVE",
-  "spend": 1154758.91,
-  "first": "2026-10-03",
-  "last": "2026-11-07",
-  "purch": 54.0,
+  "spend": 1221782.18,
+  "first": "2026-10-04",
+  "last": "2026-11-08",
+  "purch": 60.0,
   "msg": 12.0,
   "ads": [
    "B agosto -  Catálogo contenido advantage + todos los productos - Copia 4",
@@ -38,21 +38,21 @@
    "Stack - Brava Reseñas Calce",
    "Stack - Cyber Week hasta 8-11"
   ],
-  "impr": 187219.0,
-  "lc": 5693.0,
-  "lpv": 5534.0,
-  "atc": 642.0,
-  "ic": 97.0,
-  "pval": 4518473.3,
+  "impr": 199352.0,
+  "lc": 6179.0,
+  "lpv": 5986.0,
+  "atc": 700.0,
+  "ic": 106.0,
+  "pval": 4959208.64,
   "leads": 0.0,
-  "window_from": "2026-10-03"
+  "window_from": "2026-10-04"
  },
  {
   "name": "Mar26 - Ventas - A+ - Catalogo - Frio",
   "objective": "OUTCOME_SALES",
   "status": "PAUSED",
-  "spend": 603142.28,
-  "first": "2026-10-03",
+  "spend": 546940.54,
+  "first": "2026-10-04",
   "last": "2026-10-17",
   "purch": 14.0,
   "msg": 12.0,
@@ -75,14 +75,14 @@
    "Ad15 - UGC - Mix and Match",
    "Ad16 - Testimonios - WhatsApp calce"
   ],
-  "impr": 79100.0,
-  "lc": 2322.0,
-  "lpv": 2060.0,
-  "atc": 273.0,
-  "ic": 48.0,
+  "impr": 72763.0,
+  "lc": 2107.0,
+  "lpv": 1841.0,
+  "atc": 242.0,
+  "ic": 46.0,
   "pval": 1320147.83,
   "leads": 0.0,
-  "window_from": "2026-10-03"
+  "window_from": "2026-10-04"
  },
  {
   "name": "Conversiones_Campaña_Advantage+",
@@ -109,14 +109,14 @@
   "ic": 3.0,
   "pval": 206100.56,
   "leads": 0.0,
-  "window_from": "2026-10-03"
+  "window_from": "2026-10-04"
  },
  {
   "name": "Ago26 - Ventas - CBO - Prospecting - Angulos Nuevos",
   "objective": "OUTCOME_SALES",
   "status": "PAUSED",
-  "spend": 87992.74,
-  "first": "2026-10-03",
+  "spend": 79489.95,
+  "first": "2026-10-04",
   "last": "2026-10-12",
   "purch": 1.0,
   "msg": 0.0,
@@ -128,14 +128,14 @@
    "Ad8 - Video - Anticipo Temporada - Mega Sale",
    "Ad9 - Producto Fit - Mega Sale - Tu top tu bombacha tu talle"
   ],
-  "impr": 7818.0,
-  "lc": 225.0,
-  "lpv": 216.0,
-  "atc": 27.0,
+  "impr": 6883.0,
+  "lc": 201.0,
+  "lpv": 193.0,
+  "atc": 22.0,
   "ic": 2.0,
   "pval": 56554.08,
   "leads": 0.0,
-  "window_from": "2026-10-03"
+  "window_from": "2026-10-04"
  },
  {
   "name": "Mossy_Test_Creativos_Brava",
@@ -162,7 +162,7 @@
   "ic": 3.0,
   "pval": 0.0,
   "leads": 0.0,
-  "window_from": "2026-10-03"
+  "window_from": "2026-10-04"
  },
  {
   "name": "Mar26 - Ventas - A+ - Retargeting",
@@ -189,7 +189,7 @@
   "ic": 0.0,
   "pval": 0.0,
   "leads": 0.0,
-  "window_from": "2026-10-03"
+  "window_from": "2026-10-04"
  },
  {
   "name": "Mossy_LAL_Compradores_Brava",
@@ -211,7 +211,7 @@
   "ic": 1.0,
   "pval": 0.0,
   "leads": 0.0,
-  "window_from": "2026-10-03"
+  "window_from": "2026-10-04"
  },
  {
   "name": "Mossy_RMKT_Carrito_Brava_v2",
@@ -237,6 +237,6 @@
   "ic": 0.0,
   "pval": 0.0,
   "leads": 0.0,
-  "window_from": "2026-10-03"
+  "window_from": "2026-10-04"
  }
 ]

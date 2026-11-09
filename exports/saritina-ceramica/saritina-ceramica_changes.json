@@ -1,5 +1,11 @@
 [
  {
+  "date": "2026-11-08",
+  "cat": "creativo",
+  "text": "Se reactivó «Ad_Video_2»",
+  "src": "auto"
+ },
+ {
   "date": "2026-11-07",
   "cat": "estado",
   "text": "Estado del anuncio actualizado · Ad_Video_1 - Copia (Revisión pendiente → Activo)",
@@ -51,6 +57,12 @@
   "date": "2026-11-06",
   "cat": "creativo",
   "text": "Se reactivó «Ad_Video_1»",
+  "src": "auto"
+ },
+ {
+  "date": "2026-11-06",
+  "cat": "creativo",
+  "text": "Se pausó «Ad_Video_2»",
   "src": "auto"
  },
  {
@@ -184,12 +196,6 @@
   "cat": "estado",
   "text": "Estado del anuncio actualizado · Ad_Video_2 - Copia 5 (Activo → Procesamiento pendiente)",
   "src": "meta"
- },
- {
-  "date": "2026-11-05",
-  "cat": "creativo",
-  "text": "Se apagó «Ad_Video_2»",
-  "src": "auto"
  },
  {
   "date": "2026-11-05",
@@ -711,12 +717,6 @@
   "date": "2026-10-19",
   "cat": "creativo",
   "text": "Se reactivó «Ad_Video_3»",
-  "src": "auto"
- },
- {
-  "date": "2026-10-18",
-  "cat": "creativo",
-  "text": "Se pausó «Ad_Video_1»",
   "src": "auto"
  }
 ]

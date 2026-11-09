@@ -136,7 +136,7 @@
   "spend": 12735.01,
   "first": "2026-11-04",
   "last": "2026-11-06",
-  "purch": 1.0,
+  "purch": 2.0,
   "msg": 0.0,
   "ads": [
    "personalizados cyber monday",
@@ -145,9 +145,9 @@
   "impr": 2025.0,
   "lc": 33.0,
   "lpv": 30.0,
-  "atc": 11.0,
+  "atc": 12.0,
   "ic": 2.0,
-  "pval": 64800.0,
+  "pval": 143966.6,
   "leads": 0.0,
   "window_from": "2026-08-20"
  },

@@ -1,99 +1,33 @@
 [
  {
-  "date": "2026-11-06",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Pantalones Lino (Procesamiento pendiente → Inactivo)",
-  "src": "meta"
+  "date": "2026-11-08",
+  "cat": "creativo",
+  "text": "Se encendió/lanzó «Conjunto Baru»",
+  "src": "auto"
  },
  {
-  "date": "2026-11-06",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · Pantalones Lino (Activo → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-11-06",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Pantalones Lino (Activo → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-11-06",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · grenoble post (Revisión pendiente → Activo)",
-  "src": "meta"
- },
- {
-  "date": "2026-11-06",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · grenoble post (Procesamiento pendiente → Revisión pendiente)",
-  "src": "meta"
+  "date": "2026-11-08",
+  "cat": "creativo",
+  "text": "Se encendió/lanzó «Conjunto Paris»",
+  "src": "auto"
  },
  {
   "date": "2026-11-06",
   "cat": "creativo",
-  "text": "Anuncio creado · grenoble post",
-  "src": "meta"
+  "text": "Se apagó «Pantalon Verona»",
+  "src": "auto"
  },
  {
   "date": "2026-11-06",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Pantalon Verona (Procesamiento pendiente → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-11-06",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · Pantalon Verona (Activo → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-11-06",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Pantalon Verona (Activo → Procesamiento pendiente)",
-  "src": "meta"
+  "cat": "creativo",
+  "text": "Se apagó «Pantalones Lino»",
+  "src": "auto"
  },
  {
   "date": "2026-11-06",
   "cat": "creativo",
   "text": "Se encendió/lanzó «grenoble post»",
   "src": "auto"
- },
- {
-  "date": "2026-11-05",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · 5 looks Cyber ok (Procesamiento pendiente → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-11-05",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Pantalon Verona (Procesamiento pendiente → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-11-05",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · 5 looks Cyber ok (Activo → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-11-05",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · 5 looks Cyber ok (Activo → Procesamiento pendiente)",
-  "src": "meta"
- },
- {
-  "date": "2026-11-05",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado cuando se completa su revisión · Pantalon Verona (Activo → Inactivo)",
-  "src": "meta"
- },
- {
-  "date": "2026-11-05",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · Pantalon Verona (Activo → Procesamiento pendiente)",
-  "src": "meta"
  },
  {
   "date": "2026-11-04",
@@ -536,6 +470,12 @@
  {
   "date": "2026-11-03",
   "cat": "estado",
+  "text": "Estado del conjunto de anuncios actualizado · New Traffic Ad set with recommended settings (Activo → Eliminado)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-03",
+  "cat": "estado",
   "text": "Estado del conjunto de anuncios actualizado · Traffic Lugano (Activo → Eliminado)",
   "src": "meta"
  },
@@ -548,7 +488,7 @@
  {
   "date": "2026-11-03",
   "cat": "estado",
-  "text": "Estado del conjunto de anuncios actualizado · New Traffic Ad set with recommended settings (Activo → Eliminado)",
+  "text": "Estado de la campaña actualizado · Ventas - Conjunto Loira (Inactiva → Eliminada)",
   "src": "meta"
  },
  {
@@ -561,12 +501,6 @@
   "date": "2026-11-03",
   "cat": "estado",
   "text": "Estado de la campaña actualizado · New Traffic Campaign with recommended settings (Inactiva → Eliminada)",
-  "src": "meta"
- },
- {
-  "date": "2026-11-03",
-  "cat": "estado",
-  "text": "Estado de la campaña actualizado · Ventas - Conjunto Loira (Inactiva → Eliminada)",
   "src": "meta"
  },
  {
@@ -680,7 +614,43 @@
  {
   "date": "2026-11-02",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · Conjunto Toulouse (Procesamiento pendiente → Inactivo)",
+  "text": "Estado de la campaña actualizado · Basyco Jerez_Conversiones_Purchase_SEP2026 (Procesamiento pendiente → Activa)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-02",
+  "cat": "presupuesto",
+  "text": "Presupuesto de la campaña actualizado · Basyco Jerez_Conversiones_Purchase_SEP2026 (35.000 → 37.000 ARS/día)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-02",
+  "cat": "estado",
+  "text": "Estado de la campaña actualizado · Basyco Jerez_Conversiones_Purchase_SEP2026 (Activa → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-02",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Conjunto Toulouse (Revisión pendiente → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-02",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · 5 looks Cyber (Revisión pendiente → Activo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-02",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Varios - Copia (Revisión pendiente → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-02",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Conjunto Toulouse (Procesamiento pendiente → Revisión pendiente)",
   "src": "meta"
  },
  {
@@ -697,26 +667,56 @@
  },
  {
   "date": "2026-11-02",
-  "cat": "estado",
-  "text": "Estado del anuncio actualizado · 5 looks Cyber ok (Revisión pendiente → Activo)",
+  "cat": "creativo",
+  "text": "Anuncio actualizado · Conjunto Toulouse",
   "src": "meta"
  },
  {
   "date": "2026-11-02",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · 5 looks Cyber (Revisión pendiente → Inactivo)",
+  "text": "Estado del anuncio actualizado · Vestido Orleans (Procesamiento pendiente → Inactivo)",
   "src": "meta"
  },
  {
   "date": "2026-11-02",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · Conjunto Toulouse (Procesamiento pendiente → Activo)",
+  "text": "Estado del anuncio actualizado cuando se completa su revisión · Vestido Orleans (Activo → Inactivo)",
   "src": "meta"
  },
  {
   "date": "2026-11-02",
   "cat": "estado",
-  "text": "Estado del anuncio actualizado · 5 looks Cyber ok (Procesamiento pendiente → Revisión pendiente)",
+  "text": "Estado del anuncio actualizado · Vestido Orleans (Activo → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-02",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Varios - Copia (Procesamiento pendiente → Revisión pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-02",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado cuando se completa su revisión · Varios - Copia (Activo → Inactivo)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-02",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · Varios - Copia (Activo → Procesamiento pendiente)",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-02",
+  "cat": "creativo",
+  "text": "Anuncio actualizado · Varios - Copia",
+  "src": "meta"
+ },
+ {
+  "date": "2026-11-02",
+  "cat": "estado",
+  "text": "Estado del anuncio actualizado · VESTIDO BIELLA (Procesamiento pendiente → Inactivo)",
   "src": "meta"
  }
 ]
