@@ -1,17 +1,21 @@
 {
   "piera": {
     "fetched_at": "2026-11-09",
-    "ok": true,
+    "ok": false,
     "rows": 255,
     "empty": false,
-    "through": "2026-11-02"
+    "through": "2026-11-02",
+    "last_error": "HTTP 400: {\"error\":{\"message\":\"Error validating access token: Session has expired on Monday, 09-Nov-26 17:49:50 PST. The current time is Tuesday, 10-Nov-26 10:20:27 PST.\",\"type\":\"OAuthException\",\"code",
+    "last_attempt": "2026-11-10"
   },
   "mossy": {
     "fetched_at": "2026-11-09",
-    "ok": true,
+    "ok": false,
     "rows": 576,
     "empty": false,
-    "through": "2026-11-08"
+    "through": "2026-11-08",
+    "last_error": "HTTP 400: {\"error\":{\"message\":\"Error validating access token: Session has expired on Monday, 09-Nov-26 17:49:50 PST. The current time is Tuesday, 10-Nov-26 10:20:27 PST.\",\"type\":\"OAuthException\",\"code",
+    "last_attempt": "2026-11-10"
   },
   "vresia": {
     "fetched_at": "2026-09-17",
@@ -19,36 +23,44 @@
     "rows": 169,
     "empty": false,
     "through": "2026-09-17",
-    "last_error": "HTTP 403: {\"error\":{\"message\":\"(#200) Ad account owner has NOT grant ads_management or ads_read permission, refer to https:\\/\\/developers.facebook.com\\/docs\\/marketing-api\\/get-started\\/authorization\\",
-    "last_attempt": "2026-11-09"
+    "last_error": "HTTP 400: {\"error\":{\"message\":\"Error validating access token: Session has expired on Monday, 09-Nov-26 17:49:50 PST. The current time is Tuesday, 10-Nov-26 10:20:28 PST.\",\"type\":\"OAuthException\",\"code",
+    "last_attempt": "2026-11-10"
   },
   "alba": {
     "fetched_at": "2026-11-09",
-    "ok": true,
+    "ok": false,
     "rows": 294,
     "empty": false,
-    "through": "2026-11-08"
+    "through": "2026-11-08",
+    "last_error": "HTTP 400: {\"error\":{\"message\":\"Error validating access token: Session has expired on Monday, 09-Nov-26 17:49:50 PST. The current time is Tuesday, 10-Nov-26 10:20:29 PST.\",\"type\":\"OAuthException\",\"code",
+    "last_attempt": "2026-11-10"
   },
   "paz": {
     "fetched_at": "2026-11-09",
-    "ok": true,
+    "ok": false,
     "rows": 510,
     "empty": false,
-    "through": "2026-11-08"
+    "through": "2026-11-08",
+    "last_error": "HTTP 400: {\"error\":{\"message\":\"Error validating access token: Session has expired on Monday, 09-Nov-26 17:49:50 PST. The current time is Tuesday, 10-Nov-26 10:20:29 PST.\",\"type\":\"OAuthException\",\"code",
+    "last_attempt": "2026-11-10"
   },
   "pulpa": {
     "fetched_at": "2026-11-09",
-    "ok": true,
+    "ok": false,
     "rows": 310,
     "empty": false,
-    "through": "2026-11-08"
+    "through": "2026-11-08",
+    "last_error": "HTTP 400: {\"error\":{\"message\":\"Error validating access token: Session has expired on Monday, 09-Nov-26 17:49:50 PST. The current time is Tuesday, 10-Nov-26 10:20:30 PST.\",\"type\":\"OAuthException\",\"code",
+    "last_attempt": "2026-11-10"
   },
   "saritina-ceramica": {
     "fetched_at": "2026-11-09",
-    "ok": true,
+    "ok": false,
     "rows": 273,
     "empty": false,
-    "through": "2026-11-08"
+    "through": "2026-11-08",
+    "last_error": "HTTP 400: {\"error\":{\"message\":\"Error validating access token: Session has expired on Monday, 09-Nov-26 17:49:50 PST. The current time is Tuesday, 10-Nov-26 10:20:30 PST.\",\"type\":\"OAuthException\",\"code",
+    "last_attempt": "2026-11-10"
   },
   "1366858924962966": {
     "ok": false,
@@ -80,10 +92,12 @@
   },
   "basycos": {
     "fetched_at": "2026-11-09",
-    "ok": true,
+    "ok": false,
     "rows": 297,
     "empty": false,
-    "through": "2026-11-08"
+    "through": "2026-11-08",
+    "last_error": "HTTP 400: {\"error\":{\"message\":\"Error validating access token: Session has expired on Monday, 09-Nov-26 17:49:50 PST. The current time is Tuesday, 10-Nov-26 10:20:31 PST.\",\"type\":\"OAuthException\",\"code",
+    "last_attempt": "2026-11-10"
   },
   "cloe": {
     "fetched_at": "2026-10-04",
@@ -91,21 +105,25 @@
     "rows": 57,
     "empty": false,
     "through": "2026-10-01",
-    "last_error": "HTTP 403: {\"error\":{\"message\":\"(#200) Ad account owner has NOT grant ads_management or ads_read permission, refer to https:\\/\\/developers.facebook.com\\/docs\\/marketing-api\\/get-started\\/authorization\\",
-    "last_attempt": "2026-11-09"
+    "last_error": "HTTP 400: {\"error\":{\"message\":\"Error validating access token: Session has expired on Monday, 09-Nov-26 17:49:50 PST. The current time is Tuesday, 10-Nov-26 10:20:32 PST.\",\"type\":\"OAuthException\",\"code",
+    "last_attempt": "2026-11-10"
   },
   "bepowder": {
     "fetched_at": "2026-11-09",
-    "ok": true,
+    "ok": false,
     "rows": 46,
     "empty": false,
-    "through": "2026-11-08"
+    "through": "2026-11-08",
+    "last_error": "HTTP 400: {\"error\":{\"message\":\"Error validating access token: Session has expired on Monday, 09-Nov-26 17:49:50 PST. The current time is Tuesday, 10-Nov-26 10:20:32 PST.\",\"type\":\"OAuthException\",\"code",
+    "last_attempt": "2026-11-10"
   },
   "noselodigas": {
     "fetched_at": "2026-11-09",
-    "ok": true,
+    "ok": false,
     "rows": 282,
     "empty": false,
-    "through": "2026-11-08"
+    "through": "2026-11-08",
+    "last_error": "HTTP 400: {\"error\":{\"message\":\"Error validating access token: Session has expired on Monday, 09-Nov-26 17:49:50 PST. The current time is Tuesday, 10-Nov-26 10:20:33 PST.\",\"type\":\"OAuthException\",\"code",
+    "last_attempt": "2026-11-10"
   }
 }

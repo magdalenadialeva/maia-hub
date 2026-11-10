@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-09T21:15:23+00:00",
+  "generated_at": "2026-11-10T18:20:34+00:00",
   "DATA": {
     "piera": {
       "name": "Piera Ceresa",
@@ -4701,8 +4701,10 @@
       ],
       "upd": "2026-11-09",
       "through": "2026-11-02",
-      "ok": true,
+      "ok": false,
       "empty": false,
+      "err": "HTTP 400: {\"error\":{\"message\":\"Error validating access token: Session has expired on Monday, 09-Nov-26 17:49:50 PST. The current time is Tuesday, 10-Nov-26 10:20:27 PST.\",\"type\":\"OAuthException\",\"code",
+      "attempt": "2026-11-10",
       "changes": [
         {
           "date": "2026-11-04",
@@ -15604,8 +15606,10 @@
       ],
       "upd": "2026-11-09",
       "through": "2026-11-08",
-      "ok": true,
+      "ok": false,
       "empty": false,
+      "err": "HTTP 400: {\"error\":{\"message\":\"Error validating access token: Session has expired on Monday, 09-Nov-26 17:49:50 PST. The current time is Tuesday, 10-Nov-26 10:20:27 PST.\",\"type\":\"OAuthException\",\"code",
+      "attempt": "2026-11-10",
       "changes": [
         {
           "date": "2026-11-08",
@@ -19349,8 +19353,8 @@
       "through": "2026-09-17",
       "ok": false,
       "empty": false,
-      "err": "HTTP 403: {\"error\":{\"message\":\"(#200) Ad account owner has NOT grant ads_management or ads_read permission, refer to https:\\/\\/developers.facebook.com\\/docs\\/marketing-api\\/get-started\\/authorization\\",
-      "attempt": "2026-11-09",
+      "err": "HTTP 400: {\"error\":{\"message\":\"Error validating access token: Session has expired on Monday, 09-Nov-26 17:49:50 PST. The current time is Tuesday, 10-Nov-26 10:20:28 PST.\",\"type\":\"OAuthException\",\"code",
+      "attempt": "2026-11-10",
       "changes": [
         {
           "date": "2026-09-17",
@@ -25261,8 +25265,10 @@
       ],
       "upd": "2026-11-09",
       "through": "2026-11-08",
-      "ok": true,
+      "ok": false,
       "empty": false,
+      "err": "HTTP 400: {\"error\":{\"message\":\"Error validating access token: Session has expired on Monday, 09-Nov-26 17:49:50 PST. The current time is Tuesday, 10-Nov-26 10:20:29 PST.\",\"type\":\"OAuthException\",\"code",
+      "attempt": "2026-11-10",
       "changes": [
         {
           "date": "2026-11-07",
@@ -34842,8 +34848,10 @@
       ],
       "upd": "2026-11-09",
       "through": "2026-11-08",
-      "ok": true,
+      "ok": false,
       "empty": false,
+      "err": "HTTP 400: {\"error\":{\"message\":\"Error validating access token: Session has expired on Monday, 09-Nov-26 17:49:50 PST. The current time is Tuesday, 10-Nov-26 10:20:29 PST.\",\"type\":\"OAuthException\",\"code",
+      "attempt": "2026-11-10",
       "changes": [
         {
           "date": "2026-11-06",
@@ -41112,8 +41120,10 @@
       ],
       "upd": "2026-11-09",
       "through": "2026-11-08",
-      "ok": true,
+      "ok": false,
       "empty": false,
+      "err": "HTTP 400: {\"error\":{\"message\":\"Error validating access token: Session has expired on Monday, 09-Nov-26 17:49:50 PST. The current time is Tuesday, 10-Nov-26 10:20:30 PST.\",\"type\":\"OAuthException\",\"code",
+      "attempt": "2026-11-10",
       "changes": [
         {
           "date": "2026-11-05",
@@ -46720,8 +46730,10 @@
       ],
       "upd": "2026-11-09",
       "through": "2026-11-08",
-      "ok": true,
+      "ok": false,
       "empty": false,
+      "err": "HTTP 400: {\"error\":{\"message\":\"Error validating access token: Session has expired on Monday, 09-Nov-26 17:49:50 PST. The current time is Tuesday, 10-Nov-26 10:20:30 PST.\",\"type\":\"OAuthException\",\"code",
+      "attempt": "2026-11-10",
       "changes": [
         {
           "date": "2026-11-08",
@@ -52572,8 +52584,10 @@
       ],
       "upd": "2026-11-09",
       "through": "2026-11-08",
-      "ok": true,
+      "ok": false,
       "empty": false,
+      "err": "HTTP 400: {\"error\":{\"message\":\"Error validating access token: Session has expired on Monday, 09-Nov-26 17:49:50 PST. The current time is Tuesday, 10-Nov-26 10:20:31 PST.\",\"type\":\"OAuthException\",\"code",
+      "attempt": "2026-11-10",
       "changes": [
         {
           "date": "2026-11-08",
@@ -54457,8 +54471,8 @@
       "through": "2026-10-01",
       "ok": false,
       "empty": false,
-      "err": "HTTP 403: {\"error\":{\"message\":\"(#200) Ad account owner has NOT grant ads_management or ads_read permission, refer to https:\\/\\/developers.facebook.com\\/docs\\/marketing-api\\/get-started\\/authorization\\",
-      "attempt": "2026-11-09",
+      "err": "HTTP 400: {\"error\":{\"message\":\"Error validating access token: Session has expired on Monday, 09-Nov-26 17:49:50 PST. The current time is Tuesday, 10-Nov-26 10:20:32 PST.\",\"type\":\"OAuthException\",\"code",
+      "attempt": "2026-11-10",
       "changes": [
         {
           "date": "2026-10-02",
@@ -55794,8 +55808,10 @@
       ],
       "upd": "2026-11-09",
       "through": "2026-11-08",
-      "ok": true,
+      "ok": false,
       "empty": false,
+      "err": "HTTP 400: {\"error\":{\"message\":\"Error validating access token: Session has expired on Monday, 09-Nov-26 17:49:50 PST. The current time is Tuesday, 10-Nov-26 10:20:32 PST.\",\"type\":\"OAuthException\",\"code",
+      "attempt": "2026-11-10",
       "changes": [
         {
           "date": "2026-11-06",
@@ -61591,8 +61607,10 @@
       ],
       "upd": "2026-11-09",
       "through": "2026-11-08",
-      "ok": true,
+      "ok": false,
       "empty": false,
+      "err": "HTTP 400: {\"error\":{\"message\":\"Error validating access token: Session has expired on Monday, 09-Nov-26 17:49:50 PST. The current time is Tuesday, 10-Nov-26 10:20:33 PST.\",\"type\":\"OAuthException\",\"code",
+      "attempt": "2026-11-10",
       "changes": [
         {
           "date": "2026-11-08",
