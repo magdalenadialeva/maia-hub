@@ -5,8 +5,8 @@
     "rows": 255,
     "empty": false,
     "through": "2026-11-02",
-    "last_error": "HTTP 400: {\"error\":{\"message\":\"Error validating access token: Session has expired on Monday, 09-Nov-26 17:49:50 PST. The current time is Thursday, 12-Nov-26 10:38:16 PST.\",\"type\":\"OAuthException\",\"cod",
-    "last_attempt": "2026-11-12"
+    "last_error": "HTTP 400: {\"error\":{\"message\":\"Error validating access token: Session has expired on Monday, 09-Nov-26 17:49:50 PST. The current time is Friday, 13-Nov-26 10:13:37 PST.\",\"type\":\"OAuthException\",\"code\"",
+    "last_attempt": "2026-11-13"
   },
   "mossy": {
     "fetched_at": "2026-11-09",
@@ -14,8 +14,8 @@
     "rows": 576,
     "empty": false,
     "through": "2026-11-08",
-    "last_error": "HTTP 400: {\"error\":{\"message\":\"Error validating access token: Session has expired on Monday, 09-Nov-26 17:49:50 PST. The current time is Thursday, 12-Nov-26 10:38:16 PST.\",\"type\":\"OAuthException\",\"cod",
-    "last_attempt": "2026-11-12"
+    "last_error": "HTTP 400: {\"error\":{\"message\":\"Error validating access token: Session has expired on Monday, 09-Nov-26 17:49:50 PST. The current time is Friday, 13-Nov-26 10:13:38 PST.\",\"type\":\"OAuthException\",\"code\"",
+    "last_attempt": "2026-11-13"
   },
   "vresia": {
     "fetched_at": "2026-09-17",
@@ -23,8 +23,8 @@
     "rows": 169,
     "empty": false,
     "through": "2026-09-17",
-    "last_error": "HTTP 400: {\"error\":{\"message\":\"Error validating access token: Session has expired on Monday, 09-Nov-26 17:49:50 PST. The current time is Thursday, 12-Nov-26 10:38:17 PST.\",\"type\":\"OAuthException\",\"cod",
-    "last_attempt": "2026-11-12"
+    "last_error": "HTTP 400: {\"error\":{\"message\":\"Error validating access token: Session has expired on Monday, 09-Nov-26 17:49:50 PST. The current time is Friday, 13-Nov-26 10:13:38 PST.\",\"type\":\"OAuthException\",\"code\"",
+    "last_attempt": "2026-11-13"
   },
   "alba": {
     "fetched_at": "2026-11-09",
@@ -32,8 +32,8 @@
     "rows": 294,
     "empty": false,
     "through": "2026-11-08",
-    "last_error": "HTTP 400: {\"error\":{\"message\":\"Error validating access token: Session has expired on Monday, 09-Nov-26 17:49:50 PST. The current time is Thursday, 12-Nov-26 10:38:18 PST.\",\"type\":\"OAuthException\",\"cod",
-    "last_attempt": "2026-11-12"
+    "last_error": "HTTP 400: {\"error\":{\"message\":\"Error validating access token: Session has expired on Monday, 09-Nov-26 17:49:50 PST. The current time is Friday, 13-Nov-26 10:13:38 PST.\",\"type\":\"OAuthException\",\"code\"",
+    "last_attempt": "2026-11-13"
   },
   "paz": {
     "fetched_at": "2026-11-09",
@@ -41,8 +41,8 @@
     "rows": 510,
     "empty": false,
     "through": "2026-11-08",
-    "last_error": "HTTP 400: {\"error\":{\"message\":\"Error validating access token: Session has expired on Monday, 09-Nov-26 17:49:50 PST. The current time is Thursday, 12-Nov-26 10:38:18 PST.\",\"type\":\"OAuthException\",\"cod",
-    "last_attempt": "2026-11-12"
+    "last_error": "HTTP 400: {\"error\":{\"message\":\"Error validating access token: Session has expired on Monday, 09-Nov-26 17:49:50 PST. The current time is Friday, 13-Nov-26 10:13:38 PST.\",\"type\":\"OAuthException\",\"code\"",
+    "last_attempt": "2026-11-13"
   },
   "pulpa": {
     "fetched_at": "2026-11-09",
@@ -50,8 +50,8 @@
     "rows": 310,
     "empty": false,
     "through": "2026-11-08",
-    "last_error": "HTTP 400: {\"error\":{\"message\":\"Error validating access token: Session has expired on Monday, 09-Nov-26 17:49:50 PST. The current time is Thursday, 12-Nov-26 10:38:19 PST.\",\"type\":\"OAuthException\",\"cod",
-    "last_attempt": "2026-11-12"
+    "last_error": "HTTP 400: {\"error\":{\"message\":\"Error validating access token: Session has expired on Monday, 09-Nov-26 17:49:50 PST. The current time is Friday, 13-Nov-26 10:13:38 PST.\",\"type\":\"OAuthException\",\"code\"",
+    "last_attempt": "2026-11-13"
   },
   "saritina-ceramica": {
     "fetched_at": "2026-11-09",
@@ -59,8 +59,8 @@
     "rows": 273,
     "empty": false,
     "through": "2026-11-08",
-    "last_error": "HTTP 400: {\"error\":{\"message\":\"Error validating access token: Session has expired on Monday, 09-Nov-26 17:49:50 PST. The current time is Thursday, 12-Nov-26 10:38:20 PST.\",\"type\":\"OAuthException\",\"cod",
-    "last_attempt": "2026-11-12"
+    "last_error": "HTTP 400: {\"error\":{\"message\":\"Error validating access token: Session has expired on Monday, 09-Nov-26 17:49:50 PST. The current time is Friday, 13-Nov-26 10:13:38 PST.\",\"type\":\"OAuthException\",\"code\"",
+    "last_attempt": "2026-11-13"
   },
   "1366858924962966": {
     "ok": false,
@@ -96,8 +96,8 @@
     "rows": 297,
     "empty": false,
     "through": "2026-11-08",
-    "last_error": "HTTP 400: {\"error\":{\"message\":\"Error validating access token: Session has expired on Monday, 09-Nov-26 17:49:50 PST. The current time is Thursday, 12-Nov-26 10:38:20 PST.\",\"type\":\"OAuthException\",\"cod",
-    "last_attempt": "2026-11-12"
+    "last_error": "HTTP 400: {\"error\":{\"message\":\"Error validating access token: Session has expired on Monday, 09-Nov-26 17:49:50 PST. The current time is Friday, 13-Nov-26 10:13:38 PST.\",\"type\":\"OAuthException\",\"code\"",
+    "last_attempt": "2026-11-13"
   },
   "cloe": {
     "fetched_at": "2026-10-04",
@@ -105,8 +105,8 @@
     "rows": 57,
     "empty": false,
     "through": "2026-10-01",
-    "last_error": "HTTP 400: {\"error\":{\"message\":\"Error validating access token: Session has expired on Monday, 09-Nov-26 17:49:50 PST. The current time is Thursday, 12-Nov-26 10:38:21 PST.\",\"type\":\"OAuthException\",\"cod",
-    "last_attempt": "2026-11-12"
+    "last_error": "HTTP 400: {\"error\":{\"message\":\"Error validating access token: Session has expired on Monday, 09-Nov-26 17:49:50 PST. The current time is Friday, 13-Nov-26 10:13:38 PST.\",\"type\":\"OAuthException\",\"code\"",
+    "last_attempt": "2026-11-13"
   },
   "bepowder": {
     "fetched_at": "2026-11-09",
@@ -114,8 +114,8 @@
     "rows": 46,
     "empty": false,
     "through": "2026-11-08",
-    "last_error": "HTTP 400: {\"error\":{\"message\":\"Error validating access token: Session has expired on Monday, 09-Nov-26 17:49:50 PST. The current time is Thursday, 12-Nov-26 10:38:21 PST.\",\"type\":\"OAuthException\",\"cod",
-    "last_attempt": "2026-11-12"
+    "last_error": "HTTP 400: {\"error\":{\"message\":\"Error validating access token: Session has expired on Monday, 09-Nov-26 17:49:50 PST. The current time is Friday, 13-Nov-26 10:13:38 PST.\",\"type\":\"OAuthException\",\"code\"",
+    "last_attempt": "2026-11-13"
   },
   "noselodigas": {
     "fetched_at": "2026-11-09",
@@ -123,7 +123,7 @@
     "rows": 282,
     "empty": false,
     "through": "2026-11-08",
-    "last_error": "HTTP 400: {\"error\":{\"message\":\"Error validating access token: Session has expired on Monday, 09-Nov-26 17:49:50 PST. The current time is Thursday, 12-Nov-26 10:38:22 PST.\",\"type\":\"OAuthException\",\"cod",
-    "last_attempt": "2026-11-12"
+    "last_error": "HTTP 400: {\"error\":{\"message\":\"Error validating access token: Session has expired on Monday, 09-Nov-26 17:49:50 PST. The current time is Friday, 13-Nov-26 10:13:39 PST.\",\"type\":\"OAuthException\",\"code\"",
+    "last_attempt": "2026-11-13"
   }
 }
